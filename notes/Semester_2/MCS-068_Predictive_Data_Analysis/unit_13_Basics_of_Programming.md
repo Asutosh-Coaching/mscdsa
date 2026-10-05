@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~19 mins | 📄 **Textbook Pages:** 20 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-13_Basics_of_Programming.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-13_Basics_of_Programming.pdf)
 
 ---
 
@@ -74,60 +74,220 @@ P(Y = 1 \mid X = \mathbf{x}) = \sigma(\mathbf{w}^T \mathbf{x} + b) = \frac{1}{1 
 $$
 - **Explanation:** Maps any real-valued linear score into a calibrated probability interval $[0, 1]$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Gauss-Markov Theorem:** Under standard OLS assumptions, the OLS estimator is BLUE (Best Linear Unbiased Estimator).
+- **Orthogonality of Residuals:** $\mathbf{X}^T \mathbf{e} = \mathbf{0} \quad (\text{Residuals are orthogonal to feature space})$
+- **Variance Inflation Factor (VIF):** $\text{VIF}_j = \frac{1}{1 - R_j^2} \quad (\text{VIF} > 5 \implies \text{Severe Multicollinearity})$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `13.2` Environment of R
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of environment of r.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to basics of programming.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+environment can be created within the global environment. The unit also explains about the various types of data associated with the variables that allocate a memory space and store the values that can be manipulated. It also gives the details of the five types of operators in R programming.
+
+It also explains about factors that are the data objects used for organising and storing the data as levels. The concept of decision making has also been discussed in Basic of R Programming detail that requires the programmer to specify one or more conditions to be evaluated or tested by the program.
+
+It gives the details of a function in R that is a set of instructions that is required to execute a command to achieve a task in R. There are several built-in functions available in R. Further, users may create a function based on their requirements. The concept of matrices, arrays, dataframes etc have also been discussed in detail.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing environment of r.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in environment of r can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of environment of r and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define environment of r formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.3` Data types, Variables, Operators, Factors
-- **Core Concept:** Every variable in R has an associated data type, which is known as the reserved memory.
-- **Core Concept:** This reserved memory is needed for storing the values.
-- **Core Concept:** Whenever a number is stored in R, it gets converted into a decimal type with at least 2 decimal points or the “double” value.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+FACTORS Every variable in R has an associated data type, which is known as the reserved memory. This reserved memory is needed for storing the values. Given below is a list of basic data types available in R programming: DATA TYPE Allowable Values Integer Values from the Set of Integers, Z Numeric Values from the Set of Real Numbers, R Complex Values from the Set of Complex numbers, C Logical Only allowable values are True ; False Character Possible values are -“x”, “@”, “1”, etc.
+
+Table 1: Basic Data Types Numeric Datatype: Decimal values are known to be numeric in R and is the default datatype for any number in R. Whenever a number is stored in R, it gets converted into a decimal type with at least 2 decimal points or the “double” value. So, if you enter a normal integer value also, for example 10, then the R interpreter will convert it into double i.e.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data types, variables, operators, factors.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data types, variables, operators, factors can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of data types, variables, operators, factors and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define data types, variables, operators, factors formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.4` Decision Making, Loops, Functions
-- **Core Concept:** In the case of loops, the statements are executed sequentially.
-- **Core Concept:** Loop Type and Description: ● Repeat loop: Executes sequence of statements multiple times.
-- **Core Concept:** ● While loop: Repeat a given statement while the given condition is true, executes before executing the loop body.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Decision making requires the programmer to specify one or more conditions which will be evaluated or tested by the program, along with the statements to be executed if the condition is determined to be true, and optional statements to be executed if the condition is determined to be false.
+
+Given below is the general form of a typical decision making structure found in most of the programming languages– The format of if statement in R is as follows: if (conditional statement, may include relational and logical operator) { R statements to be executed, if the conditional statement is true } else { R statements to be executed, if the conditional statement is FALSE Condition If condition is true If condition is false Conditional code } You may use else if instead of else LOOPS: A loop is defined as a situation where we need to execute a block of code several times.
+
+In the case of loops, the statements are executed sequentially. Loop Type and Description: ● Repeat loop: Executes sequence of statements multiple times. ● While loop: Repeat a given statement while the given condition is true, executes before executing the loop body. Syntax: Example: If condition is false Conditional code Condition If condition is true Basic of R Programming ● For loop: Like while statement, executes the test condition at the end of the loop body.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing decision making, loops, functions.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in decision making, loops, functions can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of decision making, loops, functions and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define decision making, loops, functions formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.5` Data Structures in R
-- **Core Concept:** R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.
-- **Core Concept:** Strings and Vectors Vectors: A vector is a one-dimensional array of data elements that have the same data type.
-- **Core Concept:** The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data structures in r.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data structures in r can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of data structures in r and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define data structures in r formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.5.1` Strings and Vectors
-- **Core Concept:** Vectors: A vector is a one-dimensional array of data elements that have the same data type.
-- **Core Concept:** The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.
-- **Core Concept:** Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Vectors: A vector is a one-dimensional array of data elements that have the same data type. The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types. Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.
+
+Internally R stores every string within double quotes, even when you create them with a single quote. Rules Applied in String Construction ● The quotes at the beginning and end of a string should be either both double quotes or both single quotes. They cannot be mixed. ● Double quotes can be inserted into a string starting and ending with a single quote.
+
+● Single quote can be inserted into a string starting and ending with double quotes. ● Double quotes cannot be inserted into a string starting and ending with double quotes. ● Single quote cannot be inserted into a string starting and ending with a single quote. Basic of R Programming Length of String: The length of strings tells the number of characters in a string.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing strings and vectors.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in strings and vectors can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of strings and vectors and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define strings and vectors formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.5.2` Lists
-- **Core Concept:** Lists are the objects in R that contain different types of objects within itself like number, string, vectors or even another list, matrix or any function as its element It is created by calling list() function.
-- **Core Concept:** Matrices, Arrays and Frames Matrices are R objects which are arranged in 2-D layout.
-- **Core Concept:** Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Lists are the objects in R that contain different types of objects within itself like number, string, vectors or even another list, matrix or any function as its element It is created by calling list() function.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing lists.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in lists can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of lists and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define lists formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `13.5.3` Matrices, Arrays and Frames
+##### 📘 Theoretical Principles & In-Depth Exposition
+Matrices are R objects which are arranged in 2-D layout. They contain elementsof the same type. The basic syntax of creating a matrix in R is: matrix(data, nrow, ncol, byrow, dimnames), where data is the name of input vector, nrow is no of rows, ncol is no of columns, byrow is to specify either row matrix or column matrix and dimnameis the name assigned to rows and columns.
+
+Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number. Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division. You may please note that matrix division is not defined mathematically, but in R each element of a matrix is divided by the corresponding element of another matrix.
+
+Basic of R Programming Arrays: An array is a data object in R that can store multidimensional data that have the same data type. It is used using the array() function and can accept vectors as an input. An array is created using the values passed in the dim parameter. For instance, an array is created with dimensions (2,3,5); then R would create 5 rectangular matrices consisting of 2 rows and 3 columns each.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing matrices, arrays and frames.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in matrices, arrays and frames can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define matrices, arrays and frames formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `13.2` ENVIRONMENT OF R
+##### 📘 Theoretical Principles & In-Depth Exposition
+environment can be created within the global environment. The unit also explains about the various types of data associated with the variables that allocate a memory space and store the values that can be manipulated. It also gives the details of the five types of operators in R programming.
+
+It also explains about factors that are the data objects used for organising and storing the data as levels. The concept of decision making has also been discussed in Basic of R Programming detail that requires the programmer to specify one or more conditions to be evaluated or tested by the program.
+
+It gives the details of a function in R that is a set of instructions that is required to execute a command to achieve a task in R. There are several built-in functions available in R. Further, users may create a function based on their requirements. The concept of matrices, arrays, dataframes etc have also been discussed in detail.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing environment of r.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in environment of r can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define environment of r formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Simple Linear Regression OLS Computation
+> **Problem Statement:**  
+> Given data points $(x, y)$: $(1, 2), (2, 3), (3, 5), (4, 4), (5, 6)$. Compute OLS slope $\hat{\beta}_1$, intercept $\hat{\beta}_0$, and regression line.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Means:** $\bar{x} = 3.0, \; \bar{y} = 4.0$.
+2. **Deviations & Products:**
+- $(x_1 - \bar{x}) = -2, \; (y_1 - \bar{y}) = -2 \implies (-2)(-2) = 4, \; (-2)^2 = 4$
+- $(x_2 - \bar{x}) = -1, \; (y_2 - \bar{y}) = -1 \implies (-1)(-1) = 1, \; (-1)^2 = 1$
+- $(x_3 - \bar{x}) = 0, \; (y_3 - \bar{y}) = 1 \implies (0)(1) = 0, \; 0^2 = 0$
+- $(x_4 - \bar{x}) = 1, \; (y_4 - \bar{y}) = 0 \implies (1)(0) = 0, \; 1^2 = 1$
+- $(x_5 - \bar{x}) = 2, \; (y_5 - \bar{y}) = 2 \implies (2)(2) = 4, \; 2^2 = 4$
+
+3. **Summation:** $\sum (x_i - \bar{x})(y_i - \bar{y}) = 9, \; \sum (x_i - \bar{x})^2 = 10$.
+
+4. **Parameters:**
+$$
+\hat{\beta}_1 = \frac{9}{10} = 0.90
+$$
+$$
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} = 4.0 - 0.9(3.0) = 4.0 - 2.7 = 1.30
+$$
+
+Regression Equation: $\hat{y} = 1.30 + 0.90 x$.
+
+#### 🧮 Example 2: Coefficient of Determination $R^2$ Calculation
+> **Problem Statement:**  
+> For the model above, total sum of squares $SS_{\text{tot}} = 10.0$ and sum of squared residuals $SS_{\text{res}} = 1.90$. Calculate $R^2$ and interpret.
+
+**Detailed Step-by-Step Solution:**
+
+$$
+R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{1.90}{10.0} = 1 - 0.19 = 0.81 \implies 81\%
+$$
+
+Interpretation: 81% of the variation in target $y$ is explained by feature $x$.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+import numpy as np
+
+# Dataset with multicollinearity
+X = np.array([[1, 2], [2, 4.1], [3, 5.9], [4, 8.2], [5, 9.9]])
+y = np.array([2.2, 4.1, 6.2, 7.9, 10.1])
+
+# 1. Standard OLS
+ols = LinearRegression().fit(X, y)
+print("OLS Coefficients:", ols.coef_)
+
+# 2. Ridge (L2 penalty shrinks weights smoothly)
+ridge = Ridge(alpha=1.0).fit(X, y)
+print("Ridge Coefficients:", ridge.coef_)
+
+# 3. Lasso (L1 penalty induces sparsity)
+lasso = Lasso(alpha=0.1).fit(X, y)
+print("Lasso Coefficients (Sparse):", lasso.coef_)
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

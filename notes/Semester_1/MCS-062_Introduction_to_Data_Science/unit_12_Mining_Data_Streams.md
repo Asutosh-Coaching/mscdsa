@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~27 mins | 📄 **Textbook Pages:** 13 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-12_Mining_Data_Streams.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-12_Mining_Data_Streams.pdf)
 
 ---
 
@@ -68,60 +68,192 @@ Sk_1 = \frac{\text{Mean} - \text{Mode}}{\sigma} \quad \text{or} \quad Sk_2 = \fr
 $$
 - **Explanation:** Measures asymmetry: Positive skew means mean > median (right tail); negative skew means mean < median (left tail).
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Variance Scaling Rule:** $\text{Var}(aX + b) = a^2 \text{Var}(X)$
+- **Standard Deviation Scaling:** $\sigma(aX + b) = \vert a\vert \sigma(X)$
+- **Empirical Rule (Normal Distribution):** 68% within $\mu \pm 1\sigma$, 95% within $\mu \pm 2\sigma$, 99.7% within $\mu \pm 3\sigma$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `12.2` Data Streams
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of data streams.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to mining data streams.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Let’s Understanding the Model for Data Stream Processing, when working with traditional datasets, we usually have the entire data available beforehand, stored in a database or a file system. We can query it multiple times, sort it, scan it repeatedly, or even join it with other data.
+
+But in data stream processing, things are different. The data arrives continuously, often at high speed, and we only get one chance to process it. This is because storing the entire stream is not practical due to limited memory, time, and processing power. To deal with this challenge, researchers and developers have come up with specific models for processing data streams efficiently.
+
+Each model provides a strategy to analyse and summarize the incoming data using minimal resources, often with a trade-off in accuracy. Let’s explore some of the commonly used models with easy-to-understand examples. Sliding Window Model : In this model, we focus only on the most recent data in the stream.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data streams.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data streams can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of data streams and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define data streams formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.2.1` Model for Data Stream Processing
-- **Core Concept:** Let’s Understanding the Model for Data Stream Processing, when working with traditional datasets, we usually have the entire data available beforehand, stored in a database or a file system.
-- **Core Concept:** We can query it multiple times, sort it, scan it repeatedly, or even join it with other data.
-- **Core Concept:** But in data stream processing, things are different.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Let’s Understanding the Model for Data Stream Processing, when working with traditional datasets, we usually have the entire data available beforehand, stored in a database or a file system. We can query it multiple times, sort it, scan it repeatedly, or even join it with other data.
+
+But in data stream processing, things are different. The data arrives continuously, often at high speed, and we only get one chance to process it. This is because storing the entire stream is not practical due to limited memory, time, and processing power. To deal with this challenge, researchers and developers have come up with specific models for processing data streams efficiently.
+
+Each model provides a strategy to analyse and summarize the incoming data using minimal resources, often with a trade-off in accuracy. Let’s explore some of the commonly used models with easy-to-understand examples. Sliding Window Model : In this model, we focus only on the most recent data in the stream.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing model for data stream processing.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in model for data stream processing can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of model for data stream processing and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define model for data stream processing formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3` Data Stream Management
-- **Core Concept:** Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.
-- **Core Concept:** Unlike traditional data stored in databases, data streams are continuous, fast, and often infinite.
-- **Core Concept:** This means we usually don’t have the luxury to store all the incoming data or process it multiple times.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting. Unlike traditional data stored in databases, data streams are continuous, fast, and often infinite.
+
+This means we usually don’t have the luxury to store all the incoming data or process it multiple times. So, how do we effectively manage such data? The answer lies in using smart models that help us process, analyze, and summarize data streams efficiently, often with limited memory and computing resources.
+
+One useful approach is the sliding window model, where only the most recent portion of the data stream is kept in memory. For example, if we are monitoring traffic at a busy intersection, we might only care about vehicle counts in the last 5 minutes, rather than the entire day. As new data arrives, old data is removed from the window, allowing us to continuously analyze the latest situation without overloading the system.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data stream management.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data stream management can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of data stream management and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define data stream management formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3.1` Queries of Data Stream
-- **Core Concept:** When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.
-- **Core Concept:** But in the world of data streams, where data is constantly flowing in real time, we need a different kind of approach to querying.
-- **Core Concept:** Here, the data is not static—it’s live, fast, and potentially endless.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+When working with traditional databases, we write queries that run on stored data and return results after the computation is complete. But in the world of data streams, where data is constantly flowing in real time, we need a different kind of approach to querying. Here, the data is not static—it’s live, fast, and potentially endless.
+
+This is where understanding how queries work in data streams becomes really important. In data stream systems, we mainly deal with two types of queries: adhoc queries and standing (or continuous) queries. Adhoc Queries: Adhoc queries are similar to traditional database queries. They are executed once on a snapshot or current state of the data (usually within a defined window).
+
+These queries are useful when we want to check something quickly or perform a one-time analysis. Example: Imagine we want to know how many users visited a website in the last 10 minutes. We can run an adhoc query over that time window to get the result once. Standing (Continuous) Queries: Standing queries, also called continuous queries, are much more powerful and common in data stream systems.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing queries of data stream.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in queries of data stream can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of queries of data stream and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define queries of data stream formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3.2` Examples of Data Stream and Queries
-- **Core Concept:** To understand what data streams really are, it helps to look at real-world situations where data isn’t stored first, but instead flows in continuously.
-- **Core Concept:** A data stream is a live, ongoing flow of information that must be processed in real time.
-- **Core Concept:** This kind of data appears in many everyday applications, and recognizing these can help you better appreciate how streaming systems work.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+To understand what data streams really are, it helps to look at real-world situations where data isn’t stored first, but instead flows in continuously. A data stream is a live, ongoing flow of information that must be processed in real time. This kind of data appears in many everyday applications, and recognizing these can help you better appreciate how streaming systems work.
+
+Sensor Data Streams One of the most common sources of data streams is sensors. These are used in everything from weather stations to smart homes and industrial machines. For example, weather sensors stream temperature, humidity, and wind speed data every few seconds. Similarly, smart home devices like thermostats or motion detectors constantly send activity updates.
+
+In industries, IoT-enabled machines send data about vibration, pressure, or speed to help monitor equipment health and prevent breakdowns. Social Media Feeds Social media platforms are full of streaming data. Every time someone posts a tweet, uploads a video, or reacts to a story, that action becomes part of a data stream.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing examples of data stream and queries.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in examples of data stream and queries can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of examples of data stream and queries and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define examples of data stream and queries formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3.3` Issues and Challenges of Data Stream
-- **Core Concept:** As we explore the world of data stream processing, you'll quickly realize that it’s very different from working with traditional static data.
-- **Core Concept:** In streaming, data flows continuously, and we must process it in real time.
-- **Core Concept:** While this offers exciting possibilities—like instant decision-making and live monitoring—it also introduces a number of technical and conceptual challenges.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+As we explore the world of data stream processing, you'll quickly realize that it’s very different from working with traditional static data. In streaming, data flows continuously, and we must process it in real time. While this offers exciting possibilities—like instant decision-making and live monitoring—it also introduces a number of technical and conceptual challenges.
+
+Let’s break these down into key categories so that you can better understand the landscape. Continuous and Unbounded Data: The most obvious challenge is that data streams are infinite—they never stop. Unlike static datasets, which have a definite beginning and end, stream data keeps coming.
+
+This makes it difficult to store all the data or reprocess it later. As a learner, ask yourself: how would you handle a firehose of data that never ends? The solution lies in using sliding or tumbling windows, sampling, or approximation techniques. Limited Memory and Storage: Because stream processing needs to happen in real time and memory is limited, you can't store all incoming data.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing issues and challenges of data stream.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in issues and challenges of data stream can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of issues and challenges of data stream and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define issues and challenges of data stream formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Sample Variance and Standard Deviation Computation
+> **Problem Statement:**  
+> Given sample observations: $X = \lbrace 4, 8, 6, 5, 7 \rbrace$. Compute sample mean $\bar{x}$, sample variance $s^2$, and standard deviation $s$ step-by-step.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Mean:** $\bar{x} = \frac{4 + 8 + 6 + 5 + 7}{5} = \frac{30}{5} = 6$.
+
+2. **Squared deviations:**
+- $(4 - 6)^2 = (-2)^2 = 4$
+- $(8 - 6)^2 = 2^2 = 4$
+- $(6 - 6)^2 = 0^2 = 0$
+- $(5 - 6)^2 = (-1)^2 = 1$
+- $(7 - 6)^2 = 1^2 = 1$
+Sum of squared deviations $= 4 + 4 + 0 + 1 + 1 = 10$.
+
+3. **Sample Variance with Bessel's Correction ($n-1 = 4$):**
+$$
+s^2 = \frac{10}{5 - 1} = \frac{10}{4} = 2.5
+$$
+
+4. **Standard Deviation:** $s = \sqrt{2.5} \approx 1.581$.
+
+#### 🧮 Example 2: Tukey's IQR Outlier Detection Rule
+> **Problem Statement:**  
+> A customer spend dataset has $Q_1 = 30$ and $Q_3 = 70$. Determine whether transactions of $135$ and $25$ are classified as outliers.
+
+**Detailed Step-by-Step Solution:**
+
+1. **IQR:** $\text{IQR} = Q_3 - Q_1 = 70 - 30 = 40$.
+2. **Lower Bound:** $Q_1 - 1.5(\text{IQR}) = 30 - 1.5(40) = 30 - 60 = -30$.
+3. **Upper Bound:** $Q_3 + 1.5(\text{IQR}) = 70 + 1.5(40) = 70 + 60 = 130$.
+
+Conclusion:
+- Spend of 135 exceeds Upper Bound ($135 > 130$): **Classified as Outlier**.
+- Spend of 25 is within $[-30, 130]$: **Normal observation**.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import numpy as np
+import pandas as pd
+
+# Statistical profiling on production dataset
+data = np.array([12, 15, 18, 22, 25, 29, 34, 45, 95])
+
+mean_val = np.mean(data)
+median_val = np.median(data)
+std_val = np.std(data, ddof=1) # Bessel's correction
+
+q1, q3 = np.percentile(data, [25, 75])
+iqr = q3 - q1
+outlier_upper = q3 + 1.5 * iqr
+
+outliers = data[data > outlier_upper]
+
+print(f"Mean: {mean_val:.2f} | Median: {median_val:.2f} | Std: {std_val:.2f}")
+print(f"IQR: {iqr:.2f} | Upper Bound: {outlier_upper:.2f}")
+print(f"Detected Outliers: {outliers}")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

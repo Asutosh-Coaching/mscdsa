@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~27 mins | 📄 **Textbook Pages:** 18 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-2_Object_Oriented_Programming.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-2_Object_Oriented_Programming.pdf)
 
 ---
 
@@ -64,60 +64,204 @@ $$
 $$
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **AVL Height Bound:** $h < 1.44 \log_2(n + 2) \implies O(\log n) \text{ worst-case search}$
+- **Hash Table Amortized Bound:** $O(1) \text{ lookup when } \alpha = n/m < 0.75$
+- **Comparison Lower Bound:** $\Omega(n \log n) \text{ for comparison sorts}$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `2.2` Principles and Patterns
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of principles and patterns.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to object oriented programming.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Principles and Patterns** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Object Oriented Programming**, understanding principles and patterns is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing principles and patterns.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in principles and patterns can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of principles and patterns and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define principles and patterns formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `2.3` Python Objects
-- **Core Concept:** An Object is an instance of a Class in Python as is the case with other object oriented programming languages.
-- **Core Concept:** It represents a specific implementation of the class and holds its own data.
-- **Core Concept:** An object consists of: Identity provides a unique name to an object and enables one object to interact with other objects.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+PYTHON OBJECTS An Object is an instance of a Class in Python as is the case with other object oriented programming languages. It represents a specific implementation of the class and holds its own data. An object consists of: Identity provides a unique name to an object and enables one object to interact with other objects.
+
+State represented by the attributes and exposes the properties of an object. Behavior represented by the methods of an object and provides the response of an object to other objects. Having deliberated upon the principles of designing classes in Python, let us explore about the core principles of OOP in Python.
+
+Encapsulation refers to bringing together data / attributes and methods / functions defined within a class. This principle restricts access to certain components to control interactions by the way these are defined within a class. Hence three types of encapsulations practiced in Python are as under: • Public Members: These are accessible from anywhere in the program.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing python objects.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in python objects can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of python objects and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define python objects formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `2.4` Abstract Class
-- **Core Concept:** An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.
-- **Core Concept:** It can contain abstract methods that exist without implementation and concrete methods that are implemented.
-- **Core Concept:** These abstract classes are created using the abc module and the ABC class.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+ABSTRACT CLASS An abstract class are not instantiated directly as these serve as a blueprint or template for other classes. It can contain abstract methods that exist without implementation and concrete methods that are implemented. These abstract classes are created using the abc module and the ABC class.
+
+Any subclass that inherits from an abstract class must implement its abstract methods. A concrete class can be instantiated directly and it inherits methods from an abstract class that are implemented here. A concrete class provides specific implementations for all necessary methods.
+
+from abc import ABC, abstractmethod # Import required modules class abstraction(ABC): # Creates Abstract base class @abstractmethod # Declares abstract method def abs_method(self): print ("This is abstract method") return def con_method(self): print ("This is concrete method") class concreteclass(abstraction): # Creates a child class def abs_method(self): super().abs_method() return obj = concreteclass() # Create an instance of concreteclass obj.abs_method() obj.con_method()  Output This is abstract method This is concrete method
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing abstract class.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in abstract class can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of abstract class and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define abstract class formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `2.5` Types of Inheritance
-- **Core Concept:** Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.
-- **Core Concept:** Hybrid Inheritance 2.5.1 Single Inheritance When a class is derived from one base class that is when a class inherits properties and methods from only one parent class, then it is termed as single inheritance.
-- **Core Concept:** This kind of inheritance allows one to combine features from several existing classes, thus promoting class reuse.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties. The major types are: 1. Single Inheritance 2. Multiple Inheritance 3. Multilevel Inheritance 4.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing types of inheritance.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in types of inheritance can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of types of inheritance and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define types of inheritance formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `2.6` Namespace and Object-Orientation
-- **Core Concept:** A namespace is a collection of names where we have a mapping of every name we have defined to corresponding objects in the code.
-- **Core Concept:** An object can be a variable or a method.
-- **Core Concept:** Name represents a unique identifier and Space refers to the scope of the name.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+NAMESPACE AND OBJECT-ORIENTATION A namespace is a collection of names where we have a mapping of every name we have defined to corresponding objects in the code. An object can be a variable or a method. Name represents a unique identifier and Space refers to the scope of the name.
+
+Python itself maintains a namespace in the form of a Python dictionary. Namespaces are crucial in OOP for organizing and accessing class-level and instance- level variables and methods. As discussed in Chapter 1, each class and object has its own namespace, preventing naming conflicts and ensuring proper access to attributes and methods of the objects.
+
+The two basic types of these namespaces are: • Class Namespace that contains attributes and methods defined within a class that is shared by all instances of the class. • Instance Namespace contains attributes specific to each instance of a class.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing namespace and object-orientation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in namespace and object-orientation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of namespace and object-orientation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define namespace and object-orientation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `2.7` Python Lists
-- **Core Concept:** A list in Python is a built-in dynamic sized array that automatically grows and shrinks.
-- **Core Concept:** The list can store various types of data items including another list within a list.
-- **Core Concept:** This feature is made possible because a list only stores references at contiguous locations and actual items may be stored at different locations.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+PYTHON LISTS A list in Python is a built-in dynamic sized array that automatically grows and shrinks. The list can store various types of data items including another list within a list. This feature is made possible because a list only stores references at contiguous locations and actual items may be stored at different locations.
+
+A list can also contain duplicate items. Accessing any data items in List can be done directly using their subscript or index that starts from 0. Creating a List in Python Lists in Python can be created either by using Square Bracket or Using list() Constructor # Creating Python List using Square Bracket [] # List of integers a = [10, 20, 30, 40, 50] # List of strings b = ['C++', 'Java', 'Python'] # Mixed data types c = [10, 'C++', 100, 'False'] print(a) print(b) print(c) print(c[3])  Output [10, 20, 30, 40, 50] ['C++', 'Java', 'Python'] [10, 'C++', 100, 'False'] False # Creating a Python List Using list() Constructor a = list((10, 'C++', 100, 'False')) print(a)  Output [10, 'C++', 100, 'False'] # Creating Empty List & Inserting Elements # Initialize an empty list emptylist = [] # Inserting 5 at index 0 emptylist.insert(0, 5) print("After Insert(0, 5) operation:", emptylist)  Output After Insert(0, 5) operation: [5] # Accessing Elements of the List by their Indexes print(a[0]) # 5 print(a[1]) # "List" print(a[2]) # 15 print(a[3]) # 25 print(a[4]) # True # Checking for Data Types of list elements print(type(a[1])) # str print(type(a[4])) # bool  Output [5, 'List', 15, 25, True] List True <class 'str'> # Prints the data type of element at index 1 <class 'bool'> # Prints the data type of element at index 4 # Python Program to Access last Element of List # List of integers a = [10, 20, 30, 40, 50] print(a[-1])  Output Adding Elements into a List using Append & Extend # Python List of integer Numbers a = [10, 20, 30, 40, 50] print(a[-1]) a.append(60) print("List after append(10):", a) a.extend([70, 80, 90]) print("List after extend(10):", a)  Output List after append(10): [10, 20, 30, 40, 50, 60] List after extend(10): [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing python lists.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in python lists can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of python lists and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define python lists formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `2.8` Copy An Object in Python Using ‘=’
+##### 📘 Theoretical Principles & In-Depth Exposition
+COPY AN OBJECT IN PYTHON USING ‘=’ Python makes use ‘=’ operator to create a copy of an object. One needs to understand that it doesnot create a new object, but it only creates a new variable that shares the reference of the original object. The same is illustrated by a python program below where we have created a list named “original_list” and we pass its object reference to “copied_list” using the ‘=’ operator.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing copy an object in python using ‘=’.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in copy an object in python using ‘=’ can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define copy an object in python using ‘=’ formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Solving Recurrence via Master Theorem
+> **Problem Statement:**  
+> Solve the recurrence relation $T(n) = 2T(n/2) + n$ modeling Mergesort.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
+2. **Compare $\log_b a$ and $d$:**
+$$
+\log_b a = \log_2 2 = 1
+$$
+Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
+
+3. **Conclusion:**
+$$
+T(n) = \Theta(n^d \log n) = \Theta(n \log n)
+$$
+
+#### 🧮 Example 2: AVL Tree Rotation Sequence
+> **Problem Statement:**  
+> An empty AVL tree receives sequential insertions: 10, 20, 30. Trace the balance factors and demonstrate the required rotation.
+
+**Detailed Step-by-Step Solution:**
+
+1. Insert 10: $BF = 0$.
+2. Insert 20: 10 has $BF = -1$, 20 has $BF = 0$.
+3. Insert 30: Node 10 has left height 0, right height 2 $\implies BF(10) = -2$ (Unbalanced: Right-Right condition).
+4. **Apply Single Left Rotation on Node 10:**
+- Node 20 becomes new root.
+- Node 10 becomes left child of 20.
+- Node 30 remains right child of 20.
+New Balance Factors: $BF(20) = 0, \; BF(10) = 0, \; BF(30) = 0$. Tree balanced.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Custom Hash Map with Collision Chaining
+class SimpleHashMap:
+    def __init__(self, capacity=8):
+        self.capacity = capacity
+        self.buckets = [[] for _ in range(capacity)]
+
+    def _hash(self, key):
+        return hash(key) % self.capacity
+
+    def put(self, key, value):
+        b_idx = self._hash(key)
+        for i, (k, v) in enumerate(self.buckets[b_idx]):
+            if k == key:
+                self.buckets[b_idx][i] = (key, value)
+                return
+        self.buckets[b_idx].append((key, value))
+
+    def get(self, key):
+        b_idx = self._hash(key)
+        for k, v in self.buckets[b_idx]:
+            if k == key:
+                return v
+        return None
+
+hm = SimpleHashMap()
+hm.put("user_101", {"name": "Alice", "role": "Data Scientist"})
+hm.put("user_102", {"name": "Bob", "role": "ML Engineer"})
+print("Lookup user_101:", hm.get("user_101"))
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

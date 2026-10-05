@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~48 mins | 📄 **Textbook Pages:** 26 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf)
 
 ---
 
@@ -74,24 +74,113 @@ F = \frac{\text{MS}_{\text{between}}}{\text{MS}_{\text{within}}} = \frac{\text{S
 $$
 - **Explanation:** Compares variance between $k$ group means against variance within groups to test equality of multiple population means.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Decision Rule:** $p\text{-value} < \alpha \implies \text{Reject } H_0$
+- **Degrees of Freedom (t-Test):** $df = n - 1$
+- **Degrees of Freedom (Chi-Square):** $df = (r - 1)(c - 1)$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `7.2` Normal Distribution
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of normal distribution.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to continuous probability distributions and exact sampling distributions.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+can be used as an approximation to most of the other distributions and hence is most important probability distribution in statistical analysis. Theory of estimation of population parameters and testing of hypotheses on the basis of sample statistics (to be discussed in the next unit) have also been developed using the concept of normal distribution as most of the sampling distributions tend to normality for large samples.
+
+Normal distribution has become widely and uncritically accepted on the basis of much practical work. As a result, it holds a central position in Statistics. Let us now take some examples of writing the probability function of normal distribution when mean and variance are specified, and vice-versa.
+
+Example 1: (i) If X ~ N (40, 25) then write down the p.d.f. of X (ii) If X ~ N (−36, 20) then write down the p.d.f. of X (iii) If X ~ N (0, 2) then write down the p.d.f. of X Solution: (i) Here we are given X ~ N (40, 25) in usual notations, we have =   0always  ฀ Now, the p.d.f.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing normal distribution.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in normal distribution can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of normal distribution and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define normal distribution formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `7.3` Continuous Uniform Distribution
-- **Core Concept:** The uniform (or rectangular) distribution is a very simple distribution.
-- **Core Concept:** It provides a useful model for a few random phenomena like having random number from the interval [0, 1], then one is thinking of the value of a uniformly distributed random variable over the interval [0, 1].
-- **Core Concept:** 7.2: Graph of a uniform function 208 Probability and Distributions Mean and Variance of Uniform Distribution Mean = a b 2 + and Variance = ( ) 2 b a 12 − .
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The uniform (or rectangular) distribution is a very simple distribution. It provides a useful model for a few random phenomena like having random number from the interval [0, 1], then one is thinking of the value of a uniformly distributed random variable over the interval [0, 1].
+
+Definition: A random variable X is said to follow a continuous uniform (rectangular) distribution over an interval (a, b) if its probability density function is given by ( ) for a x b f x b a 0, otherwise     = −   The distribution is called uniform distribution since it assumes a constant (uniform) value for all x in (a, b).
+
+If we draw the graph of y = f(x) over x-axis and between the ordinates x = a and x = b (say), it describes a rectangle as shown in Fig. 7.2 A uniform variate X on the interval (a, b) is written as X ~ U[a, b] Cumulative Distribution Function The cumulative distribution function of the uniform random variate over the interval (a, b) is given by: ( ) for x a x a F x for a x b b a for x b    −  =    −    On plotting its graph, we have a b Y b a − a b X Probability and Distributions Mean and Variance of Uniform Distribution Mean = a b + and Variance = ( ) b a − .
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing continuous uniform distribution.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in continuous uniform distribution can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of continuous uniform distribution and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define continuous uniform distribution formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: One-Sample t-Test for Page Latency Benchmark
+> **Problem Statement:**  
+> An engineering team claims server latency is at most $\mu_0 = 200\text{ms}$. A sample of $n = 25$ runs yields sample mean $\bar{x} = 210\text{ms}$ and sample standard deviation $s = 20\text{ms}$. Test the claim at significance level $\alpha = 0.05$.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Hypotheses:** $H_0: \mu \le 200\text{ms}$ vs $H_1: \mu > 200\text{ms}$ (One-tailed test).
+
+2. **Standard Error:**
+$$
+\text{SE} = \frac{s}{\sqrt{n}} = \frac{20}{\sqrt{25}} = \frac{20}{5} = 4\text{ms}
+$$
+
+3. **Test Statistic:**
+$$
+t = \frac{\bar{x} - \mu_0}{\text{SE}} = \frac{210 - 200}{4} = 2.50
+$$
+
+4. **Critical Value ($df = 24, \alpha = 0.05$):** $t_{\text{crit}} = 1.711$.
+
+5. **Conclusion:** Since $t = 2.50 > 1.711$, we **Reject $H_0$**. The latency is statistically significantly higher than 200ms.
+
+#### 🧮 Example 2: 95% Confidence Interval Calculation
+> **Problem Statement:**  
+> Given sample size $n = 64$, sample mean $\bar{x} = 52.0$, and known $\sigma = 8.0$. Calculate the 95% Confidence Interval for population mean $\mu$.
+
+**Detailed Step-by-Step Solution:**
+
+For 95% confidence, $z_{0.025} = 1.96$:
+$$
+\text{Margin of Error} = z \frac{\sigma}{\sqrt{n}} = 1.96 \left(\frac{8}{\sqrt{64}}\right) = 1.96(1.0) = 1.96
+$$
+$$
+\text{CI} = 52.0 \pm 1.96 = [50.04, 53.96]
+$$
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+from scipy import stats
+import numpy as np
+
+# A/B Testing: Two-Sample t-Test
+group_a = np.array([12.1, 14.5, 13.2, 12.8, 15.0, 13.9, 14.2]) # Control
+group_b = np.array([15.2, 16.1, 14.8, 15.9, 17.0, 16.4, 15.8]) # Treatment
+
+t_stat, p_val = stats.ttest_ind(group_a, group_b)
+
+print(f"Group A Mean: {np.mean(group_a):.2f}")
+print(f"Group B Mean: {np.mean(group_b):.2f}")
+print(f"t-statistic: {t_stat:.4f} | p-value: {p_val:.5f}")
+
+if p_val < 0.05:
+    print("Result: Statistically significant uplift detected (Reject H0)!")
+else:
+    print("Result: Insufficient evidence to reject H0.")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -115,7 +204,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 
 > **Answer & Analysis:**  
 > Type I error ( $\alpha$ ): Rejecting $H_0$ when $H_0$ is actually true (False Positive).
-Type II error ( $\beta$ ): Failing to reject $H_0$ when $H_0$ is actually false (False Negative).
+> Type II error ( $\beta$ ): Failing to reject $H_0$ when $H_0$ is actually false (False Negative).
 </details>
 
 <details>

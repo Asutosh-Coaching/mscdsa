@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~75 mins | 📄 **Textbook Pages:** 32 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-12_Categorical_Data_Analysis.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-12_Categorical_Data_Analysis.pdf)
 
 ---
 
@@ -76,33 +76,130 @@ F = \frac{\text{MS}_{\text{between}}}{\text{MS}_{\text{within}}} = \frac{\text{S
 $$
 - **Explanation:** Compares variance between $k$ group means against variance within groups to test equality of multiple population means.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Decision Rule:** $p\text{-value} < \alpha \implies \text{Reject } H_0$
+- **Degrees of Freedom (t-Test):** $df = n - 1$
+- **Degrees of Freedom (Chi-Square):** $df = (r - 1)(c - 1)$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `12.2` Chi-Square Test for Goodness of Fit
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of chi-square test for goodness of fit.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to categorical data analysis.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Chi-Square Test for Goodness of Fit** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Categorical Data Analysis**, understanding chi-square test for goodness of fit is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing chi-square test for goodness of fit.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in chi-square test for goodness of fit can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of chi-square test for goodness of fit and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define chi-square test for goodness of fit formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3` Chi-Square Test for Independence of Attributes
-- **Core Concept:** There are many situations where we need to test the independence of two characteristics or attributes of categorical data.
-- **Core Concept:** For example, a sociologist may wish to know whether the level of formal education is independent of income, whether the height of sons depending on the height of their fathers or not, etc.
-- **Core Concept:** If there is no association between two variables, we say that they are independent.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+ATTRIBUTES There are many situations where we need to test the independence of two characteristics or attributes of categorical data. For example, a sociologist may wish to know whether the level of formal education is independent of income, whether the height of sons depending on the height of their fathers or not, etc.
+
+If there is no association between two variables, we say that they are independent. In other words, we can say that two variables are independent if the distribution of one is not depending on the distribution of another. To test the independence of two variables when observations in a population are classified according to some attributes we may use the chi-square test for independence.
+
+This test will indicate only whether or not any association exists between the attributes. To conduct the test, a sample is drawn from the population and the observed frequencies are cross-classified according to the two characteristics so that each observation belongs to one and only one level of each characteristic.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing chi-square test for independence of attributes.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in chi-square test for independence of attributes can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of chi-square test for independence of attributes and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define chi-square test for independence of attributes formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.4` Kolmogorov–Smirnov Goodness of Fit Test
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of kolmogorov–smirnov goodness of fit test.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to categorical data analysis.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+FIT TEST This test has its name on the names of its discovers A. It is a simple non-parametric test for testing whether data follow a specified or assumed distribution or sample has come from a specified or assumed distribution or there is a significant difference between an observed distribution and a theoretical distribution.
+
+Therefore, it is a measure of goodness of fit to a theoretical distribution. The main difference between the chi-square test and Kolmogorov-Smirnov (K-S) test is that the chi-square test is designed for categorical data whereas the K-S test is designed for continuous data. Assumptions This test works under the following assumptions: (i) The sample is randomly selected from some unknown distribution.
+
+(ii) The observations are independent. (iii) The variable under study is continuous. (iv) The variable under study is measured on at least ordinal scale. Let X1, X2,..., Xn be a random sample from a population with unknown continuous distribution function F(x). Generally, we are interested to test whether data follow a specified distribution F0(x) or a sample has come from a specified or assumed distribution or not.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing kolmogorov–smirnov goodness of fit test.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in kolmogorov–smirnov goodness of fit test can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of kolmogorov–smirnov goodness of fit test and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define kolmogorov–smirnov goodness of fit test formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: One-Sample t-Test for Page Latency Benchmark
+> **Problem Statement:**  
+> An engineering team claims server latency is at most $\mu_0 = 200\text{ms}$. A sample of $n = 25$ runs yields sample mean $\bar{x} = 210\text{ms}$ and sample standard deviation $s = 20\text{ms}$. Test the claim at significance level $\alpha = 0.05$.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Hypotheses:** $H_0: \mu \le 200\text{ms}$ vs $H_1: \mu > 200\text{ms}$ (One-tailed test).
+
+2. **Standard Error:**
+$$
+\text{SE} = \frac{s}{\sqrt{n}} = \frac{20}{\sqrt{25}} = \frac{20}{5} = 4\text{ms}
+$$
+
+3. **Test Statistic:**
+$$
+t = \frac{\bar{x} - \mu_0}{\text{SE}} = \frac{210 - 200}{4} = 2.50
+$$
+
+4. **Critical Value ($df = 24, \alpha = 0.05$):** $t_{\text{crit}} = 1.711$.
+
+5. **Conclusion:** Since $t = 2.50 > 1.711$, we **Reject $H_0$**. The latency is statistically significantly higher than 200ms.
+
+#### 🧮 Example 2: 95% Confidence Interval Calculation
+> **Problem Statement:**  
+> Given sample size $n = 64$, sample mean $\bar{x} = 52.0$, and known $\sigma = 8.0$. Calculate the 95% Confidence Interval for population mean $\mu$.
+
+**Detailed Step-by-Step Solution:**
+
+For 95% confidence, $z_{0.025} = 1.96$:
+$$
+\text{Margin of Error} = z \frac{\sigma}{\sqrt{n}} = 1.96 \left(\frac{8}{\sqrt{64}}\right) = 1.96(1.0) = 1.96
+$$
+$$
+\text{CI} = 52.0 \pm 1.96 = [50.04, 53.96]
+$$
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+from scipy import stats
+import numpy as np
+
+# A/B Testing: Two-Sample t-Test
+group_a = np.array([12.1, 14.5, 13.2, 12.8, 15.0, 13.9, 14.2]) # Control
+group_b = np.array([15.2, 16.1, 14.8, 15.9, 17.0, 16.4, 15.8]) # Treatment
+
+t_stat, p_val = stats.ttest_ind(group_a, group_b)
+
+print(f"Group A Mean: {np.mean(group_a):.2f}")
+print(f"Group B Mean: {np.mean(group_b):.2f}")
+print(f"t-statistic: {t_stat:.4f} | p-value: {p_val:.5f}")
+
+if p_val < 0.05:
+    print("Result: Statistically significant uplift detected (Reject H0)!")
+else:
+    print("Result: Insufficient evidence to reject H0.")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -126,7 +223,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 
 > **Answer & Analysis:**  
 > Type I error ( $\alpha$ ): Rejecting $H_0$ when $H_0$ is actually true (False Positive).
-Type II error ( $\beta$ ): Failing to reject $H_0$ when $H_0$ is actually false (False Negative).
+> Type II error ( $\beta$ ): Failing to reject $H_0$ when $H_0$ is actually false (False Negative).
 </details>
 
 <details>

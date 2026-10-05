@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~18 mins | 📄 **Textbook Pages:** 16 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-8_Trees.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-8_Trees.pdf)
 
 ---
 
@@ -64,51 +64,174 @@ $$
 $$
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **AVL Height Bound:** $h < 1.44 \log_2(n + 2) \implies O(\log n) \text{ worst-case search}$
+- **Hash Table Amortized Bound:** $O(1) \text{ lookup when } \alpha = n/m < 0.75$
+- **Comparison Lower Bound:** $\Omega(n \log n) \text{ for comparison sorts}$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `8.2` General Trees
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of general trees.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to trees.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+understanding their implementation and traversal methods in Python, you can effectively utilize them in various applications ranging from file systems to organizational charts. As you continue your journey in programming, mastering general trees will enhance your ability to solve complex problems efficiently.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing general trees.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in general trees can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of general trees and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define general trees formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.3` Binary Trees
-- **Core Concept:** In Binary tree data structure each node has left child node and right child node.
-- **Core Concept:** BINARY TREES: DEFINITION AND STRUCTURE A node of binary tree consist of - - A data element.
-- **Core Concept:** - A reference to the left child (which is also a binary tree).
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In Binary tree data structure each node has left child node and right child node. This chapter will provide an in-depth exploration of binary trees, including their definition, implementation in Python, traversal techniques, practical applications, and best practices. BINARY TREES: DEFINITION AND STRUCTURE A node of binary tree consist of - - A data element.
+
+- A reference to the left child (which is also a binary tree). - A reference to the right child (which is also a binary tree). A sample Binary tree is depicted in the following diagram Linked List Figure 8.1 : A Binary Tree TERMINOLOGY - Node: The primary element that references child nodes - Root: The main node in the tree without any parent - Leaf: A node without children.
+
+- Height: The longest path’s length from the root node to a leaf node TYPES OF BINARY TREES Full Binary Tree A full binary tree has zero or two child nodes. It is sometimes also known as a proper Binary Tree. Complete Binary Tree A complete binary tree has nodes at all levels except the last level.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing binary trees.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in binary trees can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of binary trees and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define binary trees formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.4` Implementing Trees
-- **Core Concept:** To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.
-- **Core Concept:** Each node will hold data and a list of its children.
-- **Core Concept:** TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+IMPLEMENTING GENERAL TREES IN PYTHON To implement a general tree in Python, we can create a `Node` class to represent each node in the tree. Each node will hold data and a list of its children. class Node: def __init__(self, data): self.data = data self.children = [] def add_child(self, child_node): self.children.append(child_node) def __repr__(self): return f"Node({self.data})" ``` Linked List CREATING A GENERAL TREE To create a general tree, we can instantiate nodes and establish parent-child relationships using the `add_child` method.
+
+# Create nodes root = Node("CEO") cto = Node("CTO") cfo = Node("CFO") dev1 = Node("Developer 1") dev2 = Node("Developer 2") # Build the tree root.add_child(cto) root.add_child(cfo) cto.add_child(dev1) cto.add_child(dev2) ``` IMPLEMENTING BINARY TREES IN PYTHON To implement a binary tree in Python, we can create a `Node` class to represent each node in the tree.
+
+class Node: def __init__(self, data): self.data = data self.left = None self.right = None class BinaryTree: def __init__(self): self.root = None ``` CREATING A BINARY TREE To create a binary tree, we can instantiate nodes and establish parent-child relationships. # Create nodes root = Node(1) root.left = Node(2) root.right = Node(3) root.left.left = Node(4) root.left.right = Node(5) ``` BINARY TREE OPERATIONS Let us implement the basic operations that can be performed on a Binary Tree: class BinaryTree: def __init__(self): self.root = None # Initialize an empty tree Trees def insert(self, data): if not self.root: self.root = Node(data) return # Use queue for level order insertion queue = [self.root] while queue: node = queue.pop(0) if not node.left: node.left = Node(data) return else: queue.append(node.left) if not node.right: node.right = Node(data) return else: queue.append(node.right)
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing implementing trees.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in implementing trees can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of implementing trees and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define implementing trees formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.5` Tree Traversal Algorithms
-- **Core Concept:** We shall look at various traversal algorithms in this section.
-- **Core Concept:** TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.
-- **Core Concept:** The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+We shall look at various traversal algorithms in this section. TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner. The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.
+
+TYPES OF TREE TRAVERSAL The main types of tree traversal algorithms are: - Depth-First Traversal: Visits nodes along a branch before backtracking. - Pre-order Traversal - In-order Traversal - Post-order Traversal - Breadth-First Traversal: In this method, we visit the nodes at current depth level before visiting the nodes at next level.
+
+IMPLEMENTING TREE TRAVERSAL ALGORITHMS IN PYTHON To implement tree traversal algorithms, we will first define a binary tree structure using a `Node` class. class Node: def __init__(self, data): self.data = data self.left = None self.right = None ``` Linked List PRE-ORDER TRAVERSAL In pre-order traversal, root node is visited first followed by left subtree and then right subtree.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing tree traversal algorithms.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in tree traversal algorithms can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of tree traversal algorithms and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define tree traversal algorithms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.6` Case Study: An Expression Tree
-- **Core Concept:** In computer science, expression trees are a specialized form of binary trees used to represent expressions.
-- **Core Concept:** Each internal node corresponds to an operator, while the leaf nodes represent operands.
-- **Core Concept:** We can efficientlyevaluate expressions and is widely used in compilers and interpreters.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In computer science, expression trees are a specialized form of binary trees used to represent expressions. Each internal node corresponds to an operator, while the leaf nodes represent operands. We can efficientlyevaluate expressions and is widely used in compilers and interpreters.
+
+In this chapter, we will explore the concept of expression trees, their implementation in Python, and their practical applications. EXPRESSION TREES: DEFINITION AND STRUCTURE An expression tree is a binary tree where: - Each internal node represents an operator (e.g., +, -, *, /).
+
+- Each leaf node represents an operand (e.g., constants or variables). TERMINOLOGY - Operator: A symbol that represents an operation (e.g., addition). - Operand: A value on which the operation is performed. - Subtree: A tree formed by a node and its descendants. IMPLEMENTING AN EXPRESSION TREE IN PYTHON To implement an expression tree in Python, we will define a `Node` class to represent each node in the tree.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing case study: an expression tree.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in case study: an expression tree can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of case study: an expression tree and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define case study: an expression tree formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Solving Recurrence via Master Theorem
+> **Problem Statement:**  
+> Solve the recurrence relation $T(n) = 2T(n/2) + n$ modeling Mergesort.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
+2. **Compare $\log_b a$ and $d$:**
+$$
+\log_b a = \log_2 2 = 1
+$$
+Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
+
+3. **Conclusion:**
+$$
+T(n) = \Theta(n^d \log n) = \Theta(n \log n)
+$$
+
+#### 🧮 Example 2: AVL Tree Rotation Sequence
+> **Problem Statement:**  
+> An empty AVL tree receives sequential insertions: 10, 20, 30. Trace the balance factors and demonstrate the required rotation.
+
+**Detailed Step-by-Step Solution:**
+
+1. Insert 10: $BF = 0$.
+2. Insert 20: 10 has $BF = -1$, 20 has $BF = 0$.
+3. Insert 30: Node 10 has left height 0, right height 2 $\implies BF(10) = -2$ (Unbalanced: Right-Right condition).
+4. **Apply Single Left Rotation on Node 10:**
+- Node 20 becomes new root.
+- Node 10 becomes left child of 20.
+- Node 30 remains right child of 20.
+New Balance Factors: $BF(20) = 0, \; BF(10) = 0, \; BF(30) = 0$. Tree balanced.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Custom Hash Map with Collision Chaining
+class SimpleHashMap:
+    def __init__(self, capacity=8):
+        self.capacity = capacity
+        self.buckets = [[] for _ in range(capacity)]
+
+    def _hash(self, key):
+        return hash(key) % self.capacity
+
+    def put(self, key, value):
+        b_idx = self._hash(key)
+        for i, (k, v) in enumerate(self.buckets[b_idx]):
+            if k == key:
+                self.buckets[b_idx][i] = (key, value)
+                return
+        self.buckets[b_idx].append((key, value))
+
+    def get(self, key):
+        b_idx = self._hash(key)
+        for k, v in self.buckets[b_idx]:
+            if k == key:
+                return v
+        return None
+
+hm = SimpleHashMap()
+hm.put("user_101", {"name": "Alice", "role": "Data Scientist"})
+hm.put("user_102", {"name": "Bob", "role": "ML Engineer"})
+print("Lookup user_101:", hm.get("user_101"))
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

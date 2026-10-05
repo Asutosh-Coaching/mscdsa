@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~31 mins | 📄 **Textbook Pages:** 18 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCSL-065_Data_Science_Lab/MCSL-065_English_MCSL-065_Data_Science_Lab.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCSL-065_Data_Science_Lab/MCSL-065_English_MCSL-065_Data_Science_Lab.pdf)
 
 ---
 
@@ -51,6 +51,10 @@ flowchart TD
 > - **Formal Definition:** A designated superset containing all objects and entities under active consideration in a given problem or domain. Every set $X$ in that context satisfies $X \subseteq U$.  
 > - 💡 **Practical Intuition & Analogy:** *The entire master database table or global population before applying any filter conditions.*
 
+> 📌 **Complement $A^c$ or $A'$**  
+> - **Formal Definition:** The set of all elements in the universal set $U$ that do not belong to $A$: $A^c = \lbrace x \in U \mid x \notin A \rbrace = U \setminus A$.  
+> - 💡 **Practical Intuition & Analogy:** *The NOT condition in filtering: selecting all records that do NOT match a criteria.*
+
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Power Set Cardinality Theorem
 $$
@@ -80,35 +84,131 @@ $$
 $$
 \vert A \times B\vert = \vert A\vert \times \vert B\vert = \lbrace (a, b) \mid a \in A, b \in B \rbrace
 $$
-- **Explanation:** Basis of relational database `CROSS JOIN`, generating every ordered pair between two entities.
+- **Explanation:** Basis of relational database CROSS JOIN, generating every ordered pair between two entities.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Idempotent Laws:** $A \cup A = A \quad \text{and} \quad A \cap A = A$
+- **Identity Laws:** $A \cup \emptyset = A \quad \text{and} \quad A \cap U = A$
+- **Domination Laws:** $A \cup U = U \quad \text{and} \quad A \cap \emptyset = \emptyset$
+- **Commutative Laws:** $A \cup B = B \cup A \quad \text{and} \quad A \cap B = B \cap A$
+- **Associative Laws:** $(A \cup B) \cup C = A \cup (B \cup C) \quad \text{and} \quad (A \cap B) \cap C = A \cap (B \cap C)$
+- **Distributive Laws:** $A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \quad \text{and} \quad A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+- **Complement Laws:** $A \cup A^c = U, \quad A \cap A^c = \emptyset, \quad (A^c)^c = A$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `1.1` Foundational Principles of MCSL-065 English MCSL-065 Data Science Lab
-- **Core Concept:** This enables the students to effectively summarize and communicate the data-driven insights, which is a core requirement in both academic research and industry analytics.
-- **Core Concept:** Session 1-5 are based on units 8, 9 and 10, of MCS-062 having focus on the use of Microsoft Excel as a practical tool for conducting descriptive and inferential statistics.
-- **Core Concept:** Students will apply their theoretical knowledge to perform frequency analysis, calculate measures of central tendency and dispersion, and execute hypothesis testing procedures including t-tests, ANOVA, and regression analysis.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Foundational Principles of MCSL-065 English MCSL-065 Data Science Lab** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **MCSL-065 English MCSL-065 Data Science Lab**, understanding foundational principles of mcsl-065 english mcsl-065 data science lab is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing foundational principles of mcsl-065 english mcsl-065 data science lab.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in foundational principles of mcsl-065 english mcsl-065 data science lab can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of foundational principles of mcsl-065 english mcsl-065 data science lab and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define foundational principles of mcsl-065 english mcsl-065 data science lab formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `1.2` Core Analytical Methodologies
-- **Core Concept:** After completing this lab course, you will be able to: • Visualize data using various plot types to interpret and communicate insights.
-- **Core Concept:** • Perform descriptive statistical analysis.
-- **Core Concept:** • Apply inferential statistics and forecasting techniques.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Core Analytical Methodologies** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **MCSL-065 English MCSL-065 Data Science Lab**, understanding core analytical methodologies is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing core analytical methodologies.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in core analytical methodologies can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of core analytical methodologies and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define core analytical methodologies formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `1.3` Practical Application in Data Science
-- **Core Concept:** • Students should attempt all problems/assignments, given in the session wise list.
-- **Core Concept:** • For each GUI-based task assigned in the respective session you should add comments for better readability of the steps involved in the execution.
-- **Core Concept:** • For each programming related task assigned in the respective session you should add comments above each function in the code, including the main function.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Practical Application in Data Science** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **MCSL-065 English MCSL-065 Data Science Lab**, understanding practical application in data science is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing practical application in data science.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in practical application in data science can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of practical application in data science and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define practical application in data science formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Three-Set Inclusion-Exclusion Survey Analysis
+> **Problem Statement:**  
+> In a cohort of 120 Data Science students, 65 know Python ( $P$ ), 50 know SQL ( $S$ ), and 40 know R ( $R$ ). Furthermore, 25 know both Python and SQL, 20 know both Python and R, 15 know both SQL and R, and 8 know all three technologies. How many students know at least one technology, and how many know none?
+
+**Detailed Step-by-Step Solution:**
+
+Applying the Principle of Inclusion-Exclusion for 3 sets:
+
+$$
+\begin{aligned} \vert P \cup S \cup R\vert & = \vert P\vert + \vert S\vert + \vert R\vert - (\vert P \cap S\vert + \vert P \cap R\vert + \vert S \cap R\vert) + \vert P \cap S \cap R\vert \\ & = 65 + 50 + 40 - (25 + 20 + 15) + 8 \\ & = 155 - 60 + 8 = 103 \text{ students.} \end{aligned}
+$$
+
+The count of students who know none of the three languages is:
+
+$$
+\vert(P \cup S \cup R)^c\vert = \vert U\vert - \vert P \cup S \cup R\vert = 120 - 103 = 17 \text{ students.}
+$$
+
+#### 🧮 Example 2: Power Set Enumeration and Proper Subset Calculation
+> **Problem Statement:**  
+> Given $S = \lbrace 1, 2, 3 \rbrace$. Calculate $\vert\mathcal{P}(S)\vert$, enumerate every element, and find the number of proper subsets.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Cardinality:** With $n = \vert S\vert = 3$, the total subsets are $\vert\mathcal{P}(S)\vert = 2^3 = 8$.
+
+2. **Enumeration:**
+$$
+\mathcal{P}(S) = \lbrace \emptyset, \lbrace 1\rbrace, \lbrace 2\rbrace, \lbrace 3\rbrace, \lbrace 1, 2\rbrace, \lbrace 1, 3\rbrace, \lbrace 2, 3\rbrace, \lbrace 1, 2, 3\rbrace \rbrace
+$$
+
+3. **Proper Subsets:** Since proper subsets exclude the set itself, the total count is $2^n - 1 = 8 - 1 = 7$.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Practical Set Operations in Data Science
+python_devs = {"Alice", "Bob", "Charlie", "David", "Eva"}
+sql_devs = {"Charlie", "David", "Eva", "Frank", "Grace"}
+
+# 1. Union (Full talent pool)
+all_talent = python_devs | sql_devs
+print(f"Total Unique Talent: {len(all_talent)} -> {all_talent}")
+
+# 2. Intersection (Full-Stack Data Engineers)
+full_stack = python_devs & sql_devs
+print(f"Full-Stack Talent (Python & SQL): {len(full_stack)} -> {full_stack}")
+
+# 3. Difference (Python Specialists without SQL)
+python_only = python_devs - sql_devs
+print(f"Python Only: {python_only}")
+
+# 4. Jaccard Similarity Coefficient: |A ∩ B| / |A ∪ B|
+jaccard_sim = len(full_stack) / len(all_talent)
+print(f"Jaccard Skill Overlap: {jaccard_sim:.3f}")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -138,7 +238,10 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 4:</b> Explain Russell's Paradox in naive set theory. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Let $R = \lbrace X \mid X \notin X\rbrace$ be the set of all sets that do not contain themselves. If $R \in R$, then by definition $R \notin R$. If $R \notin R$, then by definition $R \in R$. This contradiction proves that naive unrestricted set comprehension leads to paradoxes, necessitating axiomatic set theory (ZFC).
+> Let $R = \lbrace X \mid X 
+> otin X\rbrace$ be the set of all sets that do not contain themselves. If $R \in R$, then by definition $R 
+> otin R$. If $R 
+> otin R$, then by definition $R \in R$. This contradiction proves that naive unrestricted set comprehension leads to paradoxes, necessitating axiomatic set theory (ZFC).
 </details>
 
 ### 🎯 Executive Module Wrap-Up

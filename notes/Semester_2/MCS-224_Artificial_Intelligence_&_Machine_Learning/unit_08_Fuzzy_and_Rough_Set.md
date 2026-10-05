@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~47 mins | 📄 **Textbook Pages:** 23 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-8_Fuzzy_and_Rough_Set.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-8_Fuzzy_and_Rough_Set.pdf)
 
 ---
 
@@ -53,6 +53,10 @@ flowchart TD
 > - **Formal Definition:** A designated superset containing all objects and entities under active consideration in a given problem or domain. Every set $X$ in that context satisfies $X \subseteq U$.  
 > - 💡 **Practical Intuition & Analogy:** *The entire master database table or global population before applying any filter conditions.*
 
+> 📌 **Complement $A^c$ or $A'$**  
+> - **Formal Definition:** The set of all elements in the universal set $U$ that do not belong to $A$: $A^c = \lbrace x \in U \mid x \notin A \rbrace = U \setminus A$.  
+> - 💡 **Practical Intuition & Analogy:** *The NOT condition in filtering: selecting all records that do NOT match a criteria.*
+
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Power Set Cardinality Theorem
 $$
@@ -82,53 +86,173 @@ $$
 $$
 \vert A \times B\vert = \vert A\vert \times \vert B\vert = \lbrace (a, b) \mid a \in A, b \in B \rbrace
 $$
-- **Explanation:** Basis of relational database `CROSS JOIN`, generating every ordered pair between two entities.
+- **Explanation:** Basis of relational database CROSS JOIN, generating every ordered pair between two entities.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Idempotent Laws:** $A \cup A = A \quad \text{and} \quad A \cap A = A$
+- **Identity Laws:** $A \cup \emptyset = A \quad \text{and} \quad A \cap U = A$
+- **Domination Laws:** $A \cup U = U \quad \text{and} \quad A \cap \emptyset = \emptyset$
+- **Commutative Laws:** $A \cup B = B \cup A \quad \text{and} \quad A \cap B = B \cap A$
+- **Associative Laws:** $(A \cup B) \cup C = A \cup (B \cup C) \quad \text{and} \quad (A \cap B) \cap C = A \cap (B \cap C)$
+- **Distributive Laws:** $A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \quad \text{and} \quad A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+- **Complement Laws:** $A \cup A^c = U, \quad A \cap A^c = \emptyset, \quad (A^c)^c = A$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `8.2` Fuzzy Systems
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of fuzzy systems.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to fuzzy and rough set.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Fuzzy Systems** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Fuzzy and Rough Set**, understanding fuzzy systems is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fuzzy systems.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fuzzy systems can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of fuzzy systems and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define fuzzy systems formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.4` Fuzzy Set Representation
-- **Core Concept:** (ii) A ∩ B is the largest subset of X contained in both A and B.
-- **Core Concept:** (iii) The complement A' is such that (a) A and A' do not have any element in common and (b) Every element of the universal set is in either A or A'.
-- **Core Concept:** Thus, smaller the value of degree of membership, a sort of lesser it is a member of the Fuzzy set.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+For Crisp sets, we have the operations of Union, intersection & complementation, as illustrated by the example: Let X = {x1, x2, …, x10} A = {x2, x3, x4, x5} B = {x1, x3, x5, x7, x9} Then A ∪ B = {x1, x2, x3, x4, x5, x7, x9} A ∩ B = {x3, x5} A' or X ~ A = {x1, x6, x7, x8, x9, x10} The concepts of Union, intersection and complementation for crisp sets may be extended to FUZZY sets after observing that for crisp sets A and B, we have (i) A ∪ B is the smallest subset of X containing both A and B.
+
+(ii) A ∩ B is the largest subset of X contained in both A and B. (iii) The complement A' is such that (a) A and A' do not have any element in common and (b) Every element of the universal set is in either A or A'. Fuzzy Union, Intersection, Complementation: In order to motivate proper definitions of these operations, we may recall (1) when a crisp set is treated as a fuzzy set then (i) membership in a crisp set is indicated by degree/value of membership as 1 (one) in the corresponding Fuzzy set, (ii) non-membership of a crisp set is indicated by degree/value of membership as zero in the corresponding Fuzzy Set.
+
+Thus, smaller the value of degree of membership, a sort of lesser it is a member of the Fuzzy set. (2) While taking union of Crisp sets, members of both sets are included, and none else. However, in each Fuzzy set, all members of the universal set occur but their degrees determine the level of membership in the fuzzy set.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fuzzy set representation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fuzzy set representation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of fuzzy set representation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define fuzzy set representation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.5` Fuzzy Reasoning
-- **Core Concept:** When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.
-- **Core Concept:** Hence, more additional facts become available in the knowledge base with the addition of each axiom.
-- **Core Concept:** Adding of axioms to the knowledge base increases the amount of knowledge contained in the knowledge base.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The Fuzzy Reasoning is taken care by the following systems in general: 1) Non Monotonic reasoning Systems 2) Default Reasoning Systems 3) Closed World Assumption Systems Let’s start our discussion with the understanding of Non Monotonic Reasoning Systems 1) NON-MONOTONIC REASONING SYSTEMS Monotonic Reasoning: The conclusion drawn in PL and FOPL are only through (valid) deductive methods.
+
+When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions. Hence, more additional facts become available in the knowledge base with the addition of each axiom. Adding of axioms to the knowledge base increases the amount of knowledge contained in the knowledge base.
+
+Therefore, the set of facts through inferences in such systems can only grow larger with addition of each axiomatic fact. Adding of new facts can not reduce the size of K.B. Thus, amount of knowledge monotonically increases with the number of independent premises due to new facts that become available.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fuzzy reasoning.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fuzzy reasoning can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of fuzzy reasoning and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define fuzzy reasoning formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.6` Fuzzy Inference
-- **Core Concept:** PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.
-- **Core Concept:** However, due to limitations of these systems for making inferences, as discussed earlier, we must have other systems inferences.
-- **Core Concept:** The abductive inference is useful in diagnostic applications.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true. However, due to limitations of these systems for making inferences, as discussed earlier, we must have other systems inferences. In addition to Default Reasoning systems and Closed World Assumption systems, we have the following useful reasoning systems: 1) Abductive inference System, which is based on the use of causal knowledge to explain and justify a (possibly invalid) conclusion.
+
+Abduction Rule (P → Q , Q) / P Note that abductive inference rule is different form Modus Ponens inference rule in that in abductive inference rule, the consequent of P → Q, i.e., Q is assumed to be given as True and the antecedent of P → Q, i.e., P is inferred. The abductive inference is useful in diagnostic applications.
+
+For example while diagnosing a disease (say P), the doctor asks for the symptoms (say Q). Also, Fuzzy and Rough Sets the doctor knows that for given the disease, say, Malaria (P); the symptoms include high fever starting with feeling of cold etc. (Q) i.e., doctor knows P→Q The doctor then attempts to diagnose the disease (i.e., P) from symptoms.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fuzzy inference.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fuzzy inference can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of fuzzy inference and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define fuzzy inference formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.7` Rough Set Theory
-- **Core Concept:** Rough set theory can be regarded as a new mathematical tool for imperfect data analysis.
-- **Core Concept:** The theory has found applications in many domains, such as decision support, engineering, environment, banking, medicine and others.
-- **Core Concept:** It is a mechanism to deal with imprecise/imprecise knowledge, dealing with such a kind of knowledge is particularly area of research for the scientists, working in the field of Artificial Intelligence.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Rough set theory can be regarded as a new mathematical tool for imperfect data analysis. The theory has found applications in many domains, such as decision support, engineering, environment, banking, medicine and others. It is a mechanism to deal with imprecise/imprecise knowledge, dealing with such a kind of knowledge is particularly area of research for the scientists, working in the field of Artificial Intelligence.
+
+There are various approaches to handle the imprecise knowledge, the most successful one is that of the Fuzzy logic, which was proposed by L.Zadeh, we discussed the same in our earlier sections of this unit. In this section we will try to understand the Rough set theory approach, to manage the imprecise knowledge, it was proposed by Z.
+
+This theory is quite comprehensive and may be dealt as an independent discipline. It is quite connected with other theories and hence connected with various fields like AI, Machine Learning, Cognitive sciences, data mining, pattern recognition etc. Rough set theory is quite comprehensive because of the following reasons : • It requires no preliminary/additional information about the data as if it is the requirement of probability in statistics, or membership grades in the fuzzy set theory.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing rough set theory.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in rough set theory can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of rough set theory and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define rough set theory formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Three-Set Inclusion-Exclusion Survey Analysis
+> **Problem Statement:**  
+> In a cohort of 120 Data Science students, 65 know Python ( $P$ ), 50 know SQL ( $S$ ), and 40 know R ( $R$ ). Furthermore, 25 know both Python and SQL, 20 know both Python and R, 15 know both SQL and R, and 8 know all three technologies. How many students know at least one technology, and how many know none?
+
+**Detailed Step-by-Step Solution:**
+
+Applying the Principle of Inclusion-Exclusion for 3 sets:
+
+$$
+\begin{aligned} \vert P \cup S \cup R\vert & = \vert P\vert + \vert S\vert + \vert R\vert - (\vert P \cap S\vert + \vert P \cap R\vert + \vert S \cap R\vert) + \vert P \cap S \cap R\vert \\ & = 65 + 50 + 40 - (25 + 20 + 15) + 8 \\ & = 155 - 60 + 8 = 103 \text{ students.} \end{aligned}
+$$
+
+The count of students who know none of the three languages is:
+
+$$
+\vert(P \cup S \cup R)^c\vert = \vert U\vert - \vert P \cup S \cup R\vert = 120 - 103 = 17 \text{ students.}
+$$
+
+#### 🧮 Example 2: Power Set Enumeration and Proper Subset Calculation
+> **Problem Statement:**  
+> Given $S = \lbrace 1, 2, 3 \rbrace$. Calculate $\vert\mathcal{P}(S)\vert$, enumerate every element, and find the number of proper subsets.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Cardinality:** With $n = \vert S\vert = 3$, the total subsets are $\vert\mathcal{P}(S)\vert = 2^3 = 8$.
+
+2. **Enumeration:**
+$$
+\mathcal{P}(S) = \lbrace \emptyset, \lbrace 1\rbrace, \lbrace 2\rbrace, \lbrace 3\rbrace, \lbrace 1, 2\rbrace, \lbrace 1, 3\rbrace, \lbrace 2, 3\rbrace, \lbrace 1, 2, 3\rbrace \rbrace
+$$
+
+3. **Proper Subsets:** Since proper subsets exclude the set itself, the total count is $2^n - 1 = 8 - 1 = 7$.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Practical Set Operations in Data Science
+python_devs = {"Alice", "Bob", "Charlie", "David", "Eva"}
+sql_devs = {"Charlie", "David", "Eva", "Frank", "Grace"}
+
+# 1. Union (Full talent pool)
+all_talent = python_devs | sql_devs
+print(f"Total Unique Talent: {len(all_talent)} -> {all_talent}")
+
+# 2. Intersection (Full-Stack Data Engineers)
+full_stack = python_devs & sql_devs
+print(f"Full-Stack Talent (Python & SQL): {len(full_stack)} -> {full_stack}")
+
+# 3. Difference (Python Specialists without SQL)
+python_only = python_devs - sql_devs
+print(f"Python Only: {python_only}")
+
+# 4. Jaccard Similarity Coefficient: |A ∩ B| / |A ∪ B|
+jaccard_sim = len(full_stack) / len(all_talent)
+print(f"Jaccard Skill Overlap: {jaccard_sim:.3f}")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -158,7 +282,10 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 4:</b> Explain Russell's Paradox in naive set theory. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Let $R = \lbrace X \mid X \notin X\rbrace$ be the set of all sets that do not contain themselves. If $R \in R$, then by definition $R \notin R$. If $R \notin R$, then by definition $R \in R$. This contradiction proves that naive unrestricted set comprehension leads to paradoxes, necessitating axiomatic set theory (ZFC).
+> Let $R = \lbrace X \mid X 
+> otin X\rbrace$ be the set of all sets that do not contain themselves. If $R \in R$, then by definition $R 
+> otin R$. If $R 
+> otin R$, then by definition $R \in R$. This contradiction proves that naive unrestricted set comprehension leads to paradoxes, necessitating axiomatic set theory (ZFC).
 </details>
 
 <details>

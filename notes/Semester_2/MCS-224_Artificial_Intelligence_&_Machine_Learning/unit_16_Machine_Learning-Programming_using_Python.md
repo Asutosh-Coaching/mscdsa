@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~14 mins | 📄 **Textbook Pages:** 20 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-16_Machine_Learning-Programming_using_Python.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-16_Machine_Learning-Programming_using_Python.pdf)
 
 ---
 
@@ -74,60 +74,230 @@ $$
 $$
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Heuristic Consistency Condition:** $h(n) \le c(n, a, n') + h(n') \implies \text{Monotonic (Guarantees A* optimality on graphs)}$
+- **SVM Dual Formulation:** $\max_\alpha \sum \alpha_i - \frac{1}{2}\sum \alpha_i \alpha_j y_i y_j K(\mathbf{x}_i, \mathbf{x}_j)$
+- **Universal Approximation Theorem:** A feedforward network with one non-linear hidden layer can approximate any continuous function on compact subsets of $\mathbb{R}^n$.
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `16.2` Classification Algorithms
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of classification algorithms.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to machine learning-programming using python.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+We learned that Suppose the value of K is 3. The KNN algorithm starts by calculating the distance of point X from all the points. It then finds the 3 nearest points with least distance to point X In the example shown below following steps are performed: • In Step 1, the scikit-learn package is used to import the k-nearest neighbour algorithm.
+
+is to create the feature variables and the target variables. Separate the data into the test data and the training data. • Step 4.Generate a k-NN model using neighbours value. Train the model using the data or adjust the model based on the data. • Proceed to Step 6, which is to make a forecast.
+
+Now, in this section, we will see how Python's Scikit-Learn library can be used to implement the KNN algorithm Implementation code in Python The screenshot of the executed code is given below Machine Learning - II
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing classification algorithms.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in classification algorithms can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of classification algorithms and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define classification algorithms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `16.2.1` Naïve Bayes
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of naïve bayes.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to machine learning-programming using python.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Naïve Bayes** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Machine Learning-Programming using Python**, understanding naïve bayes is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing naïve bayes.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in naïve bayes can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of naïve bayes and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define naïve bayes formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `16.2.2` K-Nearest Neighbour (K-NN)
-- **Core Concept:** You have already discussed this classifier in detail in Block 3 Unit 10 of this course, you may refer to Block 3 Unit 10 to understand the concept.
-- **Core Concept:** We learned that Suppose the value of K is 3.
-- **Core Concept:** The KNN algorithm starts by calculating the distance of point X from all the points.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+We learned that Suppose the value of K is 3. The KNN algorithm starts by calculating the distance of point X from all the points. It then finds the 3 nearest points with least distance to point X In the example shown below following steps are performed: • In Step 1, the scikit-learn package is used to import the k-nearest neighbour algorithm.
+
+is to create the feature variables and the target variables. Separate the data into the test data and the training data. • Step 4.Generate a k-NN model using neighbours value. Train the model using the data or adjust the model based on the data. • Proceed to Step 6, which is to make a forecast.
+
+Now, in this section, we will see how Python's Scikit-Learn library can be used to implement the KNN algorithm Implementation code in Python The screenshot of the executed code is given below Machine Learning - II
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing k-nearest neighbour (k-nn).
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in k-nearest neighbour (k-nn) can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of k-nearest neighbour (k-nn) and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define k-nearest neighbour (k-nn) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `16.2.3` Decision Trees
-- **Core Concept:** A decision tree is a type of supervised machine learning algorithm that may be used for both regression and classification tasks.
-- **Core Concept:** It is one of the most popular and widely used machine learning techniques.
-- **Core Concept:** In this case, the decision tree method creates a node for each attribute present in the dataset, with the attribute that is considered to be the most significant being placed at the top of the tree.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A decision tree is a type of supervised machine learning algorithm that may be used for both regression and classification tasks. It is one of the most popular and widely used machine learning techniques. In this case, the decision tree method creates a node for each attribute present in the dataset, with the attribute that is considered to be the most significant being placed at the top of the tree.
+
+When we first get started, we will think of the entire training set as the root. There must be a categorical breakdown of the feature values. Before beginning to develop the model, the values are discretized in order to determine whether or not they are continuous. A recursive process distributes records according to the attribute values of each record.
+
+A statistical method is utilised in order to determine which qualities should be placed at the tree's root and which should be placed at internal nodes. Implementation code in Python The screenshot of the executed code is given below Machine Learning – Programming Using Python Machine Learning - II Machine Learning – Programming Using Python
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing decision trees.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in decision trees can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of decision trees and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define decision trees formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `16.2.4` Logistic Regression
-- **Core Concept:** Logistic Regression (LR) is a classification algorithm that is used in Machine Learning to predict the likelihood of a categorical dependent variable.
-- **Core Concept:** It is also known as "logistic regression." The dependent variable in logistic regression is a binary variable, which means that it comprises data that is either recorded as 1 (yes, success, etc.) or 0.
-- **Core Concept:** It should be brought to your attention that the Naive Bayes model is a generative model, whereas the LR model is a discriminative model.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Logistic Regression (LR) is a classification algorithm that is used in Machine Learning to predict the likelihood of a categorical dependent variable. It is also known as "logistic regression." The dependent variable in logistic regression is a binary variable, which means that it comprises data that is either recorded as 1 (yes, success, etc.) or 0.
+
+(no, failure, etc.). It should be brought to your attention that the Naive Bayes model is a generative model, whereas the LR model is a discriminative model. LR performs better than naive bayes when it comes to colinearity. This is because naive bayes expects all of the characteristics to be independent, while LR does not.
+
+Naive bayes works well with small datasets. Implementation code in Python The screenshot of the executed code is given below Machine Learning - II
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing logistic regression.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in logistic regression can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of logistic regression and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define logistic regression formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `16.2.5` Support Vector Machines
-- **Core Concept:** Support Vector Machine, more usually referred to as SVM, is a technique for supervised and linear machine learning that is most frequently utilised for the purpose of addressing classification issues.
-- **Core Concept:** Support Vector Classification is another name for SVM.
-- **Core Concept:** In addition, there is a subset of SVM known as SVR, which stands for Support Vector Regression.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Support Vector Machine, more usually referred to as SVM, is a technique for supervised and linear machine learning that is most frequently utilised for the purpose of addressing classification issues. Support Vector Classification is another name for SVM. In addition, there is a subset of SVM known as SVR, which stands for Support Vector Regression.
+
+SVR applies the similar concepts Machine Learning – Programming Using Python to the problem-solving process when addressing regression issues. SVM also offers a method known as the kernel method, which is also known as the kernel SVM. This method enables us to deal with non-linearity.
+
+The following are the steps involved in implementation: • Import the Libraries • Make sure the Dataset is loaded. • Dataset will be divided into X and Y. • Create a Training set and a Test set from the X and Y Datasets. • Scaling the features should be done. • Ensure that the SVM is adjusted to the Training set.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing support vector machines.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in support vector machines can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of support vector machines and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define support vector machines formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `16.3` Regression Algorithms
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Regression Algorithms** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Machine Learning-Programming using Python**, understanding regression algorithms is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing regression algorithms.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in regression algorithms can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define regression algorithms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `16.3.1` Linear Regresssion
+##### 📘 Theoretical Principles & In-Depth Exposition
+The purpose of a linear regression model is to determine whether or not there is a connection between one or more characteristics (also known as independent variables) and a target variable that is continuous (dependent variable). Linear Regression is referred to as Uni-variate Linear Regression when there is only one feature, and it is referred to as Several Linear Regression when there are multiple features.
+
+Machine Learning – Programming Using Python Following are the stages involved in the implementation of a linear regression model: • Firstly, initialise the parameters. • Given the value of an independent variable, predict what the value of a dependent variable will be. • Determine the amount of error that each forecast has for each data point.
+
+• Using a0 and a1, perform the calculation for the partial derivative. • Add up the individual costs that you have determined for each of the numbers. Implementation code in Python The screenshot of the executed code is given below Machine Learning - II Machine Learning – Programming Using Python OUTPUT:
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing linear regresssion.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in linear regresssion can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define linear regresssion formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Shannon Entropy and Information Gain Calculation
+> **Problem Statement:**  
+> A training dataset $S$ has 14 instances: 9 Positive ($+$) and 5 Negative ($-$). An attribute $A$ splits $S$ into $S_1$ (6 $+$, 2 $-$) and $S_2$ (3 $+$, 3 $-$). Compute Entropy $H(S)$ and Information Gain $IG(S, A)$.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Parent Entropy $H(S)$:**
+$$
+H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
+$$
+
+2. **Subset Entropies:**
+- For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
+- For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
+
+3. **Weighted Child Entropy:**
+$$
+H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
+$$
+
+4. **Information Gain:**
+$$
+IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
+$$
+(Attribute provides 0.048 bits of entropy reduction).
+
+#### 🧮 Example 2: A* Search Step Evaluation
+> **Problem Statement:**  
+> In graph navigation, node $N$ has exact path cost from start $g(N) = 14$ and straight-line heuristic to goal $h(N) = 11$. For node $M$, $g(M) = 18, h(M) = 6$. Which node is expanded next by A*?
+
+**Detailed Step-by-Step Solution:**
+
+1. Compute $f(n) = g(n) + h(n)$:
+- $f(N) = 14 + 11 = 25$
+- $f(M) = 18 + 6 = 24$
+
+2. Decision: A* selects the node with minimal $f(n)$. Since $f(M) = 24 < f(N) = 25$, **Node $M$ is expanded next**.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import numpy as np
+
+# Decision Tree Entropy and Information Gain from scratch
+def entropy(labels):
+    counts = np.bincount(labels)
+    probs = counts[counts > 0] / len(labels)
+    return -np.sum(probs * np.log2(probs))
+
+def information_gain(parent_labels, left_split, right_split):
+    h_parent = entropy(parent_labels)
+    n = len(parent_labels)
+    h_children = (len(left_split)/n)*entropy(left_split) + (len(right_split)/n)*entropy(right_split)
+    return h_parent - h_children
+
+# Sample binary targets: 9 ones, 5 zeros
+y_parent = np.array([1]*9 + [0]*5)
+y_left = np.array([1]*6 + [0]*2)
+y_right = np.array([1]*3 + [0]*3)
+
+ig = information_gain(y_parent, y_left, y_right)
+print(f"Parent Entropy: {entropy(y_parent):.4f}")
+print(f"Information Gain: {ig:.4f} bits")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -150,7 +320,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 3:</b> Why is the Softmax function used in multi-class classification neural networks? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to $1$.
+> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
 </details>
 
 <details>

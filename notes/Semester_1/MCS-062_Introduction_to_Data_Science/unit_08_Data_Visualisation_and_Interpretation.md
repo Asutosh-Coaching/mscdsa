@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~59 mins | 📄 **Textbook Pages:** 49 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-8_Data_Visualisation_and_Interpretation.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-8_Data_Visualisation_and_Interpretation.pdf)
 
 ---
 
@@ -68,60 +68,226 @@ Sk_1 = \frac{\text{Mean} - \text{Mode}}{\sigma} \quad \text{or} \quad Sk_2 = \fr
 $$
 - **Explanation:** Measures asymmetry: Positive skew means mean > median (right tail); negative skew means mean < median (left tail).
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Variance Scaling Rule:** $\text{Var}(aX + b) = a^2 \text{Var}(X)$
+- **Standard Deviation Scaling:** $\sigma(aX + b) = \vert a\vert \sigma(X)$
+- **Empirical Rule (Normal Distribution):** 68% within $\mu \pm 1\sigma$, 95% within $\mu \pm 2\sigma$, 99.7% within $\mu \pm 3\sigma$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `8.2` Different Types of Plots
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of different types of plots.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data visualisation and interpretation.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Different Types of Plots** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Data Visualisation and Interpretation**, understanding different types of plots is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing different types of plots.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in different types of plots can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of different types of plots and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define different types of plots formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.3` Histograms
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of histograms.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data visualisation and interpretation.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Histograms** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Data Visualisation and Interpretation**, understanding histograms is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing histograms.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in histograms can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of histograms and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define histograms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.4` Box Plots
-- **Core Concept:** Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.
-- **Core Concept:** It is a visual depiction of data that aids in determining how widely distributed or how much the data values change.
-- **Core Concept:** They are utilised for data analysis wherein the graphical representations are used to determine the following: 1.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+BOX PLOTS Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum. It is a visual depiction of data that aids in determining how widely distributed or how much the data values change.
+
+These box plots make it simple to compare the 20-25 26-30 31-35 36-40 41-45 46-50 Population Size Age Group (Bins) Population data of a group of 100 people Histogram Data Visualization and Interpretation distributions since it makes the centre, spread, and overall range understandable.
+
+They are utilised for data analysis wherein the graphical representations are used to determine the following: 1. Shape of Distribution 2. Variability of Data Constructing a Box plot: The two components of the graphic are described by their names: the box, which shows the median value of data along with the first and third quartiles (25 percentile and 75 percentile), and the whiskers, which shows the remaining data.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing box plots.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in box plots can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of box plots and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define box plots formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.5` Scatter Plots
-- **Core Concept:** A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.
-- **Core Concept:** It works particularly well for quickly identifying possible correlations between different data points.
-- **Core Concept:** The relationship between multiple variables can be efficiently studied using scatter plots, which show whether one variable is a good predictor of another or whether they normally fluctuate independently.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+SCATTER PLOTS A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables. It works particularly well for quickly identifying possible correlations between different data points. The relationship between multiple variables can be efficiently studied using scatter plots, which show whether one variable is a good predictor of another or whether they normally fluctuate independently.
+
+Multiple distinct data points are displayed on a single graph in a scatter plot. Following that, the chart can be enhanced with analytics like trend lines or cluster analysis. It is especially useful for quickly identifying potential correlations between data points. Constructing a Scatter Plot: Scatter plots are mathematical diagrams or plots that rely on Cartesian coordinates.
+
+In this type of graph, the categories being compared are represented by the circles on the chart (shown by the colour of the circles) and the numerical volume of the data (indicated by the circle size). One colour on the graph allows you to represent two values for two variables related to a data set, but two colours can also be used to include a third variable.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing scatter plots.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in scatter plots can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of scatter plots and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define scatter plots formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.6` Heat Map
-- **Core Concept:** Heatmaps are two-dimensional graphics that show data trends through colour shading.
-- **Core Concept:** They are an example of a part-to-whole chart in which values are represented using colours.
-- **Core Concept:** A basic heat map offers a quick visual representation of the data.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+HEAT MAP Heatmaps are two-dimensional graphics that show data trends through colour shading. They are an example of a part-to-whole chart in which values are represented using colours. A basic heat map offers a quick visual representation of the data. A user can comprehend complex data sets with the help of more intricate heat maps.
+
+Heat maps can be presented in a variety of ways, but they all have one thing in common: they all make use of colour to convey correlations between data values. Heat maps are more frequently utilized to present a more comprehensive view of massive amounts of data. It is especially helpful because colours are simpler to understand and identify than plain numbers.
+
+Heat maps are highly flexible and effective at highlighting trends. Heatmaps are naturally self-explanatory, in contrast to other data visualisations that require interpretation. The greater the quantity/volume, the deeper the colour (or the higher the value, the tighter the dispersion, etc.).
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing heat map.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in heat map can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of heat map and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define heat map formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `8.7` Bubble Chart
-- **Core Concept:** Bubble diagrams are used to show the relationships between different variables.
-- **Core Concept:** They are frequently used to represent data points in three dimensions, specifically when the bubble size, y-axis, and x-axis are all present.
-- **Core Concept:** Bubble charts demonstrate relationships between data points using location and size.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+BUBBLE CHART Bubble diagrams are used to show the relationships between different variables. They are frequently used to represent data points in three dimensions, specifically when the bubble size, y-axis, and x-axis are all present. Bubble charts demonstrate relationships between data points using location and size.
+
+However, bubble charts have a restricted data size capability since too many bubbles can make the chart difficult to read. Although technically not a separate type of visualisation, bubbles can be used to show the relationship between three or more measurements in scatter plots or maps by adding complexity.
+
+By altering the size and colour of circles, large amounts of data are presented concurrently in visually pleasing charts. Data Visualization and Interpretation Constructing a Bubble Chart: For each observation of a pair of numerical variables (A, B), a bubble or disc is drawn and placed in a Cartesian coordinate system horizontally according to the value of variable A and vertically according to the value of variable B.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing bubble chart.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in bubble chart can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of bubble chart and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define bubble chart formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `8.8` Bar Chart
+##### 📘 Theoretical Principles & In-Depth Exposition
+BAR CHART A bar chart is a graphical depiction bars) with equal widths and varied h are one of the methods for handling Constructing a Bar Chart: The x and the y-axis corresponds to t frequency in this graph. Write the to be noted along the horizontal x-a Along the horizontal axis, choose t gap between the bars.
+
+Pick an app runs vertically so that you can figu ₹- ₹5,000.00 ₹10,000.00 ₹15,000.00 ₹20,000.00 ₹25,000.00 ₹30,000.00 Nu Sales and Profit ver BUBBL …………………………………………… …………………………………………… …………………………………………… r? …………………………………………… …………………………………………… …………………………………………… n a scatter plot and a bubble chart?
+
+…………………………………………… …………………………………………… …………………………………………… e chart? …………………………………………… …………………………………………… …………………………………………… n of numerical data that uses rectangles (or heights. In the field of statistics, bar charts g data. x-axis corresponds to the horizontal line, the vertical line. The y-axis represents names of the data items whose values are axis.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing bar chart.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in bar chart can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define bar chart formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `8.9` Distribution Plot
+##### 📘 Theoretical Principles & In-Depth Exposition
+Visually by contr expected hypothes from the useful fo data and along an your progress 6: en should we use a bar chart? ………………………………………………… ………………………………………………… ………………………………………………… at are the different types of bar charts? ………………………………………………… ………………………………………………… ………………………………………………… w a vertical bar chart.
+
+………………………………………………… ………………………………………………… ………………………………………………… w a horizontal bar chart. ………………………………………………… ………………………………………………… e the following data to answer the questions 3 nth January Februar mber of visitors DISTRIBUTION PLOT y assessing the distribution of sample data, d rasting the actual distribution of the data wi d from a certain distribution.
+
+In additio sis tests, distribution plots can be used to es e sample follows a particular distribution. or analysing the relationship between the ran d its distribution. The values of the data ar n axis. 6,123 2,053 4,181 3,316 - 2,000 4,000 6,000 8,0 East West South North Sales By Region ………………………… ………………………… ………………………… ………………………… ………………………… ………………………… ………………………… ………………………… ………………………… ………………………… ………………………… and 4: ry March distribution charts do this ith the theoretical values on to more traditional stablish whether the data The distribution plot is nge of a set of numerical re represented as points East West South North Data Visualisation and Interpretation Constructing a Distribution Plot: In a distribution plot, you must utilise one or two dimensions together with one measure.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing distribution plot.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in distribution plot can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define distribution plot formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Sample Variance and Standard Deviation Computation
+> **Problem Statement:**  
+> Given sample observations: $X = \lbrace 4, 8, 6, 5, 7 \rbrace$. Compute sample mean $\bar{x}$, sample variance $s^2$, and standard deviation $s$ step-by-step.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Mean:** $\bar{x} = \frac{4 + 8 + 6 + 5 + 7}{5} = \frac{30}{5} = 6$.
+
+2. **Squared deviations:**
+- $(4 - 6)^2 = (-2)^2 = 4$
+- $(8 - 6)^2 = 2^2 = 4$
+- $(6 - 6)^2 = 0^2 = 0$
+- $(5 - 6)^2 = (-1)^2 = 1$
+- $(7 - 6)^2 = 1^2 = 1$
+Sum of squared deviations $= 4 + 4 + 0 + 1 + 1 = 10$.
+
+3. **Sample Variance with Bessel's Correction ($n-1 = 4$):**
+$$
+s^2 = \frac{10}{5 - 1} = \frac{10}{4} = 2.5
+$$
+
+4. **Standard Deviation:** $s = \sqrt{2.5} \approx 1.581$.
+
+#### 🧮 Example 2: Tukey's IQR Outlier Detection Rule
+> **Problem Statement:**  
+> A customer spend dataset has $Q_1 = 30$ and $Q_3 = 70$. Determine whether transactions of $135$ and $25$ are classified as outliers.
+
+**Detailed Step-by-Step Solution:**
+
+1. **IQR:** $\text{IQR} = Q_3 - Q_1 = 70 - 30 = 40$.
+2. **Lower Bound:** $Q_1 - 1.5(\text{IQR}) = 30 - 1.5(40) = 30 - 60 = -30$.
+3. **Upper Bound:** $Q_3 + 1.5(\text{IQR}) = 70 + 1.5(40) = 70 + 60 = 130$.
+
+Conclusion:
+- Spend of 135 exceeds Upper Bound ($135 > 130$): **Classified as Outlier**.
+- Spend of 25 is within $[-30, 130]$: **Normal observation**.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import numpy as np
+import pandas as pd
+
+# Statistical profiling on production dataset
+data = np.array([12, 15, 18, 22, 25, 29, 34, 45, 95])
+
+mean_val = np.mean(data)
+median_val = np.median(data)
+std_val = np.std(data, ddof=1) # Bessel's correction
+
+q1, q3 = np.percentile(data, [25, 75])
+iqr = q3 - q1
+outlier_upper = q3 + 1.5 * iqr
+
+outliers = data[data > outlier_upper]
+
+print(f"Mean: {mean_val:.2f} | Median: {median_val:.2f} | Std: {std_val:.2f}")
+print(f"IQR: {iqr:.2f} | Upper Bound: {outlier_upper:.2f}")
+print(f"Detected Outliers: {outliers}")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

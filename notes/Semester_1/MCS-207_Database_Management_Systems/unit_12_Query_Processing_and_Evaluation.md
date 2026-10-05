@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~39 mins | 📄 **Textbook Pages:** 19 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-12_Query_Processing_and_Evaluation.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-12_Query_Processing_and_Evaluation.pdf)
 
 ---
 
@@ -58,7 +58,7 @@ $$
 
 #### 🔹 Relational Natural Join
 $$
-R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))
+R \bowtie S = \pi_{\mathcal{A}(R) \cup \mathcal{A}(S)}\left(\sigma_{\text{match}}(R \times S)\right)
 $$
 - **Explanation:** Performs equality join across all identically named attributes between two tables.
 
@@ -68,60 +68,220 @@ $$
 $$
 - **Explanation:** Guarantees conflict serializability of concurrent database schedules without data race anomalies.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Armstrong's Reflexivity:** $Y \subseteq X \implies X \to Y$
+- **Armstrong's Augmentation:** $X \to Y \implies XZ \to YZ$
+- **Armstrong's Transitivity:** $X \to Y \land Y \to Z \implies X \to Z$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `12.2.1` Role of Relational Algebra in Query Optimisation
-- **Core Concept:** In order to optimise the evaluation of a query, first, you must define the query using relational algebra.
-- **Core Concept:** A relational algebra expression may have many equivalent expressions.
-- **Core Concept:** For example, the relational algebraic expression s (salary < 5000) (psalary (EMP)) is equivalent to psalary (ssalary < 5000 (EMP)).
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In order to optimise the evaluation of a query, first, you must define the query using relational algebra. A relational algebra expression may have many equivalent expressions. For example, the relational algebraic expression s (salary < 5000) (psalary (EMP)) is equivalent to psalary (ssalary < 5000 (EMP)).
+
+This may result in generating many alternative ways of evaluating the query. Further, a relational algebraic expression can be evaluated in many different ways. A detailed evaluation strategy for an expression is known as an evaluation plan. For example, you can use an index on salary to find employees with salary < 5000, or you can perform a complete relation scan and discard employees with salary ³ 5000.
+
+Both of these are separate evaluation plans. The basis of the selection of the best evaluation plan is the cost of these evaluation plans. Query Optimisation: The query optimisation selects the query evaluation plan with the lowest cost among the equivalent query evaluation plans.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing role of relational algebra in query optimisation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in role of relational algebra in query optimisation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of role of relational algebra in query optimisation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define role of relational algebra in query optimisation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.2.2` Using Statistics and Stored Size for Cost Estimation.
-- **Core Concept:** The query cost is generally measured as the total elapsed time for answering the query.
-- **Core Concept:** There are many factors that contribute to the cost in terms of elapsed time.
-- **Core Concept:** These are the time of disk accesses, CPU time, and data communication time on the network.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The query cost is generally measured as the total elapsed time for answering the query. There are many factors that contribute to the cost in terms of elapsed time. These are the time of disk accesses, CPU time, and data communication time on the network. However, these times can be measured when the query is being executed.
+
+Therefore, you may use statistics, like the number of records, number of blocks, number of attributes, possible number of different values for each attribute, etc., to estimate the cost. However, disk access is typically the predominant cost as disk transfer is very slow. In addition, disk accesses are relatively easier to estimate.
+
+Therefore, the following disk access cost can be used to estimate the query cost: Number of seeks ´ average-seek-time; and Number of blocks read ´ average-block-read-time; and Number of blocks written ´ average-block-write-time. Please note that the cost of writing a block is higher than the cost of reading a block.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing using statistics and stored size for cost estimation..
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in using statistics and stored size for cost estimation. can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of using statistics and stored size for cost estimation. and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define using statistics and stored size for cost estimation. formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3` Cost of Selection Operation
-- **Core Concept:** The selection operation can be performed in several ways.
-- **Core Concept:** Let us discuss the algorithms and the related cost of performing selection operation.
-- **Core Concept:** File scan File scan algorithms locate and retrieve records that fulfil a selection condition in a file.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The selection operation can be performed in several ways. Let us discuss the algorithms and the related cost of performing selection operation.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing cost of selection operation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in cost of selection operation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of cost of selection operation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define cost of selection operation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3.1` File scan
-- **Core Concept:** File scan algorithms locate and retrieve records that fulfil a selection condition in a file.
-- **Core Concept:** The following are the two basic file scan algorithms for selection operation: 1) Linear search: This algorithm scans each file block and tests all records to see whether their attributes match the selection condition.
-- **Core Concept:** The cost of this algorithm (in terms of block transfer): This algorithm would require reading all the blocks of the file, as it must test all the records for the specific condition.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+File scan algorithms locate and retrieve records that fulfil a selection condition in a file. The following are the two basic file scan algorithms for selection operation: 1) Linear search: This algorithm scans each file block and tests all records to see whether their attributes match the selection condition.
+
+The cost of this algorithm (in terms of block transfer): This algorithm would require reading all the blocks of the file, as it must test all the records for the specific condition. 𝑪𝒐𝒔𝒕𝑻𝒐 𝒇𝒊𝒏𝒅 𝒓𝒆𝒐𝒓𝒅𝒔 𝒕𝒉𝒂𝒕 𝒎𝒂𝒕𝒄𝒉 𝒂 𝒈𝒊𝒗𝒆𝒏 𝒄𝒓𝒊𝒕𝒆𝒓𝒊𝒂 = 𝑆𝑖𝑧𝑒 𝑜𝑓 𝑑𝑎𝑡𝑎𝑏𝑎𝑠𝑒 𝑖𝑛 𝑡𝑒𝑟𝑚𝑠 𝑜𝑓 𝑁𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑏𝑙𝑜𝑐𝑘𝑠 = 𝑁2.
+
+𝑪𝒐𝒔𝒕 𝑭𝒊𝒏𝒅𝒊𝒏𝒈 𝒂 𝒔𝒑𝒆𝒄𝒊𝒇𝒊𝒄 𝒗𝒂𝒍𝒖𝒆 𝒐𝒇 𝒌𝒆𝒚 𝒂𝒕𝒕𝒓𝒊𝒃𝒖𝒕𝒆 = 𝐴𝑣𝑒𝑟𝑎𝑔𝑒 𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑏𝑙𝑜𝑐𝑘 𝑡𝑟𝑎𝑛𝑠𝑓𝑒𝑟 𝑓𝑜𝑟 𝑙𝑜𝑐𝑎𝑡𝑖𝑛𝑔 𝑡ℎ𝑒 𝑣𝑎𝑙𝑢𝑒 (𝑜𝑛 𝑎𝑛 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 ℎ𝑎𝑙𝑓 𝑜𝑓 𝑡ℎ𝑒 𝑓𝑖𝑙𝑒 𝑛𝑒𝑒𝑑𝑠 𝑡𝑜 𝑏𝑒 𝑡𝑟𝑎𝑣𝑒𝑟𝑠𝑒𝑑) 𝑠𝑜 𝑡ℎ𝑒 𝑐𝑜𝑠𝑡 𝑖𝑠 = 𝑁2/2. Linear search can be applied regardless of selection condition or ordering of records in the file, or availability of indices.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing file scan.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in file scan can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of file scan and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define file scan formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3.2` Index scan
-- **Core Concept:** The index scan can be used for cases where the database contains an index on an attribute set that forms the search key.
-- **Core Concept:** 1) (a) Scanning for equality condition on a Primary index: These kinds of searches try to find a specific key value using the primary index of a database system.
-- **Core Concept:** Since the search criteria include equality on the primary key, therefore, the output of this search would be just a single record or no record at all.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The index scan can be used for cases where the database contains an index on an attribute set that forms the search key. 1) (a) Scanning for equality condition on a Primary index: These kinds of searches try to find a specific key value using the primary index of a database system.
+
+Since the search criteria include equality on the primary key, therefore, the output of this search would be just a single record or no record at all. The cost of the scan is defined as: Cost = The depth traversed in the index to locate the block pointer + 1 (for transfer of block consisting of desired primary key value).
+
+(b) Hash key: It retrieves a single block directly, thus, the cost in the hash key organisation is given as: =Block transfer needed for finding hash target +1 2) Primary index-scan for comparison: Assuming that the relation is sorted on the attribute(s) that are being compared, (< , > etc.), then we need to locate the first record satisfying the condition after which the records are scanned forward or backwards as the condition may be, displaying all the records.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing index scan.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in index scan can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of index scan and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define index scan formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.3.3` Implementation of Complex Selections
-- **Core Concept:** Conjunction: Conjunction is basically a set of AND conditions.
-- **Core Concept:** Conjunctive selection using one index: In such case, select any algorithm given earlier on one or more conditions and then test remaining conditions on the selected tuples after fetching them into the memory buffer.
-- **Core Concept:** Conjunctive selection using the multiple-key index: Use appropriate composite (multiple-key) index if they are available.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Conjunction: Conjunction is basically a set of AND conditions. Conjunctive selection using one index: In such case, select any algorithm given earlier on one or more conditions and then test remaining conditions on the selected tuples after fetching them into the memory buffer. Conjunctive selection using the multiple-key index: Use appropriate composite (multiple-key) index if they are available.
+
+Disjunction: Disjunctions are basically a set of OR conditions. Disjunction using the union of identifiers is applicable if all conditions have available indices, otherwise, use linear scan. Use the corresponding index for each condition, take the union of all the obtained sets of record pointers, and eliminate duplicates, then fetch data from the file.
+
+Negation: Use linear scan on file. However, if very few records are available in the result and an index is applicable on an attribute, which is being negated, then find the satisfying records using the index and fetch them from the file.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing implementation of complex selections.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in implementation of complex selections can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of implementation of complex selections and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define implementation of complex selections formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `12.4` Cost of Sorting
+##### 📘 Theoretical Principles & In-Depth Exposition
+This section introduces the cost of query evaluation when it requires sorting of records. There are various methods that can be used in the following ways: 1) Use an existing applicable ordered index (e.g., B+ tree) to read the relation in sorted order. 2) Build an index on the relation, and then use the index to read the relation in sorted order.
+
+(Options 1 and 2 may lead to one block access per tuple). 3) Techniques like quicksort can be used for relations that fit in the memory. 4) External sort-merge is a good choice for relations that do not fit in the memory. Once you decide on the sorting technique, you can find the cost of these algorithms to find the sorted file.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing cost of sorting.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in cost of sorting can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define cost of sorting formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `12.5` Cost of Join Operation
+##### 📘 Theoretical Principles & In-Depth Exposition
+There are several algorithms that can be used to implement joins: • Nested-loop join • Block nested-loop join • Indexed nested-loop join • Merge-join • Hash-join The choice of join algorithm is based on the cost estimates. We will elaborate on only a few of these algorithms in this section.
+
+The following relations and related statistics will be used to elaborate those algorithms. MARKS (enrollno, subjectcode, marks): 20000 rows, 500 blocks STUDENT (enrollno, name, dob): 5000 rows, 200 blocks.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing cost of join operation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in cost of join operation can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define cost of join operation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: BCNF Normalization Decomposition
+> **Problem Statement:**  
+> Given relation $R(A, B, C, D)$ with functional dependencies $F = \lbrace A \to B, \; B \to C, \; C \to D \rbrace$. Find candidate keys, check if $R$ is in BCNF, and decompose if necessary.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Candidate Key:** Closure $(A)^+ = \lbrace A, B, C, D \rbrace$. Thus $A$ is the sole candidate key.
+2. **BCNF Test:**
+- $A \to B$: $A$ is superkey (Passes BCNF).
+- $B \to C$: $B$ is NOT a superkey (Violates BCNF).
+- $C \to D$: $C$ is NOT a superkey (Violates BCNF).
+
+3. **Decomposition:**
+- Decompose on $B \to C$: $R_1(B, C)$ with $B \to C$ (In BCNF, key $B$), and $R_2(A, B, D)$ with $A \to B, B \to D$.
+- In $R_2$, $B \to D$ violates BCNF ($B$ not superkey for $R_2$). Decompose $R_2$ into $R_{21}(B, D)$ and $R_{22}(A, B)$.
+
+Final BCNF schema: $R_1(B, C), \; R_{21}(B, D), \; R_{22}(A, B)$ (Lossless and dependency preserving).
+
+#### 🧮 Example 2: Relational Algebra to SQL Translation
+> **Problem Statement:**  
+> Express relational algebra query $\pi_{\text{name, salary}}(\sigma_{\text{dept}='Analytics' \land \text{salary} > 80000}(\text{Employees}))$ into standard SQL.
+
+**Detailed Step-by-Step Solution:**
+
+```sql
+SELECT name, salary
+FROM Employees
+WHERE dept = 'Analytics' AND salary > 80000;
+```
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import pandas as pd
+
+# Simulating Relational Algebra with Pandas
+emp = pd.DataFrame({
+    'emp_id': [1, 2, 3, 4],
+    'name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'dept_id': [10, 10, 20, 30]
+})
+
+dept = pd.DataFrame({
+    'dept_id': [10, 20, 40],
+    'dept_name': ['Analytics', 'Engineering', 'HR']
+})
+
+# 1. Selection (Sigma): dept_id == 10
+sel = emp[emp['dept_id'] == 10]
+
+# 2. Projection (Pi): ['name', 'dept_id']
+proj = sel[['name', 'dept_id']]
+
+# 3. Natural Join (Bowtie): emp ⨝ dept
+natural_join = pd.merge(emp, dept, on='dept_id', how='inner')
+
+print("Natural Join Result:\n", natural_join[['name', 'dept_name']])
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

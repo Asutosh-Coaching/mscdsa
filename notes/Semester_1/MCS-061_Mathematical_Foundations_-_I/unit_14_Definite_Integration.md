@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~49 mins | 📄 **Textbook Pages:** 23 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-14_Definite_Integration.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-14_Definite_Integration.pdf)
 
 ---
 
@@ -53,6 +53,10 @@ flowchart TD
 > - **Formal Definition:** A designated superset containing all objects and entities under active consideration in a given problem or domain. Every set $X$ in that context satisfies $X \subseteq U$.  
 > - 💡 **Practical Intuition & Analogy:** *The entire master database table or global population before applying any filter conditions.*
 
+> 📌 **Complement $A^c$ or $A'$**  
+> - **Formal Definition:** The set of all elements in the universal set $U$ that do not belong to $A$: $A^c = \lbrace x \in U \mid x \notin A \rbrace = U \setminus A$.  
+> - 💡 **Practical Intuition & Analogy:** *The NOT condition in filtering: selecting all records that do NOT match a criteria.*
+
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Power Set Cardinality Theorem
 $$
@@ -82,50 +86,163 @@ $$
 $$
 \vert A \times B\vert = \vert A\vert \times \vert B\vert = \lbrace (a, b) \mid a \in A, b \in B \rbrace
 $$
-- **Explanation:** Basis of relational database `CROSS JOIN`, generating every ordered pair between two entities.
+- **Explanation:** Basis of relational database CROSS JOIN, generating every ordered pair between two entities.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Idempotent Laws:** $A \cup A = A \quad \text{and} \quad A \cap A = A$
+- **Identity Laws:** $A \cup \emptyset = A \quad \text{and} \quad A \cap U = A$
+- **Domination Laws:** $A \cup U = U \quad \text{and} \quad A \cap \emptyset = \emptyset$
+- **Commutative Laws:** $A \cup B = B \cup A \quad \text{and} \quad A \cap B = B \cap A$
+- **Associative Laws:** $(A \cup B) \cup C = A \cup (B \cup C) \quad \text{and} \quad (A \cap B) \cap C = A \cap (B \cap C)$
+- **Distributive Laws:** $A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \quad \text{and} \quad A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+- **Complement Laws:** $A \cup A^c = U, \quad A \cap A^c = \emptyset, \quad (A^c)^c = A$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `14.2` Meaning and Geometrical Interpretation
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of meaning and geometrical interpretation.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to definite integration.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Meaning and Geometrical Interpretation** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Definite Integration**, understanding meaning and geometrical interpretation is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing meaning and geometrical interpretation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in meaning and geometrical interpretation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of meaning and geometrical interpretation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define meaning and geometrical interpretation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `14.3` Definite Integral of some commonly used Functions
-- **Core Concept:** Let us here consider some examples of definite integrals based on the formulae of indefinite integral already discussed in Unit 13 of this course.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+COMMONLY USED FUNCTIONS Let us here consider some examples of definite integrals based on the formulae Example 1: Evaluate the following integrals: (i)  dx (ii)  + dx )1 x ( (iii)  + dx ) x ( (iv)  3dx x (v)  adx x (vi) 18x 24 dx −  (vii)  − + dx )1 x )( x ( (viii)  + dx x x (ix)  − dx x (x)  dx x (xi)  x dx (xii)  x 3 dx e (xiii)  + x dx (xiv)  + x dx e Solution: (i)  dx =   x = − =  −  = (ii)  + dx )1 x ( = x x = − − + =       + (iii)  + dx ) x ( = 3x 4x   + = + − − = − =     (iv)  3dx x =  x x = − = =       (v)  adx x ( ) a a a a a x + + + − + =       + = Calculus (vi) dx x 2 − = / ) x (            − ( ) ( )         +  + = + +  )1 n ( a b ax dx b ax n n    / / ) ( ) ( − − − =   / / ) ( − =   − =    −  =   ) ( = = − = (vii)  − + dx )1 x )( x ( =  − + − dx )1 x x x ( x x x x       − + − =       − + − − − + − =       − + − − − + − = = + = + = (viii)  + dx x x =        + dx x x x x x dx ) x x (       − + = + = − −        − − − =       − = x x − − − = = = + = + = (ix)  − dx x = x log     −  1 log log − = log as log = = (x)  dx x =   x log dx x =  log ) log (log = − = (xi)  x dx =   log log log x = − =       Definite Integration (xii)  x 3 dx e = e ) e e( e x − = − =       (xiii)  + x dx =   x log log − =       + log ) ( log = − = (xiv)  + x dx e = ) e e( e x − =       + Example 2: Evaluate the following integrals: (i) dx x x 1 + (ii)  + + + dx x x x (iii) dx ) x )( x )( x ( x 0 − + − + (iv)  + + − 2 dx ) x )( x ( x Solution: (i) Let I = dx x x 1 + … (1) Putting t x = + 2t x = +  Differentiating dx = 2tdt Also when x = 1, t = 2 and when x = 6, t = 3 (1) becomes I =  − dt )t (t) t( t t dt ) t3 t( 2       − = − =       − − =           − − − = =       =       − − = (ii) Let I =  + + + dx x x x … (1) Putting t x x2 = + + Differentiating dt dx ) x ( = + Also when t ,0 x = = and when t ,1 x = = Calculus becomes )1(  I =   log log log t log t dt = − = =  (iii) Let I = dx ) x )( x )( x ( x 0 − + − +        − + + + − − = dx x x / x / Usingpartialfractionsasdiscussed in type1,weget 2 3 2( 1) 2 4 A ,B ,C (3 1)(3 4) ( 1 3)( 1 4) (4 3)(4 1)     + − + +   = = − = = = = + − −− −− − +     I       x log x log x log − + + + − − = ( ) ) log (log )1 log (log log log − + − + − − = (0 log3) (log3 0) 3(log 2 log 2 ) aslog1 = − − + − + − = n log3 log3 3(log 2 2log 2) log m n log m   = + + − =   ) log ( ) log log ( − + + = log log − = = log log − (iv) Let I =  + + − 2 dx ) x )( x ( x … (1) First we resolve into partial fractions Let ) x ( C x B x A ) x )( x ( x + + + + + = + + − Multiply on both sides by , ) x )( x ( + + we get )1 x ( C ) x )( x ( B ) x ( A x + + + + + + = − … (2) Putting get we ), ( in x − =  1 x gives x − = = +  ) ( C ) ( B ) ( A + + + − = − A − = A = − Putting get we ), ( in x − =   x gives x − = = +  )1 ( C ) ( B ) ( A + − + + = −  − = −  C C = 7 Definite Integration Comparing coefficient of x on both sides of (2), we get  − =  + = A B B A B = 6        + + + + + − =  2 dx ) x ( x x I     ( ) x x log x log         − + + + + + − = − ( )       − − − + − − = ) log (log log log       − − − + − = log log log as log1 = 0 log log log + − + − = [ m log n m log n =  ] log log + − =
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing definite integral of some commonly used functions.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in definite integral of some commonly used functions can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of definite integral of some commonly used functions and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define definite integral of some commonly used functions formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `14.4` Elementary Properties of Definite Integral
-- **Core Concept:** Here, first we list some properties and then we will use these properties to evaluate some integrals.
-- **Core Concept:**      − + + + + = b a c a c c c c b c 1 2 1 n 1 n n dx ) x ( f dx ) x ( f ...
-- **Core Concept:** dx ) x ( f dx ) x ( f dx ) x ( f where, a < b c c ...
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+INTEGRAL Here, first we list some properties and then we will use these properties to evaluate some integrals. P 1:   = b a b a dt )t( f dx ) x ( f (Change of variable property) P 2:   − = b a a b dx ) x ( f dx ) x ( f (Interchange of limits property) P 3:      + = c a b c b a b c a , dx ) x ( f dx ) x ( f dx ) x ( f In general We can introduce any number of points between a and b e.g.
+
+     − + + + + = b a c a c c c c b c n n n dx ) x ( f dx ) x ( f ... dx ) x ( f dx ) x ( f dx ) x ( f where, a < b c c ... c c n n      − P 4: a a a 2 f(x)dx, if f(x)isanevenfunction f(x)dx 0, if f(x)isanoddfunction −   =     P 5:   − + = b a b a dx ) x b a( f dx ) x ( f In particular,   − = a a dx ) x a( f dx ) x ( f P 6:    − + = a a a dx ) x a ( f dx ) x ( f dx ) x ( f P7: a 2a 2 f(x)dx, if f(2a x) f(x) f(x)dx 0, if f(2a x) f(x)  − =  =  − = −    Definite Integration Proof: P 1: Let f(x)dx F(x), so f(t)dt F(t) = =   Now, by fundamental theorem of integral calculus   ) a( F ) b ( F ) x ( F dx ) x ( f b a b a − = =  … (1) and   ) a( F ) b ( F )t( F dt )t( f b a b a − = =  … (2) From (1) and (2)   = b a b a dt )t( f dx ) x ( f P 2: Let  = ) x ( F dx ) x ( f by fundamental theorem of integral calculus =  b a dx ) x ( f   ) a( F ) b ( F ) x ( F b a − = … (1) and    ) a( F ) b ( F ) b ( F ) a( F ) x ( F dx ) x ( f a b a b − − = − = =  … (2) From (1) and (2)   − = b a a b dx ) x ( f dx ) x ( f P 3: Let  = ) x ( F dx ) x ( f by fundamental theorem of integral calculus   ) a( F ) b ( F ) x ( F dx ) x ( f b a b a − = =  … (1) and ( )   ( )  b c c a c a b c x F x F dx ) x ( f dx ) x ( f + = +   ( ))c( F ) b ( F )) a( F )c( F ( − + − = ) a( F ) b ( F − = … (2) From (1) and (2)    + = c a b c b a dx ) x ( f dx ) x ( f dx ) x ( f P 4: Using property 3, we have Calculus    − − + = a a a a dx ) x ( f dx ) x ( f ) x ( f … (1) Let I =  − a dx ) x ( f Putting x = – t Differentiating dt dx − = Also, when a t ,a x = − = and when t ,0 x = =  − − =  a dt )t ( f I  − = a dx ) x ( f … (2) [Using properties1 and 2] Using (2) in (1) , we get    + − = − a a a a dx ) x ( f dx ) x ( f dx ) x ( f … (3)        + − + =     odd is f if , dx ) x ( f dx ) x ( f even is f if , dx ) x ( f dx ) x ( f a a a a      =  function odd an is f if , function even is f if , dx ) x ( f a P 5: Let I =  b a dx ) x ( f … (1) R.H.S.
+
+suggests that we should put t b a x − + = Differentiating dt dx − = Also, when x = at = b and when x = b t = a becomes )1(  I = a b f (a b t)( dt) + − −   − + − = a b dt )t b a( f Definite Integration  − + = b a dt )t b a( f [Using property 2]  − + = b a dx ) x b a( [Using property 1] In particular If we put a b ,0 a = = in this result, then   − = a a dx ) x a( f dx ) x ( f P 6:    + = a a a a dx ) x ( f dx ) x ( f dx ) x ( f [Using property 3] I I + = … (1)  = a a dx ) x ( f I Putting x = 2a – t Differentiating dt dx − = Also, when a t,a x = = and when t,a x = =  − − =  a ) dt )( t a ( f I  − = a dt )t a ( f [Using property 2]  − = a dx ) x a ( … (2) [Using property 1] Using (2) in (1), we get    − + = a a a dx ) x a ( f dx ) x ( f ) x ( f P7: From property 6    − + = a a a dx ) x a ( f dx ) x ( f dx ) x ( f        − = − − = − + =     a a a a ) x ( f ) x a ( f if , dx ) x ( f dx ) x ( f ) x ( f ) x a ( f if , dx ) x ( f dx ) x ( f Calculus    − = − = − =  ) x ( f ) x a ( f if ,0 ) x ( f ) x a ( f if , dx ) x ( f a
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing elementary properties of definite integral.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in elementary properties of definite integral can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of elementary properties of definite integral and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define elementary properties of definite integral formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `14.5` Examples based on Properties of Definite Integral
-- **Core Concept:** In this section, you will see how the properties of definite integral, discussed in previous Sec.
-- **Core Concept:** are used and save lot of calculation work.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+DEFINITE INTEGRAL In this section, you will see how the properties of definite integral, discussed in previous Sec. are used and save lot of calculation work. Example 3: Evaluate the following integrals: (i)  − dx x (ii)  − dx x (iii) x 1, x f(x)dx,wheref(x) 2x 3,1 x +    = +     (iv)  − − − + + x x dx ) e e x x ( (v)  −       + − dx x x log (vi) dx x  − (vii)  − + + b a dx ) x b a( f ) x ( f ) x ( f (viii) − + dx x x x (ix) − + + + dx x x x Solution: (i) Let I =  − dx x =   − + − dx x dx x [By P3] I =   − + − − dx ) x ( dx ) x ( ( ) for 1 x 2,x 0 so x x andfor 2 x 4,x 0 so x x   −      − = − −       −    − = −     x x x x       − +       − − =             − − − +             − − − − = ( ) + − − +       + − − − = = + = (ii)  − dx x =   − + − / / dx x dx x [By P 3] Definite Integration   − + − − = / / dx ) x ( dx ) x ( for 0 x 3/ 2 2x 0 so 2x (2x 3) and for 3/ 2 x 2x 0so 2x 2x     − − = − −       − − = −         / / x x x x − + − − =       + − − +       + − − − = + −      − − = = = + − = + − = (iii) Let I =  , dx ) x ( f where = ) x ( f      +   + x ,3 x x ,1 x … (1) Now, I   + = dx ) x ( f dx ) x ( f [Using property 3]   + + + = dx ) x ( dx )1 x ( [Using (1)]   x x x x + +       + = ) ( − − + + − − + = = + = (iv) Let I =  − − − + + x x dx ) e e x x ( Let x x e e x x ) x ( f − − + + = ) x ( x e e ) x ( ) x ( ) x ( f − − −− + − + − = −  x x e e x x − + − − = − ) e e x x ( x x − − + + − = ) x ( f − = ) x ( f  is an odd function dx ) e e x x ( I x x = + + + =   − − [By property 4] (v) Let I =  −       + − dx x x log Let       + − = x x log ) x ( f Calculus x x log x x log ) x ( ) x ( log ) x ( f −       + − =       − + =       − + − − = −        + − − = x x log ) x ( f − = [ m log n m log n =  ]  f(x) is an odd function  − =       + − =  x x log I [By property 4] (vi) dx x  − = dx e dx e x x   + − dx e dx e x x   + = − −         =    − =    − x x so x ,3 x for and x x so x ,0 x for  x x e e       +       − = − − )1 e( ) e 1( − + − − = e e )1 e e ( − = − = − + + − = (vii) Let I =  − + + b a dx ) x b a( f ) x ( f ) x ( f … (1)  − + − + + − + − + = b a dx )) x b a( b a( f ) x b a( f ) x b a( f [Using property 5] I =  + − + − + b a dx ) x ( f ) x b a( f ) x b a( f … (2) (1) + (2) gives 2I = dx ) x b a( f ) x ( f ) x b a( f ) x ( f b a − + + − + +  = b a dx  a b x b a − = = a b I − =  (viii) Let I =  − + dx x x x … (1)  − − + − − = dx ) x ( x x [Using property 5] Definite Integration I = dx x x x 2 + − − … (2) (1) + (2) gives 2I =  − + − + dx x x x x  x dx = − = = =  / I =  (ix) Let I =  − + + + dx x x x … (1)  − − + + − + − = dx ) x ( x x [Using property 5]  + + − − = dx x x x I … (2) (1) + (2) gives  + + − − + + = dx x x x x I  x dx = − = = =  / I = 
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing examples based on properties of definite integral.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in examples based on properties of definite integral can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of examples based on properties of definite integral and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define examples based on properties of definite integral formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `14.2` MEANING AND GEOMETRICAL
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of meaning and geometrical.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to definite integration.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **MEANING AND GEOMETRICAL** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Definite Integration**, understanding meaning and geometrical is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing meaning and geometrical.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in meaning and geometrical can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of meaning and geometrical and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define meaning and geometrical formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Three-Set Inclusion-Exclusion Survey Analysis
+> **Problem Statement:**  
+> In a cohort of 120 Data Science students, 65 know Python ( $P$ ), 50 know SQL ( $S$ ), and 40 know R ( $R$ ). Furthermore, 25 know both Python and SQL, 20 know both Python and R, 15 know both SQL and R, and 8 know all three technologies. How many students know at least one technology, and how many know none?
+
+**Detailed Step-by-Step Solution:**
+
+Applying the Principle of Inclusion-Exclusion for 3 sets:
+
+$$
+\begin{aligned} \vert P \cup S \cup R\vert & = \vert P\vert + \vert S\vert + \vert R\vert - (\vert P \cap S\vert + \vert P \cap R\vert + \vert S \cap R\vert) + \vert P \cap S \cap R\vert \\ & = 65 + 50 + 40 - (25 + 20 + 15) + 8 \\ & = 155 - 60 + 8 = 103 \text{ students.} \end{aligned}
+$$
+
+The count of students who know none of the three languages is:
+
+$$
+\vert(P \cup S \cup R)^c\vert = \vert U\vert - \vert P \cup S \cup R\vert = 120 - 103 = 17 \text{ students.}
+$$
+
+#### 🧮 Example 2: Power Set Enumeration and Proper Subset Calculation
+> **Problem Statement:**  
+> Given $S = \lbrace 1, 2, 3 \rbrace$. Calculate $\vert\mathcal{P}(S)\vert$, enumerate every element, and find the number of proper subsets.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Cardinality:** With $n = \vert S\vert = 3$, the total subsets are $\vert\mathcal{P}(S)\vert = 2^3 = 8$.
+
+2. **Enumeration:**
+$$
+\mathcal{P}(S) = \lbrace \emptyset, \lbrace 1\rbrace, \lbrace 2\rbrace, \lbrace 3\rbrace, \lbrace 1, 2\rbrace, \lbrace 1, 3\rbrace, \lbrace 2, 3\rbrace, \lbrace 1, 2, 3\rbrace \rbrace
+$$
+
+3. **Proper Subsets:** Since proper subsets exclude the set itself, the total count is $2^n - 1 = 8 - 1 = 7$.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Practical Set Operations in Data Science
+python_devs = {"Alice", "Bob", "Charlie", "David", "Eva"}
+sql_devs = {"Charlie", "David", "Eva", "Frank", "Grace"}
+
+# 1. Union (Full talent pool)
+all_talent = python_devs | sql_devs
+print(f"Total Unique Talent: {len(all_talent)} -> {all_talent}")
+
+# 2. Intersection (Full-Stack Data Engineers)
+full_stack = python_devs & sql_devs
+print(f"Full-Stack Talent (Python & SQL): {len(full_stack)} -> {full_stack}")
+
+# 3. Difference (Python Specialists without SQL)
+python_only = python_devs - sql_devs
+print(f"Python Only: {python_only}")
+
+# 4. Jaccard Similarity Coefficient: |A ∩ B| / |A ∪ B|
+jaccard_sim = len(full_stack) / len(all_talent)
+print(f"Jaccard Skill Overlap: {jaccard_sim:.3f}")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -155,7 +272,10 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 4:</b> Explain Russell's Paradox in naive set theory. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Let $R = \lbrace X \mid X \notin X\rbrace$ be the set of all sets that do not contain themselves. If $R \in R$, then by definition $R \notin R$. If $R \notin R$, then by definition $R \in R$. This contradiction proves that naive unrestricted set comprehension leads to paradoxes, necessitating axiomatic set theory (ZFC).
+> Let $R = \lbrace X \mid X 
+> otin X\rbrace$ be the set of all sets that do not contain themselves. If $R \in R$, then by definition $R 
+> otin R$. If $R 
+> otin R$, then by definition $R \in R$. This contradiction proves that naive unrestricted set comprehension leads to paradoxes, necessitating axiomatic set theory (ZFC).
 </details>
 
 <details>

@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~33 mins | 📄 **Textbook Pages:** 20 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-11_Regression.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-11_Regression.pdf)
 
 ---
 
@@ -72,42 +72,154 @@ P(Y = 1 \mid X = \mathbf{x}) = \sigma(\mathbf{w}^T \mathbf{x} + b) = \frac{1}{1 
 $$
 - **Explanation:** Maps any real-valued linear score into a calibrated probability interval $[0, 1]$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Gauss-Markov Theorem:** Under standard OLS assumptions, the OLS estimator is BLUE (Best Linear Unbiased Estimator).
+- **Orthogonality of Residuals:** $\mathbf{X}^T \mathbf{e} = \mathbf{0} \quad (\text{Residuals are orthogonal to feature space})$
+- **Variance Inflation Factor (VIF):** $\text{VIF}_j = \frac{1}{1 - R_j^2} \quad (\text{VIF} > 5 \implies \text{Severe Multicollinearity})$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `11.2` Regression Algorithm
-- **Core Concept:** Following are various types of regression algorithms.
-- **Core Concept:** Linear regression: Linear regression algorithm comes into existence when there is only one dependent variable and independent variables can be be one or more in numbers.
-- **Core Concept:** If there is a single independent variable, then it is called as simple linear regression.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Following are various types of regression algorithms. Linear regression: Linear regression algorithm comes into existence when there is only one dependent variable and independent variables can be be one or more in numbers. If there is a single independent variable, then it is called as simple linear regression.
+
+In linear regression the relationships between the dependent and independent variables are linear i.e. of type yi=a+b*xi ; where yi is a dependent variable and xi is a independent variable. Variable b is the slope of the line and a is intercept with the axis. Example child height=a+b*(parent height) Multiple Linear Regression: When there is only one dependent variable and more than one independent variables, then it results in multiple linear regression i.e.
+
+; example weight = a+b * (daily meal)+ c* (daily exercise) Logistic regression: In logistic regression algorithm dependent variable is binary in nature (False/True). This algorithm is generally used under cases like testing of the medicines, to detect the bank fraud etc.We had already discussed the concept of logistic regression in unit no.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing regression algorithm.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in regression algorithm can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of regression algorithm and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define regression algorithm formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.3` Linear Regression
-- **Core Concept:** Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.
-- **Core Concept:** When the relationships are linear then it is called as linear regression or otherwise it is called as a nonlinear regression.
-- **Core Concept:** Linear regression makes prediction for continuous/real or numerical variables like age, salary, price etc.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables. When the relationships are linear then it is called as linear regression or otherwise it is called as a nonlinear regression. Linear regression makes prediction for continuous/real or numerical variables like age, salary, price etc.
+
+As shown in figure x-axis represent independent variable and y-axis represent dependent variable. A Line with some slope is called linear regression line which shows the relationship between the independent and dependents variable and dots represents the point of the data sets, where some points lie on the line and some other points lie above and below of the line.
+
+If DV is the dependent variable and IV is the independent variable, then the Positive Linear relationship results with the increases in dependent variable (DV)on the y-axis with respect to increase in value of independent variable (IV) on x-axis. For example, the distance traversed by the car increases when the speed of the car increases.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing linear regression.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in linear regression can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of linear regression and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define linear regression formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.4` Polynomial Regression
-- **Core Concept:** Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.
-- **Core Concept:** All points are close to the line, linear model regression model can be applied to the data sets.
-- **Core Concept:** Loss value for this graph will be very high and accuracy will be reduced.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied. As shown in figure all the data points are linear in nature. All points are close to the line, linear model regression model can be applied to the data sets.
+
+In figure 2 all the data points are nonlinear in nature so linear model cannot fit all the data points, only 2 or3 data points can be fitted to the linear model and all other points are far away from the line. Loss value for this graph will be very high and accuracy will be reduced.
+
+y1=a0+bx is equation of linear regression, with slope b where a0 is the intercept with the x axis. where y2 is a multiple regression equation with n independent variables. Above two equations y1 and y2 are polynomial equations with degree 1. Consider stock price Sp as a polynomial function of time.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing polynomial regression.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in polynomial regression can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of polynomial regression and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define polynomial regression formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.5` Support Vector Regression
-- **Core Concept:** Support vector machine is used in solving both classification and regression problem.
-- **Core Concept:** It is easy to separate these two categories by using a line between the two.
-- **Core Concept:** There is a hyperplane between these two categories which will separate these two from each other.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Support vector machine is used in solving both classification and regression problem. Consider a classification problem having two different categories as shown in figure. It is easy to separate these two categories by using a line between the two. There is a hyperplane between these two categories which will separate these two from each other.
+
+This hyperplane is used to divide the points into different categories lying opposite to the line. Other than hyperplane there are two marginal lines opposite to the hyperplane at a distance apart from the hyperplane. These two marginal lines are having a certain distance from the hyperplane so that all the points can be easily categorised.
+
+Parallel to the hyperplane there are two parallel lines at a marginal distance from the hyperplane. Thus, we can say that there are three hyperplane ie., two line at a marginal distance are also hyperplane. These two marginal hyperplanes must pass through at least one of the closest datapoints.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing support vector regression.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in support vector regression can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of support vector regression and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define support vector regression formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Simple Linear Regression OLS Computation
+> **Problem Statement:**  
+> Given data points $(x, y)$: $(1, 2), (2, 3), (3, 5), (4, 4), (5, 6)$. Compute OLS slope $\hat{\beta}_1$, intercept $\hat{\beta}_0$, and regression line.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Means:** $\bar{x} = 3.0, \; \bar{y} = 4.0$.
+2. **Deviations & Products:**
+- $(x_1 - \bar{x}) = -2, \; (y_1 - \bar{y}) = -2 \implies (-2)(-2) = 4, \; (-2)^2 = 4$
+- $(x_2 - \bar{x}) = -1, \; (y_2 - \bar{y}) = -1 \implies (-1)(-1) = 1, \; (-1)^2 = 1$
+- $(x_3 - \bar{x}) = 0, \; (y_3 - \bar{y}) = 1 \implies (0)(1) = 0, \; 0^2 = 0$
+- $(x_4 - \bar{x}) = 1, \; (y_4 - \bar{y}) = 0 \implies (1)(0) = 0, \; 1^2 = 1$
+- $(x_5 - \bar{x}) = 2, \; (y_5 - \bar{y}) = 2 \implies (2)(2) = 4, \; 2^2 = 4$
+
+3. **Summation:** $\sum (x_i - \bar{x})(y_i - \bar{y}) = 9, \; \sum (x_i - \bar{x})^2 = 10$.
+
+4. **Parameters:**
+$$
+\hat{\beta}_1 = \frac{9}{10} = 0.90
+$$
+$$
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} = 4.0 - 0.9(3.0) = 4.0 - 2.7 = 1.30
+$$
+
+Regression Equation: $\hat{y} = 1.30 + 0.90 x$.
+
+#### 🧮 Example 2: Coefficient of Determination $R^2$ Calculation
+> **Problem Statement:**  
+> For the model above, total sum of squares $SS_{\text{tot}} = 10.0$ and sum of squared residuals $SS_{\text{res}} = 1.90$. Calculate $R^2$ and interpret.
+
+**Detailed Step-by-Step Solution:**
+
+$$
+R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{1.90}{10.0} = 1 - 0.19 = 0.81 \implies 81\%
+$$
+
+Interpretation: 81% of the variation in target $y$ is explained by feature $x$.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+import numpy as np
+
+# Dataset with multicollinearity
+X = np.array([[1, 2], [2, 4.1], [3, 5.9], [4, 8.2], [5, 9.9]])
+y = np.array([2.2, 4.1, 6.2, 7.9, 10.1])
+
+# 1. Standard OLS
+ols = LinearRegression().fit(X, y)
+print("OLS Coefficients:", ols.coef_)
+
+# 2. Ridge (L2 penalty shrinks weights smoothly)
+ridge = Ridge(alpha=1.0).fit(X, y)
+print("Ridge Coefficients:", ridge.coef_)
+
+# 3. Lasso (L1 penalty induces sparsity)
+lasso = Lasso(alpha=0.1).fit(X, y)
+print("Lasso Coefficients (Sparse):", lasso.coef_)
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

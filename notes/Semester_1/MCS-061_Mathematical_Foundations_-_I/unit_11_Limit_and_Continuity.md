@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~61 mins | 📄 **Textbook Pages:** 31 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-11_Limit_and_Continuity.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-11_Limit_and_Continuity.pdf)
 
 ---
 
@@ -74,58 +74,225 @@ f(x) \approx f(a) + f'(a)(x - a) + \frac{f''(a)}{2!}(x - a)^2
 $$
 - **Explanation:** Approximates complex non-linear loss surfaces locally using tangent hyperplanes and quadratic forms.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Linearity of Differentiation:** $\frac{d}{dx}[a f(x) + b g(x)] = a f'(x) + b g'(x)$
+- **Second Derivative Test:** $f'(x_0) = 0 \land f''(x_0) > 0 \implies \text{Local Minimum}$
+- **Convexity Condition:** $\nabla^2 f(\mathbf{x}) \succeq 0 \quad (\text{Hessian is Positive Semi-Definite})$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `11.2` Concept of Limit
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of concept of limit.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to limit and continuity.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+putting +ve sign as a superscript of 2 i.e. + 2 and the limit of the function as ) x ( f lim x + → … (2) If limit (2) exists, then we call it right hand limit (R.H.L.) of the function f(x) as x tends to 2. limits are used when functions have different values for x − →2 and + →2 x .
+
+For example, in case of (a) modules functions, (b) functions having different values just below or above the value to which x is tending, i.e. there is break in function. (ii) Limit exists if L.H.L. both exist and are equal. Following example illustrates the idea of L.H.L. Example 7: Evaluate the following limits: (i) x lim x→ (ii) x lim x − → (iii)     −  + = → x , x x ,1 x f(x) where ), x ( f lim x (iv)    =  − − = → x ,0 x , x x f(x) where f(x), lim x Solution: (i) x lim x→ Here we have to use the concept of L.H.L.
+
+and R.H.L., because of the presence of the modulus function. = x lim x − → Limit and Continuity Here, as x is approaching to zero from its left and hence x is having little bit lesser value than 0. Let us put x = 0 – h, where h is + ve real and is very small. As + − →  → h x L.H.L.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing concept of limit.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in concept of limit can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of concept of limit and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define concept of limit formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.3` Direct Substitution Method
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of direct substitution method.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to limit and continuity.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Direct Substitution Method** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Limit and Continuity**, understanding direct substitution method is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing direct substitution method.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in direct substitution method can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of direct substitution method and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define direct substitution method formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.4` Failure of Direct Substitution Method
-- **Core Concept:** In mathematics following seven forms are known as indeterminate form, i.e.
-- **Core Concept:** (i) 0 0 (ii)   (iii)   0 (iv)  −  (v) 0 0 (vi)  1 (vii) 0  So, if by direct substitution any of the above mentioned forms take place then D.S.M.
-- **Core Concept:** fails and we need some alternate methods.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+METHOD In mathematics following seven forms are known as indeterminate form, i.e. as such these forms are not defined. (i) 0 0 (ii)   (iii)   (iv)  −  (v) 0 (vi)  1 (vii)  So, if by direct substitution any of the above mentioned forms take place then D.S.M. fails and we need some alternate methods.
+
+Some of them are listed below: I Factorisation Method II Least Common Multiplier Method III Rationalisation Method IV Use of some Standard Results Calculus Let us discuss these methods one by one:
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing failure of direct substitution method.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in failure of direct substitution method can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of failure of direct substitution method and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define failure of direct substitution method formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.4.1` Factorisation Method
-- **Core Concept:** This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .
-- **Core Concept:** This will happen if f(x) and g(x) both becomes zero on direct substitution.
-- **Core Concept:**  both have at least one common factor (x – a).
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Factorisation Method This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ . This will happen if f(x) and g(x) both becomes zero on direct substitution.  both have at least one common factor (x – a). In this case express f(x) = (x – a) (some factor) and g(x) = (x – a) (some factor) either by long division method or by any other method known to you.
+
+Then cancel out the common factor and again try D.S.M. works, we get the required limit. fails again, repeat the same procedure. Ultimately, after a finite number of steps, you will get the result as the numerator and dominator both are of finite degrees. Let us explain the method with the help of the following example.
+
+Example 2: Evaluate the following limits: (i) x x lim x − − → (ii) x x lim x + + − → (iii) x x x x lim x + − − + → (iv) Solution: (i) x x lim x − − →     fails D.S.M. so , form Using factorisation method, we have x x x (x 2)(x 2) lim lim x x → → − − + = − − [ ) b a )( b a( b a + − = −  ] ) x ( lim x + = → x x 0, so dividing numerator and denominator by x 2.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing factorisation method.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in factorisation method can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of factorisation method and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define factorisation method formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.4.2` Least Common Multiplier Method
-- **Core Concept:** of the given expression and simplify it.
-- **Core Concept:** Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.
-- **Core Concept:** Let us take an example based on this method.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+This method is useful in  −  form. Procedure: Take L.C.M. of the given expression and simplify it. Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method. Let us take an example based on this method. Example 3: Evaluate       − − − → x x x lim x Solution:       − − − → x x x lim x [  −  form, so D.S.M.
+
+fails] Using LCM method, we have       − − − → x x x lim x       − − − = → ) x ( x x lim x x lim ) x ( x x lim x x = =       − − = → →
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing least common multiplier method.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in least common multiplier method can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of least common multiplier method and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define least common multiplier method formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `11.4.3` Rationalisation Method
-- **Core Concept:** This method is explained in the following example.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+This method is explained in the following example. Example 4: Evaluate the following limits: (i) x x lim x − + → (ii) x x x lim x − + − − → Solution: (i) x x lim x − + →     fails D.S.M. so , form Rationalising the numerator, we have x x lim x − + → = x x x x lim x + + + +  − + → ( ) ( ) x x ) ( x lim x + + − + = → [ ) b a )( b a( b a + − = −  ] = ( ) x x x lim ) x ( x x lim x x + + = + + − + → → Limit and Continuity = x lim x = + = + + = + + → (ii) x x x lim x − + − − →     fails D.S.M.
+
+so , form Rationalising the numerator, we have x x x lim x − + − − → = x x x x x x x lim x + + − + + −  − + − − → = ( ) x ( 5x 6) x lim (x 9)( 5x x 6) → − − + − − + + x 5x (x 6) lim (x 9)( 5x x 6) → − − + = − − + + x 4x lim (x 3 )( 5x x 6) → − = − − + + x 4(x 3) lim (x 3)(x 3)( 5x x 6) → − = − + − + + ) x x )( x ( lim x + + − + = → ) )( ( + + − + = )3 ( ) ( = = + = + =
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing rationalisation method.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in rationalisation method can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of rationalisation method and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define rationalisation method formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `11.4.4` Use of some Standard Results
+##### 📘 Theoretical Principles & In-Depth Exposition
+Here, we list without proof some very useful standard results which hold in limits. n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided n n a , a −exist] 2. sin lim sin lim =   =   →  →  3. tan lim tan lim =   =   →  →  Limit and Continuity 5. , , where a>0, a≠1 in particular, e log x e lim e x x = = − → 6.
+
+e ) x 1( lim x / x = + → 8. e x lim x x =      +  → Let us consider an example based on these standard results. Example 5: Evaluate the following limits: (i) x x lim x − − → (ii) / / / / x x x lim − − → (iii) x x sin lim x→ (iv) x cos lim x→ (v) x sin x tan lim x→ (vi) x lim x x − → (vii) x e lim ax x − → (viii) x ) x log( lim x + → (ix) e ) x log( lim x x − + → (x) x / x ) x 1( lim + → Solution: (i) Let I = x x lim x − − → = x x x lim − − → Dividing numerator and denominator by x – 3, we get I = x x x x x lim x x lim x x lim x x → → → − − − − = − − − − = ) ( ) ( − − =  =  = n n n 1 x a x a Using lim na x a − →   − =   −   (ii) / / / / x x x lim − − → Dividing numerator and denominator by x – 2, we get Calculus / / / / x x x lim − − → x x lim x x lim x x x x lim / / x / / x / / / / x − − − − = − − − − = → → → (iii) x x sin lim x→ = x x x x sin lim x  →     x by multipling and Dividing = x x sin lim x x sin lim x x → → = = x x sin lim x 4 →   x x As →  → = 4  = 3     =   →  sin lim  (iv) x cos lim x→ = 5x As x 5x 0 and lim cos5x limcos → → →  →   =   =     (v) x sin x tan lim x→ = x sin x x x tan lim x   → )1 )( 1( x sin x lim x x tan lim x x = =            = → →     =   =   → →  sin lim and tan lim x  (vi) x lim x x − → = x lim x lim x x x x − =  − → →   x x →  →  = 5 log e x e x a lim log a x →   −=     (vii) x e lim ax x − → = ax e lim a a ax e lim ax ax ax x − =  − → →   ax x →  →  = a(1)       = − → x e lim x x  = a (viii) = Limit and Continuity )1( =     = + → x ) x log( lim x  = 5 (ix) =       −       + = → → e x lim x ) x log( lim x 2x x x x x log(1 x) x (1)(1) as lim 1 and lim x e → → + = = = = − (x) x / x ) x 1( lim + → = x x ) x 1( lim         + → 8x 8x lim(1 8x) as x 8x →   = + →  →     ( )         = + = = → e x lim e )e( x x 
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing use of some standard results.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in use of some standard results can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define use of some standard results formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `11.5` Concept of Infinite Limit
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Concept of Infinite Limit** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Limit and Continuity**, understanding concept of infinite limit is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing concept of infinite limit.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in concept of infinite limit can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define concept of infinite limit formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Analytical Loss Minimization (Ordinary Least Squares)
+> **Problem Statement:**  
+> Given simple Mean Squared Error $\mathcal{L}(w) = \frac{1}{2} \sum_{i=1}^n (y_i - w x_i)^2$. Find the optimal parameter $w^*$ that minimizes $\mathcal{L}(w)$ using calculus.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Differentiate loss with respect to parameter $w$:**
+$$
+\frac{d\mathcal{L}}{dw} = \frac{1}{2} \sum_{i=1}^n 2(y_i - w x_i)(-x_i) = -\sum_{i=1}^n (x_i y_i - w x_i^2)
+$$
+
+2. **Set derivative to zero for critical point:**
+$$
+-\sum x_i y_i + w \sum x_i^2 = 0 \implies w^* = \frac{\sum x_i y_i}{\sum x_i^2}
+$$
+
+3. **Second Derivative Test:** $\frac{d^2\mathcal{L}}{dw^2} = \sum x_i^2 > 0$ for non-zero data. Guarantees global minimum.
+
+#### 🧮 Example 2: Gradient Descent Numerical Step
+> **Problem Statement:**  
+> Given quadratic loss $f(w) = w^2 - 6w + 10$. Starting from $w^{(0)} = 0$ with learning rate $\alpha = 0.2$, perform two iterations of Gradient Descent.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Gradient:** $f'(w) = 2w - 6$.
+
+2. **Iteration 1:**
+$$
+abla f(0) = 2(0) - 6 = -6
+$$
+$$
+w^{(1)} = w^{(0)} - \alpha f'(0) = 0 - 0.2(-6) = 1.2
+$$
+
+3. **Iteration 2:**
+$$
+abla f(1.2) = 2(1.2) - 6 = 2.4 - 6 = -3.6
+$$
+$$
+w^{(2)} = 1.2 - 0.2(-3.6) = 1.2 + 0.72 = 1.92
+$$
+
+(Approaches true analytical minimum $w^* = 3$ rapidly).
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Gradient Descent Optimizer from scratch
+import numpy as np
+
+def loss_func(w):
+    return (w - 3.0)**2 + 1.0
+
+def grad_func(w):
+    return 2 * (w - 3.0)
+
+# Optimization loop
+w = 0.0
+lr = 0.1
+for step in range(25):
+    grad = grad_func(w)
+    w = w - lr * grad
+    if step % 5 == 0:
+        print(f"Step {step:2d} | w = {w:.4f} | Loss = {loss_func(w):.4f}")
+
+print(f"Converged optimal weight: {w:.4f} (True: 3.0000)")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

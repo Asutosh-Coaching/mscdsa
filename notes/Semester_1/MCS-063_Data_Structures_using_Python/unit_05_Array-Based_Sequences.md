@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~23 mins | 📄 **Textbook Pages:** 19 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-5_Array-Based_Sequences.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-5_Array-Based_Sequences.pdf)
 
 ---
 
@@ -64,60 +64,195 @@ $$
 $$
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **AVL Height Bound:** $h < 1.44 \log_2(n + 2) \implies O(\log n) \text{ worst-case search}$
+- **Hash Table Amortized Bound:** $O(1) \text{ lookup when } \alpha = n/m < 0.75$
+- **Comparison Lower Bound:** $\Omega(n \log n) \text{ for comparison sorts}$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `5.2` Python’s Sequence Types
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of python’s sequence types.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to array-based sequences.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Python’s Sequence Types** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Array-Based Sequences**, understanding python’s sequence types is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing python’s sequence types.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in python’s sequence types can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of python’s sequence types and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define python’s sequence types formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.3` Low-Level Arrays
-- **Core Concept:** Arrays are crucial for understanding memory management and performance optimization in Python.
-- **Core Concept:** Low-level arrays manage collection of items allowing for efficient access and manipulation.
-- **Core Concept:** In Python, low-level arrays differ significantly from high-level lists.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Arrays are crucial for understanding memory management and performance optimization in Python. Low-level arrays manage collection of items allowing for efficient access and manipulation. In Python, low-level arrays differ significantly from high-level lists. While lists are dynamic and can store heterogeneous data types, low-level arrays provide type-constrained, memory- efficient data storage.
+
+An Array is a contiguous memory block storing elements of uniform type in which every element is present a fixed memory location. By leveraging array module and NumPy, developers can create memory-efficient, high- performance applications. Consider a real-world scenario: developing a scientific simulation requiring precise memory management for large numerical datasets.
+
+High-level lists would consume excessive memory, whereas low-level arrays offer compact, efficient storage. We will discuss the implementation of low-level arrays using the array module in Python, their characteristics, and practical examples. Low-Level Arrays in Python Low-level arrays in Python can be implemented using the array module, which provides a space-optimal way to store homogeneous data types.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing low-level arrays.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in low-level arrays can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of low-level arrays and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define low-level arrays formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.4` Dynamic Arrays and Amortization
-- **Core Concept:** Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.
-- **Core Concept:** In Python, lists serve as dynamic arrays, but understanding their underlying mechanics provides insight into their efficiency.
-- **Core Concept:** A dynamic array allows elements to be added or removed dynamically, with automatic memory reallocation.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed. In Python, lists serve as dynamic arrays, but understanding their underlying mechanics provides insight into their efficiency. A dynamic array allows elements to be added or removed dynamically, with automatic memory reallocation.
+
+In Python, lists serve as the primary implementation of dynamic arrays. Mathematically, a dynamic array is an expandable element sequence with O(1) amortized time complexity for deletion and insert operations. When the array reaches its capacity, a new array of larger capacity is allocated, and the elements from the old array are copied to the new one.
+
+Additional elements are accommodated due to the resizing process. Consider a real-world scenario where we need to store student records in a growing or shrinking collection. Traditional static arrays would require manual memory management, while Python's dynamic arrays handle this transparently.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing dynamic arrays and amortization.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in dynamic arrays and amortization can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of dynamic arrays and amortization and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define dynamic arrays and amortization formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.5` Efficiency of Python’s Sequences Types
-- **Core Concept:** Time Complexity Of Sequence Types Lists Python lists are dynamic arrays that allow for efficient element access and modification.
-- **Core Concept:** Tuples Tuples are more memory-efficient than lists because they no additional space is required for dynamic resizing.
-- **Core Concept:** Strings 14 Strings also consume more memory due to their immutability and the need for additional
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+This chapter focuses on the performance aspects of Python’s sequence types, examining their time and space complexities, and providing insights into when to use each type effectively. Time Complexity Of Sequence Types Lists Python lists are dynamic arrays that allow for efficient element access and modification.
+
+The following table summarizes the time complexities for common operations on lists: Operation Time Complexity Operation Time Complexity Access by index O(1) Append O(1) Insert at beginning O(n) Insert at end O(1) Remove from end O(1) Remove from beginning O(n) Example: python # Accessing an element my_list = [10, 20, 30, 40] print(my_list[2]) # Output: 30 # Appending an element my_list.append(50) print(my_list) # Output: [10, 20, 30, 40, 50] # Inserting at the beginning my_list.insert(0, 5) print(my_list) # Output: [5, 10, 20, 30, 40, 50] Tuples Tuples are immutable sequences that offer several performance advantages because of their fixed size.
+
+The time complexities for tuple operations are as follows: Operation Time Complexity Access by index O(1) Search O(n) Example: Python # Creating a tuple my_tuple = (10, 20, 30) # Accessing an element print(my_tuple[1]) # Output: 20 Strings Strings in Python are immutable sequences of characters.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing efficiency of python’s sequences types.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in efficiency of python’s sequences types can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of efficiency of python’s sequences types and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define efficiency of python’s sequences types formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.6` Using Array-Based Sequences
-- **Core Concept:** Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.
-- **Core Concept:** Python's Built-in List Python's list type is a highly flexible data structure for representing array-based sequences.
-- **Core Concept:** It provides a dynamic and efficient way to store and manipulate collections of elements.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library. This chapter delves into the intricacies of using array-based sequences in Python, exploring their underlying principles, common operations, and real- world applications.
+
+Python's Built-in List Python's list type is a highly flexible data structure for representing array-based sequences. It provides a dynamic and efficient way to store and manipulate collections of elements. Creating and Accessing Lists Lists can be created using square brackets [] and populated with elements of various data types: my_list = [1, 2, 3, "hello", 4.5] Elements within a list can be accessed using zero-based indexing: first_element = my_list[0] # Accesses the first element last_element = my_list[-1] # Accesses the last element List Operations Python's list type offers a rich set of operations for manipulating sequences: Appending Elements: my_list.append(6) # Adds 6 to the end of the list Inserting Elements: my_list.insert(2, "world") # Inserts "world" at index 2 Removing Elements: my_list.remove("hello") # Removes the first occurrence of "hello" Slicing: sublist = my_list[1:4] # Extracts a slice from index 1 to 3 Iterating: for element in my_list: print(element) NumPy Arrays For numerical computations and scientific applications, NumPy provides a powerful array object that is optimized for performance and efficiency.
+
+NumPy arrays store elements of the same data type. Creating NumPy Arrays A sample code for NumPy arrays is given below - import numpy as np my_array = np.array([1, 2, 3, 4, 5]) NumPy Array Operations NumPy arrays support a wide range of operations, including: • Arithmetic Operations: Python array1 = np.array([1, 2, 3]) array2 = np.array([4, 5, 6]) result = array1 + array2 # Element-wise addition Matrix Operations: Python matrix1 = np.array([[1, 2], [3, 4]]) matrix2 = np.array([[5, 6], [7, 8]]) product = np.dot(matrix1, matrix2) # Matrix multiplication Universal Functions NumPy provides a rich set of universal functions (ufuncs) for element-wise operations on arrays.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing using array-based sequences.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in using array-based sequences can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of using array-based sequences and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define using array-based sequences formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.7` Multidimensional Data Sets
-- **Core Concept:** In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.
-- **Core Concept:** However, in many real-world applications, data is often multidimensional, requiring more complex structures to represent it efficiently.
-- **Core Concept:** Multidimensional Data Structures Multidimensional data structures allow us to store data in more than one dimension.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays. However, in many real-world applications, data is often multidimensional, requiring more complex structures to represent it efficiently. In this chapter, we will delve into multidimensional data sets in Python, focusing on their implementation using lists and the powerful NumPy library.
+
+Multidimensional Data Structures Multidimensional data structures allow us to store data in more than one dimension. The most common type is the matrix, which is a two-dimensional array. In Python, we can represent multidimensional data using nested lists or by leveraging libraries like NumPy that provide optimized array operations.
+
+Nested Lists A nested list is a list that contains other lists as its elements. This structure can be used to create a two-dimensional array. Example: Creating a Nested List # Creating a 2D nested list (matrix) matrix = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ] In this example, matrix is a two-dimensional list containing three rows and three columns.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing multidimensional data sets.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in multidimensional data sets can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of multidimensional data sets and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define multidimensional data sets formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Solving Recurrence via Master Theorem
+> **Problem Statement:**  
+> Solve the recurrence relation $T(n) = 2T(n/2) + n$ modeling Mergesort.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
+2. **Compare $\log_b a$ and $d$:**
+$$
+\log_b a = \log_2 2 = 1
+$$
+Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
+
+3. **Conclusion:**
+$$
+T(n) = \Theta(n^d \log n) = \Theta(n \log n)
+$$
+
+#### 🧮 Example 2: AVL Tree Rotation Sequence
+> **Problem Statement:**  
+> An empty AVL tree receives sequential insertions: 10, 20, 30. Trace the balance factors and demonstrate the required rotation.
+
+**Detailed Step-by-Step Solution:**
+
+1. Insert 10: $BF = 0$.
+2. Insert 20: 10 has $BF = -1$, 20 has $BF = 0$.
+3. Insert 30: Node 10 has left height 0, right height 2 $\implies BF(10) = -2$ (Unbalanced: Right-Right condition).
+4. **Apply Single Left Rotation on Node 10:**
+- Node 20 becomes new root.
+- Node 10 becomes left child of 20.
+- Node 30 remains right child of 20.
+New Balance Factors: $BF(20) = 0, \; BF(10) = 0, \; BF(30) = 0$. Tree balanced.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Custom Hash Map with Collision Chaining
+class SimpleHashMap:
+    def __init__(self, capacity=8):
+        self.capacity = capacity
+        self.buckets = [[] for _ in range(capacity)]
+
+    def _hash(self, key):
+        return hash(key) % self.capacity
+
+    def put(self, key, value):
+        b_idx = self._hash(key)
+        for i, (k, v) in enumerate(self.buckets[b_idx]):
+            if k == key:
+                self.buckets[b_idx][i] = (key, value)
+                return
+        self.buckets[b_idx].append((key, value))
+
+    def get(self, key):
+        b_idx = self._hash(key)
+        for k, v in self.buckets[b_idx]:
+            if k == key:
+                return v
+        return None
+
+hm = SimpleHashMap()
+hm.put("user_101", {"name": "Alice", "role": "Data Scientist"})
+hm.put("user_102", {"name": "Bob", "role": "ML Engineer"})
+print("Lookup user_101:", hm.get("user_101"))
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

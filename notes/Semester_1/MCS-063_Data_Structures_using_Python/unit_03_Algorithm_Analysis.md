@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~37 mins | 📄 **Textbook Pages:** 28 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-3_Algorithm_Analysis.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-3_Algorithm_Analysis.pdf)
 
 ---
 
@@ -62,42 +62,143 @@ $$
 $$
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **AVL Height Bound:** $h < 1.44 \log_2(n + 2) \implies O(\log n) \text{ worst-case search}$
+- **Hash Table Amortized Bound:** $O(1) \text{ lookup when } \alpha = n/m < 0.75$
+- **Comparison Lower Bound:** $\Omega(n \log n) \text{ for comparison sorts}$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `3.3` Experimental Studies
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of experimental studies.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to algorithm analysis.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+When we conduct this experiment, we observe:  For small inputs (< 100 elements), both algorithms complete almost instantaneously  As input size increases, bubble sort's execution time grows much faster than quick sort  With 10,000 elements, bubble sort may take several seconds while quick sort completes in milliseconds  The performance gap widens as input size increases Limitation of Experimental Studies: While experimental studies provide valuable insights, they have limitations:  Results are specific to the hardware used  Only provides data for tested input sizes; extrapolation is needed for larger inputs  Implementation details can significantly affect results  Testing on all possible inputs is impractical This is where theoretical analysis becomes indispensable.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing experimental studies.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in experimental studies can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of experimental studies and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define experimental studies formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `3.4` The Seven Functions Used in This Book
-- **Core Concept:** In algorithm analysis, we use several fundamental mathematical functions to characterize algorithm complexity.
-- **Core Concept:** These functions describe how the running time or space requirement grows as the input size increases.
-- **Core Concept:** Constant Function: f(n) = 1 Definition: The algorithm takes the same time regardless of input size.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In algorithm analysis, we use several fundamental mathematical functions to characterize algorithm complexity. These functions describe how the running time or space requirement grows as the input size increases.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing the seven functions used in this book.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in the seven functions used in this book can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of the seven functions used in this book and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define the seven functions used in this book formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `3.5` Asymptotic Analysis
-- **Core Concept:** It focuses on how the algorithm behaves as the input size approaches infinity.
-- **Core Concept:** Big-O Notation (Upper Bound) Definition: f(n) = O(g(n)) means there exist positive constants c and n such that f(n) ≤ c·g(n) for all n ≥ n .
-- **Core Concept:** Interpretation: O(g(n)) represents the worst-case scenario - an upper bound on the running time.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Asymptotic analysis allows us to characterize algorithm performance without relying on experimental measurements or specific hardware configurations. It focuses on how the algorithm behaves as the input size approaches infinity.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing asymptotic analysis.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in asymptotic analysis can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of asymptotic analysis and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define asymptotic analysis formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `3.6` Simple Justification Techniques
-- **Core Concept:** To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.
-- **Core Concept:** Initialization (i=1): arr[0:1] has one element, trivially sorted ✓ 2.
-- **Core Concept:** Maintenance: If arr[0:i] is sorted, we insert arr[i] into the correct position in arr[0:i], maintaining the sorted property ✓ 3.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+SIMPLE JUSTIFICATION TECHNIQUES To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing simple justification techniques.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in simple justification techniques can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of simple justification techniques and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define simple justification techniques formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Solving Recurrence via Master Theorem
+> **Problem Statement:**  
+> Solve the recurrence relation $T(n) = 2T(n/2) + n$ modeling Mergesort.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
+2. **Compare $\log_b a$ and $d$:**
+$$
+\log_b a = \log_2 2 = 1
+$$
+Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
+
+3. **Conclusion:**
+$$
+T(n) = \Theta(n^d \log n) = \Theta(n \log n)
+$$
+
+#### 🧮 Example 2: AVL Tree Rotation Sequence
+> **Problem Statement:**  
+> An empty AVL tree receives sequential insertions: 10, 20, 30. Trace the balance factors and demonstrate the required rotation.
+
+**Detailed Step-by-Step Solution:**
+
+1. Insert 10: $BF = 0$.
+2. Insert 20: 10 has $BF = -1$, 20 has $BF = 0$.
+3. Insert 30: Node 10 has left height 0, right height 2 $\implies BF(10) = -2$ (Unbalanced: Right-Right condition).
+4. **Apply Single Left Rotation on Node 10:**
+- Node 20 becomes new root.
+- Node 10 becomes left child of 20.
+- Node 30 remains right child of 20.
+New Balance Factors: $BF(20) = 0, \; BF(10) = 0, \; BF(30) = 0$. Tree balanced.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Custom Hash Map with Collision Chaining
+class SimpleHashMap:
+    def __init__(self, capacity=8):
+        self.capacity = capacity
+        self.buckets = [[] for _ in range(capacity)]
+
+    def _hash(self, key):
+        return hash(key) % self.capacity
+
+    def put(self, key, value):
+        b_idx = self._hash(key)
+        for i, (k, v) in enumerate(self.buckets[b_idx]):
+            if k == key:
+                self.buckets[b_idx][i] = (key, value)
+                return
+        self.buckets[b_idx].append((key, value))
+
+    def get(self, key):
+        b_idx = self._hash(key)
+        for k, v in self.buckets[b_idx]:
+            if k == key:
+                return v
+        return None
+
+hm = SimpleHashMap()
+hm.put("user_101", {"name": "Alice", "role": "Data Scientist"})
+hm.put("user_102", {"name": "Bob", "role": "ML Engineer"})
+print("Lookup user_101:", hm.get("user_101"))
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

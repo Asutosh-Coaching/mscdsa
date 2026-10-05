@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~50 mins | 📄 **Textbook Pages:** 40 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCSL-069_Artificial_Intelligence_&_Machine_Learning_Lab/MCSL-069_Artificial_Intelligence_&_Machine_Learning_Lab.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCSL-069_Artificial_Intelligence_&_Machine_Learning_Lab/MCSL-069_Artificial_Intelligence_&_Machine_Learning_Lab.pdf)
 
 ---
 
@@ -72,33 +72,133 @@ $$
 $$
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Heuristic Consistency Condition:** $h(n) \le c(n, a, n') + h(n') \implies \text{Monotonic (Guarantees A* optimality on graphs)}$
+- **SVM Dual Formulation:** $\max_\alpha \sum \alpha_i - \frac{1}{2}\sum \alpha_i \alpha_j y_i y_j K(\mathbf{x}_i, \mathbf{x}_j)$
+- **Universal Approximation Theorem:** A feedforward network with one non-linear hidden layer can approximate any continuous function on compact subsets of $\mathbb{R}^n$.
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `1.1` Foundational Principles of MCSL-069 Artificial Intelligence & Machine Learning Lab
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of foundational principles of mcsl-069 artificial intelligence & machine learning lab.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to mcsl-069 artificial intelligence & machine learning lab.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Foundational Principles of MCSL-069 Artificial Intelligence & Machine Learning Lab** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **MCSL-069 Artificial Intelligence & Machine Learning Lab**, understanding foundational principles of mcsl-069 artificial intelligence & machine learning lab is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing foundational principles of mcsl-069 artificial intelligence & machine learning lab.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in foundational principles of mcsl-069 artificial intelligence & machine learning lab can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of foundational principles of mcsl-069 artificial intelligence & machine learning lab and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define foundational principles of mcsl-069 artificial intelligence & machine learning lab formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `1.2` Core Analytical Methodologies
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of core analytical methodologies.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to mcsl-069 artificial intelligence & machine learning lab.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Core Analytical Methodologies** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **MCSL-069 Artificial Intelligence & Machine Learning Lab**, understanding core analytical methodologies is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing core analytical methodologies.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in core analytical methodologies can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of core analytical methodologies and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define core analytical methodologies formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `1.3` Practical Application in Data Science
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of practical application in data science.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to mcsl-069 artificial intelligence & machine learning lab.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Practical Application in Data Science** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **MCSL-069 Artificial Intelligence & Machine Learning Lab**, understanding practical application in data science is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing practical application in data science.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in practical application in data science can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of practical application in data science and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define practical application in data science formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Shannon Entropy and Information Gain Calculation
+> **Problem Statement:**  
+> A training dataset $S$ has 14 instances: 9 Positive ($+$) and 5 Negative ($-$). An attribute $A$ splits $S$ into $S_1$ (6 $+$, 2 $-$) and $S_2$ (3 $+$, 3 $-$). Compute Entropy $H(S)$ and Information Gain $IG(S, A)$.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Parent Entropy $H(S)$:**
+$$
+H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
+$$
+
+2. **Subset Entropies:**
+- For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
+- For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
+
+3. **Weighted Child Entropy:**
+$$
+H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
+$$
+
+4. **Information Gain:**
+$$
+IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
+$$
+(Attribute provides 0.048 bits of entropy reduction).
+
+#### 🧮 Example 2: A* Search Step Evaluation
+> **Problem Statement:**  
+> In graph navigation, node $N$ has exact path cost from start $g(N) = 14$ and straight-line heuristic to goal $h(N) = 11$. For node $M$, $g(M) = 18, h(M) = 6$. Which node is expanded next by A*?
+
+**Detailed Step-by-Step Solution:**
+
+1. Compute $f(n) = g(n) + h(n)$:
+- $f(N) = 14 + 11 = 25$
+- $f(M) = 18 + 6 = 24$
+
+2. Decision: A* selects the node with minimal $f(n)$. Since $f(M) = 24 < f(N) = 25$, **Node $M$ is expanded next**.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import numpy as np
+
+# Decision Tree Entropy and Information Gain from scratch
+def entropy(labels):
+    counts = np.bincount(labels)
+    probs = counts[counts > 0] / len(labels)
+    return -np.sum(probs * np.log2(probs))
+
+def information_gain(parent_labels, left_split, right_split):
+    h_parent = entropy(parent_labels)
+    n = len(parent_labels)
+    h_children = (len(left_split)/n)*entropy(left_split) + (len(right_split)/n)*entropy(right_split)
+    return h_parent - h_children
+
+# Sample binary targets: 9 ones, 5 zeros
+y_parent = np.array([1]*9 + [0]*5)
+y_left = np.array([1]*6 + [0]*2)
+y_right = np.array([1]*3 + [0]*3)
+
+ig = information_gain(y_parent, y_left, y_right)
+print(f"Parent Entropy: {entropy(y_parent):.4f}")
+print(f"Information Gain: {ig:.4f} bits")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -121,7 +221,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 3:</b> Why is the Softmax function used in multi-class classification neural networks? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to $1$.
+> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

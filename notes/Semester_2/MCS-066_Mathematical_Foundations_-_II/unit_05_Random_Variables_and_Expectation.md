@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~80 mins | 📄 **Textbook Pages:** 38 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-5_Random_Variables_and_Expectation.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-5_Random_Variables_and_Expectation.pdf)
 
 ---
 
@@ -80,60 +80,216 @@ $$
 $$
 - **Explanation:** Symmetric bell-shaped curve governed entirely by mean $\mu$ and standard deviation $\sigma$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Law of Total Probability:** $P(A) = \sum_{i=1}^k P(A \mid B_i) P(B_i)$
+- **Linearity of Expectation:** $E[aX + bY] = aE[X] + bE[Y] \quad (\text{always holds})$
+- **Variance of Sum:** $\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y)$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `5.2` Random Variable
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of random variable.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to random variables and expectation.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Expectation Observe that a probability can be assigned to the event that X assumes a particular value. It can also be observed that the sum of the probabilities corresponding to different values of X is one. So, a random variable can be defined as below: Definition: A random variable is a real-valued function whose domain is a set of possible outcomes of a random experiment and range is a sub-set of the set of real numbers and has the following properties: i) Each particular value of the random variable can be assigned some probability ii) Uniting all the probabilities associated with all the different values of the random variable gives the value 1(unity).
+
+Remark 1: We shall denote random variables by capital letters like X, Y, Z, etc. for random variable.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing random variable.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in random variable can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of random variable and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define random variable formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.3` Discrete Random Variable and Probability Mass Function
-- **Core Concept:** the values which have one-to-one correspondence with the set of natural numbers, i.e., on the basis of three or four successive known terms, we can catch a rule and hence can write the subsequent terms.
-- **Core Concept:** on taking n = 1, 2, 3, 4, 5, … we have 2, 5, 8, 11, 14,….
-- **Core Concept:** So, X in this example is a discrete random variable.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+DISCRETE RANDOM VARIABLE AND PROBABILITY MASS FUNCTION Discrete Random Variable A random variable is said to be discrete if it has either a finite or a countable number of values. Countable number of values means the values which can be arranged in a sequence, i.e. the values which have one-to-one correspondence with the set of natural numbers, i.e., on the basis of three or four successive known terms, we can catch a rule and hence can write the subsequent terms.
+
+For example, suppose X is a random variable taking the values say 2, 5, 8, 11, … then we can write the fifth, sixth, … values, because the values have one-to-one correspondence with the set of natural numbers and have the general term as 3n −1, i.e. on taking n = 1, 2, 3, 4, 5, … we have 2, 5, 8, 11, 14,….
+
+So, X in this example is a discrete random variable. The number of students present each day in a class during an academic session is an example of discrete random variable as the number cannot take a fractional value. Probability Mass Function Let X be a r.v. which takes the values x1, x2, ...
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing discrete random variable and probability mass function.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in discrete random variable and probability mass function can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of discrete random variable and probability mass function and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define discrete random variable and probability mass function formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.4` Continuous Random Variable and Probability Density Function
-- **Core Concept:** whose values can be arranged in a sequence.
-- **Core Concept:** But, if a random variable is such that its values cannot be arranged in a sequence, it is called continuous random variable.
-- **Core Concept:** So, a random variable is said to be continuous if it can take all possible real (i.e.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+CONTINUOUS RANDOM VARIABLE AND PROBABILITY DENSITY FUNCTION In Sec. 5.3 of this unit, we have defined the discrete random variable as a random variable having countable number of values, i.e. whose values can be arranged in a sequence. But, if a random variable is such that its values cannot be arranged in a sequence, it is called continuous random variable.
+
+Temperature of a city at various points of time during a day is an example of continuous random variable as the temperature takes uncountable values, i.e. it can take fractional values also. So, a random variable is said to be continuous if it can take all possible real (i.e. integer as well as fractional) values between two certain limits.
+
+For example, let us denote the variable, “Difference between the rainfall (in cm) of a city and that of another city on every rainy day in a rainy season”, by X, then X here is a continuous random variable as it can take any real value between two certain limits. It can be noticed that for a continuous random variable, the chance of occurrence of a particular value of the variable is very small, so instead of specifying the probability of taking a particular value by the variable, we specify the probability of its lying within an interval.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing continuous random variable and probability density function.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in continuous random variable and probability density function can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of continuous random variable and probability density function and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define continuous random variable and probability density function formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.5` Distribution Function
-- **Core Concept:** A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.
-- **Core Concept:** It is also known as the cumulative distribution function (c.d.f.) of X since it is the cumulative probability of X up to and including the value x.
-- **Core Concept:** As X can take any real value, therefore the domain of the distribution function is set of real numbers and as F(x) is a probability value, therefore the range of the distribution function is [0, 1].
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function. It is also known as the cumulative distribution function (c.d.f.) of X since it is the cumulative probability of X up to and including the value x. As X can take any real value, therefore the domain of the distribution function is set of real numbers and as F(x) is a probability value, therefore the range of the distribution function is [0, 1].
+
+Remark 3: Here, X denotes the random variable and x represents a particular value of random variable. F( x ) may also be written as FX( x ), which means that it is a distribution function of random variable X. Discrete Distribution Function Distribution function of a discrete random variable is said to be discrete distribution function or cumulative distribution function (c.d.f.).
+
+Let X be a discrete random variable taking the values x1, x2, x3, … with respective probabilities p1, p2, p3, … Then F( ix ) = P[X  ix ] = P[X = 1x ] + P[X = x ] + … + P[X = ix ] = p1 + p2 + ... The distribution function of X, in this case, is given as in the following table: X F(x) x1 p1 x2 p1 + p2 x3 p1 + p2 + p3 … … xi p1 + p2 + p3 +…+pi The value of F(x) corresponding to the last value of the random variable X is always 1, as it is the sum of all the probabilities.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing distribution function.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in distribution function can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of distribution function and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define distribution function formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.6.1` Bivariate Discrete Random Variables
-- **Core Concept:** Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.
-- **Core Concept:** In other words, (X, Y) is a two-dimensional random variable if the possible values of (X, Y) are finite or countably infinite.
-- **Core Concept:** Here, each value of X and Y is represented as a point ( x, y) in the xy-plane.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable. In other words, (X, Y) is a two-dimensional random variable if the possible values of (X, Y) are finite or countably infinite.
+
+Here, each value of X and Y is represented as a point ( x, y) in the xy-plane. As an illustration, let us consider the following example: Let three balls b1, b2, b3 be placed randomly in three cells. The possible outcomes of placing the three balls in three cells are shown in Table 5.1.
+
+Table 5.1: Possible Outcomes of Placing the Three Balls in Three Cells Arrangement Number Placement of the Balls in Cell 1 Cell 2 Cell 3 b1 b2 b3 b1 b3 b2 b2 b1 b3 b2 b3 b1 b3 b1 b2 b3 b2 b1 b1,b2 b3 - b1,b2 - b3 - b1,b2 b3 b1,b3 b2 - b1,b3 - b2 - b1,b3 b2 b2,b3 b1 - b2,b3 - b1 - b2,b3 b1 b1 b2,b3 - b1 - b2,b3 - b1 b2,b3 b2 b3,b1 - b2 - b3,b1 - b2 b3,b1 b3 b1,b2 - b3 - b1,b2 - b3 b1,b2 Random Variables Expectation b1,b2,b3 - - - b1,b2,b3 - - - b1,b2,b3 Now, let X denote the number of balls in Cell 1 and Y be the number of cells occupied.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing bivariate discrete random variables.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in bivariate discrete random variables can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of bivariate discrete random variables and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define bivariate discrete random variables formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `5.6.2` Bivariate Continuous Random Variables
-- **Core Concept:** Some examples of bivariate continuous random variables are: 1.
-- **Core Concept:** A gun is aimed at a certain point (say origin of the coordinate system).
-- **Core Concept:** Because of the random factors, suppose the actual hit point is any point (X, Y) in a circle of radius unity about the origin.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Definition: If X and Y are continuous random variables defined on the sample space S of a random experiment, then (X, Y) defined on the same sample space S is called bivariate continuous random variable if (X, Y) assigns a point in xy-plane defined on the sample space S. Notice that it (unlike discrete random Probability and Distributions variable) assumes values in some non-countable set.
+
+Some examples of bivariate continuous random variables are: 1. A gun is aimed at a certain point (say origin of the coordinate system). Because of the random factors, suppose the actual hit point is any point (X, Y) in a circle of radius unity about the origin. Then (X, Y) assumes all the values in the circle ( )   x, y : x y +  i.e.
+
+(X, Y) assumes all values corresponding to each and every point in the circular region as shown in Fig. Here, (X, Y) is bivariate continuous random variable. Assuming all values in the rectangle, represented as (X, Y) ( )   x, y :a x b,c y d     is a bivariate continuous random variable.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing bivariate continuous random variables.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in bivariate continuous random variables can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of bivariate continuous random variables and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define bivariate continuous random variables formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `5.8` Moments and Other Measures in Terms of Expectations
+##### 📘 Theoretical Principles & In-Depth Exposition
+OF EXPECTATIONS In this section, we present basic definitions of the moments and other measures for a random variable in terms of expectations in the following section
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing moments and other measures in terms of expectations.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in moments and other measures in terms of expectations can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define moments and other measures in terms of expectations formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `5.8.1` Moments
+##### 📘 Theoretical Principles & In-Depth Exposition
+The moments for probability distributions for the rth order moment about any point ‘A’ of a random variable X having probability mass function   ( ) i i i P X x p x p = = = is defined as ( ) n r i i ' i 1 r n i i 1 p x A p = = − =   ( ) n n r i i i i 1 i 1 p x A p = =   = − =       ฀ The above formula is valid if X is a discrete random variable.
+
+But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.  − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.
+
+x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e. rth order central moment is defined as Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v. x f x dx, if Xisa continousr.v  −  −  =   −    = ( ) ( ) r r E X E X E X   − = −  
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing moments.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in moments can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define moments formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Bayes' Theorem in Rare Event Detection
+> **Problem Statement:**  
+> A medical diagnostic test for a disease has Sensitivity $P(+ \mid D) = 0.95$ and Specificity $P(- \mid D^c) = 0.90$. The disease prevalence in population is $P(D) = 0.01$. If a patient tests positive, what is the probability they actually have the disease?
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify components:**
+- Prior: $P(D) = 0.01 \implies P(D^c) = 0.99$
+- Likelihood: $P(+ \mid D) = 0.95$
+- False Positive Rate: $P(+ \mid D^c) = 1 - 0.90 = 0.10$
+
+2. **Total Probability of testing positive:**
+$$
+P(+) = P(+ \mid D)P(D) + P(+ \mid D^c)P(D^c) = (0.95)(0.01) + (0.10)(0.99) = 0.0095 + 0.0990 = 0.1085
+$$
+
+3. **Posterior Probability via Bayes' Theorem:**
+$$
+P(D \mid +) = \frac{P(+ \mid D)P(D)}{P(+)} = \frac{0.0095}{0.1085} \approx 0.08755 \implies 8.76\%
+$$
+
+Insight: Despite 95% sensitivity, because the disease is rare, a positive test only implies an 8.76% probability of disease (Base Rate Fallacy).
+
+#### 🧮 Example 2: Binomial Distribution Probability Calculation
+> **Problem Statement:**  
+> An automated testing suite runs $n = 5$ independent integration tests. Each test has failure rate $p = 0.1$. Calculate the probability that exactly 1 test fails.
+
+**Detailed Step-by-Step Solution:**
+
+$$
+\begin{aligned} P(X = 1) & = \binom{5}{1} (0.1)^1 (0.9)^{5-1} \\ & = 5 \times 0.1 \times (0.9)^4 \\ & = 0.5 \times 0.6561 = 0.32805 \implies 32.81\% \end{aligned}
+$$
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import scipy.stats as stats
+
+# Bayes Theorem Calculator
+def bayes_posterior(prior, sensitivity, specificity):
+    false_positive_rate = 1.0 - specificity
+    p_evidence = (sensitivity * prior) + (false_positive_rate * (1 - prior))
+    posterior = (sensitivity * prior) / p_evidence
+    return posterior
+
+prior_fraud = 0.02
+sens = 0.98
+spec = 0.95
+
+p_fraud_given_flag = bayes_posterior(prior_fraud, sens, spec)
+print(f"P(Fraud | System Flag): {p_fraud_given_flag * 100:.2f}%")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

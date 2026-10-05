@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~21 mins | 📄 **Textbook Pages:** 19 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-9_Priority_Queues.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-9_Priority_Queues.pdf)
 
 ---
 
@@ -64,51 +64,174 @@ $$
 $$
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **AVL Height Bound:** $h < 1.44 \log_2(n + 2) \implies O(\log n) \text{ worst-case search}$
+- **Hash Table Amortized Bound:** $O(1) \text{ lookup when } \alpha = n/m < 0.75$
+- **Comparison Lower Bound:** $\Omega(n \log n) \text{ for comparison sorts}$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `9.2` The Priority Queue Abstract Data Type
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of the priority queue abstract data type.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to priority queues.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **The Priority Queue Abstract Data Type** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Priority Queues**, understanding the priority queue abstract data type is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing the priority queue abstract data type.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in the priority queue abstract data type can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of the priority queue abstract data type and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define the priority queue abstract data type formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.3` Implementing a Priority Queue
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of implementing a priority queue.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to priority queues.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Implementing a Priority Queue** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Priority Queues**, understanding implementing a priority queue is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing implementing a priority queue.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in implementing a priority queue can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of implementing a priority queue and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define implementing a priority queue formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.4` Heaps
-- **Core Concept:** A heap uses a specialized tree-based data structure that satisfies the heap property.
-- **Core Concept:** It's the most effective way to implement a priority queue.
-- **Core Concept:** Structure Property: A heap is a complete binary tree (all levels filled except possibly the last, which is filled left-to-right) 2.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A heap uses a specialized tree-based data structure that satisfies the heap property. It's the most effective way to implement a priority queue. Structure Property: A heap is a complete binary tree (all levels filled except possibly the last, which is filled left-to-right) 2. Order Property: The priority of each node is greater than or equal to (max-heap) or less than or equal to (min-heap) its children's priorities TYPES OF HEAPS 1.
+
+Min-Heap: Parent node has smaller priority than its children / \ 3 2 / \ / \ 7 8 4 5 2. Max-Heap: Parent node has larger priority than its children / \ 7 5 / \ / \ 3 4 1 2 HEAP REPRESENTATION 3. Heaps are typically implemented using arrays, providing efficient storage and easy navigation: class MinHeap: """Array-based min-heap implementation.""" def __init__(self): self._data = [] def _parent_index(self, index): """Return parent index of given index.""" return (index - 1) // 2 def _left_child_index(self, index): """Return left child index.""" return 2 * index + 1 def _right_child_index(self, index): """Return right child index.""" return 2 * index + 2 def _has_parent(self, index): """Check if node has parent.""" return self._parent_index(index) >= 0 def _has_left_child(self, index): """Check if node has left child.""" return self._left_child_index(index) <len(self._data) Linked List def _has_right_child(self, index): """Check if node has right child.""" return self._right_child_index(index) <len(self._data) def _parent(self, index): """Get parent element.""" return self._data[self._parent_index(index)] def _left_child(self, index): """Get left child element.""" return self._data[self._left_child_index(index)] def _right_child(self, index): """Get right child element.""" return self._data[self._right_child_index(index)] def _swap(self, index1, index2): """Swap elements at two indices.""" self._data[index1], self._data[index2] = self._data[index2], self._data[index1] HEAP OPERATIONS Insertion (Heapify Up): Insert at the end and bubble up to maintain heap property.
+
+def insert(self, item, priority): """Insert item with priority. O(log n) time complexity.""" self._data.append((priority, item)) self._heapify_up(len(self._data) - 1) def _heapify_up(self, index): """Restore heap property by moving element up.""" while (self._has_parent(index) and self._parent(index)[0] >self._data[index][0]): parent_idx = self._parent_index(index) self._swap(index, parent_idx) index = parent_idx Extraction (Heapify Down): Remove root, replace with last element, and bubble down.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing heaps.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in heaps can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of heaps and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define heaps formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.5` Sorting with a Priority Queue
-- **Core Concept:** Heap sort uses a priority queue (heap) to sort elements efficiently.
-- **Core Concept:** It has O(n log n) time complexity and sorts in-place.
-- **Core Concept:** Build a max-heap from the input array 2.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Heap sort uses a priority queue (heap) to sort elements efficiently. It has O(n log n) time complexity and sorts in-place. Build a max-heap from the input array 2. Repeatedly extract the maximum element and place it at the end 3. Reduce the heap size and restore heap property def heap_sort(arr): """Sort array using heap sort algorithm.
+
+O(n log n) time complexity.""" def heapify(arr, n, root): """Maintain max-heap property.""" largest = root left = 2 * root + 1 right = 2 * root + 2 # Find largest among root and children if left < n and arr[left] >arr[largest]: largest = left if right < n and arr[right] >arr[largest]: largest = right # If largest is not root, swap and continue heapifying if largest != root: arr[root], arr[largest] = arr[largest], arr[root] heapify(arr, n, largest) n = len(arr) # Build max-heap (bottom-up) for i in range(n // 2 - 1, -1, -1): heapify(arr, n, i) # Extract elements one by one for i in range(n - 1, 0, -1): # Move current root to end arr[0], arr[i] = arr[i], arr[0] # Restore heap property for reduced heap heapify(arr, i, 0) return arr # Example usage def demonstrate_heap_sort(): """Demonstrate heap sort algorithm.""" arrays = [ [64, 34, 25, 12, 22, 11, 90], [5, 2, 8, 1, 9], [1], [] Trees ] for arr in arrays: original = arr.copy() sorted_arr = heap_sort(arr) print(f"Original: {original}") print(f"Sorted: {sorted_arr}") print() demonstrate_heap_sort() PRIORITY QUEUE SORT We can also sort using a priority queue data structure: def priority_queue_sort(arr): """Sort array using priority queue.
+
+O(n log n) time complexity.""" pq = MinHeapPriorityQueue() # Insert all elements for i, value in enumerate(arr): pq.insert(value, value) # Extract elements in sorted order sorted_arr = [] while not pq.is_empty(): sorted_arr.append(pq.extract_min()) return sorted_arr # Example usage original = [64, 34, 25, 12, 22, 11, 90] sorted_arr = priority_queue_sort(original) print(f"Original: {original}") print(f"Sorted: {sorted_arr}") TOP-K ELEMENTS PROBLEM Finding the K largest or smallest elements is a common application: def find_k_largest(arr, k): """Find K largest elements using min-heap.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sorting with a priority queue.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sorting with a priority queue can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of sorting with a priority queue and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define sorting with a priority queue formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.6` Adaptable Priority Queues
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of adaptable priority queues.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to priority queues.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+CONCEPT AND MOTIVATION Adaptable priority queues support additional operations to modify existing entries:  Change the priority of an existing item  Remove a specific item from the queue These operations are essential in applications like Dijkstra's algorithm where priorities need to be updated dynamically.
+
+IMPLEMENTATION WITH LOCATION-AWARE ENTRIES class Entry: """Entry class for adaptable priority queue.""" def __init__(self, key, value, index): self._key = key # priority self._value = value # item self._index = index # current index in heap def __lt__(self, other): return self._key<other._key class AdaptablePriorityQueue: """Adaptable priority queue using binary heap.""" def __init__(self): self._data = [] self._entries = {} # Maps values to entries for fast lookup Trees def _parent(self, j): return (j - 1) // 2 def _left(self, j): return 2 * j + 1 def _right(self, j): return 2 * j + 2 def _has_left(self, j): return self._left(j) <len(self._data) def _has_right(self, j): return self._right(j) <len(self._data) def _swap(self, i, j): """Swap entries and update their indices.""" self._data[i], self._data[j] = self._data[j], self._data[i] self._data[i]._index = i self._data[j]._index = j def _upheap(self, j): """Restore heap property by moving entry up.""" parent = self._parent(j) if j > 0 and self._data[j] <self._data[parent]: self._swap(j, parent) self._upheap(parent) def _downheap(self, j): """Restore heap property by moving entry down.""" if self._has_left(j): left = self._left(j) small_child = left if self._has_right(j): right = self._right(j) if self._data[right] <self._data[left]: small_child = right if self._data[small_child] <self._data[j]: self._swap(j, small_child) self._downheap(small_child) def insert(self, key, value): """Insert new entry.
+
+O(log n) time complexity.""" if value in self._entries: raise ValueError(f"Value {value} already exists") entry = Entry(key, value, len(self._data)) self._data.append(entry) self._entries[value] = entry self._upheap(len(self._data) - 1) return entry def min(self): Linked List """Return minimum entry without removing.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing adaptable priority queues.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in adaptable priority queues can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of adaptable priority queues and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define adaptable priority queues formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Solving Recurrence via Master Theorem
+> **Problem Statement:**  
+> Solve the recurrence relation $T(n) = 2T(n/2) + n$ modeling Mergesort.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
+2. **Compare $\log_b a$ and $d$:**
+$$
+\log_b a = \log_2 2 = 1
+$$
+Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
+
+3. **Conclusion:**
+$$
+T(n) = \Theta(n^d \log n) = \Theta(n \log n)
+$$
+
+#### 🧮 Example 2: AVL Tree Rotation Sequence
+> **Problem Statement:**  
+> An empty AVL tree receives sequential insertions: 10, 20, 30. Trace the balance factors and demonstrate the required rotation.
+
+**Detailed Step-by-Step Solution:**
+
+1. Insert 10: $BF = 0$.
+2. Insert 20: 10 has $BF = -1$, 20 has $BF = 0$.
+3. Insert 30: Node 10 has left height 0, right height 2 $\implies BF(10) = -2$ (Unbalanced: Right-Right condition).
+4. **Apply Single Left Rotation on Node 10:**
+- Node 20 becomes new root.
+- Node 10 becomes left child of 20.
+- Node 30 remains right child of 20.
+New Balance Factors: $BF(20) = 0, \; BF(10) = 0, \; BF(30) = 0$. Tree balanced.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Custom Hash Map with Collision Chaining
+class SimpleHashMap:
+    def __init__(self, capacity=8):
+        self.capacity = capacity
+        self.buckets = [[] for _ in range(capacity)]
+
+    def _hash(self, key):
+        return hash(key) % self.capacity
+
+    def put(self, key, value):
+        b_idx = self._hash(key)
+        for i, (k, v) in enumerate(self.buckets[b_idx]):
+            if k == key:
+                self.buckets[b_idx][i] = (key, value)
+                return
+        self.buckets[b_idx].append((key, value))
+
+    def get(self, key):
+        b_idx = self._hash(key)
+        for k, v in self.buckets[b_idx]:
+            if k == key:
+                return v
+        return None
+
+hm = SimpleHashMap()
+hm.put("user_101", {"name": "Alice", "role": "Data Scientist"})
+hm.put("user_102", {"name": "Bob", "role": "ML Engineer"})
+print("Lookup user_101:", hm.get("user_101"))
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

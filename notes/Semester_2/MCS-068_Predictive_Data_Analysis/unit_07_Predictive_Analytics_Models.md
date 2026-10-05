@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~57 mins | 📄 **Textbook Pages:** 28 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-7_Predictive_Analytics_Models.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-7_Predictive_Analytics_Models.pdf)
 
 ---
 
@@ -72,33 +72,129 @@ P(Y = 1 \mid X = \mathbf{x}) = \sigma(\mathbf{w}^T \mathbf{x} + b) = \frac{1}{1 
 $$
 - **Explanation:** Maps any real-valued linear score into a calibrated probability interval $[0, 1]$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Gauss-Markov Theorem:** Under standard OLS assumptions, the OLS estimator is BLUE (Best Linear Unbiased Estimator).
+- **Orthogonality of Residuals:** $\mathbf{X}^T \mathbf{e} = \mathbf{0} \quad (\text{Residuals are orthogonal to feature space})$
+- **Variance Inflation Factor (VIF):** $\text{VIF}_j = \frac{1}{1 - R_j^2} \quad (\text{VIF} > 5 \implies \text{Severe Multicollinearity})$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `1.1` Foundational Principles of Predictive Analytics Models
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of foundational principles of predictive analytics models.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to predictive analytics models.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Foundational Principles of Predictive Analytics Models** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Predictive Analytics Models**, understanding foundational principles of predictive analytics models is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing foundational principles of predictive analytics models.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in foundational principles of predictive analytics models can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of foundational principles of predictive analytics models and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define foundational principles of predictive analytics models formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `1.2` Core Analytical Methodologies
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of core analytical methodologies.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to predictive analytics models.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Core Analytical Methodologies** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Predictive Analytics Models**, understanding core analytical methodologies is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing core analytical methodologies.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in core analytical methodologies can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of core analytical methodologies and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define core analytical methodologies formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `1.3` Practical Application in Data Science
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of practical application in data science.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to predictive analytics models.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Practical Application in Data Science** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Predictive Analytics Models**, understanding practical application in data science is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing practical application in data science.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in practical application in data science can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of practical application in data science and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define practical application in data science formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Simple Linear Regression OLS Computation
+> **Problem Statement:**  
+> Given data points $(x, y)$: $(1, 2), (2, 3), (3, 5), (4, 4), (5, 6)$. Compute OLS slope $\hat{\beta}_1$, intercept $\hat{\beta}_0$, and regression line.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Means:** $\bar{x} = 3.0, \; \bar{y} = 4.0$.
+2. **Deviations & Products:**
+- $(x_1 - \bar{x}) = -2, \; (y_1 - \bar{y}) = -2 \implies (-2)(-2) = 4, \; (-2)^2 = 4$
+- $(x_2 - \bar{x}) = -1, \; (y_2 - \bar{y}) = -1 \implies (-1)(-1) = 1, \; (-1)^2 = 1$
+- $(x_3 - \bar{x}) = 0, \; (y_3 - \bar{y}) = 1 \implies (0)(1) = 0, \; 0^2 = 0$
+- $(x_4 - \bar{x}) = 1, \; (y_4 - \bar{y}) = 0 \implies (1)(0) = 0, \; 1^2 = 1$
+- $(x_5 - \bar{x}) = 2, \; (y_5 - \bar{y}) = 2 \implies (2)(2) = 4, \; 2^2 = 4$
+
+3. **Summation:** $\sum (x_i - \bar{x})(y_i - \bar{y}) = 9, \; \sum (x_i - \bar{x})^2 = 10$.
+
+4. **Parameters:**
+$$
+\hat{\beta}_1 = \frac{9}{10} = 0.90
+$$
+$$
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} = 4.0 - 0.9(3.0) = 4.0 - 2.7 = 1.30
+$$
+
+Regression Equation: $\hat{y} = 1.30 + 0.90 x$.
+
+#### 🧮 Example 2: Coefficient of Determination $R^2$ Calculation
+> **Problem Statement:**  
+> For the model above, total sum of squares $SS_{\text{tot}} = 10.0$ and sum of squared residuals $SS_{\text{res}} = 1.90$. Calculate $R^2$ and interpret.
+
+**Detailed Step-by-Step Solution:**
+
+$$
+R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{1.90}{10.0} = 1 - 0.19 = 0.81 \implies 81\%
+$$
+
+Interpretation: 81% of the variation in target $y$ is explained by feature $x$.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+import numpy as np
+
+# Dataset with multicollinearity
+X = np.array([[1, 2], [2, 4.1], [3, 5.9], [4, 8.2], [5, 9.9]])
+y = np.array([2.2, 4.1, 6.2, 7.9, 10.1])
+
+# 1. Standard OLS
+ols = LinearRegression().fit(X, y)
+print("OLS Coefficients:", ols.coef_)
+
+# 2. Ridge (L2 penalty shrinks weights smoothly)
+ridge = Ridge(alpha=1.0).fit(X, y)
+print("Ridge Coefficients:", ridge.coef_)
+
+# 3. Lasso (L1 penalty induces sparsity)
+lasso = Lasso(alpha=0.1).fit(X, y)
+print("Lasso Coefficients (Sparse):", lasso.coef_)
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

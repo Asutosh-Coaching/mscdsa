@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~45 mins | 📄 **Textbook Pages:** 26 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-12_Neural_Networks_and_Deep_Learning.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-12_Neural_Networks_and_Deep_Learning.pdf)
 
 ---
 
@@ -74,60 +74,224 @@ $$
 $$
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Heuristic Consistency Condition:** $h(n) \le c(n, a, n') + h(n') \implies \text{Monotonic (Guarantees A* optimality on graphs)}$
+- **SVM Dual Formulation:** $\max_\alpha \sum \alpha_i - \frac{1}{2}\sum \alpha_i \alpha_j y_i y_j K(\mathbf{x}_i, \mathbf{x}_j)$
+- **Universal Approximation Theorem:** A feedforward network with one non-linear hidden layer can approximate any continuous function on compact subsets of $\mathbb{R}^n$.
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `12.3` Overview of Neural Network
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of overview of neural network.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to neural networks and deep learning.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Overview of Neural Network** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Neural Networks and Deep Learning**, understanding overview of neural network is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing overview of neural network.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in overview of neural network can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of overview of neural network and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define overview of neural network formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.4` Multilayer Feedforward Neural networks with Sigmoid activation
-- **Core Concept:** NETWORKS WITH SIGMOID ACTIVATION FUNCTIONS A multilayer feed forward neural network consists of the interconnection of various layers, named input, hidden layer, and output layer.
-- **Core Concept:** The number of hidden layers is not fixed.
-- **Core Concept:** It depends upon the requirements and complexity of the problem.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+NETWORKS WITH SIGMOID ACTIVATION FUNCTIONS A multilayer feed forward neural network consists of the interconnection of various layers, named input, hidden layer, and output layer. The number of hidden layers is not fixed. It depends upon the requirements and complexity of the problem.
+
+The simple neural network is one with a single input layer and an output layer is known as perceptrons. A Perceptron accepts inputs, moderates them with certain weight values, then applies the transformation function to output the final result. The word perceptron is used here because every connection has a certain weight, and through these connections, one layer is connected to the next layer.
+
+The model's working is defined as follows: All inputs usually are multiplied by the weight, and this weighted sum is calculated. After it, this sum is applied to the activation function, and it is the output of an individual layer. This output becomes the input to the next layer.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing multilayer feedforward neural networks with sigmoid activation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in multilayer feedforward neural networks with sigmoid activation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of multilayer feedforward neural networks with sigmoid activation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define multilayer feedforward neural networks with sigmoid activation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.4.1` Neural Networks with Hidden Layers
-- **Core Concept:** There may be a single hidden layer or multiple hidden layers.
-- **Core Concept:** this n and m may be different as the hidden layer neurons, and the input neurons may have different values.
-- **Core Concept:** Also, as several hidden layers may be multiple, the first hidden layer has superscript 1, while the second hidden layer has superscript 2, and so on.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Figure 3 describes the hidden layers of a neural network by adding more neurons in between the input and output layers. There may be a single hidden layer or multiple hidden layers. Figure 3: Neural network with a hidden layer Data/ input is labeled in the input layer using x valuewith 1, 2, 3, …, m as the subscript, while neurons in the hidden layer are labeled as h with subscripts 1, 2, 3, …, n...
+
+this n and m may be different as the hidden layer neurons, and the input neurons may have different values. Also, as several hidden layers may be multiple, the first hidden layer has superscript 1, while the second hidden layer has superscript 2, and so on. Output is labeled as y with a hat i.e.,y ̂.
+
+The input data/ features with m dimension represented as (x1, x2, …, xm). You may say that a feature is nothing, but it is only a dependent variable that significantly influences a specific outcome/ dependent variable. Now, we multiply m features (x1, x2, …, xm) with (w1, w2, …, wm) as a weight matrix, and then the sum is computed by adding these multiplicative terms.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing neural networks with hidden layers.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in neural networks with hidden layers can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of neural networks with hidden layers and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define neural networks with hidden layers formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.6` Back propagation Algorithm:
-- **Core Concept:** The Backpropagation algorithm is a supervised learning algorithm for training the neural network model.
-- **Core Concept:** Then it is used to adjust the weight in the backward direction.
-- **Core Concept:** When designing a neural network, we initially need to initialize the weights and biases with some random values.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The Backpropagation algorithm is a supervised learning algorithm for training the neural network model. This algorithm was first introduced in the 1960s, it was not popular, and in 1989 it gets popularized by Rumelhart, Hinton, and Williams, who have used this concept in a paper titled "Learning representations by back-propagating errors." It is one of the most fundamental building blocks of any neural network., if you have multiple layers in the neural network.
+
+Then it is used to adjust the weight in the backward direction. When designing a neural network, we initially need to initialize the weights and biases with some random values. We initially gave some random values for weight and bias, but our model, through the backpropagation algorithm, will adjust these values and get the output if the difference between our actual output and predicted output is a large, more significant error.
+
+This algorithm trains the neural network model based on chain rule method. In simple terms, you can say that after every forward pass through a network, the backpropagation algorithm works to perform a backward pass to adjust the weights and biased parameters of the model. It repeatedly adjusts the weights and biases of all the edges among all the layers so that Error i.e., the difference between predicted output and real output, should be minimum.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing back propagation algorithm:.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in back propagation algorithm: can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of back propagation algorithm: and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define back propagation algorithm: formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.6.1` How Backpropagation Works?
-- **Core Concept:** Hidden layer neurons outputs become the inputs.
-- **Core Concept:** Now, we are checking for W5 After applying the Backpropagation, we find a total change in errors regarding output-1 : O1 and output-2 : O2.
-- **Core Concept:** 2 2 total 1 2 2 2 total 1 1 1 1 1 E = (target 0 out 0 ) + (target 0 - out 0 ) 2 2 SE = (target 0 out 0 ) = (0.01 0.7513) = 0.74136 Sout 0 − − − − − Now, we need to propagate backward to find the changes in O1 concerning its total net input.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Now you may consider below Neural Network for a better understanding: Figure 12: Neural Network Example This network contains: 1. Three input layers 2. Two layersof hidden neurons 3. Two neurons at the output layer. i1 h1 o1 i2 h2 o2 j I .05 .10 .15w1 .4w5 .20w2 .45w6 .3w4 .5w7 .99 .01 b1.35 b2.60 .55w8 .25w3 Neural Networks and Deep Learning The following steps are used in the Backpropagation: Step1: We need to use forward propagation Step 2: After that, we have to follow backward propagation Step 3: We put all the values to calculate the updated weight Step 1: We use forward propagation We start the working with forwarding propagation 1Output net 0
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing how backpropagation works?.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in how backpropagation works? can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of how backpropagation works? and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define how backpropagation works? formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `12.7` Feed forward networks for Classification and Regression
-- **Core Concept:** Feed forward neural network is used for various problems, including classification , regression, and pattern encoding.
-- **Core Concept:** In the first case, the web returns a value called z=f(w,x), which is very close to the target value y.
-- **Core Concept:** While in the second case, the target becomes the input itself v(x,y,f(w,x)).To deal with multi-classification, we can use either of the techniques.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+CLASSIFICATION AND REGRESSION Feed forward neural network is used for various problems, including classification , regression, and pattern encoding. In the first case, the web returns a value called z=f(w,x), which is very close to the target value y. While in the second case, the target becomes the input itself v(x,y,f(w,x)).To deal with multi-classification, we can use either of the techniques.
+
+Figure 13: Multi-classification The above-mentioned left-hand side network is a modular architecture. Here, every class connects with three distinct hidden neurons. While mentioned right- hand side network defines a fully connected network, which is used for a richer classification process.
+
+The left-side network is advantageous as it is modular and supports the classifiers' gradual construction. Whenever we feel to add a new class, the fully connected network requires further training, while the modular network only involves training for a new module. The same issue also holds for regression.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing feed forward networks for classification and regression.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in feed forward networks for classification and regression can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of feed forward networks for classification and regression and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define feed forward networks for classification and regression formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `12.8` Deep Learning
+##### 📘 Theoretical Principles & In-Depth Exposition
+Deep learning is a subset of artificial intelligence, commonly called AI, that tells us the workings of the human brain to process data and patterns defining for decision making. Deep learning has capable of learning unsupervised from unstructured data or unlabeled data. Deep learning is further classified as an AI function that is used to simulate the workings of the human brain in processing data to detect objects, recognize speech, translate languages, and make decisions.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing deep learning.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in deep learning can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define deep learning formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `12.8.1` How Deep Learning Works
+##### 📘 Theoretical Principles & In-Depth Exposition
+Initially, there was a limitation of computing resources, and the concept of deep learning was not so popular. Once these resources were available, deep learning took the attention of the researchers. Deep Learning can handle all forms of data from all world regions. This data is available in massive amounts, termed big data, and is taken from various sources, including social media, search engines, different e-platforms, and others multimedia sources.
+
+Big data is accessible through multiple fintech applications such as cloud computing. However, this data is so vast and primarily considered unstructured that it could take decades or centuries for humans to understand or find meaningful decisions. As mentioned earlier, the deep learning model's work is similar to the multilayer perceptron models.
+
+We have various models, such as convolution neural network (CNN) and long short term Model (LSTM). The exact working of CNN and LSTM is out of scope, but you can refer to the working of multilayer perception to understand the working of the deep learning model.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing how deep learning works.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in how deep learning works can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define how deep learning works formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Shannon Entropy and Information Gain Calculation
+> **Problem Statement:**  
+> A training dataset $S$ has 14 instances: 9 Positive ($+$) and 5 Negative ($-$). An attribute $A$ splits $S$ into $S_1$ (6 $+$, 2 $-$) and $S_2$ (3 $+$, 3 $-$). Compute Entropy $H(S)$ and Information Gain $IG(S, A)$.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Parent Entropy $H(S)$:**
+$$
+H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
+$$
+
+2. **Subset Entropies:**
+- For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
+- For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
+
+3. **Weighted Child Entropy:**
+$$
+H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
+$$
+
+4. **Information Gain:**
+$$
+IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
+$$
+(Attribute provides 0.048 bits of entropy reduction).
+
+#### 🧮 Example 2: A* Search Step Evaluation
+> **Problem Statement:**  
+> In graph navigation, node $N$ has exact path cost from start $g(N) = 14$ and straight-line heuristic to goal $h(N) = 11$. For node $M$, $g(M) = 18, h(M) = 6$. Which node is expanded next by A*?
+
+**Detailed Step-by-Step Solution:**
+
+1. Compute $f(n) = g(n) + h(n)$:
+- $f(N) = 14 + 11 = 25$
+- $f(M) = 18 + 6 = 24$
+
+2. Decision: A* selects the node with minimal $f(n)$. Since $f(M) = 24 < f(N) = 25$, **Node $M$ is expanded next**.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import numpy as np
+
+# Decision Tree Entropy and Information Gain from scratch
+def entropy(labels):
+    counts = np.bincount(labels)
+    probs = counts[counts > 0] / len(labels)
+    return -np.sum(probs * np.log2(probs))
+
+def information_gain(parent_labels, left_split, right_split):
+    h_parent = entropy(parent_labels)
+    n = len(parent_labels)
+    h_children = (len(left_split)/n)*entropy(left_split) + (len(right_split)/n)*entropy(right_split)
+    return h_parent - h_children
+
+# Sample binary targets: 9 ones, 5 zeros
+y_parent = np.array([1]*9 + [0]*5)
+y_left = np.array([1]*6 + [0]*2)
+y_right = np.array([1]*3 + [0]*3)
+
+ig = information_gain(y_parent, y_left, y_right)
+print(f"Parent Entropy: {entropy(y_parent):.4f}")
+print(f"Information Gain: {ig:.4f} bits")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -150,7 +314,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 3:</b> Why is the Softmax function used in multi-class classification neural networks? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to $1$.
+> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
 </details>
 
 <details>

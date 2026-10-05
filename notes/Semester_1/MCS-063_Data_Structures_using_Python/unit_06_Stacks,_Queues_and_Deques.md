@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~20 mins | 📄 **Textbook Pages:** 19 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-6_Stacks,_Queues_and_Deques.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-6_Stacks,_Queues_and_Deques.pdf)
 
 ---
 
@@ -64,60 +64,187 @@ $$
 $$
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **AVL Height Bound:** $h < 1.44 \log_2(n + 2) \implies O(\log n) \text{ worst-case search}$
+- **Hash Table Amortized Bound:** $O(1) \text{ lookup when } \alpha = n/m < 0.75$
+- **Comparison Lower Bound:** $\Omega(n \log n) \text{ for comparison sorts}$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `6.2` Abstract Data Type-List
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of abstract data type-list.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to stacks, queues and deques.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Abstract Data Type-List** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Stacks, Queues and Deques**, understanding abstract data type-list is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing abstract data type-list.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in abstract data type-list can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of abstract data type-list and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define abstract data type-list formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `6.3` Array Implementation of Lists
-- **Core Concept:** In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.
-- **Core Concept:** Unlike static data structures, queues provide dynamic and flexible mechanisms for managing ordered collections where the first element is the first one to be removed.
-- **Core Concept:** Queues are essential in various programming scenarios, particularly in managing tasks, scheduling processes, and handling asynchronous data.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner. Unlike static data structures, queues provide dynamic and flexible mechanisms for managing ordered collections where the first element is the first one to be removed. Queues are essential in various programming scenarios, particularly in managing tasks, scheduling processes, and handling asynchronous data.
+
+In this section, we will discuss the queue data structure in Python, covering its implementation, key operations, best practices, and practical use cases. Understanding Queues A queue can be visualized as a collection of elements arranged in a linear order. The operations associated with queues include:  Enqueue: Adds an element to the back of the queue.
+
+ Dequeue: Removing an element from the queue front  Peek: Retrieving the front element without removing it.  IsEmpty: Checks the emptiness of the queue  Size: Returns the number of elements in the queue Below given diagram shows Enqueue and Dequeue operations – Figure 6.2 : Queue Operations Fundamental Queue Types Python offers several ways to implement queues: 1.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing array implementation of lists.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in array implementation of lists can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of array implementation of lists and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define array implementation of lists formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `6.4` Linked Lists-Implementation
-- **Core Concept:** A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.
-- **Core Concept:** In this section, we will explore the deque data structure in Python, including its implementation, key operations, best practices, and practical use cases.
-- **Core Concept:** Understanding Deques A deque can be visualized as a linear collection of elements where you can add or remove items from both ends.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues. This flexibility enables efficient operations at both the front and the back of the structure, making deques suitable for a variety of applications in programming.
+
+In this section, we will explore the deque data structure in Python, including its implementation, key operations, best practices, and practical use cases. Understanding Deques A deque can be visualized as a linear collection of elements where you can add or remove items from both ends.
+
+The primary operations associated with deques include: - Append: Adding an element to the back of the deque. - Appendleft: Adding an element to the front of the deque. - Pop: Removing an element from the back of the deque. - Popleft: Removing an element from the front of the deque.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing linked lists-implementation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in linked lists-implementation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of linked lists-implementation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define linked lists-implementation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `6.5` Doubly Linked Lists-Implementation
-- **Core Concept:** Answer: b) Undo operation in a text editor 8.
-- **Core Concept:** Books:  "Data Structures and Algorithms in Python" by Michael T.
-- **Core Concept:** Goodrich, Roberto Tamassia, and Michael H.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Answer: c) Both ends 5. Answer: b) Undo operation in a text editor 8. Answer: b) Throws an exception
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing doubly linked lists-implementation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in doubly linked lists-implementation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of doubly linked lists-implementation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define doubly linked lists-implementation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `6.6` Circularly Linked Lists-Implementation
-- **Core Concept:** Books:  "Data Structures and Algorithms in Python" by Michael T.
-- **Core Concept:** Goodrich, Roberto Tamassia, and Michael H.
-- **Core Concept:** Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Stacks, queues, and dequeues are fundamental data structures that are used in computer programming: Stacks (LIFO):  Support push and pop operations  Ideal for tracking state and handling recursion  Common applications include expression evaluation and backtracking  O(1) is the basic operations time complexity Queues (FIFO):  Support enqueue and dequeue operations  Perfect for scheduling and buffering  Used in breadth-first search and print spooling  O(1) is the basic operations time complexity Dequeues:  Combine features of stacks and queues  Allow insertion and deletion at both ends  Useful for sliding window problems and palindrome checking  Provide flexibility with same performance benefits Key Implementation Considerations:  Can be implemented using arrays or linked lists  Array implementations may require resizing  Linked list implementations offer dynamic memory usage  Choice depends on specific use case requirements These data structures are the basic foundations for more complex algorithms and systems, making them essential tools in any programmer's toolkit.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing circularly linked lists-implementation.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in circularly linked lists-implementation can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of circularly linked lists-implementation and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define circularly linked lists-implementation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `6.7` Applications
-- **Core Concept:** Books:  "Data Structures and Algorithms in Python" by Michael T.
-- **Core Concept:** Goodrich, Roberto Tamassia, and Michael H.
-- **Core Concept:** Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Books:  "Data Structures and Algorithms in Python" by Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.  "Python Data Structures and Algorithms" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.
+
+Online Courses:  Coursera - "Data Structures and Algorithms Specialization": This course series includes modules specifically focused on stacks and queues, providing both theoretical knowledge and practical coding exercises.  edX - "Introduction to Computer Science using Python": This course covers basic data structures including stacks and queues with hands-on programming assignments.
+
+Documentation and Tutorials:  Python Official Documentation: The official Python documentation provides insights into the collections module where deques are implemented. It includes usage examples and performance considerations.  GeeksforGeeks - Data Structures: This website offers tutorials on various data structures including stacks, queues, and deques with examples in Python.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing applications.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in applications can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of applications and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define applications formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Solving Recurrence via Master Theorem
+> **Problem Statement:**  
+> Solve the recurrence relation $T(n) = 2T(n/2) + n$ modeling Mergesort.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
+2. **Compare $\log_b a$ and $d$:**
+$$
+\log_b a = \log_2 2 = 1
+$$
+Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
+
+3. **Conclusion:**
+$$
+T(n) = \Theta(n^d \log n) = \Theta(n \log n)
+$$
+
+#### 🧮 Example 2: AVL Tree Rotation Sequence
+> **Problem Statement:**  
+> An empty AVL tree receives sequential insertions: 10, 20, 30. Trace the balance factors and demonstrate the required rotation.
+
+**Detailed Step-by-Step Solution:**
+
+1. Insert 10: $BF = 0$.
+2. Insert 20: 10 has $BF = -1$, 20 has $BF = 0$.
+3. Insert 30: Node 10 has left height 0, right height 2 $\implies BF(10) = -2$ (Unbalanced: Right-Right condition).
+4. **Apply Single Left Rotation on Node 10:**
+- Node 20 becomes new root.
+- Node 10 becomes left child of 20.
+- Node 30 remains right child of 20.
+New Balance Factors: $BF(20) = 0, \; BF(10) = 0, \; BF(30) = 0$. Tree balanced.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+# Custom Hash Map with Collision Chaining
+class SimpleHashMap:
+    def __init__(self, capacity=8):
+        self.capacity = capacity
+        self.buckets = [[] for _ in range(capacity)]
+
+    def _hash(self, key):
+        return hash(key) % self.capacity
+
+    def put(self, key, value):
+        b_idx = self._hash(key)
+        for i, (k, v) in enumerate(self.buckets[b_idx]):
+            if k == key:
+                self.buckets[b_idx][i] = (key, value)
+                return
+        self.buckets[b_idx].append((key, value))
+
+    def get(self, key):
+        b_idx = self._hash(key)
+        for k, v in self.buckets[b_idx]:
+            if k == key:
+                return v
+        return None
+
+hm = SimpleHashMap()
+hm.put("user_101", {"name": "Alice", "role": "Data Scientist"})
+hm.put("user_102", {"name": "Bob", "role": "ML Engineer"})
+print("Lookup user_101:", hm.get("user_101"))
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

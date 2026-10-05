@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~35 mins | 📄 **Textbook Pages:** 18 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-9_Advanced_SQL.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-9_Advanced_SQL.pdf)
 
 ---
 
@@ -58,7 +58,7 @@ $$
 
 #### 🔹 Relational Natural Join
 $$
-R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))
+R \bowtie S = \pi_{\mathcal{A}(R) \cup \mathcal{A}(S)}\left(\sigma_{\text{match}}(R \times S)\right)
 $$
 - **Explanation:** Performs equality join across all identically named attributes between two tables.
 
@@ -68,60 +68,226 @@ $$
 $$
 - **Explanation:** Guarantees conflict serializability of concurrent database schedules without data race anomalies.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Armstrong's Reflexivity:** $Y \subseteq X \implies X \to Y$
+- **Armstrong's Augmentation:** $X \to Y \implies XZ \to YZ$
+- **Armstrong's Transitivity:** $X \to Y \land Y \to Z \implies X \to Z$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `9.2` Assertions and Views
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of assertions and views.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to advanced sql.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A view is a virtual table, which does not actually store data. Then what does it contain? A view is a query on the physical tables that store the data. The SQL command for creating views is explained with the help of an example. Example 2: A student’s database has the following tables: STUDENT (name, enrolmentno, dateofbirth) MARKS (enrolmentno, subjectcode, smarks) For the database above a view can be created for a teacher, who is allowed to view only the performance of the student in his/her subject, let us say MCS207.
+
+CREATE VIEW SUBJECT_PERFORMANCE AS (SELECT s.enrolmentno, name, subjectcode, smarks FROM STUDENT s, MARKS m WHERE s.enrolmentno = m.enrolmentno AND subjectcode ‘MCS207’ ORDER BY s.enrolmentno; A view can be dropped using a DROP statement as: DROP VIEW SUBJECT_PERFORMANCE; The physical table, which stores the data on which the statement of the view is written, is referred to as the base table.
+
+You can create views on two or more base tables by combining the data using JOIN. Thus, a view hides the logic of joining the tables from a user. You can also index the views to speed up the performance of query evaluation. Once a view has been created, it can be queried exactly like a base table.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing assertions and views.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in assertions and views can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of assertions and views and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define assertions and views formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.2.1` Assertions
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of assertions.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to advanced sql.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Assertions** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **Advanced SQL**, understanding assertions is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing assertions.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in assertions can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of assertions and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define assertions formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.2.2` Views
-- **Core Concept:** The SQL command for creating views is explained with the help of an example.
-- **Core Concept:** You can also index the views to speed up the performance of query evaluation.
-- **Core Concept:** For example: SELECT * FROM STUDENT_PERFORMANCE WHERE smarks > 50; How are the views implemented?
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A view is a virtual table, which does not actually store data. Then what does it contain? A view is a query on the physical tables that store the data. The SQL command for creating views is explained with the help of an example. Example 2: A student’s database has the following tables: STUDENT (name, enrolmentno, dateofbirth) MARKS (enrolmentno, subjectcode, smarks) For the database above a view can be created for a teacher, who is allowed to view only the performance of the student in his/her subject, let us say MCS207.
+
+CREATE VIEW SUBJECT_PERFORMANCE AS (SELECT s.enrolmentno, name, subjectcode, smarks FROM STUDENT s, MARKS m WHERE s.enrolmentno = m.enrolmentno AND subjectcode ‘MCS207’ ORDER BY s.enrolmentno; A view can be dropped using a DROP statement as: DROP VIEW SUBJECT_PERFORMANCE; The physical table, which stores the data on which the statement of the view is written, is referred to as the base table.
+
+You can create views on two or more base tables by combining the data using JOIN. Thus, a view hides the logic of joining the tables from a user. You can also index the views to speed up the performance of query evaluation. Once a view has been created, it can be queried exactly like a base table.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing views.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in views can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of views and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define views formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.3` Embedded SQL and Dynamic SQL
-- **Core Concept:** SQL commands can be entered through a standard SQL command level user interface.
-- **Core Concept:** Such interfaces are interactive in nature and the result of a command is shown immediately.
-- **Core Concept:** Such interfaces are very useful for those who have some knowledge of SQL and want to create a new type of query.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+SQL commands can be entered through a standard SQL command level user interface. Such interfaces are interactive in nature and the result of a command is shown immediately. Such interfaces are very useful for those who have some knowledge of SQL and want to create a new type of query.
+
+However, in a database application where a naïve user wants to make standard queries, that too using GUI like interfaces, probably an application program needs to be developed. Such interfaces sometimes require the support of a programming language environment. Please note that SQL normally does not support a full programming paradigm (although the latest SQL has full API support), which allows it a full programming interface.
+
+In fact, most of the application programs are seen through a programming interface, where SQL commands are put wherever database interactions are needed. Thus, SQL is embedded into programming languages like C, C++, JAVA, etc. Let us discuss the different forms of embedded SQL in more detail.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing embedded sql and dynamic sql.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in embedded sql and dynamic sql can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of embedded sql and dynamic sql and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define embedded sql and dynamic sql formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.3.1` Embedded SQL
-- **Core Concept:** The embedded SQL statements can be put in the application program written in C++, Java or any other host language.
-- **Core Concept:** These statements sometime may be called static.
-- **Core Concept:** The term ‘static’ is used to indicate that the embedded SQL commands, which are written in the host program, do not change automatically during the lifetime of the program.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The embedded SQL statements can be put in the application program written in C++, Java or any other host language. These statements sometime may be called static. Why are they called static? The term ‘static’ is used to indicate that the embedded SQL commands, which are written in the host program, do not change automatically during the lifetime of the program.
+
+Thus, such queries are determined at the time of database application design. For example, a query statement embedded in C++ to determine the status of a booking of a ticket for a train will not change. However, this Database Design and Implementation query may be executed for many different tickets.
+
+Please note that it will only change the input parameters to the query, which are ticket number, train number, date of boarding, etc., and not the query itself. But how is such embedding done? Let us explain this with the help of an example. Example 3: Write a C program segment that prints the details of a student whose enrolment number is given as input.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing embedded sql.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in embedded sql can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of embedded sql and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define embedded sql formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `9.3.2` Cursors and Embedded SQL
-- **Core Concept:** The database server may allocate a portion of RAM for database interaction and internal processing.
-- **Core Concept:** This portion may be used for query processing using SQL.
-- **Core Concept:** This portion of RAM is also called the cursor.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Let us first define the term ‘cursor’. The database server may allocate a portion of RAM for database interaction and internal processing. This portion may be used for query processing using SQL. This portion of RAM is also called the cursor. What should be the size of memory for the query processing?
+
+Ideally, the size of memory allotted for the query processing should be equal to the memory required to hold the query result. However, the available memory puts a constraint on the allotted size. Whenever a query results in several tuples, you can use a cursor to process the currently available tuples one by one.
+
+Let us explain the use of the cursor with the help of an example: Since most of the commercial RDBMS architectures are client-server architectures, on the execution of an embedded SQL query, the resulting tuples are cached in the cursor. This operation is performed on the server.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing cursors and embedded sql.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in cursors and embedded sql can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of cursors and embedded sql and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define cursors and embedded sql formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `9.3.3` Dynamic SQL
+##### 📘 Theoretical Principles & In-Depth Exposition
+Dynamic SQL, unlike embedded SQL statements, is built at the run time and placed in a string in a host variable. The created SQL statements are then sent to the DBMS for processing. Dynamic SQL is generally slower than statically embedded SQL as they require complete processing including access plan generation during the run time.
+
+However, they are more powerful than embedded SQL as they allow run-time application logic. The basic advantage of using dynamic embedded SQL is that you Database Design and Implementation need not compile and test a new program for a new query. Let us explain the use of dynamic SQL with the help of an example.
+
+Example 5: Write a dynamic SQL interface that allows a student to get and modify permissible details about him/her. The student may ask for a subset of information also. Assume that the student database has the following relations. STUDENT (enrolno, name, dob) RESULT (enrolno, coursecode, marks) In the table above, a student has access rights for accessing information on his/her enrolment number, but s/he cannot update the data.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing dynamic sql.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in dynamic sql can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define dynamic sql formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `9.3.4` SQLJ
+##### 📘 Theoretical Principles & In-Depth Exposition
+Till now we have discussed embedding SQL in C, can you embed SQL statements into JAVA Program? For inserting SQL statements in JAVA, you use SQLJ. In SQLJ, a preprocessor called SQLJ translator translates the SQLJ source file to a JAVA source file. The JAVA file is compiled and run on the database.
+
+The use of SQLJ improves the productivity and manageability of JAVA Code as: • The code becomes somewhat compact. • No run-time SQL syntax errors as SQL statements are checked at compile time. • It allows sharing of JAVA variables with SQL statements. Such sharing is not possible otherwise.
+
+Advanced SQL SQLJ provides a standard form in which SQL statements can be embedded in the JAVA program. SQLJ statements always begin with a #sql keyword. These embedded SQL statements are of two categories – Declarations and Executable Statements. Declarations have the following syntax: #sql <modifier> context context_classname; The executable statements have the following syntax: #sql {SQL operation returning no output}; OR #sql result = {SQL operation returning output}; Example 6: Write a JAVA function to print the student details of the student table, for the students who have been admitted in 2023 or later and whose names are like ‘As’.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sqlj.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sqlj can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define sqlj formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: BCNF Normalization Decomposition
+> **Problem Statement:**  
+> Given relation $R(A, B, C, D)$ with functional dependencies $F = \lbrace A \to B, \; B \to C, \; C \to D \rbrace$. Find candidate keys, check if $R$ is in BCNF, and decompose if necessary.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Candidate Key:** Closure $(A)^+ = \lbrace A, B, C, D \rbrace$. Thus $A$ is the sole candidate key.
+2. **BCNF Test:**
+- $A \to B$: $A$ is superkey (Passes BCNF).
+- $B \to C$: $B$ is NOT a superkey (Violates BCNF).
+- $C \to D$: $C$ is NOT a superkey (Violates BCNF).
+
+3. **Decomposition:**
+- Decompose on $B \to C$: $R_1(B, C)$ with $B \to C$ (In BCNF, key $B$), and $R_2(A, B, D)$ with $A \to B, B \to D$.
+- In $R_2$, $B \to D$ violates BCNF ($B$ not superkey for $R_2$). Decompose $R_2$ into $R_{21}(B, D)$ and $R_{22}(A, B)$.
+
+Final BCNF schema: $R_1(B, C), \; R_{21}(B, D), \; R_{22}(A, B)$ (Lossless and dependency preserving).
+
+#### 🧮 Example 2: Relational Algebra to SQL Translation
+> **Problem Statement:**  
+> Express relational algebra query $\pi_{\text{name, salary}}(\sigma_{\text{dept}='Analytics' \land \text{salary} > 80000}(\text{Employees}))$ into standard SQL.
+
+**Detailed Step-by-Step Solution:**
+
+```sql
+SELECT name, salary
+FROM Employees
+WHERE dept = 'Analytics' AND salary > 80000;
+```
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import pandas as pd
+
+# Simulating Relational Algebra with Pandas
+emp = pd.DataFrame({
+    'emp_id': [1, 2, 3, 4],
+    'name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'dept_id': [10, 10, 20, 30]
+})
+
+dept = pd.DataFrame({
+    'dept_id': [10, 20, 40],
+    'dept_name': ['Analytics', 'Engineering', 'HR']
+})
+
+# 1. Selection (Sigma): dept_id == 10
+sel = emp[emp['dept_id'] == 10]
+
+# 2. Projection (Pi): ['name', 'dept_id']
+proj = sel[['name', 'dept_id']]
+
+# 3. Natural Join (Bowtie): emp ⨝ dept
+natural_join = pd.merge(emp, dept, on='dept_id', how='inner')
+
+print("Natural Join Result:\n", natural_join[['name', 'dept_name']])
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

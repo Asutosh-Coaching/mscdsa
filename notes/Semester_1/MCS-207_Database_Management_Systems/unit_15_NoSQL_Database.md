@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 1  
 > ⏱️ **Estimated Study Time:** ~35 mins | 📄 **Textbook Pages:** 19 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-15_NoSQL_Database.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-15_NoSQL_Database.pdf)
 
 ---
 
@@ -58,7 +58,7 @@ $$
 
 #### 🔹 Relational Natural Join
 $$
-R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))
+R \bowtie S = \pi_{\mathcal{A}(R) \cup \mathcal{A}(S)}\left(\sigma_{\text{match}}(R \times S)\right)
 $$
 - **Explanation:** Performs equality join across all identically named attributes between two tables.
 
@@ -68,60 +68,218 @@ $$
 $$
 - **Explanation:** Guarantees conflict serializability of concurrent database schedules without data race anomalies.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Armstrong's Reflexivity:** $Y \subseteq X \implies X \to Y$
+- **Armstrong's Augmentation:** $X \to Y \implies XZ \to YZ$
+- **Armstrong's Transitivity:** $X \to Y \land Y \to Z \implies X \to Z$
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `15.2.1` What is NoSQL
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of what is nosql.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to nosql database.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+…………………………………………………………………………… …………………………………………………………………………… …………….……………………………………………………………… 2) What are the features of NoSQL databases? …………………………………………………………………………… …………………………………………………………………………… ………..………………………….…………..……………………………. 3) Differentiate between the NoSQL and SQL. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing what is nosql.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in what is nosql can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of what is nosql and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define what is nosql formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `15.2.2` Brief History of NoSQL Databases
-- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of brief history of nosql databases.
-- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to nosql database.
-- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The section on **Brief History of NoSQL Databases** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
+
+In the broader scope of **NoSQL Database**, understanding brief history of nosql databases is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing brief history of nosql databases.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in brief history of nosql databases can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of brief history of nosql databases and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define brief history of nosql databases formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `15.2.3` NoSQL Database Features
-- **Core Concept:** Every NoSQL database comes with its own set of one-of-a-kind capabilities.
-- **Core Concept:** • Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.
-- **Core Concept:** • Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Every NoSQL database comes with its own set of one-of-a-kind capabilities. The following are general characteristics shared by several NoSQL databases: • Schema flexibility • Horizontal scaling • Quick responses to queries as a result of the data model • Ease of use for software developers
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing nosql database features.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in nosql database features can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of nosql database features and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define nosql database features formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `15.2.4` Difference between RDBMS and NoSQL
-- **Core Concept:** • Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.
-- **Core Concept:** • Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.
-- **Core Concept:** • SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The differences and similarities between the two DBMSs are as follows: • For the most part, NoSQL databases fall under the category of non- relational or distributed databases, while SQL databases are classified as Relational Database Management Systems (RDBMS). • Databases that use the Structured Query Language (SQL) are table- oriented, while NoSQL databases use either document-oriented or key- value pairs or wide-column stores, or graph databases.
+
+• Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema. • Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL. • SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.
+
+• Increasing the computing capability of your hardware is the first step in the scaling process for SQL databases. In contrast, NoSQL databases scale by distributing the load over multiple servers. • MySQL, Oracle, PostgreSQL, and Microsoft SQL Server are all examples of SQL databases.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing difference between rdbms and nosql.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in difference between rdbms and nosql can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of difference between rdbms and nosql and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define difference between rdbms and nosql formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `15.3` Types of NoSQL Databases
-- **Core Concept:** In this section, we will discuss the many classifications of NoSQL databases.
-- **Core Concept:** There are typically four types of NoSQL databases: 1) Column-based: Instead of accumulating data in rows, this method organizes it all together into columns, which makes it easier to query large datasets.
-- **Core Concept:** 2) Graph-based: These are systems that are utilized for the storage of information regarding networks, such as social relationships.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In this section, we will discuss the many classifications of NoSQL databases. There are typically four types of NoSQL databases: 1) Column-based: Instead of accumulating data in rows, this method organizes it all together into columns, which makes it easier to query large datasets.
+
+2) Graph-based: These are systems that are utilized for the storage of information regarding networks, such as social relationships. 3) Key-value pair based: This is the simplest sort of database, in which each item of your database is saved in the form of an attribute name (also known as a "key") coupled with the value.
+
+4) Document-based: Made up of sets of key-value pairs that are kept in documents.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing types of nosql databases.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in types of nosql databases can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of types of nosql databases and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define types of nosql databases formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `15.3.1` Column Based
-- **Core Concept:** A column store, in contrast to a relational database, is arranged as a set of columns, rather than rows.
-- **Core Concept:** This allows you to read only the columns you need for analysis, saving memory space that would otherwise be taken up by irrelevant information.
-- **Core Concept:** Because columns are frequently of the same kind, they are able to take advantage of more efficient compression, which makes data reading even quicker.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+A column store, in contrast to a relational database, is arranged as a set of columns, rather than rows. This allows you to read only the columns you need for analysis, saving memory space that would otherwise be taken up by irrelevant information. Because columns are frequently of the same kind, they are able to take advantage of more efficient compression, which makes data reading even quicker.
+
+The value of a specific column can be quickly aggregated using columnar databases. Although columnar databases are excellent for analytics, because of the way they publish data, it is challenging for them to remain consistent because writes to all the columns need several write events on the disk.
+
+However, this problem never arises with relational databases because row data is continuously written to disk. How Does a Column Database Work? A columnar database is a type of database management system (DBMS) that allows data to be stored in columns rather than rows. It is accountable for reducing the amount of time needed to return a certain query.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing column based.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in column based can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of column based and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define column based formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `15.3.2` Graph Based
+##### 📘 Theoretical Principles & In-Depth Exposition
+The initial hardware hurdles that made it feasible for SQL to handle vast quantities of data are no longer there, despite the fact that SQL is an excellent superb RDBMS and has been used for many years to manage massive amounts of data. As a result, NoSQL has rapidly emerged as the dominant form of contemporary database management and many of the largest websites, we rely on today, are powered by NoSQL, like Twitter's use of FlockDB and Amazon's DynamoDB.
+
+A database that stores data using graph structures is known as a graph database. It represents and stores data using nodes, edges, and attributes rather than tables or documents. Relationships between the nodes are represented by the edges. This makes data retrieval simpler and, in many circumstances, only requires one action.
+
+Additionally, it works fantastically as a database for fast, threaded data structures like those used on Twitter How does a Graph Database Work? Graphs, which are not relational databases, rely heavily on the idea of multi- relational data "pathways" for their functionality. However, the structure of graph databases is typically simple.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing graph based.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in graph based can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define graph based formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+#### `15.3.3` Key-Value Pair Based
+##### 📘 Theoretical Principles & In-Depth Exposition
+Key-value stores are perhaps the most widely used of the four major NoSQL database formats because of their simplicity and quick performance. Let us examine key-value stores' operation and application in more detail. With some of the most well-known platforms and services depending on them to deliver material to users with lightning speed, NoSQL has grown in significance in our daily lives.
+
+Of course, NoSQL includes a range of database types, but key-value store is unquestionably the most used. Because of its extreme simplicity, this kind of data model is built to execute incredibly quickly when compared to relational databases. Furthermore, because key-value stores adhere to the scalable NoSQL design philosophy, they are flexible and simple to set up.
+
+How Does a Key-Value Work? In reality, key-value storage is quite simple. A value is saved with a key that specifies its location, and a value can be pretty much any piece of data or information. In reality, this design idea may be found in almost every programming language as an array or map object, refer Figure 5.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing key-value pair based.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in key-value pair based can cause silent data corruption or performance bottlenecks.
+
+> [!TIP]
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define key-value pair based formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: BCNF Normalization Decomposition
+> **Problem Statement:**  
+> Given relation $R(A, B, C, D)$ with functional dependencies $F = \lbrace A \to B, \; B \to C, \; C \to D \rbrace$. Find candidate keys, check if $R$ is in BCNF, and decompose if necessary.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Candidate Key:** Closure $(A)^+ = \lbrace A, B, C, D \rbrace$. Thus $A$ is the sole candidate key.
+2. **BCNF Test:**
+- $A \to B$: $A$ is superkey (Passes BCNF).
+- $B \to C$: $B$ is NOT a superkey (Violates BCNF).
+- $C \to D$: $C$ is NOT a superkey (Violates BCNF).
+
+3. **Decomposition:**
+- Decompose on $B \to C$: $R_1(B, C)$ with $B \to C$ (In BCNF, key $B$), and $R_2(A, B, D)$ with $A \to B, B \to D$.
+- In $R_2$, $B \to D$ violates BCNF ($B$ not superkey for $R_2$). Decompose $R_2$ into $R_{21}(B, D)$ and $R_{22}(A, B)$.
+
+Final BCNF schema: $R_1(B, C), \; R_{21}(B, D), \; R_{22}(A, B)$ (Lossless and dependency preserving).
+
+#### 🧮 Example 2: Relational Algebra to SQL Translation
+> **Problem Statement:**  
+> Express relational algebra query $\pi_{\text{name, salary}}(\sigma_{\text{dept}='Analytics' \land \text{salary} > 80000}(\text{Employees}))$ into standard SQL.
+
+**Detailed Step-by-Step Solution:**
+
+```sql
+SELECT name, salary
+FROM Employees
+WHERE dept = 'Analytics' AND salary > 80000;
+```
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import pandas as pd
+
+# Simulating Relational Algebra with Pandas
+emp = pd.DataFrame({
+    'emp_id': [1, 2, 3, 4],
+    'name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'dept_id': [10, 10, 20, 30]
+})
+
+dept = pd.DataFrame({
+    'dept_id': [10, 20, 40],
+    'dept_name': ['Analytics', 'Engineering', 'HR']
+})
+
+# 1. Selection (Sigma): dept_id == 10
+sel = emp[emp['dept_id'] == 10]
+
+# 2. Projection (Pi): ['name', 'dept_id']
+proj = sel[['name', 'dept_id']]
+
+# 3. Natural Join (Bowtie): emp ⨝ dept
+natural_join = pd.merge(emp, dept, on='dept_id', how='inner')
+
+print("Natural Join Result:\n", natural_join[['name', 'dept_name']])
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:

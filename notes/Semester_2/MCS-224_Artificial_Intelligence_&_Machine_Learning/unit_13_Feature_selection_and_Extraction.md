@@ -3,7 +3,7 @@
 
 > 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** Semester 2  
 > ⏱️ **Estimated Study Time:** ~47 mins | 📄 **Textbook Pages:** 24 Pages  
-> 📥 **Original PDF:** [Download & View Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-13_Feature_selection_and_Extraction.pdf)
+> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-13_Feature_selection_and_Extraction.pdf)
 
 ---
 
@@ -74,60 +74,196 @@ $$
 $$
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
-### 📌 Detailed Section-by-Section Study Breakdown
+### ⚖️ Axiomatic Properties & Governing Laws
+The mathematical formulations of this module are anchored by foundational algebraic and structural laws:
+
+- **Heuristic Consistency Condition:** $h(n) \le c(n, a, n') + h(n') \implies \text{Monotonic (Guarantees A* optimality on graphs)}$
+- **SVM Dual Formulation:** $\max_\alpha \sum \alpha_i - \frac{1}{2}\sum \alpha_i \alpha_j y_i y_j K(\mathbf{x}_i, \mathbf{x}_j)$
+- **Universal Approximation Theorem:** A feedforward network with one non-linear hidden layer can approximate any continuous function on compact subsets of $\mathbb{R}^n$.
+
+### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `13.2` Dimensionality Reduction
-- **Core Concept:** The Data mining and Machine Learning methodologies both have processing challenges when working with big amounts of data (many attributes).
-- **Core Concept:** In point of fact, the dimensions of the feature space utilised by the approach, often referred to as the model attributes, play the most important function.
-- **Core Concept:** Processing algorithms grow more difficult and time-consuming to implement as the dimensionality of the processing space increases.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The Data mining and Machine Learning methodologies both have processing challenges when working with big amounts of data (many attributes). In point of fact, the dimensions of the feature space utilised by the approach, often referred to as the model attributes, play the most important function.
+
+Processing algorithms grow more difficult and time-consuming to implement as the dimensionality of the processing space increases. These elements, also known as the model attributes, are the fundamental qualities, and they can either be variables or features. When there are more features, it is more difficult to see them all, and as a result, the work on the training set becomes more complex as well.
+
+This complexity was further increased when a significant number of characteristics were linked; hence, the classification became irrelevant as a result. In circumstances like these, the strategies for decreasing the number of dimensions can prove to be highly beneficial. In a nutshell, "the process of making a set of major variables from a huge number of random variables is what is referred to as dimension reduction." When conducting data mining, the step of dimension reduction can be helpful as a preprocessing step to lessen the negative effects of noise, correlation, and excessive dimensionality.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing dimensionality reduction.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in dimensionality reduction can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of dimensionality reduction and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define dimensionality reduction formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.2.1` Feature Selection
-- **Core Concept:** It is the process of selecting some attributes from a given collection of prospective features, and then discarding the rest of the attributes that were considered.
-- **Core Concept:** The use of feature selection can be done for one of two reasons: either to get a limited number of characteristics in order to prevent overfitting or to avoid having features that are redundant or irrelevant.
-- **Core Concept:** For data scientists, the ability to pick features is a vital asset.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+It is the process of selecting some attributes from a given collection of prospective features, and then discarding the rest of the attributes that were considered. The use of feature selection can be done for one of two reasons: either to get a limited number of characteristics in order to prevent overfitting or to avoid having features that are redundant or irrelevant.
+
+For data scientists, the ability to pick features is a vital asset. It is essential to the success of the machine learning algorithm that you have a solid understanding of how to choose the most relevant features to analyse. Features that are irrelevant, redundant, or noisy can contaminate an algorithm, which can have a detrimental impact on the learning performance, accuracy, and computing cost.
+
+The importance of feature selection is only going to increase as the size and complexity of the typical dataset continues to balloon at an exponential rate. Feature Selection Methods: Feature selection methods can be divided into two categories: supervised, which are appropriate for use with labelled data, and unsupervised, which are appropriate for use with unlabeled data.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing feature selection.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in feature selection can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of feature selection and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define feature selection formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.2.2` Feature extraction
-- **Core Concept:** The process of reducing the amount of resources needed to describe a large amount of data is called "feature extraction." One of the main problems with doing complicated data analysis is that there are a lot of variables to keep track of.
-- **Core Concept:** A large number of variables requires a lot of memory and processing power, and it can also cause a classification algorithm to overfit to training examples and fail to generalise to new samples.
-- **Core Concept:** Feature extraction is a broad term for different ways to combine variables to get around these problems while still giving a true picture of the data.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The process of reducing the amount of resources needed to describe a large amount of data is called "feature extraction." One of the main problems with doing complicated data analysis is that there are a lot of variables to keep track of. A large number of variables requires a lot of memory and processing power, and it can also cause a classification algorithm to overfit to training examples and fail to generalise to new samples.
+
+Feature extraction is a broad term for different ways to combine variables to get around these problems while still giving a true picture of the data. Many people who work with machine learning think that extracting features in the best way possible is the key to making good models.
+
+The data's information must be shown by the features in a way that fits the needs of the algorithm that will be used to solve the problem. Some "inherent" features can be taken straight from the raw data, but most of the time, we need to use these "inherent" features to find "relevant" features that we can use to solve the problem.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing feature extraction.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in feature extraction can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of feature extraction and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define feature extraction formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.3` Principal Component Analysis
-- **Core Concept:** Karl Pearson was the first person to come up with this plan.
-- **Core Concept:** It is based on the idea that when data from a higher-dimensional space is put into a lower-dimensional space, the lower-dimensional space should have the most variation.
-- **Core Concept:** In simple terms, principal component analysis (PCA) is a way to get important variables (in the form of components) from a large set of variables in a data set.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+Karl Pearson was the first person to come up with this plan. It is based on the idea that when data from a higher-dimensional space is put into a lower-dimensional space, the lower-dimensional space should have the most variation. In simple terms, principal component analysis (PCA) is a way to get important variables (in the form of components) from a large set of variables in a data set.
+
+It tends to find the direction in which the data is most spread out. PCA is more useful when you have data with three or more dimensions. When applying the PCA method, the following are the primary steps that should be followed: 1. Obtain the dataset you need. Calculate the mean of the vectors ().
+
+Deduct the mean of the given data from the total. Complete the computation for the covariance matrix. Determine the eigenvectors and eigenvalues of the matrix that represents the covariance matrix. Creating a feature vector and deciding which components would be the major ones i.e.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing principal component analysis.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in principal component analysis can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of principal component analysis and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define principal component analysis formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.4` Linear Discriminant Analysis
-- **Core Concept:** In most cases, the application of logistic regression has been restricted to problems involving two classes of subjects.
-- **Core Concept:** On the other hand, the Linear Discriminant Analysis is the linear classification method that is recommended to use when there are more than two classes.
-- **Core Concept:** The algorithm for linear classification known as logistic regression is known for being both straightforward and robust.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+In most cases, the application of logistic regression has been restricted to problems involving two classes of subjects. On the other hand, the Linear Discriminant Analysis is the linear classification method that is recommended to use when there are more than two classes. The algorithm for linear classification known as logistic regression is known for being both straightforward and robust.
+
+On the other hand, there are a few restrictions or faults in the system that highlight the requirement for more complex linear classification algorithms. The following is a list of some of the problems: • Binary class Problems. Concerns regarding the binary class is that the Logistic regression is utilised for issues that involve binary classification or two classes.
+
+It is possible to enhance it such that it can manage multiple- class categorization, but in practise, this is not very common. • Unstable, but with well-defined classes. When the classes are extremely distinct from one another, logistic regression may become unstable. • It is prone to instability when there are only a few occurrences.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing linear discriminant analysis.
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in linear discriminant analysis can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of linear discriminant analysis and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define linear discriminant analysis formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
 
 #### `13.5` Singular Value Decomposition.
-- **Core Concept:** The Singular Value Decomposition (SVD) method is a well-known technique for decomposing a matrix into a large number of component matrices.
-- **Core Concept:** This method is valuable since it reveals many of the interesting and helpful characteristics of the initial matrix.
-- **Core Concept:** We can use SVD to discover the optimal lower-rank approximation to the matrix, determine the rank of the matrix, or test a linear system's sensitivity to numerical error.
-- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
+##### 📘 Theoretical Principles & In-Depth Exposition
+The Singular Value Decomposition (SVD) method is a well-known technique for decomposing a matrix into a large number of component matrices. This method is valuable since it reveals many of the interesting and helpful characteristics of the initial matrix. We can use SVD to discover the optimal lower-rank approximation to the matrix, determine the rank of the matrix, or test a linear system's sensitivity to numerical error.
+
+Singular value decomposition is a method of decomposing a matrix into three smaller matrices. A = U∑VT Where: • A : is an m × n matrix • U : is an m × n orthogonal matrix • S : is an n × n diagonal matrix • V : is an n × n orthogonal matrix Below is a practice problems based on single value decomposition Problem-03.
+
+Find the SVD of the matrix A = 1 1 0 1 1 1         −   Solution : Let U ∑ VT be the Singular Value Decomposition (SVD) of the Matrix A, so need to compute V, ∑ and U, the steps are as follows Step 1 : To find the SVD of A , we need to determine matrix V then we will find VT In order to find matrix V firstly we need to Find AT A Then we are required to find the Eigen values (⋋) of AT A The procedure of finding the Eigen values (⋋) of AT A is as follows: Let ⋋2 + S1⋋ + S2 = 0 be the characteristic equation of AT A, Where, S1 = Trace of AT A = Tr(AT A ) = (2+3) = 5 Note : Trace implies the sum of diagonal elements And S2 = Determinant of AT A = 2 0 0 3 = 6 T 1 1 1 0 -1 2 0 A A = x 0 1 = 1 1 1 0 3 -1 1                       Machine Learning - II Hence by substituting the values of S1 & S2 in the characteristic equation of AT A i.e.
+
+##### ⚙️ Mathematical & Algorithmic Mechanics
+- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing singular value decomposition..
+- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+
+##### 📊 Practical Data Science & Production Relevance
+- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
+- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in singular value decomposition. can cause silent data corruption or performance bottlenecks.
 
 > [!TIP]
-> **Exam & Interview Tip:** Be prepared to state the formal definition of singular value decomposition. and derive its primary equations step-by-step.
+> **Key Exam & Technical Interview Takeaway:** Be prepared to define singular value decomposition. formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+
+### 📐 Step-by-Step Solved Mathematical Examples
+To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
+
+#### 🧮 Example 1: Shannon Entropy and Information Gain Calculation
+> **Problem Statement:**  
+> A training dataset $S$ has 14 instances: 9 Positive ($+$) and 5 Negative ($-$). An attribute $A$ splits $S$ into $S_1$ (6 $+$, 2 $-$) and $S_2$ (3 $+$, 3 $-$). Compute Entropy $H(S)$ and Information Gain $IG(S, A)$.
+
+**Detailed Step-by-Step Solution:**
+
+1. **Parent Entropy $H(S)$:**
+$$
+H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
+$$
+
+2. **Subset Entropies:**
+- For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
+- For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
+
+3. **Weighted Child Entropy:**
+$$
+H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
+$$
+
+4. **Information Gain:**
+$$
+IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
+$$
+(Attribute provides 0.048 bits of entropy reduction).
+
+#### 🧮 Example 2: A* Search Step Evaluation
+> **Problem Statement:**  
+> In graph navigation, node $N$ has exact path cost from start $g(N) = 14$ and straight-line heuristic to goal $h(N) = 11$. For node $M$, $g(M) = 18, h(M) = 6$. Which node is expanded next by A*?
+
+**Detailed Step-by-Step Solution:**
+
+1. Compute $f(n) = g(n) + h(n)$:
+- $f(N) = 14 + 11 = 25$
+- $f(M) = 18 + 6 = 24$
+
+2. Decision: A* selects the node with minimal $f(n)$. Since $f(M) = 24 < f(N) = 25$, **Node $M$ is expanded next**.
+
+### 💻 Practical Data Science Implementation (Python)
+Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
+
+```python
+import numpy as np
+
+# Decision Tree Entropy and Information Gain from scratch
+def entropy(labels):
+    counts = np.bincount(labels)
+    probs = counts[counts > 0] / len(labels)
+    return -np.sum(probs * np.log2(probs))
+
+def information_gain(parent_labels, left_split, right_split):
+    h_parent = entropy(parent_labels)
+    n = len(parent_labels)
+    h_children = (len(left_split)/n)*entropy(left_split) + (len(right_split)/n)*entropy(right_split)
+    return h_parent - h_children
+
+# Sample binary targets: 9 ones, 5 zeros
+y_parent = np.array([1]*9 + [0]*5)
+y_left = np.array([1]*6 + [0]*2)
+y_right = np.array([1]*3 + [0]*3)
+
+ig = information_gain(y_parent, y_left, y_right)
+print(f"Parent Entropy: {entropy(y_parent):.4f}")
+print(f"Information Gain: {ig:.4f} bits")
+```
 
 ### 💡 Interactive Self-Assessment Checkpoints
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
@@ -150,7 +286,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 3:</b> Why is the Softmax function used in multi-class classification neural networks? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to $1$.
+> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
 </details>
 
 <details>
