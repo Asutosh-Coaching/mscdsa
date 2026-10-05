@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 8 - Linear Spaces-I"]:::head
   M1["8.2 Vector Addition and Scalar Multiplicat"]:::topic
@@ -40,25 +40,41 @@ flowchart TD
 | Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
 | :--- | :--- | :--- |
 | **Matrix** | A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$. | *A tabular dataframe where rows represent records and columns represent features.* |
-| **Determinant $\det(A)$ or $\|A\|$** | A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible. | *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.* |
+| **Determinant $\det(A)$ or $\vert A \vert$** | A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible. | *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.* |
 | **Matrix Rank** | The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$. | *The true dimensionality of the data without redundant, collinear features.* |
 | **Eigenvalue and Eigenvector** | A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction. | *The principal directions of maximum variance in Principal Component Analysis (PCA).* |
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Matrix Multiplication Dimension Rule
-$$C_{m \times p} = A_{m \times n} B_{n \times p} \quad \text{where } c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}$$
+
+$$
+C_{m \times p} = A_{m \times n} B_{n \times p} \quad \text{where } c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}
+$$
+
 - **Explanation:** Inner dimensions must match: columns of $A$ must equal rows of $B$.
 
 #### 🔹 Matrix Inverse Formula
-$$A^{-1} = \frac{1}{\det(A)} \text{adj}(A) \quad \text{valid when } \det(A) \neq 0$$
+
+$$
+A^{-1} = \frac{1}{\det(A)} \text{adj}(A) \quad \text{valid when } \det(A) \neq 0
+$$
+
 - **Explanation:** The inverse exists if and only if the matrix is full rank and non-singular.
 
 #### 🔹 Characteristic Equation for Eigenvalues
-$$\det(A - \lambda I) = 0$$
+
+$$
+\det(A - \lambda I) = 0
+$$
+
 - **Explanation:** Solving this polynomial equation yields the eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$ of matrix $A$.
 
 #### 🔹 Cayley-Hamilton Theorem
-$$p(A) = O \quad \text{where } p(\lambda) = \det(A - \lambda I)$$
+
+$$
+p(A) = O \quad \text{where } p(\lambda) = \det(A - \lambda I)
+$$
+
 - **Explanation:** Every square matrix satisfies its own characteristic polynomial equation.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

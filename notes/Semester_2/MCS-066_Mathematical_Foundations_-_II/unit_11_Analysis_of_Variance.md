@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 11 - Analysis of Variance"]:::head
   M1["11.2 Analysis of Variance ANOVA"]:::topic
@@ -48,23 +48,43 @@ flowchart TD
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Bayes' Theorem
-$$P(B_i \mid A) = \frac{P(A \mid B_i) P(B_i)}{\sum_{j=1}^k P(A \mid B_j) P(B_j)} = \frac{P(A \mid B_i) P(B_i)}{P(A)}$$
+
+$$
+P(B_i \mid A) = \frac{P(A \mid B_i) P(B_i)}{\sum_{j=1}^k P(A \mid B_j) P(B_j)} = \frac{P(A \mid B_i) P(B_i)}{P(A)}
+$$
+
 - **Explanation:** Calculates posterior probability by multiplying prior probability by likelihood, normalized by marginal evidence.
 
 #### 🔹 Variance of a Random Variable
-$$\text{Var}(X) = E[X^2] - (E[X])^2$$
+
+$$
+\text{Var}(X) = E[X^2] - (E[X])^2
+$$
+
 - **Explanation:** Measures spread around the expected value. For constants: $\text{Var}(aX + b) = a^2 \text{Var}(X)$.
 
 #### 🔹 Binomial Distribution PMF
-$$P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}, \quad E[X] = np, \; \text{Var}(X) = np(1 - p)$$
+
+$$
+P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}, \quad E[X] = np, \; \text{Var}(X) = np(1 - p)
+$$
+
 - **Explanation:** Models $k$ successes in $n$ independent Bernoulli trials with success probability $p$.
 
 #### 🔹 Poisson Distribution PMF
-$$P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad E[X] = \lambda, \; \text{Var}(X) = \lambda$$
+
+$$
+P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad E[X] = \lambda, \; \text{Var}(X) = \lambda
+$$
+
 - **Explanation:** Models counts of rare independent events occurring in a fixed interval at constant average rate $\lambda$.
 
 #### 🔹 Normal (Gaussian) Distribution PDF
-$$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}, \quad Z = \frac{X - \mu}{\sigma} \sim \mathcal{N}(0, 1)$$
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}, \quad Z = \frac{X - \mu}{\sigma} \sim \mathcal{N}(0, 1)
+$$
+
 - **Explanation:** Symmetric bell-shaped curve governed entirely by mean $\mu$ and standard deviation $\sigma$.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
@@ -129,7 +149,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> State Bayes' Theorem formula for event hypothesis $H$ given evidence $E$. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> $$P(H \mid E) = \frac{P(E \mid H)P(H)}{P(E)}$$
+> $P(H \mid E) = \frac{P(E \mid H)P(H)}{P(E)}$
 </details>
 
 <details>

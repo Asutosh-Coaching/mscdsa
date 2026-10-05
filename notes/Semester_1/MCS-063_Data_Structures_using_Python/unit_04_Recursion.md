@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 4 - Recursion"]:::head
   M1["4.2 Illustrative Examples"]:::topic
@@ -45,15 +45,27 @@ flowchart TD
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Master Theorem for Divide-and-Conquer Recurrences
-$$T(n) = aT(n/b) + \Theta(n^d) \implies T(n) = \begin{cases} \Theta(n^{\log_b a}) & \text{if } d < \log_b a \\ \Theta(n^d \log n) & \text{if } d = \log_b a \\ \Theta(n^d) & \text{if } d > \log_b a \end{cases}$$
+
+$$
+T(n) = aT(n/b) + \Theta(n^d) \implies T(n) = \begin{cases} \Theta(n^{\log_b a}) & \text{if } d < \log_b a \\ \Theta(n^d \log n) & \text{if } d = \log_b a \\ \Theta(n^d) & \text{if } d > \log_b a \end{cases}
+$$
+
 - **Explanation:** Solves common divide-and-conquer recurrences like Mergesort ($T(n) = 2T(n/2) + O(n) \implies O(n \log n)$).
 
 #### 🔹 Binary Heap Array Index Formulas
-$$\text{Parent}(i) = \lfloor (i - 1)/2 \rfloor, \; \text{Left}(i) = 2i + 1, \; \text{Right}(i) = 2i + 2$$
+
+$$
+\text{Parent}(i) = \lfloor (i - 1)/2 \rfloor, \; \text{Left}(i) = 2i + 1, \; \text{Right}(i) = 2i + 2
+$$
+
 - **Explanation:** Enables cache-friendly representation of complete binary trees directly within flat linear arrays.
 
 #### 🔹 Comparison Sort Lower Bound
-$$\Omega(n \log n) \quad \text{for comparison-based sorting algorithms}$$
+
+$$
+\Omega(n \log n) \quad \text{for comparison-based sorting algorithms}
+$$
+
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

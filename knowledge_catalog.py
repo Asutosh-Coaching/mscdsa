@@ -94,3 +94,4 @@ COURSE_METADATA = {
 }
 
 print("knowledge_catalog initialized.")
+

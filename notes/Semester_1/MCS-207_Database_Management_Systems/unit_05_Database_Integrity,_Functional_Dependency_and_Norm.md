@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 5 - Database Integrity, Functional De"]:::head
   M1["5.2 Database Integrity"]:::topic
@@ -54,15 +54,27 @@ flowchart TD
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Function Invertibility Condition
-$$f^{-1}: B \to A \text{ exists if and only if } f \text{ is Bijective}$$
+
+$$
+f^{-1}: B \to A \text{ exists if and only if } f \text{ is Bijective}
+$$
+
 - **Explanation:** If not injective, the inverse is multi-valued; if not surjective, the inverse is undefined on parts of $B$.
 
 #### 🔹 Composition of Functions
-$$(g \circ f)(x) = g(f(x)) \quad \text{where } f: A \to B, \; g: B \to C$$
+
+$$
+(g \circ f)(x) = g(f(x)) \quad \text{where } f: A \to B, \; g: B \to C
+$$
+
 - **Explanation:** Chaining sequential data transformations, such as scaling data then applying a classifier.
 
 #### 🔹 Pigeonhole Principle
-$$\text{If } n > k \text{ items are placed into } k \text{ bins, at least one bin contains } \ge \lceil n/k \rceil \text{ items}$$
+
+$$
+\text{If } n > k \text{ items are placed into } k \text{ bins, at least one bin contains } \ge \lceil n/k \rceil \text{ items}
+$$
+
 - **Explanation:** Guarantees hash collisions when the number of records exceeds the hash table capacity.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

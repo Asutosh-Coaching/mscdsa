@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 16 - Emerging Database Models"]:::head
   M1["16.2 Distributed Databases"]:::topic
@@ -50,15 +50,27 @@ flowchart TD
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Relational Algebra Selection & Projection
-$$\sigma_{\text{condition}}(R) \quad \text{and} \quad \pi_{\text{attributes}}(R)$$
+
+$$
+\sigma_{\text{condition}}(R) \quad \text{and} \quad \pi_{\text{attributes}}(R)
+$$
+
 - **Explanation:** $\sigma$ filters rows (equivalent to SQL `WHERE`), while $\pi$ selects specific columns (equivalent to SQL `SELECT column_list`).
 
 #### 🔹 Relational Natural Join
-$$R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))$$
+
+$$
+R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))
+$$
+
 - **Explanation:** Performs equality join across all identically named attributes between two tables.
 
 #### 🔹 Two-Phase Locking (2PL) Theorem
-$$\text{Growing Phase: Only Acquire Locks} \implies \text{Shrinking Phase: Only Release Locks}$$
+
+$$
+\text{Growing Phase: Only Acquire Locks} \implies \text{Shrinking Phase: Only Release Locks}
+$$
+
 - **Explanation:** Guarantees conflict serializability of concurrent database schedules without data race anomalies.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

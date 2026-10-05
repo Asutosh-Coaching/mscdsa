@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 2 - Relations"]:::head
   M1["2.2 Relation"]:::topic
@@ -53,19 +53,35 @@ flowchart TD
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Total Relations on a Set
-$$\text{Total Relations on } A = 2^{|A|^2} = 2^{n^2} \quad \text{where } n = |A|$$
-- **Explanation:** Since $|A \times A| = n^2$, any relation is a subset of $A \times A$, yielding $2^{n^2}$ possible relations.
+
+$$
+\text{Total Relations on } A = 2^{\vert A\vert^2} = 2^{n^2} \quad \text{where } n = \vert A\vert
+$$
+
+- **Explanation:** Since $\vert A \times A \vert = n^2$, any relation is a subset of $A \times A$, yielding $2^{n^2}$ possible relations.
 
 #### 🔹 Total Reflexive Relations
-$$\text{Reflexive Relations} = 2^{n(n - 1)}$$
+
+$$
+\text{Reflexive Relations} = 2^{n(n - 1)}
+$$
+
 - **Explanation:** The $n$ diagonal pairs $(a, a)$ must all be included (1 choice each), leaving $n^2 - n = n(n-1)$ off-diagonal pairs with 2 choices each.
 
 #### 🔹 Total Symmetric Relations
-$$\text{Symmetric Relations} = 2^{\frac{n(n + 1)}{2}}$$
+
+$$
+\text{Symmetric Relations} = 2^{\frac{n(n + 1)}{2}}
+$$
+
 - **Explanation:** Determined entirely by choices on the diagonal ($n$) and the upper triangle ($n(n-1)/2$).
 
 #### 🔹 Equivalence Class Definition
-$$[a] = \{x \in A \mid (x, a) \in R\}$$
+
+$$
+[a] = \{x \in A \mid (x, a) \in R\}
+$$
+
 - **Explanation:** The collection of all elements in $A$ related to representative element $a$. The union of all equivalence classes equals $A$.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
@@ -146,7 +162,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 3:</b> How many total relations exist on a set with 3 elements? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> For $n = 3$, $|A \times A| = 3^2 = 9$. Total relations $= 2^9 = 512$.
+> For $n = 3$, $\vert A \times A \vert = 3^2 = 9$. Total relations $= 2^9 = 512$.
 </details>
 
 <details>

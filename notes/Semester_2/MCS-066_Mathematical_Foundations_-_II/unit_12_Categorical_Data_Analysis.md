@@ -19,9 +19,9 @@ The following concept map illustrates the structural hierarchy and learning traj
 ```mermaid
 flowchart TD
   %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;
+  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
+  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
+  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
 
   Root["Unit 12 - Categorical Data Analysis"]:::head
   M1["12.2 Chi-Square Test for Goodness of Fit"]:::topic
@@ -42,23 +42,43 @@ flowchart TD
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Confidence Interval for Population Mean
-$$\bar{x} \pm z_{\alpha/2} \left(\frac{\sigma}{\sqrt{n}}\right) \quad \text{or} \quad \bar{x} \pm t_{\alpha/2, n-1} \left(\frac{s}{\sqrt{n}}\right)$$
+
+$$
+\bar{x} \pm z_{\alpha/2} \left(\frac{\sigma}{\sqrt{n}}\right) \quad \text{or} \quad \bar{x} \pm t_{\alpha/2, n-1} \left(\frac{s}{\sqrt{n}}\right)
+$$
+
 - **Explanation:** Interval providing $1-\alpha$ confidence of containing true population parameter $\mu$.
 
 #### 🔹 One-Sample Z-Test Statistic
-$$Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}} \sim \mathcal{N}(0, 1)$$
+
+$$
+Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}} \sim \mathcal{N}(0, 1)
+$$
+
 - **Explanation:** Used when population standard deviation $\sigma$ is known and sample size is large.
 
 #### 🔹 One-Sample Student's t-Test Statistic
-$$t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} \sim t_{n-1}$$
+
+$$
+t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} \sim t_{n-1}
+$$
+
 - **Explanation:** Used when population $\sigma$ is unknown and estimated using sample standard deviation $s$.
 
 #### 🔹 Chi-Square Test of Independence Statistic
-$$\chi^2 = \sum_{i=1}^r \sum_{j=1}^c \frac{(O_{ij} - E_{ij})^2}{E_{ij}} \quad \text{where } E_{ij} = \frac{R_i \times C_j}{N}$$
+
+$$
+\chi^2 = \sum_{i=1}^r \sum_{j=1}^c \frac{(O_{ij} - E_{ij})^2}{E_{ij}} \quad \text{where } E_{ij} = \frac{R_i \times C_j}{N}
+$$
+
 - **Explanation:** Tests whether two categorical attributes are statistically independent, with degrees of freedom $(r-1)(c-1)$.
 
 #### 🔹 One-Way ANOVA F-Ratio Statistic
-$$F = \frac{\text{MS}_{\text{between}}}{\text{MS}_{\text{within}}} = \frac{\text{SSB} / (k - 1)}{\text{SSW} / (N - k)}$$
+
+$$
+F = \frac{\text{MS}_{\text{between}}}{\text{MS}_{\text{within}}} = \frac{\text{SSB} / (k - 1)}{\text{SSW} / (N - k)}
+$$
+
 - **Explanation:** Compares variance between $k$ group means against variance within groups to test equality of multiple population means.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

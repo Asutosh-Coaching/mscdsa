@@ -44,6 +44,14 @@ def sanitize_mermaid_label(text: str) -> str:
     return clean[:42] if clean else "Concept"
 
 
+def clean_table_cell(text: str) -> str:
+    """Sanitizes text for Markdown table cells: prevents pipes from breaking columns and preserves LaTeX."""
+    res = re.sub(r'\|([^|]+)\|', r'\\vert \1 \\vert', text)
+    res = res.replace(r'\|', r'\vert ')
+    res = res.replace('|', '&#124;')
+    return res
+
+
 def parse_toc(doc) -> list:
     """Extracts Table of Contents / Structure from first 2 pages of the PDF."""
     txt_intro = doc[0].get_text() + "\n" + (doc[1].get_text() if len(doc) > 1 else "")
@@ -125,9 +133,9 @@ def generate_mermaid_diagram(unit_num: str, unit_title: str, toc_items: list) ->
         "```mermaid",
         "flowchart TD",
         "  %% Styling Definitions",
-        "  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold,rx:8px,ry:8px;",
-        "  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600,rx:6px,ry:6px;",
-        "  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc,rx:4px,ry:4px;",
+        "  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;",
+        "  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;",
+        "  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;",
         "",
         f'  Root["{clean_unit}"]:::head'
     ]
@@ -199,9 +207,9 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
     md.append("| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |")
     md.append("| :--- | :--- | :--- |")
     for d in knowledge["definitions"]:
-        term = d["term"].replace('|', '\\|')
-        formal = d["formal"].replace('|', '\\|')
-        intuition = d["intuition"].replace('|', '\\|')
+        term = clean_table_cell(d["term"])
+        formal = clean_table_cell(d["formal"])
+        intuition = clean_table_cell(d["intuition"])
         md.append(f"| **{term}** | {formal} | *{intuition}* |")
     md.append("")
 
@@ -209,7 +217,16 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
     md.append("### ⚡ Governing Mathematical Laws & Formula Cheatsheet")
     for f in knowledge["formulas"]:
         md.append(f"#### 🔹 {f['name']}")
-        md.append(f['latex'])
+        md.append("")
+        raw_latex = f['latex'].strip()
+        if raw_latex.startswith("$$") and raw_latex.endswith("$$"):
+            clean_latex = raw_latex[2:-2].strip()
+        else:
+            clean_latex = raw_latex
+        md.append("$$")
+        md.append(clean_latex)
+        md.append("$$")
+        md.append("")
         md.append(f"- **Explanation:** {f['explanation']}")
         md.append("")
 
@@ -266,11 +283,14 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
         })
 
     for idx, card in enumerate(cards_to_show[:6], 1):
+        q_text = card['q']
+        ans_text = card['a']
+        ans_text = re.sub(r'\$\$(.*?)\$\$', r'$\1$', ans_text, flags=re.DOTALL)
         md.append("<details>")
-        md.append(f"<summary><b>Checkpoint {idx}:</b> {card['q']} <i>(Tap to reveal answer)</i></summary>")
+        md.append(f"<summary><b>Checkpoint {idx}:</b> {q_text} <i>(Tap to reveal answer)</i></summary>")
         md.append("")
         md.append(f"> **Answer & Analysis:**  ")
-        md.append(f"> {card['a']}")
+        md.append(f"> {ans_text}")
         md.append("</details>")
         md.append("")
 
