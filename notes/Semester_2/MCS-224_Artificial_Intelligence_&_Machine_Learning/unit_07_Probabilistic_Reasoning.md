@@ -18,79 +18,76 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 7 - Probabilistic Reasoning"]:::head
-  M1["7.2 Reasoning with uncertain information"]:::topic
-  Root --> M1
-  M2["7.3 Review of Probability Theory"]:::topic
-  Root --> M2
-  M3["7.5 Baye’s Networks"]:::topic
-  Root --> M3
-  M4["7.6 Probabilistic Inference"]:::topic
-  Root --> M4
-  M5["7.7 Basic idea of Inferencing with Bayes N"]:::topic
-  Root --> M5
+  Start(["Unit 7 Probabilistic Reasoning"])
+  N1["7.2 Reasoning with uncertain information"]
+  N2["7.3 Review of Probability Theory"]
+  N3["7.5 Baye’s Networks"]
+  N4["7.6 Probabilistic Inference"]
+  N5["7.7 Basic idea of Inferencing with Bayes Netwo"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **A* Search Algorithm** | Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ($h(n) \le h^*(n)$). | *Finding the fastest route on GPS navigation without exploring irrelevant directions.* |
-| **Entropy and Information Gain** | Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$. | *The mathematical criterion used by Decision Trees to select the most informative split attribute.* |
-| **Support Vector Machine (SVM) Margin** | Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$. | *Finding the widest possible road separating positive and negative data clusters.* |
-| **Backpropagation Algorithm** | Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$. | *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.* |
+
+> 📌 **A* Search Algorithm**  
+> - **Formal Definition:** Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ( $h(n) \le h^*(n)$ ).  
+> - 💡 **Practical Intuition & Analogy:** *Finding the fastest route on GPS navigation without exploring irrelevant directions.*
+
+> 📌 **Entropy and Information Gain**  
+> - **Formal Definition:** Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$.  
+> - 💡 **Practical Intuition & Analogy:** *The mathematical criterion used by Decision Trees to select the most informative split attribute.*
+
+> 📌 **Support Vector Machine (SVM) Margin**  
+> - **Formal Definition:** Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$.  
+> - 💡 **Practical Intuition & Analogy:** *Finding the widest possible road separating positive and negative data clusters.*
+
+> 📌 **Backpropagation Algorithm**  
+> - **Formal Definition:** Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$.  
+> - 💡 **Practical Intuition & Analogy:** *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 A* Heuristic Evaluation Function
-
 $$
 f(n) = g(n) + h(n) \quad \text{Admissibility: } 0 \le h(n) \le h^*(n)
 $$
-
 - **Explanation:** If $h(n)$ never overestimates true remaining cost, A* tree search is guaranteed to return the optimal shortest path.
 
 #### 🔹 Shannon Entropy Formula
-
 $$
 H(S) = -\sum_{i=1}^c p_i \log_2 p_i \quad \text{Gini Impurity: } 1 - \sum_{i=1}^c p_i^2
 $$
-
 - **Explanation:** Measures disorder in classification distributions; equals 0 when all samples belong to one class.
 
 #### 🔹 Gradient Descent Weight Update Rule
-
 $$
 \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha \nabla_{\mathbf{w}} \mathcal{L}(\mathbf{w})
 $$
-
 - **Explanation:** Stepping parameter vector opposite to the gradient vector scaled by learning rate $\alpha$.
 
 #### 🔹 Neural Network Output Softmax Function
-
 $$
 \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
 $$
-
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `7.2` Reasoning with uncertain information
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for reasoning with uncertain information.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to probabilistic reasoning.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of reasoning with uncertain information.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to probabilistic reasoning.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of reasoning with uncertain information and derive its primary equations step-by-step.
 
 #### `7.3` Review of Probability Theory
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for review of probability theory.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to probabilistic reasoning.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of review of probability theory.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to probabilistic reasoning.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -139,7 +136,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ($h(n) \le h^*(n)$).
+> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ( $h(n) \le h^*(n)$ ).
 </details>
 
 <details>
@@ -164,14 +161,14 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 </details>
 
 <details>
-<summary><b>Checkpoint 5:</b> Suppose a six-faced die is thrown twice. Describe each of the following events: i) The maximum score is <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 5:</b> What are different type of evidences? Give suitable example of each. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Probabilistic Reasoning. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 <details>
-<summary><b>Checkpoint 6:</b> ii) The total score is 9. iii) Each throw results in an even score. iv) Each throw results in an even score larger than <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> A card is drawn, its number noted and the card is replaced. Another card is drawn and its number is noted. Solution - *Please refer to section <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Probabilistic Reasoning. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.

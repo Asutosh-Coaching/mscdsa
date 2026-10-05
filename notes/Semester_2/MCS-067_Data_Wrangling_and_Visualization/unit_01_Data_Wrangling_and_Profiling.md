@@ -18,88 +18,79 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 1 - Data Wrangling and Profiling"]:::head
-  M1["1.2 Basic Concepts"]:::topic
-  Root --> M1
-  M1_1["1.2.1 Definition"]:::sub
-  M1 --> M1_1
-  M1_2["1.2.2 Need of Data Wrangling"]:::sub
-  M1 --> M1_2
-  M2["1.3 Process of Data Wrangling"]:::topic
-  Root --> M2
-  M3["1.4 Benefits of Data Wrangling"]:::topic
-  Root --> M3
-  M4["1.5 Data Semantics"]:::topic
-  Root --> M4
-  M4_1["1.5.1 Data Semantic Process"]:::sub
-  M4 --> M4_1
-  M4_2["1.5.2 Semantic Wrangling using Data Abstra"]:::sub
-  M4 --> M4_2
-  M5["1.6 Set-based profiling"]:::topic
-  Root --> M5
+  Start(["Unit 1 Data Wrangling and Profiling"])
+  N1["1.2 Basic Concepts"]
+  N2["1.2.1 Definition"]
+  N3["1.2.2 Need of Data Wrangling"]
+  N4["1.3 Process of Data Wrangling"]
+  N5["1.4 Benefits of Data Wrangling"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Arithmetic Mean $\bar{x}$ or $\mu$** | The sum of all observations divided by the total number of observations: $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$. Sensitive to extreme outliers. | *The center of mass or balance point of the distribution.* |
-| **Median** | The physical middle value separating the higher half from the lower half of an ordered dataset. Robust against outliers. | *The 50th percentile value where exactly half the data lies above and half below.* |
-| **Standard Deviation $\sigma$ or $s$** | The square root of variance, measuring average dispersion in original units: $s = \sqrt{\frac{1}{n-1}\sum (x_i - \bar{x})^2}$. | *The typical distance data points deviate from the mean.* |
-| **Coefficient of Variation ($CV$)** | Relative dispersion measure expressed as a percentage: $CV = \frac{\sigma}{\mu} \times 100\%$. Enables comparison across different measurement scales. | *Comparing stock volatility across assets priced at $10 vs $1,000.* |
+
+> 📌 **Arithmetic Mean $\bar{x}$ or $\mu$**  
+> - **Formal Definition:** The sum of all observations divided by the total number of observations: $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$. Sensitive to extreme outliers.  
+> - 💡 **Practical Intuition & Analogy:** *The center of mass or balance point of the distribution.*
+
+> 📌 **Median**  
+> - **Formal Definition:** The physical middle value separating the higher half from the lower half of an ordered dataset. Robust against outliers.  
+> - 💡 **Practical Intuition & Analogy:** *The 50th percentile value where exactly half the data lies above and half below.*
+
+> 📌 **Standard Deviation $\sigma$ or $s$**  
+> - **Formal Definition:** The square root of variance, measuring average dispersion in original units: $s = \sqrt{\frac{1}{n-1}\sum (x_i - \bar{x})^2}$.  
+> - 💡 **Practical Intuition & Analogy:** *The typical distance data points deviate from the mean.*
+
+> 📌 **Coefficient of Variation ($CV$)**  
+> - **Formal Definition:** Relative dispersion measure expressed as a percentage: $CV = \frac{\sigma}{\mu} \times 100\%$. Enables comparison across different measurement scales.  
+> - 💡 **Practical Intuition & Analogy:** *Comparing stock volatility across assets priced at 10 USD vs 1,000 USD.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Sample Variance Formula (Bessel's Correction)
-
 $$
-s^2 = \frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2 = \frac{\sum x_i^2 - \frac{(\sum x_i)^2}{n}}{n - 1}
+\begin{aligned} s^2 & = \frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2 \\ & = \frac{\sum x_i^2 - \frac{(\sum x_i)^2}{n}}{n - 1} \end{aligned}
 $$
-
 - **Explanation:** Using $n-1$ in the denominator corrects for downward sample bias, yielding an unbiased estimator of population variance $\sigma^2$.
 
 #### 🔹 Interquartile Range (IQR) & Outlier Bounds
-
 $$
 \text{IQR} = Q_3 - Q_1, \quad \text{Outliers} < Q_1 - 1.5(\text{IQR}) \;\lor\; > Q_3 + 1.5(\text{IQR})
 $$
-
 - **Explanation:** Standard Tukey boxplot rule for identifying extreme data points robustly.
 
 #### 🔹 Pearson's First Coefficient of Skewness
-
 $$
 Sk_1 = \frac{\text{Mean} - \text{Mode}}{\sigma} \quad \text{or} \quad Sk_2 = \frac{3(\text{Mean} - \text{Median})}{\sigma}
 $$
-
 - **Explanation:** Measures asymmetry: Positive skew means mean > median (right tail); negative skew means mean < median (left tail).
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `1.2` Basic Concepts
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for basic concepts.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to data wrangling and profiling.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of basic concepts.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data wrangling and profiling.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of basic concepts and derive its primary equations step-by-step.
 
 #### `1.2.1` Definition
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for definition.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to data wrangling and profiling.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of definition.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data wrangling and profiling.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of definition and derive its primary equations step-by-step.
 
 #### `1.2.2` Need of Data Wrangling
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for need of data wrangling.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to data wrangling and profiling.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of need of data wrangling.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data wrangling and profiling.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]

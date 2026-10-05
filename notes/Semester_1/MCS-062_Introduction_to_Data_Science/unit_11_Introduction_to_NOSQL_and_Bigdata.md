@@ -18,51 +18,54 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 11 - Introduction to NOSQL and Bigdat"]:::head
-  M1["11.3 Types of NoSQL Databases"]:::topic
-  Root --> M1
-  M1_1["11.3.1 Column Based"]:::sub
-  M1 --> M1_1
-  M1_2["11.3.2 Graph Based"]:::sub
-  M1 --> M1_2
+  Start(["Unit 11 Introduction to NOSQL and Bigdata"])
+  N1["11.2.1 What is NoSQL"]
+  N2["11.2.2 Brief History of NoSQL Databases"]
+  N3["11.2.3 NoSQL Database Features"]
+  N4["11.2.4 Differentiate between RDBMS and NoSQL"]
+  N5["11.3 Types of NoSQL Databases"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Relational Algebra** | A procedural query language consisting of a set of operations on relations: Select ($\sigma$), Project ($\pi$), Union ($\cup$), Set Difference ($-$), Cartesian Product ($\times$), and Join ($\bowtie$). | *The formal mathematical syntax executed behind SQL `SELECT` queries.* |
-| **ACID Properties** | Atomicity (all or nothing), Consistency (preserves invariants), Isolation (concurrent execution equivalent to serial), Durability (committed data survives crashes). | *The financial transaction guarantee: money cannot disappear between debit and credit.* |
-| **Functional Dependency $X \to Y$** | A constraint between two sets of attributes: for any two valid tuples $t_1, t_2$, if $t_1[X] = t_2[X]$, then $t_1[Y] = t_2[Y]$. Value of $X$ uniquely determines $Y$. | *`StudentID` uniquely determines `StudentName`.* |
-| **Third Normal Form (3NF) & BCNF** | A relation is in 3NF if for every non-trivial $X \to Y$, either $X$ is a superkey or $Y$ is a prime attribute. It is in BCNF if $X$ is strictly a superkey. | *Eliminates transitive dependencies so data is stored in exactly one canonical place without update anomalies.* |
+
+> 📌 **Relational Algebra**  
+> - **Formal Definition:** A procedural query language consisting of a set of operations on relations: Select ( $\sigma$ ), Project ( $\pi$ ), Union ( $\cup$ ), Set Difference ( $-$ ), Cartesian Product ( $\times$ ), and Join ( $\bowtie$ ).  
+> - 💡 **Practical Intuition & Analogy:** *The formal mathematical syntax executed behind SQL `SELECT` queries.*
+
+> 📌 **ACID Properties**  
+> - **Formal Definition:** Atomicity (all or nothing), Consistency (preserves invariants), Isolation (concurrent execution equivalent to serial), Durability (committed data survives crashes).  
+> - 💡 **Practical Intuition & Analogy:** *The financial transaction guarantee: money cannot disappear between debit and credit.*
+
+> 📌 **Functional Dependency $X \to Y$**  
+> - **Formal Definition:** A constraint between two sets of attributes: for any two valid tuples $t_1, t_2$, if $t_1[X] = t_2[X]$, then $t_1[Y] = t_2[Y]$. Value of $X$ uniquely determines $Y$.  
+> - 💡 **Practical Intuition & Analogy:** *`StudentID` uniquely determines `StudentName`.*
+
+> 📌 **Third Normal Form (3NF) & BCNF**  
+> - **Formal Definition:** A relation is in 3NF if for every non-trivial $X \to Y$, either $X$ is a superkey or $Y$ is a prime attribute. It is in BCNF if $X$ is strictly a superkey.  
+> - 💡 **Practical Intuition & Analogy:** *Eliminates transitive dependencies so data is stored in exactly one canonical place without update anomalies.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Relational Algebra Selection & Projection
-
 $$
 \sigma_{\text{condition}}(R) \quad \text{and} \quad \pi_{\text{attributes}}(R)
 $$
-
 - **Explanation:** $\sigma$ filters rows (equivalent to SQL `WHERE`), while $\pi$ selects specific columns (equivalent to SQL `SELECT column_list`).
 
 #### 🔹 Relational Natural Join
-
 $$
 R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))
 $$
-
 - **Explanation:** Performs equality join across all identically named attributes between two tables.
 
 #### 🔹 Two-Phase Locking (2PL) Theorem
-
 $$
 \text{Growing Phase: Only Acquire Locks} \implies \text{Shrinking Phase: Only Release Locks}
 $$
-
 - **Explanation:** Guarantees conflict serializability of concurrent database schedules without data race anomalies.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

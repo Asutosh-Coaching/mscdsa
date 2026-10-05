@@ -18,63 +18,60 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 15 - Clustering"]:::head
-  M1["15.2 Types of clustering"]:::topic
-  Root --> M1
-  M2["15.3 Partition Based"]:::topic
-  Root --> M2
-  M3["15.4 Hierarchical Based"]:::topic
-  Root --> M3
-  M4["15.5 Density Based Clustering techniques"]:::topic
-  Root --> M4
-  M5["15.6 Clustering algorithms"]:::topic
-  Root --> M5
+  Start(["Unit 15 Clustering"])
+  N1["15.2 Types of clustering"]
+  N2["15.3 Partition Based"]
+  N3["15.4 Hierarchical Based"]
+  N4["15.5 Density Based Clustering techniques"]
+  N5["15.6 Clustering algorithms"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **A* Search Algorithm** | Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ($h(n) \le h^*(n)$). | *Finding the fastest route on GPS navigation without exploring irrelevant directions.* |
-| **Entropy and Information Gain** | Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$. | *The mathematical criterion used by Decision Trees to select the most informative split attribute.* |
-| **Support Vector Machine (SVM) Margin** | Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$. | *Finding the widest possible road separating positive and negative data clusters.* |
-| **Backpropagation Algorithm** | Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$. | *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.* |
+
+> 📌 **A* Search Algorithm**  
+> - **Formal Definition:** Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ( $h(n) \le h^*(n)$ ).  
+> - 💡 **Practical Intuition & Analogy:** *Finding the fastest route on GPS navigation without exploring irrelevant directions.*
+
+> 📌 **Entropy and Information Gain**  
+> - **Formal Definition:** Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$.  
+> - 💡 **Practical Intuition & Analogy:** *The mathematical criterion used by Decision Trees to select the most informative split attribute.*
+
+> 📌 **Support Vector Machine (SVM) Margin**  
+> - **Formal Definition:** Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$.  
+> - 💡 **Practical Intuition & Analogy:** *Finding the widest possible road separating positive and negative data clusters.*
+
+> 📌 **Backpropagation Algorithm**  
+> - **Formal Definition:** Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$.  
+> - 💡 **Practical Intuition & Analogy:** *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 A* Heuristic Evaluation Function
-
 $$
 f(n) = g(n) + h(n) \quad \text{Admissibility: } 0 \le h(n) \le h^*(n)
 $$
-
 - **Explanation:** If $h(n)$ never overestimates true remaining cost, A* tree search is guaranteed to return the optimal shortest path.
 
 #### 🔹 Shannon Entropy Formula
-
 $$
 H(S) = -\sum_{i=1}^c p_i \log_2 p_i \quad \text{Gini Impurity: } 1 - \sum_{i=1}^c p_i^2
 $$
-
 - **Explanation:** Measures disorder in classification distributions; equals 0 when all samples belong to one class.
 
 #### 🔹 Gradient Descent Weight Update Rule
-
 $$
 \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha \nabla_{\mathbf{w}} \mathcal{L}(\mathbf{w})
 $$
-
 - **Explanation:** Stepping parameter vector opposite to the gradient vector scaled by learning rate $\alpha$.
 
 #### 🔹 Neural Network Output Softmax Function
-
 $$
 \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
 $$
-
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
@@ -130,7 +127,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ($h(n) \le h^*(n)$).
+> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ( $h(n) \le h^*(n)$ ).
 </details>
 
 <details>

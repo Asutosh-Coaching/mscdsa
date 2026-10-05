@@ -18,61 +18,57 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 7 - Linked Lists"]:::head
-  M1["7.2 Singly Linked Lists"]:::topic
-  Root --> M1
-  M2["7.3 Circularly Linked Lists"]:::topic
-  Root --> M2
-  M3["7.4 Doubly Linked Lists"]:::topic
-  Root --> M3
-  M4["7.5 The Positional List ADT"]:::topic
-  Root --> M4
-  M5["7.6 Sorting a Positional List"]:::topic
-  Root --> M5
+  Start(["Unit 7 Linked Lists"])
+  N1["7.2 Singly Linked Lists"]
+  N2["7.3 Circularly Linked Lists"]
+  N3["7.4 Doubly Linked Lists"]
+  N4["7.5 The Positional List ADT"]
+  N5["7.6 Sorting a Positional List"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Big-O Notation $O(g(n))$** | Asymptotic upper bound: $f(n) = O(g(n))$ if $\exists c > 0, n_0 > 0$ such that $0 \le f(n) \le c \cdot g(n), \forall n \ge n_0$. Describes worst-case growth rate. | *The performance guarantee: execution time will not grow faster than this bound.* |
-| **Hash Table & Load Factor $\alpha$** | Data structure mapping keys to bucket indices using a hash function $h(k)$. Load factor $\alpha = n/m$ where $n$ is stored elements and $m$ is table capacity. Average lookup is $O(1)$. | *Instant dictionary key-value lookup in Python.* |
-| **Binary Search Tree (BST) & AVL Balance Factor** | A tree where for every node, left sub-tree values are smaller and right sub-tree values are larger. In AVL trees, Balance Factor $BF = h_L - h_R \in \{-1, 0, 1\}$, maintaining $O(\log n)$ bounds via rotations. | *A self-balancing search index that guarantees rapid logarithmic lookups.* |
+
+> 📌 **Big-O Notation $O(g(n))$**  
+> - **Formal Definition:** Asymptotic upper bound: $f(n) = O(g(n))$ if $\exists c > 0, n_0 > 0$ such that $0 \le f(n) \le c \cdot g(n), \forall n \ge n_0$. Describes worst-case growth rate.  
+> - 💡 **Practical Intuition & Analogy:** *The performance guarantee: execution time will not grow faster than this bound.*
+
+> 📌 **Hash Table & Load Factor $\alpha$**  
+> - **Formal Definition:** Data structure mapping keys to bucket indices using a hash function $h(k)$. Load factor $\alpha = n/m$ where $n$ is stored elements and $m$ is table capacity. Average lookup is $O(1)$.  
+> - 💡 **Practical Intuition & Analogy:** *Instant dictionary key-value lookup in Python.*
+
+> 📌 **Binary Search Tree (BST) & AVL Balance Factor**  
+> - **Formal Definition:** A tree where for every node, left sub-tree values are smaller and right sub-tree values are larger. In AVL trees, Balance Factor $BF = h_L - h_R \in \lbrace -1, 0, 1 \rbrace$, maintaining $O(\log n)$ bounds via rotations.  
+> - 💡 **Practical Intuition & Analogy:** *A self-balancing search index that guarantees rapid logarithmic lookups.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Master Theorem for Divide-and-Conquer Recurrences
-
 $$
-T(n) = aT(n/b) + \Theta(n^d) \implies T(n) = \begin{cases} \Theta(n^{\log_b a}) & \text{if } d < \log_b a \\ \Theta(n^d \log n) & \text{if } d = \log_b a \\ \Theta(n^d) & \text{if } d > \log_b a \end{cases}
+\begin{aligned} & T(n) = aT(n/b) + \Theta(n^d) \\ & \implies T(n) = \begin{cases} \Theta(n^{\log_b a}) & \text{if } d < \log_b a \\ \Theta(n^d \log n) & \text{if } d = \log_b a \\ \Theta(n^d) & \text{if } d > \log_b a \end{cases} \end{aligned}
 $$
-
-- **Explanation:** Solves common divide-and-conquer recurrences like Mergesort ($T(n) = 2T(n/2) + O(n) \implies O(n \log n)$).
+- **Explanation:** Solves common divide-and-conquer recurrences like Mergesort ( $T(n) = 2T(n/2) + O(n) \implies O(n \log n)$ ).
 
 #### 🔹 Binary Heap Array Index Formulas
-
 $$
 \text{Parent}(i) = \lfloor (i - 1)/2 \rfloor, \; \text{Left}(i) = 2i + 1, \; \text{Right}(i) = 2i + 2
 $$
-
 - **Explanation:** Enables cache-friendly representation of complete binary trees directly within flat linear arrays.
 
 #### 🔹 Comparison Sort Lower Bound
-
 $$
 \Omega(n \log n) \quad \text{for comparison-based sorting algorithms}
 $$
-
 - **Explanation:** Information-theoretic lower bound: reaching $n!$ leaf permutations requires a decision tree of minimum depth $\log_2(n!) = \Omega(n \log n)$.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `7.2` Singly Linked Lists
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for singly linked lists.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to linked lists.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of singly linked lists.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to linked lists.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -137,7 +133,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 2:</b> How does an AVL tree restore balance after an insertion? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> By computing the Balance Factor ($h_L - h_R$) and applying tree rotations: Left-Left (Single Right Rotation), Right-Right (Single Left Rotation), Left-Right (Double Rotation), or Right-Left (Double Rotation).
+> By computing the Balance Factor ( $h_L - h_R$ ) and applying tree rotations: Left-Left (Single Right Rotation), Right-Right (Single Left Rotation), Left-Right (Double Rotation), or Right-Left (Double Rotation).
 </details>
 
 <details>
@@ -162,7 +158,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 </details>
 
 <details>
-<summary><b>Checkpoint 6:</b> d) O(n²) Correct Answer: c) O( <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> When deleting a node from a doubly linked list in a language without garbage collection, what is essential? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Linked Lists. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.

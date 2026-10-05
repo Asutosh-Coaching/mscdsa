@@ -18,87 +18,70 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 11 - Database Recovery and Security"]:::head
-  M1["11.2 What Is Recovery?"]:::topic
-  Root --> M1
-  M1_1["11.2.1 Kinds of Failures"]:::sub
-  M1 --> M1_1
-  M1_2["11.2.2 Storage Structures for Recovery"]:::sub
-  M1 --> M1_2
-  M2["11.3 Transaction Recovery"]:::topic
-  Root --> M2
-  M2_1["11.3.1 Log-Based Recovery"]:::sub
-  M2 --> M2_1
-  M2_2["11.3.2 Checkpoints in Recovery"]:::sub
-  M2 --> M2_2
-  M3["11.4 Security in Commercial Databases"]:::topic
-  Root --> M3
-  M3_1["11.4.1 Common Database Security Failures"]:::sub
-  M3 --> M3_1
-  M3_2["11.4.2 Database Security Levels"]:::sub
-  M3 --> M3_2
-  M4["11.5 Access Control"]:::topic
-  Root --> M4
-  M4_1["11.5.1 Authorisation of Data Items"]:::sub
-  M4 --> M4_1
-  M4_2["11.5.2 A Basic Model of Database Access Co"]:::sub
-  M4 --> M4_2
-  M5["11.6 Audit Trails in Databases"]:::topic
-  Root --> M5
+  Start(["Unit 11 Database Recovery and Security"])
+  N1["11.2 What Is Recovery?"]
+  N2["11.2.1 Kinds of Failures"]
+  N3["11.2.2 Storage Structures for Recovery"]
+  N4["11.2.3 Recovery and Atomicity"]
+  N5["11.2.4 Transactions and Recovery"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Relational Algebra** | A procedural query language consisting of a set of operations on relations: Select ($\sigma$), Project ($\pi$), Union ($\cup$), Set Difference ($-$), Cartesian Product ($\times$), and Join ($\bowtie$). | *The formal mathematical syntax executed behind SQL `SELECT` queries.* |
-| **ACID Properties** | Atomicity (all or nothing), Consistency (preserves invariants), Isolation (concurrent execution equivalent to serial), Durability (committed data survives crashes). | *The financial transaction guarantee: money cannot disappear between debit and credit.* |
-| **Functional Dependency $X \to Y$** | A constraint between two sets of attributes: for any two valid tuples $t_1, t_2$, if $t_1[X] = t_2[X]$, then $t_1[Y] = t_2[Y]$. Value of $X$ uniquely determines $Y$. | *`StudentID` uniquely determines `StudentName`.* |
-| **Third Normal Form (3NF) & BCNF** | A relation is in 3NF if for every non-trivial $X \to Y$, either $X$ is a superkey or $Y$ is a prime attribute. It is in BCNF if $X$ is strictly a superkey. | *Eliminates transitive dependencies so data is stored in exactly one canonical place without update anomalies.* |
+
+> 📌 **Relational Algebra**  
+> - **Formal Definition:** A procedural query language consisting of a set of operations on relations: Select ( $\sigma$ ), Project ( $\pi$ ), Union ( $\cup$ ), Set Difference ( $-$ ), Cartesian Product ( $\times$ ), and Join ( $\bowtie$ ).  
+> - 💡 **Practical Intuition & Analogy:** *The formal mathematical syntax executed behind SQL `SELECT` queries.*
+
+> 📌 **ACID Properties**  
+> - **Formal Definition:** Atomicity (all or nothing), Consistency (preserves invariants), Isolation (concurrent execution equivalent to serial), Durability (committed data survives crashes).  
+> - 💡 **Practical Intuition & Analogy:** *The financial transaction guarantee: money cannot disappear between debit and credit.*
+
+> 📌 **Functional Dependency $X \to Y$**  
+> - **Formal Definition:** A constraint between two sets of attributes: for any two valid tuples $t_1, t_2$, if $t_1[X] = t_2[X]$, then $t_1[Y] = t_2[Y]$. Value of $X$ uniquely determines $Y$.  
+> - 💡 **Practical Intuition & Analogy:** *`StudentID` uniquely determines `StudentName`.*
+
+> 📌 **Third Normal Form (3NF) & BCNF**  
+> - **Formal Definition:** A relation is in 3NF if for every non-trivial $X \to Y$, either $X$ is a superkey or $Y$ is a prime attribute. It is in BCNF if $X$ is strictly a superkey.  
+> - 💡 **Practical Intuition & Analogy:** *Eliminates transitive dependencies so data is stored in exactly one canonical place without update anomalies.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Relational Algebra Selection & Projection
-
 $$
 \sigma_{\text{condition}}(R) \quad \text{and} \quad \pi_{\text{attributes}}(R)
 $$
-
 - **Explanation:** $\sigma$ filters rows (equivalent to SQL `WHERE`), while $\pi$ selects specific columns (equivalent to SQL `SELECT column_list`).
 
 #### 🔹 Relational Natural Join
-
 $$
 R \bowtie S = \pi_{\text{Attr}(R) \cup \text{Attr}(S)}(\sigma_{R.A_1 = S.A_1 \land \dots}(R \times S))
 $$
-
 - **Explanation:** Performs equality join across all identically named attributes between two tables.
 
 #### 🔹 Two-Phase Locking (2PL) Theorem
-
 $$
 \text{Growing Phase: Only Acquire Locks} \implies \text{Shrinking Phase: Only Release Locks}
 $$
-
 - **Explanation:** Guarantees conflict serializability of concurrent database schedules without data race anomalies.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `11.2` What Is Recovery?
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for what is recovery?.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to database recovery and security.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of what is recovery?.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to database recovery and security.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of what is recovery? and derive its primary equations step-by-step.
 
 #### `11.2.1` Kinds of Failures
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for kinds of failures.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to database recovery and security.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of kinds of failures.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to database recovery and security.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]

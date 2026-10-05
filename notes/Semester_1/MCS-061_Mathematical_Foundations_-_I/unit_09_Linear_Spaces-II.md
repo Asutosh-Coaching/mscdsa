@@ -18,83 +18,76 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 9 - Linear Spaces-II"]:::head
-  M1["9.2 Vectors and Matrices"]:::topic
-  Root --> M1
-  M2["9.3 Characteristic Value Problem"]:::topic
-  Root --> M2
-  M2_1["9.3.1 Characteristic Equation"]:::sub
-  M2 --> M2_1
-  M2_2["9.3.2 Sum and Product of Roots"]:::sub
-  M2 --> M2_2
-  M3["9.4 Linear independence of Eigen Vectors"]:::topic
-  Root --> M3
-  M4["9.5 Quadratic Forms"]:::topic
-  Root --> M4
-  M5["9.6 Definiteness and Eigen Values"]:::topic
-  Root --> M5
+  Start(["Unit 9 Linear Spaces-II"])
+  N1["9.2 Vectors and Matrices"]
+  N2["9.3 Characteristic Value Problem"]
+  N3["9.3.1 Characteristic Equation"]
+  N4["9.3.2 Sum and Product of Roots"]
+  N5["9.3.3 Characteristic Vector"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Matrix** | A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$. | *A tabular dataframe where rows represent records and columns represent features.* |
-| **Determinant $\det(A)$ or $\vert A \vert$** | A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible. | *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.* |
-| **Matrix Rank** | The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$. | *The true dimensionality of the data without redundant, collinear features.* |
-| **Eigenvalue and Eigenvector** | A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction. | *The principal directions of maximum variance in Principal Component Analysis (PCA).* |
+
+> 📌 **Matrix**  
+> - **Formal Definition:** A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$.  
+> - 💡 **Practical Intuition & Analogy:** *A tabular dataframe where rows represent records and columns represent features.*
+
+> 📌 **Determinant $\det(A)$ or $\vert A \vert$**  
+> - **Formal Definition:** A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible.  
+> - 💡 **Practical Intuition & Analogy:** *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.*
+
+> 📌 **Matrix Rank**  
+> - **Formal Definition:** The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$.  
+> - 💡 **Practical Intuition & Analogy:** *The true dimensionality of the data without redundant, collinear features.*
+
+> 📌 **Eigenvalue and Eigenvector**  
+> - **Formal Definition:** A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction.  
+> - 💡 **Practical Intuition & Analogy:** *The principal directions of maximum variance in Principal Component Analysis (PCA).*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Matrix Multiplication Dimension Rule
-
 $$
 C_{m \times p} = A_{m \times n} B_{n \times p} \quad \text{where } c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}
 $$
-
 - **Explanation:** Inner dimensions must match: columns of $A$ must equal rows of $B$.
 
 #### 🔹 Matrix Inverse Formula
-
 $$
 A^{-1} = \frac{1}{\det(A)} \text{adj}(A) \quad \text{valid when } \det(A) \neq 0
 $$
-
 - **Explanation:** The inverse exists if and only if the matrix is full rank and non-singular.
 
 #### 🔹 Characteristic Equation for Eigenvalues
-
 $$
 \det(A - \lambda I) = 0
 $$
-
 - **Explanation:** Solving this polynomial equation yields the eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$ of matrix $A$.
 
 #### 🔹 Cayley-Hamilton Theorem
-
 $$
 p(A) = O \quad \text{where } p(\lambda) = \det(A - \lambda I)
 $$
-
 - **Explanation:** Every square matrix satisfies its own characteristic polynomial equation.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `9.2` Vectors and Matrices
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for vectors and matrices.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to linear spaces-ii.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of vectors and matrices.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to linear spaces-ii.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of vectors and matrices and derive its primary equations step-by-step.
 
 #### `9.3` Characteristic Value Problem
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for characteristic value problem.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to linear spaces-ii.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of characteristic value problem.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to linear spaces-ii.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -143,7 +136,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What happens if $\det(A) = 0$ for a square matrix $A$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The matrix is **singular**, has no multiplicative inverse ($A^{-1}$ does not exist), and its row vectors are linearly dependent.
+> The matrix is **singular**, has no multiplicative inverse ( $A^{-1}$ does not exist ), and its row vectors are linearly dependent.
 </details>
 
 <details>

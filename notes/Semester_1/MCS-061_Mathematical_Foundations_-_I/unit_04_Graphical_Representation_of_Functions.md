@@ -18,71 +18,54 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 4 - Graphical Representation of Funct"]:::head
-  M1["4.2 Vertical Line Test of Function"]:::topic
-  Root --> M1
-  M1_1["4.2.1 Relationship between Equation and Fu"]:::sub
-  M1 --> M1_1
-  M1_2["4.2.2 Co-ordinate Geometry"]:::sub
-  M1 --> M1_2
-  M2["4.3 Translating Geometric Figures to Algeb"]:::topic
-  Root --> M2
-  M3["4.4 Graphing Linear Functions"]:::topic
-  Root --> M3
-  M3_1["4.4.1 Absolute Value Function"]:::sub
-  M3 --> M3_1
-  M3_2["4.4.2 Step Function"]:::sub
-  M3 --> M3_2
-  M4["4.5 Graphing Non-Linear Functions"]:::topic
-  Root --> M4
-  M4_1["4.5.1 Even and Odd Functions"]:::sub
-  M4 --> M4_1
-  M4_2["4.5.2 Quadratic Functions"]:::sub
-  M4 --> M4_2
-  M5["4.6 Graphing of Functions - Asymptomatic T"]:::topic
-  Root --> M5
-  M5_1["4.6.1 Graph of Asymptote"]:::sub
-  M5 --> M5_1
-  M5_2["4.6.2 Square Root Function"]:::sub
-  M5 --> M5_2
+  Start(["Unit 4 Graphical Representation of Functio"])
+  N1["4.2 Vertical Line Test of Function"]
+  N2["4.2.1 Relationship between Equation and Function"]
+  N3["4.2.2 Co-ordinate Geometry"]
+  N4["4.2.3 Cartesian Co-ordinate System"]
+  N5["4.3 Translating Geometric Figures to Algebraic"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Function (Mapping)** | A relation $f: A \to B$ that associates every element $x \in A$ with a unique element $y \in B$, written as $y = f(x)$. Set $A$ is the domain, $B$ is the codomain, and $f(A) \subseteq B$ is the range. | *A Python function that guarantees returning exactly one output for every valid input.* |
-| **Injective (One-to-One)** | A function $f: A \to B$ is injective if $f(x_1) = f(x_2) \implies x_1 = x_2$, or equivalently $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$. No two inputs share the same output. | *A cryptographic hash without collisions or a primary key assignment.* |
-| **Surjective (Onto)** | A function $f: A \to B$ is surjective if $\forall y \in B, \exists x \in A$ such that $f(x) = y$. The range equals the codomain: $f(A) = B$. | *Every possible category in the target space is covered by at least one training observation.* |
-| **Bijective (One-to-One & Onto)** | A function that is simultaneously injective and surjective. Guarantees a strict 1-to-1 correspondence between domain $A$ and codomain $B$. | *A perfectly reversible transformation, like converting Celsius to Fahrenheit.* |
+
+> 📌 **Function (Mapping)**  
+> - **Formal Definition:** A relation $f: A \to B$ that associates every element $x \in A$ with a unique element $y \in B$, written as $y = f(x)$. Set $A$ is the domain, $B$ is the codomain, and $f(A) \subseteq B$ is the range.  
+> - 💡 **Practical Intuition & Analogy:** *A Python function that guarantees returning exactly one output for every valid input.*
+
+> 📌 **Injective (One-to-One)**  
+> - **Formal Definition:** A function $f: A \to B$ is injective if $f(x_1) = f(x_2) \implies x_1 = x_2$, or equivalently $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$. No two inputs share the same output.  
+> - 💡 **Practical Intuition & Analogy:** *A cryptographic hash without collisions or a primary key assignment.*
+
+> 📌 **Surjective (Onto)**  
+> - **Formal Definition:** A function $f: A \to B$ is surjective if $\forall y \in B, \exists x \in A$ such that $f(x) = y$. The range equals the codomain: $f(A) = B$.  
+> - 💡 **Practical Intuition & Analogy:** *Every possible category in the target space is covered by at least one training observation.*
+
+> 📌 **Bijective (One-to-One & Onto)**  
+> - **Formal Definition:** A function that is simultaneously injective and surjective. Guarantees a strict 1-to-1 correspondence between domain $A$ and codomain $B$.  
+> - 💡 **Practical Intuition & Analogy:** *A perfectly reversible transformation, like converting Celsius to Fahrenheit.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Function Invertibility Condition
-
 $$
 f^{-1}: B \to A \text{ exists if and only if } f \text{ is Bijective}
 $$
-
 - **Explanation:** If not injective, the inverse is multi-valued; if not surjective, the inverse is undefined on parts of $B$.
 
 #### 🔹 Composition of Functions
-
 $$
 (g \circ f)(x) = g(f(x)) \quad \text{where } f: A \to B, \; g: B \to C
 $$
-
 - **Explanation:** Chaining sequential data transformations, such as scaling data then applying a classifier.
 
 #### 🔹 Pigeonhole Principle
-
 $$
 \text{If } n > k \text{ items are placed into } k \text{ bins, at least one bin contains } \ge \lceil n/k \rceil \text{ items}
 $$
-
 - **Explanation:** Guarantees hash collisions when the number of records exceeds the hash table capacity.
 
 ### 📌 Detailed Section-by-Section Study Breakdown

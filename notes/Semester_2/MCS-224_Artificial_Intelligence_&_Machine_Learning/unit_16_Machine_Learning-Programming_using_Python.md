@@ -18,93 +18,76 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 16 - Machine Learning-Programming usi"]:::head
-  M1["16.2 Classification Algorithms"]:::topic
-  Root --> M1
-  M1_1["16.2.1 Naïve Bayes"]:::sub
-  M1 --> M1_1
-  M1_2["16.2.2 K-Nearest Neighbour K-NN"]:::sub
-  M1 --> M1_2
-  M2["16.3 Regression Algorithms"]:::topic
-  Root --> M2
-  M2_1["16.3.1 Linear Regresssion"]:::sub
-  M2 --> M2_1
-  M2_2["16.3.2 Polynomial Regression"]:::sub
-  M2 --> M2_2
-  M3["16.4 Feature Selection and Extraction"]:::topic
-  Root --> M3
-  M3_1["16.4.1 Principal Component Analysis"]:::sub
-  M3 --> M3_1
-  M4["16.5 Association Rules"]:::topic
-  Root --> M4
-  M4_1["16.5.1 Apriori Algorithm"]:::sub
-  M4 --> M4_1
-  M5["16.6 Clustering Algorithms"]:::topic
-  Root --> M5
-  M5_1["16.6.1 K-Means,"]:::sub
-  M5 --> M5_1
+  Start(["Unit 16 Machine Learning-Programming using"])
+  N1["16.2 Classification Algorithms"]
+  N2["16.2.1 Naïve Bayes"]
+  N3["16.2.2 K-Nearest Neighbour K-NN"]
+  N4["16.2.3 Decision Trees"]
+  N5["16.2.4 Logistic Regression"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **A* Search Algorithm** | Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ($h(n) \le h^*(n)$). | *Finding the fastest route on GPS navigation without exploring irrelevant directions.* |
-| **Entropy and Information Gain** | Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$. | *The mathematical criterion used by Decision Trees to select the most informative split attribute.* |
-| **Support Vector Machine (SVM) Margin** | Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$. | *Finding the widest possible road separating positive and negative data clusters.* |
-| **Backpropagation Algorithm** | Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$. | *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.* |
+
+> 📌 **A* Search Algorithm**  
+> - **Formal Definition:** Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ( $h(n) \le h^*(n)$ ).  
+> - 💡 **Practical Intuition & Analogy:** *Finding the fastest route on GPS navigation without exploring irrelevant directions.*
+
+> 📌 **Entropy and Information Gain**  
+> - **Formal Definition:** Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$.  
+> - 💡 **Practical Intuition & Analogy:** *The mathematical criterion used by Decision Trees to select the most informative split attribute.*
+
+> 📌 **Support Vector Machine (SVM) Margin**  
+> - **Formal Definition:** Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$.  
+> - 💡 **Practical Intuition & Analogy:** *Finding the widest possible road separating positive and negative data clusters.*
+
+> 📌 **Backpropagation Algorithm**  
+> - **Formal Definition:** Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$.  
+> - 💡 **Practical Intuition & Analogy:** *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 A* Heuristic Evaluation Function
-
 $$
 f(n) = g(n) + h(n) \quad \text{Admissibility: } 0 \le h(n) \le h^*(n)
 $$
-
 - **Explanation:** If $h(n)$ never overestimates true remaining cost, A* tree search is guaranteed to return the optimal shortest path.
 
 #### 🔹 Shannon Entropy Formula
-
 $$
 H(S) = -\sum_{i=1}^c p_i \log_2 p_i \quad \text{Gini Impurity: } 1 - \sum_{i=1}^c p_i^2
 $$
-
 - **Explanation:** Measures disorder in classification distributions; equals 0 when all samples belong to one class.
 
 #### 🔹 Gradient Descent Weight Update Rule
-
 $$
 \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha \nabla_{\mathbf{w}} \mathcal{L}(\mathbf{w})
 $$
-
 - **Explanation:** Stepping parameter vector opposite to the gradient vector scaled by learning rate $\alpha$.
 
 #### 🔹 Neural Network Output Softmax Function
-
 $$
 \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
 $$
-
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `16.2` Classification Algorithms
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for classification algorithms.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to machine learning-programming using python.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of classification algorithms.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to machine learning-programming using python.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of classification algorithms and derive its primary equations step-by-step.
 
 #### `16.2.1` Naïve Bayes
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for naïve bayes.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to machine learning-programming using python.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of naïve bayes.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to machine learning-programming using python.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -153,7 +136,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ($h(n) \le h^*(n)$).
+> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ( $h(n) \le h^*(n)$ ).
 </details>
 
 <details>

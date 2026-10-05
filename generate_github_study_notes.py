@@ -44,14 +44,6 @@ def sanitize_mermaid_label(text: str) -> str:
     return clean[:42] if clean else "Concept"
 
 
-def clean_table_cell(text: str) -> str:
-    """Sanitizes text for Markdown table cells: prevents pipes from breaking columns and preserves LaTeX."""
-    res = re.sub(r'\|([^|]+)\|', r'\\vert \1 \\vert', text)
-    res = res.replace(r'\|', r'\vert ')
-    res = res.replace('|', '&#124;')
-    return res
-
-
 def parse_toc(doc) -> list:
     """Extracts Table of Contents / Structure from first 2 pages of the PDF."""
     txt_intro = doc[0].get_text() + "\n" + (doc[1].get_text() if len(doc) > 1 else "")
@@ -106,6 +98,18 @@ def parse_toc(doc) -> list:
     return toc_items
 
 
+def is_valid_cyp_question(q: str) -> bool:
+    if len(q) < 25 or len(q) > 220:
+        return False
+    if re.search(r'(=|:|-|\+|\/|\(|\{|\[)\s*$', q):
+        return False
+    if q.count('{') != q.count('}') or q.count('(') != q.count(')'):
+        return False
+    if re.search(r'^(?:Ans|Solution|Note|Fig|Table)\b', q, re.IGNORECASE):
+        return False
+    return True
+
+
 def extract_cyp_questions(body_text: str) -> list:
     """Extracts authentic Check Your Progress questions."""
     questions = []
@@ -117,7 +121,9 @@ def extract_cyp_questions(body_text: str) -> list:
             q_raw = q_tuple[2]
             q_clean = clean_inline(q_raw)
             q_clean = re.sub(r'[\.\_\-]{4,}', '', q_clean).strip()
-            if 20 <= len(q_clean) <= 220:
+            q_clean = re.sub(r'\(\$', '( $', q_clean)
+            q_clean = re.sub(r'\$\)', '$ )', q_clean)
+            if is_valid_cyp_question(q_clean):
                 questions.append(q_clean)
             if len(questions) >= 6:
                 break
@@ -127,37 +133,48 @@ def extract_cyp_questions(body_text: str) -> list:
 
 
 def generate_mermaid_diagram(unit_num: str, unit_title: str, toc_items: list) -> str:
-    """Builds a robust, syntax-safe Mermaid flowchart for GitHub Markdown."""
-    clean_unit = sanitize_mermaid_label(f"{unit_num} - {unit_title}")
+    """Builds a mobile-optimized, vertical linear learning flowchart for GitHub Markdown."""
+    clean_unit = sanitize_mermaid_label(f"{unit_num}: {unit_title}")
+    
+    filtered = []
+    for num, title in toc_items:
+        if re.search(r'Objectives|Introduction|Summary|Answers|Solutions|Reading|References', title, re.IGNORECASE):
+            continue
+        filtered.append((num, sanitize_mermaid_label(title)))
+
+    seen = set()
+    core_items = []
+    for num, title in filtered:
+        key = title.lower()
+        if key not in seen and len(title) > 3:
+            seen.add(key)
+            core_items.append((num, title))
+        if len(core_items) >= 5:
+            break
+
+    if not core_items:
+        core_items = [
+            ("1.1", f"Foundations of {sanitize_mermaid_label(unit_title)}"),
+            ("1.2", "Core Analytical Frameworks"),
+            ("1.3", "Algorithmic Implementations"),
+            ("1.4", "Data Science Applications")
+        ]
+
     lines = [
         "```mermaid",
         "flowchart TD",
-        "  %% Styling Definitions",
-        "  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;",
-        "  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;",
-        "  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;",
-        "",
-        f'  Root["{clean_unit}"]:::head'
+        f'  Start(["{clean_unit}"])'
     ]
 
-    major = [t for t in toc_items if t[0].count('.') == 1 and not re.search(r'Objectives|Introduction|Summary', t[1], re.IGNORECASE)]
-    if not major:
-        major = [t for t in toc_items if not re.search(r'Objectives|Introduction|Summary', t[1], re.IGNORECASE)][:5]
-    if not major:
-        major = [("1.1", f"Foundations of {unit_title}"), ("1.2", "Core Methodologies"), ("1.3", "Practical Implementations")]
+    node_ids = []
+    for idx, (num, title) in enumerate(core_items, 1):
+        nid = f"N{idx}"
+        node_ids.append(nid)
+        lines.append(f'  {nid}["{num} {title}"]')
 
-    for idx, (num, title) in enumerate(major[:5], 1):
-        m_id = f"M{idx}"
-        m_lbl = sanitize_mermaid_label(f"{num} {title}")
-        lines.append(f'  {m_id}["{m_lbl}"]:::topic')
-        lines.append(f'  Root --> {m_id}')
-
-        subs = [t for t in toc_items if t[0].startswith(f"{num}.") and t[0] != num]
-        for s_idx, (s_num, s_title) in enumerate(subs[:2], 1):
-            sub_id = f"{m_id}_{s_idx}"
-            s_lbl = sanitize_mermaid_label(f"{s_num} {s_title}")
-            lines.append(f'  {sub_id}["{s_lbl}"]:::sub')
-            lines.append(f'  {m_id} --> {sub_id}')
+    lines.append(f'  Start --> {node_ids[0]}')
+    for i in range(len(node_ids) - 1):
+        lines.append(f'  {node_ids[i]} --> {node_ids[i+1]}')
 
     lines.append("```")
     return "\n".join(lines)
@@ -204,29 +221,28 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
 
     # 4. Core Definitions & Terminology Cards
     md.append("### 📖 Core Definitions & Terminology Cards")
-    md.append("| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |")
-    md.append("| :--- | :--- | :--- |")
-    for d in knowledge["definitions"]:
-        term = clean_table_cell(d["term"])
-        formal = clean_table_cell(d["formal"])
-        intuition = clean_table_cell(d["intuition"])
-        md.append(f"| **{term}** | {formal} | *{intuition}* |")
     md.append("")
+    for d in knowledge["definitions"]:
+        term = d["term"]
+        formal = d["formal"]
+        intuition = d["intuition"]
+        md.append(f"> 📌 **{term}**  ")
+        md.append(f"> - **Formal Definition:** {formal}  ")
+        md.append(f"> - 💡 **Practical Intuition & Analogy:** *{intuition}*")
+        md.append("")
 
     # 5. Governing Mathematical Formulas & Complexity Cheatsheet
     md.append("### ⚡ Governing Mathematical Laws & Formula Cheatsheet")
     for f in knowledge["formulas"]:
         md.append(f"#### 🔹 {f['name']}")
-        md.append("")
-        raw_latex = f['latex'].strip()
-        if raw_latex.startswith("$$") and raw_latex.endswith("$$"):
-            clean_latex = raw_latex[2:-2].strip()
+        latex_str = f['latex'].strip()
+        if latex_str.startswith("$$") and latex_str.endswith("$$"):
+            inner = latex_str[2:-2].strip()
+            md.append("$$")
+            md.append(inner)
+            md.append("$$")
         else:
-            clean_latex = raw_latex
-        md.append("$$")
-        md.append(clean_latex)
-        md.append("$$")
-        md.append("")
+            md.append(latex_str)
         md.append(f"- **Explanation:** {f['explanation']}")
         md.append("")
 
@@ -257,9 +273,9 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
 
         if not sec_points:
             sec_points = [
-                f"Establishes rigorous theoretical formulations and computational bounds for {s_title.lower()}.",
-                f"Applies standard algorithmic procedures and mathematical invariants relevant to {unit_title.lower()}.",
-                f"Ensures deterministic performance guarantees across high-dimensional feature spaces."
+                f"Establishes theoretical foundations, axiomatic formulations, and properties of {s_title.lower()}.",
+                f"Analyzes standard algorithmic workflows and mathematical transformations relevant to {unit_title.lower()}.",
+                f"Applies computational bounds and optimization guarantees across data processing workflows."
             ]
 
         for pt in sec_points:
@@ -283,14 +299,11 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
         })
 
     for idx, card in enumerate(cards_to_show[:6], 1):
-        q_text = card['q']
-        ans_text = card['a']
-        ans_text = re.sub(r'\$\$(.*?)\$\$', r'$\1$', ans_text, flags=re.DOTALL)
         md.append("<details>")
-        md.append(f"<summary><b>Checkpoint {idx}:</b> {q_text} <i>(Tap to reveal answer)</i></summary>")
+        md.append(f"<summary><b>Checkpoint {idx}:</b> {card['q']} <i>(Tap to reveal answer)</i></summary>")
         md.append("")
         md.append(f"> **Answer & Analysis:**  ")
-        md.append(f"> {ans_text}")
+        md.append(f"> {card['a']}")
         md.append("</details>")
         md.append("")
 
@@ -355,8 +368,8 @@ def build_master_readme(curriculum: dict) -> str:
     md.append("---")
     md.append("")
     md.append("## 📱 How to Read on Mobile")
-    md.append("1. **Using GitHub Mobile App:** Install the official GitHub app on iOS or Android. Navigate to this repository to read all markdown notes with native Mermaid diagrams, KaTeX mathematical formulas, and tap-to-reveal `<details>` flashcard checkpoints.")
-    md.append("2. **Using Mobile Browser (Any Network):** Simply open this repository URL (`https://github.com/Asutosh-Coaching/mscdsa`) in Chrome or Safari on your phone. No local Wi-Fi or LAN connection required!")
+    md.append("1. 🌐 **Live Web Reader (GitHub Pages):** Open **[https://asutosh-coaching.github.io/mscdsa/](https://asutosh-coaching.github.io/mscdsa/)** on Chrome or Safari on your phone. Works seamlessly on any network with instant course search, dark/light themes, offline caching, and interactive flashcards.")
+    md.append("2. 📖 **Directly on GitHub:** Navigate to any unit note in [`notes/`](notes/) from your browser or the GitHub Mobile App to read textbook-grade Markdown with native KaTeX formulas and visual concept maps.")
     md.append("")
     md.append("---")
     md.append("")

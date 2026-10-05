@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Continuous Probability Distributions and Exact Sampling Distributions** forms a vital conceptual pillar. Probability is the mathematical calculus of uncertainty. Every machine learning classification model outputs a conditional probability $P(Y=c \mid X=\mathbf{x})$, and Bayesian modeling updates prior beliefs based on empirical evidence.
+In modern data systems, **Continuous Probability Distributions and Exact Sampling Distributions** forms a vital conceptual pillar. Statistical inference bridges sample data to population reality. In A/B testing, feature significance testing, and model benchmarking, hypothesis tests determine whether performance gains are statistically significant or merely random fluctuations.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering continuous probability distributions and exact sampling distributions equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -18,72 +18,67 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 7 - Continuous Probability Distributi"]:::head
-  M1["7.2 Normal Distribution"]:::topic
-  Root --> M1
-  M2["7.3 Continuous Uniform Distribution"]:::topic
-  Root --> M2
+  Start(["Unit 7 Continuous Probability Distribution"])
+  N1["7.2 Normal Distribution"]
+  N2["7.3 Continuous Uniform Distribution"]
+  Start --> N1
+  N1 --> N2
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Conditional Probability $P(A \mid B)$** | The probability of event $A$ occurring given that event $B$ has already occurred: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$, defined for $P(B) > 0$. | *Updating the likelihood of fraud given that a transaction occurred in an unusual country.* |
-| **Independent Events** | Events $A$ and $B$ are independent if the occurrence of one does not affect the other: $P(A \cap B) = P(A)P(B)$, or equivalently $P(A \mid B) = P(A)$. | *Coin tosses: Getting heads on flip 1 gives zero information about flip 2.* |
-| **Random Variable $X$** | A real-valued function $X: \Omega \to \mathbb{R}$ mapping outcomes of a random sample space $\Omega$ to real numbers. Can be discrete or continuous. | *Counting customer website visits per hour or measuring response latency in milliseconds.* |
-| **Mathematical Expectation $E[X]$** | The probability-weighted average value of a random variable: $E[X] = \sum x_i P(X = x_i)$ for discrete, or $\int_{-\infty}^\infty x f(x)dx$ for continuous. | *Long-run average payout of a game of chance.* |
+
+> 📌 **Central Limit Theorem (CLT)**  
+> - **Formal Definition:** For any population with mean $\mu$ and finite variance $\sigma^2$, the sampling distribution of sample mean $\bar{X}$ approaches a Normal distribution $\mathcal{N}(\mu, \sigma^2/n)$ as sample size $n \to \infty$, regardless of population shape.  
+> - 💡 **Practical Intuition & Analogy:** *Averages of independent random variables always look Gaussian in large samples ( $n \ge 30$ ).*
+
+> 📌 **Standard Error (SE)**  
+> - **Formal Definition:** The standard deviation of the sampling distribution of a statistic: $\text{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}$ (or $\frac{s}{\sqrt{n}}$ when $\sigma$ is unknown).  
+> - 💡 **Practical Intuition & Analogy:** *Uncertainty of your sample estimate: larger sample sizes dramatically reduce estimation error.*
+
+> 📌 **Null ($H_0$) and Alternative ($H_1$) Hypotheses**  
+> - **Formal Definition:** $H_0$ represents the baseline status quo of no effect or no difference. $H_1$ represents the research claim of a true non-zero effect.  
+> - 💡 **Practical Intuition & Analogy:** *In a courtroom: $H_0$ is presumed innocent; $H_1$ is guilty upon convincing evidence.*
+
+> 📌 **Type I Error ( $\alpha$ ) and Type II Error ( $\beta$ )**  
+> - **Formal Definition:** Type I error is rejecting true $H_0$ (false positive, rate $\alpha$). Type II error is failing to reject false $H_0$ (false negative, rate $\beta$). Statistical power is $1 - \beta$.  
+> - 💡 **Practical Intuition & Analogy:** *Type I: Innocent person convicted. Type II: Guilty person acquitted.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
-#### 🔹 Bayes' Theorem
-
+#### 🔹 Confidence Interval for Population Mean
 $$
-P(B_i \mid A) = \frac{P(A \mid B_i) P(B_i)}{\sum_{j=1}^k P(A \mid B_j) P(B_j)} = \frac{P(A \mid B_i) P(B_i)}{P(A)}
+\bar{x} \pm z_{\alpha/2} \left(\frac{\sigma}{\sqrt{n}}\right) \quad \text{or} \quad \bar{x} \pm t_{\alpha/2, n-1} \left(\frac{s}{\sqrt{n}}\right)
 $$
+- **Explanation:** Interval providing $1-\alpha$ confidence of containing true population parameter $\mu$.
 
-- **Explanation:** Calculates posterior probability by multiplying prior probability by likelihood, normalized by marginal evidence.
-
-#### 🔹 Variance of a Random Variable
-
+#### 🔹 One-Sample Z-Test Statistic
 $$
-\text{Var}(X) = E[X^2] - (E[X])^2
+Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}} \sim \mathcal{N}(0, 1)
 $$
+- **Explanation:** Used when population standard deviation $\sigma$ is known and sample size is large.
 
-- **Explanation:** Measures spread around the expected value. For constants: $\text{Var}(aX + b) = a^2 \text{Var}(X)$.
-
-#### 🔹 Binomial Distribution PMF
-
+#### 🔹 One-Sample Student's t-Test Statistic
 $$
-P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}, \quad E[X] = np, \; \text{Var}(X) = np(1 - p)
+t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} \sim t_{n-1}
 $$
+- **Explanation:** Used when population $\sigma$ is unknown and estimated using sample standard deviation $s$.
 
-- **Explanation:** Models $k$ successes in $n$ independent Bernoulli trials with success probability $p$.
-
-#### 🔹 Poisson Distribution PMF
-
+#### 🔹 Chi-Square Test of Independence Statistic
 $$
-P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad E[X] = \lambda, \; \text{Var}(X) = \lambda
+\chi^2 = \sum_{i=1}^r \sum_{j=1}^c \frac{(O_{ij} - E_{ij})^2}{E_{ij}} \quad \text{where } E_{ij} = \frac{R_i \times C_j}{N}
 $$
+- **Explanation:** Tests whether two categorical attributes are statistically independent, with degrees of freedom $(r-1)(c-1)$.
 
-- **Explanation:** Models counts of rare independent events occurring in a fixed interval at constant average rate $\lambda$.
-
-#### 🔹 Normal (Gaussian) Distribution PDF
-
+#### 🔹 One-Way ANOVA F-Ratio Statistic
 $$
-f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}, \quad Z = \frac{X - \mu}{\sigma} \sim \mathcal{N}(0, 1)
+F = \frac{\text{MS}_{\text{between}}}{\text{MS}_{\text{within}}} = \frac{\text{SSB} / (k - 1)}{\text{SSW} / (N - k)}
 $$
-
-- **Explanation:** Symmetric bell-shaped curve governed entirely by mean $\mu$ and standard deviation $\sigma$.
+- **Explanation:** Compares variance between $k$ group means against variance within groups to test equality of multiple population means.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `7.2` Normal Distribution
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for normal distribution.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to continuous probability distributions and exact sampling distributions.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of normal distribution.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to continuous probability distributions and exact sampling distributions.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -102,24 +97,25 @@ $$
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> State Bayes' Theorem formula for event hypothesis $H$ given evidence $E$. <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> What is the Central Limit Theorem and why is it crucial in Data Science? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> $P(H \mid E) = \frac{P(E \mid H)P(H)}{P(E)}$
+> The CLT states that the sample mean $\bar{X}$ becomes approximately normally distributed with mean $\mu$ and variance $\sigma^2/n$ for large $n$, allowing parametric statistical inference even on skewed non-normal real-world data.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the expected value and variance of a Binomial distribution $B(n, p)$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 2:</b> What is a p-value? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Mean $E[X] = np$, and Variance $\text{Var}(X) = np(1 - p)$.
+> The probability of obtaining a test statistic as extreme as, or more extreme than, the observed value, assuming the null hypothesis $H_0$ is strictly true. If $p < \alpha$, reject $H_0$.
 </details>
 
 <details>
-<summary><b>Checkpoint 3:</b> If $E[X] = 5$ and $E[X^2] = 34$, what is $\text{Var}(X)$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 3:</b> Define Type I error and Type II error. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> $\text{Var}(X) = E[X^2] - (E[X])^2 = 34 - 5^2 = 34 - 25 = 9$.
+> Type I error ( $\alpha$ ): Rejecting $H_0$ when $H_0$ is actually true (False Positive).
+Type II error ( $\beta$ ): Failing to reject $H_0$ when $H_0$ is actually false (False Negative).
 </details>
 
 <details>

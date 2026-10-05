@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Data Interfacing and Visualisation in R** forms a vital conceptual pillar. Regression analysis estimates relationships between dependent targets and independent explanatory variables. Linear models, regularization penalties, and gradient updates form the computational core of supervised machine learning.
+In modern data systems, **Data Interfacing and Visualisation in R** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering data interfacing and visualisation in r equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -18,92 +18,79 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 14 - Data Interfacing and Visualisati"]:::head
-  M1["14.3 Reading Data From Files"]:::topic
-  Root --> M1
-  M1_1["14.3.1 CSV Files"]:::sub
-  M1 --> M1_1
-  M1_2["14.3.2 Excel Files"]:::sub
-  M1 --> M1_2
-  M2["14.4 Data Cleaning and Pre-processing"]:::topic
-  Root --> M2
-  M3["14.5 Visualisations in R"]:::topic
-  Root --> M3
-  M3_1["14.5.1 Bar Charts"]:::sub
-  M3 --> M3_1
-  M3_2["14.5.2 Box Plots"]:::sub
-  M3 --> M3_2
+  Start(["Unit 14 Data Interfacing and Visualisation"])
+  N1["14.3.1 CSV Files"]
+  N2["14.3.2 Excel Files"]
+  N3["14.3.3 Binary Files"]
+  N4["14.3.4 XML Files"]
+  N5["14.3.5 JSON Files"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Ordinary Least Squares (OLS)** | Estimation method that minimizes the sum of squared differences (residuals) between observed values and predictions: $\min_\beta \sum (y_i - \hat{y}_i)^2$. | *Finding the single line that minimizes total vertical squared distance to all data points.* |
-| **Coefficient of Determination ($R^2$)** | The proportion of variance in the dependent variable explained by independent features: $R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}}$. Ranges from 0 to 1. | *An $R^2 = 0.85$ means 85% of target variability is captured by your model.* |
-| **Ridge Regularization ($L_2$)** | Adds squared magnitude penalty to the loss function: $\mathcal{L} + \lambda \sum_{j=1}^p \beta_j^2$. Shrinks weights toward zero to prevent overfitting under multicollinearity. | *Discourages extreme weight spikes without setting any coefficient entirely to zero.* |
-| **Lasso Regularization ($L_1$)** | Adds absolute magnitude penalty to the loss function: $\mathcal{L} + \lambda \sum_{j=1}^p \vert\beta_j\vert$. Drives non-essential coefficients exactly to zero, performing automated feature selection. | *Selects a sparse subset of impactful features by zeroing out noise variables.* |
+
+> 📌 **Arithmetic Mean $\bar{x}$ or $\mu$**  
+> - **Formal Definition:** The sum of all observations divided by the total number of observations: $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$. Sensitive to extreme outliers.  
+> - 💡 **Practical Intuition & Analogy:** *The center of mass or balance point of the distribution.*
+
+> 📌 **Median**  
+> - **Formal Definition:** The physical middle value separating the higher half from the lower half of an ordered dataset. Robust against outliers.  
+> - 💡 **Practical Intuition & Analogy:** *The 50th percentile value where exactly half the data lies above and half below.*
+
+> 📌 **Standard Deviation $\sigma$ or $s$**  
+> - **Formal Definition:** The square root of variance, measuring average dispersion in original units: $s = \sqrt{\frac{1}{n-1}\sum (x_i - \bar{x})^2}$.  
+> - 💡 **Practical Intuition & Analogy:** *The typical distance data points deviate from the mean.*
+
+> 📌 **Coefficient of Variation ($CV$)**  
+> - **Formal Definition:** Relative dispersion measure expressed as a percentage: $CV = \frac{\sigma}{\mu} \times 100\%$. Enables comparison across different measurement scales.  
+> - 💡 **Practical Intuition & Analogy:** *Comparing stock volatility across assets priced at 10 USD vs 1,000 USD.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
-#### 🔹 Simple Linear Regression OLS Parameters
-
+#### 🔹 Sample Variance Formula (Bessel's Correction)
 $$
-\hat{\beta}_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} = \frac{\text{Cov}(x, y)}{\text{Var}(x)}, \quad \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}
+\begin{aligned} s^2 & = \frac{1}{n - 1} \sum_{i=1}^n (x_i - \bar{x})^2 \\ & = \frac{\sum x_i^2 - \frac{(\sum x_i)^2}{n}}{n - 1} \end{aligned}
 $$
+- **Explanation:** Using $n-1$ in the denominator corrects for downward sample bias, yielding an unbiased estimator of population variance $\sigma^2$.
 
-- **Explanation:** Closed-form slope and intercept formulas for single-feature linear regression.
-
-#### 🔹 Multiple Linear Regression Normal Equation
-
+#### 🔹 Interquartile Range (IQR) & Outlier Bounds
 $$
-\hat{\mathbf{\beta}} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}
+\text{IQR} = Q_3 - Q_1, \quad \text{Outliers} < Q_1 - 1.5(\text{IQR}) \;\lor\; > Q_3 + 1.5(\text{IQR})
 $$
+- **Explanation:** Standard Tukey boxplot rule for identifying extreme data points robustly.
 
-- **Explanation:** Direct analytic matrix solution for OLS regression weights.
-
-#### 🔹 Ridge Regression Closed-Form Estimator
-
+#### 🔹 Pearson's First Coefficient of Skewness
 $$
-\hat{\mathbf{\beta}}_{\text{Ridge}} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}
+Sk_1 = \frac{\text{Mean} - \text{Mode}}{\sigma} \quad \text{or} \quad Sk_2 = \frac{3(\text{Mean} - \text{Median})}{\sigma}
 $$
-
-- **Explanation:** Adding $\lambda \mathbf{I}$ ensures invertibility even when $\mathbf{X}^T \mathbf{X}$ is ill-conditioned or collinear.
-
-#### 🔹 Logistic Regression Sigmoid Function
-
-$$
-P(Y = 1 \mid X = \mathbf{x}) = \sigma(\mathbf{w}^T \mathbf{x} + b) = \frac{1}{1 + e^{-(\mathbf{w}^T \mathbf{x} + b)}}
-$$
-
-- **Explanation:** Maps any real-valued linear score into a calibrated probability interval $[0, 1]$.
+- **Explanation:** Measures asymmetry: Positive skew means mean > median (right tail); negative skew means mean < median (left tail).
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `14.3` Reading Data From Files
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for reading data from files.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to data interfacing and visualisation in r.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of reading data from files.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data interfacing and visualisation in r.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of reading data from files and derive its primary equations step-by-step.
 
 #### `14.3.1` CSV Files
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for csv files.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to data interfacing and visualisation in r.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of csv files.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data interfacing and visualisation in r.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of csv files and derive its primary equations step-by-step.
 
 #### `14.3.2` Excel Files
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for excel files.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to data interfacing and visualisation in r.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of excel files.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to data interfacing and visualisation in r.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -140,24 +127,24 @@ $$
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What is the key difference between Ridge ($L_2$) and Lasso ($L_1$) regression? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Ridge shrinks coefficients continuously toward zero without zeroing them out, whereas Lasso drives coefficients to exactly zero, producing sparse models and automated feature selection.
+> Dividing by $n-1$ applies **Bessel's correction**, which removes downward bias caused by using the sample mean $\bar{x}$ instead of the true population mean $\mu$.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the matrix Normal Equation for Ordinary Least Squares? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 2:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> $\hat{\mathbf{\beta}} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$
+> The **Median**, because it depends on positional rank rather than magnitude summation.
 </details>
 
 <details>
-<summary><b>Checkpoint 3:</b> What does a high Variance Inflation Factor (VIF > 5) indicate? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 3:</b> In a right-skewed (positively skewed) distribution, what is the order of Mean, Median, and Mode? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Severe **multicollinearity**, meaning independent features are highly correlated with each other, destabilizing coefficient estimation.
+> $\text{Mode} < \text{Median} < \text{Mean}$.
 </details>
 
 <details>

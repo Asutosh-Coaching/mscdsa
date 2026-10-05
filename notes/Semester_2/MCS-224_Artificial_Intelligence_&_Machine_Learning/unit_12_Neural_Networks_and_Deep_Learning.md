@@ -18,78 +18,67 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 12 - Neural Networks and Deep Learnin"]:::head
-  M1["12.3 Overview of Neural Network"]:::topic
-  Root --> M1
-  M2["12.4 Multilayer Feedforward Neural network"]:::topic
-  Root --> M2
-  M2_1["12.4.1 Neural Networks with Hidden Layers"]:::sub
-  M2 --> M2_1
-  M3["12.6 Back propagation Algorithm"]:::topic
-  Root --> M3
-  M3_1["12.6.1 How Backpropagation Works?"]:::sub
-  M3 --> M3_1
-  M4["12.7 Feed forward networks for Classificat"]:::topic
-  Root --> M4
-  M5["12.8 Deep Learning"]:::topic
-  Root --> M5
-  M5_1["12.8.1 How Deep Learning Works"]:::sub
-  M5 --> M5_1
-  M5_2["12.8.2 Deep Learning vs. Machine Learning"]:::sub
-  M5 --> M5_2
+  Start(["Unit 12 Neural Networks and Deep Learning"])
+  N1["12.3 Overview of Neural Network"]
+  N2["12.4 Multilayer Feedforward Neural networks wit"]
+  N3["12.4.1 Neural Networks with Hidden Layers"]
+  N4["12.6 Back propagation Algorithm"]
+  N5["12.6.1 How Backpropagation Works?"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **A* Search Algorithm** | Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ($h(n) \le h^*(n)$). | *Finding the fastest route on GPS navigation without exploring irrelevant directions.* |
-| **Entropy and Information Gain** | Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$. | *The mathematical criterion used by Decision Trees to select the most informative split attribute.* |
-| **Support Vector Machine (SVM) Margin** | Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$. | *Finding the widest possible road separating positive and negative data clusters.* |
-| **Backpropagation Algorithm** | Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$. | *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.* |
+
+> 📌 **A* Search Algorithm**  
+> - **Formal Definition:** Best-first graph search evaluating states by $f(n) = g(n) + h(n)$, where $g(n)$ is true cost from start to $n$, and $h(n)$ is heuristic estimate to goal. Guarantees optimal path if $h(n)$ is admissible ( $h(n) \le h^*(n)$ ).  
+> - 💡 **Practical Intuition & Analogy:** *Finding the fastest route on GPS navigation without exploring irrelevant directions.*
+
+> 📌 **Entropy and Information Gain**  
+> - **Formal Definition:** Entropy $H(S) = -\sum p_i \log_2 p_i$ measures impurity. Information Gain $IG(S, A) = H(S) - \sum \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$ measures reduction in entropy achieved by splitting on feature $A$.  
+> - 💡 **Practical Intuition & Analogy:** *The mathematical criterion used by Decision Trees to select the most informative split attribute.*
+
+> 📌 **Support Vector Machine (SVM) Margin**  
+> - **Formal Definition:** Linear classifier finding the hyperplane maximizing the geometric margin $\frac{2}{\Vert\mathbf{w}\Vert}$ between classes, subject to $y_i(\mathbf{w}^T \mathbf{x}_i + b) \ge 1$. Non-linear data is separated using Kernel functions $K(\mathbf{x}, \mathbf{z}) = \phi(\mathbf{x})^T \phi(\mathbf{z})$.  
+> - 💡 **Practical Intuition & Analogy:** *Finding the widest possible road separating positive and negative data clusters.*
+
+> 📌 **Backpropagation Algorithm**  
+> - **Formal Definition:** Iterative parameter optimization in neural networks utilizing the multivariate chain rule to propagate error gradients backwards from the loss function to update synaptic weights: $w_{ij} \leftarrow w_{ij} - \alpha \frac{\partial \mathcal{L}}{\partial w_{ij}}$.  
+> - 💡 **Practical Intuition & Analogy:** *Automated blame assignment: adjusting each internal weight proportionally to how much it contributed to prediction error.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 A* Heuristic Evaluation Function
-
 $$
 f(n) = g(n) + h(n) \quad \text{Admissibility: } 0 \le h(n) \le h^*(n)
 $$
-
 - **Explanation:** If $h(n)$ never overestimates true remaining cost, A* tree search is guaranteed to return the optimal shortest path.
 
 #### 🔹 Shannon Entropy Formula
-
 $$
 H(S) = -\sum_{i=1}^c p_i \log_2 p_i \quad \text{Gini Impurity: } 1 - \sum_{i=1}^c p_i^2
 $$
-
 - **Explanation:** Measures disorder in classification distributions; equals 0 when all samples belong to one class.
 
 #### 🔹 Gradient Descent Weight Update Rule
-
 $$
 \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha \nabla_{\mathbf{w}} \mathcal{L}(\mathbf{w})
 $$
-
 - **Explanation:** Stepping parameter vector opposite to the gradient vector scaled by learning rate $\alpha$.
 
 #### 🔹 Neural Network Output Softmax Function
-
 $$
 \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
 $$
-
 - **Explanation:** Normalizes $K$ arbitrary logit outputs into a valid multi-class probability distribution summing to 1.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `12.3` Overview of Neural Network
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for overview of neural network.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to neural networks and deep learning.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of overview of neural network.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to neural networks and deep learning.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -147,7 +136,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ($h(n) \le h^*(n)$).
+> The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ( $h(n) \le h^*(n)$ ).
 </details>
 
 <details>
@@ -165,21 +154,21 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 </details>
 
 <details>
-<summary><b>Checkpoint 4:</b> that receive only binary signals (either <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 4:</b> . How many different input patterns this node can receive? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Neural Networks and Deep Learning. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 <details>
-<summary><b>Checkpoint 5:</b> . How many different input patterns this node can receive? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 5:</b> Discuss the utility of Sigmoid function in neural networks. Compare Sigmoid function with the Binary Step function. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Neural Networks and Deep Learning. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 <details>
-<summary><b>Checkpoint 6:</b> Discuss the utility of Sigmoid function in neural networks. Compare Sigmoid function with the Binary Step function. <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> Write Back Propagation algorithm, and showcase its execution on a neural network of your choice (make suitable assumptions if any) <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Neural Networks and Deep Learning. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.

@@ -18,78 +18,67 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 6 - Matrix Algebra"]:::head
-  M1["6.2 Definition of a Matrix"]:::topic
-  Root --> M1
-  M2["6.3 Types of Matrices"]:::topic
-  Root --> M2
-  M3["6.4 Operations on Matrices"]:::topic
-  Root --> M3
-  M3_1["6.4.1 Addition and Subtraction of Matrices"]:::sub
-  M3 --> M3_1
-  M3_2["6.4.2 Matrix Multiplication"]:::sub
-  M3 --> M3_2
-  M4["6.5 Some Other Types of Matrices"]:::topic
-  Root --> M4
-  M4_1["6.5.1 Orthogonal Matrix"]:::sub
-  M4 --> M4_1
-  M4_2["6.5.2 Symmetric and Skew-symmetric Matrice"]:::sub
-  M4 --> M4_2
-  M5["6.6 Rank of a Matrix"]:::topic
-  Root --> M5
+  Start(["Unit 6 Matrix Algebra"])
+  N1["6.2 Definition of a Matrix"]
+  N2["6.3 Types of Matrices"]
+  N3["6.4 Operations on Matrices"]
+  N4["6.4.1 Addition and Subtraction of Matrices"]
+  N5["6.4.2 Matrix Multiplication"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Matrix** | A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$. | *A tabular dataframe where rows represent records and columns represent features.* |
-| **Determinant $\det(A)$ or $\vert A \vert$** | A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible. | *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.* |
-| **Matrix Rank** | The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$. | *The true dimensionality of the data without redundant, collinear features.* |
-| **Eigenvalue and Eigenvector** | A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction. | *The principal directions of maximum variance in Principal Component Analysis (PCA).* |
+
+> 📌 **Matrix**  
+> - **Formal Definition:** A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$.  
+> - 💡 **Practical Intuition & Analogy:** *A tabular dataframe where rows represent records and columns represent features.*
+
+> 📌 **Determinant $\det(A)$ or $\vert A \vert$**  
+> - **Formal Definition:** A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible.  
+> - 💡 **Practical Intuition & Analogy:** *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.*
+
+> 📌 **Matrix Rank**  
+> - **Formal Definition:** The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$.  
+> - 💡 **Practical Intuition & Analogy:** *The true dimensionality of the data without redundant, collinear features.*
+
+> 📌 **Eigenvalue and Eigenvector**  
+> - **Formal Definition:** A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction.  
+> - 💡 **Practical Intuition & Analogy:** *The principal directions of maximum variance in Principal Component Analysis (PCA).*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Matrix Multiplication Dimension Rule
-
 $$
 C_{m \times p} = A_{m \times n} B_{n \times p} \quad \text{where } c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}
 $$
-
 - **Explanation:** Inner dimensions must match: columns of $A$ must equal rows of $B$.
 
 #### 🔹 Matrix Inverse Formula
-
 $$
 A^{-1} = \frac{1}{\det(A)} \text{adj}(A) \quad \text{valid when } \det(A) \neq 0
 $$
-
 - **Explanation:** The inverse exists if and only if the matrix is full rank and non-singular.
 
 #### 🔹 Characteristic Equation for Eigenvalues
-
 $$
 \det(A - \lambda I) = 0
 $$
-
 - **Explanation:** Solving this polynomial equation yields the eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$ of matrix $A$.
 
 #### 🔹 Cayley-Hamilton Theorem
-
 $$
 p(A) = O \quad \text{where } p(\lambda) = \det(A - \lambda I)
 $$
-
 - **Explanation:** Every square matrix satisfies its own characteristic polynomial equation.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `6.2` Definition of a Matrix
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for definition of a matrix.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to matrix algebra.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of definition of a matrix.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to matrix algebra.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -147,7 +136,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What happens if $\det(A) = 0$ for a square matrix $A$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The matrix is **singular**, has no multiplicative inverse ($A^{-1}$ does not exist), and its row vectors are linearly dependent.
+> The matrix is **singular**, has no multiplicative inverse ( $A^{-1}$ does not exist ), and its row vectors are linearly dependent.
 </details>
 
 <details>
@@ -172,14 +161,14 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 </details>
 
 <details>
-<summary><b>Checkpoint 5:</b> Write orders and types of the following matrices: (i) [ <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 5:</b> Find the values of x, y, z, w if [3𝑥−2𝑦 𝑧+ 𝑤 <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Matrix Algebra. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 <details>
-<summary><b>Checkpoint 6:</b> Find the values of x, y, z, w if [3𝑥−2𝑦 𝑧+ 𝑤 <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> 6. (i) Find trace of the matrix A, where A = [8 <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Matrix Algebra. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.

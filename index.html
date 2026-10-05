@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MSCDSA - IGNOU M.Sc. Data Science & Analytics Mobile Study Portal</title>
+  
+  <!-- CDNs for Marked, KaTeX, Mermaid -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-surface: #161b22;
+      --bg-card: #21262d;
+      --border-color: #30363d;
+      --text-primary: #f0f6fc;
+      --text-secondary: #8b949e;
+      --accent: #58a6ff;
+      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+      --tag-bg: #1f2937;
+      --success: #238636;
+      --warning: #d29922;
+      --font-scale: 16px;
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f6f8fa;
+      --bg-surface: #ffffff;
+      --bg-card: #f6f8fa;
+      --border-color: #d0d7de;
+      --text-primary: #1f2328;
+      --text-secondary: #656d76;
+      --accent: #0969da;
+      --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #2563eb 100%);
+      --tag-bg: #eaeef2;
+    }
+
+    [data-theme="sepia"] {
+      --bg-primary: #f4ecd8;
+      --bg-surface: #fbf0d9;
+      --bg-card: #ebdcb9;
+      --border-color: #d8c49d;
+      --text-primary: #382e1e;
+      --text-secondary: #79684d;
+      --accent: #b45309;
+      --accent-gradient: linear-gradient(135deg, #b45309 0%, #d97706 100%);
+      --tag-bg: #dfceaa;
+    }
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: var(--font-scale);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      backdrop-filter: blur(8px);
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .brand-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--accent-gradient);
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .header-actions { display: flex; gap: 8px; }
+    .btn-icon {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* Semester Tabs */
+    .semester-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      background: var(--bg-surface);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--accent-gradient);
+      color: white;
+    }
+
+    /* Search bar */
+    .search-box {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 40px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-size: 1rem;
+      outline: none;
+    }
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+    }
+
+    /* Course Cards */
+    .course-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .course-header {
+      padding: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+    .course-title-wrap { flex: 1; }
+    .course-code {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+    }
+    .course-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .course-meta {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+    .course-arrow {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      transition: transform 0.2s;
+      margin-left: 12px;
+    }
+    .course-card.open .course-arrow { transform: rotate(90deg); }
+
+    /* Units List inside Course */
+    .units-list {
+      display: none;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+    }
+    .course-card.open .units-list { display: block; }
+    .unit-item {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: background 0.15s;
+    }
+    .unit-item:last-child { border-bottom: none; }
+    .unit-item:hover, .unit-item:active { background: rgba(99, 102, 241, 0.1); }
+    .unit-info { flex: 1; }
+    .unit-num { font-size: 0.8rem; font-weight: 600; color: var(--accent); }
+    .unit-name { font-size: 0.95rem; font-weight: 500; margin-top: 2px; }
+    .unit-read-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 12px;
+      white-space: nowrap;
+    }
+
+    /* Reader View */
+    #reader-view { display: none; }
+    .reader-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .btn-back {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .reader-content {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      min-height: 400px;
+    }
+    @media (max-width: 600px) {
+      .reader-content { padding: 14px; }
+    }
+
+    /* Markdown Styling in Reader */
+    .reader-content h1 { font-size: 1.5rem; margin-top: 0; color: var(--accent); border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
+    .reader-content h2 { font-size: 1.25rem; margin-top: 16px; }
+    .reader-content h3 { font-size: 1.1rem; margin-top: 20px; color: var(--accent); }
+    .reader-content h4 { font-size: 1rem; margin-top: 14px; }
+    .reader-content p { line-height: 1.7; margin: 12px 0; }
+    .reader-content blockquote {
+      margin: 14px 0;
+      padding: 12px 16px;
+      background: var(--bg-card);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+    }
+    .reader-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      overflow-x: auto;
+      display: block;
+    }
+    .reader-content th, .reader-content td {
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+    .reader-content th { background: var(--bg-card); }
+    .reader-content details {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+      cursor: pointer;
+    }
+    .reader-content summary { font-weight: 600; color: var(--accent); outline: none; }
+    .reader-content details[open] summary { margin-bottom: 10px; border-bottom: 1px dashed var(--border-color); padding-bottom: 8px; }
+    .reader-content pre {
+      background: var(--bg-card);
+      padding: 14px;
+      border-radius: 8px;
+      overflow-x: auto;
+      border: 1px solid var(--border-color);
+    }
+    .reader-content code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      background: var(--tag-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Mermaid Centering */
+    .mermaid {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+
+    /* Floating bottom controls in reader */
+    .reader-footer-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-color);
+    }
+    .nav-btn {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .nav-btn.primary {
+      background: var(--accent-gradient);
+      color: white;
+      border: none;
+    }
+
+    /* Loading Spinner */
+    .spinner {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--border-color);
+      border-radius: 50%;
+      border-top-color: var(--accent);
+      animation: spin 1s ease-in-out infinite;
+      margin: 40px auto;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- Top App Bar -->
+  <header class="app-header">
+    <a href="#" class="header-brand" onclick="showDashboard(); return false;">
+      <div class="brand-icon">📚</div>
+      <span>MSCDSA Study Portal</span>
+    </a>
+    <div class="header-actions">
+      <button class="btn-icon" onclick="toggleTheme()" title="Toggle Theme" id="theme-btn">🌙</button>
+      <button class="btn-icon" onclick="adjustFontSize(1)" title="Larger Text">A+</button>
+      <button class="btn-icon" onclick="adjustFontSize(-1)" title="Smaller Text">A-</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- DASHBOARD VIEW -->
+    <div id="dashboard-view">
+      <div class="semester-tabs">
+        <button class="tab-btn active" id="tab-sem1" onclick="switchSemester('Semester_1')">Semester I (5 Courses)</button>
+        <button class="tab-btn" id="tab-sem2" onclick="switchSemester('Semester_2')">Semester II (7 Courses)</button>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search modules, concepts, formulas..." oninput="filterCourses()">
+      </div>
+
+      <div id="courses-list"></div>
+    </div>
+
+    <!-- READER VIEW -->
+    <div id="reader-view">
+      <div class="reader-nav-bar">
+        <button class="btn-back" onclick="showDashboard()">⬅ Back to Syllabus</button>
+        <a id="btn-original-pdf" href="#" target="_blank" class="btn-back" style="color:var(--accent);">📥 View PDF</a>
+      </div>
+      <div class="reader-content" id="reader-content">
+        <div style="text-align:center;"><div class="spinner"></div><p>Loading module study note...</p></div>
+      </div>
+      <div class="reader-footer-nav" id="reader-footer-nav"></div>
+    </div>
+
+  </div>
+
+  <script>
+    let currentSemester = 'Semester_1';
+    let curriculumData = null;
+    let allUnitsIndex = [];
+    let currentUnit = null;
+
+    // Initialize Mermaid
+    mermaid.initialize({ startOnLoad: false, theme: 'dark', securityLevel: 'loose' });
+
+    // Load curriculum.json
+    async function initApp() {
+      try {
+        const resp = await fetch('mobile_reader/curriculum.json');
+        curriculumData = await resp.json();
+        buildUnitsIndex();
+        renderCourses();
+        checkUrlHash();
+      } catch (err) {
+        console.error('Error loading curriculum:', err);
+        document.getElementById('courses-list').innerHTML = `
+          <div style="padding:20px; text-align:center;">
+            <h3>Failed to load curriculum</h3>
+            <p>Ensure you are opening this via GitHub Pages or a web server.</p>
+          </div>
+        `;
+      }
+    }
+
+    function buildUnitsIndex() {
+      allUnitsIndex = [];
+      for (const [semKey, courses] of Object.entries(curriculumData.semesters)) {
+        for (const c of courses) {
+          for (let i = 0; i < c.units.length; i++) {
+            const u = c.units[i];
+            const safeTitle = u.title.replace(/[\/\\:\*\?"<>\|]/g, '_').replace(/\s+/g, '_').substring(0, 50);
+            const mdFilename = `${u.unit_id}_${safeTitle}.md`;
+            const cDir = `${c.code}_${c.title.replace(/[\/\\:\*\?"<>\|]/g, '_').replace(/\s+/g, '_').substring(0, 50)}`;
+            const mdPath = `notes/${semKey}/${cDir}/${mdFilename}`;
+            const pdfPath = `pdfs/${semKey}/${cDir}/${u.filename}`;
+            allUnitsIndex.push({
+              semester: semKey,
+              courseCode: c.code,
+              courseTitle: c.title,
+              unitId: u.unit_id,
+              unitNum: u.unit_num,
+              title: u.title,
+              mdPath: mdPath,
+              pdfPath: pdfPath,
+              indexInCourse: i,
+              courseObj: c
+            });
+          }
+        }
+      }
+    }
+
+    function switchSemester(sem) {
+      currentSemester = sem;
+      document.getElementById('tab-sem1').classList.toggle('active', sem === 'Semester_1');
+      document.getElementById('tab-sem2').classList.toggle('active', sem === 'Semester_2');
+      renderCourses();
+    }
+
+    function renderCourses() {
+      if (!curriculumData) return;
+      const list = document.getElementById('courses-list');
+      const courses = curriculumData.semesters[currentSemester] || [];
+      const filter = document.getElementById('search-input').value.toLowerCase().trim();
+
+      let html = '';
+      courses.forEach((c, cIdx) => {
+        const units = c.units || [];
+        const filteredUnits = units.filter(u => 
+          !filter || 
+          u.title.toLowerCase().includes(filter) || 
+          c.title.toLowerCase().includes(filter) || 
+          c.code.toLowerCase().includes(filter)
+        );
+
+        if (filter && filteredUnits.length === 0) return;
+
+        const cDir = `${c.code}_${c.title.replace(/[\/\\:\*\?"<>\|]/g, '_').replace(/\s+/g, '_').substring(0, 50)}`;
+
+        html += `
+          <div class="course-card ${filter || cIdx === 0 ? 'open' : ''}" id="card-${c.code}">
+            <div class="course-header" onclick="toggleCourse('${c.code}')">
+              <div class="course-title-wrap">
+                <span class="course-code">${c.code}</span>
+                <div class="course-title">${c.title}</div>
+                <div class="course-meta">Credits: ${c.credits || 4} • ${c.type || 'Theory'} • ${units.length} Modules</div>
+              </div>
+              <div class="course-arrow">›</div>
+            </div>
+            <div class="units-list">
+              ${filteredUnits.map(u => {
+                const safeTitle = u.title.replace(/[\/\\:\*\?"<>\|]/g, '_').replace(/\s+/g, '_').substring(0, 50);
+                const mdFilename = `${u.unit_id}_${safeTitle}.md`;
+                const mdPath = `notes/${currentSemester}/${cDir}/${mdFilename}`;
+                return `
+                  <div class="unit-item" onclick="loadUnitNote('${mdPath}', '${u.unit_num}: ${u.title}')">
+                    <div class="unit-info">
+                      <div class="unit-num">${u.unit_num}</div>
+                      <div class="unit-name">${u.title}</div>
+                    </div>
+                    <button class="unit-read-btn">📖 Read</button>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      list.innerHTML = html || '<p style="text-align:center; color:var(--text-secondary);">No matching modules found.</p>';
+    }
+
+    function toggleCourse(code) {
+      const card = document.getElementById(`card-${code}`);
+      if (card) card.classList.toggle('open');
+    }
+
+    function filterCourses() {
+      renderCourses();
+    }
+
+    async function loadUnitNote(mdPath, title) {
+      document.getElementById('dashboard-view').style.display = 'none';
+      document.getElementById('reader-view').style.display = 'block';
+      window.scrollTo(0, 0);
+
+      const contentDiv = document.getElementById('reader-content');
+      contentDiv.innerHTML = '<div style="text-align:center; padding:40px;"><div class="spinner"></div><p>Rendering interactive note with KaTeX & Mermaid...</p></div>';
+
+      // Find unit in index for PDF link & next/prev
+      const uIndex = allUnitsIndex.findIndex(u => u.mdPath === mdPath);
+      currentUnit = uIndex !== -1 ? allUnitsIndex[uIndex] : null;
+
+      if (currentUnit) {
+        document.getElementById('btn-original-pdf').href = currentUnit.pdfPath;
+        updateFooterNav(uIndex);
+      }
+
+      try {
+        const resp = await fetch(mdPath);
+        if (!resp.ok) throw new Error('Markdown note not found');
+        let rawText = await resp.text();
+        let mdText = rawText.replace(/\r\n/g, '\n');
+
+        // Transform GitHub Alerts
+        mdText = mdText.replace(/>\s*\[!(NOTE|TIP|IMPORTANT|WARNING)\]/gi, (match, type) => {
+          return `> **📌 ${type.toUpperCase()}:**`;
+        });
+
+        // 1. Process LaTeX Display Math: $$ ... $$
+        const displayMathBlocks = [];
+        mdText = mdText.replace(/\$\$\s*\n([\s\S]*?)\n\s*\$\$/g, (match, expr) => {
+          const id = `MATH_DISPLAY_${displayMathBlocks.length}`;
+          try {
+            const rendered = katex.renderToString(expr.trim(), { displayMode: true, throwOnError: false });
+            displayMathBlocks.push(rendered);
+          } catch(e) {
+            displayMathBlocks.push(`<pre>${expr}</pre>`);
+          }
+          return id;
+        });
+
+        // 2. Process LaTeX Inline Math: $ ... $
+        const inlineMathBlocks = [];
+        mdText = mdText.replace(/(?<!\$)\$(?!\$)([^\$\n]+?)(?<!\$)\$(?!\$)/g, (match, expr) => {
+          const id = `MATH_INLINE_${inlineMathBlocks.length}`;
+          try {
+            const rendered = katex.renderToString(expr.trim(), { displayMode: false, throwOnError: false });
+            inlineMathBlocks.push(rendered);
+          } catch(e) {
+            inlineMathBlocks.push(`<code>${expr}</code>`);
+          }
+          return id;
+        });
+
+        // 3. Process Mermaid Diagrams: ```mermaid ... ```
+        const mermaidBlocks = [];
+        mdText = mdText.replace(/```mermaid\s*\n([\s\S]*?)\n```/g, (match, code) => {
+          const id = `MERMAID_DIAGRAM_${mermaidBlocks.length}`;
+          mermaidBlocks.push(code.trim());
+          return id;
+        });
+
+        // 4. Render Markdown to HTML via Marked.js
+        let html = marked.parse(mdText);
+
+        // 5. Restore Display Math
+        displayMathBlocks.forEach((rendered, i) => {
+          html = html.replace(`MATH_DISPLAY_${i}`, `<div class="katex-display">${rendered}</div>`);
+        });
+
+        // 6. Restore Inline Math
+        inlineMathBlocks.forEach((rendered, i) => {
+          html = html.replace(`MATH_INLINE_${i}`, rendered);
+        });
+
+        // 7. Restore Mermaid Diagrams
+        mermaidBlocks.forEach((code, i) => {
+          html = html.replace(`MERMAID_DIAGRAM_${i}`, `<div class="mermaid">${code}</div>`);
+        });
+
+        contentDiv.innerHTML = html;
+
+        // Render Mermaid SVGs
+        try {
+          await mermaid.run({ nodes: contentDiv.querySelectorAll('.mermaid') });
+        } catch (mErr) {
+          console.warn('Mermaid run error:', mErr);
+        }
+
+        // Update URL hash
+        window.location.hash = encodeURIComponent(mdPath);
+
+      } catch (err) {
+        console.error('Error rendering note:', err);
+        contentDiv.innerHTML = `
+          <div style="padding:20px; text-align:center;">
+            <h3>Error loading note</h3>
+            <p>${err.message}</p>
+            <p><a href="${mdPath}" target="_blank">Open Markdown File directly</a></p>
+          </div>
+        `;
+      }
+    }
+
+    function updateFooterNav(idx) {
+      const footer = document.getElementById('reader-footer-nav');
+      if (idx === -1) { footer.innerHTML = ''; return; }
+
+      const prev = idx > 0 ? allUnitsIndex[idx - 1] : null;
+      const next = idx < allUnitsIndex.length - 1 ? allUnitsIndex[idx + 1] : null;
+
+      let html = '';
+      if (prev && prev.courseCode === allUnitsIndex[idx].courseCode) {
+        html += `<button class="nav-btn" onclick="loadUnitNote('${prev.mdPath}', '${prev.unitNum}: ${prev.title}')">⬅ Previous: ${prev.unitNum}</button>`;
+      } else {
+        html += `<button class="nav-btn" onclick="showDashboard()">📑 Course Index</button>`;
+      }
+
+      if (next && next.courseCode === allUnitsIndex[idx].courseCode) {
+        html += `<button class="nav-btn primary" onclick="loadUnitNote('${next.mdPath}', '${next.unitNum}: ${next.title}')">Next: ${next.unitNum} ➡</button>`;
+      } else {
+        html += `<button class="nav-btn primary" onclick="showDashboard()">Next Course ➡</button>`;
+      }
+
+      footer.innerHTML = html;
+    }
+
+    function showDashboard() {
+      document.getElementById('reader-view').style.display = 'none';
+      document.getElementById('dashboard-view').style.display = 'block';
+      window.location.hash = '';
+      window.scrollTo(0, 0);
+    }
+
+    function checkUrlHash() {
+      if (window.location.hash && window.location.hash.length > 1) {
+        const mdPath = decodeURIComponent(window.location.hash.substring(1));
+        const found = allUnitsIndex.find(u => u.mdPath === mdPath);
+        if (found) {
+          loadUnitNote(found.mdPath, `${found.unitNum}: ${found.title}`);
+        }
+      }
+    }
+
+    // Theme toggling
+    function toggleTheme() {
+      const html = document.documentElement;
+      const cur = html.getAttribute('data-theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : (cur === 'light' ? 'sepia' : 'dark');
+      html.setAttribute('data-theme', next);
+      document.getElementById('theme-btn').innerText = next === 'dark' ? '🌙' : (next === 'light' ? '☀️' : '📜');
+      mermaid.initialize({ theme: next === 'dark' ? 'dark' : 'default' });
+    }
+
+    // Font size adjustments
+    let currentFontSize = 16;
+    function adjustFontSize(delta) {
+      currentFontSize = Math.max(14, Math.min(22, currentFontSize + delta));
+      document.documentElement.style.setProperty('--font-scale', `${currentFontSize}px`);
+    }
+
+    // Start on load
+    window.addEventListener('DOMContentLoaded', initApp);
+  </script>
+</body>
+</html>

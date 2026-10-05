@@ -18,79 +18,70 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 5 - Database Integrity, Functional De"]:::head
-  M1["5.2 Database Integrity"]:::topic
-  Root --> M1
-  M1_1["5.2.1 The Keys"]:::sub
-  M1 --> M1_1
-  M1_2["5.2.2 Referential Integrity"]:::sub
-  M1 --> M1_2
-  M2["5.3 Redundancy and Associated Problems"]:::topic
-  Root --> M2
-  M3["5.4 Functional Dependencies"]:::topic
-  Root --> M3
-  M4["5.5 Normalisation Using Functional Depende"]:::topic
-  Root --> M4
-  M4_1["5.5.1 The First Normal Form"]:::sub
-  M4 --> M4_1
-  M4_2["5.5.2 The Second Normal Form"]:::sub
-  M4 --> M4_2
-  M5["5.6 Desirable Properties of Decomposition"]:::topic
-  Root --> M5
+  Start(["Unit 5 Database Integrity, Functional Depe"])
+  N1["5.2 Database Integrity"]
+  N2["5.2.1 The Keys"]
+  N3["5.2.2 Referential Integrity"]
+  N4["5.2.3 Entity Integrity"]
+  N5["5.3 Redundancy and Associated Problems"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Function (Mapping)** | A relation $f: A \to B$ that associates every element $x \in A$ with a unique element $y \in B$, written as $y = f(x)$. Set $A$ is the domain, $B$ is the codomain, and $f(A) \subseteq B$ is the range. | *A Python function that guarantees returning exactly one output for every valid input.* |
-| **Injective (One-to-One)** | A function $f: A \to B$ is injective if $f(x_1) = f(x_2) \implies x_1 = x_2$, or equivalently $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$. No two inputs share the same output. | *A cryptographic hash without collisions or a primary key assignment.* |
-| **Surjective (Onto)** | A function $f: A \to B$ is surjective if $\forall y \in B, \exists x \in A$ such that $f(x) = y$. The range equals the codomain: $f(A) = B$. | *Every possible category in the target space is covered by at least one training observation.* |
-| **Bijective (One-to-One & Onto)** | A function that is simultaneously injective and surjective. Guarantees a strict 1-to-1 correspondence between domain $A$ and codomain $B$. | *A perfectly reversible transformation, like converting Celsius to Fahrenheit.* |
+
+> 📌 **Function (Mapping)**  
+> - **Formal Definition:** A relation $f: A \to B$ that associates every element $x \in A$ with a unique element $y \in B$, written as $y = f(x)$. Set $A$ is the domain, $B$ is the codomain, and $f(A) \subseteq B$ is the range.  
+> - 💡 **Practical Intuition & Analogy:** *A Python function that guarantees returning exactly one output for every valid input.*
+
+> 📌 **Injective (One-to-One)**  
+> - **Formal Definition:** A function $f: A \to B$ is injective if $f(x_1) = f(x_2) \implies x_1 = x_2$, or equivalently $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$. No two inputs share the same output.  
+> - 💡 **Practical Intuition & Analogy:** *A cryptographic hash without collisions or a primary key assignment.*
+
+> 📌 **Surjective (Onto)**  
+> - **Formal Definition:** A function $f: A \to B$ is surjective if $\forall y \in B, \exists x \in A$ such that $f(x) = y$. The range equals the codomain: $f(A) = B$.  
+> - 💡 **Practical Intuition & Analogy:** *Every possible category in the target space is covered by at least one training observation.*
+
+> 📌 **Bijective (One-to-One & Onto)**  
+> - **Formal Definition:** A function that is simultaneously injective and surjective. Guarantees a strict 1-to-1 correspondence between domain $A$ and codomain $B$.  
+> - 💡 **Practical Intuition & Analogy:** *A perfectly reversible transformation, like converting Celsius to Fahrenheit.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Function Invertibility Condition
-
 $$
 f^{-1}: B \to A \text{ exists if and only if } f \text{ is Bijective}
 $$
-
 - **Explanation:** If not injective, the inverse is multi-valued; if not surjective, the inverse is undefined on parts of $B$.
 
 #### 🔹 Composition of Functions
-
 $$
 (g \circ f)(x) = g(f(x)) \quad \text{where } f: A \to B, \; g: B \to C
 $$
-
 - **Explanation:** Chaining sequential data transformations, such as scaling data then applying a classifier.
 
 #### 🔹 Pigeonhole Principle
-
 $$
 \text{If } n > k \text{ items are placed into } k \text{ bins, at least one bin contains } \ge \lceil n/k \rceil \text{ items}
 $$
-
 - **Explanation:** Guarantees hash collisions when the number of records exceeds the hash table capacity.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `5.2` Database Integrity
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for database integrity.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to database integrity, functional dependency and normalisation.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of database integrity.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to database integrity, functional dependency and normalisation.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of database integrity and derive its primary equations step-by-step.
 
 #### `5.2.1` The Keys
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for the keys.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to database integrity, functional dependency and normalisation.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of the keys.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to database integrity, functional dependency and normalisation.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]

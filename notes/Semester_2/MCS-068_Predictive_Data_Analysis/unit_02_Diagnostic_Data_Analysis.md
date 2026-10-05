@@ -18,77 +18,74 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 2 - Diagnostic Data Analysis"]:::head
-  M1["2.2 Expected Learning Outcomes"]:::topic
-  Root --> M1
-  M2["2.3 Diagnostics Analysis"]:::topic
-  Root --> M2
-  M2_1["2.3.1 Data Mining"]:::sub
-  M2 --> M2_1
-  M2_2["2.3.2 Correlation Analysis"]:::sub
-  M2 --> M2_2
+  Start(["Unit 2 Diagnostic Data Analysis"])
+  N1["2.2 Expected Learning Outcomes"]
+  N2["2.3 Diagnostics Analysis"]
+  N3["2.3.1 Data Mining"]
+  N4["2.3.2 Correlation Analysis"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Ordinary Least Squares (OLS)** | Estimation method that minimizes the sum of squared differences (residuals) between observed values and predictions: $\min_\beta \sum (y_i - \hat{y}_i)^2$. | *Finding the single line that minimizes total vertical squared distance to all data points.* |
-| **Coefficient of Determination ($R^2$)** | The proportion of variance in the dependent variable explained by independent features: $R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}}$. Ranges from 0 to 1. | *An $R^2 = 0.85$ means 85% of target variability is captured by your model.* |
-| **Ridge Regularization ($L_2$)** | Adds squared magnitude penalty to the loss function: $\mathcal{L} + \lambda \sum_{j=1}^p \beta_j^2$. Shrinks weights toward zero to prevent overfitting under multicollinearity. | *Discourages extreme weight spikes without setting any coefficient entirely to zero.* |
-| **Lasso Regularization ($L_1$)** | Adds absolute magnitude penalty to the loss function: $\mathcal{L} + \lambda \sum_{j=1}^p \vert\beta_j\vert$. Drives non-essential coefficients exactly to zero, performing automated feature selection. | *Selects a sparse subset of impactful features by zeroing out noise variables.* |
+
+> 📌 **Ordinary Least Squares (OLS)**  
+> - **Formal Definition:** Estimation method that minimizes the sum of squared differences (residuals) between observed values and predictions: $\min_\beta \sum (y_i - \hat{y}_i)^2$.  
+> - 💡 **Practical Intuition & Analogy:** *Finding the single line that minimizes total vertical squared distance to all data points.*
+
+> 📌 **Coefficient of Determination ($R^2$)**  
+> - **Formal Definition:** The proportion of variance in the dependent variable explained by independent features: $R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}}$. Ranges from 0 to 1.  
+> - 💡 **Practical Intuition & Analogy:** *An $R^2 = 0.85$ means 85% of target variability is captured by your model.*
+
+> 📌 **Ridge Regularization ($L_2$)**  
+> - **Formal Definition:** Adds squared magnitude penalty to the loss function: $\mathcal{L} + \lambda \sum_{j=1}^p \beta_j^2$. Shrinks weights toward zero to prevent overfitting under multicollinearity.  
+> - 💡 **Practical Intuition & Analogy:** *Discourages extreme weight spikes without setting any coefficient entirely to zero.*
+
+> 📌 **Lasso Regularization ($L_1$)**  
+> - **Formal Definition:** Adds absolute magnitude penalty to the loss function: $\mathcal{L} + \lambda \sum_{j=1}^p \vert\beta_j\vert$. Drives non-essential coefficients exactly to zero, performing automated feature selection.  
+> - 💡 **Practical Intuition & Analogy:** *Selects a sparse subset of impactful features by zeroing out noise variables.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Simple Linear Regression OLS Parameters
-
 $$
-\hat{\beta}_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} = \frac{\text{Cov}(x, y)}{\text{Var}(x)}, \quad \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}
+\begin{aligned} \hat{\beta}_1 & = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} = \frac{\text{Cov}(x, y)}{\text{Var}(x)} \\ \hat{\beta}_0 & = \bar{y} - \hat{\beta}_1 \bar{x} \end{aligned}
 $$
-
 - **Explanation:** Closed-form slope and intercept formulas for single-feature linear regression.
 
 #### 🔹 Multiple Linear Regression Normal Equation
-
 $$
 \hat{\mathbf{\beta}} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}
 $$
-
 - **Explanation:** Direct analytic matrix solution for OLS regression weights.
 
 #### 🔹 Ridge Regression Closed-Form Estimator
-
 $$
 \hat{\mathbf{\beta}}_{\text{Ridge}} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}
 $$
-
 - **Explanation:** Adding $\lambda \mathbf{I}$ ensures invertibility even when $\mathbf{X}^T \mathbf{X}$ is ill-conditioned or collinear.
 
 #### 🔹 Logistic Regression Sigmoid Function
-
 $$
 P(Y = 1 \mid X = \mathbf{x}) = \sigma(\mathbf{w}^T \mathbf{x} + b) = \frac{1}{1 + e^{-(\mathbf{w}^T \mathbf{x} + b)}}
 $$
-
 - **Explanation:** Maps any real-valued linear score into a calibrated probability interval $[0, 1]$.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `2.2` Expected Learning Outcomes
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for expected learning outcomes.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to diagnostic data analysis.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of expected learning outcomes.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to diagnostic data analysis.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of expected learning outcomes and derive its primary equations step-by-step.
 
 #### `2.3` Diagnostics Analysis
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for diagnostics analysis.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to diagnostic data analysis.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of diagnostics analysis.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to diagnostic data analysis.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]

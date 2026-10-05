@@ -18,93 +18,89 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 3 - Entity Relationship Model"]:::head
-  M1["3.1 Objective"]:::topic
-  Root --> M1
-  M2["3.2 Entity Relationship E-R Model"]:::topic
-  Root --> M2
-  M2_1["3.2.1 Entities"]:::sub
-  M2 --> M2_1
-  M2_2["3.2.2 Attributes"]:::sub
-  M2 --> M2_2
-  M3["3.3 An Example"]:::topic
-  Root --> M3
-  M4["3.4 Conversion of E-R Diagram to Relationa"]:::topic
-  Root --> M4
-  M5["3.5 Enhanced E-R Model"]:::topic
-  Root --> M5
+  Start(["Unit 3 Entity Relationship Model"])
+  N1["3.1 Objective"]
+  N2["3.2 Entity Relationship E-R Model"]
+  N3["3.2.1 Entities"]
+  N4["3.2.2 Attributes"]
+  N5["3.2.3 Relationships"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Binary Relation** | A binary relation $R$ from set $A$ to set $B$ is any subset of the Cartesian product $A \times B$, i.e., $R \subseteq A \times B$. If $(a, b) \in R$, we write $aRb$. | *A table connecting users to purchased items in an e-commerce platform.* |
-| **Reflexive Relation** | A relation $R$ on set $A$ is reflexive if $\forall a \in A, (a, a) \in R$. Every element is related to itself. | *Equality ($a = a$) and the 'is subset of' relation ($A \subseteq A$) are reflexive.* |
-| **Symmetric Relation** | A relation $R$ on $A$ is symmetric if $\forall a, b \in A, (a, b) \in R \implies (b, a) \in R$. | *A mutual friendship in a social network or an undirected edge in a graph.* |
-| **Transitive Relation** | A relation $R$ on $A$ is transitive if $\forall a, b, c \in A, [(a, b) \in R \land (b, c) \in R] \implies (a, c) \in R$. | *Ancestry or inequality: If $a < b$ and $b < c$, then $a < c$.* |
-| **Equivalence Relation** | A relation $R$ on $A$ that is simultaneously reflexive, symmetric, and transitive. It partitions $A$ into mutually disjoint equivalence classes. | *Clustering data points into distinct, non-overlapping groups based on identical feature attributes.* |
+
+> 📌 **Binary Relation**  
+> - **Formal Definition:** A binary relation $R$ from set $A$ to set $B$ is any subset of the Cartesian product $A \times B$, i.e., $R \subseteq A \times B$. If $(a, b) \in R$, we write $aRb$.  
+> - 💡 **Practical Intuition & Analogy:** *A table connecting users to purchased items in an e-commerce platform.*
+
+> 📌 **Reflexive Relation**  
+> - **Formal Definition:** A relation $R$ on set $A$ is reflexive if $\forall a \in A, (a, a) \in R$. Every element is related to itself.  
+> - 💡 **Practical Intuition & Analogy:** *Equality ( $a = a$ ) and the 'is subset of' relation ( $A \subseteq A$ ) are reflexive.*
+
+> 📌 **Symmetric Relation**  
+> - **Formal Definition:** A relation $R$ on $A$ is symmetric if $\forall a, b \in A, (a, b) \in R \implies (b, a) \in R$.  
+> - 💡 **Practical Intuition & Analogy:** *A mutual friendship in a social network or an undirected edge in a graph.*
+
+> 📌 **Transitive Relation**  
+> - **Formal Definition:** A relation $R$ on $A$ is transitive if $\forall a, b, c \in A, [(a, b) \in R \land (b, c) \in R] \implies (a, c) \in R$.  
+> - 💡 **Practical Intuition & Analogy:** *Ancestry or inequality: If $a < b$ and $b < c$, then $a < c$.*
+
+> 📌 **Equivalence Relation**  
+> - **Formal Definition:** A relation $R$ on $A$ that is simultaneously reflexive, symmetric, and transitive. It partitions $A$ into mutually disjoint equivalence classes.  
+> - 💡 **Practical Intuition & Analogy:** *Clustering data points into distinct, non-overlapping groups based on identical feature attributes.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Total Relations on a Set
-
 $$
 \text{Total Relations on } A = 2^{\vert A\vert^2} = 2^{n^2} \quad \text{where } n = \vert A\vert
 $$
-
 - **Explanation:** Since $\vert A \times A \vert = n^2$, any relation is a subset of $A \times A$, yielding $2^{n^2}$ possible relations.
 
 #### 🔹 Total Reflexive Relations
-
 $$
 \text{Reflexive Relations} = 2^{n(n - 1)}
 $$
-
 - **Explanation:** The $n$ diagonal pairs $(a, a)$ must all be included (1 choice each), leaving $n^2 - n = n(n-1)$ off-diagonal pairs with 2 choices each.
 
 #### 🔹 Total Symmetric Relations
-
 $$
 \text{Symmetric Relations} = 2^{\frac{n(n + 1)}{2}}
 $$
-
 - **Explanation:** Determined entirely by choices on the diagonal ($n$) and the upper triangle ($n(n-1)/2$).
 
 #### 🔹 Equivalence Class Definition
-
 $$
-[a] = \{x \in A \mid (x, a) \in R\}
+[a] = \lbrace x \in A \mid (x, a) \in R \rbrace
 $$
-
 - **Explanation:** The collection of all elements in $A$ related to representative element $a$. The union of all equivalence classes equals $A$.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `3.1` Objective
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for objective.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to entity relationship model.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of objective.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to entity relationship model.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of objective and derive its primary equations step-by-step.
 
 #### `3.2` Entity Relationship (E-R) Model
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for entity relationship (e-r) model.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to entity relationship model.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of entity relationship (e-r) model.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to entity relationship model.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of entity relationship (e-r) model and derive its primary equations step-by-step.
 
 #### `3.2.1` Entities
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for entities.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to entity relationship model.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of entities.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to entity relationship model.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -153,7 +149,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 2:</b> What is a Partial Order Relation (Poset)? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> A relation that is Reflexive, Antisymmetric ($(a,b) \in R \land (b,a) \in R \implies a = b$), and Transitive. Example: The subset relation $\subseteq$ on power sets.
+> A relation that is Reflexive, Antisymmetric ( $(a,b) \in R \land (b,a) \in R \implies a = b$ ), and Transitive. Example: The subset relation $\subseteq$ on power sets.
 </details>
 
 <details>

@@ -18,85 +18,76 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 7 - Determinants"]:::head
-  M1["7.2 Determinants"]:::topic
-  Root --> M1
-  M1_1["7.2.1 Definition and Concepts"]:::sub
-  M1 --> M1_1
-  M1_2["7.2.2 Minors and Cofactors"]:::sub
-  M1 --> M1_2
-  M2["7.3 Properties of Determinants"]:::topic
-  Root --> M2
-  M3["7.4 Product of Two Determinants"]:::topic
-  Root --> M3
-  M4["7.5 Symmetric Determinants"]:::topic
-  Root --> M4
-  M4_1["7.5.1 Skew and Skew-symmetric Determinants"]:::sub
-  M4 --> M4_1
-  M5["7.6 Solution of Simultaneous Equation by C"]:::topic
-  Root --> M5
+  Start(["Unit 7 Determinants"])
+  N1["7.2 Determinants"]
+  N2["7.2.1 Definition and Concepts"]
+  N3["7.2.2 Minors and Cofactors"]
+  N4["7.3 Properties of Determinants"]
+  N5["7.4 Product of Two Determinants"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Matrix** | A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$. | *A tabular dataframe where rows represent records and columns represent features.* |
-| **Determinant $\det(A)$ or $\vert A \vert$** | A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible. | *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.* |
-| **Matrix Rank** | The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$. | *The true dimensionality of the data without redundant, collinear features.* |
-| **Eigenvalue and Eigenvector** | A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction. | *The principal directions of maximum variance in Principal Component Analysis (PCA).* |
+
+> 📌 **Matrix**  
+> - **Formal Definition:** A rectangular array of numbers arranged into $m$ rows and $n$ columns: $A \in \mathbb{R}^{m \times n}$. Entry at row $i$ and column $j$ is denoted $a_{ij}$.  
+> - 💡 **Practical Intuition & Analogy:** *A tabular dataframe where rows represent records and columns represent features.*
+
+> 📌 **Determinant $\det(A)$ or $\vert A \vert$**  
+> - **Formal Definition:** A scalar value computed from a square matrix that characterizes the volume scaling factor of the linear transformation. $\det(A) \neq 0 \iff A$ is non-singular and invertible.  
+> - 💡 **Practical Intuition & Analogy:** *If $\det(A) = 0$, the transformation collapses space into a lower dimension, losing information.*
+
+> 📌 **Matrix Rank**  
+> - **Formal Definition:** The maximum number of linearly independent row or column vectors in the matrix. Denoted $\text{rank}(A) \le \min(m, n)$.  
+> - 💡 **Practical Intuition & Analogy:** *The true dimensionality of the data without redundant, collinear features.*
+
+> 📌 **Eigenvalue and Eigenvector**  
+> - **Formal Definition:** A scalar $\lambda$ and non-zero vector $\mathbf{v}$ satisfying $A\mathbf{v} = \lambda \mathbf{v}$. The transformation by $A$ merely stretches or shrinks $\mathbf{v}$ without changing its direction.  
+> - 💡 **Practical Intuition & Analogy:** *The principal directions of maximum variance in Principal Component Analysis (PCA).*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
 #### 🔹 Matrix Multiplication Dimension Rule
-
 $$
 C_{m \times p} = A_{m \times n} B_{n \times p} \quad \text{where } c_{ij} = \sum_{k=1}^n a_{ik} b_{kj}
 $$
-
 - **Explanation:** Inner dimensions must match: columns of $A$ must equal rows of $B$.
 
 #### 🔹 Matrix Inverse Formula
-
 $$
 A^{-1} = \frac{1}{\det(A)} \text{adj}(A) \quad \text{valid when } \det(A) \neq 0
 $$
-
 - **Explanation:** The inverse exists if and only if the matrix is full rank and non-singular.
 
 #### 🔹 Characteristic Equation for Eigenvalues
-
 $$
 \det(A - \lambda I) = 0
 $$
-
 - **Explanation:** Solving this polynomial equation yields the eigenvalues $\lambda_1, \lambda_2, \dots, \lambda_n$ of matrix $A$.
 
 #### 🔹 Cayley-Hamilton Theorem
-
 $$
 p(A) = O \quad \text{where } p(\lambda) = \det(A - \lambda I)
 $$
-
 - **Explanation:** Every square matrix satisfies its own characteristic polynomial equation.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `7.2` Determinants
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for determinants.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to determinants.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of determinants.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to determinants.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
 > **Exam & Interview Tip:** Be prepared to state the formal definition of determinants and derive its primary equations step-by-step.
 
 #### `7.2.1` Definition and Concepts
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for definition and concepts.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to determinants.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of definition and concepts.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to determinants.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -145,7 +136,7 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 <summary><b>Checkpoint 1:</b> What happens if $\det(A) = 0$ for a square matrix $A$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> The matrix is **singular**, has no multiplicative inverse ($A^{-1}$ does not exist), and its row vectors are linearly dependent.
+> The matrix is **singular**, has no multiplicative inverse ( $A^{-1}$ does not exist ), and its row vectors are linearly dependent.
 </details>
 
 <details>
@@ -170,14 +161,14 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 </details>
 
 <details>
-<summary><b>Checkpoint 5:</b> Find the cofactor of each element of the following matrices: (i) [ <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 5:</b> Find minor and cofactor of the elements 𝑎12, 𝑎23, 𝑎31, 𝑎13 where 𝐴= [𝑎𝑖𝑗] <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Determinants. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 <details>
-<summary><b>Checkpoint 6:</b> Find minor and cofactor of the elements 𝑎12, 𝑎23, 𝑎31, 𝑎13 where 𝐴= [𝑎𝑖𝑗] <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> Prove the following | 𝑥 𝑦 𝑧 𝑥 <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > This question tests your conceptual mastery of Determinants. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.

@@ -11,8 +11,8 @@ Welcome to the complete, mobile-friendly study repository for the **Master of Sc
 ---
 
 ## 📱 How to Read on Mobile
-1. **Using GitHub Mobile App:** Install the official GitHub app on iOS or Android. Navigate to this repository to read all markdown notes with native Mermaid diagrams, KaTeX mathematical formulas, and tap-to-reveal `<details>` flashcard checkpoints.
-2. **Using Mobile Browser (Any Network):** Simply open this repository URL (`https://github.com/Asutosh-Coaching/mscdsa`) in Chrome or Safari on your phone. No local Wi-Fi or LAN connection required!
+1. 🌐 **Live Web Reader (GitHub Pages):** Open **[https://asutosh-coaching.github.io/mscdsa/](https://asutosh-coaching.github.io/mscdsa/)** on Chrome or Safari on your phone. Works seamlessly on any network with instant course search, dark/light themes, offline caching, and interactive flashcards.
+2. 📖 **Directly on GitHub:** Navigate to any unit note in [`notes/`](notes/) from your browser or the GitHub Mobile App to read textbook-grade Markdown with native KaTeX formulas and visual concept maps.
 
 ---
 

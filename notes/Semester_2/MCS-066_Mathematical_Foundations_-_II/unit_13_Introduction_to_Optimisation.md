@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Introduction to Optimisation** forms a vital conceptual pillar. Probability is the mathematical calculus of uncertainty. Every machine learning classification model outputs a conditional probability $P(Y=c \mid X=\mathbf{x})$, and Bayesian modeling updates prior beliefs based on empirical evidence.
+In modern data systems, **Introduction to Optimisation** forms a vital conceptual pillar. Calculus powers continuous optimization in Machine Learning. Loss function minimization via Gradient Descent, backpropagation in deep neural networks, and probability density integration all require derivatives, partial differentials, and definite integrals.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering introduction to optimisation equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -18,82 +18,67 @@ The following concept map illustrates the structural hierarchy and learning traj
 
 ```mermaid
 flowchart TD
-  %% Styling Definitions
-  classDef head fill:#4338ca,stroke:#312e81,color:#ffffff,font-weight:bold;
-  classDef topic fill:#0284c7,stroke:#0369a1,color:#ffffff,font-weight:600;
-  classDef sub fill:#1e293b,stroke:#475569,color:#f8fafc;
-
-  Root["Unit 13 - Introduction to Optimisation"]:::head
-  M1["13.2 Basic Terminology"]:::topic
-  Root --> M1
-  M2["13.3 Global and Local Maxima and Minima"]:::topic
-  Root --> M2
-  M2_1["13.3.1 Definition"]:::sub
-  M2 --> M2_1
-  M2_2["13.3.2 Slope of a Function"]:::sub
-  M2 --> M2_2
-  M3["13.4 Gradient Descent and Ascent"]:::topic
-  Root --> M3
-  M4["13.5 Randomisation"]:::topic
-  Root --> M4
-  M4_1["13.5.1 Random Numbers and Pseudo Random Nu"]:::sub
-  M4 --> M4_1
+  Start(["Unit 13 Introduction to Optimisation"])
+  N1["13.2 Basic Terminology"]
+  N2["13.3 Global and Local Maxima and Minima"]
+  N3["13.3.1 Definition"]
+  N4["13.3.2 Slope of a Function"]
+  N5["13.3.3 First Derivative Test and Relative Optima"]
+  Start --> N1
+  N1 --> N2
+  N2 --> N3
+  N3 --> N4
+  N4 --> N5
 ```
 
 ### 📖 Core Definitions & Terminology Cards
-| Term | Formal Mathematical / Technical Definition | Intuitive Analogy / Concrete Example |
-| :--- | :--- | :--- |
-| **Conditional Probability $P(A \mid B)$** | The probability of event $A$ occurring given that event $B$ has already occurred: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$, defined for $P(B) > 0$. | *Updating the likelihood of fraud given that a transaction occurred in an unusual country.* |
-| **Independent Events** | Events $A$ and $B$ are independent if the occurrence of one does not affect the other: $P(A \cap B) = P(A)P(B)$, or equivalently $P(A \mid B) = P(A)$. | *Coin tosses: Getting heads on flip 1 gives zero information about flip 2.* |
-| **Random Variable $X$** | A real-valued function $X: \Omega \to \mathbb{R}$ mapping outcomes of a random sample space $\Omega$ to real numbers. Can be discrete or continuous. | *Counting customer website visits per hour or measuring response latency in milliseconds.* |
-| **Mathematical Expectation $E[X]$** | The probability-weighted average value of a random variable: $E[X] = \sum x_i P(X = x_i)$ for discrete, or $\int_{-\infty}^\infty x f(x)dx$ for continuous. | *Long-run average payout of a game of chance.* |
+
+> 📌 **Derivative $f'(x)$**  
+> - **Formal Definition:** The instantaneous rate of change of $f(x)$ with respect to $x$: $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$.  
+> - 💡 **Practical Intuition & Analogy:** *The slope of the tangent line to the curve at point $x$, indicating direction of steepest increase.*
+
+> 📌 **Gradient $\nabla f(\mathbf{x})$**  
+> - **Formal Definition:** The vector of first-order partial derivatives of a multivariate function: $\nabla f = \left[\frac{\partial f}{\partial x_1}, \dots, \frac{\partial f}{\partial x_n}\right]^T$. Points in the direction of greatest rate of increase.  
+> - 💡 **Practical Intuition & Analogy:** *The compass pointing uphill on a multidimensional loss landscape.*
+
+> 📌 **Definite Integral**  
+> - **Formal Definition:** The signed area under curve $f(x)$ bounded by $[a, b]$: $\int_a^b f(x) dx = F(b) - F(a)$ where $F'(x) = f(x)$.  
+> - 💡 **Practical Intuition & Analogy:** *Accumulating continuous probabilities or continuous signals across a range of values.*
+
+> 📌 **Critical Point**  
+> - **Formal Definition:** A point $x_0$ where $f'(x_0) = 0$ or the derivative is undefined. Evaluated with second derivative $f''(x_0) > 0$ (local min) or $f''(x_0) < 0$ (local max).  
+> - 💡 **Practical Intuition & Analogy:** *The bottom of the valley where model training reaches minimal loss.*
 
 ### ⚡ Governing Mathematical Laws & Formula Cheatsheet
-#### 🔹 Bayes' Theorem
-
+#### 🔹 Chain Rule for Composite Functions
 $$
-P(B_i \mid A) = \frac{P(A \mid B_i) P(B_i)}{\sum_{j=1}^k P(A \mid B_j) P(B_j)} = \frac{P(A \mid B_i) P(B_i)}{P(A)}
+\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
 $$
+- **Explanation:** The mathematical foundation of deep learning backpropagation through multi-layer neural networks.
 
-- **Explanation:** Calculates posterior probability by multiplying prior probability by likelihood, normalized by marginal evidence.
-
-#### 🔹 Variance of a Random Variable
-
+#### 🔹 Product and Quotient Rules
 $$
-\text{Var}(X) = E[X^2] - (E[X])^2
+(uv)' = u'v + uv', \quad \left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}
 $$
+- **Explanation:** Rules for differentiating multiplied or divided feature combinations.
 
-- **Explanation:** Measures spread around the expected value. For constants: $\text{Var}(aX + b) = a^2 \text{Var}(X)$.
-
-#### 🔹 Binomial Distribution PMF
-
+#### 🔹 Gradient Descent Parameter Update
 $$
-P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}, \quad E[X] = np, \; \text{Var}(X) = np(1 - p)
+\mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha \nabla_{\mathbf{w}} \mathcal{L}(\mathbf{w})
 $$
+- **Explanation:** Iterative step against the gradient direction scaled by learning rate $\alpha$ to reach minimal loss.
 
-- **Explanation:** Models $k$ successes in $n$ independent Bernoulli trials with success probability $p$.
-
-#### 🔹 Poisson Distribution PMF
-
+#### 🔹 Taylor Series Expansion (First-Order Approximation)
 $$
-P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad E[X] = \lambda, \; \text{Var}(X) = \lambda
+f(x) \approx f(a) + f'(a)(x - a) + \frac{f''(a)}{2!}(x - a)^2
 $$
-
-- **Explanation:** Models counts of rare independent events occurring in a fixed interval at constant average rate $\lambda$.
-
-#### 🔹 Normal (Gaussian) Distribution PDF
-
-$$
-f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}, \quad Z = \frac{X - \mu}{\sigma} \sim \mathcal{N}(0, 1)
-$$
-
-- **Explanation:** Symmetric bell-shaped curve governed entirely by mean $\mu$ and standard deviation $\sigma$.
+- **Explanation:** Approximates complex non-linear loss surfaces locally using tangent hyperplanes and quadratic forms.
 
 ### 📌 Detailed Section-by-Section Study Breakdown
 #### `13.2` Basic Terminology
-- **Core Concept:** Establishes rigorous theoretical formulations and computational bounds for basic terminology.
-- **Core Concept:** Applies standard algorithmic procedures and mathematical invariants relevant to introduction to optimisation.
-- **Core Concept:** Ensures deterministic performance guarantees across high-dimensional feature spaces.
+- **Core Concept:** Establishes theoretical foundations, axiomatic formulations, and properties of basic terminology.
+- **Core Concept:** Analyzes standard algorithmic workflows and mathematical transformations relevant to introduction to optimisation.
+- **Core Concept:** Applies computational bounds and optimization guarantees across data processing workflows.
 - **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.
 
 > [!TIP]
@@ -148,24 +133,24 @@ $$
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> State Bayes' Theorem formula for event hypothesis $H$ given evidence $E$. <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> What is the Chain Rule and why is it essential in Deep Learning? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> $P(H \mid E) = \frac{P(E \mid H)P(H)}{P(E)}$
+> The Chain Rule states $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. In deep networks, it allows computing the gradient of the loss with respect to early layer weights by propagating backwards layer-by-layer.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the expected value and variance of a Binomial distribution $B(n, p)$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 2:</b> How do you classify a critical point where $f'(x) = 0$ using the Second Derivative Test? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> Mean $E[X] = np$, and Variance $\text{Var}(X) = np(1 - p)$.
+> If $f''(x) > 0$, the point is a **local minimum**. If $f''(x) < 0$, it is a **local maximum**. If $f''(x) = 0$, the test is inconclusive (inflection point).
 </details>
 
 <details>
-<summary><b>Checkpoint 3:</b> If $E[X] = 5$ and $E[X^2] = 34$, what is $\text{Var}(X)$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 3:</b> What is the derivative of $\ln(x)$ and $e^x$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
-> $\text{Var}(X) = E[X^2] - (E[X])^2 = 34 - 5^2 = 34 - 25 = 9$.
+> $\frac{d}{dx}[\ln(x)] = \frac{1}{x}$ (for $x > 0$), and $\frac{d}{dx}[e^x] = e^x$.
 </details>
 
 <details>
