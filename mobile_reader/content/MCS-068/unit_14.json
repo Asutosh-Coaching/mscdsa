@@ -1,0 +1,169 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_14",
+  "unit_num": "Unit 14",
+  "title": "Data Interfacing and Visualisation in R",
+  "filename": "Unit-14_Data_Interfacing_and_Visualisation_in_R.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-14_Data_Interfacing_and_Visualisation_in_R.pdf",
+  "total_pages": 16,
+  "word_count": 3434,
+  "est_read_time_minutes": 19,
+  "objectives": [
+    "processing"
+  ],
+  "summary": "In this unit you have gone through various file types that can be processed for data analysis in R and further discussed their interfaces. R can read and write a variety of file types outside the R environment, including CSV, Excel, binary, XML and JSON. Further, R can readily connect to various relational databases, such as MySQL, Oracle, and SQL Server, and retrieve records as a data frame that can be modified and analysed with all of R's sophisticated packages and",
+  "flashcards": [
+    {
+      "question": "What is the package used to use JSON Files in R? …………………………………………………………………………. …………………………………………………………….",
+      "answer": "Key Principle: In R, you can read data from files outside of the R environment.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are wb and rb mode while dealing with binary files? …………………………………………………………………………. …………………………………………………………….",
+      "answer": "Key Principle: A binary file is one that solely includes data in the form of bits and bytes.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Mention any 2 checklist points used for cleaning/ preparing data? …………………………………………………………………………. …………………………………………………………….",
+      "answer": "In Data Interfacing and Visualisation in R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is a scatter plot?",
+      "answer": "In Data Interfacing and Visualisation in R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "When you will use histogram and when you will use bar chart in R?",
+      "answer": "In Data Interfacing and Visualisation in R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What type of chart do you consider when trying to demonstrate “relationship“ between variables/parameters?",
+      "answer": "In Data Interfacing and Visualisation in R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Reading Data From Files and how is it characterized?",
+      "answer": "In R, you can read data from files outside of the R environment.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Data Interfacing and Visuali\"]\n  M1[\"14.3 Reading Data From Files\"]\n  Root --> M1\n  M1_1[\"14.3.1 CSV Files\"]\n  M1 --> M1_1\n  M1_2[\"14.3.2 Excel Files\"]\n  M1 --> M1_2\n  M1_3[\"14.3.3 Binary Files\"]\n  M1 --> M1_3\n  M2[\"14.4 Data Cleaning and Pre-processin\"]\n  Root --> M2\n  M3[\"14.5 Visualisations in R\"]\n  Root --> M3\n  M3_1[\"14.5.1 Bar Charts\"]\n  M3 --> M3_1\n  M3_2[\"14.5.2 Box Plots\"]\n  M3 --> M3_2\n  M3_3[\"14.5.3 Histograms\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reading Data From Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In R, you can read data from files outside of the R environment.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Csv Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Input as CSV File: CSV file is a text file in which column values are separated by commas.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Excel Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Microsoft Excel is the most extensively used spreadsheet tool and it uses the.xls or.xlsx file extension to store data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Binary Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A binary file is one that solely includes data in the form of bits and bytes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Xml Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">XML is an acronym for “extensible markup language”.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 Reading Data From Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In R, you can read data from files outside of the R environment.</li>\n<li>One may also write data to files that the operating system can store and further access.</li>\n<li>There is a wide range of file formats, including CSV, Excel, binary, and XML, etc., R can read and write from.</li>\n<li>Files Input as CSV File: CSV file is a text file in which column values are separated by commas.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.1 CSV Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Input as CSV File: CSV file is a text file in which column values are separated by commas.</li>\n<li>For example, you can create data with the name, programme, and phone of students.</li>\n<li>By copying and pasting this data into Windows Notepad, you can create the CSV file.</li>\n<li>Using notepad's Save As option, save the file as input.csv.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.2 Excel Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Microsoft Excel is the most extensively used spreadsheet tool and it uses the.xls or.xlsx file extension to store data.</li>\n<li>Using various Excel-specific packages, R can read directly from these files.</li>\n<li>XLConnect, xlsx, and gdata are Data Interfacing & Visualization in R 27 a few examples of such packages.</li>\n<li>The xlsx package also allows R to write to an Excel file.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.3 Binary Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A binary file is one that solely includes data in the form of bits and bytes.</li>\n<li>R has two functions writeBin() and readBin() to create and read binary files.</li>\n<li>Syntax: writeBin(object, con) readBin(con, what, n ) where, ● The connection object con is used to read or write a binary file.</li>\n<li>● The binary file to be written is the object.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.4 XML Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>XML is an acronym for “extensible markup language”.</li>\n<li>It is a file format that allows users to share the file format as well as the data over the internet, intranet and other places, as standard ASCII text.</li>\n<li>XML uses markup tags that describe the meaning of the data stored in the file.</li>\n<li>This is similar to the markup tags used in HTML wherein the markup tag describes the structure of the page instead.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.5 JSON Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data in a JSON file is stored as text in a human-readable format.</li>\n<li>JavaScript Object Notation is abbreviated as JSON.</li>\n<li>Install rjson Package To install the rjson package, type the following command in the R console: install.packages(\"rjson\") Read the JSON File R reads the JSON file using the function fromJSON().</li>\n<li>As a result, you will require quite advanced and complex SQL queries to perform statistical computing.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.6 Interfacing with Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data is stored in a normalised way in relational database systems.</li>\n<li>As a result, you will require quite advanced and complex SQL queries to perform statistical computing.</li>\n<li>However, R can readily connect to various relational databases, such as MySQL, Oracle, and SQL Server, and retrieve records as a data frame.</li>\n<li>Once the data is in the R environment, it becomes a standard R data set that can be modified and analysed with all of R's sophisticated packages and functions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.7 Web Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Many websites make data available for users to consume.</li>\n<li>The World Health Organization (WHO), for example, provides reports on health and medical information in CSV, txt, and XML formats.</li>\n<li>You can programmatically extract certain data from such websites using R applications.</li>\n<li>\"RCurl,\" \"XML,\" and \"stringr\" are some R packages that are used to scrape data from the web.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Core Invariant: All data representations in Data Interfacing and Visualisation in R must preserve mathematical consistency and deterministic bounds.</code></div>\n<div class=\"formula-box\"><code>Algorithmic Complexity: Computational operations adhere to standard space-time trade-off guarantees.</code></div>\n<div class=\"formula-box\"><code>Validation Criterion: Theoretical postulates must satisfy experimental convergence under test distributions.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit you have gone through various file types that can be processed for data analysis in R and further discussed their interfaces. R can read and write a variety of file types outside the R environment, including CSV, Excel, binary, XML and JSON. Further, R can readily connect to various relational databases, such as MySQL, Oracle, and SQL Server, and retrieve records as a data frame that can be modified and analysed with all of R's sophisticated packages and</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-14_Data_Interfacing_and_Visualisation_in_R.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 14 Data Interfacing and Visuali\"]\n  M1[\"14.3 Reading Data From Files\"]\n  Root --> M1\n  M1_1[\"14.3.1 CSV Files\"]\n  M1 --> M1_1\n  M1_2[\"14.3.2 Excel Files\"]\n  M1 --> M1_2\n  M1_3[\"14.3.3 Binary Files\"]\n  M1 --> M1_3\n  M2[\"14.4 Data Cleaning and Pre-processin\"]\n  Root --> M2\n  M3[\"14.5 Visualisations in R\"]\n  Root --> M3\n  M3_1[\"14.5.1 Bar Charts\"]\n  M3 --> M3_1\n  M3_2[\"14.5.2 Box Plots\"]\n  M3 --> M3_2\n  M3_3[\"14.5.3 Histograms\"]\n  M3 --> M3_3",
+  "definitions": [
+    {
+      "term": "Reading Data From Files",
+      "definition": "In R, you can read data from files outside of the R environment.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Csv Files",
+      "definition": "Input as CSV File: CSV file is a text file in which column values are separated by commas.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Excel Files",
+      "definition": "Microsoft Excel is the most extensively used spreadsheet tool and it uses the.xls or.xlsx file extension to store data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Binary Files",
+      "definition": "A binary file is one that solely includes data in the form of bits and bytes.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Xml Files",
+      "definition": "XML is an acronym for “extensible markup language”.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "14.3",
+      "topic": "Reading Data From Files",
+      "points": [
+        "In R, you can read data from files outside of the R environment.",
+        "One may also write data to files that the operating system can store and further access.",
+        "There is a wide range of file formats, including CSV, Excel, binary, and XML, etc., R can read and write from.",
+        "Files Input as CSV File: CSV file is a text file in which column values are separated by commas."
+      ]
+    },
+    {
+      "section_num": "14.3.1",
+      "topic": "CSV Files",
+      "points": [
+        "Input as CSV File: CSV file is a text file in which column values are separated by commas.",
+        "For example, you can create data with the name, programme, and phone of students.",
+        "By copying and pasting this data into Windows Notepad, you can create the CSV file.",
+        "Using notepad's Save As option, save the file as input.csv."
+      ]
+    },
+    {
+      "section_num": "14.3.2",
+      "topic": "Excel Files",
+      "points": [
+        "Microsoft Excel is the most extensively used spreadsheet tool and it uses the.xls or.xlsx file extension to store data.",
+        "Using various Excel-specific packages, R can read directly from these files.",
+        "XLConnect, xlsx, and gdata are Data Interfacing & Visualization in R 27 a few examples of such packages.",
+        "The xlsx package also allows R to write to an Excel file."
+      ]
+    },
+    {
+      "section_num": "14.3.3",
+      "topic": "Binary Files",
+      "points": [
+        "A binary file is one that solely includes data in the form of bits and bytes.",
+        "R has two functions writeBin() and readBin() to create and read binary files.",
+        "Syntax: writeBin(object, con) readBin(con, what, n ) where, ● The connection object con is used to read or write a binary file.",
+        "● The binary file to be written is the object."
+      ]
+    },
+    {
+      "section_num": "14.3.4",
+      "topic": "XML Files",
+      "points": [
+        "XML is an acronym for “extensible markup language”.",
+        "It is a file format that allows users to share the file format as well as the data over the internet, intranet and other places, as standard ASCII text.",
+        "XML uses markup tags that describe the meaning of the data stored in the file.",
+        "This is similar to the markup tags used in HTML wherein the markup tag describes the structure of the page instead."
+      ]
+    },
+    {
+      "section_num": "14.3.5",
+      "topic": "JSON Files",
+      "points": [
+        "The data in a JSON file is stored as text in a human-readable format.",
+        "JavaScript Object Notation is abbreviated as JSON.",
+        "Install rjson Package To install the rjson package, type the following command in the R console: install.packages(\"rjson\") Read the JSON File R reads the JSON file using the function fromJSON().",
+        "As a result, you will require quite advanced and complex SQL queries to perform statistical computing."
+      ]
+    },
+    {
+      "section_num": "14.3.6",
+      "topic": "Interfacing with Databases",
+      "points": [
+        "Data is stored in a normalised way in relational database systems.",
+        "As a result, you will require quite advanced and complex SQL queries to perform statistical computing.",
+        "However, R can readily connect to various relational databases, such as MySQL, Oracle, and SQL Server, and retrieve records as a data frame.",
+        "Once the data is in the R environment, it becomes a standard R data set that can be modified and analysed with all of R's sophisticated packages and functions."
+      ]
+    },
+    {
+      "section_num": "14.3.7",
+      "topic": "Web Data",
+      "points": [
+        "Many websites make data available for users to consume.",
+        "The World Health Organization (WHO), for example, provides reports on health and medical information in CSV, txt, and XML formats.",
+        "You can programmatically extract certain data from such websites using R applications.",
+        "\"RCurl,\" \"XML,\" and \"stringr\" are some R packages that are used to scrape data from the web."
+      ]
+    }
+  ],
+  "formulas": [
+    "Core Invariant: All data representations in Data Interfacing and Visualisation in R must preserve mathematical consistency and deterministic bounds.",
+    "Algorithmic Complexity: Computational operations adhere to standard space-time trade-off guarantees.",
+    "Validation Criterion: Theoretical postulates must satisfy experimental convergence under test distributions."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Data Interfacing and Visuali\"]\n  M1[\"14.3 Reading Data From Files\"]\n  Root --> M1\n  M1_1[\"14.3.1 CSV Files\"]\n  M1 --> M1_1\n  M1_2[\"14.3.2 Excel Files\"]\n  M1 --> M1_2\n  M1_3[\"14.3.3 Binary Files\"]\n  M1 --> M1_3\n  M2[\"14.4 Data Cleaning and Pre-processin\"]\n  Root --> M2\n  M3[\"14.5 Visualisations in R\"]\n  Root --> M3\n  M3_1[\"14.5.1 Bar Charts\"]\n  M3 --> M3_1\n  M3_2[\"14.5.2 Box Plots\"]\n  M3 --> M3_2\n  M3_3[\"14.5.3 Histograms\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reading Data From Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In R, you can read data from files outside of the R environment.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Csv Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Input as CSV File: CSV file is a text file in which column values are separated by commas.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Excel Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Microsoft Excel is the most extensively used spreadsheet tool and it uses the.xls or.xlsx file extension to store data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Binary Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A binary file is one that solely includes data in the form of bits and bytes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Xml Files</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">XML is an acronym for “extensible markup language”.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 Reading Data From Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In R, you can read data from files outside of the R environment.</li>\n<li>One may also write data to files that the operating system can store and further access.</li>\n<li>There is a wide range of file formats, including CSV, Excel, binary, and XML, etc., R can read and write from.</li>\n<li>Files Input as CSV File: CSV file is a text file in which column values are separated by commas.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.1 CSV Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Input as CSV File: CSV file is a text file in which column values are separated by commas.</li>\n<li>For example, you can create data with the name, programme, and phone of students.</li>\n<li>By copying and pasting this data into Windows Notepad, you can create the CSV file.</li>\n<li>Using notepad's Save As option, save the file as input.csv.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.2 Excel Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Microsoft Excel is the most extensively used spreadsheet tool and it uses the.xls or.xlsx file extension to store data.</li>\n<li>Using various Excel-specific packages, R can read directly from these files.</li>\n<li>XLConnect, xlsx, and gdata are Data Interfacing & Visualization in R 27 a few examples of such packages.</li>\n<li>The xlsx package also allows R to write to an Excel file.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.3 Binary Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A binary file is one that solely includes data in the form of bits and bytes.</li>\n<li>R has two functions writeBin() and readBin() to create and read binary files.</li>\n<li>Syntax: writeBin(object, con) readBin(con, what, n ) where, ● The connection object con is used to read or write a binary file.</li>\n<li>● The binary file to be written is the object.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.4 XML Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>XML is an acronym for “extensible markup language”.</li>\n<li>It is a file format that allows users to share the file format as well as the data over the internet, intranet and other places, as standard ASCII text.</li>\n<li>XML uses markup tags that describe the meaning of the data stored in the file.</li>\n<li>This is similar to the markup tags used in HTML wherein the markup tag describes the structure of the page instead.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.5 JSON Files</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data in a JSON file is stored as text in a human-readable format.</li>\n<li>JavaScript Object Notation is abbreviated as JSON.</li>\n<li>Install rjson Package To install the rjson package, type the following command in the R console: install.packages(\"rjson\") Read the JSON File R reads the JSON file using the function fromJSON().</li>\n<li>As a result, you will require quite advanced and complex SQL queries to perform statistical computing.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.6 Interfacing with Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data is stored in a normalised way in relational database systems.</li>\n<li>As a result, you will require quite advanced and complex SQL queries to perform statistical computing.</li>\n<li>However, R can readily connect to various relational databases, such as MySQL, Oracle, and SQL Server, and retrieve records as a data frame.</li>\n<li>Once the data is in the R environment, it becomes a standard R data set that can be modified and analysed with all of R's sophisticated packages and functions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.7 Web Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Many websites make data available for users to consume.</li>\n<li>The World Health Organization (WHO), for example, provides reports on health and medical information in CSV, txt, and XML formats.</li>\n<li>You can programmatically extract certain data from such websites using R applications.</li>\n<li>\"RCurl,\" \"XML,\" and \"stringr\" are some R packages that are used to scrape data from the web.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Core Invariant: All data representations in Data Interfacing and Visualisation in R must preserve mathematical consistency and deterministic bounds.</code></div>\n<div class=\"formula-box\"><code>Algorithmic Complexity: Computational operations adhere to standard space-time trade-off guarantees.</code></div>\n<div class=\"formula-box\"><code>Validation Criterion: Theoretical postulates must satisfy experimental convergence under test distributions.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit you have gone through various file types that can be processed for data analysis in R and further discussed their interfaces. R can read and write a variety of file types outside the R environment, including CSV, Excel, binary, XML and JSON. Further, R can readily connect to various relational databases, such as MySQL, Oracle, and SQL Server, and retrieve records as a data frame that can be modified and analysed with all of R's sophisticated packages and</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-14_Data_Interfacing_and_Visualisation_in_R.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

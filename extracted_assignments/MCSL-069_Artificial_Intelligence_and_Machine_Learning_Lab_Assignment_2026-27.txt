@@ -1,0 +1,128 @@
+=== PAGE 1 ===
+1  
+ 
+MASTER OF SCIENCE 
+DATA SCIENCE AND ANALYTICS 
+ 
+(MSCDSA) 
+ 
+ 
+ 
+ 
+ 
+ 
+ASSIGNMENTS 
+ 
+(July – 2026 & January – 2027) 
+ 
+ 
+ 
+ 
+ 
+MCS-066, MCS-067, MCS-224, MCS-068, MCSL-069,  
+MCSL-070 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SCHOOL OF COMPUTER AND INFORMATION SCIENCES 
+INDIRA GANDHI NATIONAL OPEN UNIVERSITY 
+MAIDAN GARHI, NEW DELHI – 110 068 
+ 
+MSCDSA/ASSIGN/SEMESTER-II 
+
+=== PAGE 2 ===
+2  
+CONTENTS 
+ 
+ 
+ 
+Course 
+Code 
+Assignment No. Submission-Schedule Page 
+No. 
+For July- 
+December 
+Session 
+For January- 
+June Session 
+MCS-066 MSCDSA(II)/066/Assign/26-27 31st October, 2026 30th April, 2027 3 
+MCS-067 MSCDSA(II)/067/Assign/26-27 31st October, 2026 30th April, 2027 7 
+MCS-224 MSCDSA(II)/224/Assign/26-27 31st October, 2026 30th April, 2027 10 
+MCS-068 MSCDSA(II)/068/Assign/26-27 31st October, 2026 30th April, 2027 13 
+MCSL-069 MSCDSA(II)/L-069/Assign/26-27 31st October, 2026 30th April, 2027 16 
+MCSL-070 MSCDSA(II)/L-070/Assign/26-27 31st October, 2026 30th April, 2027 17 
+ 
+ 
+ 
+ 
+ 
+Important Notes 
+ 
+ 
+1. Submit your assignments to the Coordinator of your Study Centre on or before the 
+due date. 
+2. Assignment submission before due dates is compulsory to become eligible for  
+appearing in corresponding Term End Examinations. For further details, please 
+refer to MSCDSA Programme Guide. 
+3. To become eligible for appearing the Term End Practical Examination for the lab 
+courses, it is essential to fulfill the minimum attendance requirements as well as  
+submission of assignments (on or before the due date). For further details, please  
+refer to the MSCDSA Programme Guide. 
+4. The viva voce is compulsory for the assignments. For any course, if a student  
+submitted the assignment and not attended the viva -voce, then the assignment is  
+treated as not successfully completed and would be marked as ZERO. 
+
+=== PAGE 3 ===
+16  
+Course Code : MCSL-069 
+Course Title : Artificial Intelligence & Machine Learning Lab 
+Assignment Number : MSCDSA(II)/L-069/Lab_Assign/2026-27 
+Maximum Marks : 100 
+Weightage : 30% 
+Last Date of Submission : 31st October, 2026 (for July session) 
+  30th April, 2027 (for January session) 
+ 
+ 
+This assignment has 8 Questions. Answer all the questions. The total marks for all the 
+questions are 40, and the maximum marks for each question are mentioned. Your Lab 
+Records will carry 40 Marks. The remaining 20 marks are for viva voce. You may use 
+illustrations and diagrams to enhance the explanations. Please go through the guidelines 
+regarding assignments given in the programme guide for the format of presentation. 
+ 
+Note: You must execute the program and submit the program logic, sample input, and outp ut along 
+with the necessary documentation. Assumptions can be made wherever necessary. 
+ 
+ 
+Q1:   Write a Python Program to solve the N-Queen Problem without using Recursion.                   (4 Marks) 
+ 
+Q2:  Implement the Water Jug problem in Python.                                      (4 Marks) 
+ 
+Q3: Write a Python Program to implement the Min-Max Algorithm.         (4 Marks) 
+ 
+Q4: Write a Python Program to implement the AO* Algorithm         (6 Marks) 
+ 
+Q5: Discuss the Naïve Bayes algorithm and write the Python code to demonstrate the execution of the 
+Naïve Bayes algorithm on the dataset of your choice.         (6 Marks) 
+ 
+Q6: Write a Python Program to implement Logistic Regression for data classification, and choose a dataset 
+of your own choice.         (4 Marks) 
+ 
+Q7: Take a real-time example to implement the ID3 decision tree classification algorithm in Python. 
+              (6 Marks) 
+ 
+Q8: Write a Python Program to implement Support Vector Machines for data classification , and choose a 
+dataset of your own choice.         (6 Marks) 
+ 
+ 
+ 
+  
+

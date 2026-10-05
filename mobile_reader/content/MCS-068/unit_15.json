@@ -1,0 +1,152 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_15",
+  "unit_num": "Unit 15",
+  "title": "Data Analysis and R",
+  "filename": "Unit-15_Data_Analysis_and_R.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-15_Data_Analysis_and_R.pdf",
+  "total_pages": 12,
+  "word_count": 3363,
+  "est_read_time_minutes": 19,
+  "objectives": [
+    "15.3 Chi Square Test",
+    "15.4 Linear Regression",
+    "15.5 Multiple Regression",
+    "15.6  Logistic Regression",
+    "15.7  Time Series Analysis"
+  ],
+  "summary": "relationship model. Also known as residuals, as shown in Figure 15.3 5. The predict() function in R can be used to predict the weight of new person. A sample regression line and residual are shown in Figure Figure 15.3: An example of regression model and residual Below is the sample data with the observations between weight and height, which is experimentally collected and is input in the Figure 15.4",
+  "flashcards": [
+    {
+      "question": "What is linear regression? ………………………………………………………………………….. …………………………………………………………………………..",
+      "answer": "Key Principle: Regression analysis is a common statistical technique for establishing a relationship model between two variables.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What do chi-square test answers? …………………………………………………………………………. ………………………………………………………………………….",
+      "answer": "Key Principle: Syntax: lm(formula, data),where formula: presenting the relation between x and y.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Difference between linear and multiple regression? …………………………………………………………………………. ………………………………………………………………………….",
+      "answer": "Key Principle: Regression analysis is a common statistical technique for establishing a relationship model between two variables.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is logistic regression? …………………………………………………………………………..",
+      "answer": "Key Principle: In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the uses of Time-Series analysis? ………………………………………………………………………….",
+      "answer": "In Data Analysis and R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Differentiate between linear regression and logistic regression? ………………………………………………………………………….",
+      "answer": "Key Principle: Regression analysis is a common statistical technique for establishing a relationship model between two variables.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Chi Square Test and how is it characterized?",
+      "answer": "Syntax: lm(formula, data),where formula: presenting the relation between x and y.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 15 Data Analysis and R\"]\n  M1[\"15.3 Chi Square Test\"]\n  Root --> M1\n  M2[\"15.4 Linear Regression\"]\n  Root --> M2\n  M3[\"15.5 Multiple Regression\"]\n  Root --> M3\n  M4[\"15.6 Logistic Regression\"]\n  Root --> M4\n  M5[\"15.7 Time Series Analysis\"]\n  Root --> M5\n  M6[\"15.3 CHI-SQUARE TEST\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Chi Square Test</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Syntax: lm(formula, data),where formula: presenting the relation between x and y.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Regression analysis is a common statistical technique for establishing a relationship model between two variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multiple Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The relationship between two or more independent variables and a single dependent variable is estimated using multiple linear regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Logistic Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Time Series Analysis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A Time Series is any metric that is measured at regular intervals.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.3 Chi Square Test</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Syntax: lm(formula, data),where formula: presenting the relation between x and y.</li>\n<li>data: data on which the formula needs to be applied.</li>\n<li>Five-point summary (Minimum, First Quartile, Median, Third Quartile, and Maximum).</li>\n<li>You may observe that about 50% of residuals are in the range -1.713 to +1.725, which shows a good model fit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.4 Linear Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Regression analysis is a common statistical technique for establishing a relationship model between two variables.</li>\n<li>One of these variables is known as a predictor variable, and its value is derived via experimentation.</li>\n<li>The response variable, whose value is generated from the predictor variable, is the other variable.</li>\n<li>A regression model that employs a straight line to explain the relationship between variables is known as linear regression.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.5 Multiple Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The relationship between two or more independent variables and a single dependent variable is estimated using multiple linear regression.</li>\n<li>When you need to know the following, you can utilize multiple linear regression.</li>\n<li>● The degree to which two or more independent variables and one dependent variable are related (e.g.</li>\n<li>how baking soda, baking temperature, and amount of flour added affect the taste of cake).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.6 Logistic Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.</li>\n<li>When the dependent variable is binary (0/1, True/False, Yes/No), logistic regression is utilised.</li>\n<li>In a binomial distribution, the logit function is utilised as a link function.</li>\n<li>Binomial logistic regression is another name for logistic regression.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.7 Time Series Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A Time Series is any metric that is measured at regular intervals.</li>\n<li>It entails deriving hidden insights from time-based data (years, days, hours, minutes) in order to make informed decisions.</li>\n<li>When you have serially associated data, time series models are particularly beneficial.</li>\n<li>Weather data, stock prices, industry projections, and so on are just a few examples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.3 CHI-SQUARE TEST</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Syntax: lm(formula, data),where formula: presenting the relation between x and y.</li>\n<li>data: data on which the formula needs to be applied.</li>\n<li>Five-point summary (Minimum, First Quartile, Median, Third Quartile, and Maximum).</li>\n<li>You may observe that about 50% of residuals are in the range -1.713 to +1.725, which shows a good model fit.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>ax +b) and x (that is a in the equation y = ax +b).</code></div>\n<div class=\"formula-box\"><code>y = a + b1X1 + b2X2 +...bnXn</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">relationship model. Also known as residuals, as shown in Figure 15.3 5. The predict() function in R can be used to predict the weight of new person. A sample regression line and residual are shown in Figure Figure 15.3: An example of regression model and residual Below is the sample data with the observations between weight and height, which is experimentally collected and is input in the Figure 15.4</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-15_Data_Analysis_and_R.pdf')\">\n          📄 Read Original IGNOU PDF (12 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 15 Data Analysis and R\"]\n  M1[\"15.3 Chi Square Test\"]\n  Root --> M1\n  M2[\"15.4 Linear Regression\"]\n  Root --> M2\n  M3[\"15.5 Multiple Regression\"]\n  Root --> M3\n  M4[\"15.6 Logistic Regression\"]\n  Root --> M4\n  M5[\"15.7 Time Series Analysis\"]\n  Root --> M5\n  M6[\"15.3 CHI-SQUARE TEST\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Chi Square Test",
+      "definition": "Syntax: lm(formula, data),where formula: presenting the relation between x and y.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Linear Regression",
+      "definition": "Regression analysis is a common statistical technique for establishing a relationship model between two variables.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Multiple Regression",
+      "definition": "The relationship between two or more independent variables and a single dependent variable is estimated using multiple linear regression.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Logistic Regression",
+      "definition": "In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Time Series Analysis",
+      "definition": "A Time Series is any metric that is measured at regular intervals.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "15.3",
+      "topic": "Chi Square Test",
+      "points": [
+        "Syntax: lm(formula, data),where formula: presenting the relation between x and y.",
+        "data: data on which the formula needs to be applied.",
+        "Five-point summary (Minimum, First Quartile, Median, Third Quartile, and Maximum).",
+        "You may observe that about 50% of residuals are in the range -1.713 to +1.725, which shows a good model fit."
+      ]
+    },
+    {
+      "section_num": "15.4",
+      "topic": "Linear Regression",
+      "points": [
+        "Regression analysis is a common statistical technique for establishing a relationship model between two variables.",
+        "One of these variables is known as a predictor variable, and its value is derived via experimentation.",
+        "The response variable, whose value is generated from the predictor variable, is the other variable.",
+        "A regression model that employs a straight line to explain the relationship between variables is known as linear regression."
+      ]
+    },
+    {
+      "section_num": "15.5",
+      "topic": "Multiple Regression",
+      "points": [
+        "The relationship between two or more independent variables and a single dependent variable is estimated using multiple linear regression.",
+        "When you need to know the following, you can utilize multiple linear regression.",
+        "● The degree to which two or more independent variables and one dependent variable are related (e.g.",
+        "how baking soda, baking temperature, and amount of flour added affect the taste of cake)."
+      ]
+    },
+    {
+      "section_num": "15.6",
+      "topic": "Logistic Regression",
+      "points": [
+        "In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.",
+        "When the dependent variable is binary (0/1, True/False, Yes/No), logistic regression is utilised.",
+        "In a binomial distribution, the logit function is utilised as a link function.",
+        "Binomial logistic regression is another name for logistic regression."
+      ]
+    },
+    {
+      "section_num": "15.7",
+      "topic": "Time Series Analysis",
+      "points": [
+        "A Time Series is any metric that is measured at regular intervals.",
+        "It entails deriving hidden insights from time-based data (years, days, hours, minutes) in order to make informed decisions.",
+        "When you have serially associated data, time series models are particularly beneficial.",
+        "Weather data, stock prices, industry projections, and so on are just a few examples."
+      ]
+    },
+    {
+      "section_num": "15.3",
+      "topic": "CHI-SQUARE TEST",
+      "points": [
+        "Syntax: lm(formula, data),where formula: presenting the relation between x and y.",
+        "data: data on which the formula needs to be applied.",
+        "Five-point summary (Minimum, First Quartile, Median, Third Quartile, and Maximum).",
+        "You may observe that about 50% of residuals are in the range -1.713 to +1.725, which shows a good model fit."
+      ]
+    }
+  ],
+  "formulas": [
+    "ax +b) and x (that is a in the equation y = ax +b).",
+    "y = a + b1X1 + b2X2 +...bnXn"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 15 Data Analysis and R\"]\n  M1[\"15.3 Chi Square Test\"]\n  Root --> M1\n  M2[\"15.4 Linear Regression\"]\n  Root --> M2\n  M3[\"15.5 Multiple Regression\"]\n  Root --> M3\n  M4[\"15.6 Logistic Regression\"]\n  Root --> M4\n  M5[\"15.7 Time Series Analysis\"]\n  Root --> M5\n  M6[\"15.3 CHI-SQUARE TEST\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Chi Square Test</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Syntax: lm(formula, data),where formula: presenting the relation between x and y.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Regression analysis is a common statistical technique for establishing a relationship model between two variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multiple Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The relationship between two or more independent variables and a single dependent variable is estimated using multiple linear regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Logistic Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Time Series Analysis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A Time Series is any metric that is measured at regular intervals.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.3 Chi Square Test</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Syntax: lm(formula, data),where formula: presenting the relation between x and y.</li>\n<li>data: data on which the formula needs to be applied.</li>\n<li>Five-point summary (Minimum, First Quartile, Median, Third Quartile, and Maximum).</li>\n<li>You may observe that about 50% of residuals are in the range -1.713 to +1.725, which shows a good model fit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.4 Linear Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Regression analysis is a common statistical technique for establishing a relationship model between two variables.</li>\n<li>One of these variables is known as a predictor variable, and its value is derived via experimentation.</li>\n<li>The response variable, whose value is generated from the predictor variable, is the other variable.</li>\n<li>A regression model that employs a straight line to explain the relationship between variables is known as linear regression.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.5 Multiple Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The relationship between two or more independent variables and a single dependent variable is estimated using multiple linear regression.</li>\n<li>When you need to know the following, you can utilize multiple linear regression.</li>\n<li>● The degree to which two or more independent variables and one dependent variable are related (e.g.</li>\n<li>how baking soda, baking temperature, and amount of flour added affect the taste of cake).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.6 Logistic Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In R Programming, logistic regression is a classification algorithm for determining the probability of event success and failure.</li>\n<li>When the dependent variable is binary (0/1, True/False, Yes/No), logistic regression is utilised.</li>\n<li>In a binomial distribution, the logit function is utilised as a link function.</li>\n<li>Binomial logistic regression is another name for logistic regression.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.7 Time Series Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A Time Series is any metric that is measured at regular intervals.</li>\n<li>It entails deriving hidden insights from time-based data (years, days, hours, minutes) in order to make informed decisions.</li>\n<li>When you have serially associated data, time series models are particularly beneficial.</li>\n<li>Weather data, stock prices, industry projections, and so on are just a few examples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.3 CHI-SQUARE TEST</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Syntax: lm(formula, data),where formula: presenting the relation between x and y.</li>\n<li>data: data on which the formula needs to be applied.</li>\n<li>Five-point summary (Minimum, First Quartile, Median, Third Quartile, and Maximum).</li>\n<li>You may observe that about 50% of residuals are in the range -1.713 to +1.725, which shows a good model fit.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>ax +b) and x (that is a in the equation y = ax +b).</code></div>\n<div class=\"formula-box\"><code>y = a + b1X1 + b2X2 +...bnXn</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">relationship model. Also known as residuals, as shown in Figure 15.3 5. The predict() function in R can be used to predict the weight of new person. A sample regression line and residual are shown in Figure Figure 15.3: An example of regression model and residual Below is the sample data with the observations between weight and height, which is experimentally collected and is input in the Figure 15.4</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-15_Data_Analysis_and_R.pdf')\">\n          📄 Read Original IGNOU PDF (12 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

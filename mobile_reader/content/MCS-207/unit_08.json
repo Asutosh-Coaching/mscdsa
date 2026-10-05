@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Structured Query Language (Part-II)",
+  "filename": "Unit-8_Structured_Query_Language_(Part-II).pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-8_Structured_Query_Language_(Part-II).pdf",
+  "total_pages": 20,
+  "word_count": 6353,
+  "est_read_time_minutes": 35,
+  "objectives": [
+    ". A good database system consists of normalised relations, which involve the",
+    "related problems of a database, which you have studied",
+    "query that provides data for the main query."
+  ],
+  "summary": "This unit introduces you to join queries and sub-queries. First, the unit explains the use of the JOIN statement in SQL. A JOIN statement uses two tables each of which has at least one attribute on the same domain. These attributes also called joining attributes, are used to join the tables using a conditional operator. In case, this conditional operator is equality, then the join operation is called the equi-join. In addition, if the joining attributes have the same name in both the tables, then only one of these attributes is included in the output. This type of join is called the Natural join. Outer joins are used when the records",
+  "flashcards": [
+    {
+      "question": "Find the list of items that have been purchased together. ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… …………………………………………………………………………………………………………",
+      "answer": "( i ) To find names of employees who are working on all projects.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is a subquery? When would you like to use the sub-query? ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… …………………………………………",
+      "answer": "In Structured Query Language (Part-II), this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Consider the following relations Schema given in question 2 above, and the following two SQL queries on this schema. What is the purpose of these two queries?",
+      "answer": "( i ) To find names of employees who are working on all projects.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Consider the following relations: EMPLOYEE (EmployeeNo, EmployeeName, EmployeePhone, EmployeeBasicPay) PROJECT(ProjectNo, ProjectName, ProjectDuration) EMPLOYEEPROJECT (EmployeeNo, ProjectNo, EmpRoleInProject)",
+      "answer": "In Structured Query Language (Part-II), this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Create a three-digit long odd number sequence. ………………………………………………………………………………………………………… …………………………………………………………………………………………………………",
+      "answer": "Find the name of the projects, which have the least duration. (Can you write a more efficient query in this case?",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are the advantages of creating indexes? ………………………………………………………………………………………………………… …………………………………………………………………………………………………………",
+      "answer": "( i ) To find names of employees who are working on all projects.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Sql Joins and how is it characterized?",
+      "answer": "The join is an important relational operation for queries that involve more than one relation.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Structured Query Language Par\"]\n  M1[\"8.2 SQL Joins\"]\n  Root --> M1\n  M1_1[\"8.2.1 Equi-join\"]\n  M1 --> M1_1\n  M1_2[\"8.2.2 Outer Join\"]\n  M1 --> M1_2\n  M1_3[\"8.2.3 Self-Join\"]\n  M1 --> M1_3\n  M2[\"8.3 Nested Queries\"]\n  Root --> M2\n  M2_1[\"8.3.1 Subqueries\"]\n  M2 --> M2_1\n  M2_2[\"8.3.2 Correlated Subqueries\"]\n  M2 --> M2_2\n  M3[\"8.4 Database Objects\"]\n  Root --> M3\n  M3_1[\"8.4.1 Views\"]\n  M3 --> M3_1\n  M3_2[\"8.4.2 Sequences\"]\n  M3 --> M3_2\n  M3_3[\"8.4.3 Indexes and Synonyms\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sql Joins</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The join is an important relational operation for queries that involve more than one relation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Equi-Join</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Equi-join, as the name suggests, has equality as the joining condition.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Outer Join</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us now issue the query of example 1 again on the present state of the database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Self-Join</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The following is an example of the self-join.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Nested Queries</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Nested queries are used when the output of a query may be useful for the execution of another query.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 SQL Joins</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The join is an important relational operation for queries that involve more than one relation.</li>\n<li>You have already gone through the relational join operation in an earlier unit, this unit explains the use of the join operation in SQL.</li>\n<li>Please also note that each OrderID is unique, and an order may contain several items.</li>\n<li>How will you find the name of items that have been ordered by a client, whose name is ABCD?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2.1 Equi-join</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Equi-join, as the name suggests, has equality as the joining condition.</li>\n<li>This means that the attributes that you are using to join would be checked for equality.</li>\n<li>Though in this present example, both the columns have the same name, i.e.</li>\n<li>ClentID, equi-join operation does not require these names to be the same.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2.2 Outer Join</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us now issue the query of example 1 again on the present state of the database.</li>\n<li>You will find the result of the query will still be the same, as shown in example 1.</li>\n<li>So, we get no information about C004, in the result of the query.</li>\n<li>If the objective of the query was to show the list of all the clients and their OrderIDs, irrespective of the fact, that they have given zero or more orders, then how would you extract such information?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2.3 Self-Join</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The following is an example of the self-join.</li>\n<li>You will find that pairs -Pen and Paper Sheet; and Pencil and Sharpener, have the same price.</li>\n<li>You compared the ItemPrice of each item with other ItemPrice.</li>\n<li>This inspection, in general, can be performed by join operation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Nested Queries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Nested queries are used when the output of a query may be useful for the execution of another query.</li>\n<li>Thus, you can create a main query nest a sub-query in any of the clauses of this main query.</li>\n<li>In this section, we discuss the basic type of nested queries and then a special type of nested subqueries called correlated subqueries.</li>\n<li>Sub-queries A sub-query is another SELECT statement that is used in the main SELECT statement.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.1 Subqueries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A sub-query is another SELECT statement that is used in the main SELECT statement.</li>\n<li>Please remember the following points about a subquery: • A sub-query is executed prior to the main query.</li>\n<li>Therefore, you can use the result of a sub-query in an expression of the main query.</li>\n<li>• A sub-query, on its execution, can return either a single value or a set of values or a relation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.2 Correlated Subqueries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Such subqueries are called Correlated subqueries and generally are time-consuming queries.</li>\n<li>These queries are explained with the help of the following example.</li>\n<li>Example 11: List the client id and name of the clients, who have ordered ItemID I01 and ItemID I03, as part of a single order.</li>\n<li>Since in these queries, the subquery is executed for each instance of the main query.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Database Objects</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Database objects are useful concepts in a database system.</li>\n<li>In this section, we discuss four different types of objects, which are defined in many database management systems.</li>\n<li>In addition, they can also be used for database query optimisation.</li>\n<li>Sequences are used to maintain an automatic sequence of numbers, which can be very useful for input of unique values in a column.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>(SELECT COUNT (*) FROM PROJECT));</code></div>\n<div class=\"formula-box\"><code>SELECT * FROM STUDENT;</code></div>\n<div class=\"formula-box\"><code>SELECT statement in the FROM, WHERE or HAVING clauses of the main SELECT statement.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces you to join queries and sub-queries. First, the unit explains the use of the JOIN statement in SQL. A JOIN statement uses two tables each of which has at least one attribute on the same domain. These attributes also called joining attributes, are used to join the tables using a conditional operator. In case, this conditional operator is equality, then the join operation is called the equi-join. In addition, if the joining attributes have the same name in both the tables, then only one of these attributes is included in the output. This type of join is called the Natural join. Outer joins are used when the records</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-8_Structured_Query_Language_(Part-II).pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Structured Query Language Par\"]\n  M1[\"8.2 SQL Joins\"]\n  Root --> M1\n  M1_1[\"8.2.1 Equi-join\"]\n  M1 --> M1_1\n  M1_2[\"8.2.2 Outer Join\"]\n  M1 --> M1_2\n  M1_3[\"8.2.3 Self-Join\"]\n  M1 --> M1_3\n  M2[\"8.3 Nested Queries\"]\n  Root --> M2\n  M2_1[\"8.3.1 Subqueries\"]\n  M2 --> M2_1\n  M2_2[\"8.3.2 Correlated Subqueries\"]\n  M2 --> M2_2\n  M3[\"8.4 Database Objects\"]\n  Root --> M3\n  M3_1[\"8.4.1 Views\"]\n  M3 --> M3_1\n  M3_2[\"8.4.2 Sequences\"]\n  M3 --> M3_2\n  M3_3[\"8.4.3 Indexes and Synonyms\"]\n  M3 --> M3_3",
+  "definitions": [
+    {
+      "term": "Sql Joins",
+      "definition": "The join is an important relational operation for queries that involve more than one relation.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Equi-Join",
+      "definition": "Equi-join, as the name suggests, has equality as the joining condition.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Outer Join",
+      "definition": "Let us now issue the query of example 1 again on the present state of the database.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Self-Join",
+      "definition": "The following is an example of the self-join.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Nested Queries",
+      "definition": "Nested queries are used when the output of a query may be useful for the execution of another query.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.2",
+      "topic": "SQL Joins",
+      "points": [
+        "The join is an important relational operation for queries that involve more than one relation.",
+        "You have already gone through the relational join operation in an earlier unit, this unit explains the use of the join operation in SQL.",
+        "Please also note that each OrderID is unique, and an order may contain several items.",
+        "How will you find the name of items that have been ordered by a client, whose name is ABCD?"
+      ]
+    },
+    {
+      "section_num": "8.2.1",
+      "topic": "Equi-join",
+      "points": [
+        "Equi-join, as the name suggests, has equality as the joining condition.",
+        "This means that the attributes that you are using to join would be checked for equality.",
+        "Though in this present example, both the columns have the same name, i.e.",
+        "ClentID, equi-join operation does not require these names to be the same."
+      ]
+    },
+    {
+      "section_num": "8.2.2",
+      "topic": "Outer Join",
+      "points": [
+        "Let us now issue the query of example 1 again on the present state of the database.",
+        "You will find the result of the query will still be the same, as shown in example 1.",
+        "So, we get no information about C004, in the result of the query.",
+        "If the objective of the query was to show the list of all the clients and their OrderIDs, irrespective of the fact, that they have given zero or more orders, then how would you extract such information?"
+      ]
+    },
+    {
+      "section_num": "8.2.3",
+      "topic": "Self-Join",
+      "points": [
+        "The following is an example of the self-join.",
+        "You will find that pairs -Pen and Paper Sheet; and Pencil and Sharpener, have the same price.",
+        "You compared the ItemPrice of each item with other ItemPrice.",
+        "This inspection, in general, can be performed by join operation."
+      ]
+    },
+    {
+      "section_num": "8.3",
+      "topic": "Nested Queries",
+      "points": [
+        "Nested queries are used when the output of a query may be useful for the execution of another query.",
+        "Thus, you can create a main query nest a sub-query in any of the clauses of this main query.",
+        "In this section, we discuss the basic type of nested queries and then a special type of nested subqueries called correlated subqueries.",
+        "Sub-queries A sub-query is another SELECT statement that is used in the main SELECT statement."
+      ]
+    },
+    {
+      "section_num": "8.3.1",
+      "topic": "Subqueries",
+      "points": [
+        "A sub-query is another SELECT statement that is used in the main SELECT statement.",
+        "Please remember the following points about a subquery: • A sub-query is executed prior to the main query.",
+        "Therefore, you can use the result of a sub-query in an expression of the main query.",
+        "• A sub-query, on its execution, can return either a single value or a set of values or a relation."
+      ]
+    },
+    {
+      "section_num": "8.3.2",
+      "topic": "Correlated Subqueries",
+      "points": [
+        "Such subqueries are called Correlated subqueries and generally are time-consuming queries.",
+        "These queries are explained with the help of the following example.",
+        "Example 11: List the client id and name of the clients, who have ordered ItemID I01 and ItemID I03, as part of a single order.",
+        "Since in these queries, the subquery is executed for each instance of the main query."
+      ]
+    },
+    {
+      "section_num": "8.4",
+      "topic": "Database Objects",
+      "points": [
+        "Database objects are useful concepts in a database system.",
+        "In this section, we discuss four different types of objects, which are defined in many database management systems.",
+        "In addition, they can also be used for database query optimisation.",
+        "Sequences are used to maintain an automatic sequence of numbers, which can be very useful for input of unique values in a column."
+      ]
+    }
+  ],
+  "formulas": [
+    "(SELECT COUNT (*) FROM PROJECT));",
+    "SELECT * FROM STUDENT;",
+    "SELECT statement in the FROM, WHERE or HAVING clauses of the main SELECT statement."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Structured Query Language Par\"]\n  M1[\"8.2 SQL Joins\"]\n  Root --> M1\n  M1_1[\"8.2.1 Equi-join\"]\n  M1 --> M1_1\n  M1_2[\"8.2.2 Outer Join\"]\n  M1 --> M1_2\n  M1_3[\"8.2.3 Self-Join\"]\n  M1 --> M1_3\n  M2[\"8.3 Nested Queries\"]\n  Root --> M2\n  M2_1[\"8.3.1 Subqueries\"]\n  M2 --> M2_1\n  M2_2[\"8.3.2 Correlated Subqueries\"]\n  M2 --> M2_2\n  M3[\"8.4 Database Objects\"]\n  Root --> M3\n  M3_1[\"8.4.1 Views\"]\n  M3 --> M3_1\n  M3_2[\"8.4.2 Sequences\"]\n  M3 --> M3_2\n  M3_3[\"8.4.3 Indexes and Synonyms\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sql Joins</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The join is an important relational operation for queries that involve more than one relation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Equi-Join</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Equi-join, as the name suggests, has equality as the joining condition.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Outer Join</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us now issue the query of example 1 again on the present state of the database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Self-Join</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The following is an example of the self-join.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Nested Queries</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Nested queries are used when the output of a query may be useful for the execution of another query.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 SQL Joins</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The join is an important relational operation for queries that involve more than one relation.</li>\n<li>You have already gone through the relational join operation in an earlier unit, this unit explains the use of the join operation in SQL.</li>\n<li>Please also note that each OrderID is unique, and an order may contain several items.</li>\n<li>How will you find the name of items that have been ordered by a client, whose name is ABCD?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2.1 Equi-join</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Equi-join, as the name suggests, has equality as the joining condition.</li>\n<li>This means that the attributes that you are using to join would be checked for equality.</li>\n<li>Though in this present example, both the columns have the same name, i.e.</li>\n<li>ClentID, equi-join operation does not require these names to be the same.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2.2 Outer Join</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us now issue the query of example 1 again on the present state of the database.</li>\n<li>You will find the result of the query will still be the same, as shown in example 1.</li>\n<li>So, we get no information about C004, in the result of the query.</li>\n<li>If the objective of the query was to show the list of all the clients and their OrderIDs, irrespective of the fact, that they have given zero or more orders, then how would you extract such information?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2.3 Self-Join</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The following is an example of the self-join.</li>\n<li>You will find that pairs -Pen and Paper Sheet; and Pencil and Sharpener, have the same price.</li>\n<li>You compared the ItemPrice of each item with other ItemPrice.</li>\n<li>This inspection, in general, can be performed by join operation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Nested Queries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Nested queries are used when the output of a query may be useful for the execution of another query.</li>\n<li>Thus, you can create a main query nest a sub-query in any of the clauses of this main query.</li>\n<li>In this section, we discuss the basic type of nested queries and then a special type of nested subqueries called correlated subqueries.</li>\n<li>Sub-queries A sub-query is another SELECT statement that is used in the main SELECT statement.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.1 Subqueries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A sub-query is another SELECT statement that is used in the main SELECT statement.</li>\n<li>Please remember the following points about a subquery: • A sub-query is executed prior to the main query.</li>\n<li>Therefore, you can use the result of a sub-query in an expression of the main query.</li>\n<li>• A sub-query, on its execution, can return either a single value or a set of values or a relation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.2 Correlated Subqueries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Such subqueries are called Correlated subqueries and generally are time-consuming queries.</li>\n<li>These queries are explained with the help of the following example.</li>\n<li>Example 11: List the client id and name of the clients, who have ordered ItemID I01 and ItemID I03, as part of a single order.</li>\n<li>Since in these queries, the subquery is executed for each instance of the main query.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Database Objects</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Database objects are useful concepts in a database system.</li>\n<li>In this section, we discuss four different types of objects, which are defined in many database management systems.</li>\n<li>In addition, they can also be used for database query optimisation.</li>\n<li>Sequences are used to maintain an automatic sequence of numbers, which can be very useful for input of unique values in a column.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>(SELECT COUNT (*) FROM PROJECT));</code></div>\n<div class=\"formula-box\"><code>SELECT * FROM STUDENT;</code></div>\n<div class=\"formula-box\"><code>SELECT statement in the FROM, WHERE or HAVING clauses of the main SELECT statement.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces you to join queries and sub-queries. First, the unit explains the use of the JOIN statement in SQL. A JOIN statement uses two tables each of which has at least one attribute on the same domain. These attributes also called joining attributes, are used to join the tables using a conditional operator. In case, this conditional operator is equality, then the join operation is called the equi-join. In addition, if the joining attributes have the same name in both the tables, then only one of these attributes is included in the output. This type of join is called the Natural join. Outer joins are used when the records</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-8_Structured_Query_Language_(Part-II).pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

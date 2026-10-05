@@ -1,0 +1,157 @@
+{
+  "course_code": "MCS-067",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Plotting and Visualisation using Python",
+  "filename": "Unit-6_Plotting_and_Visualisation_using_Python.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-6_Plotting_and_Visualisation_using_Python.pdf",
+  "total_pages": 25,
+  "word_count": 7377,
+  "est_read_time_minutes": 41,
+  "objectives": [
+    "labels and chart title. The unit also"
+  ],
+  "summary": "This unit presents a brief introduction to plotting and visualisation using Python programming language. It has covered the following main points: • It highlighted the need of data visualisation. It explained the use of matplotlib library of Python for plotting. • The coding for creating charts with titles, axis-labels, legends, annotations, etc. has been discussed.",
+  "flashcards": [
+    {
+      "question": "List the set of commands which are essential to make a bar chart.",
+      "answer": "In Plotting and Visualisation using Python, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "How can you show more than one subplot in a single figure or plot?",
+      "answer": "# plot the bar chart plt.show",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "How can you make a plot with a title and axis labels?",
+      "answer": "In Plotting and Visualisation using Python, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "How can you change line colour, line marker, ticks and legends in a plot?",
+      "answer": "Key Principle: Colours are useful in highlighting information in a graph where you want to draw the attention of a person.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are annotations in a graph? How can you create them?",
+      "answer": "# plot the bar chart plt.show",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "List the file formats in which you can save a plot. What function is used for this purpose?",
+      "answer": "In Plotting and Visualisation using Python, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Data Visualisation And Python and how is it characterized?",
+      "answer": "As discussed in previous units, data wrangling is used to prepare data for analysis.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Plotting and Visualisation us\"]\n  M1[\"6.2 Data Visualisation and Python\"]\n  Root --> M1\n  M1_1[\"6.2.1 Figures and Subplots\"]\n  M1 --> M1_1\n  M2[\"6.3 Customisation of Chart Elements \"]\n  Root --> M2\n  M2_1[\"6.3.1 Colours, Markers, Line Styles,\"]\n  M2 --> M2_1\n  M2_2[\"6.3.2 Annotations\"]\n  M2 --> M2_2\n  M3[\"6.4 Saving Plots to a File\"]\n  Root --> M3\n  M4[\"6.5 Use of Configuration in Matplotl\"]\n  Root --> M4\n  M5[\"6.6 Plotting with pandas and seaborn\"]\n  Root --> M5\n  M6[\"6.7 Making Different Types of Plots\"]\n  Root --> M6\n  M6_1[\"6.7.1 Line Plots\"]\n  M6 --> M6_1\n  M6_2[\"6.7.2 Bar Plots\"]\n  M6 --> M6_2\n  M6_3[\"6.7.3 Histograms and Density Plots\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Visualisation And Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in previous units, data wrangling is used to prepare data for analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Figures And Subplots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In a single canvas, you can create several sub-plots.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Annotations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Annotations can be used to highlight some of the key points of a graph.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Data Visualisation and Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in previous units, data wrangling is used to prepare data for analysis.</li>\n<li>However, before you start analysing data, you may like to represent the data in a graphical form that is easy to interpret.</li>\n<li>Visualisation helps to communicate information to the users more effectively, provided the correct form of visualisation is used.</li>\n<li>The matplotlib library in Python, an open-source library, allows you to create various types of plots, including line graphs, pie charts, scatter plots, and more.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2.1 Figures and Subplots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In a single canvas, you can create several sub-plots.</li>\n<li>We demonstrate this with the help of an example.</li>\n<li>ii) A bar chart of Department and Total Salary iii) A pie chart on Specialisation and Total Salary and iv) A line chart on Department and Average of YearsWorking.</li>\n<li>subplot [1, 0].pie(slicesofsumsalary , labels = labelslist, ) subplot [1, 0].set_title(\"Pie Chart of Total Salary for Different Specialisations\") # Part (e): Bottom-Right: A line chart on Department and Average of YearsWorking.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Customisation of Chart Elements and Layout</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data visualisation is an art of representing data in a form that can help interpret the basic characteristics of data.</li>\n<li>Therefore, a graph should have proper layout, labels, colour, etc.</li>\n<li>This section explains how the matplotlib library can be used to add different features to a graph.</li>\n<li>Colours, Markers, Line Styles, Ticks and Legends Colours are useful in highlighting information in a graph where you want to draw the attention of a person.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.1 Colours, Markers, Line Styles, Ticks and Legends</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Colours are useful in highlighting information in a graph where you want to draw the attention of a person.</li>\n<li>Markers, on the other hand, point to an exact location in a graph.</li>\n<li>And line styles can be used to distinguish the importance of different types of lines in a graph.</li>\n<li>Ticks are useful guides if your scale of display is very large.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.2 Annotations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Annotations can be used to highlight some of the key points of a graph.</li>\n<li>The main purpose is to draw attention to certain important aspects of the graphs.</li>\n<li>Annotations help in increasing the clarity of information being represented by graphs.</li>\n<li>There are several ways of annotating a graph, such as you can add an arrow or a label, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Saving Plots to a File</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>They are drawn to represent certain characteristics of data so that users and decision makers can interpret them easily.</li>\n<li>Therefore, plots are to be shared with decision makers and other stakeholders.</li>\n<li>This requires graphs to be saved in a format such that they can be included in different reports.</li>\n<li>Part (a) creates the dataframe named Employee_data 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Use of Configuration in Matplotlib</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>You can set different parameters in this file using this dictionary.</li>\n<li>plt.rcParams['axes.labelsize'] = 14 Alternatively, you can use a function plt.rc() to change parameters.</li>\n<li>For example, one of the popular style is ggplot.</li>\n<li>A detailed discussion on this topic is beyond the scope of this unit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Plotting with pandas and seaborn</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In addition to matplotlib library, you can plot with pandas and seaborn libraries.</li>\n<li>The following are some of the functions that you can use to make plots.</li>\n<li>The pandas library has a plot() function that can be used to plot a graph and seaborn library can be used for advanced statistical plots.</li>\n<li>Part (a) creates the dataframe named Employee_data.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>sns.regplot(x=revenue_list, y=expense_list)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit presents a brief introduction to plotting and visualisation using Python programming language. It has covered the following main points: • It highlighted the need of data visualisation. It explained the use of matplotlib library of Python for plotting. • The coding for creating charts with titles, axis-labels, legends, annotations, etc. has been discussed.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-6_Plotting_and_Visualisation_using_Python.pdf')\">\n          📄 Read Original IGNOU PDF (25 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Plotting and Visualisation us\"]\n  M1[\"6.2 Data Visualisation and Python\"]\n  Root --> M1\n  M1_1[\"6.2.1 Figures and Subplots\"]\n  M1 --> M1_1\n  M2[\"6.3 Customisation of Chart Elements \"]\n  Root --> M2\n  M2_1[\"6.3.1 Colours, Markers, Line Styles,\"]\n  M2 --> M2_1\n  M2_2[\"6.3.2 Annotations\"]\n  M2 --> M2_2\n  M3[\"6.4 Saving Plots to a File\"]\n  Root --> M3\n  M4[\"6.5 Use of Configuration in Matplotl\"]\n  Root --> M4\n  M5[\"6.6 Plotting with pandas and seaborn\"]\n  Root --> M5\n  M6[\"6.7 Making Different Types of Plots\"]\n  Root --> M6\n  M6_1[\"6.7.1 Line Plots\"]\n  M6 --> M6_1\n  M6_2[\"6.7.2 Bar Plots\"]\n  M6 --> M6_2\n  M6_3[\"6.7.3 Histograms and Density Plots\"]\n  M6 --> M6_3",
+  "definitions": [
+    {
+      "term": "Data Visualisation And Python",
+      "definition": "As discussed in previous units, data wrangling is used to prepare data for analysis.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Figures And Subplots",
+      "definition": "In a single canvas, you can create several sub-plots.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Annotations",
+      "definition": "Annotations can be used to highlight some of the key points of a graph.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.2",
+      "topic": "Data Visualisation and Python",
+      "points": [
+        "As discussed in previous units, data wrangling is used to prepare data for analysis.",
+        "However, before you start analysing data, you may like to represent the data in a graphical form that is easy to interpret.",
+        "Visualisation helps to communicate information to the users more effectively, provided the correct form of visualisation is used.",
+        "The matplotlib library in Python, an open-source library, allows you to create various types of plots, including line graphs, pie charts, scatter plots, and more."
+      ]
+    },
+    {
+      "section_num": "6.2.1",
+      "topic": "Figures and Subplots",
+      "points": [
+        "In a single canvas, you can create several sub-plots.",
+        "We demonstrate this with the help of an example.",
+        "ii) A bar chart of Department and Total Salary iii) A pie chart on Specialisation and Total Salary and iv) A line chart on Department and Average of YearsWorking.",
+        "subplot [1, 0].pie(slicesofsumsalary , labels = labelslist, ) subplot [1, 0].set_title(\"Pie Chart of Total Salary for Different Specialisations\") # Part (e): Bottom-Right: A line chart on Department and Average of YearsWorking."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Customisation of Chart Elements and Layout",
+      "points": [
+        "Data visualisation is an art of representing data in a form that can help interpret the basic characteristics of data.",
+        "Therefore, a graph should have proper layout, labels, colour, etc.",
+        "This section explains how the matplotlib library can be used to add different features to a graph.",
+        "Colours, Markers, Line Styles, Ticks and Legends Colours are useful in highlighting information in a graph where you want to draw the attention of a person."
+      ]
+    },
+    {
+      "section_num": "6.3.1",
+      "topic": "Colours, Markers, Line Styles, Ticks and Legends",
+      "points": [
+        "Colours are useful in highlighting information in a graph where you want to draw the attention of a person.",
+        "Markers, on the other hand, point to an exact location in a graph.",
+        "And line styles can be used to distinguish the importance of different types of lines in a graph.",
+        "Ticks are useful guides if your scale of display is very large."
+      ]
+    },
+    {
+      "section_num": "6.3.2",
+      "topic": "Annotations",
+      "points": [
+        "Annotations can be used to highlight some of the key points of a graph.",
+        "The main purpose is to draw attention to certain important aspects of the graphs.",
+        "Annotations help in increasing the clarity of information being represented by graphs.",
+        "There are several ways of annotating a graph, such as you can add an arrow or a label, etc."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Saving Plots to a File",
+      "points": [
+        "They are drawn to represent certain characteristics of data so that users and decision makers can interpret them easily.",
+        "Therefore, plots are to be shared with decision makers and other stakeholders.",
+        "This requires graphs to be saved in a format such that they can be included in different reports.",
+        "Part (a) creates the dataframe named Employee_data 2."
+      ]
+    },
+    {
+      "section_num": "6.5",
+      "topic": "Use of Configuration in Matplotlib",
+      "points": [
+        "You can set different parameters in this file using this dictionary.",
+        "plt.rcParams['axes.labelsize'] = 14 Alternatively, you can use a function plt.rc() to change parameters.",
+        "For example, one of the popular style is ggplot.",
+        "A detailed discussion on this topic is beyond the scope of this unit."
+      ]
+    },
+    {
+      "section_num": "6.6",
+      "topic": "Plotting with pandas and seaborn",
+      "points": [
+        "In addition to matplotlib library, you can plot with pandas and seaborn libraries.",
+        "The following are some of the functions that you can use to make plots.",
+        "The pandas library has a plot() function that can be used to plot a graph and seaborn library can be used for advanced statistical plots.",
+        "Part (a) creates the dataframe named Employee_data."
+      ]
+    }
+  ],
+  "formulas": [
+    "sns.regplot(x=revenue_list, y=expense_list)"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Plotting and Visualisation us\"]\n  M1[\"6.2 Data Visualisation and Python\"]\n  Root --> M1\n  M1_1[\"6.2.1 Figures and Subplots\"]\n  M1 --> M1_1\n  M2[\"6.3 Customisation of Chart Elements \"]\n  Root --> M2\n  M2_1[\"6.3.1 Colours, Markers, Line Styles,\"]\n  M2 --> M2_1\n  M2_2[\"6.3.2 Annotations\"]\n  M2 --> M2_2\n  M3[\"6.4 Saving Plots to a File\"]\n  Root --> M3\n  M4[\"6.5 Use of Configuration in Matplotl\"]\n  Root --> M4\n  M5[\"6.6 Plotting with pandas and seaborn\"]\n  Root --> M5\n  M6[\"6.7 Making Different Types of Plots\"]\n  Root --> M6\n  M6_1[\"6.7.1 Line Plots\"]\n  M6 --> M6_1\n  M6_2[\"6.7.2 Bar Plots\"]\n  M6 --> M6_2\n  M6_3[\"6.7.3 Histograms and Density Plots\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Visualisation And Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in previous units, data wrangling is used to prepare data for analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Figures And Subplots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In a single canvas, you can create several sub-plots.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Annotations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Annotations can be used to highlight some of the key points of a graph.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Data Visualisation and Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in previous units, data wrangling is used to prepare data for analysis.</li>\n<li>However, before you start analysing data, you may like to represent the data in a graphical form that is easy to interpret.</li>\n<li>Visualisation helps to communicate information to the users more effectively, provided the correct form of visualisation is used.</li>\n<li>The matplotlib library in Python, an open-source library, allows you to create various types of plots, including line graphs, pie charts, scatter plots, and more.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2.1 Figures and Subplots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In a single canvas, you can create several sub-plots.</li>\n<li>We demonstrate this with the help of an example.</li>\n<li>ii) A bar chart of Department and Total Salary iii) A pie chart on Specialisation and Total Salary and iv) A line chart on Department and Average of YearsWorking.</li>\n<li>subplot [1, 0].pie(slicesofsumsalary , labels = labelslist, ) subplot [1, 0].set_title(\"Pie Chart of Total Salary for Different Specialisations\") # Part (e): Bottom-Right: A line chart on Department and Average of YearsWorking.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Customisation of Chart Elements and Layout</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data visualisation is an art of representing data in a form that can help interpret the basic characteristics of data.</li>\n<li>Therefore, a graph should have proper layout, labels, colour, etc.</li>\n<li>This section explains how the matplotlib library can be used to add different features to a graph.</li>\n<li>Colours, Markers, Line Styles, Ticks and Legends Colours are useful in highlighting information in a graph where you want to draw the attention of a person.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.1 Colours, Markers, Line Styles, Ticks and Legends</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Colours are useful in highlighting information in a graph where you want to draw the attention of a person.</li>\n<li>Markers, on the other hand, point to an exact location in a graph.</li>\n<li>And line styles can be used to distinguish the importance of different types of lines in a graph.</li>\n<li>Ticks are useful guides if your scale of display is very large.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.2 Annotations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Annotations can be used to highlight some of the key points of a graph.</li>\n<li>The main purpose is to draw attention to certain important aspects of the graphs.</li>\n<li>Annotations help in increasing the clarity of information being represented by graphs.</li>\n<li>There are several ways of annotating a graph, such as you can add an arrow or a label, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Saving Plots to a File</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>They are drawn to represent certain characteristics of data so that users and decision makers can interpret them easily.</li>\n<li>Therefore, plots are to be shared with decision makers and other stakeholders.</li>\n<li>This requires graphs to be saved in a format such that they can be included in different reports.</li>\n<li>Part (a) creates the dataframe named Employee_data 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Use of Configuration in Matplotlib</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>You can set different parameters in this file using this dictionary.</li>\n<li>plt.rcParams['axes.labelsize'] = 14 Alternatively, you can use a function plt.rc() to change parameters.</li>\n<li>For example, one of the popular style is ggplot.</li>\n<li>A detailed discussion on this topic is beyond the scope of this unit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Plotting with pandas and seaborn</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In addition to matplotlib library, you can plot with pandas and seaborn libraries.</li>\n<li>The following are some of the functions that you can use to make plots.</li>\n<li>The pandas library has a plot() function that can be used to plot a graph and seaborn library can be used for advanced statistical plots.</li>\n<li>Part (a) creates the dataframe named Employee_data.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>sns.regplot(x=revenue_list, y=expense_list)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit presents a brief introduction to plotting and visualisation using Python programming language. It has covered the following main points: • It highlighted the need of data visualisation. It explained the use of matplotlib library of Python for plotting. • The coding for creating charts with titles, axis-labels, legends, annotations, etc. has been discussed.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-6_Plotting_and_Visualisation_using_Python.pdf')\">\n          📄 Read Original IGNOU PDF (25 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

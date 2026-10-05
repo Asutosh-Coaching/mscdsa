@@ -1,0 +1,163 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_13",
+  "unit_num": "Unit 13",
+  "title": "Basics of Programming",
+  "filename": "Unit-13_Basics_of_Programming.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-13_Basics_of_Programming.pdf",
+  "total_pages": 20,
+  "word_count": 3439,
+  "est_read_time_minutes": 19,
+  "objectives": [
+    "making structure and the loops and functions. R’s basic data structures"
+  ],
+  "summary": "of the dataframe can be fetched using summary() function. Extracting specific data from the data frame by specifying the column name. Expanding the data frame by Adding additional columns. To add more rows permanently to an existing data frame, we need to bring in the new rows in the same structure as the existing data frame and use 1. Why are Matrix data structures not used that often?",
+  "flashcards": [
+    {
+      "question": "What are various Operators in R? …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: Every variable in R has an associated data type, which is known as the reserved memory.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What does %*% operator do? ……………………………………………………………………………. ………………………………………………………………………………",
+      "answer": "Key Principle: Every variable in R has an associated data type, which is known as the reserved memory.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Is .5Var a valid variable name? Give reason in support of your answer. ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "Key Principle: Every variable in R has an associated data type, which is known as the reserved memory.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Why are Matrix data structures not used that often? ………………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the different data structures in R? Briefly explain about them. ………………………………………………………………………………… …………………………………………………………………………………",
+      "answer": "Key Principle: R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is the function used for adding datasets in R? ………………………………………………………………………………… …………………………………………………………………………………",
+      "answer": "Key Principle: In the case of loops, the statements are executed sequentially.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is A Loop and how is it characterized?",
+      "answer": "A Loop a situation where we need to execute a block of code several times.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Basics of Programming\"]\n  M1[\"13.2 Environment of R\"]\n  Root --> M1\n  M2[\"13.3 Data types, Variables, Operator\"]\n  Root --> M2\n  M3[\"13.4 Decision Making, Loops, Functio\"]\n  Root --> M3\n  M4[\"13.5 Data Structures in R\"]\n  Root --> M4\n  M4_1[\"13.5.1 Strings and Vectors\"]\n  M4 --> M4_1\n  M4_2[\"13.5.2 Lists\"]\n  M4 --> M4_2\n  M4_3[\"13.5.3 Matrices, Arrays and Frames\"]\n  M4 --> M4_3\n  M5[\"13.2 ENVIRONMENT OF R\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Loop</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Loop a situation where we need to execute a block of code several times.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Function</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Function a set of instructions that is required to execute a command to achieve a task in R.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Environment Of R</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Decision Making, Loops, Functions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the case of loops, the statements are executed sequentially.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Structures In R</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Environment of R</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in basics of programming.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Data types, Variables, Operators, Factors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Every variable in R has an associated data type, which is known as the reserved memory.</li>\n<li>This reserved memory is needed for storing the values.</li>\n<li>Whenever a number is stored in R, it gets converted into a decimal type with at least 2 decimal points or the “double” value.</li>\n<li>So, if you enter a normal integer value also, for example 10, then the R interpreter will convert it into double i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Decision Making, Loops, Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the case of loops, the statements are executed sequentially.</li>\n<li>Loop Type and Description: ● Repeat loop: Executes sequence of statements multiple times.</li>\n<li>● While loop: Repeat a given statement while the given condition is true, executes before executing the loop body.</li>\n<li>Syntax: Example: If condition is false Conditional code Condition If condition is true Basic of R Programming 15 ● For loop: Like while statement, executes the test condition at the end of the loop body.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Data Structures in R</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.</li>\n<li>Strings and Vectors Vectors: A vector is a one-dimensional array of data elements that have the same data type.</li>\n<li>The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.</li>\n<li>Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5.1 Strings and Vectors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Vectors: A vector is a one-dimensional array of data elements that have the same data type.</li>\n<li>The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.</li>\n<li>Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.</li>\n<li>Internally R stores every string within double quotes, even when you create them with a single quote.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5.2 Lists</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Lists are the objects in R that contain different types of objects within itself like number, string, vectors or even another list, matrix or any function as its element It is created by calling list() function.</li>\n<li>Matrices, Arrays and Frames Matrices are R objects which are arranged in 2-D layout.</li>\n<li>Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.</li>\n<li>Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5.3 Matrices, Arrays and Frames</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Matrices are R objects which are arranged in 2-D layout.</li>\n<li>Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.</li>\n<li>Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division.</li>\n<li>You may please note that matrix division is not defined mathematically, but in R each element of a matrix is divided by the corresponding element of another matrix.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 ENVIRONMENT OF R</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in basics of programming.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rules Applied in String Construction</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the dataframe can be fetched using summary() function. Extracting specific data from the data frame by specifying the column name. Expanding the data frame by Adding additional columns. To add more rows permanently to an existing data frame, we need to bring in the new rows in the same structure as the existing data frame and use 1. Why are Matrix data structures not used that often?</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-13_Basics_of_Programming.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 13 Basics of Programming\"]\n  M1[\"13.2 Environment of R\"]\n  Root --> M1\n  M2[\"13.3 Data types, Variables, Operator\"]\n  Root --> M2\n  M3[\"13.4 Decision Making, Loops, Functio\"]\n  Root --> M3\n  M4[\"13.5 Data Structures in R\"]\n  Root --> M4\n  M4_1[\"13.5.1 Strings and Vectors\"]\n  M4 --> M4_1\n  M4_2[\"13.5.2 Lists\"]\n  M4 --> M4_2\n  M4_3[\"13.5.3 Matrices, Arrays and Frames\"]\n  M4 --> M4_3\n  M5[\"13.2 ENVIRONMENT OF R\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "A Loop",
+      "definition": "A Loop a situation where we need to execute a block of code several times.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "A Function",
+      "definition": "A Function a set of instructions that is required to execute a command to achieve a task in R.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Environment Of R",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Decision Making, Loops, Functions",
+      "definition": "In the case of loops, the statements are executed sequentially.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Structures In R",
+      "definition": "R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "13.2",
+      "topic": "Environment of R",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in basics of programming."
+      ]
+    },
+    {
+      "section_num": "13.3",
+      "topic": "Data types, Variables, Operators, Factors",
+      "points": [
+        "Every variable in R has an associated data type, which is known as the reserved memory.",
+        "This reserved memory is needed for storing the values.",
+        "Whenever a number is stored in R, it gets converted into a decimal type with at least 2 decimal points or the “double” value.",
+        "So, if you enter a normal integer value also, for example 10, then the R interpreter will convert it into double i.e."
+      ]
+    },
+    {
+      "section_num": "13.4",
+      "topic": "Decision Making, Loops, Functions",
+      "points": [
+        "In the case of loops, the statements are executed sequentially.",
+        "Loop Type and Description: ● Repeat loop: Executes sequence of statements multiple times.",
+        "● While loop: Repeat a given statement while the given condition is true, executes before executing the loop body.",
+        "Syntax: Example: If condition is false Conditional code Condition If condition is true Basic of R Programming 15 ● For loop: Like while statement, executes the test condition at the end of the loop body."
+      ]
+    },
+    {
+      "section_num": "13.5",
+      "topic": "Data Structures in R",
+      "points": [
+        "R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.",
+        "Strings and Vectors Vectors: A vector is a one-dimensional array of data elements that have the same data type.",
+        "The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.",
+        "Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string."
+      ]
+    },
+    {
+      "section_num": "13.5.1",
+      "topic": "Strings and Vectors",
+      "points": [
+        "Vectors: A vector is a one-dimensional array of data elements that have the same data type.",
+        "The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.",
+        "Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.",
+        "Internally R stores every string within double quotes, even when you create them with a single quote."
+      ]
+    },
+    {
+      "section_num": "13.5.2",
+      "topic": "Lists",
+      "points": [
+        "Lists are the objects in R that contain different types of objects within itself like number, string, vectors or even another list, matrix or any function as its element It is created by calling list() function.",
+        "Matrices, Arrays and Frames Matrices are R objects which are arranged in 2-D layout.",
+        "Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.",
+        "Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division."
+      ]
+    },
+    {
+      "section_num": "13.5.3",
+      "topic": "Matrices, Arrays and Frames",
+      "points": [
+        "Matrices are R objects which are arranged in 2-D layout.",
+        "Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.",
+        "Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division.",
+        "You may please note that matrix division is not defined mathematically, but in R each element of a matrix is divided by the corresponding element of another matrix."
+      ]
+    },
+    {
+      "section_num": "13.2",
+      "topic": "ENVIRONMENT OF R",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in basics of programming."
+      ]
+    }
+  ],
+  "formulas": [
+    "Rules Applied in String Construction"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Basics of Programming\"]\n  M1[\"13.2 Environment of R\"]\n  Root --> M1\n  M2[\"13.3 Data types, Variables, Operator\"]\n  Root --> M2\n  M3[\"13.4 Decision Making, Loops, Functio\"]\n  Root --> M3\n  M4[\"13.5 Data Structures in R\"]\n  Root --> M4\n  M4_1[\"13.5.1 Strings and Vectors\"]\n  M4 --> M4_1\n  M4_2[\"13.5.2 Lists\"]\n  M4 --> M4_2\n  M4_3[\"13.5.3 Matrices, Arrays and Frames\"]\n  M4 --> M4_3\n  M5[\"13.2 ENVIRONMENT OF R\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Loop</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Loop a situation where we need to execute a block of code several times.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Function</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Function a set of instructions that is required to execute a command to achieve a task in R.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Environment Of R</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Decision Making, Loops, Functions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the case of loops, the statements are executed sequentially.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Structures In R</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Environment of R</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in basics of programming.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Data types, Variables, Operators, Factors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Every variable in R has an associated data type, which is known as the reserved memory.</li>\n<li>This reserved memory is needed for storing the values.</li>\n<li>Whenever a number is stored in R, it gets converted into a decimal type with at least 2 decimal points or the “double” value.</li>\n<li>So, if you enter a normal integer value also, for example 10, then the R interpreter will convert it into double i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Decision Making, Loops, Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the case of loops, the statements are executed sequentially.</li>\n<li>Loop Type and Description: ● Repeat loop: Executes sequence of statements multiple times.</li>\n<li>● While loop: Repeat a given statement while the given condition is true, executes before executing the loop body.</li>\n<li>Syntax: Example: If condition is false Conditional code Condition If condition is true Basic of R Programming 15 ● For loop: Like while statement, executes the test condition at the end of the loop body.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Data Structures in R</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>R’s basic data structures include Vector, Strings, Lists, Frames, Matrices and Arrays.</li>\n<li>Strings and Vectors Vectors: A vector is a one-dimensional array of data elements that have the same data type.</li>\n<li>The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.</li>\n<li>Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5.1 Strings and Vectors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Vectors: A vector is a one-dimensional array of data elements that have the same data type.</li>\n<li>The most basic data structures are the Vectors, which supports logical, integer, double, complex, character data types.</li>\n<li>Strings: Any value written within a pair of single quotes or double quotes in R is treated as a string.</li>\n<li>Internally R stores every string within double quotes, even when you create them with a single quote.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5.2 Lists</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Lists are the objects in R that contain different types of objects within itself like number, string, vectors or even another list, matrix or any function as its element It is created by calling list() function.</li>\n<li>Matrices, Arrays and Frames Matrices are R objects which are arranged in 2-D layout.</li>\n<li>Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.</li>\n<li>Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5.3 Matrices, Arrays and Frames</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Matrices are R objects which are arranged in 2-D layout.</li>\n<li>Accessing the elements of the matrix: Elements of a matrix can be accessed by specifying the row and column number.</li>\n<li>Matrix Manipulations: Mathematical operations can be performed on the matrix like addition, subtraction, multiplication and division.</li>\n<li>You may please note that matrix division is not defined mathematically, but in R each element of a matrix is divided by the corresponding element of another matrix.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 ENVIRONMENT OF R</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of environment of r.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in basics of programming.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rules Applied in String Construction</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the dataframe can be fetched using summary() function. Extracting specific data from the data frame by specifying the column name. Expanding the data frame by Adding additional columns. To add more rows permanently to an existing data frame, we need to bring in the new rows in the same structure as the existing data frame and use 1. Why are Matrix data structures not used that often?</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-13_Basics_of_Programming.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

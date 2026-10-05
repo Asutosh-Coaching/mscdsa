@@ -1,0 +1,160 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_02",
+  "unit_num": "Unit 2",
+  "title": "Object Oriented Programming",
+  "filename": "Unit-2_Object_Oriented_Programming.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-2_Object_Oriented_Programming.pdf",
+  "total_pages": 18,
+  "word_count": 4828,
+  "est_read_time_minutes": 27,
+  "objectives": [
+    "Orientation"
+  ],
+  "summary": "Object-oriented programming paradigm provides complete insulation from internal architecture and operations. It provides a very high level of abstraction in problem solving. Programs are designed with a focus on data around which the code is built and this complete entity is known as object. This is a more realistic way of representing the world in general. Python as Object-Oriented Programming Language is to write structured programs by creating \"objects,\" that encapsulate data or attributes",
+  "flashcards": [
+    {
+      "question": "How can one concatenate two lists in Python? Q",
+      "answer": "Key Principle: A list in Python is a built-in dynamic sized array that automatically grows and shrinks.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is pass in Python coding? Q",
+      "answer": "Key Principle: An Object is an instance of a Class in Python as is the case with other object oriented programming languages.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are Modules and Packages in Python? Q",
+      "answer": "In Object Oriented Programming, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is the difference between a shallow copy and a deep copy? Q",
+      "answer": "In Object Oriented Programming, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Does Python support multiple Inheritance? Q",
+      "answer": "Key Principle: An Object is an instance of a Class in Python as is the case with other object oriented programming languages.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is the significance of Polymorphism in Python? Q",
+      "answer": "In Object Oriented Programming, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is The Newly Created Class and how is it characterized?",
+      "answer": "The Newly Created Class the subclass also referred to as child or derived class.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Object Oriented Programming\"]\n  M1[\"2.2 Principles and Patterns\"]\n  Root --> M1\n  M2[\"2.3 Python Objects\"]\n  Root --> M2\n  M3[\"2.4 Abstract Class\"]\n  Root --> M3\n  M4[\"2.5 Types of Inheritance\"]\n  Root --> M4\n  M5[\"2.6 Namespace and Object-Orientation\"]\n  Root --> M5\n  M6[\"2.7 Python Lists\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Newly Created Class</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Newly Created Class the subclass also referred to as child or derived class.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Principles And Patterns</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Python Objects</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An Object is an instance of a Class in Python as is the case with other object oriented programming languages.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Abstract Class</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Inheritance</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Principles and Patterns</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP).</li>\n<li>These act as basis for the design and implementation of robust and maintainable programs.</li>\n<li>Lets first understand the necessary principles of desiging classes in Python.</li>\n<li>Certain important principles that one should follow are listed here.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Python Objects</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An Object is an instance of a Class in Python as is the case with other object oriented programming languages.</li>\n<li>It represents a specific implementation of the class and holds its own data.</li>\n<li>An object consists of: Identity provides a unique name to an object and enables one object to interact with other objects.</li>\n<li>State represented by the attributes and exposes the properties of an object.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Abstract Class</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.</li>\n<li>It can contain abstract methods that exist without implementation and concrete methods that are implemented.</li>\n<li>These abstract classes are created using the abc module and the ABC class.</li>\n<li>Any subclass that inherits from an abstract class must implement its abstract methods.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Types of Inheritance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.</li>\n<li>Hybrid Inheritance 2.5.1 Single Inheritance When a class is derived from one base class that is when a class inherits properties and methods from only one parent class, then it is termed as single inheritance.</li>\n<li>This kind of inheritance allows one to combine features from several existing classes, thus promoting class reuse.</li>\n<li>Code reuse is maximized in this inheritance by using existing functionalities.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.6 Namespace and Object-Orientation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A namespace is a collection of names where we have a mapping of every name we have defined to corresponding objects in the code.</li>\n<li>Name represents a unique identifier and Space refers to the scope of the name.</li>\n<li>Python itself maintains a namespace in the form of a Python dictionary.</li>\n<li>Namespaces are crucial in OOP for organizing and accessing class-level and instance- level variables and methods.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.7 Python Lists</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A list in Python is a built-in dynamic sized array that automatically grows and shrinks.</li>\n<li>The list can store various types of data items including another list within a list.</li>\n<li>This feature is made possible because a list only stores references at contiguous locations and actual items may be stored at different locations.</li>\n<li>Accessing any data items in List can be done directly using their subscript or index that starts from 0.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.8 Copy An Object in Python Using ‘=’</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python makes use ‘=’ operator to create a copy of an object.</li>\n<li>One needs to understand that it doesnot create a new object, but it only creates a new variable that shares the reference of the original object.</li>\n<li>The same is illustrated by a python program below where we have created a list named “original_list” and we pass its object reference to “copied_list” using the ‘=’ operator.</li>\n<li>Copy an Object in Python using Copy( ) Method Python lists are useful data structures used to store a collection of items.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>PRINCIPLES AND PATTERNS</code></div>\n<div class=\"formula-box\"><code>Principles and patterns are useful in defining fundamental design concepts in object-</code></div>\n<div class=\"formula-box\"><code>principles in order to produce a program code that is not only efficient</code></div>\n<div class=\"formula-box\"><code>principles that one should follow are listed here.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Object-oriented programming paradigm provides complete insulation from internal architecture and operations. It provides a very high level of abstraction in problem solving. Programs are designed with a focus on data around which the code is built and this complete entity is known as object. This is a more realistic way of representing the world in general. Python as Object-Oriented Programming Language is to write structured programs by creating \"objects,\" that encapsulate data or attributes</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-2_Object_Oriented_Programming.pdf')\">\n          📄 Read Original IGNOU PDF (18 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 2 Object Oriented Programming\"]\n  M1[\"2.2 Principles and Patterns\"]\n  Root --> M1\n  M2[\"2.3 Python Objects\"]\n  Root --> M2\n  M3[\"2.4 Abstract Class\"]\n  Root --> M3\n  M4[\"2.5 Types of Inheritance\"]\n  Root --> M4\n  M5[\"2.6 Namespace and Object-Orientation\"]\n  Root --> M5\n  M6[\"2.7 Python Lists\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "The Newly Created Class",
+      "definition": "The Newly Created Class the subclass also referred to as child or derived class.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Principles And Patterns",
+      "definition": "Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP).",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Python Objects",
+      "definition": "An Object is an instance of a Class in Python as is the case with other object oriented programming languages.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Abstract Class",
+      "definition": "An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Types Of Inheritance",
+      "definition": "Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "2.2",
+      "topic": "Principles and Patterns",
+      "points": [
+        "Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP).",
+        "These act as basis for the design and implementation of robust and maintainable programs.",
+        "Lets first understand the necessary principles of desiging classes in Python.",
+        "Certain important principles that one should follow are listed here."
+      ]
+    },
+    {
+      "section_num": "2.3",
+      "topic": "Python Objects",
+      "points": [
+        "An Object is an instance of a Class in Python as is the case with other object oriented programming languages.",
+        "It represents a specific implementation of the class and holds its own data.",
+        "An object consists of: Identity provides a unique name to an object and enables one object to interact with other objects.",
+        "State represented by the attributes and exposes the properties of an object."
+      ]
+    },
+    {
+      "section_num": "2.4",
+      "topic": "Abstract Class",
+      "points": [
+        "An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.",
+        "It can contain abstract methods that exist without implementation and concrete methods that are implemented.",
+        "These abstract classes are created using the abc module and the ABC class.",
+        "Any subclass that inherits from an abstract class must implement its abstract methods."
+      ]
+    },
+    {
+      "section_num": "2.5",
+      "topic": "Types of Inheritance",
+      "points": [
+        "Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.",
+        "Hybrid Inheritance 2.5.1 Single Inheritance When a class is derived from one base class that is when a class inherits properties and methods from only one parent class, then it is termed as single inheritance.",
+        "This kind of inheritance allows one to combine features from several existing classes, thus promoting class reuse.",
+        "Code reuse is maximized in this inheritance by using existing functionalities."
+      ]
+    },
+    {
+      "section_num": "2.6",
+      "topic": "Namespace and Object-Orientation",
+      "points": [
+        "A namespace is a collection of names where we have a mapping of every name we have defined to corresponding objects in the code.",
+        "Name represents a unique identifier and Space refers to the scope of the name.",
+        "Python itself maintains a namespace in the form of a Python dictionary.",
+        "Namespaces are crucial in OOP for organizing and accessing class-level and instance- level variables and methods."
+      ]
+    },
+    {
+      "section_num": "2.7",
+      "topic": "Python Lists",
+      "points": [
+        "A list in Python is a built-in dynamic sized array that automatically grows and shrinks.",
+        "The list can store various types of data items including another list within a list.",
+        "This feature is made possible because a list only stores references at contiguous locations and actual items may be stored at different locations.",
+        "Accessing any data items in List can be done directly using their subscript or index that starts from 0."
+      ]
+    },
+    {
+      "section_num": "2.8",
+      "topic": "Copy An Object in Python Using ‘=’",
+      "points": [
+        "Python makes use ‘=’ operator to create a copy of an object.",
+        "One needs to understand that it doesnot create a new object, but it only creates a new variable that shares the reference of the original object.",
+        "The same is illustrated by a python program below where we have created a list named “original_list” and we pass its object reference to “copied_list” using the ‘=’ operator.",
+        "Copy an Object in Python using Copy( ) Method Python lists are useful data structures used to store a collection of items."
+      ]
+    }
+  ],
+  "formulas": [
+    "PRINCIPLES AND PATTERNS",
+    "Principles and patterns are useful in defining fundamental design concepts in object-",
+    "principles in order to produce a program code that is not only efficient",
+    "principles that one should follow are listed here."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Object Oriented Programming\"]\n  M1[\"2.2 Principles and Patterns\"]\n  Root --> M1\n  M2[\"2.3 Python Objects\"]\n  Root --> M2\n  M3[\"2.4 Abstract Class\"]\n  Root --> M3\n  M4[\"2.5 Types of Inheritance\"]\n  Root --> M4\n  M5[\"2.6 Namespace and Object-Orientation\"]\n  Root --> M5\n  M6[\"2.7 Python Lists\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Newly Created Class</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Newly Created Class the subclass also referred to as child or derived class.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Principles And Patterns</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Python Objects</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An Object is an instance of a Class in Python as is the case with other object oriented programming languages.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Abstract Class</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Inheritance</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Principles and Patterns</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP).</li>\n<li>These act as basis for the design and implementation of robust and maintainable programs.</li>\n<li>Lets first understand the necessary principles of desiging classes in Python.</li>\n<li>Certain important principles that one should follow are listed here.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Python Objects</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An Object is an instance of a Class in Python as is the case with other object oriented programming languages.</li>\n<li>It represents a specific implementation of the class and holds its own data.</li>\n<li>An object consists of: Identity provides a unique name to an object and enables one object to interact with other objects.</li>\n<li>State represented by the attributes and exposes the properties of an object.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Abstract Class</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An abstract class are not instantiated directly as these serve as a blueprint or template for other classes.</li>\n<li>It can contain abstract methods that exist without implementation and concrete methods that are implemented.</li>\n<li>These abstract classes are created using the abc module and the ABC class.</li>\n<li>Any subclass that inherits from an abstract class must implement its abstract methods.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Types of Inheritance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Inheritance can be classified on factors based on the number of base class from which properties have been inherited in the inheritance hierarchy or it could be based on combination of these properties.</li>\n<li>Hybrid Inheritance 2.5.1 Single Inheritance When a class is derived from one base class that is when a class inherits properties and methods from only one parent class, then it is termed as single inheritance.</li>\n<li>This kind of inheritance allows one to combine features from several existing classes, thus promoting class reuse.</li>\n<li>Code reuse is maximized in this inheritance by using existing functionalities.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.6 Namespace and Object-Orientation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A namespace is a collection of names where we have a mapping of every name we have defined to corresponding objects in the code.</li>\n<li>Name represents a unique identifier and Space refers to the scope of the name.</li>\n<li>Python itself maintains a namespace in the form of a Python dictionary.</li>\n<li>Namespaces are crucial in OOP for organizing and accessing class-level and instance- level variables and methods.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.7 Python Lists</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A list in Python is a built-in dynamic sized array that automatically grows and shrinks.</li>\n<li>The list can store various types of data items including another list within a list.</li>\n<li>This feature is made possible because a list only stores references at contiguous locations and actual items may be stored at different locations.</li>\n<li>Accessing any data items in List can be done directly using their subscript or index that starts from 0.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.8 Copy An Object in Python Using ‘=’</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python makes use ‘=’ operator to create a copy of an object.</li>\n<li>One needs to understand that it doesnot create a new object, but it only creates a new variable that shares the reference of the original object.</li>\n<li>The same is illustrated by a python program below where we have created a list named “original_list” and we pass its object reference to “copied_list” using the ‘=’ operator.</li>\n<li>Copy an Object in Python using Copy( ) Method Python lists are useful data structures used to store a collection of items.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>PRINCIPLES AND PATTERNS</code></div>\n<div class=\"formula-box\"><code>Principles and patterns are useful in defining fundamental design concepts in object-</code></div>\n<div class=\"formula-box\"><code>principles in order to produce a program code that is not only efficient</code></div>\n<div class=\"formula-box\"><code>principles that one should follow are listed here.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Object-oriented programming paradigm provides complete insulation from internal architecture and operations. It provides a very high level of abstraction in problem solving. Programs are designed with a focus on data around which the code is built and this complete entity is known as object. This is a more realistic way of representing the world in general. Python as Object-Oriented Programming Language is to write structured programs by creating \"objects,\" that encapsulate data or attributes</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-2_Object_Oriented_Programming.pdf')\">\n          📄 Read Original IGNOU PDF (18 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

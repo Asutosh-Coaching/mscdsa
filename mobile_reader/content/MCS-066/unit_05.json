@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Random Variables and Expectation",
+  "filename": "Unit-5_Random_Variables_and_Expectation.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-5_Random_Variables_and_Expectation.pdf",
+  "total_pages": 38,
+  "word_count": 14313,
+  "est_read_time_minutes": 80,
+  "objectives": [
+    "5.2    Random Variable",
+    "5.3    Discrete Random Variable and Probability Mass Function",
+    "5.4    Continuous Random Variable and Probability Density Function",
+    "5.5    Distribution Function",
+    "5.6.   Bivariate Random Variables"
+  ],
+  "summary": "Following main points have been covered in this unit of the course: A random variable is a function whose domain is a set of possible outcomes and range is a sub-set of the set of reals and has the following Each particular value of the random variable can be assigned some ii) Sum of all the probabilities associated with all the different values of 2) A random variable is said to be discrete random variable if it has either",
+  "flashcards": [
+    {
+      "question": "2 bad articles are mixed with 5 good ones. Find the probability distribution of the number of bad articles, if",
+      "answer": "Also as V(Y) = 1, hence V",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Given the probability distribution: Let Y = X",
+      "answer": "[Shifting the position one step towards right so that we get the terms having same power at the same positions as that in",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "An urn contains 3 white and 4 red balls. 3 balls are drawn one by one with replacement. Find the probability distribution of the number of red balls drawn. ………………………………………………………………………… …………………………………………………………………………",
+      "answer": "The conditional density function of Y given X is (",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The life (in hours) X of a certain type of light bulb may be supposed to be a continuous random variable with p.d.f.: ( )",
+      "answer": "As X is a random variable with mean ,  E",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "………………………………………………………………………… …………………………………………………………………………",
+      "answer": "In Random Variables and Expectation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2000"
+    },
+    {
+      "question": "A random variable X has the following probability distribution: X",
+      "answer": "i) As the given distribution is probability distribution,  sum of all the probabilities =",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is Random Variable and how is it characterized?",
+      "answer": "The last unit discusses the process of computing probabilities for events (subsets of a sample space).",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Random Variables and Expectat\"]\n  M1[\"5.2 Random Variable\"]\n  Root --> M1\n  M2[\"5.3 Discrete Random Variable and Pro\"]\n  Root --> M2\n  M3[\"5.4 Continuous Random Variable and P\"]\n  Root --> M3\n  M4[\"5.5 Distribution Function\"]\n  Root --> M4\n  M5[\"5.8 Moments and Other Measures in Te\"]\n  Root --> M5\n  M5_1[\"5.8.1 Moments\"]\n  M5 --> M5_1\n  M5_2[\"5.8.2 Variance and Covariance\"]\n  M5 --> M5_2\n  M5_3[\"5.8.3 Addition and Multiplication Th\"]\n  M5 --> M5_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Random Variable</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The last unit discusses the process of computing probabilities for events (subsets of a sample space).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Distribution Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Bivariate Discrete Random Variables</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Bivariate Continuous Random Variables</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Some examples of bivariate continuous random variables are: 1.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Moments</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Random Variable</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The last unit discusses the process of computing probabilities for events (subsets of a sample space).</li>\n<li>In many experiments, we may be interested in a numerical characteristic associated with outcomes of a random experiment.</li>\n<li>Like the outcome, the value of such a numerical characteristic cannot be predicted in advance.</li>\n<li>For example, suppose a die is tossed twice and we are interested in number of times an odd number appears.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Discrete Random Variable and Probability Mass Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>the values which have one-to-one correspondence with the set of natural numbers, i.e., on the basis of three or four successive known terms, we can catch a rule and hence can write the subsequent terms.</li>\n<li>on taking n = 1, 2, 3, 4, 5, … we have 2, 5, 8, 11, 14,….</li>\n<li>So, X in this example is a discrete random variable.</li>\n<li>The number of students present each day in a class during an academic session is an example of discrete random variable as the number cannot take a fractional value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Continuous Random Variable and Probability Density Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But, if a random variable is such that its values cannot be arranged in a sequence, it is called continuous random variable.</li>\n<li>So, a random variable is said to be continuous if it can take all possible real (i.e.</li>\n<li>integer as well as fractional) values between two certain limits.</li>\n<li>For example, chance that an athlete will finish a 100-meter race in say exactly 10 seconds is very-very small, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Distribution Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.</li>\n<li>It is also known as the cumulative distribution function (c.d.f.) of X since it is the cumulative probability of X up to and including the value x.</li>\n<li>As X can take any real value, therefore the domain of the distribution function is set of real numbers and as F(x) is a probability value, therefore the range of the distribution function is [0, 1].</li>\n<li>Remark 3: Here, X denotes the random variable and x represents a particular value of random variable.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6.1 Bivariate Discrete Random Variables</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.</li>\n<li>In other words, (X, Y) is a two-dimensional random variable if the possible values of (X, Y) are finite or countably infinite.</li>\n<li>Here, each value of X and Y is represented as a point ( x, y) in the xy-plane.</li>\n<li>As an illustration, let us consider the following example: Let three balls b1, b2, b3 be placed randomly in three cells.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6.2 Bivariate Continuous Random Variables</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Some examples of bivariate continuous random variables are: 1.</li>\n<li>A gun is aimed at a certain point (say origin of the coordinate system).</li>\n<li>Because of the random factors, suppose the actual hit point is any point (X, Y) in a circle of radius unity about the origin.</li>\n<li>Then (X, Y) assumes all the values in the circle ( )   2 2 x, y : x y 1 +  i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.8 Moments and Other Measures in Terms of Expectations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.</li>\n<li> − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.</li>\n<li>x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e.</li>\n<li>rth order central moment is defined as 158 Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.8.1 Moments</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.</li>\n<li> − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.</li>\n<li>x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e.</li>\n<li>rth order central moment is defined as 158 Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule and hence can write the subsequent terms. For</code></div>\n<div class=\"formula-box\"><code>property of a continuous random variable is that there is zero</code></div>\n<div class=\"formula-box\"><code>theorem of probability</code></div>\n<div class=\"formula-box\"><code>property 3 of Expectation Sec 5.7]</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Following main points have been covered in this unit of the course: A random variable is a function whose domain is a set of possible outcomes and range is a sub-set of the set of reals and has the following Each particular value of the random variable can be assigned some ii) Sum of all the probabilities associated with all the different values of 2) A random variable is said to be discrete random variable if it has either</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-5_Random_Variables_and_Expectation.pdf')\">\n          📄 Read Original IGNOU PDF (38 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Random Variables and Expectat\"]\n  M1[\"5.2 Random Variable\"]\n  Root --> M1\n  M2[\"5.3 Discrete Random Variable and Pro\"]\n  Root --> M2\n  M3[\"5.4 Continuous Random Variable and P\"]\n  Root --> M3\n  M4[\"5.5 Distribution Function\"]\n  Root --> M4\n  M5[\"5.8 Moments and Other Measures in Te\"]\n  Root --> M5\n  M5_1[\"5.8.1 Moments\"]\n  M5 --> M5_1\n  M5_2[\"5.8.2 Variance and Covariance\"]\n  M5 --> M5_2\n  M5_3[\"5.8.3 Addition and Multiplication Th\"]\n  M5 --> M5_3",
+  "definitions": [
+    {
+      "term": "Random Variable",
+      "definition": "The last unit discusses the process of computing probabilities for events (subsets of a sample space).",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Distribution Function",
+      "definition": "A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Bivariate Discrete Random Variables",
+      "definition": "Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Bivariate Continuous Random Variables",
+      "definition": "Some examples of bivariate continuous random variables are: 1.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Moments",
+      "definition": "But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.2",
+      "topic": "Random Variable",
+      "points": [
+        "The last unit discusses the process of computing probabilities for events (subsets of a sample space).",
+        "In many experiments, we may be interested in a numerical characteristic associated with outcomes of a random experiment.",
+        "Like the outcome, the value of such a numerical characteristic cannot be predicted in advance.",
+        "For example, suppose a die is tossed twice and we are interested in number of times an odd number appears."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Discrete Random Variable and Probability Mass Function",
+      "points": [
+        "the values which have one-to-one correspondence with the set of natural numbers, i.e., on the basis of three or four successive known terms, we can catch a rule and hence can write the subsequent terms.",
+        "on taking n = 1, 2, 3, 4, 5, … we have 2, 5, 8, 11, 14,….",
+        "So, X in this example is a discrete random variable.",
+        "The number of students present each day in a class during an academic session is an example of discrete random variable as the number cannot take a fractional value."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Continuous Random Variable and Probability Density Function",
+      "points": [
+        "But, if a random variable is such that its values cannot be arranged in a sequence, it is called continuous random variable.",
+        "So, a random variable is said to be continuous if it can take all possible real (i.e.",
+        "integer as well as fractional) values between two certain limits.",
+        "For example, chance that an athlete will finish a 100-meter race in say exactly 10 seconds is very-very small, i.e."
+      ]
+    },
+    {
+      "section_num": "5.5",
+      "topic": "Distribution Function",
+      "points": [
+        "A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.",
+        "It is also known as the cumulative distribution function (c.d.f.) of X since it is the cumulative probability of X up to and including the value x.",
+        "As X can take any real value, therefore the domain of the distribution function is set of real numbers and as F(x) is a probability value, therefore the range of the distribution function is [0, 1].",
+        "Remark 3: Here, X denotes the random variable and x represents a particular value of random variable."
+      ]
+    },
+    {
+      "section_num": "5.6.1",
+      "topic": "Bivariate Discrete Random Variables",
+      "points": [
+        "Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.",
+        "In other words, (X, Y) is a two-dimensional random variable if the possible values of (X, Y) are finite or countably infinite.",
+        "Here, each value of X and Y is represented as a point ( x, y) in the xy-plane.",
+        "As an illustration, let us consider the following example: Let three balls b1, b2, b3 be placed randomly in three cells."
+      ]
+    },
+    {
+      "section_num": "5.6.2",
+      "topic": "Bivariate Continuous Random Variables",
+      "points": [
+        "Some examples of bivariate continuous random variables are: 1.",
+        "A gun is aimed at a certain point (say origin of the coordinate system).",
+        "Because of the random factors, suppose the actual hit point is any point (X, Y) in a circle of radius unity about the origin.",
+        "Then (X, Y) assumes all the values in the circle ( )   2 2 x, y : x y 1 +  i.e."
+      ]
+    },
+    {
+      "section_num": "5.8",
+      "topic": "Moments and Other Measures in Terms of Expectations",
+      "points": [
+        "But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.",
+        " − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.",
+        "x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e.",
+        "rth order central moment is defined as 158 Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v."
+      ]
+    },
+    {
+      "section_num": "5.8.1",
+      "topic": "Moments",
+      "points": [
+        "But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.",
+        " − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.",
+        "x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e.",
+        "rth order central moment is defined as 158 Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule and hence can write the subsequent terms. For",
+    "property of a continuous random variable is that there is zero",
+    "theorem of probability",
+    "property 3 of Expectation Sec 5.7]"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Random Variables and Expectat\"]\n  M1[\"5.2 Random Variable\"]\n  Root --> M1\n  M2[\"5.3 Discrete Random Variable and Pro\"]\n  Root --> M2\n  M3[\"5.4 Continuous Random Variable and P\"]\n  Root --> M3\n  M4[\"5.5 Distribution Function\"]\n  Root --> M4\n  M5[\"5.8 Moments and Other Measures in Te\"]\n  Root --> M5\n  M5_1[\"5.8.1 Moments\"]\n  M5 --> M5_1\n  M5_2[\"5.8.2 Variance and Covariance\"]\n  M5 --> M5_2\n  M5_3[\"5.8.3 Addition and Multiplication Th\"]\n  M5 --> M5_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Random Variable</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The last unit discusses the process of computing probabilities for events (subsets of a sample space).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Distribution Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Bivariate Discrete Random Variables</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Bivariate Continuous Random Variables</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Some examples of bivariate continuous random variables are: 1.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Moments</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Random Variable</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The last unit discusses the process of computing probabilities for events (subsets of a sample space).</li>\n<li>In many experiments, we may be interested in a numerical characteristic associated with outcomes of a random experiment.</li>\n<li>Like the outcome, the value of such a numerical characteristic cannot be predicted in advance.</li>\n<li>For example, suppose a die is tossed twice and we are interested in number of times an odd number appears.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Discrete Random Variable and Probability Mass Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>the values which have one-to-one correspondence with the set of natural numbers, i.e., on the basis of three or four successive known terms, we can catch a rule and hence can write the subsequent terms.</li>\n<li>on taking n = 1, 2, 3, 4, 5, … we have 2, 5, 8, 11, 14,….</li>\n<li>So, X in this example is a discrete random variable.</li>\n<li>The number of students present each day in a class during an academic session is an example of discrete random variable as the number cannot take a fractional value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Continuous Random Variable and Probability Density Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But, if a random variable is such that its values cannot be arranged in a sequence, it is called continuous random variable.</li>\n<li>So, a random variable is said to be continuous if it can take all possible real (i.e.</li>\n<li>integer as well as fractional) values between two certain limits.</li>\n<li>For example, chance that an athlete will finish a 100-meter race in say exactly 10 seconds is very-very small, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Distribution Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A function F defined for all values of a random variable X by F( x ) = P[X  x ] is called the distribution function.</li>\n<li>It is also known as the cumulative distribution function (c.d.f.) of X since it is the cumulative probability of X up to and including the value x.</li>\n<li>As X can take any real value, therefore the domain of the distribution function is set of real numbers and as F(x) is a probability value, therefore the range of the distribution function is [0, 1].</li>\n<li>Remark 3: Here, X denotes the random variable and x represents a particular value of random variable.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6.1 Bivariate Discrete Random Variables</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Definition: Let X and Y be two discrete random variables defined on the sample space S of a random experiment then the function (X, Y) defined on the same sample space is called a two-dimensional discrete random variable.</li>\n<li>In other words, (X, Y) is a two-dimensional random variable if the possible values of (X, Y) are finite or countably infinite.</li>\n<li>Here, each value of X and Y is represented as a point ( x, y) in the xy-plane.</li>\n<li>As an illustration, let us consider the following example: Let three balls b1, b2, b3 be placed randomly in three cells.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6.2 Bivariate Continuous Random Variables</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Some examples of bivariate continuous random variables are: 1.</li>\n<li>A gun is aimed at a certain point (say origin of the coordinate system).</li>\n<li>Because of the random factors, suppose the actual hit point is any point (X, Y) in a circle of radius unity about the origin.</li>\n<li>Then (X, Y) assumes all the values in the circle ( )   2 2 x, y : x y 1 +  i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.8 Moments and Other Measures in Terms of Expectations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.</li>\n<li> − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.</li>\n<li>x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e.</li>\n<li>rth order central moment is defined as 158 Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.8.1 Moments</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But, if X is a continuous random variable having probability density function f(x), then rth order moment about A is defined as ( ) ( ) r ' r x A f x dx.</li>\n<li> − = −  So, rth order moment about any point ‘A’ of a random variable X is defined as ( ) ( ) ( ) r i i i ' r r p x A , if X is a discreter.v.</li>\n<li>x A f x dx, if X is a continousr.v  −  −  =   −    = E(X − A)r Similarly, rth order moment about mean () i.e.</li>\n<li>rth order central moment is defined as 158 Probability and Distributions ( ) ( ) ( ) r i i i r r p x , if Xisa discreter.v.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule and hence can write the subsequent terms. For</code></div>\n<div class=\"formula-box\"><code>property of a continuous random variable is that there is zero</code></div>\n<div class=\"formula-box\"><code>theorem of probability</code></div>\n<div class=\"formula-box\"><code>property 3 of Expectation Sec 5.7]</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Following main points have been covered in this unit of the course: A random variable is a function whose domain is a set of possible outcomes and range is a sub-set of the set of reals and has the following Each particular value of the random variable can be assigned some ii) Sum of all the probabilities associated with all the different values of 2) A random variable is said to be discrete random variable if it has either</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-5_Random_Variables_and_Expectation.pdf')\">\n          📄 Read Original IGNOU PDF (38 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

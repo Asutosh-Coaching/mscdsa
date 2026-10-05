@@ -1,0 +1,164 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_07",
+  "unit_num": "Unit 7",
+  "title": "Probabilistic Reasoning",
+  "filename": "Unit-7_Probabilistic_Reasoning.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-7_Probabilistic_Reasoning.pdf",
+  "total_pages": 17,
+  "word_count": 6740,
+  "est_read_time_minutes": 37,
+  "objectives": [
+    "7.2\t \t Reasoning with uncertain information",
+    "7.3\t \t Review of Probability Theory",
+    "7.4\t \t Introduction to Bayesian Theory",
+    "7.5\t \t Baye’s Networks",
+    "7.6\t \t Probabilistic Inference"
+  ],
+  "summary": "This unit relates to the discussion over Reasoning with uncertain information, whih involves Review of Probability Theory, and Introduction to Bayesian Theory. Unit also covers the concept of Baye’s Networks, which is later used for the purpose of inferencing. Finally, the unit discussed about the Other Paradigm of Uncertain Reasoning, including the Dempster Scheffer Theory Problem-1. In each of the following exercises, an experiment is described.",
+  "flashcards": [
+    {
+      "question": "A card is drawn, its number noted and the card is replaced. Another card is drawn and its number is noted. Problem",
+      "answer": "In Probabilistic Reasoning, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q10"
+    },
+    {
+      "question": "Suppose a six-faced die is thrown twice. Describe each of the following events: i) The maximum score is",
+      "answer": "In Probabilistic Reasoning, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "ii) The total score is 9. iii) Each throw results in an even score. iv) Each throw results in an even score larger than",
+      "answer": "In Probabilistic Reasoning, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "v) The scores on the two throws differ by at least 2.",
+      "answer": "In Probabilistic Reasoning, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Differentiate between Joint, Marginal and conditional probability with an example of each. Problem-",
+      "answer": "Key Principle: Now, you are familiar with the reasoning and how it can be useful with probability theory.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain Dempster Shafer theory with a suitable example. Problem-",
+      "answer": "Key Principle: Now, you are familiar with the reasoning and how it can be useful with probability theory.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is A Conditional Probability and how is it characterized?",
+      "answer": "A Conditional Probability the probability of occurrence of an event provided that another event has occurred.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Probabilistic Reasoning\"]\n  M1[\"7.2 Reasoning with uncertain informa\"]\n  Root --> M1\n  M2[\"7.3 Review of Probability Theory\"]\n  Root --> M2\n  M3[\"7.5 Baye’s Networks\"]\n  Root --> M3\n  M4[\"7.6 Probabilistic Inference\"]\n  Root --> M4\n  M5[\"7.7 Basic idea of Inferencing with B\"]\n  Root --> M5\n  M6[\"7.8 Other Paradigm of Uncertain Reas\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Conditional Probability</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Conditional Probability the probability of occurrence of an event provided that another event has occurred.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reasoning With Uncertain Information</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Reasoning is an important step for various decision making.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Review Of Probability Theory</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Now, you are familiar with the reasoning and how it can be useful with probability theory.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Baye’S Networks</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The probabilistic models are being used in defining the relationships among variables and are used to calculate probabilities.The Bayes’ network is a simpler form of applying Bayes’ theorem to complex real world problems.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Probabilistic Inference</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The probabilistic inference is very much dependent on the conditional probability of the specified events provided the information of occurrence of other events is available.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2 Reasoning with uncertain information</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Reasoning is an important step for various decision making.</li>\n<li>The amount of information and its correctness plays a crucial role in reasoning.</li>\n<li>Decision making is easier when we have certain information i.e.</li>\n<li>the correctness of information can be ascertained.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Review of Probability Theory</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Now, you are familiar with the reasoning and how it can be useful with probability theory.</li>\n<li>Before we dive deeper into the Bayes’ theorem and its applications, let us review some of the basic concepts of probability theory.</li>\n<li>These concepts will be helping us to understand other topics of this unit.</li>\n<li>Trials, Sample Space, Events : You must have often observed that a random experiment may comprise a series of smaller sub-experiments.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5 Baye’s Networks</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The probabilistic models are being used in defining the relationships among variables and are used to calculate probabilities.The Bayes’ network is a simpler form of applying Bayes’ theorem to complex real world problems.</li>\n<li>This uses a probabilistic graphical model which captures the conditional dependence explicitly and is represented using directed edges in a graph.</li>\n<li>Here if we take fully conditional models, we may need a big amount of data to address all possible events/ cases and in such scenario probabilities may not be calculated practically.</li>\n<li>On the other hand, simple assumptions like conditional independence of random variables may turn out to be effective, giving a way for Bayes’ Network.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.6 Probabilistic Inference</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The probabilistic inference is very much dependent on the conditional probability of the specified events provided the information of occurrence of other events is available.</li>\n<li>Let the number of occurrences of an event F is represented as No.</li>\n<li>(F) and the probability of a joint event of E and F as No.</li>\n<li>This can also be understood as the approximate conditional occurrence of event F with E.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.7 Basic idea of Inferencing with Bayes Networks</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>BAYE’S NETWORKS We are now aware of the Bayes theorem, probability and Bayes networks.</li>\n<li>Let’s now talk about how inferences can be made using Bayes networks.A network here represents the degree of belief of proposition and their causal interdependence.</li>\n<li>The inference in a network can be done by propagating the given probabilities of related information through the network giving the output to one of the conclusion nodes.</li>\n<li>The network representation also reduces the time and space requirements for huge computations involving the probabilities of uncertain knowledge of propositional variables.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.8 Other Paradigm of Uncertain Reasoning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The other ways of dealing with uncertainty are the ones with no theoretical proof.</li>\n<li>These are selected over formal methods as a pragmatic solution to a particular problem, when the formal methods impose difficult or impossible conditions.</li>\n<li>One such ad hoc procedure is used to diagnose meningitis and infectious blood disease, the system is called MYCIN.</li>\n<li>The MYCIN uses If and then rules to assess various forms of patient evidence.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.9 Dempster Scheffer Theory</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us now discuss a mathematical theory based only on the evidence, known as Dempster-Schafer (D-S) theory given by Dempster and extended by Shafer in “Mathematical Theory of Evidences”.</li>\n<li>This uses a belief function to combine separate and independent evidence pieces to quantify the belief in a statement.</li>\n<li>The D-S theory is a generalization of Bayesian probability theory where multiple possible events are assigned probabilities opposed to mutually exclusive singletons.</li>\n<li>The D-S theory assumes the existence of ignorance in knowledge creating uncertainty which in turn induces belief.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem and its applications, let</code></div>\n<div class=\"formula-box\"><code>rule out the occurrence of E. Therefore, in such a situation,</code></div>\n<div class=\"formula-box\"><code>theorem is widely used to calculate the conditional probabilities of</code></div>\n<div class=\"formula-box\"><code>theorem, have a look at</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit relates to the discussion over Reasoning with uncertain information, whih involves Review of Probability Theory, and Introduction to Bayesian Theory. Unit also covers the concept of Baye’s Networks, which is later used for the purpose of inferencing. Finally, the unit discussed about the Other Paradigm of Uncertain Reasoning, including the Dempster Scheffer Theory Problem-1. In each of the following exercises, an experiment is described.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-7_Probabilistic_Reasoning.pdf')\">\n          📄 Read Original IGNOU PDF (17 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 7 Probabilistic Reasoning\"]\n  M1[\"7.2 Reasoning with uncertain informa\"]\n  Root --> M1\n  M2[\"7.3 Review of Probability Theory\"]\n  Root --> M2\n  M3[\"7.5 Baye’s Networks\"]\n  Root --> M3\n  M4[\"7.6 Probabilistic Inference\"]\n  Root --> M4\n  M5[\"7.7 Basic idea of Inferencing with B\"]\n  Root --> M5\n  M6[\"7.8 Other Paradigm of Uncertain Reas\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "A Conditional Probability",
+      "definition": "A Conditional Probability the probability of occurrence of an event provided that another event has occurred.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Reasoning With Uncertain Information",
+      "definition": "Reasoning is an important step for various decision making.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Review Of Probability Theory",
+      "definition": "Now, you are familiar with the reasoning and how it can be useful with probability theory.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Baye’S Networks",
+      "definition": "The probabilistic models are being used in defining the relationships among variables and are used to calculate probabilities.The Bayes’ network is a simpler form of applying Bayes’ theorem to complex real world problems.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Probabilistic Inference",
+      "definition": "The probabilistic inference is very much dependent on the conditional probability of the specified events provided the information of occurrence of other events is available.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "7.2",
+      "topic": "Reasoning with uncertain information",
+      "points": [
+        "Reasoning is an important step for various decision making.",
+        "The amount of information and its correctness plays a crucial role in reasoning.",
+        "Decision making is easier when we have certain information i.e.",
+        "the correctness of information can be ascertained."
+      ]
+    },
+    {
+      "section_num": "7.3",
+      "topic": "Review of Probability Theory",
+      "points": [
+        "Now, you are familiar with the reasoning and how it can be useful with probability theory.",
+        "Before we dive deeper into the Bayes’ theorem and its applications, let us review some of the basic concepts of probability theory.",
+        "These concepts will be helping us to understand other topics of this unit.",
+        "Trials, Sample Space, Events : You must have often observed that a random experiment may comprise a series of smaller sub-experiments."
+      ]
+    },
+    {
+      "section_num": "7.5",
+      "topic": "Baye’s Networks",
+      "points": [
+        "The probabilistic models are being used in defining the relationships among variables and are used to calculate probabilities.The Bayes’ network is a simpler form of applying Bayes’ theorem to complex real world problems.",
+        "This uses a probabilistic graphical model which captures the conditional dependence explicitly and is represented using directed edges in a graph.",
+        "Here if we take fully conditional models, we may need a big amount of data to address all possible events/ cases and in such scenario probabilities may not be calculated practically.",
+        "On the other hand, simple assumptions like conditional independence of random variables may turn out to be effective, giving a way for Bayes’ Network."
+      ]
+    },
+    {
+      "section_num": "7.6",
+      "topic": "Probabilistic Inference",
+      "points": [
+        "The probabilistic inference is very much dependent on the conditional probability of the specified events provided the information of occurrence of other events is available.",
+        "Let the number of occurrences of an event F is represented as No.",
+        "(F) and the probability of a joint event of E and F as No.",
+        "This can also be understood as the approximate conditional occurrence of event F with E."
+      ]
+    },
+    {
+      "section_num": "7.7",
+      "topic": "Basic idea of Inferencing with Bayes Networks",
+      "points": [
+        "BAYE’S NETWORKS We are now aware of the Bayes theorem, probability and Bayes networks.",
+        "Let’s now talk about how inferences can be made using Bayes networks.A network here represents the degree of belief of proposition and their causal interdependence.",
+        "The inference in a network can be done by propagating the given probabilities of related information through the network giving the output to one of the conclusion nodes.",
+        "The network representation also reduces the time and space requirements for huge computations involving the probabilities of uncertain knowledge of propositional variables."
+      ]
+    },
+    {
+      "section_num": "7.8",
+      "topic": "Other Paradigm of Uncertain Reasoning",
+      "points": [
+        "The other ways of dealing with uncertainty are the ones with no theoretical proof.",
+        "These are selected over formal methods as a pragmatic solution to a particular problem, when the formal methods impose difficult or impossible conditions.",
+        "One such ad hoc procedure is used to diagnose meningitis and infectious blood disease, the system is called MYCIN.",
+        "The MYCIN uses If and then rules to assess various forms of patient evidence."
+      ]
+    },
+    {
+      "section_num": "7.9",
+      "topic": "Dempster Scheffer Theory",
+      "points": [
+        "Let us now discuss a mathematical theory based only on the evidence, known as Dempster-Schafer (D-S) theory given by Dempster and extended by Shafer in “Mathematical Theory of Evidences”.",
+        "This uses a belief function to combine separate and independent evidence pieces to quantify the belief in a statement.",
+        "The D-S theory is a generalization of Bayesian probability theory where multiple possible events are assigned probabilities opposed to mutually exclusive singletons.",
+        "The D-S theory assumes the existence of ignorance in knowledge creating uncertainty which in turn induces belief."
+      ]
+    }
+  ],
+  "formulas": [
+    "theorem and its applications, let",
+    "rule out the occurrence of E. Therefore, in such a situation,",
+    "theorem is widely used to calculate the conditional probabilities of",
+    "theorem, have a look at"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Probabilistic Reasoning\"]\n  M1[\"7.2 Reasoning with uncertain informa\"]\n  Root --> M1\n  M2[\"7.3 Review of Probability Theory\"]\n  Root --> M2\n  M3[\"7.5 Baye’s Networks\"]\n  Root --> M3\n  M4[\"7.6 Probabilistic Inference\"]\n  Root --> M4\n  M5[\"7.7 Basic idea of Inferencing with B\"]\n  Root --> M5\n  M6[\"7.8 Other Paradigm of Uncertain Reas\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Conditional Probability</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Conditional Probability the probability of occurrence of an event provided that another event has occurred.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reasoning With Uncertain Information</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Reasoning is an important step for various decision making.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Review Of Probability Theory</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Now, you are familiar with the reasoning and how it can be useful with probability theory.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Baye’S Networks</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The probabilistic models are being used in defining the relationships among variables and are used to calculate probabilities.The Bayes’ network is a simpler form of applying Bayes’ theorem to complex real world problems.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Probabilistic Inference</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The probabilistic inference is very much dependent on the conditional probability of the specified events provided the information of occurrence of other events is available.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2 Reasoning with uncertain information</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Reasoning is an important step for various decision making.</li>\n<li>The amount of information and its correctness plays a crucial role in reasoning.</li>\n<li>Decision making is easier when we have certain information i.e.</li>\n<li>the correctness of information can be ascertained.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Review of Probability Theory</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Now, you are familiar with the reasoning and how it can be useful with probability theory.</li>\n<li>Before we dive deeper into the Bayes’ theorem and its applications, let us review some of the basic concepts of probability theory.</li>\n<li>These concepts will be helping us to understand other topics of this unit.</li>\n<li>Trials, Sample Space, Events : You must have often observed that a random experiment may comprise a series of smaller sub-experiments.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5 Baye’s Networks</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The probabilistic models are being used in defining the relationships among variables and are used to calculate probabilities.The Bayes’ network is a simpler form of applying Bayes’ theorem to complex real world problems.</li>\n<li>This uses a probabilistic graphical model which captures the conditional dependence explicitly and is represented using directed edges in a graph.</li>\n<li>Here if we take fully conditional models, we may need a big amount of data to address all possible events/ cases and in such scenario probabilities may not be calculated practically.</li>\n<li>On the other hand, simple assumptions like conditional independence of random variables may turn out to be effective, giving a way for Bayes’ Network.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.6 Probabilistic Inference</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The probabilistic inference is very much dependent on the conditional probability of the specified events provided the information of occurrence of other events is available.</li>\n<li>Let the number of occurrences of an event F is represented as No.</li>\n<li>(F) and the probability of a joint event of E and F as No.</li>\n<li>This can also be understood as the approximate conditional occurrence of event F with E.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.7 Basic idea of Inferencing with Bayes Networks</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>BAYE’S NETWORKS We are now aware of the Bayes theorem, probability and Bayes networks.</li>\n<li>Let’s now talk about how inferences can be made using Bayes networks.A network here represents the degree of belief of proposition and their causal interdependence.</li>\n<li>The inference in a network can be done by propagating the given probabilities of related information through the network giving the output to one of the conclusion nodes.</li>\n<li>The network representation also reduces the time and space requirements for huge computations involving the probabilities of uncertain knowledge of propositional variables.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.8 Other Paradigm of Uncertain Reasoning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The other ways of dealing with uncertainty are the ones with no theoretical proof.</li>\n<li>These are selected over formal methods as a pragmatic solution to a particular problem, when the formal methods impose difficult or impossible conditions.</li>\n<li>One such ad hoc procedure is used to diagnose meningitis and infectious blood disease, the system is called MYCIN.</li>\n<li>The MYCIN uses If and then rules to assess various forms of patient evidence.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.9 Dempster Scheffer Theory</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us now discuss a mathematical theory based only on the evidence, known as Dempster-Schafer (D-S) theory given by Dempster and extended by Shafer in “Mathematical Theory of Evidences”.</li>\n<li>This uses a belief function to combine separate and independent evidence pieces to quantify the belief in a statement.</li>\n<li>The D-S theory is a generalization of Bayesian probability theory where multiple possible events are assigned probabilities opposed to mutually exclusive singletons.</li>\n<li>The D-S theory assumes the existence of ignorance in knowledge creating uncertainty which in turn induces belief.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem and its applications, let</code></div>\n<div class=\"formula-box\"><code>rule out the occurrence of E. Therefore, in such a situation,</code></div>\n<div class=\"formula-box\"><code>theorem is widely used to calculate the conditional probabilities of</code></div>\n<div class=\"formula-box\"><code>theorem, have a look at</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit relates to the discussion over Reasoning with uncertain information, whih involves Review of Probability Theory, and Introduction to Bayesian Theory. Unit also covers the concept of Baye’s Networks, which is later used for the purpose of inferencing. Finally, the unit discussed about the Other Paradigm of Uncertain Reasoning, including the Dempster Scheffer Theory Problem-1. In each of the following exercises, an experiment is described.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-7_Probabilistic_Reasoning.pdf')\">\n          📄 Read Original IGNOU PDF (17 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

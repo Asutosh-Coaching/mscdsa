@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Introduction to Statistics",
+  "filename": "Unit-1_Introduction_to_Statistics.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-1_Introduction_to_Statistics.pdf",
+  "total_pages": 24,
+  "word_count": 9142,
+  "est_read_time_minutes": 51,
+  "objectives": [
+    "Statistics: Definition and Uses",
+    "1.2.1 Definition of Statistics",
+    "1.2.2 Uses of Statistics",
+    "1.2.3 Limitations of Statistics",
+    "Measurement Scales"
+  ],
+  "summary": "This Unit defines the term statistics and discusses applications of statistics in different areas. It also highlighted the shortcomings of statistics. Next, the unit explains different measurement scales in detail with the help of examples. Further, the unit explains different kinds of data, such as qualitative, quantitative, time series data, cross-sectional data, and primary and secondary data. The data types will be useful to you, when you study the later units. Next,",
+  "flashcards": [
+    {
+      "question": "Is machine learning or deep learning an application of statistics?",
+      "answer": "In Introduction to Statistics, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "At a picnic spot in India, 1000 tourists visit over a period of 7 days. Each tourist is asked the name of the country in which he/she was born.",
+      "answer": "In Introduction to Statistics, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Answer the following questions: (i) Which scale is at the lowest level?",
+      "answer": "Key Principle: Two words, “counting” and “measurement”, are very frequently used by everybody.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Answer the following questions: (i) In which scale is the median not permissible?",
+      "answer": "Key Principle: Two words, “counting” and “measurement”, are very frequently used by everybody.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Characterise the following data as qualitative or quantitative data? (i) Cities of a country (ii) Temperature (iii) Attitude towards learning (iv) Fee details",
+      "answer": "In Introduction to Statistics, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Give reasons in each case whether the data are primary or secondary. (i)",
+      "answer": "In Introduction to Statistics, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Statistics: Definition And Uses and how is it characterized?",
+      "answer": "Consider the following case: An Open University has many regional offices.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Introduction to Statistics\"]\n  M1[\"1.2 Statistics Definition and Uses\"]\n  Root --> M1\n  M1_1[\"1.2.1 Definition of Statistics\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Uses of Statistics\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 Limitations of Statistics\"]\n  M1 --> M1_3\n  M2[\"1.3 Measurement Scales\"]\n  Root --> M2\n  M3[\"1.4 Types of Data\"]\n  Root --> M3\n  M4[\"1.5 Data Collection\"]\n  Root --> M4\n  M5[\"1.6 Population and Sampling\"]\n  Root --> M5\n  M6[\"1.7 Descriptive and Inferential Stat\"]\n  Root --> M6\n  M6_1[\"1.7.1 Descriptive Statistics\"]\n  M6 --> M6_1\n  M6_2[\"1.7.2 Inferential Statistics\"]\n  M6 --> M6_2\n  M6_3[\"1.7.3 Probability Models\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Statistics: Definition And Uses</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Consider the following case: An Open University has many regional offices.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition Of Statistics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Statistics is a very old science, and it has developed through the ages.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Uses Of Statistics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In present times, statistics is regarded as a science having sound techniques of handling huge data and providing valuable conclusions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Limitations Of Statistics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous sub-section of this unit, you have seen a wide range of applications of statistics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Measurement Scales</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Two words, “counting” and “measurement”, are very frequently used by everybody.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Statistics: Definition and Uses</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the following case: An Open University has many regional offices.</li>\n<li>These regional offices maintain records of fees collected from the students and the expenses made by the office in different programmes using spreadsheet software.</li>\n<li>These records may be used to determine information such as: • Fee collection of each programme.</li>\n<li>• The percentage of students of a given programme who have not paid the fee.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 Definition of Statistics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Statistics is a very old science, and it has developed through the ages.</li>\n<li>So, it is not surprising that through its long journey, its definitions given by different authors vary.</li>\n<li>Let us briefly define some of the applications of statistics.</li>\n<li>• Statistics and Industry: Statistics plays an important role in quality control and production engineering.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.2 Uses of Statistics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In present times, statistics is regarded as a science having sound techniques of handling huge data and providing valuable conclusions.</li>\n<li>Let us briefly define some of the applications of statistics.</li>\n<li>• Statistics and Industry: Statistics plays an important role in quality control and production engineering.</li>\n<li>For example, various control charts are used to maintain a certain quality level and different inspection plans are used in production engineering.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 Limitations of Statistics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sub-section of this unit, you have seen a wide range of applications of statistics.</li>\n<li>Statistics also have its own limitations; some of them are described as follows: (1) Indirect Approach Towards Qualitative Characteristic: Science of statistics basically deals with numerical data.</li>\n<li>Therefore, statistical tools are applicable only for quantitative measures.</li>\n<li>But many times, characteristic under study is qualitative in nature, such as honesty, beauty, intelligence, boldness, drinking, smoking, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Measurement Scales</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Two words, “counting” and “measurement”, are very frequently used by everybody.</li>\n<li>For example, if you want to know the number of pages in a notebook, you can easily count them.</li>\n<li>Also, if you want to know the height of a man, you can easily measure it.</li>\n<li>But, in Statistics, act of counting and measurement is divided into four levels of measurement scales known as 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Types of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data plays the role of raw material for any statistical investigation.</li>\n<li>In fact, data are said to be quantitative data if a numerical quantity (which exactly measures the characteristic under study) is associated with each observation.</li>\n<li>Generally, interval or ratio scales are used as a measurement scale in case of quantitative data.</li>\n<li>Data based on the following characteristics generally gives quantitative type of data, such as weight, height, age, length, area, volume, money, temperature, humidity, size, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Data Collection</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data collection is performed to create primary data.</li>\n<li>There are a number of methods of collection of primary data depending upon many factors such as geographical area of the field, money available, time period, accuracy needed, literacy of the respondents/informants, etc.</li>\n<li>Here we will discuss briefly only the following commonly used methods.</li>\n<li>(1) Direct Personal Investigation Method (2) Telephone Method (3) Indirect Oral Interviews Method (4) Local Correspondents Method (5) Mailed Questionnaire Method Let us discuss these methods briefly.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.6 Population and Sampling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the important considerations while collecting primary data is identifying the population and collecting a representative sample from this population.</li>\n<li>In this section, we briefly discuss population and sampling.</li>\n<li>Population: Population literally means a well-defined group (collection or bunch) of some objects (units or elements).</li>\n<li>Thus, population is the collection or group of individuals /items /units/ observations under study.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle of least squares and the normal</code></div>\n<div class=\"formula-box\"><code>in which each unit in the</code></div>\n<div class=\"formula-box\"><code>rules of a function that computes the probability for the</code></div>\n<div class=\"formula-box\"><code>procedure. When n = N, the process is known as “complete enumeration or</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This Unit defines the term statistics and discusses applications of statistics in different areas. It also highlighted the shortcomings of statistics. Next, the unit explains different measurement scales in detail with the help of examples. Further, the unit explains different kinds of data, such as qualitative, quantitative, time series data, cross-sectional data, and primary and secondary data. The data types will be useful to you, when you study the later units. Next,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-1_Introduction_to_Statistics.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Introduction to Statistics\"]\n  M1[\"1.2 Statistics Definition and Uses\"]\n  Root --> M1\n  M1_1[\"1.2.1 Definition of Statistics\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Uses of Statistics\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 Limitations of Statistics\"]\n  M1 --> M1_3\n  M2[\"1.3 Measurement Scales\"]\n  Root --> M2\n  M3[\"1.4 Types of Data\"]\n  Root --> M3\n  M4[\"1.5 Data Collection\"]\n  Root --> M4\n  M5[\"1.6 Population and Sampling\"]\n  Root --> M5\n  M6[\"1.7 Descriptive and Inferential Stat\"]\n  Root --> M6\n  M6_1[\"1.7.1 Descriptive Statistics\"]\n  M6 --> M6_1\n  M6_2[\"1.7.2 Inferential Statistics\"]\n  M6 --> M6_2\n  M6_3[\"1.7.3 Probability Models\"]\n  M6 --> M6_3",
+  "definitions": [
+    {
+      "term": "Statistics: Definition And Uses",
+      "definition": "Consider the following case: An Open University has many regional offices.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Definition Of Statistics",
+      "definition": "Statistics is a very old science, and it has developed through the ages.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Uses Of Statistics",
+      "definition": "In present times, statistics is regarded as a science having sound techniques of handling huge data and providing valuable conclusions.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Limitations Of Statistics",
+      "definition": "In the previous sub-section of this unit, you have seen a wide range of applications of statistics.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Measurement Scales",
+      "definition": "Two words, “counting” and “measurement”, are very frequently used by everybody.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.2",
+      "topic": "Statistics: Definition and Uses",
+      "points": [
+        "Consider the following case: An Open University has many regional offices.",
+        "These regional offices maintain records of fees collected from the students and the expenses made by the office in different programmes using spreadsheet software.",
+        "These records may be used to determine information such as: • Fee collection of each programme.",
+        "• The percentage of students of a given programme who have not paid the fee."
+      ]
+    },
+    {
+      "section_num": "1.2.1",
+      "topic": "Definition of Statistics",
+      "points": [
+        "Statistics is a very old science, and it has developed through the ages.",
+        "So, it is not surprising that through its long journey, its definitions given by different authors vary.",
+        "Let us briefly define some of the applications of statistics.",
+        "• Statistics and Industry: Statistics plays an important role in quality control and production engineering."
+      ]
+    },
+    {
+      "section_num": "1.2.2",
+      "topic": "Uses of Statistics",
+      "points": [
+        "In present times, statistics is regarded as a science having sound techniques of handling huge data and providing valuable conclusions.",
+        "Let us briefly define some of the applications of statistics.",
+        "• Statistics and Industry: Statistics plays an important role in quality control and production engineering.",
+        "For example, various control charts are used to maintain a certain quality level and different inspection plans are used in production engineering."
+      ]
+    },
+    {
+      "section_num": "1.2.3",
+      "topic": "Limitations of Statistics",
+      "points": [
+        "In the previous sub-section of this unit, you have seen a wide range of applications of statistics.",
+        "Statistics also have its own limitations; some of them are described as follows: (1) Indirect Approach Towards Qualitative Characteristic: Science of statistics basically deals with numerical data.",
+        "Therefore, statistical tools are applicable only for quantitative measures.",
+        "But many times, characteristic under study is qualitative in nature, such as honesty, beauty, intelligence, boldness, drinking, smoking, etc."
+      ]
+    },
+    {
+      "section_num": "1.3",
+      "topic": "Measurement Scales",
+      "points": [
+        "Two words, “counting” and “measurement”, are very frequently used by everybody.",
+        "For example, if you want to know the number of pages in a notebook, you can easily count them.",
+        "Also, if you want to know the height of a man, you can easily measure it.",
+        "But, in Statistics, act of counting and measurement is divided into four levels of measurement scales known as 1."
+      ]
+    },
+    {
+      "section_num": "1.4",
+      "topic": "Types of Data",
+      "points": [
+        "Data plays the role of raw material for any statistical investigation.",
+        "In fact, data are said to be quantitative data if a numerical quantity (which exactly measures the characteristic under study) is associated with each observation.",
+        "Generally, interval or ratio scales are used as a measurement scale in case of quantitative data.",
+        "Data based on the following characteristics generally gives quantitative type of data, such as weight, height, age, length, area, volume, money, temperature, humidity, size, etc."
+      ]
+    },
+    {
+      "section_num": "1.5",
+      "topic": "Data Collection",
+      "points": [
+        "The data collection is performed to create primary data.",
+        "There are a number of methods of collection of primary data depending upon many factors such as geographical area of the field, money available, time period, accuracy needed, literacy of the respondents/informants, etc.",
+        "Here we will discuss briefly only the following commonly used methods.",
+        "(1) Direct Personal Investigation Method (2) Telephone Method (3) Indirect Oral Interviews Method (4) Local Correspondents Method (5) Mailed Questionnaire Method Let us discuss these methods briefly."
+      ]
+    },
+    {
+      "section_num": "1.6",
+      "topic": "Population and Sampling",
+      "points": [
+        "One of the important considerations while collecting primary data is identifying the population and collecting a representative sample from this population.",
+        "In this section, we briefly discuss population and sampling.",
+        "Population: Population literally means a well-defined group (collection or bunch) of some objects (units or elements).",
+        "Thus, population is the collection or group of individuals /items /units/ observations under study."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle of least squares and the normal",
+    "in which each unit in the",
+    "rules of a function that computes the probability for the",
+    "procedure. When n = N, the process is known as “complete enumeration or"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Introduction to Statistics\"]\n  M1[\"1.2 Statistics Definition and Uses\"]\n  Root --> M1\n  M1_1[\"1.2.1 Definition of Statistics\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Uses of Statistics\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 Limitations of Statistics\"]\n  M1 --> M1_3\n  M2[\"1.3 Measurement Scales\"]\n  Root --> M2\n  M3[\"1.4 Types of Data\"]\n  Root --> M3\n  M4[\"1.5 Data Collection\"]\n  Root --> M4\n  M5[\"1.6 Population and Sampling\"]\n  Root --> M5\n  M6[\"1.7 Descriptive and Inferential Stat\"]\n  Root --> M6\n  M6_1[\"1.7.1 Descriptive Statistics\"]\n  M6 --> M6_1\n  M6_2[\"1.7.2 Inferential Statistics\"]\n  M6 --> M6_2\n  M6_3[\"1.7.3 Probability Models\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Statistics: Definition And Uses</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Consider the following case: An Open University has many regional offices.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition Of Statistics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Statistics is a very old science, and it has developed through the ages.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Uses Of Statistics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In present times, statistics is regarded as a science having sound techniques of handling huge data and providing valuable conclusions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Limitations Of Statistics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous sub-section of this unit, you have seen a wide range of applications of statistics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Measurement Scales</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Two words, “counting” and “measurement”, are very frequently used by everybody.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Statistics: Definition and Uses</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the following case: An Open University has many regional offices.</li>\n<li>These regional offices maintain records of fees collected from the students and the expenses made by the office in different programmes using spreadsheet software.</li>\n<li>These records may be used to determine information such as: • Fee collection of each programme.</li>\n<li>• The percentage of students of a given programme who have not paid the fee.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 Definition of Statistics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Statistics is a very old science, and it has developed through the ages.</li>\n<li>So, it is not surprising that through its long journey, its definitions given by different authors vary.</li>\n<li>Let us briefly define some of the applications of statistics.</li>\n<li>• Statistics and Industry: Statistics plays an important role in quality control and production engineering.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.2 Uses of Statistics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In present times, statistics is regarded as a science having sound techniques of handling huge data and providing valuable conclusions.</li>\n<li>Let us briefly define some of the applications of statistics.</li>\n<li>• Statistics and Industry: Statistics plays an important role in quality control and production engineering.</li>\n<li>For example, various control charts are used to maintain a certain quality level and different inspection plans are used in production engineering.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 Limitations of Statistics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sub-section of this unit, you have seen a wide range of applications of statistics.</li>\n<li>Statistics also have its own limitations; some of them are described as follows: (1) Indirect Approach Towards Qualitative Characteristic: Science of statistics basically deals with numerical data.</li>\n<li>Therefore, statistical tools are applicable only for quantitative measures.</li>\n<li>But many times, characteristic under study is qualitative in nature, such as honesty, beauty, intelligence, boldness, drinking, smoking, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Measurement Scales</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Two words, “counting” and “measurement”, are very frequently used by everybody.</li>\n<li>For example, if you want to know the number of pages in a notebook, you can easily count them.</li>\n<li>Also, if you want to know the height of a man, you can easily measure it.</li>\n<li>But, in Statistics, act of counting and measurement is divided into four levels of measurement scales known as 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Types of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data plays the role of raw material for any statistical investigation.</li>\n<li>In fact, data are said to be quantitative data if a numerical quantity (which exactly measures the characteristic under study) is associated with each observation.</li>\n<li>Generally, interval or ratio scales are used as a measurement scale in case of quantitative data.</li>\n<li>Data based on the following characteristics generally gives quantitative type of data, such as weight, height, age, length, area, volume, money, temperature, humidity, size, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Data Collection</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data collection is performed to create primary data.</li>\n<li>There are a number of methods of collection of primary data depending upon many factors such as geographical area of the field, money available, time period, accuracy needed, literacy of the respondents/informants, etc.</li>\n<li>Here we will discuss briefly only the following commonly used methods.</li>\n<li>(1) Direct Personal Investigation Method (2) Telephone Method (3) Indirect Oral Interviews Method (4) Local Correspondents Method (5) Mailed Questionnaire Method Let us discuss these methods briefly.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.6 Population and Sampling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the important considerations while collecting primary data is identifying the population and collecting a representative sample from this population.</li>\n<li>In this section, we briefly discuss population and sampling.</li>\n<li>Population: Population literally means a well-defined group (collection or bunch) of some objects (units or elements).</li>\n<li>Thus, population is the collection or group of individuals /items /units/ observations under study.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle of least squares and the normal</code></div>\n<div class=\"formula-box\"><code>in which each unit in the</code></div>\n<div class=\"formula-box\"><code>rules of a function that computes the probability for the</code></div>\n<div class=\"formula-box\"><code>procedure. When n = N, the process is known as “complete enumeration or</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This Unit defines the term statistics and discusses applications of statistics in different areas. It also highlighted the shortcomings of statistics. Next, the unit explains different measurement scales in detail with the help of examples. Further, the unit explains different kinds of data, such as qualitative, quantitative, time series data, cross-sectional data, and primary and secondary data. The data types will be useful to you, when you study the later units. Next,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-1_Introduction_to_Statistics.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Data Preparation for Analysis",
+  "filename": "Unit-5_Data_Preparation_for_Analysis.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-5_Data_Preparation_for_Analysis.pdf",
+  "total_pages": 25,
+  "word_count": 9240,
+  "est_read_time_minutes": 51,
+  "objectives": [
+    "Need for Data Preparation",
+    "Data Preprocessing",
+    "5.3.1  Data Cleaning",
+    "5.3.2  Data Integration",
+    "5.3.3  Data Reduction"
+  ],
+  "summary": "Despite the development of several methods for preparing data, the intricacy of the issue and the vast amount of inconsistent or unclean data mean that this field of study is still very active. This unit gives a general overview of data preprocessing and describes how to turn raw data into usable information. The preprocessing of the raw data included data integration, data reduction, transformation, and discretization. In this unit, we have discussed five",
+  "flashcards": [
+    {
+      "question": "What is meant by data preprocessing?",
+      "answer": ": 75-7. · Walter, S.D., Irwig, L., Glasziou, P.P.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Why is preprocessing important?",
+      "answer": ": 170-6. · Sharpe, N.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are the 5 characteristics of data processing?",
+      "answer": "In Data Preparation for Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What are the major steps of data preprocessing?",
+      "answer": "In Data Preparation for Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is data cleaning?",
+      "answer": "In Data Preparation for Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is the importance of data cleaning?",
+      "answer": ": 533-6. · Fourcroy, J.L.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is Uniqueness and how is it characterized?",
+      "answer": "Uniqueness the lack of duplicate or redundant data across all datasets.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Data Preparation for Analysis\"]\n  M1[\"5.2 Need for Data Preparation\"]\n  Root --> M1\n  M2[\"5.3 Data Preprocessing\"]\n  Root --> M2\n  M2_1[\"5.3.1 Data Cleaning\"]\n  M2 --> M2_1\n  M2_2[\"5.3.2 Data Integration\"]\n  M2 --> M2_2\n  M2_3[\"5.3.3 Data Reduction\"]\n  M2 --> M2_3\n  M3[\"5.4 Selection and Data Extraction\"]\n  Root --> M3\n  M4[\"5.5 Data Curation\"]\n  Root --> M4\n  M4_1[\"5.5.1 Steps of Data Curation\"]\n  M4 --> M4_1\n  M4_2[\"5.5.2 Importance of Data Curation\"]\n  M4 --> M4_2\n  M5[\"5.6 Data Integration\"]\n  Root --> M5\n  M5_1[\"5.6.1 Data Integration Techniques\"]\n  M5 --> M5_1\n  M5_2[\"5.6.2 Data Integration Approaches\"]\n  M5 --> M5_2\n  M6[\"5.7 Knowledge Discovery\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Uniqueness</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Uniqueness the lack of duplicate or redundant data across all datasets.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Dimensionality Reduction</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Dimensionality Reduction the process of lowering the number of random variables or qualities.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Need For Data Preparation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the present time, data is one of the key resources for a business.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Preprocessing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Preprocessing is the process of taking raw data and turning it into information that may be used for data analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Cleaning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data cleaning is an essential step in data preprocessing.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Need for Data Preparation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the present time, data is one of the key resources for a business.</li>\n<li>Any raw facts are known as data and are processed to create information; information is integrated to create knowledge.</li>\n<li>Since knowledge is power, it has evolved into a modern currency, which is valued and traded between parties.</li>\n<li>Everyone wants to discuss the knowledge and benefits they can gain from it.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Data Preprocessing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Preprocessing is the process of taking raw data and turning it into information that may be used for data analysis.</li>\n<li>In addition, data discretization is another component of data preprocessing.</li>\n<li>You may refer to the further readings for more details on data discretization.</li>\n<li>It is crucial for the construction of a good analysis model.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.1 Data Cleaning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data cleaning is an essential step in data preprocessing.</li>\n<li>It is crucial for the construction of a good analysis model.</li>\n<li>Data cleaning is a required but frequently overlooked aspect of data preprocessing.</li>\n<li>Real-world data typically exhibit incompleteness, noise, and inconsistency.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.2 Data Integration</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data from many sources, such as files, data cubes, databases (both relational and non-relational), etc., may be combined before a machine learning algorithm can use it as training or test data.</li>\n<li>The data from the sources may have the following characteristics: · The data sources may be homogeneous or heterogeneous.</li>\n<li>· The data sources may contain structured, unstructured, or semi- structured data.</li>\n<li>Redundancies and inconsistencies can be reduced and avoided with careful integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.3 Data Reduction</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The number of records, attributes, or dimensions can be reduced.</li>\n<li>When reducing data, one should keep in mind that the outcomes from the reduced data should be identical to those from the original data.</li>\n<li>Consider that you have chosen some data for analysis from ABC Company's data warehouse.</li>\n<li>Large-scale complex data analysis and mining can be time-consuming, rendering such a study impractical or unfeasible.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.4 Data Transformation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This procedure is used to change the data into formats that are suited for the analytical process.</li>\n<li>Data transformation involves transforming or consolidating the data into analysis-ready formats.</li>\n<li>The following are some data transformation strategies: a.</li>\n<li>Smoothing: Smoothing is a process which attempts to reduce data noise.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Selection and Data Extraction</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The process of choosing the best data source, data type, and collection tools is known as data selection.</li>\n<li>Prior to starting the actual data collection procedure, data selection is conducted.</li>\n<li>The main goal of data selection is to choose the proper data type, source, and tool that enables researchers to solve research issues effectively.</li>\n<li>This decision typically depends on the research area, research questions, prior research, and the availability of the data sources.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Data Curation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sections, we have discussed data preprocessing.</li>\n<li>The objective of data preprocessing is to obtain high-quality data for analysis.</li>\n<li>Data curation is integrating and maintaining high-quality data for a specific purpose in an organization using multiple data sources.</li>\n<li>Data curation aims to create high-quality data sets that can be accessed and used by data users, who may include company Introduction to Data Science-2 174 employees or any other person looking for such information.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property (for example, the price of the</code></div>\n<div class=\"formula-box\"><code>property using some technique; for instance, you can</code></div>\n<div class=\"formula-box\"><code>laws governing data privacy and security.</code></div>\n<div class=\"formula-box\"><code>principles, and reliability of the</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Despite the development of several methods for preparing data, the intricacy of the issue and the vast amount of inconsistent or unclean data mean that this field of study is still very active. This unit gives a general overview of data preprocessing and describes how to turn raw data into usable information. The preprocessing of the raw data included data integration, data reduction, transformation, and discretization. In this unit, we have discussed five</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-5_Data_Preparation_for_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (25 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Data Preparation for Analysis\"]\n  M1[\"5.2 Need for Data Preparation\"]\n  Root --> M1\n  M2[\"5.3 Data Preprocessing\"]\n  Root --> M2\n  M2_1[\"5.3.1 Data Cleaning\"]\n  M2 --> M2_1\n  M2_2[\"5.3.2 Data Integration\"]\n  M2 --> M2_2\n  M2_3[\"5.3.3 Data Reduction\"]\n  M2 --> M2_3\n  M3[\"5.4 Selection and Data Extraction\"]\n  Root --> M3\n  M4[\"5.5 Data Curation\"]\n  Root --> M4\n  M4_1[\"5.5.1 Steps of Data Curation\"]\n  M4 --> M4_1\n  M4_2[\"5.5.2 Importance of Data Curation\"]\n  M4 --> M4_2\n  M5[\"5.6 Data Integration\"]\n  Root --> M5\n  M5_1[\"5.6.1 Data Integration Techniques\"]\n  M5 --> M5_1\n  M5_2[\"5.6.2 Data Integration Approaches\"]\n  M5 --> M5_2\n  M6[\"5.7 Knowledge Discovery\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Uniqueness",
+      "definition": "Uniqueness the lack of duplicate or redundant data across all datasets.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Dimensionality Reduction",
+      "definition": "Dimensionality Reduction the process of lowering the number of random variables or qualities.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Need For Data Preparation",
+      "definition": "In the present time, data is one of the key resources for a business.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Preprocessing",
+      "definition": "Preprocessing is the process of taking raw data and turning it into information that may be used for data analysis.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Cleaning",
+      "definition": "Data cleaning is an essential step in data preprocessing.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.2",
+      "topic": "Need for Data Preparation",
+      "points": [
+        "In the present time, data is one of the key resources for a business.",
+        "Any raw facts are known as data and are processed to create information; information is integrated to create knowledge.",
+        "Since knowledge is power, it has evolved into a modern currency, which is valued and traded between parties.",
+        "Everyone wants to discuss the knowledge and benefits they can gain from it."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Data Preprocessing",
+      "points": [
+        "Preprocessing is the process of taking raw data and turning it into information that may be used for data analysis.",
+        "In addition, data discretization is another component of data preprocessing.",
+        "You may refer to the further readings for more details on data discretization.",
+        "It is crucial for the construction of a good analysis model."
+      ]
+    },
+    {
+      "section_num": "5.3.1",
+      "topic": "Data Cleaning",
+      "points": [
+        "Data cleaning is an essential step in data preprocessing.",
+        "It is crucial for the construction of a good analysis model.",
+        "Data cleaning is a required but frequently overlooked aspect of data preprocessing.",
+        "Real-world data typically exhibit incompleteness, noise, and inconsistency."
+      ]
+    },
+    {
+      "section_num": "5.3.2",
+      "topic": "Data Integration",
+      "points": [
+        "Data from many sources, such as files, data cubes, databases (both relational and non-relational), etc., may be combined before a machine learning algorithm can use it as training or test data.",
+        "The data from the sources may have the following characteristics: · The data sources may be homogeneous or heterogeneous.",
+        "· The data sources may contain structured, unstructured, or semi- structured data.",
+        "Redundancies and inconsistencies can be reduced and avoided with careful integration."
+      ]
+    },
+    {
+      "section_num": "5.3.3",
+      "topic": "Data Reduction",
+      "points": [
+        "The number of records, attributes, or dimensions can be reduced.",
+        "When reducing data, one should keep in mind that the outcomes from the reduced data should be identical to those from the original data.",
+        "Consider that you have chosen some data for analysis from ABC Company's data warehouse.",
+        "Large-scale complex data analysis and mining can be time-consuming, rendering such a study impractical or unfeasible."
+      ]
+    },
+    {
+      "section_num": "5.3.4",
+      "topic": "Data Transformation",
+      "points": [
+        "This procedure is used to change the data into formats that are suited for the analytical process.",
+        "Data transformation involves transforming or consolidating the data into analysis-ready formats.",
+        "The following are some data transformation strategies: a.",
+        "Smoothing: Smoothing is a process which attempts to reduce data noise."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Selection and Data Extraction",
+      "points": [
+        "The process of choosing the best data source, data type, and collection tools is known as data selection.",
+        "Prior to starting the actual data collection procedure, data selection is conducted.",
+        "The main goal of data selection is to choose the proper data type, source, and tool that enables researchers to solve research issues effectively.",
+        "This decision typically depends on the research area, research questions, prior research, and the availability of the data sources."
+      ]
+    },
+    {
+      "section_num": "5.5",
+      "topic": "Data Curation",
+      "points": [
+        "In the previous sections, we have discussed data preprocessing.",
+        "The objective of data preprocessing is to obtain high-quality data for analysis.",
+        "Data curation is integrating and maintaining high-quality data for a specific purpose in an organization using multiple data sources.",
+        "Data curation aims to create high-quality data sets that can be accessed and used by data users, who may include company Introduction to Data Science-2 174 employees or any other person looking for such information."
+      ]
+    }
+  ],
+  "formulas": [
+    "property (for example, the price of the",
+    "property using some technique; for instance, you can",
+    "laws governing data privacy and security.",
+    "principles, and reliability of the"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Data Preparation for Analysis\"]\n  M1[\"5.2 Need for Data Preparation\"]\n  Root --> M1\n  M2[\"5.3 Data Preprocessing\"]\n  Root --> M2\n  M2_1[\"5.3.1 Data Cleaning\"]\n  M2 --> M2_1\n  M2_2[\"5.3.2 Data Integration\"]\n  M2 --> M2_2\n  M2_3[\"5.3.3 Data Reduction\"]\n  M2 --> M2_3\n  M3[\"5.4 Selection and Data Extraction\"]\n  Root --> M3\n  M4[\"5.5 Data Curation\"]\n  Root --> M4\n  M4_1[\"5.5.1 Steps of Data Curation\"]\n  M4 --> M4_1\n  M4_2[\"5.5.2 Importance of Data Curation\"]\n  M4 --> M4_2\n  M5[\"5.6 Data Integration\"]\n  Root --> M5\n  M5_1[\"5.6.1 Data Integration Techniques\"]\n  M5 --> M5_1\n  M5_2[\"5.6.2 Data Integration Approaches\"]\n  M5 --> M5_2\n  M6[\"5.7 Knowledge Discovery\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Uniqueness</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Uniqueness the lack of duplicate or redundant data across all datasets.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Dimensionality Reduction</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Dimensionality Reduction the process of lowering the number of random variables or qualities.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Need For Data Preparation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the present time, data is one of the key resources for a business.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Preprocessing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Preprocessing is the process of taking raw data and turning it into information that may be used for data analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Cleaning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data cleaning is an essential step in data preprocessing.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Need for Data Preparation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the present time, data is one of the key resources for a business.</li>\n<li>Any raw facts are known as data and are processed to create information; information is integrated to create knowledge.</li>\n<li>Since knowledge is power, it has evolved into a modern currency, which is valued and traded between parties.</li>\n<li>Everyone wants to discuss the knowledge and benefits they can gain from it.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Data Preprocessing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Preprocessing is the process of taking raw data and turning it into information that may be used for data analysis.</li>\n<li>In addition, data discretization is another component of data preprocessing.</li>\n<li>You may refer to the further readings for more details on data discretization.</li>\n<li>It is crucial for the construction of a good analysis model.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.1 Data Cleaning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data cleaning is an essential step in data preprocessing.</li>\n<li>It is crucial for the construction of a good analysis model.</li>\n<li>Data cleaning is a required but frequently overlooked aspect of data preprocessing.</li>\n<li>Real-world data typically exhibit incompleteness, noise, and inconsistency.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.2 Data Integration</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data from many sources, such as files, data cubes, databases (both relational and non-relational), etc., may be combined before a machine learning algorithm can use it as training or test data.</li>\n<li>The data from the sources may have the following characteristics: · The data sources may be homogeneous or heterogeneous.</li>\n<li>· The data sources may contain structured, unstructured, or semi- structured data.</li>\n<li>Redundancies and inconsistencies can be reduced and avoided with careful integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.3 Data Reduction</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The number of records, attributes, or dimensions can be reduced.</li>\n<li>When reducing data, one should keep in mind that the outcomes from the reduced data should be identical to those from the original data.</li>\n<li>Consider that you have chosen some data for analysis from ABC Company's data warehouse.</li>\n<li>Large-scale complex data analysis and mining can be time-consuming, rendering such a study impractical or unfeasible.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.4 Data Transformation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This procedure is used to change the data into formats that are suited for the analytical process.</li>\n<li>Data transformation involves transforming or consolidating the data into analysis-ready formats.</li>\n<li>The following are some data transformation strategies: a.</li>\n<li>Smoothing: Smoothing is a process which attempts to reduce data noise.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Selection and Data Extraction</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The process of choosing the best data source, data type, and collection tools is known as data selection.</li>\n<li>Prior to starting the actual data collection procedure, data selection is conducted.</li>\n<li>The main goal of data selection is to choose the proper data type, source, and tool that enables researchers to solve research issues effectively.</li>\n<li>This decision typically depends on the research area, research questions, prior research, and the availability of the data sources.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Data Curation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sections, we have discussed data preprocessing.</li>\n<li>The objective of data preprocessing is to obtain high-quality data for analysis.</li>\n<li>Data curation is integrating and maintaining high-quality data for a specific purpose in an organization using multiple data sources.</li>\n<li>Data curation aims to create high-quality data sets that can be accessed and used by data users, who may include company Introduction to Data Science-2 174 employees or any other person looking for such information.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property (for example, the price of the</code></div>\n<div class=\"formula-box\"><code>property using some technique; for instance, you can</code></div>\n<div class=\"formula-box\"><code>laws governing data privacy and security.</code></div>\n<div class=\"formula-box\"><code>principles, and reliability of the</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Despite the development of several methods for preparing data, the intricacy of the issue and the vast amount of inconsistent or unclean data mean that this field of study is still very active. This unit gives a general overview of data preprocessing and describes how to turn raw data into usable information. The preprocessing of the raw data included data integration, data reduction, transformation, and discretization. In this unit, we have discussed five</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-5_Data_Preparation_for_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (25 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

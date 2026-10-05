@@ -1,0 +1,146 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_15",
+  "unit_num": "Unit 15",
+  "title": "Clustering",
+  "filename": "Unit-15_Clustering.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-15_Clustering.pdf",
+  "total_pages": 24,
+  "word_count": 6450,
+  "est_read_time_minutes": 36,
+  "objectives": [
+    "dimensional",
+    "means clustering has",
+    "of 0.3 is this data point's membership coefficient for cluster A",
+    "World Example for",
+    "Means Algorithm works.",
+    "Means: Among clustering algorithms, is an algorithm that tries to minimize"
+  ],
+  "summary": "The technique of separating a set of data objects into subgroups based on some observation is known as clustering or cluster analysis. Each subset is referred to as a 'cluster,' with objects that are related to one another but different from those in other clusters. In simple terms, the process of separating a population or set of data points into several groups so that data points from the same group can be compared to data points from different groups. Clustering is often confused",
+  "flashcards": [
+    {
+      "question": "What do you understand by the term “Clustering”? Qn",
+      "answer": "The objective of clustering is to- A. Sort the data points into categories. B. To classify the objects into different classes C. To predict the values of input data points and generate output. D. All of the above Solution:",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Where is Clustering used in present day scenario?",
+      "answer": "Clustering is a- A. Supervised learning B. Unsupervised learning C. Reinforcement learning D. None Solution:",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Briefly explain how Partition Based Clustering works. Qn",
+      "answer": "The objective of clustering is to- A. Sort the data points into categories. B. To classify the objects into different classes C. To predict the values of input data points and generate output. D. All of the above Solution:",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Name three Partition Based Clustering methods.",
+      "answer": "Clustering is a- A. Supervised learning B. Unsupervised learning C. Reinforcement learning D. None Solution:",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Differentiate between Hierarchical Clustering and Partition Based Clustering. Qn",
+      "answer": "The objective of clustering is to- A. Sort the data points into categories. B. To classify the objects into different classes C. To predict the values of input data points and generate output. D. All of the above Solution:",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are sub-types of Hierarchical Clustering and what is the difference between them?",
+      "answer": "Clustering is a- A. Supervised learning B. Unsupervised learning C. Reinforcement learning D. None Solution:",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is A Cluster and how is it characterized?",
+      "answer": "A Cluster the most densely connected set of points.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 15 Clustering\"]\n  M1[\"15.2 Types of clustering\"]\n  Root --> M1\n  M2[\"15.3 Partition Based\"]\n  Root --> M2\n  M3[\"15.4 Hierarchical Based\"]\n  Root --> M3\n  M4[\"15.5 Density Based Clustering techni\"]\n  Root --> M4\n  M5[\"15.6 Clustering algorithms\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Cluster</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Cluster the most densely connected set of points.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">There are many clustering algorithms in the literature.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Partition Based</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Partition algorithm is one of the most applied clustering algorithms.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hierarchical Based</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Hierarchical Clustering analysis is an algorithm that groups the data points with similar properties and these groups are termed “clusters”.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Density Based Clustering Techniques</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It starts with a random unvisited starting data point.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.2 Types of clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are many clustering algorithms in the literature.</li>\n<li>Traditionally, documents are grouped based on how similar they are to other documents.</li>\n<li>Similarity-based algorithms define a function for computing document similarity and use it as the basis for assigning documents to clusters.</li>\n<li>Each cluster should have data that are comparable to one another but different from those in other clusters.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.3 Partition Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Partition algorithm is one of the most applied clustering algorithms.</li>\n<li>It has been widely used in many applications due to its simple structure and easy implementation as compared to other clustering algorithms.</li>\n<li>This clustering method classifies the information into multiple groups based on the characteristics and similarities of the data.</li>\n<li>In the partitioning method when database(D) contains multiple(N) objects then the partitioning approach divides the data into user-specified(K) partitions, each of which represents a cluster and a specific region.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.4 Hierarchical Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hierarchical Clustering analysis is an algorithm that groups the data points with similar properties and these groups are termed “clusters”.</li>\n<li>As a result of hierarchical clustering, we get a set of clusters, and these clusters are always different from each other.</li>\n<li>Example: The most common everyday example we see is how we order our files and folders in our computer by proper hierarchy.</li>\n<li>The space complexity is measured by the order of the square of n.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.5 Density Based Clustering techniques</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It starts with a random unvisited starting data point.</li>\n<li>All points within a distance ‘Epsilon’ – Ɛ classify as neighborhood points.</li>\n<li>We need a minimum number of points within the neighborhood to start the clustering process.</li>\n<li>In this scenario, the current point of data turns into the first point in the cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.6 Clustering algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>K-Means : Among clustering algorithms, is an algorithm that tries to minimize the distance of the points in a cluster with their centroid – the k-means clustering technique.</li>\n<li>It can also be called asa distance-based technique where distances between points are calculated to allocate a point to a cluster.</li>\n<li>Each cluster in K-Means is paired with a centroid.</li>\n<li>The K-Means algorithm's main goal is to reduce the sum of distances between points and their corresponding cluster centroid.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle of top-down approach (inverse of AGNES) where the algorithm</code></div>\n<div class=\"formula-box\"><code>principle, a classic example of mono-dimensional</code></div>\n<div class=\"formula-box\"><code>principle of top-down</code></div>\n<div class=\"formula-box\"><code>R=R1,...,rnR={r1,...,rn} into a set of c fuzzy clusters with respect to some given</code></div>\n<div class=\"formula-box\"><code>F=f1,...,ffF={f1,...,ff}And a partition matrix</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The technique of separating a set of data objects into subgroups based on some observation is known as clustering or cluster analysis. Each subset is referred to as a 'cluster,' with objects that are related to one another but different from those in other clusters. In simple terms, the process of separating a population or set of data points into several groups so that data points from the same group can be compared to data points from different groups. Clustering is often confused</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-15_Clustering.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 15 Clustering\"]\n  M1[\"15.2 Types of clustering\"]\n  Root --> M1\n  M2[\"15.3 Partition Based\"]\n  Root --> M2\n  M3[\"15.4 Hierarchical Based\"]\n  Root --> M3\n  M4[\"15.5 Density Based Clustering techni\"]\n  Root --> M4\n  M5[\"15.6 Clustering algorithms\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "A Cluster",
+      "definition": "A Cluster the most densely connected set of points.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Types Of Clustering",
+      "definition": "There are many clustering algorithms in the literature.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Partition Based",
+      "definition": "Partition algorithm is one of the most applied clustering algorithms.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Hierarchical Based",
+      "definition": "Hierarchical Clustering analysis is an algorithm that groups the data points with similar properties and these groups are termed “clusters”.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Density Based Clustering Techniques",
+      "definition": "It starts with a random unvisited starting data point.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "15.2",
+      "topic": "Types of clustering",
+      "points": [
+        "There are many clustering algorithms in the literature.",
+        "Traditionally, documents are grouped based on how similar they are to other documents.",
+        "Similarity-based algorithms define a function for computing document similarity and use it as the basis for assigning documents to clusters.",
+        "Each cluster should have data that are comparable to one another but different from those in other clusters."
+      ]
+    },
+    {
+      "section_num": "15.3",
+      "topic": "Partition Based",
+      "points": [
+        "Partition algorithm is one of the most applied clustering algorithms.",
+        "It has been widely used in many applications due to its simple structure and easy implementation as compared to other clustering algorithms.",
+        "This clustering method classifies the information into multiple groups based on the characteristics and similarities of the data.",
+        "In the partitioning method when database(D) contains multiple(N) objects then the partitioning approach divides the data into user-specified(K) partitions, each of which represents a cluster and a specific region."
+      ]
+    },
+    {
+      "section_num": "15.4",
+      "topic": "Hierarchical Based",
+      "points": [
+        "Hierarchical Clustering analysis is an algorithm that groups the data points with similar properties and these groups are termed “clusters”.",
+        "As a result of hierarchical clustering, we get a set of clusters, and these clusters are always different from each other.",
+        "Example: The most common everyday example we see is how we order our files and folders in our computer by proper hierarchy.",
+        "The space complexity is measured by the order of the square of n."
+      ]
+    },
+    {
+      "section_num": "15.5",
+      "topic": "Density Based Clustering techniques",
+      "points": [
+        "It starts with a random unvisited starting data point.",
+        "All points within a distance ‘Epsilon’ – Ɛ classify as neighborhood points.",
+        "We need a minimum number of points within the neighborhood to start the clustering process.",
+        "In this scenario, the current point of data turns into the first point in the cluster."
+      ]
+    },
+    {
+      "section_num": "15.6",
+      "topic": "Clustering algorithms",
+      "points": [
+        "K-Means : Among clustering algorithms, is an algorithm that tries to minimize the distance of the points in a cluster with their centroid – the k-means clustering technique.",
+        "It can also be called asa distance-based technique where distances between points are calculated to allocate a point to a cluster.",
+        "Each cluster in K-Means is paired with a centroid.",
+        "The K-Means algorithm's main goal is to reduce the sum of distances between points and their corresponding cluster centroid."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle of top-down approach (inverse of AGNES) where the algorithm",
+    "principle, a classic example of mono-dimensional",
+    "principle of top-down",
+    "R=R1,...,rnR={r1,...,rn} into a set of c fuzzy clusters with respect to some given",
+    "F=f1,...,ffF={f1,...,ff}And a partition matrix"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 15 Clustering\"]\n  M1[\"15.2 Types of clustering\"]\n  Root --> M1\n  M2[\"15.3 Partition Based\"]\n  Root --> M2\n  M3[\"15.4 Hierarchical Based\"]\n  Root --> M3\n  M4[\"15.5 Density Based Clustering techni\"]\n  Root --> M4\n  M5[\"15.6 Clustering algorithms\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Cluster</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Cluster the most densely connected set of points.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">There are many clustering algorithms in the literature.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Partition Based</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Partition algorithm is one of the most applied clustering algorithms.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hierarchical Based</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Hierarchical Clustering analysis is an algorithm that groups the data points with similar properties and these groups are termed “clusters”.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Density Based Clustering Techniques</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It starts with a random unvisited starting data point.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.2 Types of clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are many clustering algorithms in the literature.</li>\n<li>Traditionally, documents are grouped based on how similar they are to other documents.</li>\n<li>Similarity-based algorithms define a function for computing document similarity and use it as the basis for assigning documents to clusters.</li>\n<li>Each cluster should have data that are comparable to one another but different from those in other clusters.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.3 Partition Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Partition algorithm is one of the most applied clustering algorithms.</li>\n<li>It has been widely used in many applications due to its simple structure and easy implementation as compared to other clustering algorithms.</li>\n<li>This clustering method classifies the information into multiple groups based on the characteristics and similarities of the data.</li>\n<li>In the partitioning method when database(D) contains multiple(N) objects then the partitioning approach divides the data into user-specified(K) partitions, each of which represents a cluster and a specific region.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.4 Hierarchical Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hierarchical Clustering analysis is an algorithm that groups the data points with similar properties and these groups are termed “clusters”.</li>\n<li>As a result of hierarchical clustering, we get a set of clusters, and these clusters are always different from each other.</li>\n<li>Example: The most common everyday example we see is how we order our files and folders in our computer by proper hierarchy.</li>\n<li>The space complexity is measured by the order of the square of n.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.5 Density Based Clustering techniques</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It starts with a random unvisited starting data point.</li>\n<li>All points within a distance ‘Epsilon’ – Ɛ classify as neighborhood points.</li>\n<li>We need a minimum number of points within the neighborhood to start the clustering process.</li>\n<li>In this scenario, the current point of data turns into the first point in the cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">15.6 Clustering algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>K-Means : Among clustering algorithms, is an algorithm that tries to minimize the distance of the points in a cluster with their centroid – the k-means clustering technique.</li>\n<li>It can also be called asa distance-based technique where distances between points are calculated to allocate a point to a cluster.</li>\n<li>Each cluster in K-Means is paired with a centroid.</li>\n<li>The K-Means algorithm's main goal is to reduce the sum of distances between points and their corresponding cluster centroid.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle of top-down approach (inverse of AGNES) where the algorithm</code></div>\n<div class=\"formula-box\"><code>principle, a classic example of mono-dimensional</code></div>\n<div class=\"formula-box\"><code>principle of top-down</code></div>\n<div class=\"formula-box\"><code>R=R1,...,rnR={r1,...,rn} into a set of c fuzzy clusters with respect to some given</code></div>\n<div class=\"formula-box\"><code>F=f1,...,ffF={f1,...,ff}And a partition matrix</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The technique of separating a set of data objects into subgroups based on some observation is known as clustering or cluster analysis. Each subset is referred to as a 'cluster,' with objects that are related to one another but different from those in other clusters. In simple terms, the process of separating a population or set of data points into several groups so that data points from the same group can be compared to data points from different groups. Clustering is often confused</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-15_Clustering.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

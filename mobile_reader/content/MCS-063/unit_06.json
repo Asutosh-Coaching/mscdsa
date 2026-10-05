@@ -1,0 +1,153 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Stacks, Queues and Deques",
+  "filename": "Unit-6_Stacks,_Queues_and_Deques.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-6_Stacks,_Queues_and_Deques.pdf",
+  "total_pages": 19,
+  "word_count": 3517,
+  "est_read_time_minutes": 20,
+  "objectives": [
+    "Implementation",
+    "Implementation",
+    "Implementation"
+  ],
+  "summary": "Stacks, queues, and dequeues are fundamental data structures that are used in  Support push and pop operations  Ideal for tracking state and handling recursion  Common applications include expression evaluation and backtracking  O(1) is the basic operations time complexity  Support enqueue and dequeue operations",
+  "flashcards": [
+    {
+      "question": "What principle does a stack follow? a) FIFO b) LIFO c) Random Access d) Sequential Access",
+      "answer": "is the basic operations time complexity Dequeues:  Combine features of stacks and queues  Allow insertion and deletion at both ends",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "In a queue, if we remove an element, from which end does it happen? a) Front b) Rear c) Middle d) Any position",
+      "answer": "In Stacks, Queues and Deques, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Which operation would you use to add an element to a stack? a) enqueue b) push c) insert d) add",
+      "answer": "In Stacks, Queues and Deques, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "A dequeue allows operations on: a) Only front end b) Only rear end c) Both ends d) Middle only",
+      "answer": "In Stacks, Queues and Deques, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is the time complexity of push operation in a stack? a) O(n) b) O(1) c) O(log n) d) O(n²)",
+      "answer": "In Stacks, Queues and Deques, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "True or False: A queue can be implemented using two stacks.",
+      "answer": "In Stacks, Queues and Deques, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is Abstract Data Type-List and how is it characterized?",
+      "answer": "A stack is one of the most fundamental abstract data structures in computer programming.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Stacks, Queues and Deques\"]\n  M1[\"6.2 Abstract Data Type-List\"]\n  Root --> M1\n  M2[\"6.3 Array Implementation of Lists\"]\n  Root --> M2\n  M3[\"6.4 Linked Lists-Implementation\"]\n  Root --> M3\n  M4[\"6.5 Doubly Linked Lists-Implementati\"]\n  Root --> M4\n  M5[\"6.6 Circularly Linked Lists-Implemen\"]\n  Root --> M5\n  M6[\"6.7 Applications\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Abstract Data Type-List</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A stack is one of the most fundamental abstract data structures in computer programming.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Array Implementation Of Lists</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linked Lists-Implementation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Doubly Linked Lists-Implementation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Answer: b) Undo operation in a text editor 8.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Circularly Linked Lists-Implementation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Books:  \"Data Structures and Algorithms in Python\" by Michael T.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Abstract Data Type-List</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A stack is one of the most fundamental abstract data structures in computer programming.</li>\n<li>We add and remove the elements from the same end of the stack which follows Last-in-first-out (LIFO) principle.</li>\n<li>Understanding stacks is crucial for many programming applications, from managing program execution to implementing undo operations in applications.</li>\n<li>Understanding Stacks A stack can be visualized as a vertical list of elements.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Array Implementation of Lists</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.</li>\n<li>Unlike static data structures, queues provide dynamic and flexible mechanisms for managing ordered collections where the first element is the first one to be removed.</li>\n<li>Queues are essential in various programming scenarios, particularly in managing tasks, scheduling processes, and handling asynchronous data.</li>\n<li>In this section, we will discuss the queue data structure in Python, covering its implementation, key operations, best practices, and practical use cases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Linked Lists-Implementation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.</li>\n<li>In this section, we will explore the deque data structure in Python, including its implementation, key operations, best practices, and practical use cases.</li>\n<li>Understanding Deques A deque can be visualized as a linear collection of elements where you can add or remove items from both ends.</li>\n<li>The primary operations associated with deques include: - Append: Adding an element to the back of the deque.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Doubly Linked Lists-Implementation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Answer: b) Undo operation in a text editor 8.</li>\n<li>Books:  \"Data Structures and Algorithms in Python\" by Michael T.</li>\n<li>Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.</li>\n<li> \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Circularly Linked Lists-Implementation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Books:  \"Data Structures and Algorithms in Python\" by Michael T.</li>\n<li>Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.</li>\n<li> \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.</li>\n<li> edX - \"Introduction to Computer Science using Python\": This course covers basic data structures including stacks and queues with hands-on programming assignments.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.7 Applications</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Books:  \"Data Structures and Algorithms in Python\" by Michael T.</li>\n<li>Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.</li>\n<li> \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.</li>\n<li> edX - \"Introduction to Computer Science using Python\": This course covers basic data structures including stacks and queues with hands-on programming assignments.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Principle: The last element added is removed first</code></div>\n<div class=\"formula-box\"><code>Principle: The first element added is the first to be removed.</code></div>\n<div class=\"formula-box\"><code>principle does a stack follow? a) FIFO b) LIFO c) Random Access</code></div>\n<div class=\"formula-box\"><code> Time Complexity: O(1)</code></div>\n<div class=\"formula-box\"><code>- Time Complexity: O(1) when using `collections.deque`, O(n) when using</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Stacks, queues, and dequeues are fundamental data structures that are used in  Support push and pop operations  Ideal for tracking state and handling recursion  Common applications include expression evaluation and backtracking  O(1) is the basic operations time complexity  Support enqueue and dequeue operations</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-6_Stacks,_Queues_and_Deques.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Stacks, Queues and Deques\"]\n  M1[\"6.2 Abstract Data Type-List\"]\n  Root --> M1\n  M2[\"6.3 Array Implementation of Lists\"]\n  Root --> M2\n  M3[\"6.4 Linked Lists-Implementation\"]\n  Root --> M3\n  M4[\"6.5 Doubly Linked Lists-Implementati\"]\n  Root --> M4\n  M5[\"6.6 Circularly Linked Lists-Implemen\"]\n  Root --> M5\n  M6[\"6.7 Applications\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Abstract Data Type-List",
+      "definition": "A stack is one of the most fundamental abstract data structures in computer programming.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Array Implementation Of Lists",
+      "definition": "In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Linked Lists-Implementation",
+      "definition": "A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Doubly Linked Lists-Implementation",
+      "definition": "Answer: b) Undo operation in a text editor 8.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Circularly Linked Lists-Implementation",
+      "definition": "Books:  \"Data Structures and Algorithms in Python\" by Michael T.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.2",
+      "topic": "Abstract Data Type-List",
+      "points": [
+        "A stack is one of the most fundamental abstract data structures in computer programming.",
+        "We add and remove the elements from the same end of the stack which follows Last-in-first-out (LIFO) principle.",
+        "Understanding stacks is crucial for many programming applications, from managing program execution to implementing undo operations in applications.",
+        "Understanding Stacks A stack can be visualized as a vertical list of elements."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Array Implementation of Lists",
+      "points": [
+        "In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.",
+        "Unlike static data structures, queues provide dynamic and flexible mechanisms for managing ordered collections where the first element is the first one to be removed.",
+        "Queues are essential in various programming scenarios, particularly in managing tasks, scheduling processes, and handling asynchronous data.",
+        "In this section, we will discuss the queue data structure in Python, covering its implementation, key operations, best practices, and practical use cases."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Linked Lists-Implementation",
+      "points": [
+        "A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.",
+        "In this section, we will explore the deque data structure in Python, including its implementation, key operations, best practices, and practical use cases.",
+        "Understanding Deques A deque can be visualized as a linear collection of elements where you can add or remove items from both ends.",
+        "The primary operations associated with deques include: - Append: Adding an element to the back of the deque."
+      ]
+    },
+    {
+      "section_num": "6.5",
+      "topic": "Doubly Linked Lists-Implementation",
+      "points": [
+        "Answer: b) Undo operation in a text editor 8.",
+        "Books:  \"Data Structures and Algorithms in Python\" by Michael T.",
+        "Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.",
+        " \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues."
+      ]
+    },
+    {
+      "section_num": "6.6",
+      "topic": "Circularly Linked Lists-Implementation",
+      "points": [
+        "Books:  \"Data Structures and Algorithms in Python\" by Michael T.",
+        "Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.",
+        " \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.",
+        " edX - \"Introduction to Computer Science using Python\": This course covers basic data structures including stacks and queues with hands-on programming assignments."
+      ]
+    },
+    {
+      "section_num": "6.7",
+      "topic": "Applications",
+      "points": [
+        "Books:  \"Data Structures and Algorithms in Python\" by Michael T.",
+        "Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.",
+        " \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.",
+        " edX - \"Introduction to Computer Science using Python\": This course covers basic data structures including stacks and queues with hands-on programming assignments."
+      ]
+    }
+  ],
+  "formulas": [
+    "Principle: The last element added is removed first",
+    "Principle: The first element added is the first to be removed.",
+    "principle does a stack follow? a) FIFO b) LIFO c) Random Access",
+    " Time Complexity: O(1)",
+    "- Time Complexity: O(1) when using `collections.deque`, O(n) when using"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Stacks, Queues and Deques\"]\n  M1[\"6.2 Abstract Data Type-List\"]\n  Root --> M1\n  M2[\"6.3 Array Implementation of Lists\"]\n  Root --> M2\n  M3[\"6.4 Linked Lists-Implementation\"]\n  Root --> M3\n  M4[\"6.5 Doubly Linked Lists-Implementati\"]\n  Root --> M4\n  M5[\"6.6 Circularly Linked Lists-Implemen\"]\n  Root --> M5\n  M6[\"6.7 Applications\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Abstract Data Type-List</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A stack is one of the most fundamental abstract data structures in computer programming.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Array Implementation Of Lists</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linked Lists-Implementation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Doubly Linked Lists-Implementation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Answer: b) Undo operation in a text editor 8.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Circularly Linked Lists-Implementation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Books:  \"Data Structures and Algorithms in Python\" by Michael T.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Abstract Data Type-List</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A stack is one of the most fundamental abstract data structures in computer programming.</li>\n<li>We add and remove the elements from the same end of the stack which follows Last-in-first-out (LIFO) principle.</li>\n<li>Understanding stacks is crucial for many programming applications, from managing program execution to implementing undo operations in applications.</li>\n<li>Understanding Stacks A stack can be visualized as a vertical list of elements.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Array Implementation of Lists</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Python programming, queues store and manipulate elements in a FIFO (First-In-First-Out) manner.</li>\n<li>Unlike static data structures, queues provide dynamic and flexible mechanisms for managing ordered collections where the first element is the first one to be removed.</li>\n<li>Queues are essential in various programming scenarios, particularly in managing tasks, scheduling processes, and handling asynchronous data.</li>\n<li>In this section, we will discuss the queue data structure in Python, covering its implementation, key operations, best practices, and practical use cases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Linked Lists-Implementation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A double-ended queue, commonly referred to as a deque, allows insertion and removal of elements from both ends, making it a hybrid between stacks and queues.</li>\n<li>In this section, we will explore the deque data structure in Python, including its implementation, key operations, best practices, and practical use cases.</li>\n<li>Understanding Deques A deque can be visualized as a linear collection of elements where you can add or remove items from both ends.</li>\n<li>The primary operations associated with deques include: - Append: Adding an element to the back of the deque.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Doubly Linked Lists-Implementation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Answer: b) Undo operation in a text editor 8.</li>\n<li>Books:  \"Data Structures and Algorithms in Python\" by Michael T.</li>\n<li>Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.</li>\n<li> \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Circularly Linked Lists-Implementation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Books:  \"Data Structures and Algorithms in Python\" by Michael T.</li>\n<li>Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.</li>\n<li> \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.</li>\n<li> edX - \"Introduction to Computer Science using Python\": This course covers basic data structures including stacks and queues with hands-on programming assignments.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.7 Applications</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Books:  \"Data Structures and Algorithms in Python\" by Michael T.</li>\n<li>Goldwasser: This book covers fundamental data structures, including stacks, queues, and deques, with a focus on implementation in Python.</li>\n<li> \"Python Data Structures and Algorithms\" by Benjamin Baka: This book offers a practical approach to implementing various data structures in Python, including detailed sections on stacks and queues.</li>\n<li> edX - \"Introduction to Computer Science using Python\": This course covers basic data structures including stacks and queues with hands-on programming assignments.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Principle: The last element added is removed first</code></div>\n<div class=\"formula-box\"><code>Principle: The first element added is the first to be removed.</code></div>\n<div class=\"formula-box\"><code>principle does a stack follow? a) FIFO b) LIFO c) Random Access</code></div>\n<div class=\"formula-box\"><code> Time Complexity: O(1)</code></div>\n<div class=\"formula-box\"><code>- Time Complexity: O(1) when using `collections.deque`, O(n) when using</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Stacks, queues, and dequeues are fundamental data structures that are used in  Support push and pop operations  Ideal for tracking state and handling recursion  Common applications include expression evaluation and backtracking  O(1) is the basic operations time complexity  Support enqueue and dequeue operations</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-6_Stacks,_Queues_and_Deques.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

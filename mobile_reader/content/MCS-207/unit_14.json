@@ -1,0 +1,166 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_14",
+  "unit_num": "Unit 14",
+  "title": "Data Warehousing and Data Mining",
+  "filename": "Unit-14_Data_Warehousing_and_Data_Mining.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-14_Data_Warehousing_and_Data_Mining.pdf",
+  "total_pages": 24,
+  "word_count": 7920,
+  "est_read_time_minutes": 44,
+  "objectives": [
+    "14.4 Multidimensional Data Model of a Data Warehouse",
+    "Nearest Neighbour)"
+  ],
+  "summary": "A data warehouse is an integrated collection of data and can help the process of making better business decisions. Several tools and methods are available to process the data of a data warehouse to create information and knowledge that supports business decisions. Two such techniques are Decision-support systems and Online Analytical processing. A detailed discussion on these topics is beyond. The scope of this unit. In this unit, we define data mining, which can extract useful information from a data warehouse.",
+  "flashcards": [
+    {
+      "question": "What is a Data Warehouse? ……………………………………………………………………………………",
+      "answer": "Data Mining Concepts and Techniques, J Han, M Kamber, Morgan Kaufmann Publishers,",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the characteristics of data in a data warehouse? …………………………………………………………………………………… …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "Data Mining, A K Pujari, 2004.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is ETL? What are the different transformations that are needed during the ETL process?",
+      "answer": "The dataset D given for the problem is:",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is a dimension? How is it different from a fact table? …………………………………………………………………………………… …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "Data Mining Concepts and Techniques, J Han, M Kamber, Morgan Kaufmann Publishers,",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "How is the Snowflake schema different from the Star schema? …………………………………………………………………………………… …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "Data Mining, A K Pujari, 2004.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Define what data mining is. …………………………………………………………………………………… …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "The dataset D given for the problem is:",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is What Is Data Warehousing? and how is it characterized?",
+      "answer": "Let us first try to answer the question: What is a data warehouse?",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Data Warehousing and Data Mi\"]\n  M1[\"14.2 What Is Data Warehousing?\"]\n  Root --> M1\n  M2[\"14.3 Basic Components of a Data Ware\"]\n  Root --> M2\n  M2_1[\"14.3.1 The Data Sources\"]\n  M2 --> M2_1\n  M2_2[\"14.3.2 Data Extraction, Transformati\"]\n  M2 --> M2_2\n  M3[\"14.4 Multidimensional Data Model of \"]\n  Root --> M3\n  M4[\"14.5 Data Mining Technology\"]\n  Root --> M4\n  M5[\"14.6 Classification\"]\n  Root --> M5\n  M5_1[\"14.6.1 Classification Using Distance\"]\n  M5 --> M5_1\n  M5_2[\"14.6.2 Decision Tree\"]\n  M5 --> M5_2\n  M6[\"14.7 Clustering\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">What Is Data Warehousing?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us first try to answer the question: What is a data warehouse?</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Data Sources</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The data of the data warehouse can be obtained from many operational systems.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Mining Technology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data is growing at a phenomenal rate today and users expect more sophisticated information from data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Classification</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The classification task maps data tuples into predefined groups or classes.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.2 What Is Data Warehousing?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us first try to answer the question: What is a data warehouse?</li>\n<li>A simple answer could be: A data warehouse is a tool that manages data after and outside of operational systems.</li>\n<li>Thus, it is not a replacement for the operational systems but is a major tool that acquires data from the operational systems.</li>\n<li>Data warehousing technology has evolved in business applications for the process of strategic decision-making.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 Basic Components of a Data Warehouse</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>WAREHOUSE A data warehouse is defined as a subject-oriented, integrated, nonvolatile, time-variant collection, but how can we achieve such a collection?</li>\n<li>To answer this question, let us define the basic architecture that helps a data warehouse achieve the objectives stated above.</li>\n<li>We shall also discuss various processes that are performed by these components on the data.</li>\n<li>A data warehouse interacts with the environment that provides most of the source data for the data warehouse.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.1 The Data Sources</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data of the data warehouse can be obtained from many operational systems.</li>\n<li>A data warehouse interacts with the environment that provides most of the source data for the data warehouse.</li>\n<li>By the term environment, we mean traditionally developed database Reports The Reports are generated using the query and analysis tools.</li>\n<li>In a large installation, hundreds or even thousands of these database systems or files-based systems exist with plenty of redundant data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.2 Data Extraction, Transformation and Loading (ETL)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The first step in data warehousing is to perform data extraction, transformation, and loading of data into the data warehouse.</li>\n<li>This is called ETL, which is Extraction, Transformation, and Loading.</li>\n<li>ETL refers to the methods involved in accessing and manipulating data available in various sources and loading it into a target data warehouse.</li>\n<li>The following are the sub-processes of the ETL process of the data warehouse: Data Extraction: The ETL is a three-stage process.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4 Multidimensional Data Model of a Data Warehouse</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>DATA WAREHOUSE A data warehouse is a huge collection of data.</li>\n<li>Such data may involve grouping of data on multiple attributes.</li>\n<li>• In the year 2003, BCA enrolment in Region RC-07 was 500.</li>\n<li>• In the year 2002, MCA enrolment in all the regions was 8000.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.5 Data Mining Technology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data is growing at a phenomenal rate today and users expect more sophisticated information from data.</li>\n<li>There is a need for techniques and tools that can automatically generate useful information and knowledge from large volumes of data.</li>\n<li>Data mining is one such technique of generating hidden information from the large data.</li>\n<li>Data mining can be defined as: “an automatic process of extraction of non-trivial or implicit or previously unknown but potentially useful information or patterns from data in large databases, data warehouses or in flat files”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.6 Classification</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The classification task maps data tuples into predefined groups or classes.</li>\n<li>Given a database/dataset consisting of tuples ti, where i varies from 1 to n, i.e.</li>\n<li>D={t1, t2,…, tn}; and a set of known classes C={C1,…, Cm}, where m >> n.</li>\n<li>The classification problem is to map each ti to a Ci.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.6.1 Classification Using Distance (K-Nearest Neighbour)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This approach places items in the class to which they are “closest” by determining the distance of an item from a class.</li>\n<li>Classes are represented by a central point called centroid.</li>\n<li>The K-nearest neighbour algorithm has the following steps: 1) Create a training data set consisting of attributes or features that would be used for classifying data and the identified classes for these attributes.</li>\n<li>2) Defines the number of near items (items that have less distance to the attributes of concern) from the training data that should be used to classify data.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule mining is to find relationships</code></div>\n<div class=\"formula-box\"><code>Principle: 1. The classification involves learning using the training data, which is the data that</code></div>\n<div class=\"formula-box\"><code>rule mining is to find certain association relationships among a</code></div>\n<div class=\"formula-box\"><code>rules. In association rule mining there are two measurements, support and</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">A data warehouse is an integrated collection of data and can help the process of making better business decisions. Several tools and methods are available to process the data of a data warehouse to create information and knowledge that supports business decisions. Two such techniques are Decision-support systems and Online Analytical processing. A detailed discussion on these topics is beyond. The scope of this unit. In this unit, we define data mining, which can extract useful information from a data warehouse.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-14_Data_Warehousing_and_Data_Mining.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 14 Data Warehousing and Data Mi\"]\n  M1[\"14.2 What Is Data Warehousing?\"]\n  Root --> M1\n  M2[\"14.3 Basic Components of a Data Ware\"]\n  Root --> M2\n  M2_1[\"14.3.1 The Data Sources\"]\n  M2 --> M2_1\n  M2_2[\"14.3.2 Data Extraction, Transformati\"]\n  M2 --> M2_2\n  M3[\"14.4 Multidimensional Data Model of \"]\n  Root --> M3\n  M4[\"14.5 Data Mining Technology\"]\n  Root --> M4\n  M5[\"14.6 Classification\"]\n  Root --> M5\n  M5_1[\"14.6.1 Classification Using Distance\"]\n  M5 --> M5_1\n  M5_2[\"14.6.2 Decision Tree\"]\n  M5 --> M5_2\n  M6[\"14.7 Clustering\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "What Is Data Warehousing?",
+      "definition": "Let us first try to answer the question: What is a data warehouse?",
+      "category": "Key Concept"
+    },
+    {
+      "term": "The Data Sources",
+      "definition": "The data of the data warehouse can be obtained from many operational systems.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Mining Technology",
+      "definition": "Data is growing at a phenomenal rate today and users expect more sophisticated information from data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Classification",
+      "definition": "The classification task maps data tuples into predefined groups or classes.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "14.2",
+      "topic": "What Is Data Warehousing?",
+      "points": [
+        "Let us first try to answer the question: What is a data warehouse?",
+        "A simple answer could be: A data warehouse is a tool that manages data after and outside of operational systems.",
+        "Thus, it is not a replacement for the operational systems but is a major tool that acquires data from the operational systems.",
+        "Data warehousing technology has evolved in business applications for the process of strategic decision-making."
+      ]
+    },
+    {
+      "section_num": "14.3",
+      "topic": "Basic Components of a Data Warehouse",
+      "points": [
+        "WAREHOUSE A data warehouse is defined as a subject-oriented, integrated, nonvolatile, time-variant collection, but how can we achieve such a collection?",
+        "To answer this question, let us define the basic architecture that helps a data warehouse achieve the objectives stated above.",
+        "We shall also discuss various processes that are performed by these components on the data.",
+        "A data warehouse interacts with the environment that provides most of the source data for the data warehouse."
+      ]
+    },
+    {
+      "section_num": "14.3.1",
+      "topic": "The Data Sources",
+      "points": [
+        "The data of the data warehouse can be obtained from many operational systems.",
+        "A data warehouse interacts with the environment that provides most of the source data for the data warehouse.",
+        "By the term environment, we mean traditionally developed database Reports The Reports are generated using the query and analysis tools.",
+        "In a large installation, hundreds or even thousands of these database systems or files-based systems exist with plenty of redundant data."
+      ]
+    },
+    {
+      "section_num": "14.3.2",
+      "topic": "Data Extraction, Transformation and Loading (ETL)",
+      "points": [
+        "The first step in data warehousing is to perform data extraction, transformation, and loading of data into the data warehouse.",
+        "This is called ETL, which is Extraction, Transformation, and Loading.",
+        "ETL refers to the methods involved in accessing and manipulating data available in various sources and loading it into a target data warehouse.",
+        "The following are the sub-processes of the ETL process of the data warehouse: Data Extraction: The ETL is a three-stage process."
+      ]
+    },
+    {
+      "section_num": "14.4",
+      "topic": "Multidimensional Data Model of a Data Warehouse",
+      "points": [
+        "DATA WAREHOUSE A data warehouse is a huge collection of data.",
+        "Such data may involve grouping of data on multiple attributes.",
+        "• In the year 2003, BCA enrolment in Region RC-07 was 500.",
+        "• In the year 2002, MCA enrolment in all the regions was 8000."
+      ]
+    },
+    {
+      "section_num": "14.5",
+      "topic": "Data Mining Technology",
+      "points": [
+        "Data is growing at a phenomenal rate today and users expect more sophisticated information from data.",
+        "There is a need for techniques and tools that can automatically generate useful information and knowledge from large volumes of data.",
+        "Data mining is one such technique of generating hidden information from the large data.",
+        "Data mining can be defined as: “an automatic process of extraction of non-trivial or implicit or previously unknown but potentially useful information or patterns from data in large databases, data warehouses or in flat files”."
+      ]
+    },
+    {
+      "section_num": "14.6",
+      "topic": "Classification",
+      "points": [
+        "The classification task maps data tuples into predefined groups or classes.",
+        "Given a database/dataset consisting of tuples ti, where i varies from 1 to n, i.e.",
+        "D={t1, t2,…, tn}; and a set of known classes C={C1,…, Cm}, where m >> n.",
+        "The classification problem is to map each ti to a Ci."
+      ]
+    },
+    {
+      "section_num": "14.6.1",
+      "topic": "Classification Using Distance (K-Nearest Neighbour)",
+      "points": [
+        "This approach places items in the class to which they are “closest” by determining the distance of an item from a class.",
+        "Classes are represented by a central point called centroid.",
+        "The K-nearest neighbour algorithm has the following steps: 1) Create a training data set consisting of attributes or features that would be used for classifying data and the identified classes for these attributes.",
+        "2) Defines the number of near items (items that have less distance to the attributes of concern) from the training data that should be used to classify data."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule mining is to find relationships",
+    "Principle: 1. The classification involves learning using the training data, which is the data that",
+    "rule mining is to find certain association relationships among a",
+    "rules. In association rule mining there are two measurements, support and"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Data Warehousing and Data Mi\"]\n  M1[\"14.2 What Is Data Warehousing?\"]\n  Root --> M1\n  M2[\"14.3 Basic Components of a Data Ware\"]\n  Root --> M2\n  M2_1[\"14.3.1 The Data Sources\"]\n  M2 --> M2_1\n  M2_2[\"14.3.2 Data Extraction, Transformati\"]\n  M2 --> M2_2\n  M3[\"14.4 Multidimensional Data Model of \"]\n  Root --> M3\n  M4[\"14.5 Data Mining Technology\"]\n  Root --> M4\n  M5[\"14.6 Classification\"]\n  Root --> M5\n  M5_1[\"14.6.1 Classification Using Distance\"]\n  M5 --> M5_1\n  M5_2[\"14.6.2 Decision Tree\"]\n  M5 --> M5_2\n  M6[\"14.7 Clustering\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">What Is Data Warehousing?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us first try to answer the question: What is a data warehouse?</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Data Sources</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The data of the data warehouse can be obtained from many operational systems.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Mining Technology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data is growing at a phenomenal rate today and users expect more sophisticated information from data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Classification</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The classification task maps data tuples into predefined groups or classes.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.2 What Is Data Warehousing?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us first try to answer the question: What is a data warehouse?</li>\n<li>A simple answer could be: A data warehouse is a tool that manages data after and outside of operational systems.</li>\n<li>Thus, it is not a replacement for the operational systems but is a major tool that acquires data from the operational systems.</li>\n<li>Data warehousing technology has evolved in business applications for the process of strategic decision-making.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 Basic Components of a Data Warehouse</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>WAREHOUSE A data warehouse is defined as a subject-oriented, integrated, nonvolatile, time-variant collection, but how can we achieve such a collection?</li>\n<li>To answer this question, let us define the basic architecture that helps a data warehouse achieve the objectives stated above.</li>\n<li>We shall also discuss various processes that are performed by these components on the data.</li>\n<li>A data warehouse interacts with the environment that provides most of the source data for the data warehouse.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.1 The Data Sources</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data of the data warehouse can be obtained from many operational systems.</li>\n<li>A data warehouse interacts with the environment that provides most of the source data for the data warehouse.</li>\n<li>By the term environment, we mean traditionally developed database Reports The Reports are generated using the query and analysis tools.</li>\n<li>In a large installation, hundreds or even thousands of these database systems or files-based systems exist with plenty of redundant data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.2 Data Extraction, Transformation and Loading (ETL)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The first step in data warehousing is to perform data extraction, transformation, and loading of data into the data warehouse.</li>\n<li>This is called ETL, which is Extraction, Transformation, and Loading.</li>\n<li>ETL refers to the methods involved in accessing and manipulating data available in various sources and loading it into a target data warehouse.</li>\n<li>The following are the sub-processes of the ETL process of the data warehouse: Data Extraction: The ETL is a three-stage process.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4 Multidimensional Data Model of a Data Warehouse</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>DATA WAREHOUSE A data warehouse is a huge collection of data.</li>\n<li>Such data may involve grouping of data on multiple attributes.</li>\n<li>• In the year 2003, BCA enrolment in Region RC-07 was 500.</li>\n<li>• In the year 2002, MCA enrolment in all the regions was 8000.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.5 Data Mining Technology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data is growing at a phenomenal rate today and users expect more sophisticated information from data.</li>\n<li>There is a need for techniques and tools that can automatically generate useful information and knowledge from large volumes of data.</li>\n<li>Data mining is one such technique of generating hidden information from the large data.</li>\n<li>Data mining can be defined as: “an automatic process of extraction of non-trivial or implicit or previously unknown but potentially useful information or patterns from data in large databases, data warehouses or in flat files”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.6 Classification</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The classification task maps data tuples into predefined groups or classes.</li>\n<li>Given a database/dataset consisting of tuples ti, where i varies from 1 to n, i.e.</li>\n<li>D={t1, t2,…, tn}; and a set of known classes C={C1,…, Cm}, where m >> n.</li>\n<li>The classification problem is to map each ti to a Ci.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.6.1 Classification Using Distance (K-Nearest Neighbour)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This approach places items in the class to which they are “closest” by determining the distance of an item from a class.</li>\n<li>Classes are represented by a central point called centroid.</li>\n<li>The K-nearest neighbour algorithm has the following steps: 1) Create a training data set consisting of attributes or features that would be used for classifying data and the identified classes for these attributes.</li>\n<li>2) Defines the number of near items (items that have less distance to the attributes of concern) from the training data that should be used to classify data.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule mining is to find relationships</code></div>\n<div class=\"formula-box\"><code>Principle: 1. The classification involves learning using the training data, which is the data that</code></div>\n<div class=\"formula-box\"><code>rule mining is to find certain association relationships among a</code></div>\n<div class=\"formula-box\"><code>rules. In association rule mining there are two measurements, support and</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">A data warehouse is an integrated collection of data and can help the process of making better business decisions. Several tools and methods are available to process the data of a data warehouse to create information and knowledge that supports business decisions. Two such techniques are Decision-support systems and Online Analytical processing. A detailed discussion on these topics is beyond. The scope of this unit. In this unit, we define data mining, which can extract useful information from a data warehouse.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-14_Data_Warehousing_and_Data_Mining.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

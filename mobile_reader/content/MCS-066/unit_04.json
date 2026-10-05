@@ -1,0 +1,164 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_04",
+  "unit_num": "Unit 4",
+  "title": "Basics of Probability",
+  "filename": "Unit-4_Basics_of_Probability.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-4_Basics_of_Probability.pdf",
+  "total_pages": 36,
+  "word_count": 13651,
+  "est_read_time_minutes": 76,
+  "objectives": [
+    "Sample Space and Events",
+    "Computing Mathematical Probability",
+    "Axioms of Probability",
+    "Conditional Probability",
+    "Independent Events"
+  ],
+  "summary": "In this unit, we have discussed: 1. How to create a sample space for a problem. 2. Define an event and create its instances. 4. What are the axioms of probability, and how can these axioms be used 5. How to use the addition law, conditional probability and independent 6. What is Bayes’ theorem and how can it be used to compute probability.",
+  "flashcards": [
+    {
+      "question": "Write the sample space if we draw a card from a pack of 52 playing cards.",
+      "answer": "P(AE1) + P(E2) P(AE2) =",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "If a die and a coin are tossed simultaneously, write the event of getting (i) head and prime number (ii) tail and an even number (iii) head and multiple of",
+      "answer": "Total number of drivers = 1000 + 3000 + 6000 = 10000. Let",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "If two coins are tossed, then find the probability of getting. (i) At least one head (ii) head and tail (iii) At most one head",
+      "answer": "Let E1 be the event that a person selected from the population of the city is suffering from the T.B. and E",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "If three dice are thrown, then find the probability of getting (i) triplet (ii) sum",
+      "answer": "Let A be the event that person X passes the test and B be the event that person Y passes the test. ",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Find the probability of getting 53 Mondays in a randomly selected leap year.",
+      "answer": ", (2, 4), (3, 3), (4, 2), (5, 1)}, and B = {",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "If A, B and C are any three events, write down the expressions in terms of set theory: a) Only A occurs b) A and B occur, but C does not c) A, B and C all the three occur",
+      "answer": "P(AE1) + P(E2) P(AE2) =",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Sample Space And Events and how is it characterized?",
+      "answer": "In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 Basics of Probability\"]\n  M1[\"4.2 Sample Space and Events\"]\n  Root --> M1\n  M2[\"4.3 Computing Mathematical Probabili\"]\n  Root --> M2\n  M3[\"4.4 Axioms of Probability\"]\n  Root --> M3\n  M4[\"4.5 Addition Law\"]\n  Root --> M4\n  M5[\"4.6 Conditional Probability\"]\n  Root --> M5\n  M6[\"4.7 Independent Events\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sample Space And Events</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Computing Mathematical Probability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let there be ‘n’ exhaustive cases in a random experiment which are mutually exclusive as well as equally likely.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Axioms Of Probability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The axioms are fundamental to probability and provide us with an approach to probability, i.e., an axiomatic approach to probability.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Addition Law</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The result can similarly be extended for more than 3 events.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Conditional Probability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">We have discussed earlier that P(A) represents the probability of happening event A for which the number of exhaustive cases is the number of elements in the sample space S.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Sample Space and Events</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.</li>\n<li>This will be followed by a discussion on sample spaces and events.</li>\n<li>Random Experiment: An experiment in which all the possible outcomes are known in advance, but we cannot predict as to which of them will occur when we perform the experiment, e.g.</li>\n<li>Experiment of tossing a coin is random experiment as the possible outcomes, “Heads” and “Tails” are known in advance, but which one will turn up is not known.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Computing Mathematical Probability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let there be ‘n’ exhaustive cases in a random experiment which are mutually exclusive as well as equally likely.</li>\n<li>Also, since 0  m  n, therefore 0  P(A)  1 …(3) Remark: Probability of an impossible event is always zero and that of certain event is 1, e.g.</li>\n<li>probability of getting 7 when we throw a die is zero, as getting 7 here is an impossible event and probability of getting either of the six faces is 1, as it is a certain event.</li>\n<li>This definition of probability fails if (i) The cases are not equally likely, e.g.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 Axioms of Probability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The axioms are fundamental to probability and provide us with an approach to probability, i.e., an axiomatic approach to probability.</li>\n<li>is any finite or infinite sequence of disjoint events in S, then P(A1 or A2 or...or An) = P(A1) + P(A2) +...+ P(An) Now, let us give some results using probability function.</li>\n<li>But before taking up these results, we discuss some statements with their meanings in terms of set theory.</li>\n<li>in case of three events A, B and C, happening of at least one of the events is written as 𝐴∪𝐵∪𝐶 .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.5 Addition Law</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The result can similarly be extended for more than 3 events.</li>\n<li>Applications of the Addition Theorem of Probability Example 15: 25 lottery tickets are marked with first 25 numerals.</li>\n<li>Find the probability that it is a multiple of 5 or 7.</li>\n<li>Solution: Let A be the event that the drawn ticket bears a number multiple of 5 and B be the event that it bears a number multiple of 7.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.6 Conditional Probability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We have discussed earlier that P(A) represents the probability of happening event A for which the number of exhaustive cases is the number of elements in the sample space S.</li>\n<li>P(A) dealt earlier was the unconditional probability.</li>\n<li>Here, we are going to deal with conditional probability.</li>\n<li>Let us start with taking the following example: Suppose a card is drawn at random from a pack of 52 playing cards.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.7 Independent Events</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Now, if we do not replace the card back and draw the next card.</li>\n<li>Then, the probability of drawing the second card ‘a card of spades’ given that the first card was spades would be 12/51 and it is the conditional probability.</li>\n<li>Now, if the first card had been replaced back then this conditional probability would have been 13/52.</li>\n<li>In the example above, if the next draw is made with replacement, then the draw is not affected by the preceding draws.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.8 Bayes’ Theorem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the important theorems of probability that is useful in data science is known as Bayes’ theorem, given by Thomas Bayes, a British Mathematician..</li>\n<li>In this unit we state this theorem without proof.</li>\n<li>Statement: Let S be the sample space and E1, E2, …, En be n mutually exclusive and exhaustive events with P(Ei)  0; i = 1, 2, .., n.</li>\n<li>Let A be any event which is a sub-set of E1  E2  …  En (i.e.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>law, conditional probability and independent</code></div>\n<div class=\"formula-box\"><code>law, conditional probability,</code></div>\n<div class=\"formula-box\"><code>law (see Unit 1 of Course MST-001)]</code></div>\n<div class=\"formula-box\"><code>Addition Theorem on Probability for Two Events</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed: 1. How to create a sample space for a problem. 2. Define an event and create its instances. 4. What are the axioms of probability, and how can these axioms be used 5. How to use the addition law, conditional probability and independent 6. What is Bayes’ theorem and how can it be used to compute probability.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-4_Basics_of_Probability.pdf')\">\n          📄 Read Original IGNOU PDF (36 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 4 Basics of Probability\"]\n  M1[\"4.2 Sample Space and Events\"]\n  Root --> M1\n  M2[\"4.3 Computing Mathematical Probabili\"]\n  Root --> M2\n  M3[\"4.4 Axioms of Probability\"]\n  Root --> M3\n  M4[\"4.5 Addition Law\"]\n  Root --> M4\n  M5[\"4.6 Conditional Probability\"]\n  Root --> M5\n  M6[\"4.7 Independent Events\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Sample Space And Events",
+      "definition": "In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Computing Mathematical Probability",
+      "definition": "Let there be ‘n’ exhaustive cases in a random experiment which are mutually exclusive as well as equally likely.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Axioms Of Probability",
+      "definition": "The axioms are fundamental to probability and provide us with an approach to probability, i.e., an axiomatic approach to probability.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Addition Law",
+      "definition": "The result can similarly be extended for more than 3 events.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Conditional Probability",
+      "definition": "We have discussed earlier that P(A) represents the probability of happening event A for which the number of exhaustive cases is the number of elements in the sample space S.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "4.2",
+      "topic": "Sample Space and Events",
+      "points": [
+        "In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.",
+        "This will be followed by a discussion on sample spaces and events.",
+        "Random Experiment: An experiment in which all the possible outcomes are known in advance, but we cannot predict as to which of them will occur when we perform the experiment, e.g.",
+        "Experiment of tossing a coin is random experiment as the possible outcomes, “Heads” and “Tails” are known in advance, but which one will turn up is not known."
+      ]
+    },
+    {
+      "section_num": "4.3",
+      "topic": "Computing Mathematical Probability",
+      "points": [
+        "Let there be ‘n’ exhaustive cases in a random experiment which are mutually exclusive as well as equally likely.",
+        "Also, since 0  m  n, therefore 0  P(A)  1 …(3) Remark: Probability of an impossible event is always zero and that of certain event is 1, e.g.",
+        "probability of getting 7 when we throw a die is zero, as getting 7 here is an impossible event and probability of getting either of the six faces is 1, as it is a certain event.",
+        "This definition of probability fails if (i) The cases are not equally likely, e.g."
+      ]
+    },
+    {
+      "section_num": "4.4",
+      "topic": "Axioms of Probability",
+      "points": [
+        "The axioms are fundamental to probability and provide us with an approach to probability, i.e., an axiomatic approach to probability.",
+        "is any finite or infinite sequence of disjoint events in S, then P(A1 or A2 or...or An) = P(A1) + P(A2) +...+ P(An) Now, let us give some results using probability function.",
+        "But before taking up these results, we discuss some statements with their meanings in terms of set theory.",
+        "in case of three events A, B and C, happening of at least one of the events is written as 𝐴∪𝐵∪𝐶 ."
+      ]
+    },
+    {
+      "section_num": "4.5",
+      "topic": "Addition Law",
+      "points": [
+        "The result can similarly be extended for more than 3 events.",
+        "Applications of the Addition Theorem of Probability Example 15: 25 lottery tickets are marked with first 25 numerals.",
+        "Find the probability that it is a multiple of 5 or 7.",
+        "Solution: Let A be the event that the drawn ticket bears a number multiple of 5 and B be the event that it bears a number multiple of 7."
+      ]
+    },
+    {
+      "section_num": "4.6",
+      "topic": "Conditional Probability",
+      "points": [
+        "We have discussed earlier that P(A) represents the probability of happening event A for which the number of exhaustive cases is the number of elements in the sample space S.",
+        "P(A) dealt earlier was the unconditional probability.",
+        "Here, we are going to deal with conditional probability.",
+        "Let us start with taking the following example: Suppose a card is drawn at random from a pack of 52 playing cards."
+      ]
+    },
+    {
+      "section_num": "4.7",
+      "topic": "Independent Events",
+      "points": [
+        "Now, if we do not replace the card back and draw the next card.",
+        "Then, the probability of drawing the second card ‘a card of spades’ given that the first card was spades would be 12/51 and it is the conditional probability.",
+        "Now, if the first card had been replaced back then this conditional probability would have been 13/52.",
+        "In the example above, if the next draw is made with replacement, then the draw is not affected by the preceding draws."
+      ]
+    },
+    {
+      "section_num": "4.8",
+      "topic": "Bayes’ Theorem",
+      "points": [
+        "One of the important theorems of probability that is useful in data science is known as Bayes’ theorem, given by Thomas Bayes, a British Mathematician..",
+        "In this unit we state this theorem without proof.",
+        "Statement: Let S be the sample space and E1, E2, …, En be n mutually exclusive and exhaustive events with P(Ei)  0; i = 1, 2, .., n.",
+        "Let A be any event which is a sub-set of E1  E2  …  En (i.e."
+      ]
+    }
+  ],
+  "formulas": [
+    "law, conditional probability and independent",
+    "law, conditional probability,",
+    "law (see Unit 1 of Course MST-001)]",
+    "Addition Theorem on Probability for Two Events"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 Basics of Probability\"]\n  M1[\"4.2 Sample Space and Events\"]\n  Root --> M1\n  M2[\"4.3 Computing Mathematical Probabili\"]\n  Root --> M2\n  M3[\"4.4 Axioms of Probability\"]\n  Root --> M3\n  M4[\"4.5 Addition Law\"]\n  Root --> M4\n  M5[\"4.6 Conditional Probability\"]\n  Root --> M5\n  M6[\"4.7 Independent Events\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sample Space And Events</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Computing Mathematical Probability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let there be ‘n’ exhaustive cases in a random experiment which are mutually exclusive as well as equally likely.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Axioms Of Probability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The axioms are fundamental to probability and provide us with an approach to probability, i.e., an axiomatic approach to probability.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Addition Law</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The result can similarly be extended for more than 3 events.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Conditional Probability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">We have discussed earlier that P(A) represents the probability of happening event A for which the number of exhaustive cases is the number of elements in the sample space S.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Sample Space and Events</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, first, we will define the terms Random Experiment and Trial, which form the basis of probability theory.</li>\n<li>This will be followed by a discussion on sample spaces and events.</li>\n<li>Random Experiment: An experiment in which all the possible outcomes are known in advance, but we cannot predict as to which of them will occur when we perform the experiment, e.g.</li>\n<li>Experiment of tossing a coin is random experiment as the possible outcomes, “Heads” and “Tails” are known in advance, but which one will turn up is not known.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Computing Mathematical Probability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let there be ‘n’ exhaustive cases in a random experiment which are mutually exclusive as well as equally likely.</li>\n<li>Also, since 0  m  n, therefore 0  P(A)  1 …(3) Remark: Probability of an impossible event is always zero and that of certain event is 1, e.g.</li>\n<li>probability of getting 7 when we throw a die is zero, as getting 7 here is an impossible event and probability of getting either of the six faces is 1, as it is a certain event.</li>\n<li>This definition of probability fails if (i) The cases are not equally likely, e.g.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 Axioms of Probability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The axioms are fundamental to probability and provide us with an approach to probability, i.e., an axiomatic approach to probability.</li>\n<li>is any finite or infinite sequence of disjoint events in S, then P(A1 or A2 or...or An) = P(A1) + P(A2) +...+ P(An) Now, let us give some results using probability function.</li>\n<li>But before taking up these results, we discuss some statements with their meanings in terms of set theory.</li>\n<li>in case of three events A, B and C, happening of at least one of the events is written as 𝐴∪𝐵∪𝐶 .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.5 Addition Law</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The result can similarly be extended for more than 3 events.</li>\n<li>Applications of the Addition Theorem of Probability Example 15: 25 lottery tickets are marked with first 25 numerals.</li>\n<li>Find the probability that it is a multiple of 5 or 7.</li>\n<li>Solution: Let A be the event that the drawn ticket bears a number multiple of 5 and B be the event that it bears a number multiple of 7.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.6 Conditional Probability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We have discussed earlier that P(A) represents the probability of happening event A for which the number of exhaustive cases is the number of elements in the sample space S.</li>\n<li>P(A) dealt earlier was the unconditional probability.</li>\n<li>Here, we are going to deal with conditional probability.</li>\n<li>Let us start with taking the following example: Suppose a card is drawn at random from a pack of 52 playing cards.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.7 Independent Events</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Now, if we do not replace the card back and draw the next card.</li>\n<li>Then, the probability of drawing the second card ‘a card of spades’ given that the first card was spades would be 12/51 and it is the conditional probability.</li>\n<li>Now, if the first card had been replaced back then this conditional probability would have been 13/52.</li>\n<li>In the example above, if the next draw is made with replacement, then the draw is not affected by the preceding draws.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.8 Bayes’ Theorem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the important theorems of probability that is useful in data science is known as Bayes’ theorem, given by Thomas Bayes, a British Mathematician..</li>\n<li>In this unit we state this theorem without proof.</li>\n<li>Statement: Let S be the sample space and E1, E2, …, En be n mutually exclusive and exhaustive events with P(Ei)  0; i = 1, 2, .., n.</li>\n<li>Let A be any event which is a sub-set of E1  E2  …  En (i.e.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>law, conditional probability and independent</code></div>\n<div class=\"formula-box\"><code>law, conditional probability,</code></div>\n<div class=\"formula-box\"><code>law (see Unit 1 of Course MST-001)]</code></div>\n<div class=\"formula-box\"><code>Addition Theorem on Probability for Two Events</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed: 1. How to create a sample space for a problem. 2. Define an event and create its instances. 4. What are the axioms of probability, and how can these axioms be used 5. How to use the addition law, conditional probability and independent 6. What is Bayes’ theorem and how can it be used to compute probability.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-4_Basics_of_Probability.pdf')\">\n          📄 Read Original IGNOU PDF (36 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

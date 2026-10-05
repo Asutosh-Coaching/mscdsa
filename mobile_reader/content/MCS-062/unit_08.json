@@ -1,0 +1,169 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Data Visualisation and Interpretation",
+  "filename": "Unit-8_Data_Visualisation_and_Interpretation.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-8_Data_Visualisation_and_Interpretation.pdf",
+  "total_pages": 49,
+  "word_count": 10636,
+  "est_read_time_minutes": 59,
+  "objectives": [
+    "8.2  Different Types of Plots",
+    "8.8     Bar Chart",
+    "8.9     Distribution Plot"
+  ],
+  "summary": "minimum, first quartile, median, third quartile, and maximum. It is a visual depiction of data that aids in determining how widely distributed or how much the data values change. These box plots make it simple to compare the Population data of a group of 100 people distributions since it makes the centre, spread, and overall range understandable. They are utilised for data analysis wherein the graphical",
+  "flashcards": [
+    {
+      "question": "What is the difference between a Bar Graph and a Histogram? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Data Visualisation and Interpretation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Draw a Histogram for the following data: Class Interval Frequency",
+      "answer": "Key Principle: A histogram visualises the distribution of data across distinct groups with continuous classes.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Why is a histogram used? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: A histogram visualises the distribution of data across distinct groups with continuous classes.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What do histograms show? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: A histogram visualises the distribution of data across distinct groups with continuous classes.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "How to correctly interpret a box plot? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Data Visualisation and Interpretation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the most important parts of a box plot? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Data Visualisation and Interpretation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is It Typically and how is it characterized?",
+      "answer": "It Typically the time period that the data span.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Data Visualisation and Interp\"]\n  M1[\"8.2 Different Types of Plots\"]\n  Root --> M1\n  M2[\"8.3 Histograms\"]\n  Root --> M2\n  M3[\"8.4 Box Plots\"]\n  Root --> M3\n  M4[\"8.5 Scatter Plots\"]\n  Root --> M4\n  M5[\"8.6 Heat Map\"]\n  Root --> M5\n  M6[\"8.7 Bubble Chart\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">It Typically</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">It Typically the time period that the data span.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Different Types Of Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As more and more data is available to us today, there are several varieties of charts and graphs than before.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Histograms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A histogram visualises the distribution of data across distinct groups with continuous classes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Box Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Scatter Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Different Types of Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As more and more data is available to us today, there are several varieties of charts and graphs than before.</li>\n<li>In reality, the amount of data we produce, acquire, copy, and use will nearly double by 2025.</li>\n<li>Therefore, Data visualisation is a crucial and powerful tool for organisations.</li>\n<li>One can benefit from graphs and charts in the following ways: · Encouraging the group to act proactively.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Histograms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A histogram visualises the distribution of data across distinct groups with continuous classes.</li>\n<li>It is represented by a set of rectangular bars with widths equal to the class intervals and areas proportional to frequencies in the respective classes.</li>\n<li>A histogram may hence be defined as a graphic of a grouped frequency distribution with continuous classes.</li>\n<li>It provides an estimate of the distribution of values, their extremes, and the presence of any gaps or out-of-the-ordinary numbers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Box Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.</li>\n<li>It is a visual depiction of data that aids in determining how widely distributed or how much the data values change.</li>\n<li>They are utilised for data analysis wherein the graphical representations are used to determine the following: 1.</li>\n<li>The 3rd quartile's difference from the first quartile of data is called the interquartile range.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Scatter Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.</li>\n<li>It works particularly well for quickly identifying possible correlations between different data points.</li>\n<li>The relationship between multiple variables can be efficiently studied using scatter plots, which show whether one variable is a good predictor of another or whether they normally fluctuate independently.</li>\n<li>Multiple distinct data points are displayed on a single graph in a scatter plot.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Heat Map</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Heatmaps are two-dimensional graphics that show data trends through colour shading.</li>\n<li>They are an example of a part-to-whole chart in which values are represented using colours.</li>\n<li>A basic heat map offers a quick visual representation of the data.</li>\n<li>A user can comprehend complex data sets with the help of more intricate heat maps.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Bubble Chart</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Bubble diagrams are used to show the relationships between different variables.</li>\n<li>They are frequently used to represent data points in three dimensions, specifically when the bubble size, y-axis, and x-axis are all present.</li>\n<li>Bubble charts demonstrate relationships between data points using location and size.</li>\n<li>However, bubble charts have a restricted data size capability since too many bubbles can make the chart difficult to read.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.8 Bar Chart</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A bar chart is a graphical depiction bars) with equal widths and varied h are one of the methods for handling Constructing a Bar Chart: The x and the y-axis corresponds to t frequency in this graph.</li>\n<li>Write the to be noted along the horizontal x-a Along the horizontal axis, choose t gap between the bars.</li>\n<li>…………………………………………… …………………………………………… …………………………………………… n a scatter plot and a bubble chart?</li>\n<li>…………………………………………… …………………………………………… …………………………………………… e chart?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.9 Distribution Plot</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>by contr expected hypothes from the useful fo data and along an your progress 6: en should we use a bar chart?</li>\n<li>………………………………………………… ………………………………………………… ………………………………………………… at are the different types of bar charts?</li>\n<li>………………………………………………… ………………………………………………… ………………………………………………… w a vertical bar chart.</li>\n<li>………………………………………………… ………………………………………………… ………………………………………………… w a horizontal bar chart.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>https://sixsigmamania.com/?p=475</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">minimum, first quartile, median, third quartile, and maximum. It is a visual depiction of data that aids in determining how widely distributed or how much the data values change. These box plots make it simple to compare the Population data of a group of 100 people distributions since it makes the centre, spread, and overall range understandable. They are utilised for data analysis wherein the graphical</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-8_Data_Visualisation_and_Interpretation.pdf')\">\n          📄 Read Original IGNOU PDF (49 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Data Visualisation and Interp\"]\n  M1[\"8.2 Different Types of Plots\"]\n  Root --> M1\n  M2[\"8.3 Histograms\"]\n  Root --> M2\n  M3[\"8.4 Box Plots\"]\n  Root --> M3\n  M4[\"8.5 Scatter Plots\"]\n  Root --> M4\n  M5[\"8.6 Heat Map\"]\n  Root --> M5\n  M6[\"8.7 Bubble Chart\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "It Typically",
+      "definition": "It Typically the time period that the data span.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Different Types Of Plots",
+      "definition": "As more and more data is available to us today, there are several varieties of charts and graphs than before.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Histograms",
+      "definition": "A histogram visualises the distribution of data across distinct groups with continuous classes.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Box Plots",
+      "definition": "Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Scatter Plots",
+      "definition": "A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.2",
+      "topic": "Different Types of Plots",
+      "points": [
+        "As more and more data is available to us today, there are several varieties of charts and graphs than before.",
+        "In reality, the amount of data we produce, acquire, copy, and use will nearly double by 2025.",
+        "Therefore, Data visualisation is a crucial and powerful tool for organisations.",
+        "One can benefit from graphs and charts in the following ways: · Encouraging the group to act proactively."
+      ]
+    },
+    {
+      "section_num": "8.3",
+      "topic": "Histograms",
+      "points": [
+        "A histogram visualises the distribution of data across distinct groups with continuous classes.",
+        "It is represented by a set of rectangular bars with widths equal to the class intervals and areas proportional to frequencies in the respective classes.",
+        "A histogram may hence be defined as a graphic of a grouped frequency distribution with continuous classes.",
+        "It provides an estimate of the distribution of values, their extremes, and the presence of any gaps or out-of-the-ordinary numbers."
+      ]
+    },
+    {
+      "section_num": "8.4",
+      "topic": "Box Plots",
+      "points": [
+        "Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.",
+        "It is a visual depiction of data that aids in determining how widely distributed or how much the data values change.",
+        "They are utilised for data analysis wherein the graphical representations are used to determine the following: 1.",
+        "The 3rd quartile's difference from the first quartile of data is called the interquartile range."
+      ]
+    },
+    {
+      "section_num": "8.5",
+      "topic": "Scatter Plots",
+      "points": [
+        "A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.",
+        "It works particularly well for quickly identifying possible correlations between different data points.",
+        "The relationship between multiple variables can be efficiently studied using scatter plots, which show whether one variable is a good predictor of another or whether they normally fluctuate independently.",
+        "Multiple distinct data points are displayed on a single graph in a scatter plot."
+      ]
+    },
+    {
+      "section_num": "8.6",
+      "topic": "Heat Map",
+      "points": [
+        "Heatmaps are two-dimensional graphics that show data trends through colour shading.",
+        "They are an example of a part-to-whole chart in which values are represented using colours.",
+        "A basic heat map offers a quick visual representation of the data.",
+        "A user can comprehend complex data sets with the help of more intricate heat maps."
+      ]
+    },
+    {
+      "section_num": "8.7",
+      "topic": "Bubble Chart",
+      "points": [
+        "Bubble diagrams are used to show the relationships between different variables.",
+        "They are frequently used to represent data points in three dimensions, specifically when the bubble size, y-axis, and x-axis are all present.",
+        "Bubble charts demonstrate relationships between data points using location and size.",
+        "However, bubble charts have a restricted data size capability since too many bubbles can make the chart difficult to read."
+      ]
+    },
+    {
+      "section_num": "8.8",
+      "topic": "Bar Chart",
+      "points": [
+        "A bar chart is a graphical depiction bars) with equal widths and varied h are one of the methods for handling Constructing a Bar Chart: The x and the y-axis corresponds to t frequency in this graph.",
+        "Write the to be noted along the horizontal x-a Along the horizontal axis, choose t gap between the bars.",
+        "…………………………………………… …………………………………………… …………………………………………… n a scatter plot and a bubble chart?",
+        "…………………………………………… …………………………………………… …………………………………………… e chart?"
+      ]
+    },
+    {
+      "section_num": "8.9",
+      "topic": "Distribution Plot",
+      "points": [
+        "by contr expected hypothes from the useful fo data and along an your progress 6: en should we use a bar chart?",
+        "………………………………………………… ………………………………………………… ………………………………………………… at are the different types of bar charts?",
+        "………………………………………………… ………………………………………………… ………………………………………………… w a vertical bar chart.",
+        "………………………………………………… ………………………………………………… ………………………………………………… w a horizontal bar chart."
+      ]
+    }
+  ],
+  "formulas": [
+    "https://sixsigmamania.com/?p=475"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Data Visualisation and Interp\"]\n  M1[\"8.2 Different Types of Plots\"]\n  Root --> M1\n  M2[\"8.3 Histograms\"]\n  Root --> M2\n  M3[\"8.4 Box Plots\"]\n  Root --> M3\n  M4[\"8.5 Scatter Plots\"]\n  Root --> M4\n  M5[\"8.6 Heat Map\"]\n  Root --> M5\n  M6[\"8.7 Bubble Chart\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">It Typically</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">It Typically the time period that the data span.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Different Types Of Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As more and more data is available to us today, there are several varieties of charts and graphs than before.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Histograms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A histogram visualises the distribution of data across distinct groups with continuous classes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Box Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Scatter Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Different Types of Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As more and more data is available to us today, there are several varieties of charts and graphs than before.</li>\n<li>In reality, the amount of data we produce, acquire, copy, and use will nearly double by 2025.</li>\n<li>Therefore, Data visualisation is a crucial and powerful tool for organisations.</li>\n<li>One can benefit from graphs and charts in the following ways: · Encouraging the group to act proactively.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Histograms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A histogram visualises the distribution of data across distinct groups with continuous classes.</li>\n<li>It is represented by a set of rectangular bars with widths equal to the class intervals and areas proportional to frequencies in the respective classes.</li>\n<li>A histogram may hence be defined as a graphic of a grouped frequency distribution with continuous classes.</li>\n<li>It provides an estimate of the distribution of values, their extremes, and the presence of any gaps or out-of-the-ordinary numbers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Box Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Box-and-whisker plots, also known as box plots, are widely employed when displaying data distributions using the five essential summary statistics of minimum, first quartile, median, third quartile, and maximum.</li>\n<li>It is a visual depiction of data that aids in determining how widely distributed or how much the data values change.</li>\n<li>They are utilised for data analysis wherein the graphical representations are used to determine the following: 1.</li>\n<li>The 3rd quartile's difference from the first quartile of data is called the interquartile range.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Scatter Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A scatter plot is the most commonly used chart when observing the relationship between two quantitative variables.</li>\n<li>It works particularly well for quickly identifying possible correlations between different data points.</li>\n<li>The relationship between multiple variables can be efficiently studied using scatter plots, which show whether one variable is a good predictor of another or whether they normally fluctuate independently.</li>\n<li>Multiple distinct data points are displayed on a single graph in a scatter plot.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Heat Map</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Heatmaps are two-dimensional graphics that show data trends through colour shading.</li>\n<li>They are an example of a part-to-whole chart in which values are represented using colours.</li>\n<li>A basic heat map offers a quick visual representation of the data.</li>\n<li>A user can comprehend complex data sets with the help of more intricate heat maps.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Bubble Chart</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Bubble diagrams are used to show the relationships between different variables.</li>\n<li>They are frequently used to represent data points in three dimensions, specifically when the bubble size, y-axis, and x-axis are all present.</li>\n<li>Bubble charts demonstrate relationships between data points using location and size.</li>\n<li>However, bubble charts have a restricted data size capability since too many bubbles can make the chart difficult to read.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.8 Bar Chart</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A bar chart is a graphical depiction bars) with equal widths and varied h are one of the methods for handling Constructing a Bar Chart: The x and the y-axis corresponds to t frequency in this graph.</li>\n<li>Write the to be noted along the horizontal x-a Along the horizontal axis, choose t gap between the bars.</li>\n<li>…………………………………………… …………………………………………… …………………………………………… n a scatter plot and a bubble chart?</li>\n<li>…………………………………………… …………………………………………… …………………………………………… e chart?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.9 Distribution Plot</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>by contr expected hypothes from the useful fo data and along an your progress 6: en should we use a bar chart?</li>\n<li>………………………………………………… ………………………………………………… ………………………………………………… at are the different types of bar charts?</li>\n<li>………………………………………………… ………………………………………………… ………………………………………………… w a vertical bar chart.</li>\n<li>………………………………………………… ………………………………………………… ………………………………………………… w a horizontal bar chart.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>https://sixsigmamania.com/?p=475</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">minimum, first quartile, median, third quartile, and maximum. It is a visual depiction of data that aids in determining how widely distributed or how much the data values change. These box plots make it simple to compare the Population data of a group of 100 people distributions since it makes the centre, spread, and overall range understandable. They are utilised for data analysis wherein the graphical</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-8_Data_Visualisation_and_Interpretation.pdf')\">\n          📄 Read Original IGNOU PDF (49 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

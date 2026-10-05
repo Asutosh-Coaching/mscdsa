@@ -1,0 +1,128 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_09",
+  "unit_num": "Unit 9",
+  "title": "Priority Queues",
+  "filename": "Unit-9_Priority_Queues.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-9_Priority_Queues.pdf",
+  "total_pages": 19,
+  "word_count": 3815,
+  "est_read_time_minutes": 21,
+  "objectives": [
+    "based implementations and"
+  ],
+  "summary": "Priority queues are fundamental data structures that extend regular queues by serving elements based on their priority rather than insertion order. This unit covered the essential aspects of priority queues and their most efficient implementation using heaps. Priority Queue Abstract Data Type: Understanding the basic operations (insert, extract_min/max, peek) and their applications in scheduling, graph",
+  "flashcards": [
+    {
+      "question": "Question: Which of the following is NOT a type of tree traversal? a) Pre-order traversal b) In-order traversal c) Sequential traversal d) Post- order traversal a. Answer: c) Sequential traversal",
+      "answer": "9. Question: In a binary heap stored as an array, if a node is at index i, where is its left child? a",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Question: Give the highest possible nodes at level 3 (assuming root is at level",
+      "answer": "In Priority Queues, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "? a) 4 b) 8 c) 16 d) 2 a. Answer: b)",
+      "answer": "In Priority Queues, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "Question: A binary tree with 10 nodes has how many NULL links (empty child references)?",
+      "answer": "In Priority Queues, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Question: Which type of binary tree has all internal nodes containing exactly two children?",
+      "answer": "In Priority Queues, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Question: What is the order of visiting nodes in a pre-order traversal? a) Root, Right, Left b) Left, Root, Right c) Root, Left, Right d) Left, Right, Root a. Answer: c) Root, Left, Right",
+      "answer": "In Priority Queues, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is Implementing A Priority Queue and how is it characterized?",
+      "answer": "O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 9 Priority Queues\"]\n  M1[\"9.2 The Priority Queue Abstract Data\"]\n  Root --> M1\n  M2[\"9.3 Implementing a Priority Queue\"]\n  Root --> M2\n  M3[\"9.4 Heaps\"]\n  Root --> M3\n  M4[\"9.5 Sorting with a Priority Queue\"]\n  Root --> M4\n  M5[\"9.6 Adaptable Priority Queues\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Implementing A Priority Queue</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Heaps</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A heap uses a specialized tree-based data structure that satisfies the heap property.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Adaptable Priority Queues</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") return (self._data[0]._key, self._data[0]._value) def remove_min(self): \"\"\"Remove and return minimum entry.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 The Priority Queue Abstract Data Type</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A priority queue is an abstract data type that maintains a collection of elements, each associated with a priority value.</li>\n<li>The key characteristic is that elements are served in order of their priority rather than their insertion order.</li>\n<li>O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</li>\n<li>O(1) time complexity.\"\"\" return len(self._data) == 0 def size(self): \"\"\"Return number of items.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.3 Implementing a Priority Queue</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</li>\n<li>O(1) time complexity.\"\"\" return len(self._data) == 0 def size(self): \"\"\"Return number of items.</li>\n<li>O(n) time complexity.\"\"\" # Find correct position using binary search import bisect bisect.insort(self._data, (priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</li>\n<li>O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") priority, item = self._data.pop(0) return item def peek_min(self): \"\"\"Return minimum priority item.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.4 Heaps</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A heap uses a specialized tree-based data structure that satisfies the heap property.</li>\n<li>It's the most effective way to implement a priority queue.</li>\n<li>Structure Property: A heap is a complete binary tree (all levels filled except possibly the last, which is filled left-to-right) 2.</li>\n<li>Order Property: The priority of each node is greater than or equal to (max-heap) or less than or equal to (min-heap) its children's priorities TYPES OF HEAPS 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.5 Sorting with a Priority Queue</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Heap sort uses a priority queue (heap) to sort elements efficiently.</li>\n<li>It has O(n log n) time complexity and sorts in-place.</li>\n<li>Repeatedly extract the maximum element and place it at the end 3.</li>\n<li>Reduce the heap size and restore heap property def heap_sort(arr): \"\"\"Sort array using heap sort algorithm.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.6 Adaptable Priority Queues</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") return (self._data[0]._key, self._data[0]._value) def remove_min(self): \"\"\"Remove and return minimum entry.</li>\n<li>O(log n) time complexity.\"\"\" if value not in self._entries: raise ValueError(f\"Value {value} not found</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Property: A heap is a complete binary tree (all levels filled</code></div>\n<div class=\"formula-box\"><code>Property: The priority of each node is greater than or equal to</code></div>\n<div class=\"formula-box\"><code>property by moving element up.\"\"\"</code></div>\n<div class=\"formula-box\"><code>property if not self.is_empty():</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Priority queues are fundamental data structures that extend regular queues by serving elements based on their priority rather than insertion order. This unit covered the essential aspects of priority queues and their most efficient implementation using heaps. Priority Queue Abstract Data Type: Understanding the basic operations (insert, extract_min/max, peek) and their applications in scheduling, graph</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-9_Priority_Queues.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 9 Priority Queues\"]\n  M1[\"9.2 The Priority Queue Abstract Data\"]\n  Root --> M1\n  M2[\"9.3 Implementing a Priority Queue\"]\n  Root --> M2\n  M3[\"9.4 Heaps\"]\n  Root --> M3\n  M4[\"9.5 Sorting with a Priority Queue\"]\n  Root --> M4\n  M5[\"9.6 Adaptable Priority Queues\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Implementing A Priority Queue",
+      "definition": "O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Heaps",
+      "definition": "A heap uses a specialized tree-based data structure that satisfies the heap property.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Adaptable Priority Queues",
+      "definition": "O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") return (self._data[0]._key, self._data[0]._value) def remove_min(self): \"\"\"Remove and return minimum entry.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "9.2",
+      "topic": "The Priority Queue Abstract Data Type",
+      "points": [
+        "A priority queue is an abstract data type that maintains a collection of elements, each associated with a priority value.",
+        "The key characteristic is that elements are served in order of their priority rather than their insertion order.",
+        "O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.",
+        "O(1) time complexity.\"\"\" return len(self._data) == 0 def size(self): \"\"\"Return number of items."
+      ]
+    },
+    {
+      "section_num": "9.3",
+      "topic": "Implementing a Priority Queue",
+      "points": [
+        "O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.",
+        "O(1) time complexity.\"\"\" return len(self._data) == 0 def size(self): \"\"\"Return number of items.",
+        "O(n) time complexity.\"\"\" # Find correct position using binary search import bisect bisect.insort(self._data, (priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.",
+        "O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") priority, item = self._data.pop(0) return item def peek_min(self): \"\"\"Return minimum priority item."
+      ]
+    },
+    {
+      "section_num": "9.4",
+      "topic": "Heaps",
+      "points": [
+        "A heap uses a specialized tree-based data structure that satisfies the heap property.",
+        "It's the most effective way to implement a priority queue.",
+        "Structure Property: A heap is a complete binary tree (all levels filled except possibly the last, which is filled left-to-right) 2.",
+        "Order Property: The priority of each node is greater than or equal to (max-heap) or less than or equal to (min-heap) its children's priorities TYPES OF HEAPS 1."
+      ]
+    },
+    {
+      "section_num": "9.5",
+      "topic": "Sorting with a Priority Queue",
+      "points": [
+        "Heap sort uses a priority queue (heap) to sort elements efficiently.",
+        "It has O(n log n) time complexity and sorts in-place.",
+        "Repeatedly extract the maximum element and place it at the end 3.",
+        "Reduce the heap size and restore heap property def heap_sort(arr): \"\"\"Sort array using heap sort algorithm."
+      ]
+    },
+    {
+      "section_num": "9.6",
+      "topic": "Adaptable Priority Queues",
+      "points": [
+        "O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") return (self._data[0]._key, self._data[0]._value) def remove_min(self): \"\"\"Remove and return minimum entry.",
+        "O(log n) time complexity.\"\"\" if value not in self._entries: raise ValueError(f\"Value {value} not found"
+      ]
+    }
+  ],
+  "formulas": [
+    "Property: A heap is a complete binary tree (all levels filled",
+    "Property: The priority of each node is greater than or equal to",
+    "property by moving element up.\"\"\"",
+    "property if not self.is_empty():"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 9 Priority Queues\"]\n  M1[\"9.2 The Priority Queue Abstract Data\"]\n  Root --> M1\n  M2[\"9.3 Implementing a Priority Queue\"]\n  Root --> M2\n  M3[\"9.4 Heaps\"]\n  Root --> M3\n  M4[\"9.5 Sorting with a Priority Queue\"]\n  Root --> M4\n  M5[\"9.6 Adaptable Priority Queues\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Implementing A Priority Queue</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Heaps</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A heap uses a specialized tree-based data structure that satisfies the heap property.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Adaptable Priority Queues</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") return (self._data[0]._key, self._data[0]._value) def remove_min(self): \"\"\"Remove and return minimum entry.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 The Priority Queue Abstract Data Type</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A priority queue is an abstract data type that maintains a collection of elements, each associated with a priority value.</li>\n<li>The key characteristic is that elements are served in order of their priority rather than their insertion order.</li>\n<li>O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</li>\n<li>O(1) time complexity.\"\"\" return len(self._data) == 0 def size(self): \"\"\"Return number of items.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.3 Implementing a Priority Queue</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>O(1) time complexity.\"\"\" self._data.append((priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</li>\n<li>O(1) time complexity.\"\"\" return len(self._data) == 0 def size(self): \"\"\"Return number of items.</li>\n<li>O(n) time complexity.\"\"\" # Find correct position using binary search import bisect bisect.insort(self._data, (priority, item)) def extract_min(self): \"\"\"Remove and return minimum priority item.</li>\n<li>O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") priority, item = self._data.pop(0) return item def peek_min(self): \"\"\"Return minimum priority item.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.4 Heaps</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A heap uses a specialized tree-based data structure that satisfies the heap property.</li>\n<li>It's the most effective way to implement a priority queue.</li>\n<li>Structure Property: A heap is a complete binary tree (all levels filled except possibly the last, which is filled left-to-right) 2.</li>\n<li>Order Property: The priority of each node is greater than or equal to (max-heap) or less than or equal to (min-heap) its children's priorities TYPES OF HEAPS 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.5 Sorting with a Priority Queue</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Heap sort uses a priority queue (heap) to sort elements efficiently.</li>\n<li>It has O(n log n) time complexity and sorts in-place.</li>\n<li>Repeatedly extract the maximum element and place it at the end 3.</li>\n<li>Reduce the heap size and restore heap property def heap_sort(arr): \"\"\"Sort array using heap sort algorithm.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.6 Adaptable Priority Queues</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>O(1) time complexity.\"\"\" if self.is_empty(): raise ValueError(\"Priority queue is empty\") return (self._data[0]._key, self._data[0]._value) def remove_min(self): \"\"\"Remove and return minimum entry.</li>\n<li>O(log n) time complexity.\"\"\" if value not in self._entries: raise ValueError(f\"Value {value} not found</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Property: A heap is a complete binary tree (all levels filled</code></div>\n<div class=\"formula-box\"><code>Property: The priority of each node is greater than or equal to</code></div>\n<div class=\"formula-box\"><code>property by moving element up.\"\"\"</code></div>\n<div class=\"formula-box\"><code>property if not self.is_empty():</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Priority queues are fundamental data structures that extend regular queues by serving elements based on their priority rather than insertion order. This unit covered the essential aspects of priority queues and their most efficient implementation using heaps. Priority Queue Abstract Data Type: Understanding the basic operations (insert, extract_min/max, peek) and their applications in scheduling, graph</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-9_Priority_Queues.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

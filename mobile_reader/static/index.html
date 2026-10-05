@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sepia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#b45309">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Lumina Study">
+  <meta name="description" content="Mobile study and reader system for IGNOU M.Sc. Data Science and Analytics">
+  <title>Lumina - MSCDSA Mobile Reader & Study System</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <a href="#" class="header-brand" onclick="switchView('home'); return false;">
+      <div class="brand-icon">L</div>
+      <div>
+        <div class="brand-title">Lumina</div>
+      </div>
+      <span class="brand-badge">MSCDSA</span>
+    </a>
+    <div class="header-actions">
+      <button class="btn-icon" onclick="openDrawer('drawer-search')" title="Search Library">🔍</button>
+      <button class="btn-icon" onclick="openDrawer('drawer-settings')" title="Reader Settings">⚙️</button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       VIEW 1: HOME DASHBOARD
+       ========================================================================= -->
+  <main class="main-content" id="view-home">
+    
+    <!-- Hero: Continue Reading Card -->
+    <div id="resume-card-container"></div>
+
+    <!-- Quick Study Metrics -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="stat-completed">0</div>
+        <div class="stat-label">Units Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-streak">1 🔥</div>
+        <div class="stat-label">Daily Streak</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-today">0m</div>
+        <div class="stat-label">Studied Today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-time">0m</div>
+        <div class="stat-label">Total Time</div>
+      </div>
+    </div>
+
+    <!-- Semester Switcher & Courses -->
+    <div class="section-header">
+      <h2 class="section-title">Course Modules</h2>
+      <div class="tab-group">
+        <button class="tab-btn active" data-sem="Semester_1">Sem I</button>
+        <button class="tab-btn" data-sem="Semester_2">Sem II</button>
+      </div>
+    </div>
+
+    <!-- Course Cards List -->
+    <div id="courses-container"></div>
+
+    <!-- Mobile Connection & Setup Info Card -->
+    <div class="resume-card" style="margin-top:28px; background:var(--bg-card); border-color:var(--border-color);">
+      <div class="resume-label">📱 Seamless Mobile Reading</div>
+      <div class="resume-title" style="font-size:16px;">Read Anywhere on Your Phone</div>
+      <div id="qr-ip-display" class="resume-subtitle"></div>
+      <div style="font-size:12px; color:var(--text-secondary); line-height:1.5;">
+        • <strong>Install as PWA:</strong> Tap your mobile browser's share icon and select <em>"Add to Home Screen"</em> to read full-screen like a native app.<br>
+        • <strong>Audio Mode:</strong> Tap the listen icon inside any unit to hear the lesson read aloud hands-free.
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       VIEW 2: COURSES BROWSER
+       ========================================================================= -->
+  <div class="main-content" id="view-courses" style="display:none;">
+    <div class="section-header">
+      <h2 class="section-title">Curriculum Explorer</h2>
+    </div>
+    <p class="reader-p" style="color:var(--text-secondary); margin-bottom:16px;">
+      Access all 12 courses and 112 modules across Semesters I & II.
+    </p>
+    <div id="all-courses-view-container"></div>
+  </div>
+
+  <!-- =========================================================================
+       VIEW 3: COURSE ROADMAP / UNIT LIST
+       ========================================================================= -->
+  <div class="main-content" id="view-roadmap" style="display:none;">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+      <button class="btn-primary" style="padding:6px 12px; font-size:12px;" onclick="switchView('home')">← Back to Dashboard</button>
+      <button id="roadmap-solution-btn" class="btn-primary" style="background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border-color); font-size:12px; padding:6px 12px;">📝 Assignment Solutions</button>
+    </div>
+    <h2 class="section-title" id="roadmap-title" style="margin-bottom:14px;"></h2>
+    <div id="roadmap-units-list"></div>
+  </div>
+
+  <!-- =========================================================================
+       VIEW 4: REFLOWABLE MOBILE READER (Core Study Mode)
+       ========================================================================= -->
+  <div class="reader-wrapper" id="view-reader">
+    
+    <!-- Reader Sticky Top Bar -->
+    <div class="reader-top-bar">
+      <button class="btn-icon" onclick="switchView('roadmap')" title="Back to Roadmap">←</button>
+      <div class="reader-header-info">
+        <div class="reader-header-course" id="reader-course-label"></div>
+        <div class="reader-header-title" id="reader-title-label"></div>
+      </div>
+      <div style="display:flex; gap:4px;">
+        <button class="btn-icon" onclick="toggleAudioMode()" title="Listen (Text to Speech)">🎧</button>
+        <button class="btn-icon" id="reader-pdf-toggle" title="View Original PDF">📄</button>
+        <button class="btn-icon" onclick="openDrawer('drawer-notes')" title="Personal Notes">📝</button>
+        <button class="btn-icon" onclick="openDrawer('drawer-settings')" title="Typography & Theme">Aa</button>
+      </div>
+      <div class="reader-progress-line" id="reader-progress-line"></div>
+    </div>
+
+    <!-- Reader Main Content Stream -->
+    <div class="reader-body">
+      
+      <!-- Unit Hero -->
+      <div class="reader-unit-hero">
+        <div class="reader-unit-number" id="unit-hero-num"></div>
+        <h1 class="reader-unit-main-title" id="unit-hero-title"></h1>
+        <div class="reader-meta-pills">
+          <span class="pill" id="unit-pill-time"></span>
+          <span class="pill" id="unit-pill-pages"></span>
+          <span class="pill">IGNOU SOCIS eGyanKosh</span>
+        </div>
+
+        <!-- Learning Objectives Box -->
+        <div class="objectives-card" id="unit-objectives-box">
+          <div class="objectives-title">🎯 Learning Objectives</div>
+          <ul class="objectives-list" id="unit-objectives-list"></ul>
+        </div>
+      </div>
+
+      <!-- Clean Reflowable HTML Body -->
+      <div id="reader-html-stream"></div>
+
+      <!-- Interactive Checkpoint Flashcards -->
+      <div class="flashcards-section">
+        <h3 class="reader-heading" style="border:none; margin-top:0;">💡 Self-Assessment Checkpoints</h3>
+        <p class="reader-p" style="color:var(--text-secondary); margin-bottom:16px;">
+          Test your comprehension before marking this unit completed. Tap each card to reveal the answer.
+        </p>
+        <div id="flashcards-container"></div>
+      </div>
+
+      <!-- Previous / Next Unit Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;" id="reader-unit-nav"></div>
+
+    </div>
+
+    <!-- Sticky Bottom Reader Action Bar -->
+    <div class="reader-bottom-bar">
+      <button class="btn-complete" id="btn-mark-complete">
+        Mark Unit as Completed ★
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       VIEW 5: ASSIGNMENT SOLUTIONS VIEWER
+       ========================================================================= -->
+  <div class="main-content" id="view-solutions" style="display:none;">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+      <button class="btn-primary" style="padding:6px 12px; font-size:12px;" onclick="switchView('roadmap')">← Back to Course</button>
+      <h3 style="font-size:14px; font-weight:700;" id="solution-title"></h3>
+    </div>
+    <div id="solution-content"></div>
+  </div>
+
+  <!-- =========================================================================
+       VIEW 6: ORIGINAL PDF VIEWER
+       ========================================================================= -->
+  <div id="view-pdf" style="display:none; height:100vh; flex-direction:column;">
+    <div class="reader-top-bar">
+      <button class="btn-primary" style="padding:6px 12px; font-size:12px;" onclick="switchView('reader')">← Back to Reflowable Reader</button>
+      <div style="font-size:13px; font-weight:700;">Original IGNOU PDF</div>
+    </div>
+    <iframe id="pdf-viewer-frame" style="width:100%; flex:1; border:none;"></iframe>
+  </div>
+
+  <!-- Floating Audio Player Bar (Text-to-Speech) -->
+  <div class="audio-player-bar" id="audio-player-bar">
+    <div class="audio-info">
+      <span>🎧 Listening to Lesson</span>
+    </div>
+    <div class="audio-controls">
+      <button class="btn-icon" id="btn-audio-play" onclick="toggleAudioMode()" style="background:var(--primary); color:#fff;">▶</button>
+      <select class="speed-select" onchange="changeAudioSpeed(this.value)">
+        <option value="1.0">1.0x</option>
+        <option value="1.25">1.25x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2.0">2.0x</option>
+      </select>
+      <button class="btn-icon" onclick="stopAudio()" title="Stop Audio">✕</button>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation Bar (Hidden during full reading mode) -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-view="home">
+      <span class="nav-icon">🏠</span>
+      <span>Dashboard</span>
+    </button>
+    <button class="nav-item" data-view="roadmap" onclick="if(AppState.activeCourse) openCourseRoadmap(AppState.activeCourse); else switchView('home');">
+      <span class="nav-icon">📖</span>
+      <span>Syllabus</span>
+    </button>
+    <button class="nav-item" onclick="openDrawer('drawer-search')">
+      <span class="nav-icon">🔍</span>
+      <span>Search</span>
+    </button>
+    <button class="nav-item" onclick="openDrawer('drawer-settings')">
+      <span class="nav-icon">⚙️</span>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <!-- Slide-Over Backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop" onclick="closeAllDrawers()"></div>
+
+  <!-- Drawer 1: Personal Notes -->
+  <div class="drawer" id="drawer-notes">
+    <div class="drawer-header">
+      <div class="drawer-title">📝 Personal Study Notes</div>
+      <button class="btn-icon" onclick="closeAllDrawers()">✕</button>
+    </div>
+    <div class="drawer-body">
+      <p style="font-size:12px; color:var(--text-muted); margin-bottom:8px;">
+        Jot down key takeaways, reminders, or formulas. Autosaves automatically.
+      </p>
+      <textarea class="notes-textarea" id="unit-notes-input" placeholder="Type your notes here..."></textarea>
+    </div>
+  </div>
+
+  <!-- Drawer 2: Typography & Theme Settings -->
+  <div class="drawer" id="drawer-settings">
+    <div class="drawer-header">
+      <div class="drawer-title">⚙️ Reader Preferences</div>
+      <button class="btn-icon" onclick="closeAllDrawers()">✕</button>
+    </div>
+    <div class="drawer-body">
+      
+      <div class="setting-row">
+        <span>Color Theme</span>
+      </div>
+      <div class="theme-options">
+        <button class="theme-btn active" data-theme="sepia" onclick="applyTheme('sepia')">📜 Sepia</button>
+        <button class="theme-btn" data-theme="light" onclick="applyTheme('light')">☀️ Light</button>
+        <button class="theme-btn" data-theme="dark" onclick="applyTheme('dark')">🌙 Dark</button>
+        <button class="theme-btn" data-theme="midnight" onclick="applyTheme('midnight')">🖤 OLED</button>
+      </div>
+
+      <div class="setting-row" style="margin-top:16px;">
+        <span>Text Size</span>
+        <div style="display:flex; gap:8px;">
+          <button class="btn-icon" onclick="applyTypography('15', AppState.fontFamily)">A-</button>
+          <button class="btn-icon" onclick="applyTypography('18', AppState.fontFamily)">A</button>
+          <button class="btn-icon" onclick="applyTypography('22', AppState.fontFamily)">A+</button>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <span>Font Style</span>
+        <div style="display:flex; gap:6px;">
+          <button class="btn-primary" style="padding:6px 10px; font-size:12px;" onclick="applyTypography(AppState.fontSize, 'sans')">Sans</button>
+          <button class="btn-primary" style="padding:6px 10px; font-size:12px; font-family:serif;" onclick="applyTypography(AppState.fontSize, 'serif')">Serif</button>
+          <button class="btn-primary" style="padding:6px 10px; font-size:12px; font-family:monospace;" onclick="applyTypography(AppState.fontSize, 'mono')">Mono</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Drawer 3: Search Library -->
+  <div class="drawer" id="drawer-search">
+    <div class="drawer-header">
+      <div class="drawer-title">🔍 Search MSCDSA Library</div>
+      <button class="btn-icon" onclick="closeAllDrawers()">✕</button>
+    </div>
+    <div class="drawer-body">
+      <input type="text" class="search-input-box" id="search-input" placeholder="Search topics (e.g. Bayes, Trees, SQL, ARIMA)..." autofocus>
+      <div id="search-results-list"></div>
+    </div>
+  </div>
+
+  <script src="/static/mermaid.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Introduction to Sets",
+  "filename": "Unit-1_Introduction_to_Sets.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-1_Introduction_to_Sets.pdf",
+  "total_pages": 34,
+  "word_count": 12492,
+  "est_read_time_minutes": 69,
+  "objectives": [
+    "1.1 Introduction",
+    "Methods of Representing a Set",
+    "Relationships between Sets",
+    "Cardinality of a Set",
+    "Power Set of a Set"
+  ],
+  "summary": "This Unit has provided a foundational overview of Set Theory, beginning with methods for representing collections through roster and set-builder notation, then moving to the structural hierarchy of subsets, power sets, and cardinality. Subsequently, visual logic and abstract operations, using Venn Diagrams to demonstrate set interactions such as unions and intersections, are discussed Also advanced logical concepts such as Russell’s Paradox and the geometry",
+  "flashcards": [
+    {
+      "question": "Give reasons whether the following collections are sets or not. (i) Collection of intelligent students in a particular school. (ii) Collection of good hockey players in India. (iii) Collection of good actors in India.",
+      "answer": ", (b,1), (c,1), (a,2), (b,2), (c,2), (a,3), (b,3), (c,3)}. ii",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Describe the following sets by roster method: (i) A = {x: x =",
+      "answer": "A × B = B × A iff A = B or one of A,B is .",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Express the following sets in set-builder form: (i) {",
+      "answer": "Commutative laws state that",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "For the pair of sets X and Y, state whether X = Y or not, along with explanation for your response. i) X = {",
+      "answer": "Let C, H, F, denote the set of students who play cricket, hockey and football respectively. Then in usual notations, we are given. n",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "For X = {1, {2, 3}, 3, 4}, which ones of the following is/are true statement(s)?",
+      "answer": "In Introduction to Sets, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "Give two proper subsets and two supersets of the set of vowels of the English alphabet. ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "L.H.S. R.H.S. Two Venn diagrams justify the relationship A",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is A Set A and how is it characterized?",
+      "answer": "A Set A said to be a proper subset of a set B if A is a subset of B and A and B are not equal.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Introduction to Sets\"]\n  M1[\"1.2 Sets\"]\n  Root --> M1\n  M1_1[\"1.2.1 Concept of Set\"]\n  M1 --> M1_1\n  M1_2[\"1.2.3 Methods of Representing a Set\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 Relationships between Sets\"]\n  M1 --> M1_3\n  M2[\"1.3 Types of Sets\"]\n  Root --> M2\n  M3[\"1.4 Hierarchy of Sets\"]\n  Root --> M3\n  M4[\"1.5 Venn Diagrams\"]\n  Root --> M4\n  M5[\"1.6 Set Operations\"]\n  Root --> M5\n  M5_1[\"1.6.1 Different Set Operations\"]\n  M5 --> M5_1\n  M5_2[\"1.6.2 Convex Set\"]\n  M5 --> M5_2\n  M5_3[\"1.6.3 Russell s Paradox\"]\n  M5 --> M5_3\n  M6[\"1.7 Ordered Pairs and Cartesian Prod\"]\n  Root --> M6\n  M6_1[\"1.7.1 Cartesian Products\"]\n  M6 --> M6_1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Set A</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Set A said to be a proper subset of a set B if A is a subset of B and A and B are not equal.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">S Of A Space</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">S Of A Space convex if and only if for any pair of points p and q in the set S, the line section from p to q is enclosed completely in the set of S, as done in the figure on L.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Conventionally, the concept of number and geometric concepts like 'straight line', triangle' and 'square'.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Concept Of Set</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Relationships Between Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Conventionally, the concept of number and geometric concepts like 'straight line', triangle' and 'square'.</li>\n<li>have been the most fundamental, and the very first of the concepts discussed in introductory mathematics.</li>\n<li>Concept of Set Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.</li>\n<li>Roughly, a set may be considered a collection of things or entities, such as names of animals, names of books, names of numbers, names of geometrical shapes, or any mixture of these.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 Concept of Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.</li>\n<li>Roughly, a set may be considered a collection of things or entities, such as names of animals, names of books, names of numbers, names of geometrical shapes, or any mixture of these.</li>\n<li>Any entity in a set is called a member, or an element, of that set.</li>\n<li>Further, in a set, no member is written more than once.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 Methods of Representing a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).</li>\n<li>7 Set, Relations and Functions 1.2.3.1 Notations, Definitions and Examples i) Two sets X and Y are said/defined as equal if every element of X is an element of Y, and every element of Y is an element of X.</li>\n<li>The notation X=Y is used for 'equality of sets X and Y' Example 4: Let X = {1, 2, 3, 4, 5}, and Y = {x: x is a natural number such that 1<x<5}, and W= {3, 5, 2, 4, 1}.Then X = Y = W.</li>\n<li>ii) X is said to be a subset of Y if every element of X is an element of Y.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 Relationships between Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).</li>\n<li>7 Set, Relations and Functions 1.2.3.1 Notations, Definitions and Examples i) Two sets X and Y are said/defined as equal if every element of X is an element of Y, and every element of Y is an element of X.</li>\n<li>The notation X=Y is used for 'equality of sets X and Y' Example 4: Let X = {1, 2, 3, 4, 5}, and Y = {x: x is a natural number such that 1<x<5}, and W= {3, 5, 2, 4, 1}.Then X = Y = W.</li>\n<li>ii) X is said to be a subset of Y if every element of X is an element of Y.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.4 Cardinality of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The number of elements in a finite set say A is called its Cardinality or cardinal number of a finite set and is denoted by n(A).</li>\n<li>For example, (i) If A = {x, y, z}, then n(A) = 3, i.e.</li>\n<li>(ii) If B = {1,4, 2, 3, 9, 15}, then n(B) = 6, i.e.</li>\n<li>Subsets Before we relook at the subset, let us define the empty set.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.5 Subsets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before we relook at the subset, let us define the empty set.</li>\n<li>The empty set (also known as the null set) is a unique concept in mathematics and set theory.</li>\n<li>It represents a set that contains no elements.</li>\n<li>It is denoted by or { } : A pair of curly braces with nothing between them.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.6 Power Set of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Definitions: The power set of a set A is the set of all the subsets of A, and is denoted by P(A).</li>\n<li>Sometimes power set of a given set A is denoted by 2A, because that is the Cardinality of the power set A.</li>\n<li>For example, the set {1, 2, 3} has 3 elements, and, the power set of A, viz.</li>\n<li>p(A) = { , {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}} has 23 = 8 elements.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Types of Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We have seen that set is a well-defined collection of distinct objects.</li>\n<li>Also repetition of elements in a set is not allowed.</li>\n<li>So once a set is defined, automatically number of elements contained by it has also become fixed.</li>\n<li>In this section, we shall discuss the different names given to a set on the bases of the number of elements contained by the set.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws related to sets, like commutative,</code></div>\n<div class=\"formula-box\"><code>property, because, according to one person,</code></div>\n<div class=\"formula-box\"><code>Property Method or Rule Method.</code></div>\n<div class=\"formula-box\"><code>property of being a vowel no other alphabet</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This Unit has provided a foundational overview of Set Theory, beginning with methods for representing collections through roster and set-builder notation, then moving to the structural hierarchy of subsets, power sets, and cardinality. Subsequently, visual logic and abstract operations, using Venn Diagrams to demonstrate set interactions such as unions and intersections, are discussed Also advanced logical concepts such as Russell’s Paradox and the geometry</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-1_Introduction_to_Sets.pdf')\">\n          📄 Read Original IGNOU PDF (34 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Introduction to Sets\"]\n  M1[\"1.2 Sets\"]\n  Root --> M1\n  M1_1[\"1.2.1 Concept of Set\"]\n  M1 --> M1_1\n  M1_2[\"1.2.3 Methods of Representing a Set\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 Relationships between Sets\"]\n  M1 --> M1_3\n  M2[\"1.3 Types of Sets\"]\n  Root --> M2\n  M3[\"1.4 Hierarchy of Sets\"]\n  Root --> M3\n  M4[\"1.5 Venn Diagrams\"]\n  Root --> M4\n  M5[\"1.6 Set Operations\"]\n  Root --> M5\n  M5_1[\"1.6.1 Different Set Operations\"]\n  M5 --> M5_1\n  M5_2[\"1.6.2 Convex Set\"]\n  M5 --> M5_2\n  M5_3[\"1.6.3 Russell s Paradox\"]\n  M5 --> M5_3\n  M6[\"1.7 Ordered Pairs and Cartesian Prod\"]\n  Root --> M6\n  M6_1[\"1.7.1 Cartesian Products\"]\n  M6 --> M6_1",
+  "definitions": [
+    {
+      "term": "A Set A",
+      "definition": "A Set A said to be a proper subset of a set B if A is a subset of B and A and B are not equal.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "S Of A Space",
+      "definition": "S Of A Space convex if and only if for any pair of points p and q in the set S, the line section from p to q is enclosed completely in the set of S, as done in the figure on L.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Sets",
+      "definition": "Conventionally, the concept of number and geometric concepts like 'straight line', triangle' and 'square'.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Concept Of Set",
+      "definition": "Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Relationships Between Sets",
+      "definition": "For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.2",
+      "topic": "Sets",
+      "points": [
+        "Conventionally, the concept of number and geometric concepts like 'straight line', triangle' and 'square'.",
+        "have been the most fundamental, and the very first of the concepts discussed in introductory mathematics.",
+        "Concept of Set Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.",
+        "Roughly, a set may be considered a collection of things or entities, such as names of animals, names of books, names of numbers, names of geometrical shapes, or any mixture of these."
+      ]
+    },
+    {
+      "section_num": "1.2.1",
+      "topic": "Concept of Set",
+      "points": [
+        "Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.",
+        "Roughly, a set may be considered a collection of things or entities, such as names of animals, names of books, names of numbers, names of geometrical shapes, or any mixture of these.",
+        "Any entity in a set is called a member, or an element, of that set.",
+        "Further, in a set, no member is written more than once."
+      ]
+    },
+    {
+      "section_num": "1.2.3",
+      "topic": "Methods of Representing a Set",
+      "points": [
+        "For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).",
+        "7 Set, Relations and Functions 1.2.3.1 Notations, Definitions and Examples i) Two sets X and Y are said/defined as equal if every element of X is an element of Y, and every element of Y is an element of X.",
+        "The notation X=Y is used for 'equality of sets X and Y' Example 4: Let X = {1, 2, 3, 4, 5}, and Y = {x: x is a natural number such that 1<x<5}, and W= {3, 5, 2, 4, 1}.Then X = Y = W.",
+        "ii) X is said to be a subset of Y if every element of X is an element of Y."
+      ]
+    },
+    {
+      "section_num": "1.2.3",
+      "topic": "Relationships between Sets",
+      "points": [
+        "For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).",
+        "7 Set, Relations and Functions 1.2.3.1 Notations, Definitions and Examples i) Two sets X and Y are said/defined as equal if every element of X is an element of Y, and every element of Y is an element of X.",
+        "The notation X=Y is used for 'equality of sets X and Y' Example 4: Let X = {1, 2, 3, 4, 5}, and Y = {x: x is a natural number such that 1<x<5}, and W= {3, 5, 2, 4, 1}.Then X = Y = W.",
+        "ii) X is said to be a subset of Y if every element of X is an element of Y."
+      ]
+    },
+    {
+      "section_num": "1.2.4",
+      "topic": "Cardinality of a Set",
+      "points": [
+        "The number of elements in a finite set say A is called its Cardinality or cardinal number of a finite set and is denoted by n(A).",
+        "For example, (i) If A = {x, y, z}, then n(A) = 3, i.e.",
+        "(ii) If B = {1,4, 2, 3, 9, 15}, then n(B) = 6, i.e.",
+        "Subsets Before we relook at the subset, let us define the empty set."
+      ]
+    },
+    {
+      "section_num": "1.2.5",
+      "topic": "Subsets",
+      "points": [
+        "Before we relook at the subset, let us define the empty set.",
+        "The empty set (also known as the null set) is a unique concept in mathematics and set theory.",
+        "It represents a set that contains no elements.",
+        "It is denoted by or { } : A pair of curly braces with nothing between them."
+      ]
+    },
+    {
+      "section_num": "1.2.6",
+      "topic": "Power Set of a Set",
+      "points": [
+        "Definitions: The power set of a set A is the set of all the subsets of A, and is denoted by P(A).",
+        "Sometimes power set of a given set A is denoted by 2A, because that is the Cardinality of the power set A.",
+        "For example, the set {1, 2, 3} has 3 elements, and, the power set of A, viz.",
+        "p(A) = { , {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}} has 23 = 8 elements."
+      ]
+    },
+    {
+      "section_num": "1.3",
+      "topic": "Types of Sets",
+      "points": [
+        "We have seen that set is a well-defined collection of distinct objects.",
+        "Also repetition of elements in a set is not allowed.",
+        "So once a set is defined, automatically number of elements contained by it has also become fixed.",
+        "In this section, we shall discuss the different names given to a set on the bases of the number of elements contained by the set."
+      ]
+    }
+  ],
+  "formulas": [
+    "laws related to sets, like commutative,",
+    "property, because, according to one person,",
+    "Property Method or Rule Method.",
+    "property of being a vowel no other alphabet"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Introduction to Sets\"]\n  M1[\"1.2 Sets\"]\n  Root --> M1\n  M1_1[\"1.2.1 Concept of Set\"]\n  M1 --> M1_1\n  M1_2[\"1.2.3 Methods of Representing a Set\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 Relationships between Sets\"]\n  M1 --> M1_3\n  M2[\"1.3 Types of Sets\"]\n  Root --> M2\n  M3[\"1.4 Hierarchy of Sets\"]\n  Root --> M3\n  M4[\"1.5 Venn Diagrams\"]\n  Root --> M4\n  M5[\"1.6 Set Operations\"]\n  Root --> M5\n  M5_1[\"1.6.1 Different Set Operations\"]\n  M5 --> M5_1\n  M5_2[\"1.6.2 Convex Set\"]\n  M5 --> M5_2\n  M5_3[\"1.6.3 Russell s Paradox\"]\n  M5 --> M5_3\n  M6[\"1.7 Ordered Pairs and Cartesian Prod\"]\n  Root --> M6\n  M6_1[\"1.7.1 Cartesian Products\"]\n  M6 --> M6_1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Set A</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Set A said to be a proper subset of a set B if A is a subset of B and A and B are not equal.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">S Of A Space</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">S Of A Space convex if and only if for any pair of points p and q in the set S, the line section from p to q is enclosed completely in the set of S, as done in the figure on L.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Conventionally, the concept of number and geometric concepts like 'straight line', triangle' and 'square'.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Concept Of Set</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Relationships Between Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Conventionally, the concept of number and geometric concepts like 'straight line', triangle' and 'square'.</li>\n<li>have been the most fundamental, and the very first of the concepts discussed in introductory mathematics.</li>\n<li>Concept of Set Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.</li>\n<li>Roughly, a set may be considered a collection of things or entities, such as names of animals, names of books, names of numbers, names of geometrical shapes, or any mixture of these.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 Concept of Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Set is a basic concept like 'point', & 'straight line' in geometry and like 'number' in arithmetic, and hence, should be left undefined.</li>\n<li>Roughly, a set may be considered a collection of things or entities, such as names of animals, names of books, names of numbers, names of geometrical shapes, or any mixture of these.</li>\n<li>Any entity in a set is called a member, or an element, of that set.</li>\n<li>Further, in a set, no member is written more than once.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 Methods of Representing a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).</li>\n<li>7 Set, Relations and Functions 1.2.3.1 Notations, Definitions and Examples i) Two sets X and Y are said/defined as equal if every element of X is an element of Y, and every element of Y is an element of X.</li>\n<li>The notation X=Y is used for 'equality of sets X and Y' Example 4: Let X = {1, 2, 3, 4, 5}, and Y = {x: x is a natural number such that 1<x<5}, and W= {3, 5, 2, 4, 1}.Then X = Y = W.</li>\n<li>ii) X is said to be a subset of Y if every element of X is an element of Y.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 Relationships between Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For any two sets X and Y, the set relationships that we discuss are: (i) equality (=) of X and Y (ii) X is a subset/ superset (⸦) of Y (iii) X is a proper subset/superset(⸦)of Y, and (iv) is not a subset of ( ).</li>\n<li>7 Set, Relations and Functions 1.2.3.1 Notations, Definitions and Examples i) Two sets X and Y are said/defined as equal if every element of X is an element of Y, and every element of Y is an element of X.</li>\n<li>The notation X=Y is used for 'equality of sets X and Y' Example 4: Let X = {1, 2, 3, 4, 5}, and Y = {x: x is a natural number such that 1<x<5}, and W= {3, 5, 2, 4, 1}.Then X = Y = W.</li>\n<li>ii) X is said to be a subset of Y if every element of X is an element of Y.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.4 Cardinality of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The number of elements in a finite set say A is called its Cardinality or cardinal number of a finite set and is denoted by n(A).</li>\n<li>For example, (i) If A = {x, y, z}, then n(A) = 3, i.e.</li>\n<li>(ii) If B = {1,4, 2, 3, 9, 15}, then n(B) = 6, i.e.</li>\n<li>Subsets Before we relook at the subset, let us define the empty set.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.5 Subsets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before we relook at the subset, let us define the empty set.</li>\n<li>The empty set (also known as the null set) is a unique concept in mathematics and set theory.</li>\n<li>It represents a set that contains no elements.</li>\n<li>It is denoted by or { } : A pair of curly braces with nothing between them.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.6 Power Set of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Definitions: The power set of a set A is the set of all the subsets of A, and is denoted by P(A).</li>\n<li>Sometimes power set of a given set A is denoted by 2A, because that is the Cardinality of the power set A.</li>\n<li>For example, the set {1, 2, 3} has 3 elements, and, the power set of A, viz.</li>\n<li>p(A) = { , {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}} has 23 = 8 elements.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Types of Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We have seen that set is a well-defined collection of distinct objects.</li>\n<li>Also repetition of elements in a set is not allowed.</li>\n<li>So once a set is defined, automatically number of elements contained by it has also become fixed.</li>\n<li>In this section, we shall discuss the different names given to a set on the bases of the number of elements contained by the set.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws related to sets, like commutative,</code></div>\n<div class=\"formula-box\"><code>property, because, according to one person,</code></div>\n<div class=\"formula-box\"><code>Property Method or Rule Method.</code></div>\n<div class=\"formula-box\"><code>property of being a vowel no other alphabet</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This Unit has provided a foundational overview of Set Theory, beginning with methods for representing collections through roster and set-builder notation, then moving to the structural hierarchy of subsets, power sets, and cardinality. Subsequently, visual logic and abstract operations, using Venn Diagrams to demonstrate set interactions such as unions and intersections, are discussed Also advanced logical concepts such as Russell’s Paradox and the geometry</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-1_Introduction_to_Sets.pdf')\">\n          📄 Read Original IGNOU PDF (34 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

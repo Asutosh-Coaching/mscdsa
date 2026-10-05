@@ -1,0 +1,144 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Fuzzy and Rough Set",
+  "filename": "Unit-8_Fuzzy_and_Rough_Set.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-8_Fuzzy_and_Rough_Set.pdf",
+  "total_pages": 23,
+  "word_count": 8433,
+  "est_read_time_minutes": 47,
+  "objectives": [
+    "8.2\t \t Fuzzy Systems",
+    "8.3\t \t Introduction to Fuzzy Sets",
+    "8.4\t \t Fuzzy Set Representation",
+    "8.5\t \t Fuzzy Reasoning",
+    "8.6\t \t Fuzzy Inference"
+  ],
+  "summary": "In this unit the Fuzzy Systems are discussed along with the Introduction to Fuzzy Sets and their Representation. Later the conceptual understanding of Fuzzy Reasoning is build, and the same is used to perform the Fuzzy Inference. The unit finally discussed the concept of Rough Set Theory, also. Ex. 1: Discuss equality and subset relationship for the following fuzzy sets defined on the Universal set X = { a, b , c, d, e}",
+  "flashcards": [
+    {
+      "question": "Concentration of a set A is defined as CON (A) = {x/m",
+      "answer": "In Fuzzy and Rough Set, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Dilation (Opposite of Concentration) of a fuzzy set A is defined as DIL (A) = Example: If A = {Mohan/.",
+      "answer": "Key Principle: In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Example: If A = {Mohan/.",
+      "answer": "In Fuzzy and Rough Set, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "); Sohan/1; John /(.7 ÷.9 = .77.); Abdul/0; Abrahm/(.",
+      "answer": "In Fuzzy and Rough Set, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q55"
+    },
+    {
+      "question": ")} Note: If one of the members has value",
+      "answer": "In Fuzzy and Rough Set, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q22"
+    },
+    {
+      "question": "Ram is UNCLE of John with degree .",
+      "answer": "In Fuzzy and Rough Set, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q7"
+    },
+    {
+      "question": "What is Fuzzy Singleton and how is it characterized?",
+      "answer": "Fuzzy Singleton a fuzzy set in which there is exactly one element which has positive membership value.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Fuzzy and Rough Set\"]\n  M1[\"8.2 Fuzzy Systems\"]\n  Root --> M1\n  M2[\"8.4 Fuzzy Set Representation\"]\n  Root --> M2\n  M3[\"8.5 Fuzzy Reasoning\"]\n  Root --> M3\n  M4[\"8.6 Fuzzy Inference\"]\n  Root --> M4\n  M5[\"8.7 Rough Set Theory\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Singleton</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Fuzzy Singleton a fuzzy set in which there is exactly one element which has positive membership value.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Systems</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Set Representation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">(ii) A ∩ B is the largest subset of X contained in both A and B.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Reasoning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Inference</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Fuzzy Systems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.</li>\n<li>However, in our everyday experience, we encounter problems, the descriptions of which involve some words, because of which, to statements of situations, it is not possible to assign a truth value: True or False.</li>\n<li>Some other cases of Fuzziness in a Natural Language Healthy Person: we cannot even enumerate all the parameters that determine health.</li>\n<li>Further, it is even more difficult to tell for what value of a particular parameter, one is healthy or otherwise.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Fuzzy Set Representation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>(ii) A ∩ B is the largest subset of X contained in both A and B.</li>\n<li>(iii) The complement A' is such that (a) A and A' do not have any element in common and (b) Every element of the universal set is in either A or A'.</li>\n<li>Thus, smaller the value of degree of membership, a sort of lesser it is a member of the Fuzzy set.</li>\n<li>(2) While taking union of Crisp sets, members of both sets are included, and none else.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Fuzzy Reasoning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.</li>\n<li>Hence, more additional facts become available in the knowledge base with the addition of each axiom.</li>\n<li>Adding of axioms to the knowledge base increases the amount of knowledge contained in the knowledge base.</li>\n<li>Therefore, the set of facts through inferences in such systems can only grow larger with addition of each axiomatic fact.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Fuzzy Inference</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.</li>\n<li>However, due to limitations of these systems for making inferences, as discussed earlier, we must have other systems inferences.</li>\n<li>The abductive inference is useful in diagnostic applications.</li>\n<li>For example while diagnosing a disease (say P), the doctor asks for the symptoms (say Q).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Rough Set Theory</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Rough set theory can be regarded as a new mathematical tool for imperfect data analysis.</li>\n<li>The theory has found applications in many domains, such as decision support, engineering, environment, banking, medicine and others.</li>\n<li>It is a mechanism to deal with imprecise/imprecise knowledge, dealing with such a kind of knowledge is particularly area of research for the scientists, working in the field of Artificial Intelligence.</li>\n<li>There are various approaches to handle the imprecise knowledge, the most successful one is that of the Fuzzy logic, which was proposed by L.Zadeh, we discussed the same in our earlier sections of this unit.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules like abduction and induction,</code></div>\n<div class=\"formula-box\"><code>ruled the earth for a long period (about millions of years)</code></div>\n<div class=\"formula-box\"><code>rules, in situation like the</code></div>\n<div class=\"formula-box\"><code>Laws of motion and their derivatives like s = ut + at2, and</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit the Fuzzy Systems are discussed along with the Introduction to Fuzzy Sets and their Representation. Later the conceptual understanding of Fuzzy Reasoning is build, and the same is used to perform the Fuzzy Inference. The unit finally discussed the concept of Rough Set Theory, also. Ex. 1: Discuss equality and subset relationship for the following fuzzy sets defined on the Universal set X = { a, b , c, d, e}</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-8_Fuzzy_and_Rough_Set.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Fuzzy and Rough Set\"]\n  M1[\"8.2 Fuzzy Systems\"]\n  Root --> M1\n  M2[\"8.4 Fuzzy Set Representation\"]\n  Root --> M2\n  M3[\"8.5 Fuzzy Reasoning\"]\n  Root --> M3\n  M4[\"8.6 Fuzzy Inference\"]\n  Root --> M4\n  M5[\"8.7 Rough Set Theory\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Fuzzy Singleton",
+      "definition": "Fuzzy Singleton a fuzzy set in which there is exactly one element which has positive membership value.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Fuzzy Systems",
+      "definition": "In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Fuzzy Set Representation",
+      "definition": "(ii) A ∩ B is the largest subset of X contained in both A and B.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Fuzzy Reasoning",
+      "definition": "When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Fuzzy Inference",
+      "definition": "PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.2",
+      "topic": "Fuzzy Systems",
+      "points": [
+        "In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.",
+        "However, in our everyday experience, we encounter problems, the descriptions of which involve some words, because of which, to statements of situations, it is not possible to assign a truth value: True or False.",
+        "Some other cases of Fuzziness in a Natural Language Healthy Person: we cannot even enumerate all the parameters that determine health.",
+        "Further, it is even more difficult to tell for what value of a particular parameter, one is healthy or otherwise."
+      ]
+    },
+    {
+      "section_num": "8.4",
+      "topic": "Fuzzy Set Representation",
+      "points": [
+        "(ii) A ∩ B is the largest subset of X contained in both A and B.",
+        "(iii) The complement A' is such that (a) A and A' do not have any element in common and (b) Every element of the universal set is in either A or A'.",
+        "Thus, smaller the value of degree of membership, a sort of lesser it is a member of the Fuzzy set.",
+        "(2) While taking union of Crisp sets, members of both sets are included, and none else."
+      ]
+    },
+    {
+      "section_num": "8.5",
+      "topic": "Fuzzy Reasoning",
+      "points": [
+        "When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.",
+        "Hence, more additional facts become available in the knowledge base with the addition of each axiom.",
+        "Adding of axioms to the knowledge base increases the amount of knowledge contained in the knowledge base.",
+        "Therefore, the set of facts through inferences in such systems can only grow larger with addition of each axiomatic fact."
+      ]
+    },
+    {
+      "section_num": "8.6",
+      "topic": "Fuzzy Inference",
+      "points": [
+        "PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.",
+        "However, due to limitations of these systems for making inferences, as discussed earlier, we must have other systems inferences.",
+        "The abductive inference is useful in diagnostic applications.",
+        "For example while diagnosing a disease (say P), the doctor asks for the symptoms (say Q)."
+      ]
+    },
+    {
+      "section_num": "8.7",
+      "topic": "Rough Set Theory",
+      "points": [
+        "Rough set theory can be regarded as a new mathematical tool for imperfect data analysis.",
+        "The theory has found applications in many domains, such as decision support, engineering, environment, banking, medicine and others.",
+        "It is a mechanism to deal with imprecise/imprecise knowledge, dealing with such a kind of knowledge is particularly area of research for the scientists, working in the field of Artificial Intelligence.",
+        "There are various approaches to handle the imprecise knowledge, the most successful one is that of the Fuzzy logic, which was proposed by L.Zadeh, we discussed the same in our earlier sections of this unit."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules like abduction and induction,",
+    "ruled the earth for a long period (about millions of years)",
+    "rules, in situation like the",
+    "Laws of motion and their derivatives like s = ut + at2, and"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Fuzzy and Rough Set\"]\n  M1[\"8.2 Fuzzy Systems\"]\n  Root --> M1\n  M2[\"8.4 Fuzzy Set Representation\"]\n  Root --> M2\n  M3[\"8.5 Fuzzy Reasoning\"]\n  Root --> M3\n  M4[\"8.6 Fuzzy Inference\"]\n  Root --> M4\n  M5[\"8.7 Rough Set Theory\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Singleton</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Fuzzy Singleton a fuzzy set in which there is exactly one element which has positive membership value.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Systems</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Set Representation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">(ii) A ∩ B is the largest subset of X contained in both A and B.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Reasoning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fuzzy Inference</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Fuzzy Systems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the symbolic Logic systems like, PL and FOPL, that we have studied so far, any (closed) formula has a truth-value which must be binary, viz., True or False.</li>\n<li>However, in our everyday experience, we encounter problems, the descriptions of which involve some words, because of which, to statements of situations, it is not possible to assign a truth value: True or False.</li>\n<li>Some other cases of Fuzziness in a Natural Language Healthy Person: we cannot even enumerate all the parameters that determine health.</li>\n<li>Further, it is even more difficult to tell for what value of a particular parameter, one is healthy or otherwise.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Fuzzy Set Representation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>(ii) A ∩ B is the largest subset of X contained in both A and B.</li>\n<li>(iii) The complement A' is such that (a) A and A' do not have any element in common and (b) Every element of the universal set is in either A or A'.</li>\n<li>Thus, smaller the value of degree of membership, a sort of lesser it is a member of the Fuzzy set.</li>\n<li>(2) While taking union of Crisp sets, members of both sets are included, and none else.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Fuzzy Reasoning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When some axiom is added to a PL or an FOPL system, then, through deduction, we can draw more conclusions.</li>\n<li>Hence, more additional facts become available in the knowledge base with the addition of each axiom.</li>\n<li>Adding of axioms to the knowledge base increases the amount of knowledge contained in the knowledge base.</li>\n<li>Therefore, the set of facts through inferences in such systems can only grow larger with addition of each axiomatic fact.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Fuzzy Inference</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>PL and FOPL are deductive inferencing systems: i.e., the conclusions drawn are invariably true whenever the premises are true.</li>\n<li>However, due to limitations of these systems for making inferences, as discussed earlier, we must have other systems inferences.</li>\n<li>The abductive inference is useful in diagnostic applications.</li>\n<li>For example while diagnosing a disease (say P), the doctor asks for the symptoms (say Q).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Rough Set Theory</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Rough set theory can be regarded as a new mathematical tool for imperfect data analysis.</li>\n<li>The theory has found applications in many domains, such as decision support, engineering, environment, banking, medicine and others.</li>\n<li>It is a mechanism to deal with imprecise/imprecise knowledge, dealing with such a kind of knowledge is particularly area of research for the scientists, working in the field of Artificial Intelligence.</li>\n<li>There are various approaches to handle the imprecise knowledge, the most successful one is that of the Fuzzy logic, which was proposed by L.Zadeh, we discussed the same in our earlier sections of this unit.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules like abduction and induction,</code></div>\n<div class=\"formula-box\"><code>ruled the earth for a long period (about millions of years)</code></div>\n<div class=\"formula-box\"><code>rules, in situation like the</code></div>\n<div class=\"formula-box\"><code>Laws of motion and their derivatives like s = ut + at2, and</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit the Fuzzy Systems are discussed along with the Introduction to Fuzzy Sets and their Representation. Later the conceptual understanding of Fuzzy Reasoning is build, and the same is used to perform the Fuzzy Inference. The unit finally discussed the concept of Rough Set Theory, also. Ex. 1: Discuss equality and subset relationship for the following fuzzy sets defined on the Universal set X = { a, b , c, d, e}</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-8_Fuzzy_and_Rough_Set.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

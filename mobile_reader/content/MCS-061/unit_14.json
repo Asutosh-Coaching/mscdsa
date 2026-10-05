@@ -1,0 +1,119 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_14",
+  "unit_num": "Unit 14",
+  "title": "Definite Integration",
+  "filename": "Unit-14_Definite_Integration.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-14_Definite_Integration.pdf",
+  "total_pages": 23,
+  "word_count": 8738,
+  "est_read_time_minutes": 49,
+  "objectives": [
+    "14.2    Meaning and Geometrical Interpretation",
+    "14.3    Definite Integral of some commonly used Functions",
+    "14.4    Elementary Properties of Definite Integral",
+    "14.5    Examples based on Properties of Definite Integral",
+    "14.7    Solutions/Answers to Check Your Progress"
+  ],
+  "summary": "This unit introduced the definite integral, defining it as the net signed area between a function's graph and the x-axis over a specific interval [a,b]. Unlike indefinite integrals, the definite integral results in a unique numerical value, geometrically. This unit also elaborated on the fundamental theorem of Integral Calculus. This unit provided evaluations for commonly used functions—such as polynomials, trigonometric, and exponential forms—by applying the fundamental theorem of calculus. The unit also",
+  "flashcards": [
+    {
+      "question": "Evaluate the following integrals: (i) ",
+      "answer": "Now,      + + + =",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Evaluate the following integrals: (i)  +",
+      "answer": "(x 1)    − −  − − = − −      − −  − − = − − −       − −  − − = − −      + − + + − − + − =",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Evaluate the following integrals: (i) dx",
+      "answer": "Now,      + + + =",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": ", we get  − =  + = A B B A",
+      "answer": "(x 1)    − −  − − = − −      − −  − − = − − −       − −  − − = − −      + − + + − − + − =",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Putting values of A, B and D in (3), we get      − − +      − −  − =",
+      "answer": "Putting values of A, B and D in (3), we get      − − +      − −  − =",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "(x 1)    − −  − − = − −      − −  − − = − − −       − −  − − = − −      + − + + − − + − =",
+      "answer": "(x 1)    − −  − − = − −      − −  − − = − − −       − −  − − = − −      + − + + − − + − =",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Meaning And Geometrical Interpretation and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Definite Integration\"]\n  M1[\"14.2 Meaning and Geometrical Interpr\"]\n  Root --> M1\n  M2[\"14.3 Definite Integral of some commo\"]\n  Root --> M2\n  M3[\"14.4 Elementary Properties of Defini\"]\n  Root --> M3\n  M4[\"14.5 Examples based on Properties of\"]\n  Root --> M4\n  M5[\"14.2 MEANING AND GEOMETRICAL\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Meaning And Geometrical Interpretation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Meaning And Geometrical</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.2 Meaning and Geometrical Interpretation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in definite integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 Definite Integral of some commonly used Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of definite integral of some commonly used functions.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in definite integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4 Elementary Properties of Definite Integral</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Here, first we list some properties and then we will use these properties to evaluate some integrals.</li>\n<li>     − + + + + = b a c a c c c c b c 1 2 1 n 1 n n dx ) x ( f dx ) x ( f ...</li>\n<li>dx ) x ( f dx ) x ( f dx ) x ( f where, a < b c c ...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.5 Examples based on Properties of Definite Integral</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, you will see how the properties of definite integral, discussed in previous Sec.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.2 MEANING AND GEOMETRICAL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in definite integration.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem of integralcalculus</code></div>\n<div class=\"formula-box\"><code>theorem of Integral Calculus:</code></div>\n<div class=\"formula-box\"><code>theorem of integral calculus</code></div>\n<div class=\"formula-box\"><code>theorem of integral calculus</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduced the definite integral, defining it as the net signed area between a function's graph and the x-axis over a specific interval [a,b]. Unlike indefinite integrals, the definite integral results in a unique numerical value, geometrically. This unit also elaborated on the fundamental theorem of Integral Calculus. This unit provided evaluations for commonly used functions—such as polynomials, trigonometric, and exponential forms—by applying the fundamental theorem of calculus. The unit also</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-14_Definite_Integration.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 14 Definite Integration\"]\n  M1[\"14.2 Meaning and Geometrical Interpr\"]\n  Root --> M1\n  M2[\"14.3 Definite Integral of some commo\"]\n  Root --> M2\n  M3[\"14.4 Elementary Properties of Defini\"]\n  Root --> M3\n  M4[\"14.5 Examples based on Properties of\"]\n  Root --> M4\n  M5[\"14.2 MEANING AND GEOMETRICAL\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Meaning And Geometrical Interpretation",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Meaning And Geometrical",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "14.2",
+      "topic": "Meaning and Geometrical Interpretation",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in definite integration."
+      ]
+    },
+    {
+      "section_num": "14.3",
+      "topic": "Definite Integral of some commonly used Functions",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of definite integral of some commonly used functions.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in definite integration."
+      ]
+    },
+    {
+      "section_num": "14.4",
+      "topic": "Elementary Properties of Definite Integral",
+      "points": [
+        "Here, first we list some properties and then we will use these properties to evaluate some integrals.",
+        "     − + + + + = b a c a c c c c b c 1 2 1 n 1 n n dx ) x ( f dx ) x ( f ...",
+        "dx ) x ( f dx ) x ( f dx ) x ( f where, a < b c c ..."
+      ]
+    },
+    {
+      "section_num": "14.5",
+      "topic": "Examples based on Properties of Definite Integral",
+      "points": [
+        "In this section, you will see how the properties of definite integral, discussed in previous Sec."
+      ]
+    },
+    {
+      "section_num": "14.2",
+      "topic": "MEANING AND GEOMETRICAL",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in definite integration."
+      ]
+    }
+  ],
+  "formulas": [
+    "theorem of integralcalculus",
+    "theorem of Integral Calculus:",
+    "theorem of integral calculus",
+    "theorem of integral calculus"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Definite Integration\"]\n  M1[\"14.2 Meaning and Geometrical Interpr\"]\n  Root --> M1\n  M2[\"14.3 Definite Integral of some commo\"]\n  Root --> M2\n  M3[\"14.4 Elementary Properties of Defini\"]\n  Root --> M3\n  M4[\"14.5 Examples based on Properties of\"]\n  Root --> M4\n  M5[\"14.2 MEANING AND GEOMETRICAL\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Meaning And Geometrical Interpretation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Meaning And Geometrical</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.2 Meaning and Geometrical Interpretation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical interpretation.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in definite integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 Definite Integral of some commonly used Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of definite integral of some commonly used functions.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in definite integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4 Elementary Properties of Definite Integral</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Here, first we list some properties and then we will use these properties to evaluate some integrals.</li>\n<li>     − + + + + = b a c a c c c c b c 1 2 1 n 1 n n dx ) x ( f dx ) x ( f ...</li>\n<li>dx ) x ( f dx ) x ( f dx ) x ( f where, a < b c c ...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.5 Examples based on Properties of Definite Integral</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, you will see how the properties of definite integral, discussed in previous Sec.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.2 MEANING AND GEOMETRICAL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and geometrical.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in definite integration.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem of integralcalculus</code></div>\n<div class=\"formula-box\"><code>theorem of Integral Calculus:</code></div>\n<div class=\"formula-box\"><code>theorem of integral calculus</code></div>\n<div class=\"formula-box\"><code>theorem of integral calculus</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduced the definite integral, defining it as the net signed area between a function's graph and the x-axis over a specific interval [a,b]. Unlike indefinite integrals, the definite integral results in a unique numerical value, geometrically. This unit also elaborated on the fundamental theorem of Integral Calculus. This unit provided evaluations for commonly used functions—such as polynomials, trigonometric, and exponential forms—by applying the fundamental theorem of calculus. The unit also</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-14_Definite_Integration.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,894 @@
+{
+  "Semester_1": {
+    "MCS-061": {
+      "course_folder": "MCS-061_Mathematical_Foundations_-_I",
+      "documents": [
+        {
+          "filename": "Block-1_Set,_Relations_and_Functions.pdf",
+          "pages": 122,
+          "filesize_kb": 2981.0,
+          "sample_content": "1 UNIT 1 INTRODUCTION TO SETS Structure 1.0 Objectives 1.1 Introduction 1.2 Sets 1.2.1 Concept of Set 1.2.3 Methods of Representing a Set 1.2.3 Relationships between Sets 1.2.4 Cardinality of a Set 1.2.5 Subsets 1.2.6 Power Set of a Set 1.3 Types of Sets 1.4 Hierarchy of Sets 1.5 Venn Diagrams 1.6 Set Operations 1.6.1 Different Set Operations 1.6.2 Convex Set 1.6.3 Russell's Paradox 1.6.4 Intervals 1.7 Ordered Pairs and Cartesian Products 1.7.1 Cartesian Products 1.8 Some Useful and Important La ... 2 Introdution to Sets 1.1 OBJECTIVE After completing this unit, you should be able to: • define a set, • write a set in different forms, • explain the types of sets, • draw Venn diagrams, • apply different operations on sets, • get the idea of super sets and subsets, • get an idea of some important laws related to sets, like commutative, associative, De-Morgan's laws, etc., and • apply set theory concepts for problem-solving. 1.2 SETS Conventionally, the concept of number and geometric conc"
+        },
+        {
+          "filename": "Block-4_Calculus.pdf",
+          "pages": 122,
+          "filesize_kb": 18164.12,
+          "sample_content": "1 Calculus UNIT 11 LIMIT AND CONTINUITY Structure 11.0 Introduction 11.1 Objectives 11.2 Concept of Limit 11.3 Direct Substitution Method 11.4 Failure of Direct Substitution Method 11.4.1 Factorisation Method 11.4.2 Least Common Multiplier Method 11.4.3 Rationalisation Method 11.4.4 Use of some Standard Results 11.5 Concept of Infinite Limit 11.6 Concept of Left Hand and Right Hand Limits 11.7 Continuity of a Function at a Point 11.8 Continuous Function 11.9 Summary 11.10 Solutions/Answers to Ch ... 2 Limit and Continuity y = f(x) = 3x + 2 The following table shows the values of y for different values of x which are very close to 2. x 1.9 1.98 1.998 1.9998 … 1.99999998 … y = f(x) 7.7 7.94 7.994 7.9994 … 7.99999994 … x 2.1 2.01 2.001 2.0001 … 2.00000001 … y = f(x) 8.3 8.03 8.003 8.0003 … 8.00000003 … We note that as x approaches to 2 either from left (means x comes nearer and nearer to 2 but remains < 2) or from right (means x comes nearer and nearer to 2 but remains > 2), then y = f(x)"
+        },
+        {
+          "filename": "Unit-10_Techniques_of_Counting_and_Binomial_Theorem.pdf",
+          "pages": 31,
+          "filesize_kb": 4748.11,
+          "sample_content": "5 Techniques of Counting and Binomial Theorem UNIT 10 TECHNIQUES OF COUNTING AND BINOMIAL THEOREM Structure 10.0 Introduction 10.1 Objectives 10.2 Factorial and its Notations 10.3 Fundamental Principles of Counting 10.3.1 Fundamental Principle of Multiplication (FPM) 10.3.2 Fundamental Principle of Addition (FPA) 10.4 Permutation 10.4.1 Linear Permutation 10.4.2 Circular Permutation 10.5 Combination 10.6 Selection of Permutation or Combination 10.7 Some Important Results 10.8 Binomial Theorem 10 ... 6 Linear Spaces and Counting Techniques • define combination and solve simple problems based on it; and • get an idea of binomial theorem. 10.2 FACTORIAL AND ITS NOTATIONS The product of first n natural numbers is denoted by n! or n and read as ‘n factorial’. i.e n! = n  (n –1)  …  3  2  1 If n = 0, then we define 0! = 1 Remark: We see that n! = n  (n–1)  (n–2)  …  3  2  1 = n  n1− for n ≥ 1 = n  (n–1)  n2− for n ≥ 2 and so on. Let us now consider some examples. Example 1: Eva"
+        },
+        {
+          "filename": "Unit-11_Limit_and_Continuity.pdf",
+          "pages": 31,
+          "filesize_kb": 4817.37,
+          "sample_content": "1 Calculus UNIT 11 LIMIT AND CONTINUITY Structure 11.0 Introduction 11.1 Objectives 11.2 Concept of Limit 11.3 Direct Substitution Method 11.4 Failure of Direct Substitution Method 11.4.1 Factorisation Method 11.4.2 Least Common Multiplier Method 11.4.3 Rationalisation Method 11.4.4 Use of some Standard Results 11.5 Concept of Infinite Limit 11.6 Concept of Left Hand and Right Hand Limits 11.7 Continuity of a Function at a Point 11.8 Continuous Function 11.9 Summary 11.10 Solutions/Answers to Ch ... 2 Limit and Continuity y = f(x) = 3x + 2 The following table shows the values of y for different values of x which are very close to 2. x 1.9 1.98 1.998 1.9998 … 1.99999998 … y = f(x) 7.7 7.94 7.994 7.9994 … 7.99999994 … x 2.1 2.01 2.001 2.0001 … 2.00000001 … y = f(x) 8.3 8.03 8.003 8.0003 … 8.00000003 … We note that as x approaches to 2 either from left (means x comes nearer and nearer to 2 but remains < 2) or from right (means x comes nearer and nearer to 2 but remains > 2), then y = f(x)"
+        },
+        {
+          "filename": "Unit-12_Differentiation.pdf",
+          "pages": 39,
+          "filesize_kb": 6045.59,
+          "sample_content": "1 Calculus UNIT 12 DIFFERENTIATION Structure 12.0 Introduction 12.1 Objectives 12.2 Definition of Derivative, its Meaning and Geometrical Interpretation 12.3 Derivative at a Point 12.4 Derivative by First Principle 12.5 Chain Rule 12.6 Derivatives of Exponential, Logarithmic, Parametric and Implicit Functions 12.7 Derivatives of Higher Orders 12.8 Concept of Maxima and Minima 12.9 Summary 12.10 Solutions/Answers to Check Your Progress 12.11 References/Further Readings 12.0 INTRODUCTION In the pr ... 2 Differentiation 12.2 DEFINITION OF DERIVATIVE, ITS MEANING AND GEOMETRICAL INTERPRETATION Definition Let R D : f→ be a function, where D R, i.e. f is a real valued function defined on D. Let D a then derivative of f at x = a is denoted by ) a ( ' f and is defined as ,h ) a ( f ) h a ( flim) a ( ' f 0 h − += → provided limit exists … (1) From definition (1), we see that ) a ( ' f measures the rate at which the function f(x) changes at x = a. This is clear from the figure 12.1 given below"
+        },
+        {
+          "filename": "Unit-13_Indefinite_Integration.pdf",
+          "pages": 29,
+          "filesize_kb": 4530.01,
+          "sample_content": "5 Calculus UNIT 13 INDEFINITE INTEGRATION Structure 13.0 Introduction 13.1 Objectives 13.2 Meaning and Terminology used. 13.3 Integration of some Particular Functions 13.4 Integration by Substitution 13.5 Integration using Partial Fractions 13.6 Integration by Parts 13.7 Summary 13.8 Solutions/Answers to Check Your Progress 13.9 References/Further Readings 13.0 INTRODUCTION In the previous unit, we have studied the differentiation of some functions. Here, in this unit we are going to discuss the ... 6 Indefinite Integration In pre vious unit we have studied differentiation. The integration is just the reverse process of differentiation. Actually, it is an antiderivative of a function. That is, if ) x ( ' f is derivative of f(x) and hence ) x ( ' f is derivative of f(x) + c (  derivative of constant is zero). And therefore, f (x) + c is the integration of ) x ( ' f . Integral of a function f(x) w.r.t. x is denoted by  dx) x ( f ,where f(x) is known as integrand , dx reflects the messa"
+        },
+        {
+          "filename": "Unit-14_Definite_Integration.pdf",
+          "pages": 23,
+          "filesize_kb": 3617.49,
+          "sample_content": "5 Calculus UNIT 14 DEFINITE INTEGRATION Structure 14.0 Introduction 14.1 Objectives 14.2 Meaning and Geometrical Interpretation 14.3 Definite Integral of some commonly used Functions 14.4 Elementary Properties of Definite Integral 14.5 Examples based on Properties of Definite Integral 14.6 Summary 14.7 Solutions/Answers to Check Your Progress 14.8 References/Further Readings 14.0 INTRODUCTION In Units 12 and 13 we have discussed concept of differentiation and concept of indefinite integral. But  ... 6 Definite Integration Here, we are going to discuss definite integrals. Definite integral of a function f(x) within the limits a < x < b or b x a  or b x a  or b x a  … (1) is denoted by  b a dx) x ( f and is defined as   ) a ( F ) b ( F ) x ( Fdx) x ( f b a b a − = = … (2) Byfundamental theorem of integralcalculus   , where a is called lower limit, b is called upper limit and either of the intervals in (1) to be used is known as interval of integration. For example, 55 2 2"
+        },
+        {
+          "filename": "Unit-1_Introduction_to_Sets.pdf",
+          "pages": 34,
+          "filesize_kb": 5093.36,
+          "sample_content": "1 UNIT 1 INTRODUCTION TO SETS Structure 1.0 Objectives 1.1 Introduction 1.2 Sets 1.2.1 Concept of Set 1.2.3 Methods of Representing a Set 1.2.3 Relationships between Sets 1.2.4 Cardinality of a Set 1.2.5 Subsets 1.2.6 Power Set of a Set 1.3 Types of Sets 1.4 Hierarchy of Sets 1.5 Venn Diagrams 1.6 Set Operations 1.6.1 Different Set Operations 1.6.2 Convex Set 1.6.3 Russell's Paradox 1.6.4 Intervals 1.7 Ordered Pairs and Cartesian Products 1.7.1 Cartesian Products 1.8 Some Useful and Important La ... 2 Introdution to Sets 1.1 OBJECTIVE After completing this unit, you should be able to: • define a set, • write a set in different forms, • explain the types of sets, • draw Venn diagrams, • apply different operations on sets, • get the idea of super sets and subsets, • get an idea of some important laws related to sets, like commutative, associative, De-Morgan's laws, etc., and • apply set theory concepts for problem-solving. 1.2 SETS Conventionally, the concept of number and geometric conc"
+        },
+        {
+          "filename": "Unit-2_Relations.pdf",
+          "pages": 23,
+          "filesize_kb": 3394.4,
+          "sample_content": "1 Sets, Relations and Functions UNIT 2 RELATIONS Structure 2.0 Introduction 2.1 Objectives 2.2 Relation 2.2.1 Definition, Notation and Illustrations 2.3 Properties of Relations 2.4 Equivalence relations, and Partition of a Set 2.5 Partial Order Relation, Partially Ordered Set 2.5.1 Applications of Equivalence Relation and Partition of a Set 2.5.2 Partial Order Relation, Partially Ordered Sets 2.6Operations on Relations 2.6.1 Set-type Operations on Relations 2.6.2 Mapping-type operations: inverse ... 2 Relations geometry (Fig. 3.1), the location of the point (2, 5) is different from the location of the point (5,2). Fig. 2.1: Location of Points in Co-ordinate Geometry Such a set, in which order of occurrence of elements is significant, is called an ordered set . In the notation of ordered sets, the elements are enclosed between parentheses, instead of braces/curly-brackets. Thus (a, b) ≠ (b, a), but {a, b} = {b, a}. b) Cross-product of two sets X and Y : for X ≠ ∅ ≠ Y, denoted by X × Y i"
+        },
+        {
+          "filename": "Unit-3_Functions.pdf",
+          "pages": 31,
+          "filesize_kb": 4556.13,
+          "sample_content": "1 Sets, Relations and Functions UNIT 3 FUNCTIONS Structure 3.0 Introduction 3.1 Objectives 3.2 Quantity 3.3 Interval 3.4 Function 3.4.1 Mapping 3.4.2 Pictorial Presentation of Functions 3.4.3 Operations on Functions 3.4.4 Some Commonly Used Functions 3.4.5 Monotonic Functions 3.5 Types of Functions Based on Mapping 3.5.1 Injective Function 3.5.2 Surjective Function 3.5.3 Bijective Function 3.5.4 Geometrical Meaning of Injective, Surjective and Bijective Functions 3.6 Inverse of Functions 3.7 Sum ... 2 Functions • finding inverse of a function. 3.2 QUANTITY Before defining function, let us first explain wha t we mean by quantity, constant, variable and intervals. Quantity Here, by quantity we mean those things o n which four basic mathematical operations addition, subtraction, multiplication and division can be applied. For example, temperature, height, weight, and time all these are quantities bu t they are continuous in nature, whereas books in a library, n umber of trees, number of b"
+        },
+        {
+          "filename": "Unit-4_Graphical_Representation_of_Functions.pdf",
+          "pages": 34,
+          "filesize_kb": 5293.3,
+          "sample_content": "1 Sets, Relations and Functions UNIT 4 GRAPHICAL REPRESENTATION OF FUNCTIONS Structure 4.0 Introduction 4.1 Objectives 4.2 Vertical Line Test of Function 4.2.1 Relationship between Equation and Function 4.2.2 Co-ordinate Geometry 4.2.3 Cartesian Co-ordinate System 4.3 Translating Geometric Figures to Algebraic Equations 4.4 Graphing Linear Functions 4.4.1 Absolute Value Function 4.4.2 Step Function 4.5 Graphing Non-Linear Functions 4.5.1 Even and Odd Functions 4.5.2 Quadratic Functions 4.5.3 Com ... 2 Graphical Representation of Functions i) The element 5 of the domain (X) is related to three elements, viz. 4, 5, 7 of the co-domain. ii) each of the elements 3 and 4 of domain X is not related to any element of the co-domain Y. Fig.4.l a: A Non-Functional Relationship However, for a relationship to be a function, there is no such restriction on the elements of co-domain Y. For example, Fig. 4.l b represents a function or functional relationship, even when i) element C of co -domain Y cor"
+        },
+        {
+          "filename": "Unit-5_Progressions.pdf",
+          "pages": 22,
+          "filesize_kb": 3365.87,
+          "sample_content": "1 Progression, Matrices and Determinants UNIT 5 PROGRESSIONS Structure 5.0 Introduction 5.1 Objectives 5.2 Sequence 5.3 Arithmetic Progresses (A.P.) 5.4 Geometric Progression (G.P.) 5.5 Sum of Infinite G.P. 5.6 Concept of Summation 5.7 Sum of some Special Sequences 5.8 Summary 5.9 Solutions/Answers to Check Your Progress 5.10 Reference and Further Readings 5.0 INTRODUCTION In day-to-day life many times people use the word sequence. So we are familiar with the dictionary meaning of the word seque ... 2 Progressions • define and recognize arithmetic progression (A.P.); • give formula for thn term and sum of first n terms of on A.P.; • define geometric progression (G.P.); • give formula for thn term and sum of n terms of a G.P.; • find sum of infinite G.P.; and • become familiar with the concept of summation. 5.2 SEQUENCE In the introduction of this unit, we have indicated that sequences are special types of functions. So let us first give a mathematical definition of sequence. Sequence: "
+        },
+        {
+          "filename": "Unit-6_Matrix_Algebra.pdf",
+          "pages": 39,
+          "filesize_kb": 5699.19,
+          "sample_content": "UNIT 6 MATRIX ALGEBRA Structure 6.0 Introduction 6.1 Objectives 6.2 Definition of a Matrix 6.3 Types of Matrices 6.4 Operations on Matrices 6.4.1 Addition and Subtraction of Matrices 6.4.2 Matrix Multiplication 6.4.3 Transpose of a Matrix 6.4.4 Integral Powers of a Square Matrix 6.4.5 Adjoint and Reciprocal Matrices 6.4.6 Trace of a Matrix 6.4.7 Sub Matrices and Minors 6.4.8 Inverse of a Matrix 6.5 Some Other Types of Matrices 6.5.1 Orthogonal Matrix 6.5.2 Symmetric and Skew-symmetric Matrices 6 ... 2 Progressions, Matrices and Determinants • explain and use related concepts of submatrices and minors, orthogonal matrix, symmetric and skew -symmetric matrices, idempotent Matrix, adjoint and reciprocal matrices, trace of a matrix, transpose of matrix, non-singular matrix, inverse of a matrix; • find inverse of a non-singular matrix, • calculate rank of a matrix, • use partition matrix in carrying out efficiently matrix operations, and • explain applications of matrix. 6.2 DEFINITION OF A"
+        },
+        {
+          "filename": "Unit-7_Determinants.pdf",
+          "pages": 34,
+          "filesize_kb": 4864.66,
+          "sample_content": "1 UNIT 7 DETERMINANTS Structure 7.0 Introduction 7.1 Objectives 7.2 Determinants 7.2.1 Definition and Concepts 7.2.2 Minors and Cofactors 7.3 Properties of Determinants 7.4 Product of Two Determinants 7.5 Symmetric Determinants 7.5.1 Skew and Skew-symmetric Determinants 7.6 Solution of Simultaneous Equation by Cramer’s Rule 7.7 Summary 7.8 Solutions/Answers 7.0 INTRODUCTION As you know linear algebra, a fundamental field of mathematics that serves as the bedrock for modern data science, engineer ... 2 Progressions, Matrices and Determinants Finally, towards end of the unit, we will focus on the most direct use of the determinant: solving systems of linear equations. Cramer’s Rule provides a formula for Determinant-based method for finding the unique solution to a system of n equations with n variables, provided the coefficient matrix is non - singular. 7.1 OBJECTIVES Determinants were first used in solving systems of simultaneous equations in around 1683 almost simultaneously by Japane"
+        },
+        {
+          "filename": "Unit-8_Linear_Spaces-I.pdf",
+          "pages": 11,
+          "filesize_kb": 1741.93,
+          "sample_content": "1 UNIT 8 LINEAR SPACES - 1 Structure 8.0 Objectives 8.1 Introduction 8.2 Vector Addition and Scalar Multiplication 8.3 Geometrical and Physical Interpretations 8.4 Norm and Inner Product 8.5 Vector Spaces and Subspaces 8.6 Linear Dependence of Vectors 8.7 Generators and Basis 8.8 Summery 8.9 Answers/Hints to Check Your Progress 8.10 References and Further Readings 8.0 INTRODUCTION Generally, the elements of a set can be arranged in any manner. It does not matter whether a three-element set is wr ... 2 Linear Spaces and Counting Techniques 8.2 VECTOR ADDITION AND SCALAR MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐. . ). These are referred to as row and column vectors respectively. Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑. Then the vector a is said to be a vector over the field R. Like ordinary numbers, sum and difference of two vectors can be defined p"
+        },
+        {
+          "filename": "Unit-9_Linear_Spaces-II.pdf",
+          "pages": 16,
+          "filesize_kb": 2358.75,
+          "sample_content": "UNIT 9 LINEAR SPACES - 2 Structure 9.0 Objectives 9.1 Introduction 9.2 Vectors and Matrices 9.3 Characteristic Value Problem 9.3.1 Characteristic Equation 9.3.2 Sum and Product of Roots 9.3.3 Characteristic Vector 9.3.4 Diagonalisation 9.4 Linear independence of Eigen Vectors 9.5 Quadratic Forms 9.6 Definiteness and Eigen Values 9.7 Vector Differentiation 9.7.1 Vector Differentiation of a Linear Function 9.7.2 Vector Differentiation of a Vector Functions 9.7.3 Vector Differentiation of a Quadrat ... 2 Linear Spaces and Counting Techniques 9.2 VECTORS AND MATRICES A system of 'm' linear equations in 'n' variables (x1,x2, ...,xn) can be arranged into the following format: a11x1+a12 x2 +...+a1nxn =d1 a21x1+ a22 x2 +...+a2nxn =d2 am1x1+am2x2+...+amnxn = dm There are three types of elements in the above equation system. The first is the set of coefficients aij; the second is the set of variables x1, x2, ..., xn, and the last is the set of constant terms d1, ..., dm. From our earlier discuss"
+        }
+      ]
+    },
+    "MCS-062": {
+      "course_folder": "MCS-062_Introduction_to_Data_Science",
+      "documents": [
+        {
+          "filename": "Block-1_Introduction_to_Data_Science-1.pdf",
+          "pages": 155,
+          "filesize_kb": 2851.79,
+          "sample_content": "MCS-062 Introduction to Data Science Indira Gandhi National Open University School of Computer and Information Sciences (SOCIS) ... B LOCK 1 INTRODUCTION TO DATA SCIENCE-1 5 B LOCK 2 INTRODUCTION TO DATA SCIENCE-2 155 B LOCK 3 DATA VISUALIZATION AND INTERPRETATION 217 B LOCK 4 DATA SCIENCE – ALLIED AREAS 381 I ndira Gandhi National Open University School of Computer and Information Sciences (SOCIS) M CS-062 Introduction to Data Science ... PR OGRAMME DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P. V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS, IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS, IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS, IGNOU CO URSE DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. T. V ... Con tent B LOCK 1 INTRODUCTION TO DATA SCIENCE-1 5 "
+        },
+        {
+          "filename": "Block-2_Introduction_to_Data_Science-2.pdf",
+          "pages": 62,
+          "filesize_kb": 955.91,
+          "sample_content": "155 Da ta Acquisition (DAQ): Process Bloc k 2 I NTRODUCTION TO DATA SCIENCE-2 Un it 5 Data Preparation for Analysis Unit 6 Descriptive and Exploratory Data Analysis – An Introduction Unit 7 Inferential and Predictive Data Analysis – An Introduction I ndira Gandhi National Open University School of Computer and Information Sciences (SOCIS) MC S-062 Introduction to Data Science ... In troduction to Data Science-1 156 P ROGRAMME DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P. V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS, IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS, IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS, IGNOU COUR SE DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Dinesh Kumar Vi ... 157 Da ta Acquisition (DAQ): ProcessB LOCK 2 INTRODUCTION TO DATA SCIENCE-2 B lock-2 of the course “Introduction"
+        },
+        {
+          "filename": "Block-3_Data_Visualization_and_Interpretation.pdf",
+          "pages": 164,
+          "filesize_kb": 6983.94,
+          "sample_content": "217 In ferential and Predictive Data Analysis – An Introduction Bloc k 3 DA TA VISUALIZATION AND INTERPRETATION Un it 8 Data Visualisation and Interpretation Unit 9 Excel for Descriptive Data Analysis Unit 10 Excel for Inferential Data Analysis I ndira Gandhi National Open University School of Computer and Information Sciences (SOCIS) MC S-062 Introduction to Data Science ... In troduction to Data Science-2 218 P ROGRAMME DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P. V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS, IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS, IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS, IGNOU COUR SE DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Dinesh Kumar Vi ... 219 In ferential and Predictive Data Analysis – An Introduction B LOCK 3 DATA VISUALIZATION AND I NTERPRETATION B lo"
+        },
+        {
+          "filename": "Block-4_Data_Science-Allied_Areas.pdf",
+          "pages": 145,
+          "filesize_kb": 17942.74,
+          "sample_content": "381 Ex cel for Inferential Data Analysis Bloc k 4 DA TA SCIENCE – ALLIED AREAS Un it 11 Introduction to NOSQL and Bigdata Unit 12 Mining Data Streams Unit 13 Tools for Data Science – An Introduction I ndira Gandhi National Open University School of Computer and Information Sciences (SOCIS) MC S-062 Introduction to Data Science ... Da ta Visualization and Interpretation 382 P ROGRAMME DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P. V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS, IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS, IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS, IGNOU COUR SE DESIGN COMMITTEE P rof. D. K. Lobiyal, JNU, New Delhi Prof. Dinesh K ... 383 Ex cel for Inferential Data Analysis B LOCK 4 DATA SCIENCE – ALLIED AREAS B lock-4 of the “Introduction to Data Science” course ventures into advanced and all"
+        },
+        {
+          "filename": "Unit-10_Excel_for_Inferential_Data_Analysis.pdf",
+          "pages": 83,
+          "filesize_kb": 3788.7,
+          "sample_content": "Da ta Visualization and Interpretation 298 UN IT 10 EXCEL FOR INFERENTIAL DATA AN ALYSIS S tructure 10.1 Introduction 10.2 Objectives 10.3 Sampling 10.4 Hypothesis Testing 10. 4.1 t-test 10.4.2 chi-square Test 10.4.3 F-test 10.4.4 Z-test 10.4.5 ANOVA 10.5 C orrelation and Regression Analysis 10. 5.1 Univariate 10.5.2 Multivariate 10.6 Ti me Series and Forecasting Using Excel 10.7 Summary 10.8 Solutions/Answers 10.9 References 1 0.1 INTRODUCTION I nferential data analysis is a powerful statistica ... 299 Ex cel for Inferential Data Analysis · ANOVA (Analysis of Variance) : Comparing means across multiple groups to determine if there are significant differences. · Correlation Analysis : Measuring the strength and direction of relationships between variables. By the end of this Unit, you will have a solid understanding of how to use Excel for inferential data analysis, enabling you to make informed decisions based on your data. 10 .2 OBJECTIVES The objective of this Unit is to equip users"
+        },
+        {
+          "filename": "Unit-11_Introduction_to_NOSQL_and_Bigdata.pdf",
+          "pages": 47,
+          "filesize_kb": 642.25,
+          "sample_content": "385 In troduction to NOSQL and BigdataUN IT 11 INTRODUCTION TO NOSQL AND BIGDAT A S tructure 11.0 Introduction 11.1 Objectives 11.2 Introduction to NoSQL 11. 2.1 What is NoSQL 11.2.2 Brief History of NoSQL Databases 11.2.3 NoSQL Database Features 11.2.4 Differentiate between RDBMS and NoSQL 11.3 Types of NoSQL Databases 11. 3.1 Column Based 11.3.2 Graph Based 11.3.3 Key-value Pair Based 11.3.4 Document Based 11.4 Introduction to Big Data 11. 4.1 Big Data and Characteristics 11.4.2 Big Data Appli ... Da ta Science – Allied Areas 386 and digital devices like smart phones and vehicles. This overwhelming and continuous generation of data is categorized under the umbrella term \"Big Data.\" The concept of Big Data is defined by four key characteristics: volume (the sheer amount of data), velocity (the speed at which data is generated and processed), variety (the different types and formats of data), and veracity (the reliability and accuracy of data). The discipline that focuses on extracting"
+        },
+        {
+          "filename": "Unit-12_Mining_Data_Streams.pdf",
+          "pages": 13,
+          "filesize_kb": 315.51,
+          "sample_content": "Da ta Science – Allied Areas 432 UN IT 12 MINING DATA STREAMS S tructure 12.0 Introduction 12.1 Objectives 12.2 Data Streams 12.2.1 Model for Data Stream Processing 12.3 Data Stream Management 12.3.1 Queries of Data Stream 12.3.2 Examples of Data Stream and Queries 12.3.3 Issues and Challenges of Data Stream 12.4 Summary 12.5 Answers 12.6 References/Further Readings 1 2.0 INTRODUCTION I n today’s data-driven world, vast amounts of data are generated continuously from various sources such as sens ... 433 M ining Data StreamsThi s unit explains the characteristics and models of data stream processing. It also identifies the challenges or stream processing and introduces you to various techniques for processing of data streams. You may refer to further readings of this Unit for more details on data streams and data stream processing. 12 .1 OBJECTIVES Aft er going through this Unit, you would be able to: · Define the characteristics of data streams · Discuss models of data stream processin"
+        },
+        {
+          "filename": "Unit-13_Tools_for_Data_Science_-_An_Introduction.pdf",
+          "pages": 81,
+          "filesize_kb": 17088.27,
+          "sample_content": "445 To ols for Data Science an Introduction UN IT 13 TOOLS FOR DATA SCIENCE – AN INTRODUCTION 13.1 I ntroduction 13.2 Objectives 13.3 Tools for Data Science 13.4 Datasets and File Formats 13.5 Basics of Tableau 13.6 Basics of Power BI 13.7 Basics of Python 13.8 Basics of R-STUDIO 13.9 Summary 13.10 Solutions/Answers 13.11 Further Readings 13 .1 INTRODUCTION I n today’s digital era, data is often considered as the new oil—an invaluable resource powering decision-making across industries like heal ... Da ta Science – Allied Areas 446 · R – A statistical powerhouse designed for analytical rigor, favoured in academia and research-heavy environments. The sections covered in this unit, introduces not just the technical skills needed to work with these tools, but also offers practical exposure to their user interfaces, dataset handling methods, and data visualization techniques. The goal is to equip students, aspiring data scientists, and professionals with both the confidence and competence "
+        },
+        {
+          "filename": "Unit-1_Data_Science_Fundamentals.pdf",
+          "pages": 49,
+          "filesize_kb": 579.06,
+          "sample_content": "9 Dat a Science Fundamentals UN IT 1 DATA SCIENCE FUNDAMENTALS S tructure 1.0 Introduction 1.1 Objectives 1.2 Understanding Data Science 1.3 Data Science Process 1. 3.1 Goal Identification 1.3.2 Data Collection 1.3.3 Data Preparation 1.3.4 Exploratory Data Analysis (EDA) 1.3.5 Model Development 1.3.6 Model Deployment and Presentation 1.4 Da ta Science Vs Data Analytics 1.5 Types of Data Analysis 1. 5.1 Descriptive Analysis 1.5.2 Diagnostic Analysis 1.5.3 Predictive Analysis 1.5.4 Prescriptive An ... In troduction to Data Science-1 10 i nformation to predict reduction in risk for cardiovascular events or drop in your annual health insurance premium. Isn't it fascinating that your social media handle displays advertisements, offers and posts of your interest. Such personalized marketing is changing the way we buy products. Cars may now notify users of imminent faults by using data from sensors embedded in them, giving an entirely new dimension to the use and maintenance of cars. CCTV (cl"
+        },
+        {
+          "filename": "Unit-2_Understanding_Data_and_Its_Type.pdf",
+          "pages": 19,
+          "filesize_kb": 367.85,
+          "sample_content": "In troduction to Data Science-1 58 UN IT 2 UNDERSTANDING DATA AND ITS TYPE S tructure 2.0 Introduction 2.1 Objectives 2.2 Properties of Data 2.3 Datafication 2.4 Data Categories: Qualitative & Quantitative Data 2.5 Data Format 2.5.1 Structured Data 2.5.2 Unstructured Data 2.5.3 Semi-structured Data 2.6 Primary Data & Secondary Data 2.7 Categorical Data & Numerical Data 2.8 Cross-sectional Data and Time Series Data 2.9 Discrete Data and Continuous Data 2.10 Level of Measurement of Data: Nominal,  ... 59 Un derstanding Data and its Type quali tative. Some are quantified as absolute values; others are recorded as ranges. Some measurements are continuous, whereas others occur at discrete intervals. The quantity and amount of data will also vary depending on the application. This unit will cover various forms of data and levels / Stages of measurement. Regardless of the format of data, the data quality is paramount. This unit will also emphasise several metrics of data quality. 2. 2 OBJECTI"
+        },
+        {
+          "filename": "Unit-3_Data_Acquisition_(DAQ)_Tools.pdf",
+          "pages": 49,
+          "filesize_kb": 499.8,
+          "sample_content": "77 Da ta Acquisition (DAQ): ToolsUN IT 3 DATA ACQUISITION(DAQ): TOOLS S tructure 3.0 Introduction 3.1 Objectives 3.2 DAQ Tools 3. 2.1 Sensors and Actuators, 3.2.2 Data Loggers, Transducers, 3.2.3 Data Acquisition (DAQ) Cards, 3.2.4 PLC, 3.2.5 SCADA, 3.2.6 Web scraping, 3.2.7 Remote Sensing, 3.3 Accessing Data from Repositories, 3.4 Software for Data Acquisition, 3.5 Summary 3.6 Solutions/Answers 3.7 Further Readings 3. 0 INTRODUCTION I n data science, data acquisition refers to the process of ga ... In troduction to Data Science-1 78 re trieve data. Tools like SQLAlchemy (Python) and pgAdmin (PostgreSQL) provide interfaces for interacting with relational databases. · NoSQL Databases : For unstructured or semi-structured data, NoSQL databases like MongoDB, Cassandra, and Firebase are used. They allow for flexible data storage, especially with big data or complex data structures. Tools like PyMongo (Python) and MongoDB Compass are used for managing NoSQL databases. · File Systems and Clo"
+        },
+        {
+          "filename": "Unit-4_Data_Acquisition_(DAQ)_Process.pdf",
+          "pages": 29,
+          "filesize_kb": 363.85,
+          "sample_content": "In troduction to Data Science-1 126 UN IT 4 DATA ACQUISITION (DAQ): P ROCESS S tructure 4.0 Introduction 4.1 Objectives 4.2 DAQ Process: 4.2.1 Sensor Integration 4.2.2 Signal Conditioning 4.2.3 Multiplexing (if needed) 4.2.4 Triggering (if applicable) 4.2.5 Sampling 4.2.6 ADC (Analog-to-Digital Conversion) 4.2.7 Data Processing 4.2.8 Data Logging 4.2.9 Display/Control/Transmission 4.3 DAC (Digital-to-Analog Conversion), 4.4 High Speed DAQ, 4.5 Summary 4.6 Solutions/Answers 4.7 Further Readings 4 ... 127 Da ta Acquisition (DAQ): Process 8. Dat a Logging 9. Display/Control/Transmission This order ensures the smooth flow of data from physical signals to digital information and subsequent storage for analysis in data science applications. 4 .1 OBJECTIVES Aft er finishing this unit, you will be to be able to: · Understand the step-by-step process involved in data acquisition systems. · Learn how sensors are integrated and configured for accurate data collection. · Explore how signal conditi"
+        },
+        {
+          "filename": "Unit-5_Data_Preparation_for_Analysis.pdf",
+          "pages": 25,
+          "filesize_kb": 391.46,
+          "sample_content": "159 Da ta Preparation for Analysis UN IT 5 DATA PREPARATION FOR A NALYSIS S tructure 5.0 Introduction 5.1 Objectives 5.2 Need for Data Preparation 5.3 Data Preprocessing 5. 3.1 Data Cleaning 5.3.2 Data Integration 5.3.3 Data Reduction 5.3.4 Data Transformation 5.4 Selection and Data Extraction 5.5 Data Curation 5. 5.1 Steps of Data Curation 5.5.2 Importance of Data Curation 5.6 Data Integration 5. 6.1 Data Integration Techniques 5.6.2 Data Integration Approaches 5.7 Knowledge Discovery 5.8 Summa ... In troduction to Data Science-2 160 t o curate and prepare data, students develop practical skills that bridge the gap between data collection (explored in Block-1) and deeper statistical or machine learning tasks that follow in later units. This progression from data understanding and acquisition to data preprocessing reflects the real-world workflow of a data scientist or analyst. It reinforces the idea that high-quality input data is the backbone of accurate and insightful analytics, mak"
+        },
+        {
+          "filename": "Unit-6_Descriptive_and_Exploratory_Data_Analysis_-_An_Introduction.pdf",
+          "pages": 16,
+          "filesize_kb": 357.3,
+          "sample_content": "In troduction to Data Science-2 184 UN IT 6 DESCRIPTIVE AND E XPLORATORY DATA ANALYSIS – AN INTRODUCTION S tructure 6.0 Introduction 6.1 Objectives 6.2 Data Science - Definition 6.3 Types of Data 6.3.1 Statistical Data Types 6.3.2 Sampling 6.4 Basic Methods of Data Analysis 6.4.1 Descriptive Analysis 6.4.2 Exploratory Analysis 6.5 Summary 6.6 Solutions/Answers 6 .0 INTRODUCTION B uilding on the foundational understanding of data science principles (Unit 1), data types and structures (Unit 2), da ... 185 Des criptive and Exploratory Data Analysis – An Introduction Thi s Unit introduces you to the basic concept of data sciences. This Unit provides an introduction to different types of data used in data science. It also points to other kinds of analysis that can be performed using data science. Further, the Unit also introduces some of the common mistakes of data science. 6. 1 OBJECTIVES At t he end of this Unit, you should be able to: · Define the term data science in the context of an o"
+        },
+        {
+          "filename": "Unit-7_Inferential_and_Predictive_Data_Analysis_-_An_Introduction.pdf",
+          "pages": 17,
+          "filesize_kb": 334.37,
+          "sample_content": "In troduction to Data Science-2 200 UN IT 7 INFERENTIAL AND PREDICTIVE DA TA ANALYSIS – AN INTRODUCTION S tructure 7.0 Introduction 7.1 Objectives 7.2 Inferential Analysis 7.3 Predictive Analysis 7.4 Common Misconceptions of Data Analysis 7.5 Summary 7.6 Solutions/Answers 7 .0 INTRODUCTION I n today’s data-driven world, the ability to extract meaningful insights from data is essential across various domains. Data analysis goes beyond simply organizing and summarizing data—it involves drawing con ... 201 In ferential and Predictive Data Analysis – An Introduction I nferential analysis allows students to draw conclusions about populations based on sample data, using tools such as hypothesis testing and estimation. These skills are fundamental in validating assumptions and confirming whether observed patterns are statistically significant or due to random chance. Predictive analysis, on the other hand, focuses on using historical data to model and forecast future outcomes—a vital skill in"
+        },
+        {
+          "filename": "Unit-8_Data_Visualisation_and_Interpretation.pdf",
+          "pages": 49,
+          "filesize_kb": 2343.09,
+          "sample_content": "221 Dat a Visualisation and Interpretation UN IT 8 DATA VISUALISATION AND I NTERPRETATION S tructure 8.0 Introduction 8.1 Objectives 8.2 Different Types of Plots 8.3 Histograms 8.4 Box Plots 8.5 Scatter Plots 8.6 Heat Map 8.7 Bubble Chart 8.8 Bar Chart 8.9 Distribution Plot 8.10 Pair Plot 8.11 Line Graph 8.12 Pie Chart 8.13 Doughnut Chart 8.14 Area Chart 8.15 Summary 8.16 Answers 8.17 References 8. 0 INTRODUCTION The previous units of this course cover detail on different aspects of data analysi ... Da ta Visualization and Interpretation 222 · S ummarise and present the data in meaningful ways; · Define appropriate methods for collecting, analysing, and interpreting numerical information. 8 .2 DIFFERENT TYPES OF PLOTS As more and more data is available to us today, there are several varieties of charts and graphs than before. In reality, the amount of data we produce, acquire, copy, and use will nearly double by 2025. Therefore, Data visualisation is a crucial and powerful tool for org"
+        },
+        {
+          "filename": "Unit-9_Excel_for_Descriptive_Data_Analysis.pdf",
+          "pages": 28,
+          "filesize_kb": 974.78,
+          "sample_content": "Da ta Visualization and Interpretation 270 UN IT 9 EXCEL FOR DESCRIPTIVE DATA AN ALYSIS S tructure 9.0 Introduction 9.1 Objectives 9.2 Importing Data from Various File Formats 9.3 Data Handling and Pre-processing 9.4 Frequency Distribution 9.5 Central Tendency and Dispersion 9.6 Descriptive Data Analysis and its Interpretation 9.7 Summary 9.8 Solutions/Answers 9 .0 INTRODUCTION I n the world of data analysis, the ability to summarize and interpret data effectively is crucial. Descriptive data an ... 271 Ex cel for Descriptive Data Analysis9. 2 IMPORTING DATA FROM VARIOUS FILE FO RMATS I n the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill. Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources. Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis. This section will focus on how to import data fr"
+        }
+      ]
+    },
+    "MCS-063": {
+      "course_folder": "MCS-063_Data_Structures_using_Python",
+      "documents": [
+        {
+          "filename": "Block-1_Introduction_to_Python.pdf",
+          "pages": 88,
+          "filesize_kb": 925.68,
+          "sample_content": "UNIT 1 PYTHON PRIMER Structure 1.0 Introduction 1.1 Objectives 1.2 Python Language Overview 1.3 Data Types in Python 1.4 Classes and Objects in Python 1.5 Aliasing in Python 1.6 Expressions in Python 1.7 Control Flow 1.8 Looping / Repetition 1.9 Functions 1.10 Built-in functions 1.11 Taking Multiple inputs from Console 1.12 Exception Handling 1.13 Built-in Exceptions in Python 1.14 Iterators and Generators 1.15 Generators in Python 1.16 Additional Python Conveniences 1.17 Scopes and Namespaces 1 ... The purpose of this unit is to introduce and fly you across the world of Python to the extent possible. After studying this unit, you should be able to understand :  Syntax of Python  Different operators in Python It is also strongly recommended that, in parallel, register to the free courses of Python which are given in references at the end of this unit. 1.2 PYTHON LANGUAGE OVERVIEW Python is a dynamic, interpreted or a byte code-compiled language. This means that prototyping can be ver"
+        },
+        {
+          "filename": "Block-2_Arrays,_Stacks,_Queues,_Linked_Lists_and_Trees.pdf",
+          "pages": 78,
+          "filesize_kb": 2056.12,
+          "sample_content": "1 UNIT 5 ARRAY- BASED SEQUENCES S tructure Page Nos. 5.0 Introduction 5.1 Objectives 5.2 Python’s Sequence Types 5.3 Low-Level Arrays 5.4 Dynamic Arrays and Amortization 5.5 Efficiency of Python’s Sequences Types 5.6 Using Array-Based Sequences 5.7 Multidimensional Data Sets 5.8 Summary 5.9 Solutions/ Answer to Check your Progress 5.10 References / Further Reading 5.0 INTRODUCTION P ython offers several powerful ways for managing data. Sequence types are fundamental to effective programming, pro ... 2 mechanisms for data management. Sequence types allow for the organization and manipulation of ordered collections of items. Sequences can store multiple items, making them essential for various programming tasks. Sequence maintains elements in order which is accessed through indexes, and the sequence maintains a specific order of elements We will explore Python's built-in sequence types, including lists, tuples, strings, and ranges. We will discuss their characteristics, operations, and p"
+        },
+        {
+          "filename": "Block-3_Maps,_Hash_Tables,_Skip_Lists,_Search_Trees_and_Sorting_Algorithms.pdf",
+          "pages": 75,
+          "filesize_kb": 2172.41,
+          "sample_content": "29 Linked List UNIT 9 PRIORITY QUEUES Structure 9.0 Introduction 9.1 Objectives 9.2 The Priority Queue Abstract Data Type 9.3 Implementing a Priority Queue 9.4 Heaps 9.5 Sorting with a Priority Queue 9.6 Adaptable Priority Queues 9.7 Summary 9.8 Solutions/ Answer to Check your Progress 9.9 Further Readings 9.0 Introduction Priority queues are fundamental data structures that extend the concept of regular queues by associating each element with a priority value. Priority queues uses priority leve ... 30 Trees 9.2 The Priority Queue Abstract Data Type A priority queue is an abstract data type that maintains a collection of elements, each associated with a priority value. The key characteristic is that elements are served in order of their priority rather than their insertion order. Key Properties:  Each element has an associated priority  Higher priority elements are served before lower priority elements  Elements with equal priority may be served in any order (or FIFO order in some i"
+        },
+        {
+          "filename": "Block-4_Text_processing,_Graph_Algorithms,_Memory_Management_and_B-Trees,_and_Algorithm_Design_Techniques.pdf",
+          "pages": 64,
+          "filesize_kb": 5919.74,
+          "sample_content": "29 Linked List UNIT 13 TEXT PROCESSING Structure 13.0 Introduction 13.1 Objectives 13.2 Abundance of Digitized Text 13.3 Pattern-Matching Algorithms 13.4 Dynamic Programming 13.5 Text Compression and the Greedy Method 13.6 Tries 13.7 Summary 13.8 Solutions/ Answer to Check your Progress 13.9 References / Further Reading 13.0 Introduction Text processing has become one of the most important areas of computer science due to the exponential growth of digital text data. From search engines processin ... 30 Trees  Apply text processing techniques to real-world problems in bioinformatics, information retrieval, and data compression 13.2 Abundance of Digitized Text The amount of digitized text has grown exponentially over the past decades. Consider these statistics:  Google processes over 8.5 billion searches per day  Social media platforms generate petabytes of text daily  DNA databases contain billions of nucleotide sequences  Digital libraries store millions of books and documents Gro"
+        },
+        {
+          "filename": "Unit-10_Maps,_Hash_Tables_and_Skip_Lists.pdf",
+          "pages": 37,
+          "filesize_kb": 5359.38,
+          "sample_content": "29 Linked List UNIT 10 MAPS, HASH TABLES, AND SKIP LISTS Structure 10.0 Introduction 10.1 Objectives 10.2 Maps and Dictionaries, 10.3 Hash Tables, 10.4 Sorted Maps, 10.5 Skip Lists, Sets, 10.6 Multisets, and Multimaps. 10.7 Summary 10.8 Solutions/ Answers to Check your Progress 10.9 Further Readings 10.0 Introduction Maps and dictionaries are fundamental data structures that store key-value pairs, enabling efficient data retrieval based on unique identifiers. These structures are essential for a ... 30 Trees 10.2 Maps and Dictionaries DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value. Maps provide efficient access to values based on their associated keys. Map Structure Visualization: Map: { key₁ → value₁ key₂ → value₂ key₃ → value₃ ... keyₙ → valueₙ } FUNDAMENTAL MAP OPERATIONS The essential operations for a map include: Primary Operations:  "
+        },
+        {
+          "filename": "Unit-12_Sorting_Algorithms.pdf",
+          "pages": 19,
+          "filesize_kb": 3313.27,
+          "sample_content": "72 UNIT 12 SORTING ALGORITHMS Structure 12.0 Introduction 12.1 Objectives 12.2 Why Study Algorithms? 12.3 Categories of Sorting Algorithms 12.4 Bubble Sort 12 .5 Selection Sort 12.6 Insertion Sort 12.7 Merge Sort 12.8 Quick Sort 12.9 Comparing Various Sorting Algorithms 12.10 Python’s Built-In Sorting Function 12.11 Summay 12.12 Solutions/Answers to Check Your Progress 12.13 Further Readings 12.0 Introduction Sorting algorithms are directly related to databases as there is a need to sort records ... 73 12.1 Objectives Aftergoingthroughthisunit,youshouldbeableto  Understand the concept of sorting;  Remember various terminologies related to sorting  Articulate various sorting algorithms  Implement python codes for performing sorting 12.2 Why Study Sorting Algorithms In the field of Computer Science, everything is related to databases. When we talk about a database that contains various columns, sorting algorithms are needed to arrange the data in a particular order (increasing/ decre"
+        },
+        {
+          "filename": "Unit-13_Text_Processing.pdf",
+          "pages": 41,
+          "filesize_kb": 9619.39,
+          "sample_content": "29 Linked List UNIT 13 TEXT PROCESSING Structure 13.0 Introduction 13.1 Objectives 13.2 Abundance of Digitized Text 13.3 Pattern-Matching Algorithms 13.4 Dynamic Programming 13.5 Text Compression and the Greedy Method 13.6 Tries 13.7 Summary 13.8 Solutions/ Answer to Check your Progress 13.9 References / Further Reading 13.0 Introduction Text processing has become one of the most important areas of computer science due to the exponential growth of digital text data. From search engines processin ... 30 Trees  Apply text processing techniques to real-world problems in bioinformatics, information retrieval, and data compression 13.2 Abundance of Digitized Text The amount of digitized text has grown exponentially over the past decades. Consider these statistics:  Google processes over 8.5 billion searches per day  Social media platforms generate petabytes of text daily  DNA databases contain billions of nucleotide sequences  Digital libraries store millions of books and documents Gro"
+        },
+        {
+          "filename": "Unit-15_Memory_Management_and_B-Trees.pdf",
+          "pages": 23,
+          "filesize_kb": 4393.09,
+          "sample_content": "7 2 Queues UNIT 15 MEMORY MANAGEMENT AND B- TREES Structure 15.1 Introduction 15.2 Objectives 15.3 Memory Management 15.3.1 Kinds of Data storage 15.3.2 Memory Management in Python 15.3.3 Memory Fragmentation 15.3.4 Garbage Collection 15.3.5 Reference Counting and Cycle Detection 15.4 Memory Hierarchies and Caching 15.4.1 The Memory Hierarchy 15.4.2 Caching Strategies 15.5 External Searching and B-Trees 15.5.1 Why do we need external searching and B-Tree 15.5.2 Structure of a B-Tree 15.5.3 Searc ... Memory Management and B-Trees secondary storage. 15.2 Objectives Aftergoingthroughthisunit,youshouldbeableto  Understand the principles of memory management in Python and modern computer System;  Explain memory hierarchies and caching mechanisms  Explain the structure and operations of B-Trees,and  Apply principles of external-memory sorting, such as external merge sort. 15.3 Memory Management Memory management is the process of organizing and controlling how memory is used in a compute"
+        },
+        {
+          "filename": "Unit-1_Python_Primer.pdf",
+          "pages": 26,
+          "filesize_kb": 3546.16,
+          "sample_content": "UNIT 1 PYTHON PRIMER Structure 1.0 Introduction 1.1 Objectives 1.2 Python Language Overview 1.3 Data Types in Python 1.4 Classes and Objects in Python 1.5 Aliasing in Python 1.6 Expressions in Python 1.7 Control Flow 1.8 Looping / Repetition 1.9 Functions 1.10 Built-in functions 1.11 Taking Multiple inputs from Console 1.12 Exception Handling 1.13 Built-in Exceptions in Python 1.14 Iterators and Generators 1.15 Generators in Python 1.16 Additional Python Conveniences 1.17 Scopes and Namespaces 1 ... The purpose of this unit is to introduce and fly you across the world of Python to the extent possible. After studying this unit, you should be able to understand :  Syntax of Python  Different operators in Python It is also strongly recommended that, in parallel, register to the free courses of Python which are given in references at the end of this unit. 1.2 PYTHON LANGUAGE OVERVIEW Python is a dynamic, interpreted or a byte code-compiled language. This means that prototyping can be ver"
+        },
+        {
+          "filename": "Unit-2_Object_Oriented_Programming.pdf",
+          "pages": 18,
+          "filesize_kb": 2508.57,
+          "sample_content": "UNIT 2 OBJECT ORIENTED PROGRAMMING Structure 2.0 Introduction 2.1 Objectives 2.2 Principles and Patterns 2.3 Python Objects 2.4 Abstract Class 2.5 Types of Inheritance 2.6 Namespace and Object-Orientation 2.7 Python Lists 2.8 Copy An Object in Python Using ‘=’ 2.9 Summary 2.10 Further Readings 2.0 INTRODUCTION The object oriented programming (OOP) paradigm is concerned with real world objects and its roots lie in modeling and later writing code around real world objects. These objects are logica ... 2.2 PRINCIPLES AND PATTERNS Principles and patterns are useful in defining fundamental design concepts in object- oriented programming (OOP). These act as basis for the design and implementation of robust and maintainable programs. Lets first understand the necessary principles of desiging classes in Python. • Designing Classes & Class Hierarchies Defining and defining any class or class hierarchies requires one to follow certain principles in order to produce a program code that is not onl"
+        },
+        {
+          "filename": "Unit-3_Algorithm_Analysis.pdf",
+          "pages": 28,
+          "filesize_kb": 3646.77,
+          "sample_content": "UNIT 3 ALGORITHM ANALYSIS Structure 3.0 Introduction 3.1 Objectives 3.2 Some Additional Objectives 3.3 Experimental Studies 3.4 The Seven Functions Used in This Book 3.5 Asymptotic Analysis 3.6 Simple Justification Techniques 3.7 Summary 3.8 Solutions / Answers 3.9 Further Readings 3.0 INTRODUCTION In the previous unit, we have discussed fundamental data structures and their implementations. Now, we understand that storing and manipulating data is only half the battle in computer science. The cr ... 2. Compare Algorithms Objectively: Learn methods to objectively compare different algorithms solving the same problem and identify which is most suitable for specific scenarios. 3. Predict Real-World Performance: Use theoretical analysis to predict how algorithms will behave in production environments without running extensive experiments. 4. Optimize for Scale: Understand the implications of choosing different data structures and algorithmic approaches as data volumes grow from thousands t"
+        },
+        {
+          "filename": "Unit-4_Recursion.pdf",
+          "pages": 16,
+          "filesize_kb": 2132.39,
+          "sample_content": "UNIT 4 RECURSION Structure 4.0 Introduction 4.1 Objectives 4.2 Illustrative Examples 4.3 Analyzing Recursive Algorithms 4.4 Recursion Run Amok 4.5 Further Examples of Recursion 4.6 Designing Recursive Algorithms 4.7 Eliminating Tail Recursion 4.8 Summary 4.9 Solutions/Answers 4.10 Further Readings 4.0 INTRODUCTION Recursion is one of the most powerful and elegant problem-solving techniques in computer science and programming. At its core, recursion is a method of solving problems by breaking the ...  Convert recursive solutions to iterative ones and understand tail recursion elimination  Apply recursion to solve real-world problems including mathematical computations, data structure operations, and algorithmic challenges  Debug recursive functions and avoid common pitfalls  Compare recursive and iterative approaches to determine the most appropriate solution method 4.2 ILLUSTRATIVE EXAMPLES The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial"
+        },
+        {
+          "filename": "Unit-5_Array-Based_Sequences.pdf",
+          "pages": 19,
+          "filesize_kb": 2815.56,
+          "sample_content": "1 UNIT 5 ARRAY- BASED SEQUENCES S tructure Page Nos. 5.0 Introduction 5.1 Objectives 5.2 Python’s Sequence Types 5.3 Low-Level Arrays 5.4 Dynamic Arrays and Amortization 5.5 Efficiency of Python’s Sequences Types 5.6 Using Array-Based Sequences 5.7 Multidimensional Data Sets 5.8 Summary 5.9 Solutions/ Answer to Check your Progress 5.10 References / Further Reading 5.0 INTRODUCTION P ython offers several powerful ways for managing data. Sequence types are fundamental to effective programming, pro ... 2 mechanisms for data management. Sequence types allow for the organization and manipulation of ordered collections of items. Sequences can store multiple items, making them essential for various programming tasks. Sequence maintains elements in order which is accessed through indexes, and the sequence maintains a specific order of elements We will explore Python's built-in sequence types, including lists, tuples, strings, and ranges. We will discuss their characteristics, operations, and p"
+        },
+        {
+          "filename": "Unit-6_Stacks,_Queues_and_Deques.pdf",
+          "pages": 19,
+          "filesize_kb": 2910.65,
+          "sample_content": "1 UNIT 6 STACKS, QUEUES, AND DEQUES S tructure Page Nos. 6.0 Introduction 6.1 Objectives 6.2 Abstract Data Type-List 6.3 Array Implementation of Lists 6.4 Linked Lists-Implementation 6.5 Doubly Linked Lists-Implementation 6.6 Circularly Linked Lists-Implementation 6.7 Applications 6.8 Summary 6.9 Solutions/Answers 6.10 Further Readings 6.0 INTRODUCTION In computer science, data structures are essential for organizing and managing data efficiently. Among the various types of data structures, stac ... 2  Choose the best data structure for specific use cases  Apply these data structures to solve real-world problems  Understand and implement common variations of these structures 6.2 INTRODUCTION TO STACKS A stack is one of the most fundamental abstract data structures in computer programming. We add and remove the elements from the same end of the stack which follows Last-in-first-out (LIFO) principle. Understanding stacks is crucial for many programming applications, from managing prog"
+        },
+        {
+          "filename": "Unit-7_Linked_Lists.pdf",
+          "pages": 24,
+          "filesize_kb": 3485.84,
+          "sample_content": "29 Linked List UNIT 7 LINKED LISTS Structure 7.0 Introduction 7.1 Objectives 7.2 Singly Linked Lists 7.3 Circularly Linked Lists 7.4 Doubly Linked Lists 7.5 The Positional List ADT 7.6 Sorting a Positional List 7.7 Case Study: Maintaining Access Frequencies 7.8 Link-Based vs. Array-Based Sequences 7.9 Summary 7.10 Further Readings 7.0 Introduction Unlike arrays that store elements in contiguous memory locations, linked lists provide a dynamic way to organize data using nodes. Each node contains  ... 30 Linked List A Singly Linked List consists of a sequence of nodes, where each node contains two components: - Data: Node’s value - Next Pointer: Next node’s pointer in the sequence. STRUCTURE OF A NODE In Python, a node can be represented using a class: class Node: def __init__(self, data): self.data = data # Store the data self.next = None # Initialize the next pointer to None ``` IMPLEMENTATION OF SINGLY LINKED LISTS The singly linked list itself can be implemented as follows: class Sin"
+        },
+        {
+          "filename": "Unit-8_Trees.pdf",
+          "pages": 16,
+          "filesize_kb": 2492.79,
+          "sample_content": "29 Linked List UNIT 8 TREES Structure 8.0 Introduction 8.1 Objectives 8.2 General Trees 8.3 Binary Trees 8.4 Implementing Trees 8.5 Tree Traversal Algorithms 8.6 Case Study: An Expression Tree 8.7 Summary 8.8 Further Readings 8.0 Introduction Trees arrange elements in hierarchical structure. They provide an efficient way to represent and manage hierarchical relationships between data elements. Trees find extensive applications in file systems, database indexing, syntax parsing, and organizationa ... 30 Trees TRAVERSING GENERAL TREES Traversal refers to visiting all nodes of the tree in a specific order. Common traversal methods include pre-order, post-order, and level-order traversals. PRE-ORDER TRAVERSAL Root node is visited first after which we visit the child nodes in pre-order traversal. def pre_order_traversal(node): if node: print(node.data) for child in node.children: pre_order_traversal(child) # Example usage pre_order_traversal(root) ``` POST-ORDER TRAVERSAL All the child node"
+        },
+        {
+          "filename": "Unit-9_Priority_Queues.pdf",
+          "pages": 19,
+          "filesize_kb": 2842.96,
+          "sample_content": "29 Linked List UNIT 9 PRIORITY QUEUES Structure 9.0 Introduction 9.1 Objectives 9.2 The Priority Queue Abstract Data Type 9.3 Implementing a Priority Queue 9.4 Heaps 9.5 Sorting with a Priority Queue 9.6 Adaptable Priority Queues 9.7 Summary 9.8 Solutions/ Answer to Check your Progress 9.9 Further Readings 9.0 Introduction Priority queues are fundamental data structures that extend the concept of regular queues by associating each element with a priority value. Priority queues uses priority leve ... 30 Trees 9.2 The Priority Queue Abstract Data Type A priority queue is an abstract data type that maintains a collection of elements, each associated with a priority value. The key characteristic is that elements are served in order of their priority rather than their insertion order. Key Properties:  Each element has an associated priority  Higher priority elements are served before lower priority elements  Elements with equal priority may be served in any order (or FIFO order in some i"
+        }
+      ]
+    },
+    "MCS-207": {
+      "course_folder": "MCS-207_Database_Management_Systems",
+      "documents": [
+        {
+          "filename": "Block-1_(1)_Block-1_The_Basic_Concepts.pdf",
+          "pages": 93,
+          "filesize_kb": 13544.09,
+          "sample_content": "5 Basic Concepts UNIT 1 DATABASE MANAGEMENT SYSTEM – AN INTRODUCTION Structure 1.0 Introduction 1.1 Objectives 1.2 Need for a Database Management System 1.2.1 The File Based System 1.2.2 Limitations of File Based System 1.2.3 The Database Approach 1.3 Logical DBMS Architecture 1.3.1 Three Level Architecture of DBMS 1.3.2 Mappings between Levels and Data Independence 1.3.3 The Need of Three Level Architecture 1.4 Physical DBMS Structure 1.4.1 DML Precompiler 1.4.2 DDL Compiler 1.4.3 File Manager  ... 6 The Database Management System Concepts 1.2 NEED FOR A DATABASE MANAGEMENT SYSTEM A Database is an organised, persistent collection of data of an organisation. The database management system manages the database of an enterprise. Prior to use of the database systems, file-based systems were popularly used. In order to appreciate the strengths of database management systems, you may first list the problems associated with the file base systems, which are discussed next. 1.2.1 File Based Sy"
+        },
+        {
+          "filename": "Block-2_Database_Normalisation_and_Database_Query.pdf",
+          "pages": 100,
+          "filesize_kb": 1791.49,
+          "sample_content": "56 The Database Management System Concepts UNIT 5 DATABASE INTEGRITY, FUNCTIONAL DEPENDENCY AND NORMALISATION Structure Page Nos. 5.0 Introduction 5.1 Objectives 5.2 Database Integrity 5.2.1 The Keys 5.2.2 Referential Integrity 5.2.3 Entity Integrity 5.3 Redundancy and Associated Problems 5.4 Functional Dependencies 5.5 Normalisation Using Functional Dependencies 5.5.1 The First Normal Form 5.5.2 The Second Normal Form 5.5.3 The Third Normal Form 5.5.4 Boyce Codd Normal Form 5.6 Desirable Proper ... 57 Database Integrity and Normalisation 5.2 DATABASE INTEGRITY Database integrity refers to maintaining the consistency of data in the database. Data integrity relates to the correctness of data and often is implemented using constraints on attributes in one or more relations. In this section, we will discuss more about two important integrity constraints of a database: the entity integrity constraint and the referential integrity constraint. To define these two, let us once again define th"
+        },
+        {
+          "filename": "Block-3_Database_Transactions_and_Query_Processing.pdf",
+          "pages": 69,
+          "filesize_kb": 2007.75,
+          "sample_content": "1 UNIT 10 TRANSACTIONS AND CONCURRENCY MANAGEMENT Structure Page Nos. 10.0 Introduction 10.1 Objectives 10.2 The Transactions 10.2.1 Properties of a Transaction 10.2.2 States of a Transaction 10.3 Concurrent Transactions 10.3.1 Transaction Schedule 10.3.2 Problems of Concurrent Transactions 10.4 The Locking Protocol 10.4.1 Serialisable Schedule 10.4.2 Locks 10.4.3 Two-Phase Locking (2PL) 10.5 Deadlock Handling and its Prevention 10.6 Optimistic Concurrency Control 10.7 Timestamp-Based Protocols  ... 2 transaction is a unit of work in a database system. For example, a database system for a bank may allow the transactions such as – withdrawal of money from an account; deposit of money to an account; transfer of money from A’s account to B’s account. A transaction would involve the manipulation of one or more data values in a database. Thus, it may require reading and writing of database values. The following are examples of transactions. Example 1: A money withdrawal transaction of a ban"
+        },
+        {
+          "filename": "Block-4_Introduction_to_Advanced_Database_Models.pdf",
+          "pages": 82,
+          "filesize_kb": 2394.51,
+          "sample_content": "1 UNIT 13 OBJECT-ORIENTED DATABASE Structure Page No. 13.0 Introduction 13.1 Objectives 13.2 Why Object-Oriented Database? 13.2.1 Limitations of Relational Databases 13.2.2 The Need for Object-Oriented Databases 13.3 Object-Relational Database Systems 13.3.1 Complex Data Types 13.3.2 Types and Inheritances in SQL 13.3.3 Additional Data Types of OOP in SQL 13.3.4 Object Identity and Reference Type Using SQL 13.4 Object-Oriented Database Systems 13.4.1 Object Model 13.4.2 Object Definition Languag ... 2 13.2 WHY OBJECT-ORIENTED DATABASE? An object-oriented database is used for complex data types. Such database applications require complex interrelationships among object hierarchies to be represented in database systems. These interrelationships are difficult to implement in relational systems. Let us discuss the need for object-oriented systems in advanced applications in more detail. However, first, let us discuss the weakness of relational database systems. 13.2.1 Limitations of Relati"
+        },
+        {
+          "filename": "Unit-10_Transactions_and_Concurrency_Management.pdf",
+          "pages": 27,
+          "filesize_kb": 4328.21,
+          "sample_content": "1 UNIT 10 TRANSACTIONS AND CONCURRENCY MANAGEMENT Structure Page Nos. 10.0 Introduction 10.1 Objectives 10.2 The Transactions 10.2.1 Properties of a Transaction 10.2.2 States of a Transaction 10.3 Concurrent Transactions 10.3.1 Transaction Schedule 10.3.2 Problems of Concurrent Transactions 10.4 The Locking Protocol 10.4.1 Serialisable Schedule 10.4.2 Locks 10.4.3 Two-Phase Locking (2PL) 10.5 Deadlock Handling and its Prevention 10.6 Optimistic Concurrency Control 10.7 Timestamp-Based Protocols  ... 2 transaction is a unit of work in a database system. For example, a database system for a bank may allow the transactions such as – withdrawal of money from an account; deposit of money to an account; transfer of money from A’s account to B’s account. A transaction would involve the manipulation of one or more data values in a database. Thus, it may require reading and writing of database values. The following are examples of transactions. Example 1: A money withdrawal transaction of a ban"
+        },
+        {
+          "filename": "Unit-11_Database_Recovery_and_Security.pdf",
+          "pages": 23,
+          "filesize_kb": 3793.76,
+          "sample_content": "1 UNIT 11 DATABASE RECOVERY AND SECURITY 11.0 Introduction 11.1 Objectives 11.2 What Is Recovery? 11.2.1 Kinds of Failures 11.2.2 Storage Structures for Recovery 11.2.3 Recovery and Atomicity 11.2.4 Transactions and Recovery 11.2.5 Recovery in Small Databases 11.3 Transaction Recovery 11.3.1 Log-Based Recovery 11.3.2 Checkpoints in Recovery 11.3.3 Recovery Algorithms 11.3.4 Recovery with Concurrent Transactions 11.3.5 Buffer Management 11.3.6 Remote Backup Systems 11.4 Security in Commercial Dat ... 2 control mechanisms for database access. Finally, the unit introduces the use of audit trails in a database system. 11.1 OBJECTIVES At the end of this unit, you should be able to: • describe the terms recovery; • explain log based recovery; • explain the use of checkpoints in recovery; • define the various levels of database security; • define the access control mechanism; • identify the use of audit trails in database security. 11.2 WHAT IS RECOVERY? During the life of a transaction, i.e."
+        },
+        {
+          "filename": "Unit-12_Query_Processing_and_Evaluation.pdf",
+          "pages": 19,
+          "filesize_kb": 3157.58,
+          "sample_content": "1 UNIT 12 QUERY PROCESSING AND EVALUATION Structure Page Nos. 12.0 Introduction 12.1 Objectives 12.2 Query Processing: An Introduction 12.2.1 Role of Relational Algebra in Query Optimisation 12.2.2 Using Statistics and Stored Size for Cost Estimation. 12.3 Cost of Selection Operation 12.3.1 File scan 12.3.2 Index scan 12.3.3 Implementation of Complex Selections 12.4 Cost of Sorting 12.5 Cost of Join Operation 12.5.1 Block Nested-Loop Join 12.5.2 Merge-Join 12.5.3 Hash-Join 12.6 Other Operations  ... 2 12.2 QUERY PROCESSING: AN INTRODUCTION Before defining the measures of query cost, let us begin by defining query processing. Figure 1 shows the steps of query processing. Figure 1: Query processing In the first step, a query is scanned, parsed, validated and translated into an internal form. This internal form may be the relational algebra (an intermediate query form). The parser checks the syntax of the query and verifies the relations. Next, the query is optimised, and a query executio"
+        },
+        {
+          "filename": "Unit-13_Object-Oriented_Database.pdf",
+          "pages": 19,
+          "filesize_kb": 2965.09,
+          "sample_content": "1 UNIT 13 OBJECT-ORIENTED DATABASE Structure Page No. 13.0 Introduction 13.1 Objectives 13.2 Why Object-Oriented Database? 13.2.1 Limitations of Relational Databases 13.2.2 The Need for Object-Oriented Databases 13.3 Object-Relational Database Systems 13.3.1 Complex Data Types 13.3.2 Types and Inheritances in SQL 13.3.3 Additional Data Types of OOP in SQL 13.3.4 Object Identity and Reference Type Using SQL 13.4 Object-Oriented Database Systems 13.4.1 Object Model 13.4.2 Object Definition Languag ... 2 13.2 WHY OBJECT-ORIENTED DATABASE? An object-oriented database is used for complex data types. Such database applications require complex interrelationships among object hierarchies to be represented in database systems. These interrelationships are difficult to implement in relational systems. Let us discuss the need for object-oriented systems in advanced applications in more detail. However, first, let us discuss the weakness of relational database systems. 13.2.1 Limitations of Relati"
+        },
+        {
+          "filename": "Unit-14_Data_Warehousing_and_Data_Mining.pdf",
+          "pages": 24,
+          "filesize_kb": 4298.38,
+          "sample_content": "1 UNIT 14 DATA WAREHOUSING AND DATA MINING Structure 14.0 Introduction 14.1 Objectives 14.2 What Is Data Warehousing? 14.3 Basic Components of a Data Warehouse 14.3.1 The Data Sources 14.3.2 Data Extraction, Transformation and Loading (ETL) 14.4 Multidimensional Data Model of a Data Warehouse 14.5 Data Mining Technology 14.6 Classification 14.6.1 Classification Using Distance (K-Nearest Neighbour) 14.6.2 Decision Tree 14.7 Clustering 14.8 Association Rule Mining 14.9 Applications of Data Mining  ... 2 14.2 WHAT IS DATA WAREHOUSING? Let us first try to answer the question: What is a data warehouse? A simple answer could be: A data warehouse is a tool that manage s data after and outside of operational systems. Thus, it is not a replacement for the operational systems but is a major tool that acquires data from the operational systems. Data warehousing technology has evolved in business applications for the process of strategic decision-making. Data warehouses, sometimes, may be consider"
+        },
+        {
+          "filename": "Unit-15_NoSQL_Database.pdf",
+          "pages": 19,
+          "filesize_kb": 2981.21,
+          "sample_content": "UNIT 15 NoSQL DATABASE Structure Page Nos. 15.0 Introduction 15.1 Objectives 15.2 Introduction to NoSQL 15.2.1 What is NoSQL 15.2.2 Brief History of NoSQL Databases 15.2.3 NoSQL Database Features 15.2.4 Difference between RDBMS and NoSQL 15.3 Types of NoSQL Databases 15.3.1 Column Based 15.3.2 Graph Based 15.3.3 Key-Value Pair Based 15.3.4 Document Based 15.4 Summary 15.5 Solutions/Answers 15.6 Further Readings 15.0 INTRODUCTION In the previous Unit of this Block, you have gone through the conce ... 47 15.2 INTRODUCTION TO NoSQL Databases are a crucial part of many technological and practical systems. The phrase \"NoSQL database\" is frequently used to describe any non-relational database. NoSQL is sometimes referred to as \"non SQL,\" but it is also referred to as \"not only SQL.\" In either case, the majority of people agree that a NoSQL database is a type of database that stores data in a format that is different from relational tables. Whenever you want to use the data, it must first be "
+        },
+        {
+          "filename": "Unit-16_Emerging_Database_Models.pdf",
+          "pages": 20,
+          "filesize_kb": 3056.5,
+          "sample_content": "1 UNIT 16 EMERGING DATABASE MODELS Structure Page no. 16.0 Introduction 16.1 Objectives 16.2 Distributed Databases 16.2.1 Data Fragmentation and Replication 16.2.2 Distributed Query Processing 16.3 Active Databases 16.4 XML for Data Representation 16.5 Blockchain Databases 16.6 Multimedia Database 16.7 Use of Databases in Web Applications 16.8 Summary 16.9 Solutions / Answers 16.0 INTRODUCTION With the advent of relational database systems in the 1970s, database technology became popular in the  ... 2 16.2 DISTRIBUTED DATABASES Many commercial organisations use a database system to manage large amounts of transactional data . These database systems have multiple users and run on a high- performance centralised computer system. These systems may allow geographically distributed users to connect to the database using a network. However, with the increase in the volume of database transactions and user interactions, use of a number of database servers, which may process local data, may be"
+        },
+        {
+          "filename": "Unit-1_Database_Management_System-An_Introduction.pdf",
+          "pages": 18,
+          "filesize_kb": 5005.39,
+          "sample_content": "5 Basic Concepts UNIT 1 DATABASE MANAGEMENT SYSTEM – AN INTRODUCTION Structure 1.0 Introduction 1.1 Objectives 1.2 Need for a Database Management System 1.2.1 The File Based System 1.2.2 Limitations of File Based System 1.2.3 The Database Approach 1.3 Logical DBMS Architecture 1.3.1 Three Level Architecture of DBMS 1.3.2 Mappings between Levels and Data Independence 1.3.3 The Need of Three Level Architecture 1.4 Physical DBMS Structure 1.4.1 DML Precompiler 1.4.2 DDL Compiler 1.4.3 File Manager  ... 6 The Database Management System Concepts 1.2 NEED FOR A DATABASE MANAGEMENT SYSTEM A Database is an organised, persistent collection of data of an organisation. The database management system manages the database of an enterprise. Prior to use of the database systems, file-based systems were popularly used. In order to appreciate the strengths of database management systems, you may first list the problems associated with the file base systems, which are discussed next. 1.2.1 File Based Sy"
+        },
+        {
+          "filename": "Unit-2_Relational_Database.pdf",
+          "pages": 20,
+          "filesize_kb": 3190.0,
+          "sample_content": "23 Relational and E-R Models UNIT 2 RELATIONAL DATABASE Structure Page Nos. 2.0 Introduction 2.1 Objectives 2.2 The Relational Model 2.2.1 Domain, Attribute, Tuple and Relation 2.2.2 Super keys Candidate keys and Primary keys for the Relations 2.3 Relational Constraints 2.3.1 Domain Constraint 2.3.2 Key Constraint 2.3.3 Integrity Constraint 2.3.4 Update Operations and Dealing with Constraint Violations 2.4 Relational Algebra 2.4.1 Basic Set Operation 2.4.2 Cartesian Product 2.4.3 Relational Oper ... 24 The Database Management System Concepts PERSON_ID NAME AGE ADDRESS 1 Sanjay Prasad 35 B-4,Modi Nagar, UP 2 Sharada Gupta 30 Pocket 2, Mayur Vihar, Delhi 3 Vibhu Datt 36 C-2, Saket, New Delhi Figure 1: A Sample Person Relation Following are some of the advantages of the relational model: • Ease of use: The simple tabular representation of the database helps the user define and query the database conveniently. For example, you can easily find out the age of the person whose first name is “"
+        },
+        {
+          "filename": "Unit-3_Entity_Relationship_Model.pdf",
+          "pages": 28,
+          "filesize_kb": 5975.99,
+          "sample_content": "UNIT 3 ENTITY RELATIONSHIP MODEL 3.0 Introduction 3.1 Objective 3.2 Entity Relationship (E-R) Model 3.2.1 Entities 3.2.2 Attributes 3.2.3 Relationships 3.2.4 E-R diagram Basics 3.2.5 More about Relationships 3.2.6 Extended E-R Features 3.2.7 Defining Relationship for College Database 3.3 An Example 3.4 Conversion of E-R Diagram to Relational Database 3.5 Enhanced E-R Model 3.6 Converting E-R and EER Diagram to Relations 3.7 Summary 3.8 Solution/Answers 3.0 INTRODUCTION In the previous unit of th ... 3.2 ENTITY RELATIONSHIP (E-R) MODEL Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model. • It allows you to describe the data involved in a real-world enterprise in terms of entities and their relationships. • It is widely used to create an initial design of a database. • It provides a set of useful concepts that make it convenient for a developer to move from a basic set of information to a detailed and prec"
+        },
+        {
+          "filename": "Unit-4_File_Organisation_in_DBMS.pdf",
+          "pages": 27,
+          "filesize_kb": 11272.02,
+          "sample_content": "80 The Database Management System Concepts UNIT 4 FILE ORGANISATION IN DBMS Structure Page Nos. 4.0 Introduction 4.1 Objectives 4.2 Physical Database Design 4.3 Database Storage on HDD and SSD 4.4 File Organisations 4.4.1 Unordered Heap File Organisation 4.4.2 Sequential File Organisation 4.4.3 Indexed (Indexed Sequential) File Organisation 4.4.4 Hashed File Organisation 4.5 Indexes 4.6 Implementing Index Using Tree Structure 4.7 Multi-key File Organisations 4.7.1 Multiple Access Paths 4.7.2 Mul ... 81 File Organisation in DBMS This unit focuses on the file Organisation in DBMS, the access methods available and the system parameters associated with them. File Organisation is the way the files are arranged on the disk and access method is how the data can be retrieved based on the file organisation. 4.1 OBJECTIVES After going through this unit, you should be able to: • define storage of databases on hard disks and SSD; • discuss the implementation of various file Organisation techniques"
+        },
+        {
+          "filename": "Unit-5_Database_Integrity,_Functional_Dependency_and_Normalisation.pdf",
+          "pages": 26,
+          "filesize_kb": 3907.71,
+          "sample_content": "56 The Database Management System Concepts UNIT 5 DATABASE INTEGRITY, FUNCTIONAL DEPENDENCY AND NORMALISATION Structure Page Nos. 5.0 Introduction 5.1 Objectives 5.2 Database Integrity 5.2.1 The Keys 5.2.2 Referential Integrity 5.2.3 Entity Integrity 5.3 Redundancy and Associated Problems 5.4 Functional Dependencies 5.5 Normalisation Using Functional Dependencies 5.5.1 The First Normal Form 5.5.2 The Second Normal Form 5.5.3 The Third Normal Form 5.5.4 Boyce Codd Normal Form 5.6 Desirable Proper ... 57 Database Integrity and Normalisation 5.2 DATABASE INTEGRITY Database integrity refers to maintaining the consistency of data in the database. Data integrity relates to the correctness of data and often is implemented using constraints on attributes in one or more relations. In this section, we will discuss more about two important integrity constraints of a database: the entity integrity constraint and the referential integrity constraint. To define these two, let us once again define th"
+        },
+        {
+          "filename": "Unit-6_Higher_Normal_Forms.pdf",
+          "pages": 16,
+          "filesize_kb": 2451.16,
+          "sample_content": "UNIT 6 HIGHER NORMAL FORMS Structure 6.0 Introduction 6.1 Objectives 6.2 Multivalued Dependency 6.3 Fourth Normal Form (4NF) 6.4 Join Dependency 6.5 5NF 6.6 Other Normal Forms 6.7 Summary 6.8 Solutions/Answers 6.0 INTRODUCTION In the previous unit of this block, you have gone through the concept of single-valued dependency, called functional dependency (FD). Further, the previous Unit discussed different forms of normalisations that can be arrived at by removing different types of single-valued  ... information of all other attributes is repeated in an instance of the relation. This will result in multiple tuples in a single relation to represent information about one entity. The primary key of such a relation would be a composite key involving the primary key of the entity and the multivalued attribute. This situation becomes worse, if an entity has more than one multivalued attribute. Such an entity will be represented by several tuples. The following example explains this situation:"
+        },
+        {
+          "filename": "Unit-7_Structured_Query_Language.pdf",
+          "pages": 20,
+          "filesize_kb": 2894.5,
+          "sample_content": "UNIT 7 STRUCTURED QUERY LANGUAGE 7.0 Introduction 7.1 Objectives 7.2 Introduction to SQL 7.3 Data Definition Language 7.4 Data Manipulation Language 7.4.1 Data insertion, Updating and Deletion 7.4.2 Data Retrieval 7.5 GROUP BY Clause and Aggregate functions 7.6 Data Control Language 7.7 Summary 7.8 Solutions/Answers 7.0 INTRODUCTION As discussed in the previous Units, a relational database system consists of relations, which are normalised to minimise redundancy. The normalisation process involv ... The Structured Query Language (SQL) was initially designed at IBM by D D Chamberlin and R F Boyce for the relational model that was proposed in 1970 by E F Codd. SQL was designed as a fourth-generation programming language to produce multiple record output as a result of a single command. In addition, SQL commands did not require the specification of indexes or other information for data retrieval. Later, SQL was standardised by the American National Standard Institute (ANSI) and a number o"
+        },
+        {
+          "filename": "Unit-8_Structured_Query_Language_(Part-II).pdf",
+          "pages": 20,
+          "filesize_kb": 2918.0,
+          "sample_content": "UNIT 8 Structured Query Language (Part-II) Structure 8.0 Introduction 8.1 Objectives 8.2 SQL Joins 8.2.1 Equi-join 8.2.2 Outer Join 8.2.3 Self-Join 8.3 Nested Queries 8.3.1 Subqueries 8.3.2 Correlated Subqueries 8.4 Database Objects 8.4.1 Views 8.4.2 Sequences 8.4.3 Indexes and Synonyms 8.5 Summary 8.6 Solutions/Answers 8.0 INTRODUCTION In the previous unit, you have gone through the details of the basic set of commands of the Structured Query Language (SQL). A good database system consists of n ... 8.2 SQL JOINS The join is an important relational operation for queries that involve more than one relation. You have already gone through the relational join operation in an earlier unit, this unit explains the use of the join operation in SQL. The purpose of join operation is to combine the data from two different tables on specific attribute(s), which share the same domain. The necessary condition for the meaningful join of two tables is that each of these tables should have at least one"
+        },
+        {
+          "filename": "Unit-9_Advanced_SQL.pdf",
+          "pages": 18,
+          "filesize_kb": 2580.39,
+          "sample_content": "47 Advanced SQL UNIT 9 ADVANCED SQL Structure 9.0 Introduction 9.1 Objectives 9.2 Assertions and Views 9.2.1 Assertions 9.2.2 Views 9.3 Embedded SQL and Dynamic SQL 9.3.1 Embedded SQL 9.3.2 Cursors and Embedded SQL 9.3.3 Dynamic SQL 9.3.4 SQLJ 9.4 Stored Procedures and Triggers 9.4.1 Stored Procedures 9.4.2 Triggers 9.5 Advanced Features of SQL 9.6 Summary 9.7 Solutions/Answers 9.0 INTRODUCTION The Structured Query Language (SQL) is a standard query language for database systems. It is considere ... 48 Database Design and Implementation NULL, check value and range constraints. Such constraints can be specified while creating the table using the statement CREATE TABLE using the clauses like NOT NULL, PRIMARY KEY, UNIQUE, CHECK etc. Referential constraints can be specified with the help of foreign key constraints. However, there are some constraints, which may relate to more than one table. These are called assertions. In this section, we will discuss two important concepts that we use i"
+        }
+      ]
+    },
+    "MCSL-064": {
+      "course_folder": "MCSL-064_Data_Structures_using_Python_Lab",
+      "documents": [
+        {
+          "filename": "Section-1_Python_Primer.pdf",
+          "pages": 28,
+          "filesize_kb": 3819.16,
+          "sample_content": "SECTION 1 PYTHON PRIMER St ructure 1.0 Introduction 1.1 Objectives 1.2 Python Language Overview 1.3 Data Types in Python 1.4 Classes and Objects in Python 1.5 Aliasing in Python 1.6 Expressions in Python 1.7 Control Flow 1.8 Looping / Repetition 1.9 Functions 1.10 Built-in functions 1.11 Taking Multiple inputs from Console 1.12 Exception Handling 1.13 Built-in Exceptions in Python 1.14 Iterators and Generators 1.15 Generators in Python 1.16 Additional Python Conveniences 1.17 Scopes and Namespac ... in a file named with the .py suffix like he llo.py. These programs are executed by the interpreter. 1.1 OBJECTIVES The purpose of this section is to introduce and fly you across the world of Python to the extent possible. After studying this section, you should be able to understand :  Syntax of Python  Different operators in Python It is also strongly recommended that, in para llel, register to the free courses of Python which are given in references at the end of this section. 1.2 PYTHO"
+        },
+        {
+          "filename": "Section-2_Data_Structures_Using_Python_Lab.pdf",
+          "pages": 7,
+          "filesize_kb": 1066.22,
+          "sample_content": "SECTION 2 DATA STRUCTURES USING PYTHON LAB Structure 2.0 Introduction 2.1 Objectives 2.2 Programming Exercises for Lab Sessions 2.3 Summary 2.4 Further Readings 2.0 INTRODUCTION Data Structures is one of the most foundational subjects in computer science. Data structures define how data is stored, organized, and managed in memory. Choosing the right structure (array, linked list, tree, hash table, etc.) directly impacts how efficiently a program can access and manipulate data.Almost every algori ... to write short programs for some functionalities which otherwise require long programs in other programming languages thus accelerating development cycles.Python runs seamlessly on Windows, macOS, and Linux usually without modification, making it highly portable.Studying Python opens doors toCloud computing (AWS Lambda, Google Cloud Functions), DevOps & automation (Ansible, Fabric), Big Data (Apache Spark with PySpark) , and APIs and microservices. Also, tools like Jupyter Notebook make it "
+        }
+      ]
+    },
+    "MCSL-065": {
+      "course_folder": "MCSL-065_Data_Science_Lab",
+      "documents": [
+        {
+          "filename": "MCSL-065_English_MCSL-065_Data_Science_Lab.pdf",
+          "pages": 18,
+          "filesize_kb": 22123.16,
+          "sample_content": "MCSL-065 Data Science Lab Indira Gandhi National Open University School of Computer and Information Science (SOCIS) MPDD/IGNOU/P.O. 0K / September, 2025 ISBN : --------------------- ... 1 Disasters and Development Indira Gandhi National Open University School of Computer & Information Sciences MCSL-065 DATA SCIENCE LAB DATA SCIENCELAB SECTION 1 DATA SCIENCE LAB – GUI TOOLS BASED SECTION 2 DATA SCIENCE LAB – PROGRAMMING BASED ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. P.V . Suresh, SOCIS, IGNOU Prof. V .V . Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS IGNOU COURSE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, S ... 3 Disasters and Development COURSE INTRODUCTION This lab cours"
+        }
+      ]
+    }
+  },
+  "Semester_2": {
+    "MCS-066": {
+      "course_folder": "MCS-066_Mathematical_Foundations_-_II",
+      "documents": [
+        {
+          "filename": "Block-1_Descriptive_Statistics.pdf",
+          "pages": 97,
+          "filesize_kb": 1836.51,
+          "sample_content": "MCS-066 Mathematical Foundations - IIIndira Gandhi National Open University School of Computer and Information Sciences (SOCIS) Distribution Normal t Reject HO -2 -1 0 1 +1 Hypothesis testing Optimisation Estimation Estimate sampling distribution μ ... MCS-066 Mathematical Foundations-II BLOCK 1 Descriptive Statistics 5 UNIT 1 Introduction to Statistics 7 UNIT 2 Describing Data Sets and Measures of Central Tendencies 31 UNIT 3 Measures of Dispersion 73 BLOCK 2 Probability and Distributions 97 UNIT 4 Basics of Probability 99 UNIT 5 Random Variables and Expectation 135 UNIT 6 Discrete Probability Distributions 173 UNIT 7 Continuous Probability Distributions and Exact Sampling Distributions 199 BLOCK 3 Parameter Estimation and Hypothesis Testing  ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, S"
+        },
+        {
+          "filename": "Block-2_Probability_and_Distributions.pdf",
+          "pages": 128,
+          "filesize_kb": 1743.42,
+          "sample_content": "97 MCS-066 Mathematical Foundations-II Block 2 Probability and Distributions UNIT 4 Basics of Probability 99 UNIT 5 Random Variables and Expectation 135 UNIT 6 Discrete Probability Distributions 173 UNIT 7 C ontinuous Probability Distributions and Exact Sampling Distributions 199 Indira Gandhi National Open University School of Computer & Information Sciences ... 98 BLOCK-2 INTRODUCTION This block focuses on the concept of probability and probability distribution. This block first introduces you to some of the basic laws of probability, including Bayes ’s theorem. It also introduces the concept of discrete and continuous random variables, including bivariate random variables. The block discusses some of the basic discrete and continuous distributions. In addition, it introduces you to some of the basic exact sampling distributions. This block is divided  ... 99 Basics of Probability UNIT 4 BASICS OF PROBABILITY Structure 4.0 Introduction 4.1 Objectives 4.2 Sample Space and Events 4.3 C"
+        },
+        {
+          "filename": "Block-3_Parameter_Estimation_and_Hypothesis_Testing.pdf",
+          "pages": 96,
+          "filesize_kb": 1970.32,
+          "sample_content": "MCS-066 M athematical Foundations-II Block 3 Parameter Estimation and Hypothesis Testing UNIT 8 Sampling Distribution 227 UNIT 9 Estimating Parameters 253 UNIT 10 Hypothesis Testing 285 Indira Gandhi National Open University School of Computer & Information Sciences ... 226 BLOCK-3 INTRODUCTION In the previous block, the basic rules of probability and various probability distributions such as Bernoulli, Binomial, Poisson, Uniform, Normal, etc. were discussed. This block uses concepts of probability theory and probability distributions for drawing inferences about the population parameters. Generally, population parameters are unknown, and when the population is too large, or there are limited resources and manpower available, then it is not practically possible ... 227 UNIT 8 SAMPLING DISTRIBUTION Structure 8.0 Introduction 8.1 Objectives 8.2 Basic Terminology 8.3 Introduction to Sampling Distribution 8.4 Standard Error 8.5 Central Limit Theorem 8.6 Law of Large Numbers 8.7 Sampling Di"
+        },
+        {
+          "filename": "Block-4_Analysing_data_and_Optimisation.pdf",
+          "pages": 96,
+          "filesize_kb": 2049.24,
+          "sample_content": "321 MCS-066 Mathematical Foundations-II Block 4 Analysing data and Optimisation UNIT 11 Analysis of Variance 323 UNIT 12 Categorical Data Analysis 345 UNIT 13 Introduction to Optimisation 377 Indira Gandhi National Open University School of Computer & Information Sciences ... 322 BLOCK-4 INTRODUCTION This block discusses several concepts relating to data science and artificial intelligence. The first two units of this block are devoted to analysis of variance and analysis of categorical data, while the third unit focuses on the optimisation. This block explains these concepts in detail. This block is divided into three units: Unit 11 explains one of the popular tests, called analysis of variance (ANOVA). This unit discusses the One-way Analysis of Variance (ANOVA) an ... 323 UNIT 11 ANALYSIS OF VARIANCE Structure 11.0 Introduction 11.1 Objectives 11.2 Analysis of Variance (ANOVA) 11.2.1 Significance of Analysis of Variance 11.3 One-way Analysis of Variance (ANOVA) 11.3.1 Procedure of T"
+        },
+        {
+          "filename": "Unit-10_Hypothesis_Testing.pdf",
+          "pages": 36,
+          "filesize_kb": 772.66,
+          "sample_content": "285 UNIT 10 HYPOTHESIS TESTING Structure 10.0 Introduction 10.1 Objectives 10.2 Hypothesis 10.3 Key Concepts for Hypothesis Testing 10.3.1 Critical Region 10.3.2 Type-I and Type-II Errors 10.3.3 Level of Significance 10.3.4 One-Tail ed and Two-Tailed Tests 10.3.5 Concept of p-Value 10.4 General Procedure of Testing a Hypothesis 10.5 Testing of Hypothesis for Population Mean using Z-Test 10.6 Testing of Hypothesis for Difference of Two Population Means using Z-Test 10.7 Testing of Hypothesis for  ... 286 Parameter Estimation and Hypothesis Testing 10.1 OBJECTIVES After reading this unit, you should be able to: • define a hypothesis; • formulate the null and alternative hypotheses; • explain what we mean by type-I and type-II errors; • explore the concept of critical region and level of significance; • define one-tailed and two-tailed tests; • concept of p-value; • applying the Z-test for testing the hypothesis about the population mean and difference of two population means; • applying "
+        },
+        {
+          "filename": "Unit-11_Analysis_of_Variance.pdf",
+          "pages": 22,
+          "filesize_kb": 455.84,
+          "sample_content": "323 UNIT 11 ANALYSIS OF VARIANCE Structure 11.0 Introduction 11.1 Objectives 11.2 Analysis of Variance (ANOVA) 11.2.1 Significance of Analysis of Variance 11.3 One-way Analysis of Variance (ANOVA) 11.3.1 Procedure of Testing of Hypothesisof One-Way ANOVA 11.4 Two-way Analysis of Variance (ANOVA) 11.4.1 Procedure of Testing of Hypothesis of Two-way ANOVA 11.5 Summary 11.6 Solutions /Answers References 11.0 INTRODUCTION In block 3 of this course, we tested the equality of means of two independent  ... 324 Analysing data and Optimisation • explain the significance of analysis of variance technique; • test the hypothesis under one-way analysis of variance; and • use the method of performing two-way ANOVA test. 11.2 ANALYSIS OF VARIANCE (ANOVA) The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A. Fisher in 1920 ’s, in which he developed the method of testing equality of means of several sub-populations by dividing the total variab"
+        },
+        {
+          "filename": "Unit-12_Categorical_Data_Analysis.pdf",
+          "pages": 32,
+          "filesize_kb": 519.32,
+          "sample_content": "345 UNIT 12 CATEGORICAL DATA ANALYSIS Structure 12.0 Introduction 12.1 Objectives 12.2 Chi-Square Test for Goodness of Fit 12.3 Chi-Square Test for Independence of Attributes 12.4 Kolmogorov –Smirnov Goodness of Fit Test 12.5 Summary 12.6 Solutions / Answers References 12.0 INTRODUCTION In many real-world situations, like in business and other areas, the data are collected in the form of counts. In some cases, the collected data are classified into different categories or groups according to one ... 346 Analysing data and Optimisation (i) Sample observations are independent. (ii) The variable under study is continuous. (iii) Lower order moments exist. Obviously, these assumptions are fewer and weaker than those associated with the parametric tests. This unit discusses non-parametric tests for categorical data. The tests discussed in this unit include the chi-square test for goodness of fit, the chi-square test for independence of attributes and the Kolmogorov-Smirnov test for goodness "
+        },
+        {
+          "filename": "Unit-13_Introduction_to_Optimisation.pdf",
+          "pages": 40,
+          "filesize_kb": 1269.29,
+          "sample_content": "377 UNIT 13 INTRODUCTION TO OPTIMISATION Structure 13.0 Introduction 13.1 Objectives 13.2 Basic Terminology 13.3 Global and Local Maxima and Minima 13.3.1 Definition 13.3.2 Slope of a Function 13.3.3 First Derivative Test and Relative Optima 13.3.4 The Problem of Non-Diffe rentiability 13.3.5 The Second-Order Derivative and Condition for Optima 13.4 Gradient Descent and Ascent 13.5 Randomisation 13.5.1 Random Numbers and Pseudo Random Numbers 13.3.2 Random Number Generation 13.6 Summary 13.7 Sol ... 378 Analysing data and Optimisation 13.2 BASIC TERMINOLOGY Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation. Objective Function The objective function is the function that is to be optimised, i.e. either maximise it or minimise it. Please note that the final output of the optimisation function is the optimal value. Variables Different input to the objective fun"
+        },
+        {
+          "filename": "Unit-1_Introduction_to_Statistics.pdf",
+          "pages": 24,
+          "filesize_kb": 406.88,
+          "sample_content": "7 UNIT 1 INTRODUCTION TO STATISTICS 1.0 Introduction 1.1 Objectives 1.2 Statistics : Definition and Uses 1.2.1 Definition of Statistics 1.2.2 Uses of Statistics 1.2.3 Limitations of Statistics 1.3 Measurement Scales 1.4 Types of Data 1.5 Data Collection 1.6 Population and Sampling 1.7 Descriptive and Inferential Statistics 1.7.1 Descriptive Statistics 1.7.2 Inferential Statistics 1.7.3 Probability Models 1.8 Summary 1.9 Solutions/Answers 1.10 References 1.0 INTRODUCTION This is the first Unit of ... 8 Descriptive Statistics Descriptive Statistics 1.2 STATISTICS: DEFINITION AND USES Consider the following case: An Open University has many regional offices. These regional offices maintain records of fees collected from the students and the expenses made by the office in different programmes using spreadsheet software. These records may be used to determine information such as: • Fee collection of each programme. • The percentage of students of a given programme who have not paid the fee."
+        },
+        {
+          "filename": "Unit-2_Describing_Data_Sets_and_Measures_of_Central_Tendencies.pdf",
+          "pages": 42,
+          "filesize_kb": 910.45,
+          "sample_content": "31 UNIT 2 DESCRIBING DATA SETS AND MEASURES OF CENTRAL TENDENCY Structure 2.0 Introduction 2.1 Objectives 2.2 Frequency Distribution 2.3 Grouping Data in Class Intervals 2.4 Graphical Representation of Data 2.4.1 Graphs of Frequency Distributions Histogram Frequency Polygon Frequency Curve Cumulative Frequency Curves - Ogive 2.4.2 Stem and Leaf Plots 2.5 Measures of Central Tendency 2.5.1 Mean 2.5.2 Median 2.5.3 Mode 2.5.4 Relationship between Mean, Median and Mode 2.5.5 Geometric and Harmonic M ... 32 Descriptive Statistics This unit comprises of frequency distribution and its graphical representations. It various measures of central tendency and concepts and methods of calculating the partition values. 2.1 OBJECTIVES After studying this unit, you would be able to • define different types of frequency distribution; • make graphs like histogram, ogive, stem and leaf plot; • explain the measure of central tendency; • calculate the different types of measures of central tendency; • descr"
+        },
+        {
+          "filename": "Unit-3_Measures_of_Dispersion.pdf",
+          "pages": 24,
+          "filesize_kb": 510.91,
+          "sample_content": "73 UNIT 3 MEASURES OF DISPERSION Structure 3.0 Introduction 3.1 Objectives 3.2 Basic Measures of Dispersion 3.2.1 Range 3.2.2 Quartile Deviation 3.2.3 Mean Deviation 3.3 Variance and Standard Deviation 3.3.1 Variance 3.3.2 Standard Deviation 3.3.3 Root Mean Square Deviation 3.3.4 Coefficient of Variation 3.4 Normal Data Sets 3.5 Concept of Skewness 3.6 Various Measures of Skewness 3.7 Concept of Kurtosis 3.8 Summary 3.9 Solutions / Answers 3.10 References 3.0 INTRODUCTION Different measures of c ... Descriptive Statistics 74 3.1 OBJECTIVES After reading this unit, you would be able to • conceptualise dispersion and its utility; • explain the properties of a good measure of dispersion; • explain methods of calculation of different types of measures of dispersion; • solve the numerical problems related to the measures of dispersion. • describe the properties of normal distribution; • describe the concepts of skewness and its measures; • explain the different measures of skewness; • descr"
+        },
+        {
+          "filename": "Unit-4_Basics_of_Probability.pdf",
+          "pages": 36,
+          "filesize_kb": 526.36,
+          "sample_content": "99 Basics of Probability UNIT 4 BASICS OF PROBABILITY Structure 4.0 Introduction 4.1 Objectives 4.2 Sample Space and Events 4.3 Computing Mathematical Probability 4.4 Axioms of Probability 4.5 Addition Law 4.6 Conditional Probability 4.7 Independent Events 4.8 Bayes ’ Theorem 4.9 Summary 4.10 Solutions /Answers 4.11 References 4.0 INTRODUCTION In our daily lives, we face many situations when we are unable to forecast the future with complete certainty. That is, in many decisions, uncertainty is  ... Probability and Distributions 100 by step clearing the basic ideas which are required to understand the probability. In this unit, we will first present the various terms which are used in the definition of probability and then we will give the classical definition of probability and simple problems. This will be followed by discussion on topics like Axioms of probability, conditional probability and Bayes’ theorem. 4.1 OBJECTIVES After studying this unit, you would be able to • define and "
+        },
+        {
+          "filename": "Unit-5_Random_Variables_and_Expectation.pdf",
+          "pages": 38,
+          "filesize_kb": 505.38,
+          "sample_content": "135 Random Variables Expectation UNIT 5 RANDOM VARIABLES AND EXPECTATION Structure 5.0. Introduction 5.1. Objectives 5.2 Random Variable 5.3 Discrete Random Variable and Probability Mass Function 5.4 Continuous Random Variable and Probability Density Function 5.5 Distribution Function 5.6. Bivariate Random Variables 5.6.1 Bivariate Discrete Random Variables 5.6.2 Bivariate Continuous Random Variables 5.7. Expectation of a Random Variable 5.8 Moments and Other Measures in Terms of Expectations 5. ... 136 Probability and Distributions • specify the probability mass function, i.e. probability distribution of discrete random variables; • specify the probability density function, i.e. probability function of continuous random variables; • define the distribution function and two two-dimensional discrete and continuous random variables; • find the expected values of random variables; • obtain various measures for probability distributions; and 5.2 RANDOM VARIABLE The last unit discusses the "
+        },
+        {
+          "filename": "Unit-6_Discrete_Probability_Distributions.pdf",
+          "pages": 26,
+          "filesize_kb": 437.58,
+          "sample_content": "173 Discrete Probability Distributions UNIT 6 DISCRETE PROBABILITY DISTRIBUTIONS Structure 6.0 Introduction 6.1 Objectives 6.2 Bernoulli Distribution and its Properties 6.3 Binomial Probability Function 6.4 Poisson Distribution 6.5 Discrete Uniform Distribution 6.6 Hypergeometric Distribution 6.7 Summary 6.8 Solutions/Answers 6.9 References Appendix 1 6.0 INTRODUCTION In Unit 5 of the Course, you have studied random variables, their probability functions and distribution functions. You have come ... 174 Probability and Distributions • identify the situations where these distributions are applied; • know the situations where Poisson distribution is applied; • define and explain Poisson distribution; • define the discrete uniform and hypergeometric distributions; • compute mean and variance for different discrete distributions. 6.2 BERNOULLI DISTRIBUTION AND ITS PROPERTIES There are experiments where the outcomes can be divided into two categories with reference to presence or absence of"
+        },
+        {
+          "filename": "Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf",
+          "pages": 26,
+          "filesize_kb": 615.3,
+          "sample_content": "199 UNIT 7 CONTINUOUS PROBABILITY DISTRIBUTIONS AND EXACT SAMPLING DISTRIBUTIONS Structure 7.0 Introduction 7.1 Objectives 7.2 Normal Distribution 7.3 Continuous Uniform Distribution 7.4 Introduction to 2-Distribution 7.5 Introduction to t-Distribution 7.6 Introduction to F-Distribution 7.7 Summary 7.8 Solutions/Answers 7.9 References 7.0 INTRODUCTION In the previous unit, we have studied standard discrete distributions. In this unit, we are going to discuss standard continuous univariate distr ... 200 Probability and Distributions • solve various practical problems based on the properties of various distributions. 7.2 NORMAL DISTRIBUTION The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733. De Moivre obtained this continuous distribution as a limiting case of binomial distribution. His work was further refined by Pierre S. Laplace (1749-1827) in 1774. But the contribution of Laplace remained unnoticed for long till"
+        },
+        {
+          "filename": "Unit-8_Sampling_Distribution.pdf",
+          "pages": 26,
+          "filesize_kb": 734.92,
+          "sample_content": "227 UNIT 8 SAMPLING DISTRIBUTION Structure 8.0 Introduction 8.1 Objectives 8.2 Basic Terminology 8.3 Introduction to Sampling Distribution 8.4 Standard Error 8.5 Central Limit Theorem 8.6 Law of Large Numbers 8.7 Sampling Distribution of Sample Mean 8.8 Sampling Distribution of Difference of Two Sample Means 8.9 Summary 8.10 Solutions /Answers 8.11 References 8.0 INTRODUCTION In many situations, if we extract some information from all the elements or items of a large population in general, it ma ... 228 Parameter Estimation and Hypothesis Testing • explain the concept and need of sampling distribution; • explain the concept of standard error; • describe the most important theorem of Statistics, “Central Limit Theorem”; • explain the concept of the law of large numbers and adequate sample size ; and • explain the sampling distribution of sample mean and difference of two sample means. 8.2 BASIC TERMINOLOGY Before discussing the sampling distribution of a statistic, we shall be discussin"
+        },
+        {
+          "filename": "Unit-9_Estimating_Parameters.pdf",
+          "pages": 32,
+          "filesize_kb": 705.3,
+          "sample_content": "253 UNIT 9 ESTIMATING PARAMETERS Structure 9.0 Introduction 9.1 Objectives 9.2 Basic Terminology 9.3 Characteristics of Estimators 9.4 Point Estimation 9.5 Method of Maximum Likelihood 9.6 Interval Estimation 9.7 Confidence Interval for Population Mean 9.7.1 Confidence Interval for Population Mean when Population Variance is Known 9.7.2 Confidence Interval for Population Mean when Population Variance is Unknown 9.7.3 Confidence Interval for Difference of Two Population Means when Samples are Ind ... 254 Parameter Estimation and Hypothesis Testing • explain the properties of an estimator; • explore the different methods of point estimation; • explain the method of maximum likelihood; • describe the properties of maximum likelihood estimators; • define the interval estimation; • obtain the confidence interval for population mean of a normal population when population variance is known and unknown; • describe the method of obtaining the confidence interval for difference of means of two n"
+        }
+      ]
+    },
+    "MCS-067": {
+      "course_folder": "MCS-067_Data_Wrangling_and_Visualization",
+      "documents": [
+        {
+          "filename": "Unit-1_Data_Wrangling_and_Profiling.pdf",
+          "pages": 20,
+          "filesize_kb": 3068.91,
+          "sample_content": "7 UNIT 1: DATA WRANGLING AND PROFILING St ructure Page No. 1.0 Introduction 7 1.1 Objectives 7 1.2 Basic Concepts 8 1.2.1 Definition 8 1.2.2 Need of Data Wrangling 8 1.3 Process of Data Wrangling 9 1.4 Benefits of Data Wrangling 10 1.5 Data Semantics 12 1.5.1 Data Semantic Process 14 1.5.2 Semantic Wrangling using Data Abstraction 15 1.6 Set-based profiling 17 1.7 Data Wrangling Tools 20 1.8 Summary Statistics 22 1.9 Summary 23 1.10 Answers and Solutions 24 1.11 References 26 1.0 INTRODUCTION Th ... 8 Data wrangling and profiling 1.2 BASIC CONCEPTS Data wrangling and profiling are the first steps of data analysis process. It is performed to enhance data quality and accuracy, resulting in better analysis. Let us first define the two terms used in this unit - Data Wrangling and Profiling in the next sub-section. 1.2.1 Definition Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily. Data Wrangling is also known as Data "
+        },
+        {
+          "filename": "Unit-2_Data_Cleaning_and_Preparation.pdf",
+          "pages": 36,
+          "filesize_kb": 5530.39,
+          "sample_content": "27 UNIT 2: DATA CLEANING AND PREPARATION Structure Page No. 2.0 Introduction 27 2.1 Objectives 28 2.2 Fundamentals of Data Cleaning and Preparation 28 2.2.1 What is Data Cleaning? 28 2.2.2 Data Cleaning vs. Data Transformation 29 2.3 Handling Missing Data (Imputation and Deletion) 30 2.3.1 Identifying and Understanding Missing Data 30 2.3.2 Filtering Out Missing Data 35 2.3.3 Filling in Missing Data 42 2.4 Data Transformation 46 2.4.1 Finding and Removing Duplicate Records 46 2.4.2 Transforming  ... 28 Data Cleaning and Preparation with poor quality data, you will probably observe inaccurate predictions and poor generalization to fresh, untested data. Consequently, let us emphasise that data cleaning is an essential process for guaranteeing that the results of any data- driven project are both meaningful and actionable. 2.1 OBJECTIVES After you study this unit and complete the exercises, you will be able to: • Explain why data cleaning and preparation matter so much in the data science"
+        },
+        {
+          "filename": "Unit-3_Data_Transformation.pdf",
+          "pages": 28,
+          "filesize_kb": 4281.86,
+          "sample_content": "63 UNIT 3: DATA TRANSFORMATION Structure Page No. 3.0 Introduction 63 3.1 Objectives 63 3.2 Discretisation and Binning 64 3.2.1 Conceptual Framework: Why Discretise? 64 3.2.2 Method 1: Equal-Width Binning with pd.cut() 65 3.2.3 Method 2: Equal-Frequency Binning (Quantile Binning) with pd.qcut() 67 3.2.4 Comparison of pd.cut() and pd.qcut() 68 3.3 Detecting and Filtering Outliers 69 3.3.1 Visualisation: Identifying Outliers with Box Plots 69 3.3.2 Method Selection: Z-score versus IQR 70 3.3.3 Z-  ... 64 Data Transformation • Define the necessity of data discretisation and apply Python functions for both equal-width and equal-frequency binning. • Analyse data distribution characteristics to appropriately select and implement methods (Z-score or IQR) for detecting and treating statistical outliers. • Perform random sampling to select representative data subsets and execute permutation (shuffling) to remove potential order bias in datasets. • Create Binary Indicator / Dummy V ariables from"
+        },
+        {
+          "filename": "Unit-4_Combining_and_Reshaping_Datasets.pdf",
+          "pages": 24,
+          "filesize_kb": 3690.13,
+          "sample_content": "93 UNIT 4: COMBINING AND RESHAPING DATASETS Structure Page No. 4.0 Introduction 93 4.1 Objectives 93 4.2 Indexing 93 4.3 Hierarchical Indexing 96 4.3.1 Reordering Hierarchical Levels 99 4.3.2 Sorting Levels 100 4.4 Combining and Merging Datasets 101 4.4.1 Merging 101 4.4.2 Concatenating 104 4.4.3 Combining Data with Overlap 106 4.5 Reshaping 109 4.5.1 Pivoting 109 4.5.2 stack( ) and unstack( ) methods 110 4.5.2 Reshaping with Hierarchical Indexing 111 4.6 Summary 112 4.7 Solutions/Answers 113 4. ... 94 Combining and Reshaping Datasets those queries that use that index. For example, consider the following data of an organisation: Index # Name Department Specialisation Salary 0 Arav S Design Web Development 100000 1 Ravi M Database SQL 200000 2 Rehan D Design SQL 150000 3 Ben A Database Web Development 200000 4 Rai Y Design SQL 100000 Figure 1: List of Employees Consider you need to list data in alphabetical order of names in several applications, then you can create an index on the Name"
+        },
+        {
+          "filename": "Unit-5_Data_Aggregation_and_Group_Operations.pdf",
+          "pages": 22,
+          "filesize_kb": 3453.3,
+          "sample_content": "117 UNIT 5: DATA AGGREGATION AND GROUP OPERATIONS Structure Page No. 5.0 Introduction 117 5.1 Objectives 117 5.2 Group By Mechanics 117 5.2.1 Iterating Over Groups 121 5.2.2 Selecting a Columnar Subset of a Group 123 5.3 Data Aggregation 125 5.3.1 Multiple Aggregate Functions in a Column 126 5.3.2 Column-wise Aggregation 127 5.4 Grouping with Dictionaries and Series 129 5.5 Grouping with Functions 132 5.6 Summary 134 5.7 Answers/Solutions 134 5.0 INTRODUCTION In the last unit of this block, we h ... 118 Data Aggregation and Group Operations Index # Name Department Specialisation Salary YearsWorking 0 Arav S Design Web Development 100000 3.5 1 Ravi M Database SQL 200000 2.5 2 Rehan D Design SQL 150000 1.5 3 Ben A Database Web Development 200000 2.0 4 Rai Y Design SQL 100000 1.0 Figure 1: Sample Data of Employees of an Organisation Suppose you are interested in finding the average salary of employees in the two departments, ‘Design’ and ‘Database’. To find this query, you may group the d"
+        },
+        {
+          "filename": "Unit-6_Plotting_and_Visualisation_using_Python.pdf",
+          "pages": 25,
+          "filesize_kb": 4448.45,
+          "sample_content": "139 UNIT 6: PLOTTING AND VISUALISATION USING PYTHON Structure Page No. 6.0 Introduction 139 6.1 Objectives 140 6.2 Data Visualisation and Python 140 6. 2.1 Figures and Subplots 142 6.3 Customisation of Chart Elements and Layout 146 6. 3.1 Colours, Markers, Line Styles, Ticks and Legends 146 6. 3.2 Annotations 148 6.4 Saving Plots to a File 151 6.5 Use of Configuration in Matplotlib 154 6.6 Plotting with pandas and seaborn 155 6.7 Making Different Types of Plots 157 6. 7.1 Line Plots 157 6. 7.2 B ... 140 Plotting and Visualisation Using Python 6.1 OBJECTIVES After going through this unit, you should be able to: • appreciate the need of data visualisation and plotting using matplotlib library of Python; • write Python code to create charts with titles, axis-labels, legends, colours, ticks, annotations, etc.; • create more than one plots in a figure; • save plot as a file in png or pdf or other picture format; • appreciate the importance of using configurations; • demonstrate the use of s"
+        }
+      ]
+    },
+    "MCS-068": {
+      "course_folder": "MCS-068_Predictive_Data_Analysis",
+      "documents": [
+        {
+          "filename": "Block-1_Data_Analysis_-_An_Introduction.pdf",
+          "pages": 127,
+          "filesize_kb": 19183.2,
+          "sample_content": "M CS-068PREDICTIVE DATA ANALYSIS BLOCK 1: DATA ANALYSIS – AN INTRODUCTION B LOCK 2: PREDICTIVE DATA ANALYSIS – I B LOCK 3: PREDICTIVE DATA ANALYSIS – II B LOCK 4: R - PROGRAMMING FOR DATA ANALYSIS ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Pr of. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS IGNOU C OURSE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SO ... The course Predictive Data Analysis is designed to develop a strong understanding of data-driven decision-making through statistical techniques, machine learning models, and programming tools. In the modern data- centric environment, predictive analytics plays an important role in forecasting "
+        },
+        {
+          "filename": "Block-2_Predictive_Data_Analysis-I.pdf",
+          "pages": 89,
+          "filesize_kb": 14022.21,
+          "sample_content": "MCS-068PREDICTIVE DATA ANALYSIS BLOCK 1: DATA ANALYSIS – AN INTRODUCTION BLOCK 2: PREDICTIVE DATA ANALYSIS – I BLOCK 3: PREDICTIVE DATA ANALYSIS – II BLOCK 4: R - PROGRAMMING FOR DATA ANALYSIS ... BLOCK 2: PREDICTIVE DATA ANALYSIS - I UNIT 5: SIMILARITY MEASURES UNIT 6: OUTLIER DETECTION UNIT 7: PREDICTIVE ANALYTICS MODELS ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS IGNOU COURSE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCI ... BLOCK INTRODUCTION (BLOCK 2) Block-2, titled Predictive Data Analysis-I , builds upon the foundational concepts introduced in Block-1 and focuses on essential techniq"
+        },
+        {
+          "filename": "Block-3_Predictive_Data_Analysis-II.pdf",
+          "pages": 220,
+          "filesize_kb": 5269.29,
+          "sample_content": "MCS-068PREDICTIVE DATA ANALYSIS BLOCK 1: DATA ANALYSIS – AN INTRODUCTION BLOCK 2: PREDICTIVE DATA ANALYSIS – I BLOCK 3: PREDICTIVE DATA ANALYSIS – II BLOCK 4: R - PROGRAMMING FOR DATA ANALYSIS ... BLOCK 3:PREDICTIVE DATA ANALYSIS - II UNIT 8: REGRESSION MODELS UNIT 9: TIME SERIES MODELS UNIT 10:SUPERVISED LEARNING MODELS UNIT 11: UNSUPERVISED LEARNING MODELS UNIT 12: PERFORMANCE EVALUATION MEASURES ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS IGNOU COURSE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCI ... BLOCK INTRODUCTION (BLOCK 3) Block-3, titled Predictive Data Analysis-II , forms the core"
+        },
+        {
+          "filename": "Block-4_R-_Programming_for_Data_Analysis.pdf",
+          "pages": 108,
+          "filesize_kb": 23468.79,
+          "sample_content": "MCS-068PREDICTIVE DATA ANALYSIS BLOCK 1: DATA ANALYSIS – AN INTRODUCTION BLOCK 2: PREDICTIVE DATA ANALYSIS – I BLOCK 3: PREDICTIVE DATA ANALYSIS – II BLOCK 4: R - PROGRAMMING FOR DATA ANALYSIS ... BLOCK 4: R-PROGRAMMING FOR DATA ANALYSIS UNIT 13: BASIC OF R PROGRAMMING UNIT 14: DATA INTERFACING AND VISUALISATION IN R UNIT 15: DATA ANALYSIS AND R UNIT 16: ADVANCE ANALYSIS USING R ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS IGNOU COURSE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCI ... BLOCK INTRODUCTION (BLOCK 4) Block-4, titled R-Programming for Data Analysis , focuses on the practical imple"
+        },
+        {
+          "filename": "Unit-10_Supervised_Learning_Models.pdf",
+          "pages": 71,
+          "filesize_kb": 10155.59,
+          "sample_content": "UNIT 10 SUPERVISED LEARNING MODELS 10.0 Introduction 10.1 Expected Learning Outcomes 10.2 Supervised Vs Unsupervised Learning 10.3 Supervised Learning models 10.3.1 K-Nearest Neighbour, 10.3.2 Naïve-Bayes, 10.3.3 Logistic regression, 10.3.4 Decision trees 10.3.5 Random Forest 10.3.6 Support vector Machines 10.4 Summary 10.5 Answers 10.6 References/Further Readings 10.0 INTRODUCTION Data analysis is essential for turning observations into meaningful predictions and actionable insights. In critica ... Regression deals with predicting continuous values, such as stock prices, temperature, or sales figures. In contrast, Classification focuses on assigning discrete labels to data, such as identifying whether an email is spam or not. The choice between regression and classification depends on the nature of the target variable and the problem context. In practical applications, supervised learning is used across a wide range of domains including image recognition, natural language processing, "
+        },
+        {
+          "filename": "Unit-11_Unsupervised_Learning_Models.pdf",
+          "pages": 32,
+          "filesize_kb": 867.57,
+          "sample_content": "UNIT 11 –UNSUPERVISED LEARNING MODELS 11.0 Introduction 11.1 Expected Learning Outcomes 11.2Unsupervised Learning Models 11.2.1 K-Means Clustering 11.2.2 Hierarchical Clustering 11.2.3 Agglomerative Clustering 11.2.4 Association Rules 11.3 Summary 11.4 Answers 11.5 References/Further Readings 11.0 INTRODUCTION In the previous units, the focus was on supervised learning techniques where models are trained using labeled data to predict outcomes. However, in many real-world scenarios, labeled data  ... understand how patterns are discovered without labelled data and how different unsupervised techniques can be applied to solve real-world problems. 11.1 EXPECTED LEARNING OUTCOMES After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.  explore different unsupervised learning models and their applications.  learn the working and implementation of K-Means Clustering technique.  understand Hierarchical and Agglom"
+        },
+        {
+          "filename": "Unit-12_Performance_Evaluation_Measures.pdf",
+          "pages": 45,
+          "filesize_kb": 803.14,
+          "sample_content": "UNIT-12 PERFORMANCE EV ALUATION MEASURES 12.0 Introduction 12.1 Expected Learning Outcomes 12.2 Confusion matrix, 12.3 Accuracy, Precisionand Recall 12.4 Sensitivity and Specificity 12.5 F1-Score, 12.6 ROC Curve, 12.7 PR Curve 12.8 Summary 12.9 Answers 12.10 References/Further Readings 12.0 INTRODUCTION Performance evaluation is essential in predictive and classification models because building a model alone does not guarantee that it is reliable, accurate, or useful in real-life situations. A m ... Thus, performance evaluation helps answer important questions such as: Is the model dependable? Is it identifying the right cases? Can it be trusted in real-world use? Hence, it forms a vital part of every predictive and classification modelling process. In the previous units, different categories of data analysis models were introduced, each designed to solve a particular type of problem. Unit 8 – Regression Models focused on predicting continuous numerical values, while Unit 9 – Time Seri"
+        },
+        {
+          "filename": "Unit-13_Basics_of_Programming.pdf",
+          "pages": 20,
+          "filesize_kb": 4376.61,
+          "sample_content": "Basic of R Programming 5 UNIT 13BASICS OF PROGRAMMING Structure Page Nos. 13.0 Introduction 13.1 Objectives 13.2 Environment of R 13.3 Data types, Variables, Operators, Factors 13.4 Decision Making, Loops, Functions 13.5 Data Structures in R 13.5.1 Strings and Vectors 13.5.2 Lists 13.5.3 Matrices, Arrays and Frames 13.6 Summary 13.7 Answers 13.0 INTRODUCTION This unit covers the fundamental concepts of R programming. The unit familiarises with the environment of R and covers the details of the g ... 6 of data analysis. We will not be covering all aspects of this programming language; therefore, you may refer to the further readings for more details. The discussion on R programming will be in the context of R-Studio, which is an open-source software. You may try various commands listed in this unit to facilitate your learning. The first important concept of R is its environment, which is discussed next. Environment can be thought of as a virtual space having a collection of objects (var"
+        },
+        {
+          "filename": "Unit-14_Data_Interfacing_and_Visualisation_in_R.pdf",
+          "pages": 16,
+          "filesize_kb": 3305.19,
+          "sample_content": "Data Interfacing & Visualization in R 25 UNIT 14 DATA INTERFACING AND VISUALISATION IN R Structure Page Nos. 14.1 Introduction 14.2 Objectives 14.3 Reading Data From Files 14.3.1 CSV Files 14.3.2 Excel Files 14.3.3 Binary Files 14.3.4 XML Files 14.3.5 JSON Files 14.3.6 Interfacing with Databases 14.3.7 Web Data 14.4 Data Cleaning and Pre-processing 14.5 Visualisations in R 14.5.1 Bar Charts 14.5.2 Box Plots 14.5.3 Histograms 14.5.4 Line Graphs 14.5.5 Scatterplots 14.6 Summary 14.7 Answers 14.8.  ... 26 14.3 READING DATA FROM FILES In R, you can read data from files outside of the R environment. One may also write data to files that the operating system can store and further access. There is a wide range of file formats, including CSV, Excel, binary, and XML, etc., R can read and write from. 14.3.1 CSV Files Input as CSV File: CSV file is a text file in which column values are separated by commas. For example, you can create data with the name, programme, and phone of students. By copyi"
+        },
+        {
+          "filename": "Unit-15_Data_Analysis_and_R.pdf",
+          "pages": 12,
+          "filesize_kb": 2909.95,
+          "sample_content": "Data Analysis and R 4 1 UNIT 15 DATA ANALYSIS AND R Structure Page Nos. 15.1 Introduction 15.2 Objectives 15.3 Chi Square Test 15.4 Linear Regression 15.5 Multiple Regression 15.6 Logistic Regression 15.7 Time Series Analysis 15.8 Summary 15.9 Answers 15.10 References and Further Readings 15.1 INTRODUCTION This unit deals with the concept of data analysis and how to leverage it by using R programming. The unit discusses various tests and techniques to operate on data in R and how to draw insight ... 42 same population and be categorical in nature, such as – top/bottom, True/False, Black/White.Syntax of a chi-square test: chisq.test(data) EXAMPLE: Let’s consider R’s built in “MASS” library that contains Cars93 dataset that represents the sales of different models of car. Figure 15.1: Description of sample data set As you can see, we have various variables that can be considered as categorical variables. Let’s consider “Airbags” and “Type” for our model. You want to check if there is a c"
+        },
+        {
+          "filename": "Unit-16_Advanced_Analysis_Using_R.pdf",
+          "pages": 19,
+          "filesize_kb": 4023.87,
+          "sample_content": "Advance Analysis using R 53 UNIT 16 ADVANCED ANALYSIS USING R Structure Page Nos. 16.0 Introduction 16.1 Objectives 16.2 Decision Trees 16.3 Random Forest 16.4 Classification 16.5 Clustering 16.6 Association rules 16.7 Summary 16.7 Answers 16.8 References and Further Readings 16.0 INTRODUCTION This unit explores the concepts pertaining to advancedlevels of data analysis and their application in R. The unit explains the theory and the working of the decision tree model and how to run it on R. It  ... Basic Computer Organisation 54 16.2 DECISION TREES A decision tree is a graph that represents decisions and their results in a tree format. Graph nodes represent events or selections, and graph edges represent decision rules or conditions. It is primarily used in machine learning and data mining applications that use R. Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these "
+        },
+        {
+          "filename": "Unit-1_Descriptive_Data_Analysis.pdf",
+          "pages": 42,
+          "filesize_kb": 6421.79,
+          "sample_content": "UNIT 1 D ESCRIPTIVE DATA ANALYSIS Structure 1.1 Introduction 1.2 Expected Learning Outcomes 1.3 Descriptive analysis 1.3.1 Data Collection 1.3.2 Types of Data 1.3.3 Frequency Distribution of a Variable 1.3.4 Graphical Representation of Frequency Distribution 1.3.5 Measures of Central Tendency 1.3.6 Measures of Dispersion 1.3.7 Summarization of Data 1.4 Summary 1.5 Solutions/Answers 1.6 Further Readings 1.1 I NTRODUCTION Descriptive analysis is a foundational aspect of data analysis that involves ... for statistical analysis but also for effective communication of findings in academic, professional, and real-world contexts. 1.2 E XPECTED LEARNING OUTCOMES After completing this unit, you should be able to: ● Understand the process of collecting data and identify appropriate sources and methods for different types of analysis. ● Distinguish between different kinds of data such as qualitative and quantitative, and understand their relevance in statistical analysis. ● Organize raw data into"
+        },
+        {
+          "filename": "Unit-2_Diagnostic_Data_Analysis.pdf",
+          "pages": 24,
+          "filesize_kb": 3969.66,
+          "sample_content": "UNIT 2 DIAGNOSTIC DATA ANALYSIS Structure 2.1 Introduction 2.2 Expected Learning Outcomes 2.3 Diagnostics Analysis 2.3.1 Data Mining 2.3.2 Correlation Analysis 2.4 Summary 2.5 Answers 2.6 References/Further Readings 2.1 I NTRODUCTION In our earlier unit-1 we learned about the Descriptive Data Analysis, here in this unit we are extending our discussion for Diagnostic Data Analysis, by the end of this unit we will understand that Descriptive data analysis and diagnostic data analysis are two close ... In practice, diagnostic analysis cannot exist without descriptive analysis, because one must first understand what is happening before exploring why it is happening. Together, they form a logical progression in data analysis: descriptive analysis provides clarity and structure to data, while diagnostic analysis transforms that clarity into actionable insights by uncovering causes and relationships. From a learning perspective, the key difference lies in intent and depth. Descriptive analysi"
+        },
+        {
+          "filename": "Unit-3_Predictive_Data_Analysis.pdf",
+          "pages": 30,
+          "filesize_kb": 4892.88,
+          "sample_content": "UNIT 3 P REDICTIVE DATA ANALYSIS Structure 3.1 Introduction 3.2 Expected Learning Outcomes 3.3 Predictive analysis 3.3.1 Regression Analysis, 3.3.2 Time Series Analysis, 3.3.3 Classification, 3.3.4 Clustering 3.4 Summary 3.5 Solutions/Answers 3.6 Further Readings 3.1 I NTRODUCTION Descriptive, diagnostic, predictive, and prescriptive analyses together form a continuum of data analytics , where each stage builds logically upon the previous one to support increasingly informed decision-making. Und ... Finally, prescriptive data analysis represents the most advanced stage in the analytics continuum. It answers the question “What should be done?” by combining predictions with optimization, simulation, and decision models. Prescriptive analysis uses the outputs of predictive models to recommend actions that lead to optimal or desired outcomes under given constraints. The prescriptive data analysis is the forte of the subsequent unit of this block. Overall, descriptive analysis provides unde"
+        },
+        {
+          "filename": "Unit-4_Prescriptive_Data_Analysis.pdf",
+          "pages": 24,
+          "filesize_kb": 3877.04,
+          "sample_content": "UNIT-4 PRESCRIPTIVE DATA ANALYSIS 4.0 Introduction 4.1 Expected Learning Outcomes 4.2 Prescriptive analysis 4.2.1 Optimization, 4.2.2 Simulation, 4.2.3 Game Theory 4.2.4 Decision-Analysis methods 4.3 Summary 4.4 Answers 4.5 References/Further Readings 4.0 INTRODUCTION Data analysis has evolved into a structured continuum, where each stage builds upon the insights of the previous one. At the foundation lies descriptive analysis, which summarizes historical data to answer the question “What happen ... 4.1 EXPECTED LEARNING OUTCOMES After completing this unit, you will be able to: ● Understand the concept and significance of prescriptive data analysis in the analytics continuum. ● Explain how prescriptive analysis integrates descriptive, diagnostic, and predictive insights. ● Identify techniques such as optimization, simulation, and decision analysis used in prescriptive analytics. ● Analyse how prescriptive models support decision-making under constraints and uncertainty. ● Understand th"
+        },
+        {
+          "filename": "Unit-5_Mining_Big_Data.pdf",
+          "pages": 18,
+          "filesize_kb": 3072.92,
+          "sample_content": "1 B ig Data Analysis UNIT 5 MINING BIG DATA St ructure Page No. 5.0 Introduction 5.1 Expected Learning Outcomes 5.2 Finding Similar Items 5.3 Finding Similar Sets 5.3.1 Jaccard Similarity of Sets 5.3.2 Documents Similarity 5.3.3 Collaborative Filtering and Set Similarity 5.4 Finding Similar Documents 5.4.1 Shingles 5.4.2 Minhashing 5.4.3 Locality Sensitive Hashing 5.5 Distance Measures 5.5.1 Euclidean Distance 5.5.2 Jaccard Distance 5.5.3 Cosine Distance 5.5.4 Edit Distance 5.5.5 Hamming Distanc ... Problem Definition: Given an extremely large collection of item sets, which may have millions or billions of sets, how to find the set of similar item sets without comparing all the possible combinations of item sets, using the notion that similar item sets may have many common sub-sets. Purpose of Finding Similar Items: 1. You may like to classify web pages that are using similar words. This information can be used to classify web pages. 2. You may like to find the purchases and feedback o"
+        },
+        {
+          "filename": "Unit-6_Outlier_Detection.pdf",
+          "pages": 38,
+          "filesize_kb": 6015.65,
+          "sample_content": "UNIT 6 – OUTLIER DETECTION 6.0 Introduction 6.1 Expected Learning Outcomes 6.2 Standard deviation method 6.3 Box-plots 6.4 Z-score 6.5 Percentiles 6.6 DBSCAN 6.7 Local Outlier factor 6.8 Summary 6.9 Answers 6.10 References/Further Readings 6.0 INTRODUCTION Out liers are data points that significantly differ from the majority of observations in a dataset. In predictive data analysis, they may arise due to measurement errors, data entry mistakes, or genuine but rare events. Understanding outliers  ... deviations from the norm, while box-plots provide intuitive visual mechanisms for spotting extreme values. Moving beyond purely statistical approaches, methods like DBSCAN and Local Outlier Factor (LOF) leverage similarity and density concepts introduced in this unit to detect outliers in complex, high-dimensional datasets. By understanding how outliers influence similarity relationships and model behaviour, this unit equips learners with essential tools to improve data quality, enhance mod"
+        },
+        {
+          "filename": "Unit-7_Predictive_Analytics_Models.pdf",
+          "pages": 28,
+          "filesize_kb": 4756.31,
+          "sample_content": "UNIT 7 - PREDICTIVE ANALYTICS MODELS 7.0 Introduction 7.1 Expected Learning Outcomes 7.2 Regression models - an Introduction 7.3 Time series & Forecasting models - an Introduction 7.4 Supervised learning models - an Introduction 7.5 Unsupervised learning Models - an Introduction 7.6 Summary 7.7 Answers 7.8 References/Further Readings 7.0 INTRODUCTION Predictive Analytics Models represent a crucial stage in the data analytics continuum, where the focus shifts from understanding past patterns to f ... 7.2 REGRESSION MODELS - AN INTRODUCTION Regression analysis is a fundamental statistical technique used to understand and model the relationship between variables. In simple terms, it helps us study how a dependent variable (the outcome we want to predict) changes when one or more independent variables (the factors influencing it) change. The primary objective of regression is not only to identify this relationship but also to use it for predicting future outcomes based on known data. Mathe"
+        },
+        {
+          "filename": "Unit-8_Regression_Models-II.pdf",
+          "pages": 49,
+          "filesize_kb": 7055.41,
+          "sample_content": "UNIT 8 – REGRESSION MODELS 8.0 Introduction 8.1 Expected Learning Outcomes 8.2 Introduction to Regression 8.3 Regression Models 8.3.1 Linear Regression 8.3.2 Multiple Regression 8.3.3 Polynomial Regression 8.3.4 Ridge and Lasso Regression 8.3.5 Support Vector Regression 8.4 Summary 8.5 Answers 8.6 References/Further Readings 8.0 INTRODUCTION Regression analysis is a key method in statistics that allows us to make predictions and understand how different factors and variables are connected. Curre ... penalties to the model to keep it from becoming too complex, encouraging simpler, more reliable predictions. Learning about regression isn’t just about making predictions, it’s also about measuring how strong and meaningful the relationships are between different things and understanding what really drives outcomes. Throughout this section, you’ll discover practical ways to build, apply, and improve regression models, making them powerful tools for solving real-world problems with data, whe"
+        },
+        {
+          "filename": "Unit-9_Mining_Big_Data.pdf",
+          "pages": 18,
+          "filesize_kb": 3120.0,
+          "sample_content": "1 B ig Data Analysis UNIT 9 MINING BIG DATA S tructure Page No. 9.0 Introduction 9.1 Expected Learning Outcomes 9.2 Finding Similar Items 9.3 Finding Similar Sets 9.3.1 Jaccard Similarity of Sets 9.3.2 Documents Similarity 9.3.3 Collaborative Filtering and Set Similarity 9.4 Finding Similar Documents 9.4.1 Shingles 9.4.2 Minhashing 9.4.3 Locality Sensitive Hashing 9.5 Distance Measures 9.5.1 Euclidean Distance 9.5.2 Jaccard Distance 9.5.3 Cosine Distance 9.5.4 Edit Distance 9.5.5 Hamming Distanc ... Problem Definition: Given an extremely large collection of item sets, which may have millions or billions of sets, how to find the set of similar item sets without comparing all the possible combinations of item sets, using the notion that similar item sets may have many common sub-sets. Purpose of Finding Similar Items: 1. You may like to classify web pages that are using similar words. This information can be used to classify web pages. 2. You may like to find the purchases and feedback o"
+        }
+      ]
+    },
+    "MCS-224": {
+      "course_folder": "MCS-224_Artificial_Intelligence_and_Machine_Learning",
+      "documents": [
+        {
+          "filename": "Block-1_Artificial_Intelligence-Introduction.pdf",
+          "pages": 171,
+          "filesize_kb": 10788.36,
+          "sample_content": "1 MCS-224 School of Computer and Information Sciences (SOCIS) Indira Gandhi National Open University ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING Block 1 Artificial Intelligence – Introduction 05 Block 2 Artificial Intelligence – Knowledge Representation 171 Block 3 Machine Learning - I 267 Block 4 Machine Learning - II 391 ... 2 PRINT PRODUCTION Mr. Sanjay Aggarwal Assistant Registrar,MPDD, IGNOU, New Delhi August, 2023 © Indira Gandhi National Open University, 2023 ISBN: 978-93-5568-926-9 All rights reserved. No part of this work may be reproduced in any form, by mimeograph or any other means, without permission in writing from the Indira Gandhi National Open University. at Maidan Garhi, New Delhi-110068 or visit University website http://www.ignou.ac.in. Printed and published on behalf of the Indira Gandhi National  ... 3 COURSE INTRODUCTION This course MCS-224 Titled “Artificial Intelligence and Machine Learning” is a 4 credit course and it relates to the conceptual understanding o"
+        },
+        {
+          "filename": "Block-2_Artificial_Intelligence-Knowledge_Representation.pdf",
+          "pages": 96,
+          "filesize_kb": 1471.47,
+          "sample_content": "171 Predicate Andpropositional Logic ARTIFICIAL INTELLIGENCE - KNOWLEDGE REPRESENTATION Unit 5 First Order Logic 175 Unit 6 Rule based Systems and other formalism 207 Unit 7 Probabilistic Reasoning 227 Unit 8 Fuzzy and Rough Set 244 2 Block ... 172 PROGRAMME DESIGN COMMI TTEE COURSE DESIGN COMMI TTEE SOCIS FACULTY PREPARATION TEAM Prof. (Retd.) S.K. Gupta , IIT, Delhi Prof. Ela Kumar, IGDTUW, Delhi Prof. T.V . Vijay Kumar JNU, New Delhi Prof. Gayatri Dhingra, GVMITM, Sonipat Mr. Milind Mahajan,. Impressico Business Solutions, New Delhi Sh. Shashi Bhushan Sharma, Associate Professor, SOCIS, IGNOU Prof. T.V . Vijay Kumar JNU, New Delhi Prof. S. Balasundaram, JNU, New Delhi Prof. D.P. Vidyarthi, JNU, New Delhi Prof. Anjana Gosain, USICT,  ... 173 BLOCK INTRODUCTION The Block-2 Titled “Artificial Intelligence - Knowledge Representation” is comprised of four units, the details are as follows : • Unit-5 First Order Logic • Unit-6 Rule based Systems and other formalism • Unit-7 Probabilistic "
+        },
+        {
+          "filename": "Block-3_Machine_Learning-I.pdf",
+          "pages": 124,
+          "filesize_kb": 9824.73,
+          "sample_content": "267 Fuzzy and Rough Sets MACHINE LEARNING - I Unit 9 Introduction to Machine Learning Methods 271 Unit 10 Classification 301 Unit 11 Regression 345 Unit 12 Neural Networks and Deep Learning 365 3 Block ... 268 PROGRAMME DESIGN COMMI TTEE COURSE DESIGN COMMI TTEE SOCIS FACULTY PREPARATION TEAM Prof. (Retd.) S.K. Gupta , IIT, Delhi Prof. Ela Kumar, IGDTUW, Delhi Prof. T.V . Vijay Kumar JNU, New Delhi Prof. Gayatri Dhingra, GVMITM, Sonipat Mr. Milind Mahajan,. Impressico Business Solutions, New Delhi Sh. Shashi Bhushan Sharma, Associate Professor, SOCIS, IGNOU Prof. T.V . Vijay Kumar JNU, New Delhi Prof. S.Balasundaram, JNU, New Delhi Prof D.P. Vidyarthi, JNU, New Delhi Prof. Anjana Gosain, USICT, GG ... 269 BLOCK INTRODUCTION The Block-3 Titled: “Machine Learning – I” includes four units. The content covered in this block relates to brief introduction of machine learning and its algorithms given in Unit-9, along with that the core concepts of supervised learning i.e. Classification and R"
+        },
+        {
+          "filename": "Block-4_Machine_Learning-II.pdf",
+          "pages": 101,
+          "filesize_kb": 16220.8,
+          "sample_content": "391 Neural Networks and Deep Learning MACHINE LEARNING - II Unit 13 Feature Selection and Extraction 395 Unit 14 Association Rules 419 Unit 15 Clustering 447 Unit 16 Machine Learning Programming using Python 471 4 Block ... 392 PROGRAMME DESIGN COMMI TTEE COURSE DESIGN COMMI TTEE SOCIS FACULTY PREPARATION TEAM Prof. (Retd.) S.K. Gupta , IIT, Delhi Prof. Ela Kumar, IGDTUW, Delhi Prof. T.V . Vijay Kumar JNU, New Delhi Prof. Gayatri Dhingra, GVMITM, Sonipat Mr. Milind Mahajan,. Impressico Business Solutions, New Delhi Sh. Shashi Bhushan Sharma, Associate Professor, SOCIS, IGNOU Prof. T.V . Vijay Kumar JNU, New Delhi Prof. S. Balasundaram, JNU, New Delhi Prof. D.P. Vidyarthi, JNU, New Delhi Prof. Anjana Gosain, USICT,  ... 393 BLOCK INTRODUCTION The Block-4 Titled: “Machine Learning – II” includes four units. The content covered in this block relates to brief introduction of some additional concepts of machine learning and its algorithms, which includes the concepts of Feature Selection an"
+        },
+        {
+          "filename": "Unit-10_Classification.pdf",
+          "pages": 44,
+          "filesize_kb": 3100.5,
+          "sample_content": "301 Introduction to Machine Learning Methods UNIT 10 CLASS IFICATION Structure 10.1 Introduction 10.2 Objectives 10.3 Understanding of Supervised Learning 10.4 Introduction to Classification 10.5 Classification Algorithms 10.5.1 Naïve Bayes 10.5.2 K-Nearest Neighbour (K-NN) 10.5.3 Decision Trees 10.5.4 Logistic Regression 10.5.5 Support Vector Machines 10.6 Summary 10.7 Solutions/Answers 10.8 Further Readings 10.1 INTRODUCTION What exactly does learning entail, anyway? What exactly is meant by \" ... 302 Machine Learning - I learn from the data; the initial programming and possibly some fine-tuning are all that are required. It has come to our attention that there are a number of parallels between the two ideas, namely Data Mining and Machine Learning. These parallels include the following: • Both are c onsidered to be analytical processes; • Both are e ffective at recognising patterns; • Both focus on gaining knowledge from data in order to enhance decision- making capabilities; • Both"
+        },
+        {
+          "filename": "Unit-11_Regression.pdf",
+          "pages": 20,
+          "filesize_kb": 2068.74,
+          "sample_content": "345 Classification UNIT 11 REGRESSION 11.0 Introduction 11.1 Objectives 11.2 Regression Algorithm 11.3 Linea r Regression 11.4 Polynomial Regres sion 11.5 Support Vector Re gression 11.6 Summary 11.7 Solution/Answers 11.0 INTRODUCTION In 1908 British biologist Francis Galton investigated the relationships between two variables to study the hereditary growth of children. In his research he categorised parents into two categories on the height: 1st category of the parents belongs to the family len ... 346 Machine Learning - I If the variable to be predicted is a single variable, then the regression equation will be y=a+bx To determine the value of dependent variable y we need to determine the slope b and constant value and thus by substituting the different set of values for variable x we can get the different value of variable y. when x=0 then y=a, which means when there is no independent variable then the predicted variable constant value. Suppose we are having multiple independent var"
+        },
+        {
+          "filename": "Unit-12_Neural_Networks_and_Deep_Learning.pdf",
+          "pages": 26,
+          "filesize_kb": 1307.97,
+          "sample_content": "365 Regression UNIT 12 NEURA L NETWORKS AND DEEP LEARNING Structure 12.1 Introduction 12.2 Objectives 12.3 Overview of Neural Network 12.4 Multilayer Feedforward Neural networks with S igmoid activation functions 12.4.1 Neural Networks with Hidden Layers 12.5 Sigmoid Neurons: An Introduction 12.6 Back propagation Algorithm: 12.6.1 How Backpropagation Works? 12.7 Feed forward networks for Classification and R egression 12.8 Deep Learning 12.8.1 How Deep Learning Works 12.8.2 Deep Learning vs. Mac ... 366 Machine Learning - I Figure 1: Biological Neuron and Artificial Neuron 12.2 OBJECTIVES After completing this unit, you will be able to: • Understand the concep t of Neural Networks • Understand Feed forward Neural networks • Understand Back propa gation Algorithm • Understand the concep t of Deep Learning 12.3 OVERVIEW OF ARTIFICIAL NEURAL NETWORKS An artificial neural network (ANN) is like a computing system that simulates how the human brain analyzes information and processes it. It i"
+        },
+        {
+          "filename": "Unit-13_Feature_selection_and_Extraction.pdf",
+          "pages": 24,
+          "filesize_kb": 688.0,
+          "sample_content": "395 UNIT 13 FEATURE SELECTION AND EXTRACTION 13.1 Introduction 13.2 Dimensionality Reduction 13.2.1 Feature Selection 13.2.2 Feature extraction 13.3 Principal Component Analysis 13.4 Linear Discriminant Analysis 13.5 Singular Value Decomposition. 13.6 Summary 13.7 Solutions/Answers 13.8 Further Readings 13.1 INTRODUCTION Data sets are made up of numerous data columns, which are also referred to as data attributes. These data columns can be interpreted as dimensions on an n-dimensional feature sp ... 396 Machine Learning - II to the model. However, there are some that actually reduce the reliability and precision of the model. For instance, let's say you want to build a model that can forecast the incomes of people already employed in their respective fields. Therefore, data columns like cellphone number, house number, and so on will not truly contribute any value to the dataset, and they can therefore be omitted. This is because irrelevant qualities introduce noise to the data and affe"
+        },
+        {
+          "filename": "Unit-14_Association_Rules.pdf",
+          "pages": 28,
+          "filesize_kb": 2689.27,
+          "sample_content": "419 Association Rules UNIT 14 ASSOCIATION RULES Structure 14.1 Introduction 14.2 Objectives 14.3 What are Association Rules? 14.3.1 Basic Concepts 14.3.2 Association rul es: Binary Representation 14.3.3 Association rul es Discovery 14.4 Apriori Algorithm 14.4.1 Frequent Items ets Generation 14.4.2 Case Study 14.4.3 Generating Association Rules using Frequent Itemset 14.5 FP Tree Growth 14.5.1 FP Tree Construction 14.6 Pincer Search 14.7 Summary 14.8 Solutions to Check Your Progress 14.9 Further  ... 420 Machine Learning - II Figure 1: Two different cases of Market Basket Analysis 14.2 OBJECTIVES After going through this unit, you should be able to: • Understand the purpose of association rules. • Understand the purpose of pattern search and, • Describe various algorithms for pattern search 14.3 WHAT ARE ASSOCIATION R ULES? In machine learning, association rules are one of the important concepts that is widely applied in problems like market basket analysis. Consider a supermarket, wher"
+        },
+        {
+          "filename": "Unit-15_Clustering.pdf",
+          "pages": 24,
+          "filesize_kb": 2774.93,
+          "sample_content": "447 Clustering UNIT 15 CLUSTERING Structure 15.1 Introduction to clustering 15.2 Types of clustering 15.3 Partition Based 15.4 Hierarchical Based 15.5 Density Based Clustering techniques 15.6 Clustering algorithms K-Means, Agglomerative and Divisive, DBSCAN, Introduction to Fuzzy Clustering 15.7 Summary 15.8 Solutions to Check your Progress 15.9 Further Readings 15.1 INTRODUCTION Clustering or cluster analysis is a method for dividing a group of data objects into subgroups based on a single obse ... 448 Machine Learning - II Data clustering is a prominent technique in data analysis and is applied in various research areas including mining of data, data statistics, area of machine learning for any kind of analysis. It is also applied in the world of financial services, health information systems web mining, financial sectors and many more. Cluster analysis is the most recent area of research in data analysis due to the massive volumes of data produced in databases. An example of cluster"
+        },
+        {
+          "filename": "Unit-16_Machine_Learning-Programming_using_Python.pdf",
+          "pages": 20,
+          "filesize_kb": 9678.12,
+          "sample_content": "471 Clustering UNIT 16 MACHINE LEARNING – PROGRAMMING USING PYTHON Structure 16.0 Introduction 16.1 Objectives 16.2 Classification Algorithms 16.2.1 Naïve Bayes 16.2.2 K-Nearest Neighbour (K-NN) 16.2.3 Decision Trees 16.2.4 Logistic Regre ssion 16.2.5 Support Vector Machines 16.3 Regression Algorithms 16.3.1 Linear Regress sion 16.3.2 Polynomial Re gression 16.4 Feature Selection and Extraction 16.4.1 Principal Comp onent Analysis 16.5 Association Rules 16.5.1 Apriori Algorithm 16.6 Clustering A ... 472 Machine Learning - II 16.2 CLASSIFICA TION ALGORITHMS The starting units of this course primarily focused on the various classification algorithms viz. Naïve Bayes classifiers, K-Nearest Neighbour (K-NN), Decision Trees, Logistic Regression and Support Vector Machines.The theoretical aspects of the same is already discussed in the respective units, now we will see the implementation part of the mentioned classifiers, in Python programming language. 16.2.1 Naive Bayes It is a method of c"
+        },
+        {
+          "filename": "Unit-1_Introduction_to_Artificial_Intelligence.pdf",
+          "pages": 30,
+          "filesize_kb": 1608.58,
+          "sample_content": "9 UNIT 1 INTRODUCTION TO ARTIFICIAL INTELLIGENCE Structure 1.1 Introduction 1.2 Objectives 1.3 Basics of Artificial Intelligence (AI)? 1.4 Brief history of Artificial Intelligence 1.5 Components of Intelligence 1.6 Approaches to Artificial Intelligence 1.7 Comparison between Artificial Intelligence (AI), Machine Learning (ML) and DeepLearning (DL). 1.8 Application Areas of Artificial Intelligence Systems 1.9 Intelligent Agents 1.9.1 Stimulus - Response Agents 1.10 Summary 1.11 Solutions/Answers  ... 10 Artificial Intelligence – Introduction The accumulation of information and abilities that a person has gained through their life experiences is known as knowledge. While intelligence refers to one's capacity to put one's knowledge into practise. To put it simply, knowledge is what we have learned over the years, and it expands as time passes. Because of this, it represents the culmination of everything that we have realised over the course of our lives. It is important to highlight that "
+        },
+        {
+          "filename": "Unit-2_Problem_Solving_Using_Search.pdf",
+          "pages": 46,
+          "filesize_kb": 5582.29,
+          "sample_content": "39 Introduction to Artificial Intelligence UNIT 2 PROBLEM SOLVING USING SEARCH Structure 2.0 Introduction 2.1 Objectives 2.2 Introduction to State Space Search 2.2.1 Problem Formulation 2.2.2 Structure of a State space 2.2.3 Problem solution of State space 2.3.4 Searching for solution in state spaces formulated 2.3 Formulation of 8 puzzle problem from AI persp ective 2.4 N-queen’s problem- Formulation and Solution 2.4.1 Formulation of 8 Queen’s problem 2.4.2 State space tree for 4-Queen’s proble ... 40 Artificial Intelligence – Introduction To build a system to solve a problem, we need to  Define the problem precisely-find initial and final configuration for acceptable solution to the problem.  Analyse the problem-find few important features that may have impact on the appropriateness of various possible techniques for solving the problem  Isolate an d represent task knowledge necessary to solve the problem  Choose the best problem-solving technique(s) and apply it to the particula"
+        },
+        {
+          "filename": "Unit-3_Uninformed_and_Informed_Search.pdf",
+          "pages": 52,
+          "filesize_kb": 2328.25,
+          "sample_content": "85 Problem Solving using Search UNIT 3 UNINFORMED & INFORMED SEARCH Structure 3.0 Introduction 3.1 Objectives 3.2 Formulating search in state space 3.2.1 Evaluation of search Algorithm 3.3 Uninformed Search 3.3.1 Breath-First search (BFS) 3.3.2 Time and space complexity of BFS 3.3.3 Advantages & disadvantages of BFS 3.3.4 Depth First search (DFS) 3.3.5 Performance of DFS algorithm 3.3.6 Advantages and disadvantages of DFS 3.3.7 Comparison of BFS and DFS 3.4 Iterative Deepening Depth First search ... 86 Artificial Intelligence – Introduction 3.10 Memory Bound heuristic search 3.10.1 Iterative Deepening A* (IDA*) 3.10.2 Working of IDA* 3.10.3 Analysis of IDA* 3.10.4 Comparison of A* and IDA* algorithm 3.11 Recursive Best First search (RBFS) 3.11.1 Advantages and disadvantages of RBFS 3.12 Summary 3.13 Solutions/Answers 3.14 Further readings 3.0 INTRODUCTION Before an AI problem can be solved it must be represented as a state space. In AI, a wide range of problems can be formulated as sea"
+        },
+        {
+          "filename": "Unit-4_Predicate_and_Propositional_Logic.pdf",
+          "pages": 34,
+          "filesize_kb": 704.64,
+          "sample_content": "137 Uninformed & Informed Search UNIT 4 PREDICATE AND PROPOSITIONAL LOGIC 4.1 Introduction 4.2 Objectives 4.3 Introduction to Propositional Logic 4.4 Syntax of Propositional Logic 4.4.1 Atomic Propositions 4.4.2 Compound Propositions 4.5 Logical Connectives 4.5.1 Conjunction 4.5.2 Disjunction 4.5.3 Negation 4.5.4 Implication 4.5.5 Bi-Conditional 4.6 Semantics 4.6.1 Negation Truth Table 4.6.2 Conjunction/Disjunction/Implication/Biconditional Truth Table 4.6.3 Truth Table with three variables 4.7  ... 138 Artificial Intelligence – Introduction 4.14 Propositional Resolution 4.14.1 Clausal Form 4.14.2 Determining Unsatisfiability 4.15 Answers/Solutions 4.16 Further Readings 4.1 INTRODUCTION Logic is the study and analysis of the nature of the valid argument, the reasoning tool by which valid inferences can be drawn from a given set of facts and premises. It is the basis on which all the sciences are built, and this mathematical theory of logic is called symbolic logic. The English mathemat"
+        },
+        {
+          "filename": "Unit-5_First_Order_Logic.pdf",
+          "pages": 32,
+          "filesize_kb": 649.5,
+          "sample_content": "175 UNIT 5 FIRST ORDER LOGIC Structure 5.0 Introduction 5.1 Objectives 5.2 Syntax of First Order Predicate Logic(FOPL) 5.3 Interpretations in FOPL 5.4 Semantics of Quantifiers 5.5 Inference & Entailment in FOPL 5.6 Conversion to clausal form 5.7 Resolution & Unification 5.8 Summary 5.9 Solutions/Answers 5.10 Further/Readings 5.0 INTRODUCTION In the previous unit, we discussed how propositional logic helps us in solving problems. However, one of the major problems with propositional logic is that ... 176 Artificial Intelligence- Knowledge Representation type, in addition to those forms which can be discussed within the framework of propositional logic. First Order Predicate Logic (FOPL) is the most well- known symbolic system for the pourpose. The symbolic system of FOPL treats an atomic statement not as an indivisible unit. Rather, FOPL not only treats an atomic statement divisible into subject and predicate but even further deeper structures of an atomic statement are considered in or"
+        },
+        {
+          "filename": "Unit-6_Rule_Based_Systems_and_other_Formalism.pdf",
+          "pages": 20,
+          "filesize_kb": 603.68,
+          "sample_content": "207 First Order Logic UNIT 6 RULE BASED SYSTEMS AND OTHER FORMALISM Structure 6.0 Introduction 6.1 Objectives 6.2 Rule Based Systems 6.2.1 Forward chaining 6.2.2 Backward chaining 6.2.3 Conflict resolution 6.3 Semantic nets 6.4 Frames 6.5 Scripts 6.6 Summary 6.7 Solutions/Answers 6.8 Further/Readings 6.0 INTRODUCTION Computer Science is the study of how to create models that can be represented in and executed by some computing equipment. In this respect, the task for a computer scientist is to c ... 208 Artificial Intelligence- Knowledge Representation instead of employing mostly algorithmic or statistical methods. Often the term expert systems is reserved for programs whose knowledge base contains the knowledge used by human experts, in contrast to knowledge gathered from textbooks or non-experts. But more often than not, the two terms, expert systems and knowledge-based systems are taken as synonyms. Together they represent the most widespread type of AI application. One of the under"
+        },
+        {
+          "filename": "Unit-7_Probabilistic_Reasoning.pdf",
+          "pages": 17,
+          "filesize_kb": 732.84,
+          "sample_content": "227 Rule based Systems and other Formalism UNIT 7 PROBABILISTIC REASO NING Structure 7.0 Introduction 7.1 Objectives 7.2 Reasoning with uncertain information 7.3 Review of Probability Theory 7.4 Introduction to Bayesian Theory 7.5 Baye’s Networks 7.6 Probabilistic Inference 7.7 Basic idea of Inferencing with Bayes Networks 7.8 Other Paradigm of Uncertain Reasoning 7.9 Dempster Scheffer Theory 7.10 Summary 7.11 Solutions/ Answers 7.12 Further Readings 7.0 INTRODUCTION This unit is dedicated to pr ... 228 Artificial Intelligence- Knowledge Representation 7.1 OBJECTIVES After going through this unit, you should be able to: • Understand the role of probabilistic reasoning in AI • Understand the Concep t of Bayesian theory and Bayesian networks • Perform probabilistic i nference through Bayesian Networks • Understand the other Paradigm of Uncertain Reasoning & Dempster Scheffer Theory 7.2 REASONING WITH UNCERTA IN INFORMATION Reasoning is an important step for various decision making. The a"
+        },
+        {
+          "filename": "Unit-8_Fuzzy_and_Rough_Set.pdf",
+          "pages": 23,
+          "filesize_kb": 622.29,
+          "sample_content": "244 Artificial Intelligence- Knowledge Representation UNIT 8 FUZZY AND ROUGH SETS Structure 8.0 Introduction 8.1 Objectives 8.2 Fuzzy Systems 8.3 Introduction to Fuzzy Sets 8.4 Fuzzy Set Representation 8.5 Fuzzy Reasoning 8.6 Fuzzy Inference 8.7 Rough Set Theory 8.8 Summary 8.9 Solutions/ Answers 8.10 Further Readings 8.0 INTRODUCTION In the earlier units, we discussed PL and FOPL systems for making inferences and solving problems requiring logical reasoning. However, these systems assume that t ... 245 Fuzzy and Rough Sets 8.1 OBJECTIVES After going through this unit, you should be able to: • enumerat e various formal methods, which deal with different types of blemishes like incompleteness, imprecision and inconsistency in a knowledge base; • discuss, why fuzzy systems are required; • discuss, develop and use fuzzy arithmetic tools in solving problems, the descriptions of which involve imprecision; • discuss default reasoning as a tool for handling incompleteness of knowledge; • disc"
+        },
+        {
+          "filename": "Unit-9_Introduction_to_Machine_Learning_Methods.pdf",
+          "pages": 30,
+          "filesize_kb": 4589.35,
+          "sample_content": "271 UNIT 9 INTRODUCTION TO MACHINE LEARNING METHODS Structure 9.0 Introduction 9.1 Objectives 9.2 Introduction to Machine Learning 9.3 Techniques of Machine Learning 9.4 Reinforcement Learning and Algorithms 9.5 Deep Learning and Algorithms 9.6 Ensemble Methods 9.7 Summary 9.8 Solutions/ Answers 9.9 Further Readings 9.0 INTRODUCTION After Artificial Intelligence was introduced, in Computing World. There was a need for a machine that would automatically make things better. This needs to be kept i ... 272 Machine Learning - I The accuracy of the data as a whole is a topic of debate since decisions based on the data might be accurate, but it is one of the issues whether or not they are acceptable within the limitations. Consequently, it is necessary to set these boundaries for the entirety of the machine learning algorithms and engines. Simplest example would be if we instruct an auto driving car to reach a destination at a specified time. IT should also work within the legal boundaries o"
+        }
+      ]
+    },
+    "MCSL-069": {
+      "course_folder": "MCSL-069_Artificial_Intelligence_&_Machine_Learning_Lab",
+      "documents": [
+        {
+          "filename": "MCSL-069_Artificial_Intelligence_&_Machine_Learning_Lab.pdf",
+          "pages": 40,
+          "filesize_kb": 6580.59,
+          "sample_content": "MCSL-069 ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING LABIndira Gandhi National Open University School of Computer and Information Sciences (SOCIS) DEVICEMANAGEMENT ... 1 MCSL-069 Artificial Intelligence and Machine Learning Lab Artificial Intelligence and Machine Learning Lab Lab Sessions on Artificial Intelligence Lab Sessions on Machine Learning ... 2 PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V . Suresh, SOCIS, IGNOU Prof. V .V . Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Prof. Akshay Kumar, SOCIS, IGNOU Prof. M.P. Mishra, SOCIS, IGNOU Dr. Sudhansh Sharma, Assoc Professor, SOCIS COURSE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma,  ... 3 COURSE INTRODUCTION This course introduces you to practically work with the two most powerful concepts: Artificial Intelligence (AI) and M"
+        }
+      ]
+    },
+    "MCSL-070": {
+      "course_folder": "MCSL-070_Data_Analysis_Lab",
+      "documents": [
+        {
+          "filename": "MCSL-070_Data_Analysis_Lab.pdf",
+          "pages": 57,
+          "filesize_kb": 10185.75,
+          "sample_content": "MCSL-070 Data Analysis Lab Indira Gandhi National Open University School of Computer and Information Sciences (SOCIS) ... MCSL-070 DATA ANALYSIS LAB DATA ANALYSIS LAB SECTION 1 DATA WRANGLING AND VISUALISATION SECTION 2 PREDICTIVE DATA ANALYSIS Indira Gandhi National Open University School of Computer & Information Sciences ... PROGRAMME DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOCIS, IGNOU Prof. Dinesh Kumar Vishwakarma, DTU, New Delhi Prof. P.V. Suresh, SOCIS, IGNOU Prof. V.V. Subrahmanyam, SOCIS, IGNOU Prof. Divakar Yadav, SOCIS, IGNOU Dr. Akshay Kumar, Associate Professor, SOCIS IGNOU Dr. M.P. Mishra, Associate Professor, SOCIS IGNOU Dr. Sudhansh Sharma, Assistant Professor, SOCIS IGNOU COUR SE DESIGN COMMITTEE Prof. D. K. Lobiyal, JNU, New Delhi Prof. Sandeep Singh Rawat, SOC ... COURSE INTRODUCTION The Lab course MCSL-070: Data Analysis Lab is designed as a comprehensive practical companion to the theoretical courses MCS-067: Data Wrangling "
+        }
+      ]
+    }
+  }
+}

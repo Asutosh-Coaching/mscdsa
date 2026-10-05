@@ -1,0 +1,170 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_04",
+  "unit_num": "Unit 4",
+  "title": "File Organisation in DBMS",
+  "filename": "Unit-4_File_Organisation_in_DBMS.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-4_File_Organisation_in_DBMS.pdf",
+  "total_pages": 27,
+  "word_count": 10050,
+  "est_read_time_minutes": 56,
+  "objectives": [
+    "File Organisation",
+    "key File Organisations",
+    "list File Organisation"
+  ],
+  "summary": "In this unit, we discussed the physical database design issues in which we had addressed the file Organisation and file access method. The unit also discusses different types of file organization giving their advantages and their disadvantages. An index is an important component of a database system, as one of the key requirements of DBMS is efficient access to data. This unit explains various types of indexes that may exist in database systems. Some of these are: Primary index,",
+  "flashcards": [
+    {
+      "question": "List five operations on sequential file Organisation. Comment on the performance of each of these operations. …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "The file is in the order of primary index, so search on alternative key would require on an average half of the Blocks to be searched. Average number of block transfers",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are Direct-Access systems? What can be the various strategies to achieve this?",
+      "answer": "Sequential access to the keys of a B-tree is much slower than sequential access to the keys of a B+ tree, since the latter have all the keys linked in sequential order in the leave.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is file organisation and what are the essential factors that are to be considered for a file organisation?",
+      "answer": "The multi-list organisation enhances the query answering capability of databases on multiple key values. The number of records in an index entry determines the length of the index on a specific attribute value. This enhances the performance of searching when more than one search ",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "89 File Organisation in DBMS …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "Key Principle: File organisation is used to organise the content of a file on a secondary storage device.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "A file contains 40,000 student records of 200 bytes, each having the 1 KB as the size of a block. What would be the size of the primary index, if the size of the",
+      "answer": "The file is in the order of primary index, so search on alternative key would require on an average half of the Blocks to be searched. Average number of block transfers",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What would be the size of secondary index for the student file as stated in question",
+      "answer": "Sequential access to the keys of a B-tree is much slower than sequential access to the keys of a B+ tree, since the latter have all the keys linked in sequential order in the leave.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is An Index Entry and how is it characterized?",
+      "answer": "An Index Entry the attribute value, pointer to the block where that record is stored.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 File Organisation in DBMS\"]\n  M1[\"4.2 Physical Database Design\"]\n  Root --> M1\n  M2[\"4.3 Database Storage on HDD and SSD\"]\n  Root --> M2\n  M3[\"4.4 File Organisations\"]\n  Root --> M3\n  M3_1[\"4.4.1 Unordered Heap File Organisati\"]\n  M3 --> M3_1\n  M3_2[\"4.4.2 Sequential File Organisation\"]\n  M3 --> M3_2\n  M3_3[\"4.4.3 Indexed Indexed Sequential Fil\"]\n  M3 --> M3_3\n  M4[\"4.5 Indexes\"]\n  Root --> M4\n  M5[\"4.6 Implementing Index Using Tree St\"]\n  Root --> M5\n  M6[\"4.7 Multi-key File Organisations\"]\n  Root --> M6\n  M6_1[\"4.7.1 Multiple Access Paths\"]\n  M6 --> M6_1\n  M6_2[\"4.7.2 Multi-list File Organisation\"]\n  M6 --> M6_2\n  M6_3[\"4.7.3 Inverted File Organisation\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">An Index Entry</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">An Index Entry the attribute value, pointer to the block where that record is stored.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A File Organisation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A File Organisation the organisation of the data records, which are part of a file, into a group of records that are placed in a block of secondary storage.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Physical Database Design</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The database design involves the process of logical design with the help of E-R diagram, normalisation, etc., followed by the physical design.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">File Organisations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">File organisation is used to organise the content of a file on a secondary storage device.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Unordered Heap File Organisation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">These files consist of randomly ordered records.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Physical Database Design</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The database design involves the process of logical design with the help of E-R diagram, normalisation, etc., followed by the physical design.</li>\n<li>The Key issues in the Physical Database Design are: • The purpose of physical database design is to translate the logical description of data into the technical specifications for storing and retrieving data for the DBMS.</li>\n<li>• The goal is to create a design for storing data that will provide adequate performance and ensure database integrity, security and recoverability.</li>\n<li>• Performance criteria such as response time requirement with respect to volume estimates.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Database Storage on HDD and SSD</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>At this point, it is worthwhile to note the difference between the terms file Organisation and the access method.</li>\n<li>A file organisation refers to the organisation of the data records, which are part of a file, into a group of records that are placed in a block of secondary storage.</li>\n<li>The file organisation also entails the access structures and interlinking of records.</li>\n<li>An access method is the way - how the data can be retrieved based on the file Organisation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 File Organisations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>File organisation is used to organise the content of a file on a secondary storage device.</li>\n<li>A good file organisation should support efficient data access and update operations on the content of a file, which is stored on the secondary storage.</li>\n<li>Data files are organised so as to facilitate access to records and to ensure their efficient storage.</li>\n<li>A tradeoff between these two requirements generally exists: if rapid access is required, more storage space is required to make it possible.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.1 Unordered Heap File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>These files consist of randomly ordered records.</li>\n<li>The records will have no particular ordering.</li>\n<li>The operations that you can perform on the records of a heap file are insert, retrieve and delete.</li>\n<li>The features of the heap file Organisation are: • New records can be inserted in any empty space that can accommodate them.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.2 Sequential File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the sequential Organisation, records of the file are stored in sequence (or consecutively) by the primary key field values.</li>\n<li>In this organisation, the records can be accessed in the order of its primary key.</li>\n<li>This kind of file Organisation works well for tasks in which nearly every record of the file is required to be accessed, such as the payroll system.</li>\n<li>A sequential file can be stored on devices like magnetic tape that allow sequential access.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.3 Indexed (Indexed Sequential) File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It organises the file like a large dictionary, i.e., records are stored in order of the key, but an index is kept which also permits a type of direct access.</li>\n<li>The records are stored sequentially by primary key values and there is an index built over the primary key field.</li>\n<li>To locate a record in a sequential file, which is not indexed sequential, on average, you may read about half the number of records.</li>\n<li>Therefore, retrieval of a specific record in a sequential file is inefficient, especially if the file has a very large number of disk storage blocks.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.4 Hashed File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hashing is the most common form of purely random access to a file or database.</li>\n<li>It is also used as an optimisation technique to access columns that do not have an index.</li>\n<li>Input to a hash function is the value of the attribute or set of attributes of a record that are to be used for file organisation and the output is the block address or page address, where that record can be found.</li>\n<li>The hash function used for this file is key mod 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.5 Indexes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the terms used during the file organisation is the term index.</li>\n<li>In this section, let us define this term in more detail.</li>\n<li>Every printed book that you read, in general, has an index of keywords at the end.</li>\n<li>Notice that this index is a sorted list of keywords (index values) and page numbers (address) where the keyword can be found.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle are the same as that of indexes used at the back of the</code></div>\n<div class=\"formula-box\"><code>property that all the keys that are to the left of a node are smaller than the key value of</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we discussed the physical database design issues in which we had addressed the file Organisation and file access method. The unit also discusses different types of file organization giving their advantages and their disadvantages. An index is an important component of a database system, as one of the key requirements of DBMS is efficient access to data. This unit explains various types of indexes that may exist in database systems. Some of these are: Primary index,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-4_File_Organisation_in_DBMS.pdf')\">\n          📄 Read Original IGNOU PDF (27 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 4 File Organisation in DBMS\"]\n  M1[\"4.2 Physical Database Design\"]\n  Root --> M1\n  M2[\"4.3 Database Storage on HDD and SSD\"]\n  Root --> M2\n  M3[\"4.4 File Organisations\"]\n  Root --> M3\n  M3_1[\"4.4.1 Unordered Heap File Organisati\"]\n  M3 --> M3_1\n  M3_2[\"4.4.2 Sequential File Organisation\"]\n  M3 --> M3_2\n  M3_3[\"4.4.3 Indexed Indexed Sequential Fil\"]\n  M3 --> M3_3\n  M4[\"4.5 Indexes\"]\n  Root --> M4\n  M5[\"4.6 Implementing Index Using Tree St\"]\n  Root --> M5\n  M6[\"4.7 Multi-key File Organisations\"]\n  Root --> M6\n  M6_1[\"4.7.1 Multiple Access Paths\"]\n  M6 --> M6_1\n  M6_2[\"4.7.2 Multi-list File Organisation\"]\n  M6 --> M6_2\n  M6_3[\"4.7.3 Inverted File Organisation\"]\n  M6 --> M6_3",
+  "definitions": [
+    {
+      "term": "An Index Entry",
+      "definition": "An Index Entry the attribute value, pointer to the block where that record is stored.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "A File Organisation",
+      "definition": "A File Organisation the organisation of the data records, which are part of a file, into a group of records that are placed in a block of secondary storage.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Physical Database Design",
+      "definition": "The database design involves the process of logical design with the help of E-R diagram, normalisation, etc., followed by the physical design.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "File Organisations",
+      "definition": "File organisation is used to organise the content of a file on a secondary storage device.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Unordered Heap File Organisation",
+      "definition": "These files consist of randomly ordered records.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "4.2",
+      "topic": "Physical Database Design",
+      "points": [
+        "The database design involves the process of logical design with the help of E-R diagram, normalisation, etc., followed by the physical design.",
+        "The Key issues in the Physical Database Design are: • The purpose of physical database design is to translate the logical description of data into the technical specifications for storing and retrieving data for the DBMS.",
+        "• The goal is to create a design for storing data that will provide adequate performance and ensure database integrity, security and recoverability.",
+        "• Performance criteria such as response time requirement with respect to volume estimates."
+      ]
+    },
+    {
+      "section_num": "4.3",
+      "topic": "Database Storage on HDD and SSD",
+      "points": [
+        "At this point, it is worthwhile to note the difference between the terms file Organisation and the access method.",
+        "A file organisation refers to the organisation of the data records, which are part of a file, into a group of records that are placed in a block of secondary storage.",
+        "The file organisation also entails the access structures and interlinking of records.",
+        "An access method is the way - how the data can be retrieved based on the file Organisation."
+      ]
+    },
+    {
+      "section_num": "4.4",
+      "topic": "File Organisations",
+      "points": [
+        "File organisation is used to organise the content of a file on a secondary storage device.",
+        "A good file organisation should support efficient data access and update operations on the content of a file, which is stored on the secondary storage.",
+        "Data files are organised so as to facilitate access to records and to ensure their efficient storage.",
+        "A tradeoff between these two requirements generally exists: if rapid access is required, more storage space is required to make it possible."
+      ]
+    },
+    {
+      "section_num": "4.4.1",
+      "topic": "Unordered Heap File Organisation",
+      "points": [
+        "These files consist of randomly ordered records.",
+        "The records will have no particular ordering.",
+        "The operations that you can perform on the records of a heap file are insert, retrieve and delete.",
+        "The features of the heap file Organisation are: • New records can be inserted in any empty space that can accommodate them."
+      ]
+    },
+    {
+      "section_num": "4.4.2",
+      "topic": "Sequential File Organisation",
+      "points": [
+        "In the sequential Organisation, records of the file are stored in sequence (or consecutively) by the primary key field values.",
+        "In this organisation, the records can be accessed in the order of its primary key.",
+        "This kind of file Organisation works well for tasks in which nearly every record of the file is required to be accessed, such as the payroll system.",
+        "A sequential file can be stored on devices like magnetic tape that allow sequential access."
+      ]
+    },
+    {
+      "section_num": "4.4.3",
+      "topic": "Indexed (Indexed Sequential) File Organisation",
+      "points": [
+        "It organises the file like a large dictionary, i.e., records are stored in order of the key, but an index is kept which also permits a type of direct access.",
+        "The records are stored sequentially by primary key values and there is an index built over the primary key field.",
+        "To locate a record in a sequential file, which is not indexed sequential, on average, you may read about half the number of records.",
+        "Therefore, retrieval of a specific record in a sequential file is inefficient, especially if the file has a very large number of disk storage blocks."
+      ]
+    },
+    {
+      "section_num": "4.4.4",
+      "topic": "Hashed File Organisation",
+      "points": [
+        "Hashing is the most common form of purely random access to a file or database.",
+        "It is also used as an optimisation technique to access columns that do not have an index.",
+        "Input to a hash function is the value of the attribute or set of attributes of a record that are to be used for file organisation and the output is the block address or page address, where that record can be found.",
+        "The hash function used for this file is key mod 4."
+      ]
+    },
+    {
+      "section_num": "4.5",
+      "topic": "Indexes",
+      "points": [
+        "One of the terms used during the file organisation is the term index.",
+        "In this section, let us define this term in more detail.",
+        "Every printed book that you read, in general, has an index of keywords at the end.",
+        "Notice that this index is a sorted list of keywords (index values) and page numbers (address) where the keyword can be found."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle are the same as that of indexes used at the back of the",
+    "property that all the keys that are to the left of a node are smaller than the key value of"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 File Organisation in DBMS\"]\n  M1[\"4.2 Physical Database Design\"]\n  Root --> M1\n  M2[\"4.3 Database Storage on HDD and SSD\"]\n  Root --> M2\n  M3[\"4.4 File Organisations\"]\n  Root --> M3\n  M3_1[\"4.4.1 Unordered Heap File Organisati\"]\n  M3 --> M3_1\n  M3_2[\"4.4.2 Sequential File Organisation\"]\n  M3 --> M3_2\n  M3_3[\"4.4.3 Indexed Indexed Sequential Fil\"]\n  M3 --> M3_3\n  M4[\"4.5 Indexes\"]\n  Root --> M4\n  M5[\"4.6 Implementing Index Using Tree St\"]\n  Root --> M5\n  M6[\"4.7 Multi-key File Organisations\"]\n  Root --> M6\n  M6_1[\"4.7.1 Multiple Access Paths\"]\n  M6 --> M6_1\n  M6_2[\"4.7.2 Multi-list File Organisation\"]\n  M6 --> M6_2\n  M6_3[\"4.7.3 Inverted File Organisation\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">An Index Entry</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">An Index Entry the attribute value, pointer to the block where that record is stored.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A File Organisation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A File Organisation the organisation of the data records, which are part of a file, into a group of records that are placed in a block of secondary storage.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Physical Database Design</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The database design involves the process of logical design with the help of E-R diagram, normalisation, etc., followed by the physical design.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">File Organisations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">File organisation is used to organise the content of a file on a secondary storage device.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Unordered Heap File Organisation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">These files consist of randomly ordered records.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Physical Database Design</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The database design involves the process of logical design with the help of E-R diagram, normalisation, etc., followed by the physical design.</li>\n<li>The Key issues in the Physical Database Design are: • The purpose of physical database design is to translate the logical description of data into the technical specifications for storing and retrieving data for the DBMS.</li>\n<li>• The goal is to create a design for storing data that will provide adequate performance and ensure database integrity, security and recoverability.</li>\n<li>• Performance criteria such as response time requirement with respect to volume estimates.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Database Storage on HDD and SSD</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>At this point, it is worthwhile to note the difference between the terms file Organisation and the access method.</li>\n<li>A file organisation refers to the organisation of the data records, which are part of a file, into a group of records that are placed in a block of secondary storage.</li>\n<li>The file organisation also entails the access structures and interlinking of records.</li>\n<li>An access method is the way - how the data can be retrieved based on the file Organisation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 File Organisations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>File organisation is used to organise the content of a file on a secondary storage device.</li>\n<li>A good file organisation should support efficient data access and update operations on the content of a file, which is stored on the secondary storage.</li>\n<li>Data files are organised so as to facilitate access to records and to ensure their efficient storage.</li>\n<li>A tradeoff between these two requirements generally exists: if rapid access is required, more storage space is required to make it possible.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.1 Unordered Heap File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>These files consist of randomly ordered records.</li>\n<li>The records will have no particular ordering.</li>\n<li>The operations that you can perform on the records of a heap file are insert, retrieve and delete.</li>\n<li>The features of the heap file Organisation are: • New records can be inserted in any empty space that can accommodate them.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.2 Sequential File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the sequential Organisation, records of the file are stored in sequence (or consecutively) by the primary key field values.</li>\n<li>In this organisation, the records can be accessed in the order of its primary key.</li>\n<li>This kind of file Organisation works well for tasks in which nearly every record of the file is required to be accessed, such as the payroll system.</li>\n<li>A sequential file can be stored on devices like magnetic tape that allow sequential access.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.3 Indexed (Indexed Sequential) File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It organises the file like a large dictionary, i.e., records are stored in order of the key, but an index is kept which also permits a type of direct access.</li>\n<li>The records are stored sequentially by primary key values and there is an index built over the primary key field.</li>\n<li>To locate a record in a sequential file, which is not indexed sequential, on average, you may read about half the number of records.</li>\n<li>Therefore, retrieval of a specific record in a sequential file is inefficient, especially if the file has a very large number of disk storage blocks.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.4 Hashed File Organisation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hashing is the most common form of purely random access to a file or database.</li>\n<li>It is also used as an optimisation technique to access columns that do not have an index.</li>\n<li>Input to a hash function is the value of the attribute or set of attributes of a record that are to be used for file organisation and the output is the block address or page address, where that record can be found.</li>\n<li>The hash function used for this file is key mod 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.5 Indexes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the terms used during the file organisation is the term index.</li>\n<li>In this section, let us define this term in more detail.</li>\n<li>Every printed book that you read, in general, has an index of keywords at the end.</li>\n<li>Notice that this index is a sorted list of keywords (index values) and page numbers (address) where the keyword can be found.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle are the same as that of indexes used at the back of the</code></div>\n<div class=\"formula-box\"><code>property that all the keys that are to the left of a node are smaller than the key value of</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we discussed the physical database design issues in which we had addressed the file Organisation and file access method. The unit also discusses different types of file organization giving their advantages and their disadvantages. An index is an important component of a database system, as one of the key requirements of DBMS is efficient access to data. This unit explains various types of indexes that may exist in database systems. Some of these are: Primary index,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-4_File_Organisation_in_DBMS.pdf')\">\n          📄 Read Original IGNOU PDF (27 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

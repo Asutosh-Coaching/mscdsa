@@ -1,0 +1,137 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_10",
+  "unit_num": "Unit 10",
+  "title": "Maps, Hash Tables and Skip Lists",
+  "filename": "Unit-10_Maps,_Hash_Tables_and_Skip_Lists.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-10_Maps,_Hash_Tables_and_Skip_Lists.pdf",
+  "total_pages": 37,
+  "word_count": 7229,
+  "est_read_time_minutes": 40,
+  "objectives": [
+    "value pairs,",
+    "case O(1) operations, while",
+    "Black trees guarantee O(log n) worst"
+  ],
+  "summary": "This unit explored the fundamental concepts of maps, dictionaries, and advanced data structures that enable efficient key-value storage and retrieval. The progression from simple list-based implementations to sophisticated probabilistic structures demonstrates the evolution of data structure design in computer Maps and Dictionaries: We established the foundation with the map abstract data type, which stores unique key-value pairs and provides",
+  "flashcards": [
+    {
+      "question": "average- case operations c) Hash tables use less memory d) Hash tables handle collisions better Question",
+      "answer": "average performance, while sorted maps maintain ordering at the cost of O",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "average-case operations c) Hash tables use less memory d) Hash tables handle collisions better  Answer: b) Hash tables provide O(",
+      "answer": "average performance, while sorted maps maintain ordering at the cost of O",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "average-case operations  Explanation: Hash tables achieve constant-time average performance for basic operations, while BSTs require O(log n) for balanced trees or O(n) for unbalanced trees.  Question",
+      "answer": "average performance, while sorted maps maintain ordering at the cost of O",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "0 mean multiple elements per bucket on average, but the structure remains operational with longer chain searches.  Question",
+      "answer": "average performance, while sorted maps maintain ordering at the cost of O",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "75 d) When insertion occurs  Answer: b) When balance factor of any node exceeds ±",
+      "answer": "In Maps, Hash Tables and Skip Lists, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "5) to create express lanes that enable logarithmic search time. Section B: Short Answer Questions  Question",
+      "answer": "In Maps, Hash Tables and Skip Lists, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "What is Maps And Dictionaries, and how is it characterized?",
+      "answer": "DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Maps, Hash Tables and Skip L\"]\n  M1[\"10.2 Maps and Dictionaries,\"]\n  Root --> M1\n  M2[\"10.3 Hash Tables,\"]\n  Root --> M2\n  M3[\"10.4 Sorted Maps,\"]\n  Root --> M3\n  M4[\"10.5 Skip Lists, Sets,\"]\n  Root --> M4\n  M5[\"10.6 Multisets, and Multimaps.\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Maps And Dictionaries,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hash Tables,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The hash function distributes keys uniformly across the array to minimize collisions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sorted Maps,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">SORTED MAP FUNDAMENTALS A sorted map maintains key-value pairs in sorted order by key, enabling additional operations like range queries and ordered iteration.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Skip Lists, Sets,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">SKIP LIST FUNDAMENTALS A skip list is a probabilistic data structure that provides O(log n) expected time for search, insertion, and deletion operations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multisets, And Multimaps.</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">MULTISET IMPLEMENTATION A multiset (or bag) allows duplicate elements and keeps track of element frequencies.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Maps and Dictionaries,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.</li>\n<li>Maps provide efficient access to values based on their associated keys.</li>\n<li>Map Structure Visualization: Map: { key₁ → value₁ key₂ → value₂ key₃ → value₃ ...</li>\n<li>O(n) time complexity.\"\"\" for k, v in self._data: if k == key: 31 Linked List return v raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Hash Tables,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The hash function distributes keys uniformly across the array to minimize collisions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4 Sorted Maps,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>SORTED MAP FUNDAMENTALS A sorted map maintains key-value pairs in sorted order by key, enabling additional operations like range queries and ordered iteration.</li>\n<li>Sorted maps are typically implemented using balanced binary search trees.</li>\n<li>O(h) time.\"\"\" node = self._subtree_search(self._root, key) if node is not None: return node.value raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5 Skip Lists, Sets,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>SKIP LIST FUNDAMENTALS A skip list is a probabilistic data structure that provides O(log n) expected time for search, insertion, and deletion operations.</li>\n<li>It uses multiple levels of linked lists with express lanes for faster traversal.</li>\n<li>O(log n) expected time.\"\"\" _, current = self._search_path(key) if current is not None and current.key == key: return current.value raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.</li>\n<li>O(log n) expected time.\"\"\" update, current = self._search_path(key) if current is None or current.key != key: raise KeyError(f\"Key '{key}' not found\") value = current.value # Update forward pointers for i in range(self.leve</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.6 Multisets, and Multimaps.</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>MULTISET IMPLEMENTATION A multiset (or bag) allows duplicate elements and keeps track of element frequencies.</li>\n<li>O(1) expected time.\"\"\" return self._counts.get(element) if self._counts.contains(element) else 0 def contains(self, element): \"\"\"Check if element exists in multiset.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles (uniform distribution, determinism,</code></div>\n<div class=\"formula-box\"><code>property where each node's</code></div>\n<div class=\"formula-box\"><code>\"\"\"Insert or update key-value pair. O(n) time complexity.\"\"\"</code></div>\n<div class=\"formula-box\"><code>\"\"\"Retrieve value for key. O(n) time complexity.\"\"\"</code></div>\n<div class=\"formula-box\"><code>\"\"\"Remove key-value pair. O(n) time complexity.\"\"\"</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit explored the fundamental concepts of maps, dictionaries, and advanced data structures that enable efficient key-value storage and retrieval. The progression from simple list-based implementations to sophisticated probabilistic structures demonstrates the evolution of data structure design in computer Maps and Dictionaries: We established the foundation with the map abstract data type, which stores unique key-value pairs and provides</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-10_Maps,_Hash_Tables_and_Skip_Lists.pdf')\">\n          📄 Read Original IGNOU PDF (37 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 10 Maps, Hash Tables and Skip L\"]\n  M1[\"10.2 Maps and Dictionaries,\"]\n  Root --> M1\n  M2[\"10.3 Hash Tables,\"]\n  Root --> M2\n  M3[\"10.4 Sorted Maps,\"]\n  Root --> M3\n  M4[\"10.5 Skip Lists, Sets,\"]\n  Root --> M4\n  M5[\"10.6 Multisets, and Multimaps.\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Maps And Dictionaries,",
+      "definition": "DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Hash Tables,",
+      "definition": "The hash function distributes keys uniformly across the array to minimize collisions.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Sorted Maps,",
+      "definition": "SORTED MAP FUNDAMENTALS A sorted map maintains key-value pairs in sorted order by key, enabling additional operations like range queries and ordered iteration.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Skip Lists, Sets,",
+      "definition": "SKIP LIST FUNDAMENTALS A skip list is a probabilistic data structure that provides O(log n) expected time for search, insertion, and deletion operations.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Multisets, And Multimaps.",
+      "definition": "MULTISET IMPLEMENTATION A multiset (or bag) allows duplicate elements and keeps track of element frequencies.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "10.2",
+      "topic": "Maps and Dictionaries,",
+      "points": [
+        "DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.",
+        "Maps provide efficient access to values based on their associated keys.",
+        "Map Structure Visualization: Map: { key₁ → value₁ key₂ → value₂ key₃ → value₃ ...",
+        "O(n) time complexity.\"\"\" for k, v in self._data: if k == key: 31 Linked List return v raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair."
+      ]
+    },
+    {
+      "section_num": "10.3",
+      "topic": "Hash Tables,",
+      "points": [
+        "The hash function distributes keys uniformly across the array to minimize collisions."
+      ]
+    },
+    {
+      "section_num": "10.4",
+      "topic": "Sorted Maps,",
+      "points": [
+        "SORTED MAP FUNDAMENTALS A sorted map maintains key-value pairs in sorted order by key, enabling additional operations like range queries and ordered iteration.",
+        "Sorted maps are typically implemented using balanced binary search trees.",
+        "O(h) time.\"\"\" node = self._subtree_search(self._root, key) if node is not None: return node.value raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair."
+      ]
+    },
+    {
+      "section_num": "10.5",
+      "topic": "Skip Lists, Sets,",
+      "points": [
+        "SKIP LIST FUNDAMENTALS A skip list is a probabilistic data structure that provides O(log n) expected time for search, insertion, and deletion operations.",
+        "It uses multiple levels of linked lists with express lanes for faster traversal.",
+        "O(log n) expected time.\"\"\" _, current = self._search_path(key) if current is not None and current.key == key: return current.value raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.",
+        "O(log n) expected time.\"\"\" update, current = self._search_path(key) if current is None or current.key != key: raise KeyError(f\"Key '{key}' not found\") value = current.value # Update forward pointers for i in range(self.leve"
+      ]
+    },
+    {
+      "section_num": "10.6",
+      "topic": "Multisets, and Multimaps.",
+      "points": [
+        "MULTISET IMPLEMENTATION A multiset (or bag) allows duplicate elements and keeps track of element frequencies.",
+        "O(1) expected time.\"\"\" return self._counts.get(element) if self._counts.contains(element) else 0 def contains(self, element): \"\"\"Check if element exists in multiset."
+      ]
+    }
+  ],
+  "formulas": [
+    "principles (uniform distribution, determinism,",
+    "property where each node's",
+    "\"\"\"Insert or update key-value pair. O(n) time complexity.\"\"\"",
+    "\"\"\"Retrieve value for key. O(n) time complexity.\"\"\"",
+    "\"\"\"Remove key-value pair. O(n) time complexity.\"\"\""
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Maps, Hash Tables and Skip L\"]\n  M1[\"10.2 Maps and Dictionaries,\"]\n  Root --> M1\n  M2[\"10.3 Hash Tables,\"]\n  Root --> M2\n  M3[\"10.4 Sorted Maps,\"]\n  Root --> M3\n  M4[\"10.5 Skip Lists, Sets,\"]\n  Root --> M4\n  M5[\"10.6 Multisets, and Multimaps.\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Maps And Dictionaries,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hash Tables,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The hash function distributes keys uniformly across the array to minimize collisions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sorted Maps,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">SORTED MAP FUNDAMENTALS A sorted map maintains key-value pairs in sorted order by key, enabling additional operations like range queries and ordered iteration.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Skip Lists, Sets,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">SKIP LIST FUNDAMENTALS A skip list is a probabilistic data structure that provides O(log n) expected time for search, insertion, and deletion operations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multisets, And Multimaps.</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">MULTISET IMPLEMENTATION A multiset (or bag) allows duplicate elements and keeps track of element frequencies.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Maps and Dictionaries,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>DEFINITION AND ABSTRACT DATA TYPE A map (also called dictionary or associative array) is an abstract data type that stores key-value pairs, where each key is unique and maps to exactly one value.</li>\n<li>Maps provide efficient access to values based on their associated keys.</li>\n<li>Map Structure Visualization: Map: { key₁ → value₁ key₂ → value₂ key₃ → value₃ ...</li>\n<li>O(n) time complexity.\"\"\" for k, v in self._data: if k == key: 31 Linked List return v raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Hash Tables,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The hash function distributes keys uniformly across the array to minimize collisions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4 Sorted Maps,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>SORTED MAP FUNDAMENTALS A sorted map maintains key-value pairs in sorted order by key, enabling additional operations like range queries and ordered iteration.</li>\n<li>Sorted maps are typically implemented using balanced binary search trees.</li>\n<li>O(h) time.\"\"\" node = self._subtree_search(self._root, key) if node is not None: return node.value raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5 Skip Lists, Sets,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>SKIP LIST FUNDAMENTALS A skip list is a probabilistic data structure that provides O(log n) expected time for search, insertion, and deletion operations.</li>\n<li>It uses multiple levels of linked lists with express lanes for faster traversal.</li>\n<li>O(log n) expected time.\"\"\" _, current = self._search_path(key) if current is not None and current.key == key: return current.value raise KeyError(f\"Key '{key}' not found\") def remove(self, key): \"\"\"Remove key-value pair.</li>\n<li>O(log n) expected time.\"\"\" update, current = self._search_path(key) if current is None or current.key != key: raise KeyError(f\"Key '{key}' not found\") value = current.value # Update forward pointers for i in range(self.leve</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.6 Multisets, and Multimaps.</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>MULTISET IMPLEMENTATION A multiset (or bag) allows duplicate elements and keeps track of element frequencies.</li>\n<li>O(1) expected time.\"\"\" return self._counts.get(element) if self._counts.contains(element) else 0 def contains(self, element): \"\"\"Check if element exists in multiset.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles (uniform distribution, determinism,</code></div>\n<div class=\"formula-box\"><code>property where each node's</code></div>\n<div class=\"formula-box\"><code>\"\"\"Insert or update key-value pair. O(n) time complexity.\"\"\"</code></div>\n<div class=\"formula-box\"><code>\"\"\"Retrieve value for key. O(n) time complexity.\"\"\"</code></div>\n<div class=\"formula-box\"><code>\"\"\"Remove key-value pair. O(n) time complexity.\"\"\"</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit explored the fundamental concepts of maps, dictionaries, and advanced data structures that enable efficient key-value storage and retrieval. The progression from simple list-based implementations to sophisticated probabilistic structures demonstrates the evolution of data structure design in computer Maps and Dictionaries: We established the foundation with the map abstract data type, which stores unique key-value pairs and provides</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-10_Maps,_Hash_Tables_and_Skip_Lists.pdf')\">\n          📄 Read Original IGNOU PDF (37 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

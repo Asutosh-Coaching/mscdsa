@@ -1,0 +1,135 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_13",
+  "unit_num": "Unit 13",
+  "title": "Indefinite Integration",
+  "filename": "Unit-13_Indefinite_Integration.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-13_Indefinite_Integration.pdf",
+  "total_pages": 29,
+  "word_count": 10696,
+  "est_read_time_minutes": 59,
+  "objectives": [
+    "13.2   Meaning and Terminology used.",
+    "13.3   Integration of some Particular Functions",
+    "13.4   Integration by Substitution",
+    "13.5   Integration using Partial Fractions",
+    "13.6   Integration by Parts"
+  ],
+  "summary": "This unit introduced integration as the inverse process of differentiation, defining it both as a method for finding antiderivatives and as a tool for calculating the area under a curve. It establishes essential terminology, such as the integrand, the constant of integration (C), and the distinction between indefinite and definite integrals, while providing a library of standard integrals for particular functions, such as polynomial, trigonometric, and exponential",
+  "flashcards": [
+    {
+      "question": "Evaluate the following integrals: (i)        + dx x",
+      "answer": "Dividing numerator by denominator, we can write (1) as I      − + + = dx",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Evaluate the following integral: (i)        + + dx a x a e a x x x (ii) dx ) a a",
+      "answer": "2     + + +   = = = = − = = − − − − − −    ",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Evaluate the following integrals: (i)  + + + dx )",
+      "answer": "In Indefinite Integration, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Evaluate the following integrals:",
+      "answer": "Dividing numerator by denominator, we can write (1) as I      − + + = dx",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Evaluate the following integrals: (i)  −dx e x x",
+      "answer": "2     + + +   = = = = − = = − − − − − −    ",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "(i)        + dx x",
+      "answer": "Dividing numerator by denominator, we can write (1) as I      − + + = dx",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Meaning And Terminology Used. and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Indefinite Integration\"]\n  M1[\"13.2 Meaning and Terminology used.\"]\n  Root --> M1\n  M2[\"13.3 Integration of some Particular \"]\n  Root --> M2\n  M3[\"13.4 Integration by Substitution\"]\n  Root --> M3\n  M4[\"13.5 Integration using Partial Fract\"]\n  Root --> M4\n  M5[\"13.6 Integration by Parts\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Meaning And Terminology Used.</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integration By Substitution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In section 13.3, we have taken into consideration the integrations for which a formula can directly be used.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integration Using Partial Fractions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The integrand may be in the form that it can be integrated only after resolving it into partial fractions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integration By Parts</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If u and v are any two functions of a single variable x such that first derivates of u and v w.r.t.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Meaning and Terminology used.</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in indefinite integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Integration of some Particular Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>8 Indefinite Integration Note: Constant of integration c is added everywhere, so in future we will not write ‘where c is constant of integration’.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Integration by Substitution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In section 13.3, we have taken into consideration the integrations for which a formula can directly be used.</li>\n<li>But sometimes integrand cannot be directly integrated using standard formula.</li>\n<li>In order to convert it into a form for which standard formula can be applied, we substitute some function in place of some other function and this technique of obtaining the integration is known as integration by substitution method.</li>\n<li>Using appropriate formula we can obtain the integral of given integrand in terms of t.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Integration using Partial Fractions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The integrand may be in the form that it can be integrated only after resolving it into partial fractions.</li>\n<li>Here, in this section, we are going to deal with integration of such functions: First of all we discuss the process of resolving such functions into partial fractions: Important steps for resolving into partial fractions are: 1.</li>\n<li>Check degree of numerator, if it is less than that of denominator, go to step 2 and if it is greater than or equal to that of denominator, then first divide the numerator by the denominator and then go to step 2.</li>\n<li>We may have one of the following main types of functions which we will dealt as discussed below: 20 Indefinite Integration Type 1 Denominator involve all linear factors with exponent as unity.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.6 Integration by Parts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If u and v are any two functions of a single variable x such that first derivates of u and v w.r.t.</li>\n<li>of equation (4) is known as integration by parts of L.H.S.</li>\n<li>of equation (4), where I, and II just indicate our choice between the product of two functions taking as first and second functions.</li>\n<li>Remark 3: (i) In case of integration by parts, choice of first and second function is important as explained in part (i) of Example 6 given below.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule in reverse to evaluate the integral of a product of two functions.</code></div>\n<div class=\"formula-box\"><code>Step III Put x = 1, 2, 3 every where (in the given expression) but not in the</code></div>\n<div class=\"formula-box\"><code>, [By putting x = 1 in L.H.S. of (1)]</code></div>\n<div class=\"formula-box\"><code>, [By putting x = 2 in L.H.S. of (1)]</code></div>\n<div class=\"formula-box\"><code>[By putting x = 3 in L.H.S. of (1)]</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduced integration as the inverse process of differentiation, defining it both as a method for finding antiderivatives and as a tool for calculating the area under a curve. It establishes essential terminology, such as the integrand, the constant of integration (C), and the distinction between indefinite and definite integrals, while providing a library of standard integrals for particular functions, such as polynomial, trigonometric, and exponential</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-13_Indefinite_Integration.pdf')\">\n          📄 Read Original IGNOU PDF (29 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 13 Indefinite Integration\"]\n  M1[\"13.2 Meaning and Terminology used.\"]\n  Root --> M1\n  M2[\"13.3 Integration of some Particular \"]\n  Root --> M2\n  M3[\"13.4 Integration by Substitution\"]\n  Root --> M3\n  M4[\"13.5 Integration using Partial Fract\"]\n  Root --> M4\n  M5[\"13.6 Integration by Parts\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Meaning And Terminology Used.",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Integration By Substitution",
+      "definition": "In section 13.3, we have taken into consideration the integrations for which a formula can directly be used.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Integration Using Partial Fractions",
+      "definition": "The integrand may be in the form that it can be integrated only after resolving it into partial fractions.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Integration By Parts",
+      "definition": "If u and v are any two functions of a single variable x such that first derivates of u and v w.r.t.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "13.2",
+      "topic": "Meaning and Terminology used.",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in indefinite integration."
+      ]
+    },
+    {
+      "section_num": "13.3",
+      "topic": "Integration of some Particular Functions",
+      "points": [
+        "8 Indefinite Integration Note: Constant of integration c is added everywhere, so in future we will not write ‘where c is constant of integration’."
+      ]
+    },
+    {
+      "section_num": "13.4",
+      "topic": "Integration by Substitution",
+      "points": [
+        "In section 13.3, we have taken into consideration the integrations for which a formula can directly be used.",
+        "But sometimes integrand cannot be directly integrated using standard formula.",
+        "In order to convert it into a form for which standard formula can be applied, we substitute some function in place of some other function and this technique of obtaining the integration is known as integration by substitution method.",
+        "Using appropriate formula we can obtain the integral of given integrand in terms of t."
+      ]
+    },
+    {
+      "section_num": "13.5",
+      "topic": "Integration using Partial Fractions",
+      "points": [
+        "The integrand may be in the form that it can be integrated only after resolving it into partial fractions.",
+        "Here, in this section, we are going to deal with integration of such functions: First of all we discuss the process of resolving such functions into partial fractions: Important steps for resolving into partial fractions are: 1.",
+        "Check degree of numerator, if it is less than that of denominator, go to step 2 and if it is greater than or equal to that of denominator, then first divide the numerator by the denominator and then go to step 2.",
+        "We may have one of the following main types of functions which we will dealt as discussed below: 20 Indefinite Integration Type 1 Denominator involve all linear factors with exponent as unity."
+      ]
+    },
+    {
+      "section_num": "13.6",
+      "topic": "Integration by Parts",
+      "points": [
+        "If u and v are any two functions of a single variable x such that first derivates of u and v w.r.t.",
+        "of equation (4) is known as integration by parts of L.H.S.",
+        "of equation (4), where I, and II just indicate our choice between the product of two functions taking as first and second functions.",
+        "Remark 3: (i) In case of integration by parts, choice of first and second function is important as explained in part (i) of Example 6 given below."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule in reverse to evaluate the integral of a product of two functions.",
+    "Step III Put x = 1, 2, 3 every where (in the given expression) but not in the",
+    ", [By putting x = 1 in L.H.S. of (1)]",
+    ", [By putting x = 2 in L.H.S. of (1)]",
+    "[By putting x = 3 in L.H.S. of (1)]"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Indefinite Integration\"]\n  M1[\"13.2 Meaning and Terminology used.\"]\n  Root --> M1\n  M2[\"13.3 Integration of some Particular \"]\n  Root --> M2\n  M3[\"13.4 Integration by Substitution\"]\n  Root --> M3\n  M4[\"13.5 Integration using Partial Fract\"]\n  Root --> M4\n  M5[\"13.6 Integration by Parts\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Meaning And Terminology Used.</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integration By Substitution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In section 13.3, we have taken into consideration the integrations for which a formula can directly be used.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integration Using Partial Fractions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The integrand may be in the form that it can be integrated only after resolving it into partial fractions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integration By Parts</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If u and v are any two functions of a single variable x such that first derivates of u and v w.r.t.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Meaning and Terminology used.</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of meaning and terminology used..</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in indefinite integration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Integration of some Particular Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>8 Indefinite Integration Note: Constant of integration c is added everywhere, so in future we will not write ‘where c is constant of integration’.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Integration by Substitution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In section 13.3, we have taken into consideration the integrations for which a formula can directly be used.</li>\n<li>But sometimes integrand cannot be directly integrated using standard formula.</li>\n<li>In order to convert it into a form for which standard formula can be applied, we substitute some function in place of some other function and this technique of obtaining the integration is known as integration by substitution method.</li>\n<li>Using appropriate formula we can obtain the integral of given integrand in terms of t.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Integration using Partial Fractions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The integrand may be in the form that it can be integrated only after resolving it into partial fractions.</li>\n<li>Here, in this section, we are going to deal with integration of such functions: First of all we discuss the process of resolving such functions into partial fractions: Important steps for resolving into partial fractions are: 1.</li>\n<li>Check degree of numerator, if it is less than that of denominator, go to step 2 and if it is greater than or equal to that of denominator, then first divide the numerator by the denominator and then go to step 2.</li>\n<li>We may have one of the following main types of functions which we will dealt as discussed below: 20 Indefinite Integration Type 1 Denominator involve all linear factors with exponent as unity.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.6 Integration by Parts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If u and v are any two functions of a single variable x such that first derivates of u and v w.r.t.</li>\n<li>of equation (4) is known as integration by parts of L.H.S.</li>\n<li>of equation (4), where I, and II just indicate our choice between the product of two functions taking as first and second functions.</li>\n<li>Remark 3: (i) In case of integration by parts, choice of first and second function is important as explained in part (i) of Example 6 given below.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule in reverse to evaluate the integral of a product of two functions.</code></div>\n<div class=\"formula-box\"><code>Step III Put x = 1, 2, 3 every where (in the given expression) but not in the</code></div>\n<div class=\"formula-box\"><code>, [By putting x = 1 in L.H.S. of (1)]</code></div>\n<div class=\"formula-box\"><code>, [By putting x = 2 in L.H.S. of (1)]</code></div>\n<div class=\"formula-box\"><code>[By putting x = 3 in L.H.S. of (1)]</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduced integration as the inverse process of differentiation, defining it both as a method for finding antiderivatives and as a tool for calculating the area under a curve. It establishes essential terminology, such as the integrand, the constant of integration (C), and the distinction between indefinite and definite integrals, while providing a library of standard integrals for particular functions, such as polynomial, trigonometric, and exponential</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-13_Indefinite_Integration.pdf')\">\n          📄 Read Original IGNOU PDF (29 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

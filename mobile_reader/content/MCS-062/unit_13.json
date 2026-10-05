@@ -1,0 +1,146 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_13",
+  "unit_num": "Unit 13",
+  "title": "Tools for Data Science - An Introduction",
+  "filename": "Unit-13_Tools_for_Data_Science_-_An_Introduction.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-13_Tools_for_Data_Science_-_An_Introduction.pdf",
+  "total_pages": 81,
+  "word_count": 15871,
+  "est_read_time_minutes": 88,
+  "objectives": [],
+  "summary": "mary Card in Tableau is a feature used to tion about the data in a worksheet or ab ically shows key measures such as minimu m), and count of values, helping users quick tion and range of the data. Summary cards ca to specific dimensions and measures, makin",
+  "flashcards": [
+    {
+      "question": "What are the key components of the Tableau workspace? ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "How do you connect to a Microsoft Excel file in Tableau? ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "In Tools for Data Science - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is the purpose of the 'Show Me' panel in Tableau? ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "In Tools for Data Science - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "How can you calculate the median in Tableau? ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "In Tools for Data Science - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "How are outliers identified using Tableau? ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "In Tools for Data Science - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is Power Query used for? ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "Key Principle: Power BI is a Microsoft applic valuable insights.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Tools For Data Science and how is it characterized?",
+      "answer": "Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Tools for Data Science - An \"]\n  M1[\"13.3 Tools for Data Science\"]\n  Root --> M1\n  M2[\"13.4 Datasets and File Formats\"]\n  Root --> M2\n  M3[\"13.5 Basics of Tableau\"]\n  Root --> M3\n  M4[\"13.6 Basics of Power BI\"]\n  Root --> M4\n  M5[\"13.7 Basics of Python\"]\n  Root --> M5\n  M6[\"13.8 Basics of R-STUDIO\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Tools For Data Science</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Datasets And File Formats</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A dataset is an organized set of data used for analysis and building models.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basics Of Tableau</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basics Of Power Bi</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Power BI is a Microsoft applic valuable insights.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basics Of Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It’s lightweight and good for beginners and small projects.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Tools for Data Science</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.</li>\n<li>It’s perfect for turning data into clear stories and sharing insights with people who may not have a technical background.</li>\n<li>· Power BI: Created by Microsoft, Power BI is a strong business intelligence tool that works smoothly with Excel and allows users to build real-time dashboards—making it ideal for enterprise-level data analysis and reporting.</li>\n<li>· Python (Anaconda/Google Colab): A general-purpose programming language with extensive libraries like Pandas, NumPy, and Matplotlib 447 Tools for Data Science an Introduction for data manipulation, analysis, and visualization.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Datasets and File Formats</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A dataset is an organized set of data used for analysis and building models.</li>\n<li>Format Description / Strengths / Use Cases CSV (Comma- Separated Values) A simple, plain-text format where each row is a new line and columns separated by commas.</li>\n<li>Very widely supported by spreadsheets (Excel, LibreOffice), data-analysis tools, databases.</li>\n<li>Great for tabular data, easy to read and edit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Basics of Tableau</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in tools for data science - an introduction.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.6 Basics of Power BI</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Power BI is a Microsoft applic valuable insights.</li>\n<li>It enables users to create interac simplify data analysis and unde research, or any data-driven field, P trends, and make informed decision The process involves three main ste 1.</li>\n<li>Visualization –Build interact showcase your data efficiently.</li>\n<li>Whether you're in business, Power BI helps you identify patterns, track ns more efficiently.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.7 Basics of Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It’s lightweight and good for beginners and small projects.</li>\n<li>· Jupyter Notebook: A web-based tool with a cell-based layout supporting live code, text (Markdown), and visualizations.</li>\n<li>Ideal for data science, research, and documentation.</li>\n<li>· Google Colab: A cloud-hosted version of Jupyter with added benefits like free GPU/TPU access, Google Drive integration, and real-time collaboration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.8 Basics of R-STUDIO</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>………………………………………………… ………………………………………………… w do you calculate mean and median in pandas?</li>\n<li>………………………………………………… ………………………………………………… w can you identify outliers using visualization?</li>\n<li>………………………………………………… ………………………………………………… R-STUDIO is a powerful, user-friendly IDE for R d environment for most R users.</li>\n<li>It offers tasks, and quite easy access to docume ed version control (Git).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>PropertyInfo—all included within a single Excel file.</code></div>\n<div class=\"formula-box\"><code>PropertyInfo—all included within a single Excel file.</code></div>\n<div class=\"formula-box\"><code>PropertyInfo sheet, and you'll notice th</code></div>\n<div class=\"formula-box\"><code>PropertyInfo using PropertyID as the co</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">mary Card in Tableau is a feature used to tion about the data in a worksheet or ab ically shows key measures such as minimu m), and count of values, helping users quick tion and range of the data. Summary cards ca to specific dimensions and measures, makin</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-13_Tools_for_Data_Science_-_An_Introduction.pdf')\">\n          📄 Read Original IGNOU PDF (81 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 13 Tools for Data Science - An \"]\n  M1[\"13.3 Tools for Data Science\"]\n  Root --> M1\n  M2[\"13.4 Datasets and File Formats\"]\n  Root --> M2\n  M3[\"13.5 Basics of Tableau\"]\n  Root --> M3\n  M4[\"13.6 Basics of Power BI\"]\n  Root --> M4\n  M5[\"13.7 Basics of Python\"]\n  Root --> M5\n  M6[\"13.8 Basics of R-STUDIO\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Tools For Data Science",
+      "definition": "Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Datasets And File Formats",
+      "definition": "A dataset is an organized set of data used for analysis and building models.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Basics Of Tableau",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Basics Of Power Bi",
+      "definition": "Power BI is a Microsoft applic valuable insights.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Basics Of Python",
+      "definition": "It’s lightweight and good for beginners and small projects.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "13.3",
+      "topic": "Tools for Data Science",
+      "points": [
+        "Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.",
+        "It’s perfect for turning data into clear stories and sharing insights with people who may not have a technical background.",
+        "· Power BI: Created by Microsoft, Power BI is a strong business intelligence tool that works smoothly with Excel and allows users to build real-time dashboards—making it ideal for enterprise-level data analysis and reporting.",
+        "· Python (Anaconda/Google Colab): A general-purpose programming language with extensive libraries like Pandas, NumPy, and Matplotlib 447 Tools for Data Science an Introduction for data manipulation, analysis, and visualization."
+      ]
+    },
+    {
+      "section_num": "13.4",
+      "topic": "Datasets and File Formats",
+      "points": [
+        "A dataset is an organized set of data used for analysis and building models.",
+        "Format Description / Strengths / Use Cases CSV (Comma- Separated Values) A simple, plain-text format where each row is a new line and columns separated by commas.",
+        "Very widely supported by spreadsheets (Excel, LibreOffice), data-analysis tools, databases.",
+        "Great for tabular data, easy to read and edit."
+      ]
+    },
+    {
+      "section_num": "13.5",
+      "topic": "Basics of Tableau",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in tools for data science - an introduction."
+      ]
+    },
+    {
+      "section_num": "13.6",
+      "topic": "Basics of Power BI",
+      "points": [
+        "Power BI is a Microsoft applic valuable insights.",
+        "It enables users to create interac simplify data analysis and unde research, or any data-driven field, P trends, and make informed decision The process involves three main ste 1.",
+        "Visualization –Build interact showcase your data efficiently.",
+        "Whether you're in business, Power BI helps you identify patterns, track ns more efficiently."
+      ]
+    },
+    {
+      "section_num": "13.7",
+      "topic": "Basics of Python",
+      "points": [
+        "It’s lightweight and good for beginners and small projects.",
+        "· Jupyter Notebook: A web-based tool with a cell-based layout supporting live code, text (Markdown), and visualizations.",
+        "Ideal for data science, research, and documentation.",
+        "· Google Colab: A cloud-hosted version of Jupyter with added benefits like free GPU/TPU access, Google Drive integration, and real-time collaboration."
+      ]
+    },
+    {
+      "section_num": "13.8",
+      "topic": "Basics of R-STUDIO",
+      "points": [
+        "………………………………………………… ………………………………………………… w do you calculate mean and median in pandas?",
+        "………………………………………………… ………………………………………………… w can you identify outliers using visualization?",
+        "………………………………………………… ………………………………………………… R-STUDIO is a powerful, user-friendly IDE for R d environment for most R users.",
+        "It offers tasks, and quite easy access to docume ed version control (Git)."
+      ]
+    }
+  ],
+  "formulas": [
+    "PropertyInfo—all included within a single Excel file.",
+    "PropertyInfo—all included within a single Excel file.",
+    "PropertyInfo sheet, and you'll notice th",
+    "PropertyInfo using PropertyID as the co"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Tools for Data Science - An \"]\n  M1[\"13.3 Tools for Data Science\"]\n  Root --> M1\n  M2[\"13.4 Datasets and File Formats\"]\n  Root --> M2\n  M3[\"13.5 Basics of Tableau\"]\n  Root --> M3\n  M4[\"13.6 Basics of Power BI\"]\n  Root --> M4\n  M5[\"13.7 Basics of Python\"]\n  Root --> M5\n  M6[\"13.8 Basics of R-STUDIO\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Tools For Data Science</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Datasets And File Formats</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A dataset is an organized set of data used for analysis and building models.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basics Of Tableau</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basics Of Power Bi</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Power BI is a Microsoft applic valuable insights.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basics Of Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It’s lightweight and good for beginners and small projects.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Tools for Data Science</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Apart from MS Excel, the following tools for Data science assist in collecting, cleaning, analyzing, and visualizing data across various domains.</li>\n<li>It’s perfect for turning data into clear stories and sharing insights with people who may not have a technical background.</li>\n<li>· Power BI: Created by Microsoft, Power BI is a strong business intelligence tool that works smoothly with Excel and allows users to build real-time dashboards—making it ideal for enterprise-level data analysis and reporting.</li>\n<li>· Python (Anaconda/Google Colab): A general-purpose programming language with extensive libraries like Pandas, NumPy, and Matplotlib 447 Tools for Data Science an Introduction for data manipulation, analysis, and visualization.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Datasets and File Formats</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A dataset is an organized set of data used for analysis and building models.</li>\n<li>Format Description / Strengths / Use Cases CSV (Comma- Separated Values) A simple, plain-text format where each row is a new line and columns separated by commas.</li>\n<li>Very widely supported by spreadsheets (Excel, LibreOffice), data-analysis tools, databases.</li>\n<li>Great for tabular data, easy to read and edit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Basics of Tableau</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of basics of tableau.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in tools for data science - an introduction.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.6 Basics of Power BI</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Power BI is a Microsoft applic valuable insights.</li>\n<li>It enables users to create interac simplify data analysis and unde research, or any data-driven field, P trends, and make informed decision The process involves three main ste 1.</li>\n<li>Visualization –Build interact showcase your data efficiently.</li>\n<li>Whether you're in business, Power BI helps you identify patterns, track ns more efficiently.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.7 Basics of Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It’s lightweight and good for beginners and small projects.</li>\n<li>· Jupyter Notebook: A web-based tool with a cell-based layout supporting live code, text (Markdown), and visualizations.</li>\n<li>Ideal for data science, research, and documentation.</li>\n<li>· Google Colab: A cloud-hosted version of Jupyter with added benefits like free GPU/TPU access, Google Drive integration, and real-time collaboration.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.8 Basics of R-STUDIO</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>………………………………………………… ………………………………………………… w do you calculate mean and median in pandas?</li>\n<li>………………………………………………… ………………………………………………… w can you identify outliers using visualization?</li>\n<li>………………………………………………… ………………………………………………… R-STUDIO is a powerful, user-friendly IDE for R d environment for most R users.</li>\n<li>It offers tasks, and quite easy access to docume ed version control (Git).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>PropertyInfo—all included within a single Excel file.</code></div>\n<div class=\"formula-box\"><code>PropertyInfo—all included within a single Excel file.</code></div>\n<div class=\"formula-box\"><code>PropertyInfo sheet, and you'll notice th</code></div>\n<div class=\"formula-box\"><code>PropertyInfo using PropertyID as the co</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">mary Card in Tableau is a feature used to tion about the data in a worksheet or ab ically shows key measures such as minimu m), and count of values, helping users quick tion and range of the data. Summary cards ca to specific dimensions and measures, makin</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-13_Tools_for_Data_Science_-_An_Introduction.pdf')\">\n          📄 Read Original IGNOU PDF (81 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

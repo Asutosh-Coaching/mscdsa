@@ -1,0 +1,169 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Data Science Fundamentals",
+  "filename": "Unit-1_Data_Science_Fundamentals.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-1_Data_Science_Fundamentals.pdf",
+  "total_pages": 49,
+  "word_count": 16495,
+  "est_read_time_minutes": 92,
+  "objectives": [],
+  "summary": "statistics and graphical representations. It serves as a foundation for understanding the underlying structure of the data, identifying important variables, and guiding subsequent modeling efforts. EDA typically involves techniques such as distribution analysis, correlation assessment, and outlier detection, often using tools like histograms, box plots, scatter plots, and heatmaps. By providing insights into the quality and nature of the data, EDA",
+  "flashcards": [
+    {
+      "question": "What are key functional blocks of data science. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Data Science Fundamentals, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What types of data are involved in critical care datasets and how are they categorized?",
+      "answer": "In Data Science Fundamentals, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "How can data science support optimal mechanical ventilation and weaning in critical care?",
+      "answer": "Key Principle: To comprehend this definition let us take an example.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What are the main tools and techniques used by data scientists for analyzing healthcare data in the given case?",
+      "answer": "In Data Science Fundamentals, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Why is collaboration with domain experts important in a data science project related to critical care?",
+      "answer": "Key Principle: To comprehend this definition let us take an example.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is the purpose of the first step in the data science process, and what does it involve?",
+      "answer": "Key Principle: To comprehend this definition let us take an example.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Understanding Data Science and how is it characterized?",
+      "answer": "To comprehend this definition let us take an example.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Data Science Fundamentals\"]\n  M1[\"1.2 Understanding Data Science\"]\n  Root --> M1\n  M2[\"1.3 Data Science Process\"]\n  Root --> M2\n  M2_1[\"1.3.1 Goal Identification\"]\n  M2 --> M2_1\n  M2_2[\"1.3.2 Data Collection\"]\n  M2 --> M2_2\n  M2_3[\"1.3.3 Data Preparation\"]\n  M2 --> M2_3\n  M3[\"1.4 Data Science Vs Data Analytics\"]\n  Root --> M3\n  M4[\"1.5 Types of Data Analysis\"]\n  Root --> M4\n  M4_1[\"1.5.1 Descriptive Analysis\"]\n  M4 --> M4_1\n  M4_2[\"1.5.2 Diagnostic Analysis\"]\n  M4 --> M4_2\n  M4_3[\"1.5.3 Predictive Analysis\"]\n  M4 --> M4_3\n  M5[\"1.6 Philosophy of Exploratory Data A\"]\n  Root --> M5\n  M6[\"1.7 Role of Data Scientist and Data \"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Understanding Data Science</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To comprehend this definition let us take an example.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Science Process</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data science is a systematic and iterative process.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Goal Identification</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This is the first stage in any data science project.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Collection</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The next stage in your data science project is to gather the relevant data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Preparation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This is the step where we prepare the retrieved data for exploratory analysis and modelling.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Understanding Data Science</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To comprehend this definition let us take an example.</li>\n<li>Imagine a critical 11 Data Science Fundamentals care unit in a multi-specialty hospital where patients are normally put on mechanical ventilation.</li>\n<li>Mechanical ventilation while lifesaving, also incurs risk of Ventilator-Induced Lung Injury (VILI).</li>\n<li>Optimal mechanical ventilation and weaning strategy is required.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Data Science Process</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data science is a systematic and iterative process.</li>\n<li>When new insights or issues arise, data scientists frequently iterate back to previous steps.</li>\n<li>Goal Identification This is the first stage in any data science project.</li>\n<li>It aims to understand the business problem and determine the objectives of the investigation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.1 Goal Identification</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This is the first stage in any data science project.</li>\n<li>It aims to understand the business problem and determine the objectives of the investigation.</li>\n<li>This demands a grasp of the project's ‘what’ and ‘why’.</li>\n<li>Upon completion of this phase, you can generate a project charter.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.2 Data Collection</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The next stage in your data science project is to gather the relevant data.</li>\n<li>Data scientists typically encounter two types of situations: - Adequate data exists inside the organisation.</li>\n<li>- No data is available within the organisation, or the existing data is insufficient.</li>\n<li>In the first scenario, data is often accessible in the organization's formal repositories, including databases, data marts, data warehouses, and data lakes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.3 Data Preparation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This is the step where we prepare the retrieved data for exploratory analysis and modelling.</li>\n<li>It involves cleaning the data by removing errors in your data, combining data retrieved from different sources, and converting the data into a certain shape for all further analysis.</li>\n<li>Data cleaning ensures that errors, inconsistencies, and outliers are removed.</li>\n<li>Data integration combines datasets from different sources, while data transformation prepares the data for modelling by reshaping variables or creating new features.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.4 Exploratory Data Analysis (EDA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It serves as a foundation for understanding the underlying structure of the data, identifying important variables, and guiding subsequent modeling efforts.</li>\n<li>EDA typically involves techniques such as distribution analysis, correlation assessment, and outlier detection, often using tools like histograms, box plots, scatter plots, and heatmaps.</li>\n<li>By providing insights into the quality and nature of the data, EDA helps data scientists make informed decisions about data preprocessing, feature selection, and modeling strategies.</li>\n<li>Its role is not only diagnostic but also strategic, as it enables a deeper Once you have all the data you need and have put it in the right format, the next step is to understand it and pick the right modelling methods.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.5 Model Development</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Predictions, object classification, or system comprehension, as sought in the first stage of data science, are the main aim of this stage.</li>\n<li>While the exploratory data analysis step focuses on identifying general trends in the data, this step is more focused on the goal of the overall data science project.</li>\n<li>In this step, machine learning or deep learning models are normally built to make predictions or classifications based on the data.</li>\n<li>This step heavily relies on statistics, data mining, and machine learning.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.6 Model Deployment and Presentation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Once the analysis is completed and insights have been derived, the findings are communicated to stakeholders through reports, dashboards, or presentations.</li>\n<li>This stage plays a vital role in decision-making and often leads to the deployment of data science models into real-world environments.</li>\n<li>Deployment involves integrating these models with existing operational systems, such as enterprise software, web applications, or databases.</li>\n<li>However, this integration is not always straightforward and may present a range of technical and organizational challenges.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws and prepare the data for exploratory analysis.</code></div>\n<div class=\"formula-box\"><code>principles with Python, Joel Grus, 2nd</code></div>\n<div class=\"formula-box\"><code>x=300, then the normalized value will be:</code></div>\n<div class=\"formula-box\"><code>Mean of X= 8.12</code></div>\n<div class=\"formula-box\"><code>Standard Deviation of X= 12.2</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">statistics and graphical representations. It serves as a foundation for understanding the underlying structure of the data, identifying important variables, and guiding subsequent modeling efforts. EDA typically involves techniques such as distribution analysis, correlation assessment, and outlier detection, often using tools like histograms, box plots, scatter plots, and heatmaps. By providing insights into the quality and nature of the data, EDA</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-1_Data_Science_Fundamentals.pdf')\">\n          📄 Read Original IGNOU PDF (49 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Data Science Fundamentals\"]\n  M1[\"1.2 Understanding Data Science\"]\n  Root --> M1\n  M2[\"1.3 Data Science Process\"]\n  Root --> M2\n  M2_1[\"1.3.1 Goal Identification\"]\n  M2 --> M2_1\n  M2_2[\"1.3.2 Data Collection\"]\n  M2 --> M2_2\n  M2_3[\"1.3.3 Data Preparation\"]\n  M2 --> M2_3\n  M3[\"1.4 Data Science Vs Data Analytics\"]\n  Root --> M3\n  M4[\"1.5 Types of Data Analysis\"]\n  Root --> M4\n  M4_1[\"1.5.1 Descriptive Analysis\"]\n  M4 --> M4_1\n  M4_2[\"1.5.2 Diagnostic Analysis\"]\n  M4 --> M4_2\n  M4_3[\"1.5.3 Predictive Analysis\"]\n  M4 --> M4_3\n  M5[\"1.6 Philosophy of Exploratory Data A\"]\n  Root --> M5\n  M6[\"1.7 Role of Data Scientist and Data \"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Understanding Data Science",
+      "definition": "To comprehend this definition let us take an example.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Science Process",
+      "definition": "Data science is a systematic and iterative process.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Goal Identification",
+      "definition": "This is the first stage in any data science project.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Collection",
+      "definition": "The next stage in your data science project is to gather the relevant data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Preparation",
+      "definition": "This is the step where we prepare the retrieved data for exploratory analysis and modelling.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.2",
+      "topic": "Understanding Data Science",
+      "points": [
+        "To comprehend this definition let us take an example.",
+        "Imagine a critical 11 Data Science Fundamentals care unit in a multi-specialty hospital where patients are normally put on mechanical ventilation.",
+        "Mechanical ventilation while lifesaving, also incurs risk of Ventilator-Induced Lung Injury (VILI).",
+        "Optimal mechanical ventilation and weaning strategy is required."
+      ]
+    },
+    {
+      "section_num": "1.3",
+      "topic": "Data Science Process",
+      "points": [
+        "Data science is a systematic and iterative process.",
+        "When new insights or issues arise, data scientists frequently iterate back to previous steps.",
+        "Goal Identification This is the first stage in any data science project.",
+        "It aims to understand the business problem and determine the objectives of the investigation."
+      ]
+    },
+    {
+      "section_num": "1.3.1",
+      "topic": "Goal Identification",
+      "points": [
+        "This is the first stage in any data science project.",
+        "It aims to understand the business problem and determine the objectives of the investigation.",
+        "This demands a grasp of the project's ‘what’ and ‘why’.",
+        "Upon completion of this phase, you can generate a project charter."
+      ]
+    },
+    {
+      "section_num": "1.3.2",
+      "topic": "Data Collection",
+      "points": [
+        "The next stage in your data science project is to gather the relevant data.",
+        "Data scientists typically encounter two types of situations: - Adequate data exists inside the organisation.",
+        "- No data is available within the organisation, or the existing data is insufficient.",
+        "In the first scenario, data is often accessible in the organization's formal repositories, including databases, data marts, data warehouses, and data lakes."
+      ]
+    },
+    {
+      "section_num": "1.3.3",
+      "topic": "Data Preparation",
+      "points": [
+        "This is the step where we prepare the retrieved data for exploratory analysis and modelling.",
+        "It involves cleaning the data by removing errors in your data, combining data retrieved from different sources, and converting the data into a certain shape for all further analysis.",
+        "Data cleaning ensures that errors, inconsistencies, and outliers are removed.",
+        "Data integration combines datasets from different sources, while data transformation prepares the data for modelling by reshaping variables or creating new features."
+      ]
+    },
+    {
+      "section_num": "1.3.4",
+      "topic": "Exploratory Data Analysis (EDA)",
+      "points": [
+        "It serves as a foundation for understanding the underlying structure of the data, identifying important variables, and guiding subsequent modeling efforts.",
+        "EDA typically involves techniques such as distribution analysis, correlation assessment, and outlier detection, often using tools like histograms, box plots, scatter plots, and heatmaps.",
+        "By providing insights into the quality and nature of the data, EDA helps data scientists make informed decisions about data preprocessing, feature selection, and modeling strategies.",
+        "Its role is not only diagnostic but also strategic, as it enables a deeper Once you have all the data you need and have put it in the right format, the next step is to understand it and pick the right modelling methods."
+      ]
+    },
+    {
+      "section_num": "1.3.5",
+      "topic": "Model Development",
+      "points": [
+        "Predictions, object classification, or system comprehension, as sought in the first stage of data science, are the main aim of this stage.",
+        "While the exploratory data analysis step focuses on identifying general trends in the data, this step is more focused on the goal of the overall data science project.",
+        "In this step, machine learning or deep learning models are normally built to make predictions or classifications based on the data.",
+        "This step heavily relies on statistics, data mining, and machine learning."
+      ]
+    },
+    {
+      "section_num": "1.3.6",
+      "topic": "Model Deployment and Presentation",
+      "points": [
+        "Once the analysis is completed and insights have been derived, the findings are communicated to stakeholders through reports, dashboards, or presentations.",
+        "This stage plays a vital role in decision-making and often leads to the deployment of data science models into real-world environments.",
+        "Deployment involves integrating these models with existing operational systems, such as enterprise software, web applications, or databases.",
+        "However, this integration is not always straightforward and may present a range of technical and organizational challenges."
+      ]
+    }
+  ],
+  "formulas": [
+    "laws and prepare the data for exploratory analysis.",
+    "principles with Python, Joel Grus, 2nd",
+    "x=300, then the normalized value will be:",
+    "Mean of X= 8.12",
+    "Standard Deviation of X= 12.2"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Data Science Fundamentals\"]\n  M1[\"1.2 Understanding Data Science\"]\n  Root --> M1\n  M2[\"1.3 Data Science Process\"]\n  Root --> M2\n  M2_1[\"1.3.1 Goal Identification\"]\n  M2 --> M2_1\n  M2_2[\"1.3.2 Data Collection\"]\n  M2 --> M2_2\n  M2_3[\"1.3.3 Data Preparation\"]\n  M2 --> M2_3\n  M3[\"1.4 Data Science Vs Data Analytics\"]\n  Root --> M3\n  M4[\"1.5 Types of Data Analysis\"]\n  Root --> M4\n  M4_1[\"1.5.1 Descriptive Analysis\"]\n  M4 --> M4_1\n  M4_2[\"1.5.2 Diagnostic Analysis\"]\n  M4 --> M4_2\n  M4_3[\"1.5.3 Predictive Analysis\"]\n  M4 --> M4_3\n  M5[\"1.6 Philosophy of Exploratory Data A\"]\n  Root --> M5\n  M6[\"1.7 Role of Data Scientist and Data \"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Understanding Data Science</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To comprehend this definition let us take an example.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Science Process</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data science is a systematic and iterative process.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Goal Identification</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This is the first stage in any data science project.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Collection</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The next stage in your data science project is to gather the relevant data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Preparation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This is the step where we prepare the retrieved data for exploratory analysis and modelling.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Understanding Data Science</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To comprehend this definition let us take an example.</li>\n<li>Imagine a critical 11 Data Science Fundamentals care unit in a multi-specialty hospital where patients are normally put on mechanical ventilation.</li>\n<li>Mechanical ventilation while lifesaving, also incurs risk of Ventilator-Induced Lung Injury (VILI).</li>\n<li>Optimal mechanical ventilation and weaning strategy is required.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Data Science Process</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data science is a systematic and iterative process.</li>\n<li>When new insights or issues arise, data scientists frequently iterate back to previous steps.</li>\n<li>Goal Identification This is the first stage in any data science project.</li>\n<li>It aims to understand the business problem and determine the objectives of the investigation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.1 Goal Identification</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This is the first stage in any data science project.</li>\n<li>It aims to understand the business problem and determine the objectives of the investigation.</li>\n<li>This demands a grasp of the project's ‘what’ and ‘why’.</li>\n<li>Upon completion of this phase, you can generate a project charter.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.2 Data Collection</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The next stage in your data science project is to gather the relevant data.</li>\n<li>Data scientists typically encounter two types of situations: - Adequate data exists inside the organisation.</li>\n<li>- No data is available within the organisation, or the existing data is insufficient.</li>\n<li>In the first scenario, data is often accessible in the organization's formal repositories, including databases, data marts, data warehouses, and data lakes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.3 Data Preparation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This is the step where we prepare the retrieved data for exploratory analysis and modelling.</li>\n<li>It involves cleaning the data by removing errors in your data, combining data retrieved from different sources, and converting the data into a certain shape for all further analysis.</li>\n<li>Data cleaning ensures that errors, inconsistencies, and outliers are removed.</li>\n<li>Data integration combines datasets from different sources, while data transformation prepares the data for modelling by reshaping variables or creating new features.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.4 Exploratory Data Analysis (EDA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It serves as a foundation for understanding the underlying structure of the data, identifying important variables, and guiding subsequent modeling efforts.</li>\n<li>EDA typically involves techniques such as distribution analysis, correlation assessment, and outlier detection, often using tools like histograms, box plots, scatter plots, and heatmaps.</li>\n<li>By providing insights into the quality and nature of the data, EDA helps data scientists make informed decisions about data preprocessing, feature selection, and modeling strategies.</li>\n<li>Its role is not only diagnostic but also strategic, as it enables a deeper Once you have all the data you need and have put it in the right format, the next step is to understand it and pick the right modelling methods.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.5 Model Development</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Predictions, object classification, or system comprehension, as sought in the first stage of data science, are the main aim of this stage.</li>\n<li>While the exploratory data analysis step focuses on identifying general trends in the data, this step is more focused on the goal of the overall data science project.</li>\n<li>In this step, machine learning or deep learning models are normally built to make predictions or classifications based on the data.</li>\n<li>This step heavily relies on statistics, data mining, and machine learning.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.6 Model Deployment and Presentation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Once the analysis is completed and insights have been derived, the findings are communicated to stakeholders through reports, dashboards, or presentations.</li>\n<li>This stage plays a vital role in decision-making and often leads to the deployment of data science models into real-world environments.</li>\n<li>Deployment involves integrating these models with existing operational systems, such as enterprise software, web applications, or databases.</li>\n<li>However, this integration is not always straightforward and may present a range of technical and organizational challenges.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws and prepare the data for exploratory analysis.</code></div>\n<div class=\"formula-box\"><code>principles with Python, Joel Grus, 2nd</code></div>\n<div class=\"formula-box\"><code>x=300, then the normalized value will be:</code></div>\n<div class=\"formula-box\"><code>Mean of X= 8.12</code></div>\n<div class=\"formula-box\"><code>Standard Deviation of X= 12.2</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">statistics and graphical representations. It serves as a foundation for understanding the underlying structure of the data, identifying important variables, and guiding subsequent modeling efforts. EDA typically involves techniques such as distribution analysis, correlation assessment, and outlier detection, often using tools like histograms, box plots, scatter plots, and heatmaps. By providing insights into the quality and nature of the data, EDA</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-1_Data_Science_Fundamentals.pdf')\">\n          📄 Read Original IGNOU PDF (49 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

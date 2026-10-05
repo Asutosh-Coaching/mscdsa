@@ -1,0 +1,154 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_09",
+  "unit_num": "Unit 9",
+  "title": "Estimating Parameters",
+  "filename": "Unit-9_Estimating_Parameters.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-9_Estimating_Parameters.pdf",
+  "total_pages": 32,
+  "word_count": 12618,
+  "est_read_time_minutes": 70,
+  "objectives": [
+    "Basic Terminology",
+    "Characteristics of Estimators",
+    "Point Estimation",
+    "Method of Maximum Likelihood",
+    "Interval Estimation"
+  ],
+  "summary": "In this unit, we have covered the following points: 1. The parameter space and the basic characteristics of an estimator. 2. Unbiasedness, consistency, efficiency and sufficiency of an estimator 4. The method of maximum likelihood and its properties. 6. The method of obtaining confidence interval for population mean of a normal population when variance is known and unknown",
+  "flashcards": [
+    {
+      "question": "Write the four properties of a good estimator.",
+      "answer": "Let X1, X2, . . . , Xnbe a random sample of size n taken from B(n, p) whose pmf is given by   n x n x x P X x C p q ; x",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Find which technique of estimation (point estimation or interval estimation) is used in each case given below: (i) An investigator estimates average income Rs.",
+      "answer": "Here, we are given that E = margin of error =",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "5 lakh per annum of the people living in a particular geographical area, on the basis of a sample of",
+      "answer": "Let X1, X2, . . . , Xnbe a random sample of size n taken from B(n, p) whose pmf is given by   n x n x x P X x C p q ; x",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "3) List any two methods of point estimation.",
+      "answer": "Key Principle: There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.",
+      "tag": "Exercise Q25"
+    },
+    {
+      "question": "What is the density function of the binomial population? What is the maximum likelihood estimator for p in a binomial population?",
+      "answer": "Let X1, X2, . . . , Xnbe a random sample of size n taken from B(n, p) whose pmf is given by   n x n x x P X x C p q ; x",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "List any five properties of maximum likelihood estimators.",
+      "answer": "Here, we are given that E = margin of error =",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is And The Interval and how is it characterized?",
+      "answer": "And The Interval two- sided confidence interval.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 9 Estimating Parameters\"]\n  M1[\"9.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"9.3 Characteristics of Estimators\"]\n  Root --> M2\n  M3[\"9.4 Point Estimation\"]\n  Root --> M3\n  M4[\"9.5 Method of Maximum Likelihood\"]\n  Root --> M4\n  M5[\"9.6 Interval Estimation\"]\n  Root --> M5\n  M6[\"9.7 Confidence Interval for Populati\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">And The Interval</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">And The Interval two- sided confidence interval.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Terminology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before discussing the properties of a good estimator, we discuss basic definitions of some important terms.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Characteristics Of Estimators</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It is to be noted that a large number of estimators can be proposed for an unknown parameter.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Point Estimation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Method Of Maximum Likelihood</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">For describing the method of maximum likelihood, first, we have to define likelihood function.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 Basic Terminology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before discussing the properties of a good estimator, we discuss basic definitions of some important terms.</li>\n<li>These terms are very useful in understanding the fundamentals of the theory of estimation discussed in this block.</li>\n<li>Discrete and Continuous Distributions In the earlier Units, we have discussed standard discrete and continuous distributions as binomial, Poisson, normal, etc.</li>\n<li>We know that the populations can be described with the help of distributions, therefore, standard discrete and continuous distributions are used in statistical inference.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.3 Characteristics of Estimators</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is to be noted that a large number of estimators can be proposed for an unknown parameter.</li>\n<li>For example, if we want to estimate the average income of the persons living in a city then the sample mean, sample median, sample mode, etc.</li>\n<li>In other words, the estimator whose sampling distribution concentrates as closely as possible near the true value of the parameter may be regarded as the good estimator.</li>\n<li>(ii) When the true value of the parameter is unknown− An estimator may be called good if the data give good reason to believe that the estimate will be close to the true value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.4 Point Estimation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.</li>\n<li>This need is fulfilled by the technique of estimation.</li>\n<li>So the technique of finding an estimator to produce an estimate of the unknown parameter is called estimation.</li>\n<li>The technique of estimating the unknown parameter with a single value is known as point estimation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.5 Method of Maximum Likelihood</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For describing the method of maximum likelihood, first, we have to define likelihood function.</li>\n<li>f x , =    From the theoretical point of view, one of the most important methods of point estimation is method of maximum likelihood because it generally gives very good estimators as judged from various criteria.</li>\n<li>Gauss but later on, it was used as a general method of estimation by Prof.</li>\n<li>The principle of maximum likelihood estimation is to find /estimate /choose the value of the unknown parameter which would most likely generate the observed data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.6 Interval Estimation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When we find two values with the help of sample observations and constitute an interval such that it contains the true value of the parameter with a certain probability, then it is known as an interval estimate of the parameter.</li>\n<li>This technique of estimation is known as “Interval Estimation”.</li>\n<li>In this section, we will define: • Confidence Interval and Confidence Coefficient • One-sided Confidence Intervals in the following two sub-sections.</li>\n<li>Confidence Interval and Confidence Coefficient Let 1 2 n X ,X , ...,X be a random sample of size n taken from a population whose probability density (mass) function is f(x, ).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.7 Confidence Interval for Population Mean</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are so many problems in real life where it becomes necessary to obtain the confidence interval of the population mean.</li>\n<li>For describing confidence interval for population mean, let 1 2 n X ,X , ...,X be a random sample of size n taken from a normal population having mean  and variance σ2.</li>\n<li>We can determine confidence interval for population mean  under the following two cases: 1.</li>\n<li>When population variance σ2 is known 265 Estimation Parameters 2.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of an estimator is called sufficiency.</code></div>\n<div class=\"formula-box\"><code>principle of maximum likelihood estimation</code></div>\n<div class=\"formula-box\"><code>principle of maximum likelihood (ML) consists in finding an</code></div>\n<div class=\"formula-box\"><code>property of ML estimator.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: 1. The parameter space and the basic characteristics of an estimator. 2. Unbiasedness, consistency, efficiency and sufficiency of an estimator 4. The method of maximum likelihood and its properties. 6. The method of obtaining confidence interval for population mean of a normal population when variance is known and unknown</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-9_Estimating_Parameters.pdf')\">\n          📄 Read Original IGNOU PDF (32 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 9 Estimating Parameters\"]\n  M1[\"9.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"9.3 Characteristics of Estimators\"]\n  Root --> M2\n  M3[\"9.4 Point Estimation\"]\n  Root --> M3\n  M4[\"9.5 Method of Maximum Likelihood\"]\n  Root --> M4\n  M5[\"9.6 Interval Estimation\"]\n  Root --> M5\n  M6[\"9.7 Confidence Interval for Populati\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "And The Interval",
+      "definition": "And The Interval two- sided confidence interval.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Basic Terminology",
+      "definition": "Before discussing the properties of a good estimator, we discuss basic definitions of some important terms.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Characteristics Of Estimators",
+      "definition": "It is to be noted that a large number of estimators can be proposed for an unknown parameter.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Point Estimation",
+      "definition": "There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Method Of Maximum Likelihood",
+      "definition": "For describing the method of maximum likelihood, first, we have to define likelihood function.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "9.2",
+      "topic": "Basic Terminology",
+      "points": [
+        "Before discussing the properties of a good estimator, we discuss basic definitions of some important terms.",
+        "These terms are very useful in understanding the fundamentals of the theory of estimation discussed in this block.",
+        "Discrete and Continuous Distributions In the earlier Units, we have discussed standard discrete and continuous distributions as binomial, Poisson, normal, etc.",
+        "We know that the populations can be described with the help of distributions, therefore, standard discrete and continuous distributions are used in statistical inference."
+      ]
+    },
+    {
+      "section_num": "9.3",
+      "topic": "Characteristics of Estimators",
+      "points": [
+        "It is to be noted that a large number of estimators can be proposed for an unknown parameter.",
+        "For example, if we want to estimate the average income of the persons living in a city then the sample mean, sample median, sample mode, etc.",
+        "In other words, the estimator whose sampling distribution concentrates as closely as possible near the true value of the parameter may be regarded as the good estimator.",
+        "(ii) When the true value of the parameter is unknown− An estimator may be called good if the data give good reason to believe that the estimate will be close to the true value."
+      ]
+    },
+    {
+      "section_num": "9.4",
+      "topic": "Point Estimation",
+      "points": [
+        "There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.",
+        "This need is fulfilled by the technique of estimation.",
+        "So the technique of finding an estimator to produce an estimate of the unknown parameter is called estimation.",
+        "The technique of estimating the unknown parameter with a single value is known as point estimation."
+      ]
+    },
+    {
+      "section_num": "9.5",
+      "topic": "Method of Maximum Likelihood",
+      "points": [
+        "For describing the method of maximum likelihood, first, we have to define likelihood function.",
+        "f x , =    From the theoretical point of view, one of the most important methods of point estimation is method of maximum likelihood because it generally gives very good estimators as judged from various criteria.",
+        "Gauss but later on, it was used as a general method of estimation by Prof.",
+        "The principle of maximum likelihood estimation is to find /estimate /choose the value of the unknown parameter which would most likely generate the observed data."
+      ]
+    },
+    {
+      "section_num": "9.6",
+      "topic": "Interval Estimation",
+      "points": [
+        "When we find two values with the help of sample observations and constitute an interval such that it contains the true value of the parameter with a certain probability, then it is known as an interval estimate of the parameter.",
+        "This technique of estimation is known as “Interval Estimation”.",
+        "In this section, we will define: • Confidence Interval and Confidence Coefficient • One-sided Confidence Intervals in the following two sub-sections.",
+        "Confidence Interval and Confidence Coefficient Let 1 2 n X ,X , ...,X be a random sample of size n taken from a population whose probability density (mass) function is f(x, )."
+      ]
+    },
+    {
+      "section_num": "9.7",
+      "topic": "Confidence Interval for Population Mean",
+      "points": [
+        "There are so many problems in real life where it becomes necessary to obtain the confidence interval of the population mean.",
+        "For describing confidence interval for population mean, let 1 2 n X ,X , ...,X be a random sample of size n taken from a normal population having mean  and variance σ2.",
+        "We can determine confidence interval for population mean  under the following two cases: 1.",
+        "When population variance σ2 is known 265 Estimation Parameters 2."
+      ]
+    }
+  ],
+  "formulas": [
+    "property of an estimator is called sufficiency.",
+    "principle of maximum likelihood estimation",
+    "principle of maximum likelihood (ML) consists in finding an",
+    "property of ML estimator."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 9 Estimating Parameters\"]\n  M1[\"9.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"9.3 Characteristics of Estimators\"]\n  Root --> M2\n  M3[\"9.4 Point Estimation\"]\n  Root --> M3\n  M4[\"9.5 Method of Maximum Likelihood\"]\n  Root --> M4\n  M5[\"9.6 Interval Estimation\"]\n  Root --> M5\n  M6[\"9.7 Confidence Interval for Populati\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">And The Interval</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">And The Interval two- sided confidence interval.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Terminology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before discussing the properties of a good estimator, we discuss basic definitions of some important terms.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Characteristics Of Estimators</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It is to be noted that a large number of estimators can be proposed for an unknown parameter.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Point Estimation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Method Of Maximum Likelihood</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">For describing the method of maximum likelihood, first, we have to define likelihood function.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 Basic Terminology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before discussing the properties of a good estimator, we discuss basic definitions of some important terms.</li>\n<li>These terms are very useful in understanding the fundamentals of the theory of estimation discussed in this block.</li>\n<li>Discrete and Continuous Distributions In the earlier Units, we have discussed standard discrete and continuous distributions as binomial, Poisson, normal, etc.</li>\n<li>We know that the populations can be described with the help of distributions, therefore, standard discrete and continuous distributions are used in statistical inference.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.3 Characteristics of Estimators</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is to be noted that a large number of estimators can be proposed for an unknown parameter.</li>\n<li>For example, if we want to estimate the average income of the persons living in a city then the sample mean, sample median, sample mode, etc.</li>\n<li>In other words, the estimator whose sampling distribution concentrates as closely as possible near the true value of the parameter may be regarded as the good estimator.</li>\n<li>(ii) When the true value of the parameter is unknown− An estimator may be called good if the data give good reason to believe that the estimate will be close to the true value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.4 Point Estimation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are so many situations in our day to day life where we need to estimate some unknown parameter(s) of the population on the basis of the sample observations.</li>\n<li>This need is fulfilled by the technique of estimation.</li>\n<li>So the technique of finding an estimator to produce an estimate of the unknown parameter is called estimation.</li>\n<li>The technique of estimating the unknown parameter with a single value is known as point estimation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.5 Method of Maximum Likelihood</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For describing the method of maximum likelihood, first, we have to define likelihood function.</li>\n<li>f x , =    From the theoretical point of view, one of the most important methods of point estimation is method of maximum likelihood because it generally gives very good estimators as judged from various criteria.</li>\n<li>Gauss but later on, it was used as a general method of estimation by Prof.</li>\n<li>The principle of maximum likelihood estimation is to find /estimate /choose the value of the unknown parameter which would most likely generate the observed data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.6 Interval Estimation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When we find two values with the help of sample observations and constitute an interval such that it contains the true value of the parameter with a certain probability, then it is known as an interval estimate of the parameter.</li>\n<li>This technique of estimation is known as “Interval Estimation”.</li>\n<li>In this section, we will define: • Confidence Interval and Confidence Coefficient • One-sided Confidence Intervals in the following two sub-sections.</li>\n<li>Confidence Interval and Confidence Coefficient Let 1 2 n X ,X , ...,X be a random sample of size n taken from a population whose probability density (mass) function is f(x, ).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.7 Confidence Interval for Population Mean</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are so many problems in real life where it becomes necessary to obtain the confidence interval of the population mean.</li>\n<li>For describing confidence interval for population mean, let 1 2 n X ,X , ...,X be a random sample of size n taken from a normal population having mean  and variance σ2.</li>\n<li>We can determine confidence interval for population mean  under the following two cases: 1.</li>\n<li>When population variance σ2 is known 265 Estimation Parameters 2.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of an estimator is called sufficiency.</code></div>\n<div class=\"formula-box\"><code>principle of maximum likelihood estimation</code></div>\n<div class=\"formula-box\"><code>principle of maximum likelihood (ML) consists in finding an</code></div>\n<div class=\"formula-box\"><code>property of ML estimator.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: 1. The parameter space and the basic characteristics of an estimator. 2. Unbiasedness, consistency, efficiency and sufficiency of an estimator 4. The method of maximum likelihood and its properties. 6. The method of obtaining confidence interval for population mean of a normal population when variance is known and unknown</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-9_Estimating_Parameters.pdf')\">\n          📄 Read Original IGNOU PDF (32 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

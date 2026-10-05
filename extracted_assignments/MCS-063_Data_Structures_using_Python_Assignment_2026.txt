@@ -1,0 +1,110 @@
+=== PAGE 1 ===
+1  
+ 
+MASTER OF SCIENCE 
+DATA SCIENCE AND ANALYTICS 
+ 
+(MSCDSA) 
+ 
+ 
+ 
+ 
+ 
+ 
+ASSIGNMENTS 
+ 
+(January – 2026 & July – 2026) 
+ 
+ 
+ 
+ 
+ 
+MCS-061, MCS-062, MCS-063, MCS-207, MCSL-064,  
+MCSL-065 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SCHOOL OF COMPUTER AND INFORMATION SCIENCES 
+INDIRA GANDHI NATIONAL OPEN UNIVERSITY 
+MAIDAN GARHI, NEW DELHI – 110 068 
+ 
+MSCDSA/ASSIGN/SEMESTER-I 
+
+=== PAGE 2 ===
+2  
+CONTENTS 
+ 
+ 
+ 
+Course 
+Code 
+Assignment No. Submission-Schedule Page 
+No. 
+For January- 
+June Session 
+For July- 
+December Session 
+MCS-061 MSCDSA(I)/061/Assign/26 30th April, 2026 31st October, 2026 3 
+MCS-062 MSCDSA(I)/062/Assign/26 30th April, 2026 31st October, 2026 5 
+MCS-063 MSCDSA(I)/063/Assign/26 30th April, 2026 31st October, 2026 8 
+MCS-207 MSCDSA(I)/207/Assign/26 30th April, 2026 31st October, 2026 9 
+MCSL-064 MSCDSA(I)/L-064/Assign/26 30th April, 2026 31st October, 2026 10 
+MCSL-065 MSCDSA(I)/L-065/Assign/26 30th April, 2026 31st October, 2026 12 
+ 
+ 
+ 
+ 
+ 
+Important Notes 
+ 
+ 
+1. Submit your assignments to the Coordinator of your Study Centre on or before the 
+due date. 
+2. Assignment submission before due dates is compulsory to become eligible for  
+appearing in corresponding Term End Examinations. For further details, please 
+refer to MSCDSA Programme Guide. 
+3. To become eligible for appearing the Term End Practical Examination for the lab 
+courses, it is essential to fulfill the minimum attendance requirements as well as  
+submission of assignments (on or before the due date). For f urther details, please 
+refer to the MSCDSA Programme Guide. 
+4. The viva voce is compulsory for the assignments. For any course, if a student  
+submitted the assignment and not attended the viva -voce, then the assignment is  
+treated as not successfully completed and would be marked as ZERO. 
+
+=== PAGE 3 ===
+8  
+Course Code : MCS-063 
+Course Title : Data Structures using Python  
+ Assignment Number : MSCDSA (I)/063/Assign/2026  
+Maximum Marks : 100 
+Weightage : 25% 
+Last Date of Submission : 30th April, 2026 (for January session) 
+31st October, 2026 (for July session) 
+ 
+There are four questions in this assignment, which carry80 marks. Each question carries 20 
+marks. Rest 20 marks are for viva voce. All algorithms should be written nearer to Python 
+programming language. You may use illustrations and diagrams to enhance the 
+explanations, if necessary. 
+ 
+ 
+ 
+Q1: Explain the process of exception handling in Python with an example.                 (20 Marks) 
+ 
+Q2: What is a Tree ? How does it differ from a Binary Tree ? Explain the process of converting a 
+Tree into a Binary Tree.                                        (20 Marks) 
+ 
+Q3: Explain built in sorting functions of Python with examples.                (20 Marks) 
+  
+Q4: What is a Minimum Cost Spanning Tree? Explain with an example.   (20 Marks) 
+ 
+  
+

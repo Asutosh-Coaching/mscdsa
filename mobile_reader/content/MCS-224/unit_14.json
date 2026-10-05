@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_14",
+  "unit_num": "Unit 14",
+  "title": "Association Rules",
+  "filename": "Unit-14_Association_Rules.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-14_Association_Rules.pdf",
+  "total_pages": 28,
+  "word_count": 7246,
+  "est_read_time_minutes": 40,
+  "objectives": [
+    "14.3\t What are Association Rules?",
+    "14.3.1\t \t Basic Concepts",
+    "14.3.2\t \t Association rules: Binary Representation",
+    "14.3.3\t \t Association rules Discovery",
+    "14.4\t Apriori Algorithm"
+  ],
+  "summary": "This unit presented the concepts of association rules. In this unit, we briefly described about what are these association rules and how various models help to analyse data for patterns, or co-occurrences, in a transaction database. These rules are created by finding the frequent itemsets in the database using the support and the confidence. Support indicates the frequency of occurrence of an item given the entire transaction database. High support score indicates",
+  "flashcards": [
+    {
+      "question": "Create Frequent Pattern Tree, or FP-tree by compressing the transaction database. Along with preserving the information about the itemsets, the tree structure also retains the association among the itemsets.",
+      "answer": "Key Principle: In machine learning, association rules are one of the important concepts that is widely applied in problems like market basket analysis.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Divide the transaction database into a set of conditional databases. where each associated with one frequent item or “pattern fragment,” and examines each database separately.",
+      "answer": "Key Principle: For a given set of n items, there are 2n-1 possible combination of items.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Efficient than Apriori algorithm",
+      "answer": "Key Principle: R Aggarwal and R.Srikant proposed Apriori algorithm in the year 1994.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "No candidate itemset generation",
+      "answer": "Key Principle: For a given set of n items, there are 2n-1 possible combination of items.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Only two passes over the transaction set",
+      "answer": "In Association Rules, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Transaction Id Set of Items T",
+      "answer": "Key Principle: For a given set of n items, there are 2n-1 possible combination of items.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Apriori Principle and how is it characterized?",
+      "answer": "Apriori Principle If an itemset is frequent, then all of its subsets must be frequent.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Association Rules\"]\n  M1[\"14.3 What are Association Rules?\"]\n  Root --> M1\n  M1_1[\"14.3.1 Basic Concepts\"]\n  M1 --> M1_1\n  M1_2[\"14.3.2 Association rules Binary Repr\"]\n  M1 --> M1_2\n  M1_3[\"14.3.3 Association rules Discovery\"]\n  M1 --> M1_3\n  M2[\"14.4 Apriori Algorithm\"]\n  Root --> M2\n  M2_1[\"14.4.1 Frequent Itemsets Generation\"]\n  M2 --> M2_1\n  M2_2[\"14.4.2 Case Study\"]\n  M2 --> M2_2\n  M2_3[\"14.4.3 Generating Association Rules \"]\n  M2 --> M2_3\n  M3[\"14.5 FP Tree Growth\"]\n  Root --> M3\n  M3_1[\"14.5.1 FP Tree Construction\"]\n  M3 --> M3_1\n  M4[\"14.6 Pincer Search\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Apriori Principle</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Apriori Principle If an itemset is frequent, then all of its subsets must be frequent.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Antimonotone Property</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Antimonotone Property This property states that if an itemset X does not satisfy a function, then any proper set containing X will also not satisfy the function.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Confidence</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Confidence the likelihood of obtaining item y along with an item x.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Support S</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Support S the percentage of transactions that contains the items contained in set A as well as in set B i.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Confidence C</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Confidence C the percentage of transactions containing A also containing B.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 What are Association Rules?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In machine learning, association rules are one of the important concepts that is widely applied in problems like market basket analysis.</li>\n<li>Consider a supermarket, where all the related items such as grocery items, dairy items, cosmetics, stationary items etc are kept together in same aisle.</li>\n<li>This helps the customers to find their required items timely.</li>\n<li>This further helps them to remember the items to purchase they might have forgotten or to they may like to purchase if suggested.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.1 Basic Concepts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are few terms that one should understand before understanding the algorithm.</li>\n<li>For example, 2-itemset can be {pencil, eraser} or {bread, butter} etc., 3-itemset can be {bread, butter, milk}.</li>\n<li>Support: Frequency of appearance of an item appears in all the considered transactions is called as the support of an item.</li>\n<li>Mathematically, support of an item x is defined as: c.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.2 Association rules: Binary Representation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let I = {I1, I2, I3……..In} be a set of n items and T = {T1, T2, T3……..Tt} be a set of t transactions, where each transaction Ti contains a not null set of items purchased by a customer such that Ti⊆ I .</li>\n<li>Let each item Ii in the store be represented by a binary variable, B.</li>\n<li>The variable takes up the value 0 or 1, representing the absence or presence of item at the store.</li>\n<li>One can analyze a basket in terms of binary values of the items that customer has purchased.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.3 Association rules Discovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The problem of discovery of association rules can be stated as: Given a set of transactions T, find the rules whose support and confidence are greater than equal to the minimum support and confidence threshold.</li>\n<li>Traditional approach to generate association rules is to compute the support and confidence for every possible combination of items.</li>\n<li>Butt his approach is computationally not possible as the number of combinations of items can be exponentially large.</li>\n<li>To avoid such large number of computations, basic approach should be to ignore the needless computations without computing their support and confidence scores.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4 Apriori Algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>R Aggarwal and R.Srikant proposed Apriori algorithm in the year 1994.</li>\n<li>The algorithm is used to obtain the frequent item sets for association rules.</li>\n<li>The algorithm is names so, as it needs the prior knowledge of the frequent item sets.</li>\n<li>This section discusses about the generation of frequent patterns as observed in the analysis of market basket problem.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4.1 Frequent Itemsets Generation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For a given set of n items, there are 2n-1 possible combination of items.</li>\n<li>Consider an itemset I = {A, B, C, D} with four items, there are 15 combinations of items such as {{A}, {B}, {C}, {D}, {A, B}, {A, C}, {A, D}, {B, C}, {B, D}, {C, D}, {A, B, C}, {A, B, D}, {A, C, D}, {B, C, D}, {A, B, C, D}}.</li>\n<li>To determine the frequent item sets, the algorithm first finds the candidate item sets from the lattice representation.</li>\n<li>But as explained, for a given item sets of size n, maximum number of item sets in the lattice can be 2n -1, one needs to control the search space in exponentially growing item sets and increase the efficiency of the algorithm.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4.2 Case Study</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Transaction Id List of items T1 Milk, Cookies, Bread T2 Milk, Bread, Egg, Butter T3 Milk, Cookies, Bread, Butter T4 Cookies, Bread, Butter Step 1: Arrange the items in lexicographic order.</li>\n<li>Item Support 1 Bread 4 2 Butter 3 3 Cookies 3 4 Egg 1 5 Milk 3 429 Association Rules Step 3: Prune the items whose support score is less than the minimum support threshold.</li>\n<li>Item Support 1 Bread 4 2 Butter 3 3 Cookies 3 4 Milk 3 Step 4: Generate 2-candidate itemsets from F(1) obtained in previous step and obtain support score of each itemset i.e frequency of each itemset in the original transaction set.</li>\n<li>As support score of each itemset is at least 2, hence, none of the itemset is pruned.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4.3 Generating Association Rules using Frequent Itemset</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Once the frequent itemsets F(k) are generated from set of transactions T, next step is to generate strong association rules from them.</li>\n<li>Recall that strong association rules satisfy both minimum support as well as minimum confidence.</li>\n<li>Theoretically, confidence is defined as the ratio of frequency of transactions containing items x and y to the frequency of transactions that contained item x.</li>\n<li>Follow the given rules to generate strong association rules: 1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules are one of the important concepts that is</code></div>\n<div class=\"formula-box\"><code>rules thus enable one to corelate among various products</code></div>\n<div class=\"formula-box\"><code>rules do not extract the customer’s</code></div>\n<div class=\"formula-box\"><code>rules only identify the frequent associations</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit presented the concepts of association rules. In this unit, we briefly described about what are these association rules and how various models help to analyse data for patterns, or co-occurrences, in a transaction database. These rules are created by finding the frequent itemsets in the database using the support and the confidence. Support indicates the frequency of occurrence of an item given the entire transaction database. High support score indicates</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-14_Association_Rules.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 14 Association Rules\"]\n  M1[\"14.3 What are Association Rules?\"]\n  Root --> M1\n  M1_1[\"14.3.1 Basic Concepts\"]\n  M1 --> M1_1\n  M1_2[\"14.3.2 Association rules Binary Repr\"]\n  M1 --> M1_2\n  M1_3[\"14.3.3 Association rules Discovery\"]\n  M1 --> M1_3\n  M2[\"14.4 Apriori Algorithm\"]\n  Root --> M2\n  M2_1[\"14.4.1 Frequent Itemsets Generation\"]\n  M2 --> M2_1\n  M2_2[\"14.4.2 Case Study\"]\n  M2 --> M2_2\n  M2_3[\"14.4.3 Generating Association Rules \"]\n  M2 --> M2_3\n  M3[\"14.5 FP Tree Growth\"]\n  Root --> M3\n  M3_1[\"14.5.1 FP Tree Construction\"]\n  M3 --> M3_1\n  M4[\"14.6 Pincer Search\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "Apriori Principle",
+      "definition": "Apriori Principle If an itemset is frequent, then all of its subsets must be frequent.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Antimonotone Property",
+      "definition": "Antimonotone Property This property states that if an itemset X does not satisfy a function, then any proper set containing X will also not satisfy the function.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Confidence",
+      "definition": "Confidence the likelihood of obtaining item y along with an item x.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Support S",
+      "definition": "Support S the percentage of transactions that contains the items contained in set A as well as in set B i.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Confidence C",
+      "definition": "Confidence C the percentage of transactions containing A also containing B.",
+      "category": "Core Definition"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "14.3",
+      "topic": "What are Association Rules?",
+      "points": [
+        "In machine learning, association rules are one of the important concepts that is widely applied in problems like market basket analysis.",
+        "Consider a supermarket, where all the related items such as grocery items, dairy items, cosmetics, stationary items etc are kept together in same aisle.",
+        "This helps the customers to find their required items timely.",
+        "This further helps them to remember the items to purchase they might have forgotten or to they may like to purchase if suggested."
+      ]
+    },
+    {
+      "section_num": "14.3.1",
+      "topic": "Basic Concepts",
+      "points": [
+        "There are few terms that one should understand before understanding the algorithm.",
+        "For example, 2-itemset can be {pencil, eraser} or {bread, butter} etc., 3-itemset can be {bread, butter, milk}.",
+        "Support: Frequency of appearance of an item appears in all the considered transactions is called as the support of an item.",
+        "Mathematically, support of an item x is defined as: c."
+      ]
+    },
+    {
+      "section_num": "14.3.2",
+      "topic": "Association rules: Binary Representation",
+      "points": [
+        "Let I = {I1, I2, I3……..In} be a set of n items and T = {T1, T2, T3……..Tt} be a set of t transactions, where each transaction Ti contains a not null set of items purchased by a customer such that Ti⊆ I .",
+        "Let each item Ii in the store be represented by a binary variable, B.",
+        "The variable takes up the value 0 or 1, representing the absence or presence of item at the store.",
+        "One can analyze a basket in terms of binary values of the items that customer has purchased."
+      ]
+    },
+    {
+      "section_num": "14.3.3",
+      "topic": "Association rules Discovery",
+      "points": [
+        "The problem of discovery of association rules can be stated as: Given a set of transactions T, find the rules whose support and confidence are greater than equal to the minimum support and confidence threshold.",
+        "Traditional approach to generate association rules is to compute the support and confidence for every possible combination of items.",
+        "Butt his approach is computationally not possible as the number of combinations of items can be exponentially large.",
+        "To avoid such large number of computations, basic approach should be to ignore the needless computations without computing their support and confidence scores."
+      ]
+    },
+    {
+      "section_num": "14.4",
+      "topic": "Apriori Algorithm",
+      "points": [
+        "R Aggarwal and R.Srikant proposed Apriori algorithm in the year 1994.",
+        "The algorithm is used to obtain the frequent item sets for association rules.",
+        "The algorithm is names so, as it needs the prior knowledge of the frequent item sets.",
+        "This section discusses about the generation of frequent patterns as observed in the analysis of market basket problem."
+      ]
+    },
+    {
+      "section_num": "14.4.1",
+      "topic": "Frequent Itemsets Generation",
+      "points": [
+        "For a given set of n items, there are 2n-1 possible combination of items.",
+        "Consider an itemset I = {A, B, C, D} with four items, there are 15 combinations of items such as {{A}, {B}, {C}, {D}, {A, B}, {A, C}, {A, D}, {B, C}, {B, D}, {C, D}, {A, B, C}, {A, B, D}, {A, C, D}, {B, C, D}, {A, B, C, D}}.",
+        "To determine the frequent item sets, the algorithm first finds the candidate item sets from the lattice representation.",
+        "But as explained, for a given item sets of size n, maximum number of item sets in the lattice can be 2n -1, one needs to control the search space in exponentially growing item sets and increase the efficiency of the algorithm."
+      ]
+    },
+    {
+      "section_num": "14.4.2",
+      "topic": "Case Study",
+      "points": [
+        "Transaction Id List of items T1 Milk, Cookies, Bread T2 Milk, Bread, Egg, Butter T3 Milk, Cookies, Bread, Butter T4 Cookies, Bread, Butter Step 1: Arrange the items in lexicographic order.",
+        "Item Support 1 Bread 4 2 Butter 3 3 Cookies 3 4 Egg 1 5 Milk 3 429 Association Rules Step 3: Prune the items whose support score is less than the minimum support threshold.",
+        "Item Support 1 Bread 4 2 Butter 3 3 Cookies 3 4 Milk 3 Step 4: Generate 2-candidate itemsets from F(1) obtained in previous step and obtain support score of each itemset i.e frequency of each itemset in the original transaction set.",
+        "As support score of each itemset is at least 2, hence, none of the itemset is pruned."
+      ]
+    },
+    {
+      "section_num": "14.4.3",
+      "topic": "Generating Association Rules using Frequent Itemset",
+      "points": [
+        "Once the frequent itemsets F(k) are generated from set of transactions T, next step is to generate strong association rules from them.",
+        "Recall that strong association rules satisfy both minimum support as well as minimum confidence.",
+        "Theoretically, confidence is defined as the ratio of frequency of transactions containing items x and y to the frequency of transactions that contained item x.",
+        "Follow the given rules to generate strong association rules: 1."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules are one of the important concepts that is",
+    "rules thus enable one to corelate among various products",
+    "rules do not extract the customer’s",
+    "rules only identify the frequent associations"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 14 Association Rules\"]\n  M1[\"14.3 What are Association Rules?\"]\n  Root --> M1\n  M1_1[\"14.3.1 Basic Concepts\"]\n  M1 --> M1_1\n  M1_2[\"14.3.2 Association rules Binary Repr\"]\n  M1 --> M1_2\n  M1_3[\"14.3.3 Association rules Discovery\"]\n  M1 --> M1_3\n  M2[\"14.4 Apriori Algorithm\"]\n  Root --> M2\n  M2_1[\"14.4.1 Frequent Itemsets Generation\"]\n  M2 --> M2_1\n  M2_2[\"14.4.2 Case Study\"]\n  M2 --> M2_2\n  M2_3[\"14.4.3 Generating Association Rules \"]\n  M2 --> M2_3\n  M3[\"14.5 FP Tree Growth\"]\n  Root --> M3\n  M3_1[\"14.5.1 FP Tree Construction\"]\n  M3 --> M3_1\n  M4[\"14.6 Pincer Search\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Apriori Principle</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Apriori Principle If an itemset is frequent, then all of its subsets must be frequent.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Antimonotone Property</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Antimonotone Property This property states that if an itemset X does not satisfy a function, then any proper set containing X will also not satisfy the function.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Confidence</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Confidence the likelihood of obtaining item y along with an item x.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Support S</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Support S the percentage of transactions that contains the items contained in set A as well as in set B i.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Confidence C</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Confidence C the percentage of transactions containing A also containing B.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3 What are Association Rules?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In machine learning, association rules are one of the important concepts that is widely applied in problems like market basket analysis.</li>\n<li>Consider a supermarket, where all the related items such as grocery items, dairy items, cosmetics, stationary items etc are kept together in same aisle.</li>\n<li>This helps the customers to find their required items timely.</li>\n<li>This further helps them to remember the items to purchase they might have forgotten or to they may like to purchase if suggested.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.1 Basic Concepts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are few terms that one should understand before understanding the algorithm.</li>\n<li>For example, 2-itemset can be {pencil, eraser} or {bread, butter} etc., 3-itemset can be {bread, butter, milk}.</li>\n<li>Support: Frequency of appearance of an item appears in all the considered transactions is called as the support of an item.</li>\n<li>Mathematically, support of an item x is defined as: c.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.2 Association rules: Binary Representation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let I = {I1, I2, I3……..In} be a set of n items and T = {T1, T2, T3……..Tt} be a set of t transactions, where each transaction Ti contains a not null set of items purchased by a customer such that Ti⊆ I .</li>\n<li>Let each item Ii in the store be represented by a binary variable, B.</li>\n<li>The variable takes up the value 0 or 1, representing the absence or presence of item at the store.</li>\n<li>One can analyze a basket in terms of binary values of the items that customer has purchased.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.3.3 Association rules Discovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The problem of discovery of association rules can be stated as: Given a set of transactions T, find the rules whose support and confidence are greater than equal to the minimum support and confidence threshold.</li>\n<li>Traditional approach to generate association rules is to compute the support and confidence for every possible combination of items.</li>\n<li>Butt his approach is computationally not possible as the number of combinations of items can be exponentially large.</li>\n<li>To avoid such large number of computations, basic approach should be to ignore the needless computations without computing their support and confidence scores.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4 Apriori Algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>R Aggarwal and R.Srikant proposed Apriori algorithm in the year 1994.</li>\n<li>The algorithm is used to obtain the frequent item sets for association rules.</li>\n<li>The algorithm is names so, as it needs the prior knowledge of the frequent item sets.</li>\n<li>This section discusses about the generation of frequent patterns as observed in the analysis of market basket problem.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4.1 Frequent Itemsets Generation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For a given set of n items, there are 2n-1 possible combination of items.</li>\n<li>Consider an itemset I = {A, B, C, D} with four items, there are 15 combinations of items such as {{A}, {B}, {C}, {D}, {A, B}, {A, C}, {A, D}, {B, C}, {B, D}, {C, D}, {A, B, C}, {A, B, D}, {A, C, D}, {B, C, D}, {A, B, C, D}}.</li>\n<li>To determine the frequent item sets, the algorithm first finds the candidate item sets from the lattice representation.</li>\n<li>But as explained, for a given item sets of size n, maximum number of item sets in the lattice can be 2n -1, one needs to control the search space in exponentially growing item sets and increase the efficiency of the algorithm.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4.2 Case Study</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Transaction Id List of items T1 Milk, Cookies, Bread T2 Milk, Bread, Egg, Butter T3 Milk, Cookies, Bread, Butter T4 Cookies, Bread, Butter Step 1: Arrange the items in lexicographic order.</li>\n<li>Item Support 1 Bread 4 2 Butter 3 3 Cookies 3 4 Egg 1 5 Milk 3 429 Association Rules Step 3: Prune the items whose support score is less than the minimum support threshold.</li>\n<li>Item Support 1 Bread 4 2 Butter 3 3 Cookies 3 4 Milk 3 Step 4: Generate 2-candidate itemsets from F(1) obtained in previous step and obtain support score of each itemset i.e frequency of each itemset in the original transaction set.</li>\n<li>As support score of each itemset is at least 2, hence, none of the itemset is pruned.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">14.4.3 Generating Association Rules using Frequent Itemset</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Once the frequent itemsets F(k) are generated from set of transactions T, next step is to generate strong association rules from them.</li>\n<li>Recall that strong association rules satisfy both minimum support as well as minimum confidence.</li>\n<li>Theoretically, confidence is defined as the ratio of frequency of transactions containing items x and y to the frequency of transactions that contained item x.</li>\n<li>Follow the given rules to generate strong association rules: 1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules are one of the important concepts that is</code></div>\n<div class=\"formula-box\"><code>rules thus enable one to corelate among various products</code></div>\n<div class=\"formula-box\"><code>rules do not extract the customer’s</code></div>\n<div class=\"formula-box\"><code>rules only identify the frequent associations</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit presented the concepts of association rules. In this unit, we briefly described about what are these association rules and how various models help to analyse data for patterns, or co-occurrences, in a transaction database. These rules are created by finding the frequent itemsets in the database using the support and the confidence. Support indicates the frequency of occurrence of an item given the entire transaction database. High support score indicates</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-14_Association_Rules.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,168 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_07",
+  "unit_num": "Unit 7",
+  "title": "Determinants",
+  "filename": "Unit-7_Determinants.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-7_Determinants.pdf",
+  "total_pages": 34,
+  "word_count": 9680,
+  "est_read_time_minutes": 54,
+  "objectives": [
+    "symmetric Determinants"
+  ],
+  "summary": "This unit provides an exhaustive study of determinants, beginning with the foundational definitions and the essential mechanics of calculating minors and cofactors to evaluate higher-order values. This unit provide details the structural properties that allow for the simplification of complex determinants, such as row/column interchanges, scalar multiplication, and the zero-value rule for identical rows. The unit explains advanced operations, including the",
+  "flashcards": [
+    {
+      "question": "Find x in each of the following cases: (i)",
+      "answer": "In Determinants, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Find the cofactor of each element of the following matrices: (i) [",
+      "answer": "Key Principle: It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Find minor and cofactor of the elements 𝑎12, 𝑎23, 𝑎31, 𝑎13 where 𝐴= [𝑎𝑖𝑗]",
+      "answer": "Key Principle: It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Prove the following | 𝑥 𝑦 𝑧 𝑥",
+      "answer": "In Determinants, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Prove the following | 𝑎+ 𝑏 𝑐 𝑐 𝑎 𝑏+ 𝑐 𝑎 𝑏 𝑏 𝑐+ 𝑎 | =",
+      "answer": "In Determinants, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Solve the following system of equations using Cramer’s rule: (i)",
+      "answer": "Key Principle: Thus | a h g h b f g f c | is a symmetric determinant.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Determinants A Skew Determinant and how is it characterized?",
+      "answer": "Determinants A Skew Determinant the determinant of a matrix that has specific symmetry properties.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Determinants\"]\n  M1[\"7.2 Determinants\"]\n  Root --> M1\n  M1_1[\"7.2.1 Definition and Concepts\"]\n  M1 --> M1_1\n  M1_2[\"7.2.2 Minors and Cofactors\"]\n  M1 --> M1_2\n  M2[\"7.3 Properties of Determinants\"]\n  Root --> M2\n  M3[\"7.4 Product of Two Determinants\"]\n  Root --> M3\n  M4[\"7.5 Symmetric Determinants\"]\n  Root --> M4\n  M4_1[\"7.5.1 Skew and Skew-symmetric Determ\"]\n  M4 --> M4_1\n  M5[\"7.6 Solution of Simultaneous Equatio\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Determinants A Skew Determinant</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Determinants A Skew Determinant the determinant of a matrix that has specific symmetry properties.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Determinants</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us start our discussion with definition and concepts of determinants.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition And Concepts</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Minors And Cofactors</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Properties Of Determinants</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">7.2 of this unit, you have become familiar about how to expand the determinants of orders 1, 2, 3, or of higher order.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2 Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us start our discussion with definition and concepts of determinants.</li>\n<li>Definition and Concept If two linear equations in one variable viz.</li>\n<li>a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.</li>\n<li>The expression (𝑎1𝑏2 − 𝑎2𝑏1) is called a determinant and is denoted by the symbol |𝑎1 𝑏1 𝑎2 𝑏2|.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2.1 Definition and Concepts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.</li>\n<li>The expression (𝑎1𝑏2 − 𝑎2𝑏1) is called a determinant and is denoted by the symbol |𝑎1 𝑏1 𝑎2 𝑏2|.</li>\n<li>Note that, a1, a2, b1, b2 are called the ‘elements of the determinant’.</li>\n<li>The elements in the horizontal direction form 'rows' and those in the vertical direction form 'columns'.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2.2 Minors and Cofactors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).</li>\n<li>The second-order determinant |b2 c2 b3 c3| is obtained by deleting the column and row containing a1.</li>\n<li>The determinant |b2 c2 b3 c3| is termed as ‘minor’ of the term a1 in the original matrix.</li>\n<li>Same procedure is applied to obtain minors of other term also.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Properties of Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>7.2 of this unit, you have become familiar about how to expand the determinants of orders 1, 2, 3, or of higher order.</li>\n<li>But as you have seen that it requires lot of calculations and is a time-consuming process.</li>\n<li>To avoid such calculations and to reduce the time of evaluation, we will use properties of determinants.</li>\n<li>In this section, we will discuss some properties of the determinants.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4 Product of Two Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is noteworthy that determinants can be multiplied together only if they are of the same order.</li>\n<li>As the process of interchanging the rows and columns will not affect the value of the determinant (by Property- I).</li>\n<li>Hence, we can also adopt the following procedures for multiplication of two determinants.</li>\n<li>This means you can find the determinant of the product matrix or simply multiply the individual determinant values to get the same scalar result.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5 Symmetric Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus, the reciprocal of Δ is | | 𝐴1 ∆ 𝐵1 ∆ 𝐶1 ∆ 𝐴2 ∆ 𝐵2 ∆ 𝐶2 ∆ 𝐴3 ∆ 𝐵3 ∆ 𝐶3 ∆ | | = 1 ∆3 | 𝐴1 𝐵1 𝐶1 𝐴2 𝐵2 𝐶2 𝐴3 𝐵3 𝐶3 | = 1 ∆3 .</li>\n<li>Thus | a h g h b f g f c | is a symmetric determinant.</li>\n<li>The above definition of symmetric determinant can be extended similarly to determinants of order n.</li>\n<li>Properties: (i)The square of any symmetric determinant is a symmetric determinant.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5.1 Skew and Skew-symmetric Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of skew and skew-symmetric determinants.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in determinants.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.6 Solution of Simultaneous Equation by Cramer’s Rule</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus | a h g h b f g f c | is a symmetric determinant.</li>\n<li>The above definition of symmetric determinant can be extended similarly to determinants of order n.</li>\n<li>Properties: (i)The square of any symmetric determinant is a symmetric determinant.</li>\n<li>(ii)The adjoint of symmetric determinant is symmetric.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rule for determining signs of involved terms in the expansion of 3 × 3</code></div>\n<div class=\"formula-box\"><code>rule, and as shown by the following expansion of a 3 × 3</code></div>\n<div class=\"formula-box\"><code>rule, to choose a row or column to expand a</code></div>\n<div class=\"formula-box\"><code>Property I A determinant is unchanged in value, if all the rows of the</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides an exhaustive study of determinants, beginning with the foundational definitions and the essential mechanics of calculating minors and cofactors to evaluate higher-order values. This unit provide details the structural properties that allow for the simplification of complex determinants, such as row/column interchanges, scalar multiplication, and the zero-value rule for identical rows. The unit explains advanced operations, including the</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-7_Determinants.pdf')\">\n          📄 Read Original IGNOU PDF (34 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 7 Determinants\"]\n  M1[\"7.2 Determinants\"]\n  Root --> M1\n  M1_1[\"7.2.1 Definition and Concepts\"]\n  M1 --> M1_1\n  M1_2[\"7.2.2 Minors and Cofactors\"]\n  M1 --> M1_2\n  M2[\"7.3 Properties of Determinants\"]\n  Root --> M2\n  M3[\"7.4 Product of Two Determinants\"]\n  Root --> M3\n  M4[\"7.5 Symmetric Determinants\"]\n  Root --> M4\n  M4_1[\"7.5.1 Skew and Skew-symmetric Determ\"]\n  M4 --> M4_1\n  M5[\"7.6 Solution of Simultaneous Equatio\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Determinants A Skew Determinant",
+      "definition": "Determinants A Skew Determinant the determinant of a matrix that has specific symmetry properties.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Determinants",
+      "definition": "Let us start our discussion with definition and concepts of determinants.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Definition And Concepts",
+      "definition": "a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Minors And Cofactors",
+      "definition": "It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Properties Of Determinants",
+      "definition": "7.2 of this unit, you have become familiar about how to expand the determinants of orders 1, 2, 3, or of higher order.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "7.2",
+      "topic": "Determinants",
+      "points": [
+        "Let us start our discussion with definition and concepts of determinants.",
+        "Definition and Concept If two linear equations in one variable viz.",
+        "a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.",
+        "The expression (𝑎1𝑏2 − 𝑎2𝑏1) is called a determinant and is denoted by the symbol |𝑎1 𝑏1 𝑎2 𝑏2|."
+      ]
+    },
+    {
+      "section_num": "7.2.1",
+      "topic": "Definition and Concepts",
+      "points": [
+        "a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.",
+        "The expression (𝑎1𝑏2 − 𝑎2𝑏1) is called a determinant and is denoted by the symbol |𝑎1 𝑏1 𝑎2 𝑏2|.",
+        "Note that, a1, a2, b1, b2 are called the ‘elements of the determinant’.",
+        "The elements in the horizontal direction form 'rows' and those in the vertical direction form 'columns'."
+      ]
+    },
+    {
+      "section_num": "7.2.2",
+      "topic": "Minors and Cofactors",
+      "points": [
+        "It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).",
+        "The second-order determinant |b2 c2 b3 c3| is obtained by deleting the column and row containing a1.",
+        "The determinant |b2 c2 b3 c3| is termed as ‘minor’ of the term a1 in the original matrix.",
+        "Same procedure is applied to obtain minors of other term also."
+      ]
+    },
+    {
+      "section_num": "7.3",
+      "topic": "Properties of Determinants",
+      "points": [
+        "7.2 of this unit, you have become familiar about how to expand the determinants of orders 1, 2, 3, or of higher order.",
+        "But as you have seen that it requires lot of calculations and is a time-consuming process.",
+        "To avoid such calculations and to reduce the time of evaluation, we will use properties of determinants.",
+        "In this section, we will discuss some properties of the determinants."
+      ]
+    },
+    {
+      "section_num": "7.4",
+      "topic": "Product of Two Determinants",
+      "points": [
+        "It is noteworthy that determinants can be multiplied together only if they are of the same order.",
+        "As the process of interchanging the rows and columns will not affect the value of the determinant (by Property- I).",
+        "Hence, we can also adopt the following procedures for multiplication of two determinants.",
+        "This means you can find the determinant of the product matrix or simply multiply the individual determinant values to get the same scalar result."
+      ]
+    },
+    {
+      "section_num": "7.5",
+      "topic": "Symmetric Determinants",
+      "points": [
+        "Thus, the reciprocal of Δ is | | 𝐴1 ∆ 𝐵1 ∆ 𝐶1 ∆ 𝐴2 ∆ 𝐵2 ∆ 𝐶2 ∆ 𝐴3 ∆ 𝐵3 ∆ 𝐶3 ∆ | | = 1 ∆3 | 𝐴1 𝐵1 𝐶1 𝐴2 𝐵2 𝐶2 𝐴3 𝐵3 𝐶3 | = 1 ∆3 .",
+        "Thus | a h g h b f g f c | is a symmetric determinant.",
+        "The above definition of symmetric determinant can be extended similarly to determinants of order n.",
+        "Properties: (i)The square of any symmetric determinant is a symmetric determinant."
+      ]
+    },
+    {
+      "section_num": "7.5.1",
+      "topic": "Skew and Skew-symmetric Determinants",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of skew and skew-symmetric determinants.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in determinants."
+      ]
+    },
+    {
+      "section_num": "7.6",
+      "topic": "Solution of Simultaneous Equation by Cramer’s Rule",
+      "points": [
+        "Thus | a h g h b f g f c | is a symmetric determinant.",
+        "The above definition of symmetric determinant can be extended similarly to determinants of order n.",
+        "Properties: (i)The square of any symmetric determinant is a symmetric determinant.",
+        "(ii)The adjoint of symmetric determinant is symmetric."
+      ]
+    }
+  ],
+  "formulas": [
+    "Rule for determining signs of involved terms in the expansion of 3 × 3",
+    "rule, and as shown by the following expansion of a 3 × 3",
+    "rule, to choose a row or column to expand a",
+    "Property I A determinant is unchanged in value, if all the rows of the"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Determinants\"]\n  M1[\"7.2 Determinants\"]\n  Root --> M1\n  M1_1[\"7.2.1 Definition and Concepts\"]\n  M1 --> M1_1\n  M1_2[\"7.2.2 Minors and Cofactors\"]\n  M1 --> M1_2\n  M2[\"7.3 Properties of Determinants\"]\n  Root --> M2\n  M3[\"7.4 Product of Two Determinants\"]\n  Root --> M3\n  M4[\"7.5 Symmetric Determinants\"]\n  Root --> M4\n  M4_1[\"7.5.1 Skew and Skew-symmetric Determ\"]\n  M4 --> M4_1\n  M5[\"7.6 Solution of Simultaneous Equatio\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Determinants A Skew Determinant</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Determinants A Skew Determinant the determinant of a matrix that has specific symmetry properties.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Determinants</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us start our discussion with definition and concepts of determinants.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition And Concepts</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Minors And Cofactors</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Properties Of Determinants</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">7.2 of this unit, you have become familiar about how to expand the determinants of orders 1, 2, 3, or of higher order.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2 Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us start our discussion with definition and concepts of determinants.</li>\n<li>Definition and Concept If two linear equations in one variable viz.</li>\n<li>a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.</li>\n<li>The expression (𝑎1𝑏2 − 𝑎2𝑏1) is called a determinant and is denoted by the symbol |𝑎1 𝑏1 𝑎2 𝑏2|.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2.1 Definition and Concepts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>a1x+b1 = 0 and a2x +b2 = 0, with a1, a2, b1, and b2, here being assumed as non-zeroes, have the same/common solution, then 𝑎1 𝑎2 = 𝑏1 𝑏2 , 𝑖.</li>\n<li>The expression (𝑎1𝑏2 − 𝑎2𝑏1) is called a determinant and is denoted by the symbol |𝑎1 𝑏1 𝑎2 𝑏2|.</li>\n<li>Note that, a1, a2, b1, b2 are called the ‘elements of the determinant’.</li>\n<li>The elements in the horizontal direction form 'rows' and those in the vertical direction form 'columns'.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2.2 Minors and Cofactors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It may be noted that, in the last part of previous subsection, while evaluating a 3 x 3 determinant in terms of elements of first row, a1 is multiplied by a lower order determinant (of order 2).</li>\n<li>The second-order determinant |b2 c2 b3 c3| is obtained by deleting the column and row containing a1.</li>\n<li>The determinant |b2 c2 b3 c3| is termed as ‘minor’ of the term a1 in the original matrix.</li>\n<li>Same procedure is applied to obtain minors of other term also.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Properties of Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>7.2 of this unit, you have become familiar about how to expand the determinants of orders 1, 2, 3, or of higher order.</li>\n<li>But as you have seen that it requires lot of calculations and is a time-consuming process.</li>\n<li>To avoid such calculations and to reduce the time of evaluation, we will use properties of determinants.</li>\n<li>In this section, we will discuss some properties of the determinants.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4 Product of Two Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is noteworthy that determinants can be multiplied together only if they are of the same order.</li>\n<li>As the process of interchanging the rows and columns will not affect the value of the determinant (by Property- I).</li>\n<li>Hence, we can also adopt the following procedures for multiplication of two determinants.</li>\n<li>This means you can find the determinant of the product matrix or simply multiply the individual determinant values to get the same scalar result.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5 Symmetric Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus, the reciprocal of Δ is | | 𝐴1 ∆ 𝐵1 ∆ 𝐶1 ∆ 𝐴2 ∆ 𝐵2 ∆ 𝐶2 ∆ 𝐴3 ∆ 𝐵3 ∆ 𝐶3 ∆ | | = 1 ∆3 | 𝐴1 𝐵1 𝐶1 𝐴2 𝐵2 𝐶2 𝐴3 𝐵3 𝐶3 | = 1 ∆3 .</li>\n<li>Thus | a h g h b f g f c | is a symmetric determinant.</li>\n<li>The above definition of symmetric determinant can be extended similarly to determinants of order n.</li>\n<li>Properties: (i)The square of any symmetric determinant is a symmetric determinant.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5.1 Skew and Skew-symmetric Determinants</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of skew and skew-symmetric determinants.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in determinants.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.6 Solution of Simultaneous Equation by Cramer’s Rule</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus | a h g h b f g f c | is a symmetric determinant.</li>\n<li>The above definition of symmetric determinant can be extended similarly to determinants of order n.</li>\n<li>Properties: (i)The square of any symmetric determinant is a symmetric determinant.</li>\n<li>(ii)The adjoint of symmetric determinant is symmetric.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rule for determining signs of involved terms in the expansion of 3 × 3</code></div>\n<div class=\"formula-box\"><code>rule, and as shown by the following expansion of a 3 × 3</code></div>\n<div class=\"formula-box\"><code>rule, to choose a row or column to expand a</code></div>\n<div class=\"formula-box\"><code>Property I A determinant is unchanged in value, if all the rows of the</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides an exhaustive study of determinants, beginning with the foundational definitions and the essential mechanics of calculating minors and cofactors to evaluate higher-order values. This unit provide details the structural properties that allow for the simplification of complex determinants, such as row/column interchanges, scalar multiplication, and the zero-value rule for identical rows. The unit explains advanced operations, including the</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-7_Determinants.pdf')\">\n          📄 Read Original IGNOU PDF (34 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

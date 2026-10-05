@@ -1,0 +1,150 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_09",
+  "unit_num": "Unit 9",
+  "title": "Excel for Descriptive Data Analysis",
+  "filename": "Unit-9_Excel_for_Descriptive_Data_Analysis.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-9_Excel_for_Descriptive_Data_Analysis.pdf",
+  "total_pages": 28,
+  "word_count": 8428,
+  "est_read_time_minutes": 47,
+  "objectives": [
+    "processing"
+  ],
+  "summary": "How to use: Go to the \"Data\" tab and select \"Consolidate.\" Data Validation: Restricts the type of data that can be entered into a How to use: Go to the \"Data\" tab and click on \"Data Validation.\" 10. PivotTables: Summarizes and analyzes large datasets by dynamically How to use: Go to the \"Insert\" tab and click on \"PivotTable.\" 11. Hyperlink: Adds a clickable link to a specific URL or location within a",
+  "flashcards": [
+    {
+      "question": "What file types can Excel import data from? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is the importance of maintaining data consistency during import? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Excel for Descriptive Data Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What steps are followed to import data from a CSV file? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "How can data be imported from a web page into Exce? …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Excel for Descriptive Data Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "How do data handling and pre-processing differ?",
+      "answer": "Key Principle: Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are common Excel functions for handling text data?",
+      "answer": "Key Principle: Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Data Analysis Data Handling and how is it characterized?",
+      "answer": "Data Analysis Data Handling the management and organization of data within a dataset.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 9 Excel for Descriptive Data An\"]\n  M1[\"9.2 Importing Data from Various File\"]\n  Root --> M1\n  M2[\"9.3 Data Handling and Pre-processing\"]\n  Root --> M2\n  M3[\"9.4 Frequency Distribution\"]\n  Root --> M3\n  M4[\"9.5 Central Tendency and Dispersion\"]\n  Root --> M4\n  M5[\"9.6 Descriptive Data Analysis and it\"]\n  Root --> M5\n  M6[\"9.2 IMPORTING DATA FROM VARIOUS FILE\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Analysis Data Handling</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Data Analysis Data Handling the management and organization of data within a dataset.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Handling</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Data Handling the broader process of managing data throughout its lifecycle.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Central Tendency</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Central Tendency the measure that identifies the center or typical value within a dataset.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Handling And Pre-Processing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Frequency Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A frequency distribution is a summary of how often different values or ranges of values occur in a dataset.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 Importing Data from Various File Formats</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.</li>\n<li>Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources.</li>\n<li>Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis.</li>\n<li>This section will focus on how to import data from various commonly used file formats into Excel.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.3 Data Handling and Pre-processing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.</li>\n<li>While both involve transforming raw data into a clean, structured form, each process has a distinct focus.</li>\n<li>Excel for Descriptive Data Analysis Data Handling refers to the management and organization of data within a dataset.</li>\n<li>It involves tasks such as sorting, filtering, and structuring data to make it easier to analyze.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.4 Frequency Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A frequency distribution is a summary of how often different values or ranges of values occur in a dataset.</li>\n<li>It helps in understanding the distribution and patterns in data, such as how frequently each value or range appears.</li>\n<li>Enter the given data in the cells A2….E21, that needs to be used to construct the frequency distribution.</li>\n<li>In the next step, you are required to specify class intervals to construct a frequency distribution.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.5 Central Tendency and Dispersion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Both Central tendency and dispersion are the fundamental concepts in statistics used to summarize and describe datasets.</li>\n<li>Central tendency refers to the measure that identifies the center or typical value within a dataset.</li>\n<li>It provides a single value that attempts to describe a set of data by indicating the position around which most values cluster.</li>\n<li>These measures give a general idea of where the data points tend to concentrate.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.6 Descriptive Data Analysis and its Interpretation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Descriptive data analysis is the foundational step in understanding the characteristics and structure of a dataset.</li>\n<li>It involves summarizing and organizing data using statistical measures such as mean, median, mode, standard deviation, and frequency distributions.</li>\n<li>The interpretation of these descriptive statistics is crucial, as it offers insights into trends, anomalies, and relationships within the data, guiding further analysis and decision-making processes.</li>\n<li>explain with an example to use excel for descriptive data analysis also interpret the results obtained after descriptive data analysis is done in excel.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 IMPORTING DATA FROM VARIOUS FILE</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.</li>\n<li>Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources.</li>\n<li>Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis.</li>\n<li>This section will focus on how to import data from various commonly used file formats into Excel.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules to ensure data integrity by using the</code></div>\n<div class=\"formula-box\"><code>Select the data you want to import from the Navigator window.</code></div>\n<div class=\"formula-box\"><code>At the bottom, next to Manage, select Excel Add-ins from the</code></div>\n<div class=\"formula-box\"><code>Z=1.96 @ 95%CL & 1.65 @ 90% CL</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">How to use: Go to the \"Data\" tab and select \"Consolidate.\" Data Validation: Restricts the type of data that can be entered into a How to use: Go to the \"Data\" tab and click on \"Data Validation.\" 10. PivotTables: Summarizes and analyzes large datasets by dynamically How to use: Go to the \"Insert\" tab and click on \"PivotTable.\" 11. Hyperlink: Adds a clickable link to a specific URL or location within a</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-9_Excel_for_Descriptive_Data_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 9 Excel for Descriptive Data An\"]\n  M1[\"9.2 Importing Data from Various File\"]\n  Root --> M1\n  M2[\"9.3 Data Handling and Pre-processing\"]\n  Root --> M2\n  M3[\"9.4 Frequency Distribution\"]\n  Root --> M3\n  M4[\"9.5 Central Tendency and Dispersion\"]\n  Root --> M4\n  M5[\"9.6 Descriptive Data Analysis and it\"]\n  Root --> M5\n  M6[\"9.2 IMPORTING DATA FROM VARIOUS FILE\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Data Analysis Data Handling",
+      "definition": "Data Analysis Data Handling the management and organization of data within a dataset.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Data Handling",
+      "definition": "Data Handling the broader process of managing data throughout its lifecycle.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Central Tendency",
+      "definition": "Central Tendency the measure that identifies the center or typical value within a dataset.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Data Handling And Pre-Processing",
+      "definition": "Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Frequency Distribution",
+      "definition": "A frequency distribution is a summary of how often different values or ranges of values occur in a dataset.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "9.2",
+      "topic": "Importing Data from Various File Formats",
+      "points": [
+        "In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.",
+        "Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources.",
+        "Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis.",
+        "This section will focus on how to import data from various commonly used file formats into Excel."
+      ]
+    },
+    {
+      "section_num": "9.3",
+      "topic": "Data Handling and Pre-processing",
+      "points": [
+        "Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.",
+        "While both involve transforming raw data into a clean, structured form, each process has a distinct focus.",
+        "Excel for Descriptive Data Analysis Data Handling refers to the management and organization of data within a dataset.",
+        "It involves tasks such as sorting, filtering, and structuring data to make it easier to analyze."
+      ]
+    },
+    {
+      "section_num": "9.4",
+      "topic": "Frequency Distribution",
+      "points": [
+        "A frequency distribution is a summary of how often different values or ranges of values occur in a dataset.",
+        "It helps in understanding the distribution and patterns in data, such as how frequently each value or range appears.",
+        "Enter the given data in the cells A2….E21, that needs to be used to construct the frequency distribution.",
+        "In the next step, you are required to specify class intervals to construct a frequency distribution."
+      ]
+    },
+    {
+      "section_num": "9.5",
+      "topic": "Central Tendency and Dispersion",
+      "points": [
+        "Both Central tendency and dispersion are the fundamental concepts in statistics used to summarize and describe datasets.",
+        "Central tendency refers to the measure that identifies the center or typical value within a dataset.",
+        "It provides a single value that attempts to describe a set of data by indicating the position around which most values cluster.",
+        "These measures give a general idea of where the data points tend to concentrate."
+      ]
+    },
+    {
+      "section_num": "9.6",
+      "topic": "Descriptive Data Analysis and its Interpretation",
+      "points": [
+        "Descriptive data analysis is the foundational step in understanding the characteristics and structure of a dataset.",
+        "It involves summarizing and organizing data using statistical measures such as mean, median, mode, standard deviation, and frequency distributions.",
+        "The interpretation of these descriptive statistics is crucial, as it offers insights into trends, anomalies, and relationships within the data, guiding further analysis and decision-making processes.",
+        "explain with an example to use excel for descriptive data analysis also interpret the results obtained after descriptive data analysis is done in excel."
+      ]
+    },
+    {
+      "section_num": "9.2",
+      "topic": "IMPORTING DATA FROM VARIOUS FILE",
+      "points": [
+        "In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.",
+        "Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources.",
+        "Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis.",
+        "This section will focus on how to import data from various commonly used file formats into Excel."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules to ensure data integrity by using the",
+    "Select the data you want to import from the Navigator window.",
+    "At the bottom, next to Manage, select Excel Add-ins from the",
+    "Z=1.96 @ 95%CL & 1.65 @ 90% CL"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 9 Excel for Descriptive Data An\"]\n  M1[\"9.2 Importing Data from Various File\"]\n  Root --> M1\n  M2[\"9.3 Data Handling and Pre-processing\"]\n  Root --> M2\n  M3[\"9.4 Frequency Distribution\"]\n  Root --> M3\n  M4[\"9.5 Central Tendency and Dispersion\"]\n  Root --> M4\n  M5[\"9.6 Descriptive Data Analysis and it\"]\n  Root --> M5\n  M6[\"9.2 IMPORTING DATA FROM VARIOUS FILE\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Analysis Data Handling</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Data Analysis Data Handling the management and organization of data within a dataset.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Handling</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Data Handling the broader process of managing data throughout its lifecycle.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Central Tendency</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Central Tendency the measure that identifies the center or typical value within a dataset.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Handling And Pre-Processing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Frequency Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A frequency distribution is a summary of how often different values or ranges of values occur in a dataset.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 Importing Data from Various File Formats</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.</li>\n<li>Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources.</li>\n<li>Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis.</li>\n<li>This section will focus on how to import data from various commonly used file formats into Excel.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.3 Data Handling and Pre-processing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data handling and pre-processing are essential steps in the data analysis pipeline, though they refer to different aspects of preparing data for analysis.</li>\n<li>While both involve transforming raw data into a clean, structured form, each process has a distinct focus.</li>\n<li>Excel for Descriptive Data Analysis Data Handling refers to the management and organization of data within a dataset.</li>\n<li>It involves tasks such as sorting, filtering, and structuring data to make it easier to analyze.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.4 Frequency Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A frequency distribution is a summary of how often different values or ranges of values occur in a dataset.</li>\n<li>It helps in understanding the distribution and patterns in data, such as how frequently each value or range appears.</li>\n<li>Enter the given data in the cells A2….E21, that needs to be used to construct the frequency distribution.</li>\n<li>In the next step, you are required to specify class intervals to construct a frequency distribution.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.5 Central Tendency and Dispersion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Both Central tendency and dispersion are the fundamental concepts in statistics used to summarize and describe datasets.</li>\n<li>Central tendency refers to the measure that identifies the center or typical value within a dataset.</li>\n<li>It provides a single value that attempts to describe a set of data by indicating the position around which most values cluster.</li>\n<li>These measures give a general idea of where the data points tend to concentrate.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.6 Descriptive Data Analysis and its Interpretation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Descriptive data analysis is the foundational step in understanding the characteristics and structure of a dataset.</li>\n<li>It involves summarizing and organizing data using statistical measures such as mean, median, mode, standard deviation, and frequency distributions.</li>\n<li>The interpretation of these descriptive statistics is crucial, as it offers insights into trends, anomalies, and relationships within the data, guiding further analysis and decision-making processes.</li>\n<li>explain with an example to use excel for descriptive data analysis also interpret the results obtained after descriptive data analysis is done in excel.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">9.2 IMPORTING DATA FROM VARIOUS FILE</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the field of data analysis, the ability to seamlessly import data from a variety of file formats is an essential skill.</li>\n<li>Data often comes in different forms, such as spreadsheets, text files, databases, or even web-based sources.</li>\n<li>Each of these file types presents unique challenges and opportunities when it comes to importing data into Excel for analysis.</li>\n<li>This section will focus on how to import data from various commonly used file formats into Excel.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules to ensure data integrity by using the</code></div>\n<div class=\"formula-box\"><code>Select the data you want to import from the Navigator window.</code></div>\n<div class=\"formula-box\"><code>At the bottom, next to Manage, select Excel Add-ins from the</code></div>\n<div class=\"formula-box\"><code>Z=1.96 @ 95%CL & 1.65 @ 90% CL</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">How to use: Go to the \"Data\" tab and select \"Consolidate.\" Data Validation: Restricts the type of data that can be entered into a How to use: Go to the \"Data\" tab and click on \"Data Validation.\" 10. PivotTables: Summarizes and analyzes large datasets by dynamically How to use: Go to the \"Insert\" tab and click on \"PivotTable.\" 11. Hyperlink: Adds a clickable link to a specific URL or location within a</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-9_Excel_for_Descriptive_Data_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

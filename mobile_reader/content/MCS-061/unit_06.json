@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Matrix Algebra",
+  "filename": "Unit-6_Matrix_Algebra.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-6_Matrix_Algebra.pdf",
+  "total_pages": 39,
+  "word_count": 13305,
+  "est_read_time_minutes": 74,
+  "objectives": [
+    "symmetric Matrices"
+  ],
+  "summary": "In this unit explains concepts and applications of matrices, covering the fundamentals of Matrices, begins by defining a matrix and classifying its various types, followed by an in-depth exploration of core operations such as addition, subtraction, multiplication, and matrix inversion. This unit also introduces concepts like the adjoint, trace, and minors, alongside the rules governing the transpose operation of matrices. Subsequently, the unit",
+  "flashcards": [
+    {
+      "question": "Write all the possible orders of the matrix having 8 elements",
+      "answer": "2+1(−3) = 3, 𝐴22 = (−1)2+2(2) = 2 𝑎𝑑𝑗𝐴= [−",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Write orders and types of the following matrices: (i) [",
+      "answer": "Key Principle: On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Find the values of x, y, z, w if [3𝑥−2𝑦 𝑧+ 𝑤",
+      "answer": "In Matrix Algebra, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "Find AB, if defined, in each of the following cases: (i) A = [",
+      "answer": "In Matrix Algebra, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Evaluate the product  ",
+      "answer": "In Matrix Algebra, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "6. (i) Find trace of the matrix A, where A = [8",
+      "answer": "Key Principle: In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is O And and how is it characterized?",
+      "answer": "O And linear homogeneous system of equations.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Matrix Algebra\"]\n  M1[\"6.2 Definition of a Matrix\"]\n  Root --> M1\n  M2[\"6.3 Types of Matrices\"]\n  Root --> M2\n  M3[\"6.4 Operations on Matrices\"]\n  Root --> M3\n  M3_1[\"6.4.1 Addition and Subtraction of Ma\"]\n  M3 --> M3_1\n  M3_2[\"6.4.2 Matrix Multiplication\"]\n  M3 --> M3_2\n  M3_3[\"6.4.3 Transpose of a Matrix\"]\n  M3 --> M3_3\n  M4[\"6.5 Some Other Types of Matrices\"]\n  Root --> M4\n  M4_1[\"6.5.1 Orthogonal Matrix\"]\n  M4 --> M4_1\n  M4_2[\"6.5.2 Symmetric and Skew-symmetric M\"]\n  M4 --> M4_2\n  M4_3[\"6.5.3 Idempotent Matrix\"]\n  M4 --> M4_3\n  M5[\"6.6 Rank of a Matrix\"]\n  Root --> M5\n  M6[\"6.7 Application of Matrices\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">O And</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">O And linear homogeneous system of equations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition Of A Matrix</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Matrices</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Operations On Matrices</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">From our school times, we have learned several concepts related to basic mathematics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Matrix Multiplication</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If the number of columns of a matrix A be equal to the number of rows of another matrix B, then the matrices A and B are said to be 'conformable for the product’ AB, and the product AB is said to be defined.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Definition of a Matrix</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.</li>\n<li>In analysis we treat such a set of magnitudes as a single entity or a single object of thought, abstracted by numbers.</li>\n<li>Let us consider a problem where we treat a set as single entity and a number of such sets as a single system.</li>\n<li>Later in this unit we will examine how the fundamental operations of arithmetic can be suitably defined to deal with such a system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Types of Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.</li>\n<li>Various types of matrices are explained as below: A) Column Matrix and Raw Matrices Column Matrix If the matrix consists of only one column as [ a1 a2 a3 ] , then it is called a 'column matrix' or 'column vector'.</li>\n<li>For example, [ 9 6 7 ], [ 9 −3 2 8 ], [ 5 −11] are column matrices.</li>\n<li>Remark 2: If a matrix has one element, e.g.𝐴= [6], then matrix A has only one row and only one column.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Operations on Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>From our school times, we have learned several concepts related to basic mathematics.</li>\n<li>First you learn the natural numbers and then learns how these numbers are added, subtracted, multiplied and divided.</li>\n<li>Similarly, here also we now see as to how such operations (except division) are applied on matrices.</li>\n<li>These operations are explained by first giving a general formula and then examples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.1 Addition and Subtraction of Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If the matrices A and B are of the same order (m x n), then they can be added or subtracted.</li>\n<li>9 Matrix Algebra If A=[aij] and B=[bij], then A+B = [aij + bij] and A-B = [aij-bij] In other words, corresponding elements are added or subtracted.</li>\n<li>The new matrix (the resultant) will be of the same order (m x n).</li>\n<li>iii) A + O = O +A = A, where O denotes zero matrix of the same order.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.2 Matrix Multiplication</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If the number of columns of a matrix A be equal to the number of rows of another matrix B, then the matrices A and B are said to be 'conformable for the product’ AB, and the product AB is said to be defined.</li>\n<li>of first, second, third, … elements of 𝑖𝑡ℎ row of A with first, second, third, … , elements of 𝑗𝑡ℎ column of B respectively.</li>\n<li>You may notice that the number of rows in AB = number of rows in A, and number of columns in AB = number of columns in B.</li>\n<li>Remark 4: Commutative law does not hold, in general, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.3 Transpose of a Matrix</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If A = [𝑎𝑖𝑗]𝑚×𝑛 a matrix, the transpose of A denoted by A′ or AT is defined to be the matrix [𝑏𝑖𝑗]𝑛×𝑚 where [𝑏𝑖𝑗] = [𝑎𝑖𝑗]∀𝑖 𝑎𝑛𝑑 𝑗.</li>\n<li>In other words, transpose of a matrix A is denoted by 𝐴′or 𝐴𝑇and is obtained by interchanging rows and columns of A.</li>\n<li>For example, if A = [2 3 4 5 6 8] then AT = [ 2 5 3 6 4 8 ].</li>\n<li>A A2 = A A A 2 3 = or 2 3 AA A = A A A 3 4 = or 3 4 AA A = or 2 2 4 A A A = and so on in general, q p A + = q pA A = q p A A .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.4 Integral Powers of a Square Matrix</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A A2 = A A A 2 3 = or 2 3 AA A = A A A 3 4 = or 3 4 AA A = or 2 2 4 A A A = and so on in general, q p A + = q pA A = q p A A .</li>\n<li>+ = + + + (ii) 2 2 2 B AB 2 A ) B A ( + + = + if and only if AB = BA.</li>\n<li>In section 6.4.8 we will discuss inverse of a square matrix.</li>\n<li>But in order define 14 Progressions, Matrices and Determinants inverse of a square matrix we use the concept of adjoint of the square matrix, so in this section we are going to discuss adjoint of the square matrix.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.5 Adjoint and Reciprocal Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Cofactor: Cofactor of a square matrix Let A= [𝑎𝑖𝑗]𝑛×𝑛 be a square matrix, the cofactor fo element of aij is (-1)i+j Mij where Mij is determinant of the (n-1)×(n-1) matrix obtained by deleting ith row and jth column of A.</li>\n<li>In section 6.4.8 we will discuss inverse of a square matrix.</li>\n<li>But in order define 14 Progressions, Matrices and Determinants inverse of a square matrix we use the concept of adjoint of the square matrix, so in this section we are going to discuss adjoint of the square matrix.</li>\n<li>Adjoint of a Matrix: Let A = [𝑎𝑖𝑗]𝑛×𝑛 be a square matrix of order 𝑛× 𝑛, then adjoint of A is denoted by adjA and is defined as adjA = [ 𝐴11 𝐴12 𝐴13 .</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>law does not hold, in general,</code></div>\n<div class=\"formula-box\"><code>law a/reversal a/inverse').</code></div>\n<div class=\"formula-box\"><code>And if m=n, then the matrix is said to be a 'square matrix' of order 'n'.</code></div>\n<div class=\"formula-box\"><code>aij = 0 for i ≠ j and aij = 1 for i = j</code></div>\n<div class=\"formula-box\"><code>5], then A = B, if a = 2, x = 5.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit explains concepts and applications of matrices, covering the fundamentals of Matrices, begins by defining a matrix and classifying its various types, followed by an in-depth exploration of core operations such as addition, subtraction, multiplication, and matrix inversion. This unit also introduces concepts like the adjoint, trace, and minors, alongside the rules governing the transpose operation of matrices. Subsequently, the unit</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-6_Matrix_Algebra.pdf')\">\n          📄 Read Original IGNOU PDF (39 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Matrix Algebra\"]\n  M1[\"6.2 Definition of a Matrix\"]\n  Root --> M1\n  M2[\"6.3 Types of Matrices\"]\n  Root --> M2\n  M3[\"6.4 Operations on Matrices\"]\n  Root --> M3\n  M3_1[\"6.4.1 Addition and Subtraction of Ma\"]\n  M3 --> M3_1\n  M3_2[\"6.4.2 Matrix Multiplication\"]\n  M3 --> M3_2\n  M3_3[\"6.4.3 Transpose of a Matrix\"]\n  M3 --> M3_3\n  M4[\"6.5 Some Other Types of Matrices\"]\n  Root --> M4\n  M4_1[\"6.5.1 Orthogonal Matrix\"]\n  M4 --> M4_1\n  M4_2[\"6.5.2 Symmetric and Skew-symmetric M\"]\n  M4 --> M4_2\n  M4_3[\"6.5.3 Idempotent Matrix\"]\n  M4 --> M4_3\n  M5[\"6.6 Rank of a Matrix\"]\n  Root --> M5\n  M6[\"6.7 Application of Matrices\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "O And",
+      "definition": "O And linear homogeneous system of equations.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Definition Of A Matrix",
+      "definition": "In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Types Of Matrices",
+      "definition": "On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Operations On Matrices",
+      "definition": "From our school times, we have learned several concepts related to basic mathematics.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Matrix Multiplication",
+      "definition": "If the number of columns of a matrix A be equal to the number of rows of another matrix B, then the matrices A and B are said to be 'conformable for the product’ AB, and the product AB is said to be defined.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.2",
+      "topic": "Definition of a Matrix",
+      "points": [
+        "In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.",
+        "In analysis we treat such a set of magnitudes as a single entity or a single object of thought, abstracted by numbers.",
+        "Let us consider a problem where we treat a set as single entity and a number of such sets as a single system.",
+        "Later in this unit we will examine how the fundamental operations of arithmetic can be suitably defined to deal with such a system."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Types of Matrices",
+      "points": [
+        "On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.",
+        "Various types of matrices are explained as below: A) Column Matrix and Raw Matrices Column Matrix If the matrix consists of only one column as [ a1 a2 a3 ] , then it is called a 'column matrix' or 'column vector'.",
+        "For example, [ 9 6 7 ], [ 9 −3 2 8 ], [ 5 −11] are column matrices.",
+        "Remark 2: If a matrix has one element, e.g.𝐴= [6], then matrix A has only one row and only one column."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Operations on Matrices",
+      "points": [
+        "From our school times, we have learned several concepts related to basic mathematics.",
+        "First you learn the natural numbers and then learns how these numbers are added, subtracted, multiplied and divided.",
+        "Similarly, here also we now see as to how such operations (except division) are applied on matrices.",
+        "These operations are explained by first giving a general formula and then examples."
+      ]
+    },
+    {
+      "section_num": "6.4.1",
+      "topic": "Addition and Subtraction of Matrices",
+      "points": [
+        "If the matrices A and B are of the same order (m x n), then they can be added or subtracted.",
+        "9 Matrix Algebra If A=[aij] and B=[bij], then A+B = [aij + bij] and A-B = [aij-bij] In other words, corresponding elements are added or subtracted.",
+        "The new matrix (the resultant) will be of the same order (m x n).",
+        "iii) A + O = O +A = A, where O denotes zero matrix of the same order."
+      ]
+    },
+    {
+      "section_num": "6.4.2",
+      "topic": "Matrix Multiplication",
+      "points": [
+        "If the number of columns of a matrix A be equal to the number of rows of another matrix B, then the matrices A and B are said to be 'conformable for the product’ AB, and the product AB is said to be defined.",
+        "of first, second, third, … elements of 𝑖𝑡ℎ row of A with first, second, third, … , elements of 𝑗𝑡ℎ column of B respectively.",
+        "You may notice that the number of rows in AB = number of rows in A, and number of columns in AB = number of columns in B.",
+        "Remark 4: Commutative law does not hold, in general, i.e."
+      ]
+    },
+    {
+      "section_num": "6.4.3",
+      "topic": "Transpose of a Matrix",
+      "points": [
+        "If A = [𝑎𝑖𝑗]𝑚×𝑛 a matrix, the transpose of A denoted by A′ or AT is defined to be the matrix [𝑏𝑖𝑗]𝑛×𝑚 where [𝑏𝑖𝑗] = [𝑎𝑖𝑗]∀𝑖 𝑎𝑛𝑑 𝑗.",
+        "In other words, transpose of a matrix A is denoted by 𝐴′or 𝐴𝑇and is obtained by interchanging rows and columns of A.",
+        "For example, if A = [2 3 4 5 6 8] then AT = [ 2 5 3 6 4 8 ].",
+        "A A2 = A A A 2 3 = or 2 3 AA A = A A A 3 4 = or 3 4 AA A = or 2 2 4 A A A = and so on in general, q p A + = q pA A = q p A A ."
+      ]
+    },
+    {
+      "section_num": "6.4.4",
+      "topic": "Integral Powers of a Square Matrix",
+      "points": [
+        "A A2 = A A A 2 3 = or 2 3 AA A = A A A 3 4 = or 3 4 AA A = or 2 2 4 A A A = and so on in general, q p A + = q pA A = q p A A .",
+        "+ = + + + (ii) 2 2 2 B AB 2 A ) B A ( + + = + if and only if AB = BA.",
+        "In section 6.4.8 we will discuss inverse of a square matrix.",
+        "But in order define 14 Progressions, Matrices and Determinants inverse of a square matrix we use the concept of adjoint of the square matrix, so in this section we are going to discuss adjoint of the square matrix."
+      ]
+    },
+    {
+      "section_num": "6.4.5",
+      "topic": "Adjoint and Reciprocal Matrices",
+      "points": [
+        "Cofactor: Cofactor of a square matrix Let A= [𝑎𝑖𝑗]𝑛×𝑛 be a square matrix, the cofactor fo element of aij is (-1)i+j Mij where Mij is determinant of the (n-1)×(n-1) matrix obtained by deleting ith row and jth column of A.",
+        "In section 6.4.8 we will discuss inverse of a square matrix.",
+        "But in order define 14 Progressions, Matrices and Determinants inverse of a square matrix we use the concept of adjoint of the square matrix, so in this section we are going to discuss adjoint of the square matrix.",
+        "Adjoint of a Matrix: Let A = [𝑎𝑖𝑗]𝑛×𝑛 be a square matrix of order 𝑛× 𝑛, then adjoint of A is denoted by adjA and is defined as adjA = [ 𝐴11 𝐴12 𝐴13 ."
+      ]
+    }
+  ],
+  "formulas": [
+    "law does not hold, in general,",
+    "law a/reversal a/inverse').",
+    "And if m=n, then the matrix is said to be a 'square matrix' of order 'n'.",
+    "aij = 0 for i ≠ j and aij = 1 for i = j",
+    "5], then A = B, if a = 2, x = 5."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Matrix Algebra\"]\n  M1[\"6.2 Definition of a Matrix\"]\n  Root --> M1\n  M2[\"6.3 Types of Matrices\"]\n  Root --> M2\n  M3[\"6.4 Operations on Matrices\"]\n  Root --> M3\n  M3_1[\"6.4.1 Addition and Subtraction of Ma\"]\n  M3 --> M3_1\n  M3_2[\"6.4.2 Matrix Multiplication\"]\n  M3 --> M3_2\n  M3_3[\"6.4.3 Transpose of a Matrix\"]\n  M3 --> M3_3\n  M4[\"6.5 Some Other Types of Matrices\"]\n  Root --> M4\n  M4_1[\"6.5.1 Orthogonal Matrix\"]\n  M4 --> M4_1\n  M4_2[\"6.5.2 Symmetric and Skew-symmetric M\"]\n  M4 --> M4_2\n  M4_3[\"6.5.3 Idempotent Matrix\"]\n  M4 --> M4_3\n  M5[\"6.6 Rank of a Matrix\"]\n  Root --> M5\n  M6[\"6.7 Application of Matrices\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">O And</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">O And linear homogeneous system of equations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition Of A Matrix</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Matrices</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Operations On Matrices</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">From our school times, we have learned several concepts related to basic mathematics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Matrix Multiplication</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If the number of columns of a matrix A be equal to the number of rows of another matrix B, then the matrices A and B are said to be 'conformable for the product’ AB, and the product AB is said to be defined.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Definition of a Matrix</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In real life, we do not have to deal with a single magnitude but with a set of magnitudes simultaneously.</li>\n<li>In analysis we treat such a set of magnitudes as a single entity or a single object of thought, abstracted by numbers.</li>\n<li>Let us consider a problem where we treat a set as single entity and a number of such sets as a single system.</li>\n<li>Later in this unit we will examine how the fundamental operations of arithmetic can be suitably defined to deal with such a system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Types of Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>On the basis of number of rows and number of columns and depending on the values of elements, the type of a matrix gets changed.</li>\n<li>Various types of matrices are explained as below: A) Column Matrix and Raw Matrices Column Matrix If the matrix consists of only one column as [ a1 a2 a3 ] , then it is called a 'column matrix' or 'column vector'.</li>\n<li>For example, [ 9 6 7 ], [ 9 −3 2 8 ], [ 5 −11] are column matrices.</li>\n<li>Remark 2: If a matrix has one element, e.g.𝐴= [6], then matrix A has only one row and only one column.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Operations on Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>From our school times, we have learned several concepts related to basic mathematics.</li>\n<li>First you learn the natural numbers and then learns how these numbers are added, subtracted, multiplied and divided.</li>\n<li>Similarly, here also we now see as to how such operations (except division) are applied on matrices.</li>\n<li>These operations are explained by first giving a general formula and then examples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.1 Addition and Subtraction of Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If the matrices A and B are of the same order (m x n), then they can be added or subtracted.</li>\n<li>9 Matrix Algebra If A=[aij] and B=[bij], then A+B = [aij + bij] and A-B = [aij-bij] In other words, corresponding elements are added or subtracted.</li>\n<li>The new matrix (the resultant) will be of the same order (m x n).</li>\n<li>iii) A + O = O +A = A, where O denotes zero matrix of the same order.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.2 Matrix Multiplication</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If the number of columns of a matrix A be equal to the number of rows of another matrix B, then the matrices A and B are said to be 'conformable for the product’ AB, and the product AB is said to be defined.</li>\n<li>of first, second, third, … elements of 𝑖𝑡ℎ row of A with first, second, third, … , elements of 𝑗𝑡ℎ column of B respectively.</li>\n<li>You may notice that the number of rows in AB = number of rows in A, and number of columns in AB = number of columns in B.</li>\n<li>Remark 4: Commutative law does not hold, in general, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.3 Transpose of a Matrix</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If A = [𝑎𝑖𝑗]𝑚×𝑛 a matrix, the transpose of A denoted by A′ or AT is defined to be the matrix [𝑏𝑖𝑗]𝑛×𝑚 where [𝑏𝑖𝑗] = [𝑎𝑖𝑗]∀𝑖 𝑎𝑛𝑑 𝑗.</li>\n<li>In other words, transpose of a matrix A is denoted by 𝐴′or 𝐴𝑇and is obtained by interchanging rows and columns of A.</li>\n<li>For example, if A = [2 3 4 5 6 8] then AT = [ 2 5 3 6 4 8 ].</li>\n<li>A A2 = A A A 2 3 = or 2 3 AA A = A A A 3 4 = or 3 4 AA A = or 2 2 4 A A A = and so on in general, q p A + = q pA A = q p A A .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.4 Integral Powers of a Square Matrix</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A A2 = A A A 2 3 = or 2 3 AA A = A A A 3 4 = or 3 4 AA A = or 2 2 4 A A A = and so on in general, q p A + = q pA A = q p A A .</li>\n<li>+ = + + + (ii) 2 2 2 B AB 2 A ) B A ( + + = + if and only if AB = BA.</li>\n<li>In section 6.4.8 we will discuss inverse of a square matrix.</li>\n<li>But in order define 14 Progressions, Matrices and Determinants inverse of a square matrix we use the concept of adjoint of the square matrix, so in this section we are going to discuss adjoint of the square matrix.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.5 Adjoint and Reciprocal Matrices</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Cofactor: Cofactor of a square matrix Let A= [𝑎𝑖𝑗]𝑛×𝑛 be a square matrix, the cofactor fo element of aij is (-1)i+j Mij where Mij is determinant of the (n-1)×(n-1) matrix obtained by deleting ith row and jth column of A.</li>\n<li>In section 6.4.8 we will discuss inverse of a square matrix.</li>\n<li>But in order define 14 Progressions, Matrices and Determinants inverse of a square matrix we use the concept of adjoint of the square matrix, so in this section we are going to discuss adjoint of the square matrix.</li>\n<li>Adjoint of a Matrix: Let A = [𝑎𝑖𝑗]𝑛×𝑛 be a square matrix of order 𝑛× 𝑛, then adjoint of A is denoted by adjA and is defined as adjA = [ 𝐴11 𝐴12 𝐴13 .</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>law does not hold, in general,</code></div>\n<div class=\"formula-box\"><code>law a/reversal a/inverse').</code></div>\n<div class=\"formula-box\"><code>And if m=n, then the matrix is said to be a 'square matrix' of order 'n'.</code></div>\n<div class=\"formula-box\"><code>aij = 0 for i ≠ j and aij = 1 for i = j</code></div>\n<div class=\"formula-box\"><code>5], then A = B, if a = 2, x = 5.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit explains concepts and applications of matrices, covering the fundamentals of Matrices, begins by defining a matrix and classifying its various types, followed by an in-depth exploration of core operations such as addition, subtraction, multiplication, and matrix inversion. This unit also introduces concepts like the adjoint, trace, and minors, alongside the rules governing the transpose operation of matrices. Subsequently, the unit</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-6_Matrix_Algebra.pdf')\">\n          📄 Read Original IGNOU PDF (39 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

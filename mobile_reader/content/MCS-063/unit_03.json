@@ -1,0 +1,123 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_03",
+  "unit_num": "Unit 3",
+  "title": "Algorithm Analysis",
+  "filename": "Unit-3_Algorithm_Analysis.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-3_Algorithm_Analysis.pdf",
+  "total_pages": 28,
+  "word_count": 6749,
+  "est_read_time_minutes": 37,
+  "objectives": [
+    "Some Additional Objectives",
+    "Experimental Studies",
+    "The Seven Functions Used in This Book",
+    "Asymptotic Analysis",
+    "Simple Justification Techniques"
+  ],
+  "summary": "Asymptotic notation provides a language to discuss complexity independent For large inputs, choosing the right algorithm can mean the difference between seconds and years of computation The seven fundamental functions cover most practical algorithms Proving correctness is as important as analyzing efficiency Understanding algorithm analysis is essential for any software engineer",
+  "flashcards": [
+    {
+      "question": "Determine the time complexity of the following function: def another_function(arr): total =",
+      "answer": "In Algorithm Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Compare bubble sort O(n²) with merge sort O(n log n) for sorting 1 million elements. # Solution with calculations n =",
+      "answer": "In Algorithm Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Prove by mathematical induction that the sum of first n squares equals n(n+",
+      "answer": "In Algorithm Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Analyze the time complexity of the following recursive function: def fibonacci_recursive(n): if n <=",
+      "answer": "In Algorithm Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "+ fibonacci_recursive(n-2)",
+      "answer": "In Algorithm Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "A company needs to search through 100,000 customer records. Would you recommend linear search or binary search?",
+      "answer": "In Algorithm Analysis, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is Experimental Studies and how is it characterized?",
+      "answer": "Experimental studies involve running algorithms on actual computers and measuring their performance.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Algorithm Analysis\"]\n  M1[\"3.3 Experimental Studies\"]\n  Root --> M1\n  M2[\"3.4 The Seven Functions Used in This\"]\n  Root --> M2\n  M3[\"3.5 Asymptotic Analysis\"]\n  Root --> M3\n  M4[\"3.6 Simple Justification Techniques\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Experimental Studies</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Experimental studies involve running algorithms on actual computers and measuring their performance.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Asymptotic Analysis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It focuses on how the algorithm behaves as the input size approaches infinity.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Simple Justification Techniques</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Experimental Studies</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Experimental studies involve running algorithms on actual computers and measuring their performance.</li>\n<li>This empirical approach provides concrete data about how algorithms behave in practice.</li>\n<li>The implementation should be as efficient as possible to avoid measuring the overhead of a poor implementation.</li>\n<li>Step 2: Test Case Generation Create test cases with varying input sizes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4 The Seven Functions Used in This Book</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In algorithm analysis, we use several fundamental mathematical functions to characterize algorithm complexity.</li>\n<li>These functions describe how the running time or space requirement grows as the input size increases.</li>\n<li>Constant Function: f(n) = 1 Definition: The algorithm takes the same time regardless of input size.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.5 Asymptotic Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It focuses on how the algorithm behaves as the input size approaches infinity.</li>\n<li>Big-O Notation (Upper Bound) Definition: f(n) = O(g(n)) means there exist positive constants c and n such that f(n) ≤ c·g(n) for all n ≥ n .</li>\n<li>Interpretation: O(g(n)) represents the worst-case scenario - an upper bound on the running time.</li>\n<li>The algorithm will never take longer than this.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.6 Simple Justification Techniques</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.</li>\n<li>Initialization (i=1): arr[0:1] has one element, trivially sorted ✓ 2.</li>\n<li>Maintenance: If arr[0:i] is sorted, we insert arr[i] into the correct position in arr[0:i], maintaining the sorted property ✓ 3.</li>\n<li>Principle of Mathematical Induction: To prove a statement P(n) is true for all positive integers n: 1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Theorem: T(n) = O(n log n)</code></div>\n<div class=\"formula-box\"><code>Rules for Big-O Analysis:</code></div>\n<div class=\"formula-box\"><code>Theorem for Recurrence Relations</code></div>\n<div class=\"formula-box\"><code>Theorem provides a quick way to analyze recursive algorithms without</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Asymptotic notation provides a language to discuss complexity independent For large inputs, choosing the right algorithm can mean the difference between seconds and years of computation The seven fundamental functions cover most practical algorithms Proving correctness is as important as analyzing efficiency Understanding algorithm analysis is essential for any software engineer</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-3_Algorithm_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 3 Algorithm Analysis\"]\n  M1[\"3.3 Experimental Studies\"]\n  Root --> M1\n  M2[\"3.4 The Seven Functions Used in This\"]\n  Root --> M2\n  M3[\"3.5 Asymptotic Analysis\"]\n  Root --> M3\n  M4[\"3.6 Simple Justification Techniques\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "Experimental Studies",
+      "definition": "Experimental studies involve running algorithms on actual computers and measuring their performance.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Asymptotic Analysis",
+      "definition": "It focuses on how the algorithm behaves as the input size approaches infinity.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Simple Justification Techniques",
+      "definition": "To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "3.3",
+      "topic": "Experimental Studies",
+      "points": [
+        "Experimental studies involve running algorithms on actual computers and measuring their performance.",
+        "This empirical approach provides concrete data about how algorithms behave in practice.",
+        "The implementation should be as efficient as possible to avoid measuring the overhead of a poor implementation.",
+        "Step 2: Test Case Generation Create test cases with varying input sizes."
+      ]
+    },
+    {
+      "section_num": "3.4",
+      "topic": "The Seven Functions Used in This Book",
+      "points": [
+        "In algorithm analysis, we use several fundamental mathematical functions to characterize algorithm complexity.",
+        "These functions describe how the running time or space requirement grows as the input size increases.",
+        "Constant Function: f(n) = 1 Definition: The algorithm takes the same time regardless of input size."
+      ]
+    },
+    {
+      "section_num": "3.5",
+      "topic": "Asymptotic Analysis",
+      "points": [
+        "It focuses on how the algorithm behaves as the input size approaches infinity.",
+        "Big-O Notation (Upper Bound) Definition: f(n) = O(g(n)) means there exist positive constants c and n such that f(n) ≤ c·g(n) for all n ≥ n .",
+        "Interpretation: O(g(n)) represents the worst-case scenario - an upper bound on the running time.",
+        "The algorithm will never take longer than this."
+      ]
+    },
+    {
+      "section_num": "3.6",
+      "topic": "Simple Justification Techniques",
+      "points": [
+        "To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.",
+        "Initialization (i=1): arr[0:1] has one element, trivially sorted ✓ 2.",
+        "Maintenance: If arr[0:i] is sorted, we insert arr[i] into the correct position in arr[0:i], maintaining the sorted property ✓ 3.",
+        "Principle of Mathematical Induction: To prove a statement P(n) is true for all positive integers n: 1."
+      ]
+    }
+  ],
+  "formulas": [
+    "Theorem: T(n) = O(n log n)",
+    "Rules for Big-O Analysis:",
+    "Theorem for Recurrence Relations",
+    "Theorem provides a quick way to analyze recursive algorithms without"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Algorithm Analysis\"]\n  M1[\"3.3 Experimental Studies\"]\n  Root --> M1\n  M2[\"3.4 The Seven Functions Used in This\"]\n  Root --> M2\n  M3[\"3.5 Asymptotic Analysis\"]\n  Root --> M3\n  M4[\"3.6 Simple Justification Techniques\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Experimental Studies</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Experimental studies involve running algorithms on actual computers and measuring their performance.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Asymptotic Analysis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It focuses on how the algorithm behaves as the input size approaches infinity.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Simple Justification Techniques</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Experimental Studies</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Experimental studies involve running algorithms on actual computers and measuring their performance.</li>\n<li>This empirical approach provides concrete data about how algorithms behave in practice.</li>\n<li>The implementation should be as efficient as possible to avoid measuring the overhead of a poor implementation.</li>\n<li>Step 2: Test Case Generation Create test cases with varying input sizes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4 The Seven Functions Used in This Book</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In algorithm analysis, we use several fundamental mathematical functions to characterize algorithm complexity.</li>\n<li>These functions describe how the running time or space requirement grows as the input size increases.</li>\n<li>Constant Function: f(n) = 1 Definition: The algorithm takes the same time regardless of input size.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.5 Asymptotic Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It focuses on how the algorithm behaves as the input size approaches infinity.</li>\n<li>Big-O Notation (Upper Bound) Definition: f(n) = O(g(n)) means there exist positive constants c and n such that f(n) ≤ c·g(n) for all n ≥ n .</li>\n<li>Interpretation: O(g(n)) represents the worst-case scenario - an upper bound on the running time.</li>\n<li>The algorithm will never take longer than this.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.6 Simple Justification Techniques</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To rigorously establish the correctness and efficiency of algorithms, we employ several justification techniques.</li>\n<li>Initialization (i=1): arr[0:1] has one element, trivially sorted ✓ 2.</li>\n<li>Maintenance: If arr[0:i] is sorted, we insert arr[i] into the correct position in arr[0:i], maintaining the sorted property ✓ 3.</li>\n<li>Principle of Mathematical Induction: To prove a statement P(n) is true for all positive integers n: 1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Theorem: T(n) = O(n log n)</code></div>\n<div class=\"formula-box\"><code>Rules for Big-O Analysis:</code></div>\n<div class=\"formula-box\"><code>Theorem for Recurrence Relations</code></div>\n<div class=\"formula-box\"><code>Theorem provides a quick way to analyze recursive algorithms without</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Asymptotic notation provides a language to discuss complexity independent For large inputs, choosing the right algorithm can mean the difference between seconds and years of computation The seven fundamental functions cover most practical algorithms Proving correctness is as important as analyzing efficiency Understanding algorithm analysis is essential for any software engineer</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-3_Algorithm_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

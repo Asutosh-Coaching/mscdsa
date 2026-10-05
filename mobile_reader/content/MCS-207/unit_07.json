@@ -1,0 +1,146 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_07",
+  "unit_num": "Unit 7",
+  "title": "Structured Query Language",
+  "filename": "Unit-7_Structured_Query_Language.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-7_Structured_Query_Language.pdf",
+  "total_pages": 20,
+  "word_count": 7135,
+  "est_read_time_minutes": 40,
+  "objectives": [],
+  "summary": "SQL is one of the most important languages for any RDBMS. It allows a user to create tables, insert and update data in the tables and retrieve information from the tables. In addition, data of a table can be made available to only authorised users. This unit first introduces you to basic aspects of SQL and thereafter discusses the DDL commands. It is important that while creating tables you also include the constraints that are to be fulfilled by the tables. The constraints in SQL may be implemented using CHECK clause, PRIMARY KEY clause, FOREIGN KEY clause etc. You must also implement the referential action in",
+  "flashcards": [
+    {
+      "question": "List the advantages and disadvantages of using SQL. …………………………………………………………………………………….…………………… ……………………………………………………………….………………………………………… …………………………………………………………………………………….…………………… ……………………………………………………………….…………………………………………",
+      "answer": "CHECK (VALUE IN (S, D));",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "• While booking the room the BookedFrom and BookedTo should follow the following relationship: Today’s Date <= BookedFrom <= BookedTo",
+      "answer": "In Structured Query Language, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q150"
+    },
+    {
+      "question": "Write the SQL commands to insert the following data in the STUDENT and PROGRAMME table. Highlight the errors, if any.",
+      "answer": "CHECK (VALUE IN (S, D));",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "List the various clauses of the SELECT statement giving their purpose. ……………………………………………………………………………………..…………………… ………………………………………………………………..………………………………………...",
+      "answer": "a) SELECT SupplierNo FROM SP GROUP BY SupplierNo HAVING Count",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Consider the following two relations – S and SP. S SupplierNo SupplierName SupplierRanking SupplierCity S",
+      "answer": "a) CREATE USER ABC IDENTIFIED BY XYZ; b",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "(Hint: It is a retrieval using union). g) List the names of the suppliers, whose ranking is not given. ………………………………………………………………………………………………………………………… …………………………………………………………………………………………………………..",
+      "answer": "a) SELECT SupplierNo FROM SP GROUP BY SupplierNo HAVING Count",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Language (Ddl) and how is it characterized?",
+      "answer": "Language (Ddl) The basic focus of DDL is the commands that can be used to convert database schema into SQL tables, indexes, etc.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Structured Query Language\"]\n  M1[\"7.3 Data Definition Language\"]\n  Root --> M1\n  M2[\"7.4 Data Manipulation Language\"]\n  Root --> M2\n  M2_1[\"7.4.1 Data insertion, Updating and D\"]\n  M2 --> M2_1\n  M2_2[\"7.4.2 Data Retrieval\"]\n  M2 --> M2_2\n  M3[\"7.5 GROUP BY Clause and Aggregate fu\"]\n  Root --> M3\n  M4[\"7.6 Data Control Language\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Language (Ddl)</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Language (Ddl) The basic focus of DDL is the commands that can be used to convert database schema into SQL tables, indexes, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Definition Language</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The design of a database consists of the physical, conceptual, and external schema.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Manipulation Language</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">These are Data manipulation language (DML) commands.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Retrieval</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Control Language</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The purpose of data control language (DCL) is to create users and assign access rights to them.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Data Definition Language</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The design of a database consists of the physical, conceptual, and external schema.</li>\n<li>To implement this design, you need to define these schemas using SQL.</li>\n<li>In this unit, we use commands to define the conceptual schema.</li>\n<li>The external schema-related commands are discussed in the next unit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4 Data Manipulation Language</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>These are Data manipulation language (DML) commands.</li>\n<li>Further, you would like to retrieve selected information from the database.</li>\n<li>In this section, first, we discuss the command to insert, update or delete the data followed by commands to retrieve information from the database.</li>\n<li>You may please note that the changes made by the DML statements are made permanent only after these operations are COMMITTED.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4.1 Data insertion, Updating and Deletion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>are the values that are to be inserted into the respective column of the database.</li>\n<li>• You can use parameters instead of actual values, for example, you can use INSERT INTO PROGRAMME VALUES (&1, &2, &3); These parameter values can be input at the time of execution of the query.</li>\n<li>• You can use a sub-query (which will be explained in the next unit) instead of the values given in the command in the (…).</li>\n<li>Please note that you need to specify n values for the n columns.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4.2 Data Retrieval</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user.</li>\n<li>SELECT statement is one of the most used statements of DML, as it helps in the retrieval of requisite data.</li>\n<li>In this section, we discuss various clauses of this statement.</li>\n<li>Statement: The following is the basic format of the select statement.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5 GROUP BY Clause and Aggregate functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, you have gone through the concept of data manipulation language (DML).</li>\n<li>We have discussed the SELECT statement and its various clauses.</li>\n<li>In a database system, several queries require DBMS to produce information about a group.</li>\n<li>For example, you may be interested in finding the average marks of the group of PGDCA students vis-à-vis BCA students.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.6 Data Control Language</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The purpose of data control language (DCL) is to create users and assign access rights to them.</li>\n<li>In general, these commands are executed by a database administrator.</li>\n<li>The following are some of the most used DCL commands.</li>\n<li>Block3 covers the basic aspects of the GRANT option.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>The SELECT statement of SQL, in addition to SELECT, FROM and WHERE clauses, supports three more</code></div>\n<div class=\"formula-box\"><code>REVOKE SELECT ON STUDENT FROM PGDCA_Student;</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">SQL is one of the most important languages for any RDBMS. It allows a user to create tables, insert and update data in the tables and retrieve information from the tables. In addition, data of a table can be made available to only authorised users. This unit first introduces you to basic aspects of SQL and thereafter discusses the DDL commands. It is important that while creating tables you also include the constraints that are to be fulfilled by the tables. The constraints in SQL may be implemented using CHECK clause, PRIMARY KEY clause, FOREIGN KEY clause etc. You must also implement the referential action in</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-7_Structured_Query_Language.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 7 Structured Query Language\"]\n  M1[\"7.3 Data Definition Language\"]\n  Root --> M1\n  M2[\"7.4 Data Manipulation Language\"]\n  Root --> M2\n  M2_1[\"7.4.1 Data insertion, Updating and D\"]\n  M2 --> M2_1\n  M2_2[\"7.4.2 Data Retrieval\"]\n  M2 --> M2_2\n  M3[\"7.5 GROUP BY Clause and Aggregate fu\"]\n  Root --> M3\n  M4[\"7.6 Data Control Language\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "Language (Ddl)",
+      "definition": "Language (Ddl) The basic focus of DDL is the commands that can be used to convert database schema into SQL tables, indexes, etc.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Data Definition Language",
+      "definition": "The design of a database consists of the physical, conceptual, and external schema.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Manipulation Language",
+      "definition": "These are Data manipulation language (DML) commands.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Retrieval",
+      "definition": "One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Control Language",
+      "definition": "The purpose of data control language (DCL) is to create users and assign access rights to them.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "7.3",
+      "topic": "Data Definition Language",
+      "points": [
+        "The design of a database consists of the physical, conceptual, and external schema.",
+        "To implement this design, you need to define these schemas using SQL.",
+        "In this unit, we use commands to define the conceptual schema.",
+        "The external schema-related commands are discussed in the next unit."
+      ]
+    },
+    {
+      "section_num": "7.4",
+      "topic": "Data Manipulation Language",
+      "points": [
+        "These are Data manipulation language (DML) commands.",
+        "Further, you would like to retrieve selected information from the database.",
+        "In this section, first, we discuss the command to insert, update or delete the data followed by commands to retrieve information from the database.",
+        "You may please note that the changes made by the DML statements are made permanent only after these operations are COMMITTED."
+      ]
+    },
+    {
+      "section_num": "7.4.1",
+      "topic": "Data insertion, Updating and Deletion",
+      "points": [
+        "are the values that are to be inserted into the respective column of the database.",
+        "• You can use parameters instead of actual values, for example, you can use INSERT INTO PROGRAMME VALUES (&1, &2, &3); These parameter values can be input at the time of execution of the query.",
+        "• You can use a sub-query (which will be explained in the next unit) instead of the values given in the command in the (…).",
+        "Please note that you need to specify n values for the n columns."
+      ]
+    },
+    {
+      "section_num": "7.4.2",
+      "topic": "Data Retrieval",
+      "points": [
+        "One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user.",
+        "SELECT statement is one of the most used statements of DML, as it helps in the retrieval of requisite data.",
+        "In this section, we discuss various clauses of this statement.",
+        "Statement: The following is the basic format of the select statement."
+      ]
+    },
+    {
+      "section_num": "7.5",
+      "topic": "GROUP BY Clause and Aggregate functions",
+      "points": [
+        "In the previous section, you have gone through the concept of data manipulation language (DML).",
+        "We have discussed the SELECT statement and its various clauses.",
+        "In a database system, several queries require DBMS to produce information about a group.",
+        "For example, you may be interested in finding the average marks of the group of PGDCA students vis-à-vis BCA students."
+      ]
+    },
+    {
+      "section_num": "7.6",
+      "topic": "Data Control Language",
+      "points": [
+        "The purpose of data control language (DCL) is to create users and assign access rights to them.",
+        "In general, these commands are executed by a database administrator.",
+        "The following are some of the most used DCL commands.",
+        "Block3 covers the basic aspects of the GRANT option."
+      ]
+    }
+  ],
+  "formulas": [
+    "The SELECT statement of SQL, in addition to SELECT, FROM and WHERE clauses, supports three more",
+    "REVOKE SELECT ON STUDENT FROM PGDCA_Student;"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Structured Query Language\"]\n  M1[\"7.3 Data Definition Language\"]\n  Root --> M1\n  M2[\"7.4 Data Manipulation Language\"]\n  Root --> M2\n  M2_1[\"7.4.1 Data insertion, Updating and D\"]\n  M2 --> M2_1\n  M2_2[\"7.4.2 Data Retrieval\"]\n  M2 --> M2_2\n  M3[\"7.5 GROUP BY Clause and Aggregate fu\"]\n  Root --> M3\n  M4[\"7.6 Data Control Language\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Language (Ddl)</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Language (Ddl) The basic focus of DDL is the commands that can be used to convert database schema into SQL tables, indexes, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Definition Language</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The design of a database consists of the physical, conceptual, and external schema.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Manipulation Language</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">These are Data manipulation language (DML) commands.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Retrieval</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Control Language</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The purpose of data control language (DCL) is to create users and assign access rights to them.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Data Definition Language</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The design of a database consists of the physical, conceptual, and external schema.</li>\n<li>To implement this design, you need to define these schemas using SQL.</li>\n<li>In this unit, we use commands to define the conceptual schema.</li>\n<li>The external schema-related commands are discussed in the next unit.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4 Data Manipulation Language</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>These are Data manipulation language (DML) commands.</li>\n<li>Further, you would like to retrieve selected information from the database.</li>\n<li>In this section, first, we discuss the command to insert, update or delete the data followed by commands to retrieve information from the database.</li>\n<li>You may please note that the changes made by the DML statements are made permanent only after these operations are COMMITTED.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4.1 Data insertion, Updating and Deletion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>are the values that are to be inserted into the respective column of the database.</li>\n<li>• You can use parameters instead of actual values, for example, you can use INSERT INTO PROGRAMME VALUES (&1, &2, &3); These parameter values can be input at the time of execution of the query.</li>\n<li>• You can use a sub-query (which will be explained in the next unit) instead of the values given in the command in the (…).</li>\n<li>Please note that you need to specify n values for the n columns.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.4.2 Data Retrieval</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user.</li>\n<li>SELECT statement is one of the most used statements of DML, as it helps in the retrieval of requisite data.</li>\n<li>In this section, we discuss various clauses of this statement.</li>\n<li>Statement: The following is the basic format of the select statement.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.5 GROUP BY Clause and Aggregate functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, you have gone through the concept of data manipulation language (DML).</li>\n<li>We have discussed the SELECT statement and its various clauses.</li>\n<li>In a database system, several queries require DBMS to produce information about a group.</li>\n<li>For example, you may be interested in finding the average marks of the group of PGDCA students vis-à-vis BCA students.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.6 Data Control Language</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The purpose of data control language (DCL) is to create users and assign access rights to them.</li>\n<li>In general, these commands are executed by a database administrator.</li>\n<li>The following are some of the most used DCL commands.</li>\n<li>Block3 covers the basic aspects of the GRANT option.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>The SELECT statement of SQL, in addition to SELECT, FROM and WHERE clauses, supports three more</code></div>\n<div class=\"formula-box\"><code>REVOKE SELECT ON STUDENT FROM PGDCA_Student;</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">SQL is one of the most important languages for any RDBMS. It allows a user to create tables, insert and update data in the tables and retrieve information from the tables. In addition, data of a table can be made available to only authorised users. This unit first introduces you to basic aspects of SQL and thereafter discusses the DDL commands. It is important that while creating tables you also include the constraints that are to be fulfilled by the tables. The constraints in SQL may be implemented using CHECK clause, PRIMARY KEY clause, FOREIGN KEY clause etc. You must also implement the referential action in</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-7_Structured_Query_Language.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

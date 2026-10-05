@@ -1,0 +1,153 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_02",
+  "unit_num": "Unit 2",
+  "title": "Problem Solving Using Search",
+  "filename": "Unit-2_Problem_Solving_Using_Search.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-2_Problem_Solving_Using_Search.pdf",
+  "total_pages": 46,
+  "word_count": 13393,
+  "est_read_time_minutes": 74,
+  "objectives": [
+    "queen’s problem",
+    "Formulation and Solution",
+    "Queen’s problem",
+    "Beta Pruning algorithm",
+    "Beta pruning",
+    "Beta pruning"
+  ],
+  "summary": "operations (rotations and reflections) of the board are counted as one. For 4 queen’s problems, there are 16c4 possible Queen’s problem. Note that,there are only 1 unique solution, out of 2 possible",
+  "flashcards": [
+    {
+      "question": "Q.5 Discuss a Backtracking algorithm to solve a N-Queen’s problem. Draw a state space tree to solve a",
+      "answer": ". The optimal search path is A→B→D→5 , as shown in figure",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "in which root is maximizing node and children are visited from left to right. Figure",
+      "answer": ". The optimal search path is A→B→D→5 , as shown in figure",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Where #M represents Number of missionaries in the left side bank (i.e., left side of the river) #C : represents the number of cannibals in the left side bank (i.e., left side of the river)",
+      "answer": ". The optimal search path is A→B→D→5 , as shown in figure",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "or (0,1) or (1,1) or (2,0) or (0,2).Here in (i,j), i represents number of missionaries and j means number of cannibals. (b) Solution of Missionaries and Cannibal problem: Start state: (",
+      "answer": "Key Principle: Many problems can be represented as state space.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "Goal State: (0,0,1) Figure: Solution of Missionaries and Cannibal problem",
+      "answer": "Key Principle: The structures of state space are trees and graphs.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "Start in the leftmost column",
+      "answer": ". The optimal search path is A→B→D→5 , as shown in figure",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Problem Formulation and how is it characterized?",
+      "answer": "The structures of state space are trees and graphs.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Problem Solving Using Search\"]\n  M1[\"2.3 Formulation of 8 puzzle problem \"]\n  Root --> M1\n  M1_1[\"2.3.4 Searching for solution in stat\"]\n  M1 --> M1_1\n  M2[\"2.4 N-queen’s problem- Formulation a\"]\n  Root --> M2\n  M2_1[\"2.4.1 Formulation of 8 Queen’s probl\"]\n  M2 --> M2_1\n  M2_2[\"2.4.2 State space tree for 4-Queen’s\"]\n  M2 --> M2_2\n  M2_3[\"2.4.3 Backtracking approach to solve\"]\n  M2 --> M2_3\n  M3[\"2.5 Two agent search Adversarial sea\"]\n  Root --> M3\n  M3_1[\"2.5.1 Elements of Game playing searc\"]\n  M3 --> M3_1\n  M3_2[\"2.5.2 Types of algorithms in Adversa\"]\n  M3 --> M3_2\n  M4[\"2.6 Minimax search strategy\"]\n  Root --> M4\n  M4_1[\"2.6.1 Minimax algorithm\"]\n  M4 --> M4_1\n  M4_2[\"2.6.2 Working of Minimax algorithm\"]\n  M4 --> M4_2\n  M4_3[\"2.6.3 Properties of Minimax algorith\"]\n  M4 --> M4_3\n  M5[\"2.7 Alpha-Beta Pruning algorithm\"]\n  Root --> M5\n  M5_1[\"2.7.1 Working of Alpha-Beta pruning\"]\n  M5 --> M5_1\n  M5_2[\"2.7.2 Move Ordering of Alpha-Beta pr\"]\n  M5 --> M5_2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Problem Formulation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The structures of state space are trees and graphs.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.1 Problem Formulation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The structures of state space are trees and graphs.</li>\n<li>A tree has one and only one path from any point to any other point.</li>\n<li>Graph consists of a set of nodes (vertices) and a set of edges (arcs).</li>\n<li>Arcs establish relationship (connections) between the nodes, i.e., a graph has several paths to a given node.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.2 Structure of a State space</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In a state space, a solution is a path from the initial state to a goal state or sometime just a goal state.</li>\n<li>It also gives the cost of applying the operators to the states.</li>\n<li>A path cost function is used to measure the quality of solution and out of all possible solutions, an optimal solution has the lowest path cost.</li>\n<li>The importance of cost depends on the problem and the type of solution asked.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.3 Problem solution of State space</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Many problems can be represented as state space.</li>\n<li>The state space of a problem includes: an initial state, one or more goal state, set of state transition operator (or a set of production rules), used to change the current state to another state.</li>\n<li>A control strategy is used that specifies the order in which the rules will be applied.</li>\n<li>For example, Depth-first search (DFS), Breath-first search (BFS) etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.4 Searching for solution in state spaces formulated</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of searching for solution in state spaces formulated.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in problem solving using search.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Formulation of 8 puzzle problem from AI perspective</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The eight-tile puzzle consists of a 3-by-3 (3×3) square frame board which holds eight (8) movable tiles numbered as 1 to 8.</li>\n<li>One square is empty, allowing the adjacent tiles to be shifted.</li>\n<li>There are 4 operators that is, “Moving the blank”: Move the blank UP, Move the blank DOWN, Move the blank LEFT and Move the blank RIGHT.</li>\n<li>Here cost of each action (blank move) = 1, so cost of a sequence of actions= the number of actions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 N-queen’s problem- Formulation and Solution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The N-Queen problem is the problem of placing N Queen’s (Q1,Q2,Q3,….</li>\n<li>Qn) on an N×N chessboard so that no two queens attack each other.</li>\n<li>The colour of the queens is meaningless in this puzzle, and any queen is assumed to be attack any other.</li>\n<li>So, a solution requires that no two queens share the same row, column, or diagonal.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.1 Formulation of 8 Queen’s problem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>States: any arrangement of 0 to 4 queens on the board Initial state: 0 queens on the board Successor function: Add queen in any square Goal test: 4 queens on the board, none attacked For the initial state, there are 16 successors.</li>\n<li>At the next level, each of the states has 15 successors, and so on down the line.</li>\n<li>This search tree can be restricted by considering only those successors where No queens are attacking each other.</li>\n<li>To do that, we have to check the new queen with all the other queens on the board.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.2 State space tree for 4-Queen’s problem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We place queen row-by-row (i.e.,Q_1in row 1, Q_2 in row 2 and so on).</li>\n<li>If you want optimal solution, then go for Dynamic programming.</li>\n<li>In a tree, the value (i,j) means in thei^(th )row, j^th queen is placed.</li>\n<li>Edges from level 1 to level 2 nodes specify the values for x1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules for the actions (operators) that can be taken</code></div>\n<div class=\"formula-box\"><code>rules, in combination with an</code></div>\n<div class=\"formula-box\"><code>rules), used to change the current state to another state.</code></div>\n<div class=\"formula-box\"><code>rules will be applied. For example, Depth-first search (DFS),</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">operations (rotations and reflections) of the board are counted as one. For 4 queen’s problems, there are 16c4 possible Queen’s problem. Note that,there are only 1 unique solution, out of 2 possible</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-2_Problem_Solving_Using_Search.pdf')\">\n          📄 Read Original IGNOU PDF (46 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 2 Problem Solving Using Search\"]\n  M1[\"2.3 Formulation of 8 puzzle problem \"]\n  Root --> M1\n  M1_1[\"2.3.4 Searching for solution in stat\"]\n  M1 --> M1_1\n  M2[\"2.4 N-queen’s problem- Formulation a\"]\n  Root --> M2\n  M2_1[\"2.4.1 Formulation of 8 Queen’s probl\"]\n  M2 --> M2_1\n  M2_2[\"2.4.2 State space tree for 4-Queen’s\"]\n  M2 --> M2_2\n  M2_3[\"2.4.3 Backtracking approach to solve\"]\n  M2 --> M2_3\n  M3[\"2.5 Two agent search Adversarial sea\"]\n  Root --> M3\n  M3_1[\"2.5.1 Elements of Game playing searc\"]\n  M3 --> M3_1\n  M3_2[\"2.5.2 Types of algorithms in Adversa\"]\n  M3 --> M3_2\n  M4[\"2.6 Minimax search strategy\"]\n  Root --> M4\n  M4_1[\"2.6.1 Minimax algorithm\"]\n  M4 --> M4_1\n  M4_2[\"2.6.2 Working of Minimax algorithm\"]\n  M4 --> M4_2\n  M4_3[\"2.6.3 Properties of Minimax algorith\"]\n  M4 --> M4_3\n  M5[\"2.7 Alpha-Beta Pruning algorithm\"]\n  Root --> M5\n  M5_1[\"2.7.1 Working of Alpha-Beta pruning\"]\n  M5 --> M5_1\n  M5_2[\"2.7.2 Move Ordering of Alpha-Beta pr\"]\n  M5 --> M5_2",
+  "definitions": [
+    {
+      "term": "Problem Formulation",
+      "definition": "The structures of state space are trees and graphs.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "2.2.1",
+      "topic": "Problem Formulation",
+      "points": [
+        "The structures of state space are trees and graphs.",
+        "A tree has one and only one path from any point to any other point.",
+        "Graph consists of a set of nodes (vertices) and a set of edges (arcs).",
+        "Arcs establish relationship (connections) between the nodes, i.e., a graph has several paths to a given node."
+      ]
+    },
+    {
+      "section_num": "2.2.2",
+      "topic": "Structure of a State space",
+      "points": [
+        "In a state space, a solution is a path from the initial state to a goal state or sometime just a goal state.",
+        "It also gives the cost of applying the operators to the states.",
+        "A path cost function is used to measure the quality of solution and out of all possible solutions, an optimal solution has the lowest path cost.",
+        "The importance of cost depends on the problem and the type of solution asked."
+      ]
+    },
+    {
+      "section_num": "2.2.3",
+      "topic": "Problem solution of State space",
+      "points": [
+        "Many problems can be represented as state space.",
+        "The state space of a problem includes: an initial state, one or more goal state, set of state transition operator (or a set of production rules), used to change the current state to another state.",
+        "A control strategy is used that specifies the order in which the rules will be applied.",
+        "For example, Depth-first search (DFS), Breath-first search (BFS) etc."
+      ]
+    },
+    {
+      "section_num": "2.3.4",
+      "topic": "Searching for solution in state spaces formulated",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of searching for solution in state spaces formulated.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in problem solving using search."
+      ]
+    },
+    {
+      "section_num": "2.3",
+      "topic": "Formulation of 8 puzzle problem from AI perspective",
+      "points": [
+        "The eight-tile puzzle consists of a 3-by-3 (3×3) square frame board which holds eight (8) movable tiles numbered as 1 to 8.",
+        "One square is empty, allowing the adjacent tiles to be shifted.",
+        "There are 4 operators that is, “Moving the blank”: Move the blank UP, Move the blank DOWN, Move the blank LEFT and Move the blank RIGHT.",
+        "Here cost of each action (blank move) = 1, so cost of a sequence of actions= the number of actions."
+      ]
+    },
+    {
+      "section_num": "2.4",
+      "topic": "N-queen’s problem- Formulation and Solution",
+      "points": [
+        "The N-Queen problem is the problem of placing N Queen’s (Q1,Q2,Q3,….",
+        "Qn) on an N×N chessboard so that no two queens attack each other.",
+        "The colour of the queens is meaningless in this puzzle, and any queen is assumed to be attack any other.",
+        "So, a solution requires that no two queens share the same row, column, or diagonal."
+      ]
+    },
+    {
+      "section_num": "2.4.1",
+      "topic": "Formulation of 8 Queen’s problem",
+      "points": [
+        "States: any arrangement of 0 to 4 queens on the board Initial state: 0 queens on the board Successor function: Add queen in any square Goal test: 4 queens on the board, none attacked For the initial state, there are 16 successors.",
+        "At the next level, each of the states has 15 successors, and so on down the line.",
+        "This search tree can be restricted by considering only those successors where No queens are attacking each other.",
+        "To do that, we have to check the new queen with all the other queens on the board."
+      ]
+    },
+    {
+      "section_num": "2.4.2",
+      "topic": "State space tree for 4-Queen’s problem",
+      "points": [
+        "We place queen row-by-row (i.e.,Q_1in row 1, Q_2 in row 2 and so on).",
+        "If you want optimal solution, then go for Dynamic programming.",
+        "In a tree, the value (i,j) means in thei^(th )row, j^th queen is placed.",
+        "Edges from level 1 to level 2 nodes specify the values for x1."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules for the actions (operators) that can be taken",
+    "rules, in combination with an",
+    "rules), used to change the current state to another state.",
+    "rules will be applied. For example, Depth-first search (DFS),"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Problem Solving Using Search\"]\n  M1[\"2.3 Formulation of 8 puzzle problem \"]\n  Root --> M1\n  M1_1[\"2.3.4 Searching for solution in stat\"]\n  M1 --> M1_1\n  M2[\"2.4 N-queen’s problem- Formulation a\"]\n  Root --> M2\n  M2_1[\"2.4.1 Formulation of 8 Queen’s probl\"]\n  M2 --> M2_1\n  M2_2[\"2.4.2 State space tree for 4-Queen’s\"]\n  M2 --> M2_2\n  M2_3[\"2.4.3 Backtracking approach to solve\"]\n  M2 --> M2_3\n  M3[\"2.5 Two agent search Adversarial sea\"]\n  Root --> M3\n  M3_1[\"2.5.1 Elements of Game playing searc\"]\n  M3 --> M3_1\n  M3_2[\"2.5.2 Types of algorithms in Adversa\"]\n  M3 --> M3_2\n  M4[\"2.6 Minimax search strategy\"]\n  Root --> M4\n  M4_1[\"2.6.1 Minimax algorithm\"]\n  M4 --> M4_1\n  M4_2[\"2.6.2 Working of Minimax algorithm\"]\n  M4 --> M4_2\n  M4_3[\"2.6.3 Properties of Minimax algorith\"]\n  M4 --> M4_3\n  M5[\"2.7 Alpha-Beta Pruning algorithm\"]\n  Root --> M5\n  M5_1[\"2.7.1 Working of Alpha-Beta pruning\"]\n  M5 --> M5_1\n  M5_2[\"2.7.2 Move Ordering of Alpha-Beta pr\"]\n  M5 --> M5_2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Problem Formulation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The structures of state space are trees and graphs.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.1 Problem Formulation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The structures of state space are trees and graphs.</li>\n<li>A tree has one and only one path from any point to any other point.</li>\n<li>Graph consists of a set of nodes (vertices) and a set of edges (arcs).</li>\n<li>Arcs establish relationship (connections) between the nodes, i.e., a graph has several paths to a given node.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.2 Structure of a State space</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In a state space, a solution is a path from the initial state to a goal state or sometime just a goal state.</li>\n<li>It also gives the cost of applying the operators to the states.</li>\n<li>A path cost function is used to measure the quality of solution and out of all possible solutions, an optimal solution has the lowest path cost.</li>\n<li>The importance of cost depends on the problem and the type of solution asked.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.3 Problem solution of State space</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Many problems can be represented as state space.</li>\n<li>The state space of a problem includes: an initial state, one or more goal state, set of state transition operator (or a set of production rules), used to change the current state to another state.</li>\n<li>A control strategy is used that specifies the order in which the rules will be applied.</li>\n<li>For example, Depth-first search (DFS), Breath-first search (BFS) etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.4 Searching for solution in state spaces formulated</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of searching for solution in state spaces formulated.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in problem solving using search.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Formulation of 8 puzzle problem from AI perspective</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The eight-tile puzzle consists of a 3-by-3 (3×3) square frame board which holds eight (8) movable tiles numbered as 1 to 8.</li>\n<li>One square is empty, allowing the adjacent tiles to be shifted.</li>\n<li>There are 4 operators that is, “Moving the blank”: Move the blank UP, Move the blank DOWN, Move the blank LEFT and Move the blank RIGHT.</li>\n<li>Here cost of each action (blank move) = 1, so cost of a sequence of actions= the number of actions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 N-queen’s problem- Formulation and Solution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The N-Queen problem is the problem of placing N Queen’s (Q1,Q2,Q3,….</li>\n<li>Qn) on an N×N chessboard so that no two queens attack each other.</li>\n<li>The colour of the queens is meaningless in this puzzle, and any queen is assumed to be attack any other.</li>\n<li>So, a solution requires that no two queens share the same row, column, or diagonal.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.1 Formulation of 8 Queen’s problem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>States: any arrangement of 0 to 4 queens on the board Initial state: 0 queens on the board Successor function: Add queen in any square Goal test: 4 queens on the board, none attacked For the initial state, there are 16 successors.</li>\n<li>At the next level, each of the states has 15 successors, and so on down the line.</li>\n<li>This search tree can be restricted by considering only those successors where No queens are attacking each other.</li>\n<li>To do that, we have to check the new queen with all the other queens on the board.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.2 State space tree for 4-Queen’s problem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We place queen row-by-row (i.e.,Q_1in row 1, Q_2 in row 2 and so on).</li>\n<li>If you want optimal solution, then go for Dynamic programming.</li>\n<li>In a tree, the value (i,j) means in thei^(th )row, j^th queen is placed.</li>\n<li>Edges from level 1 to level 2 nodes specify the values for x1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules for the actions (operators) that can be taken</code></div>\n<div class=\"formula-box\"><code>rules, in combination with an</code></div>\n<div class=\"formula-box\"><code>rules), used to change the current state to another state.</code></div>\n<div class=\"formula-box\"><code>rules will be applied. For example, Depth-first search (DFS),</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">operations (rotations and reflections) of the board are counted as one. For 4 queen’s problems, there are 16c4 possible Queen’s problem. Note that,there are only 1 unique solution, out of 2 possible</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-2_Problem_Solving_Using_Search.pdf')\">\n          📄 Read Original IGNOU PDF (46 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

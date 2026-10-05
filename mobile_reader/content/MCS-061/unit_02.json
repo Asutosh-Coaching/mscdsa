@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_02",
+  "unit_num": "Unit 2",
+  "title": "Relations",
+  "filename": "Unit-2_Relations.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-2_Relations.pdf",
+  "total_pages": 23,
+  "word_count": 8389,
+  "est_read_time_minutes": 47,
+  "objectives": [
+    "type Operations on Relations",
+    "type operations: inverse of operation, composition"
+  ],
+  "summary": "This unit provides an in-depth study of Relations. Regarding Relation, The concept of 'relation' is one of the few fundamental concepts of mathematics. Regarding Definition, Notation and Illustrations, In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY. Regarding Properties of Relations, We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X. Regarding Equivalence relations, and Partition of a Set, PARTITION OF A SET A relation R on a set X is said to be an equivalence relation, if R is reflexive, symmetric and transitive.",
+  "flashcards": [
+    {
+      "question": "Let R be a relation from X= {1, 2, 3, 4}, to Y = {1, 2, 3, 4}, with R = {(",
+      "answer": ",(2,2),(3,3)}is both symmetric and antisymmetric.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": ", (2, 1), (2, 3), (3, 1), (3, 2), (3, 4), (4, 3)} i) Give Graphic representation of R ii) Give Matrix representation of R",
+      "answer": ", but 1 ≠2. Check Your Progress –",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "For each of the following relations, tell whether it is reflexive, not-reflexive or anti- reflexive i) R={(",
+      "answer": "∈R, (3,2) ∈𝑅, (4,2) not ∈𝑅 ii",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": ",(2,2),(1,3),(2,3)}on X={1,2,3} ii) R = {(",
+      "answer": ",(2,2),(3,3)}is both symmetric and antisymmetric.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": ",(2,1),(1,3),(3,1)}on X={1,2,3} iii) R = {(",
+      "answer": ", but 1 ≠2. Check Your Progress –",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": ", (2,3), (1,3)}on X={1,2,3}",
+      "answer": ", but 1 ≠2. Check Your Progress –",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is The Relation and how is it characterized?",
+      "answer": "The Relation partial order because, some pairs of elements of domain under a partial order may not be related.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Relations\"]\n  M1[\"2.2 Relation\"]\n  Root --> M1\n  M1_1[\"2.2.1 Definition, Notation and Illus\"]\n  M1 --> M1_1\n  M2[\"2.3 Properties of Relations\"]\n  Root --> M2\n  M3[\"2.4 Equivalence relations, and Parti\"]\n  Root --> M3\n  M4[\"2.5 Partial Order Relation, Partiall\"]\n  Root --> M4\n  M4_1[\"2.5.1 Applications of Equivalence Re\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Partial Order Relation, Partia\"]\n  M4 --> M4_2\n  M5[\"2.7 Summery\"]\n  Root --> M5\n  M6[\"2.8 Answer to Check Your Progress\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Relation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Relation partial order because, some pairs of elements of domain under a partial order may not be related.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Relation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The concept of 'relation' is one of the few fundamental concepts of mathematics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition, Notation And Illustrations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Properties Of Relations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Set-Type Operations On Relations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The set-type operations on relations include union of relations, intersection of relations etc.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Relation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The concept of 'relation' is one of the few fundamental concepts of mathematics.</li>\n<li>We begin the discussion with its formal/ mathematical definition and illustrations through some well-known examples.</li>\n<li>Definition, Notation and Illustrations In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.</li>\n<li>Earlier mentioned relations like is-mother-of or is-less-than can be discussed as subsets of cross-products of some sets as follows.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.1 Definition, Notation and Illustrations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.</li>\n<li>Earlier mentioned relations like is-mother-of or is-less-than can be discussed as subsets of cross-products of some sets as follows.</li>\n<li>Notation (in Mathematics) If Sheela is the mother of Shivam, then the fact may be expressed as Sheela is- mother-of Shivam.</li>\n<li>In mathematics, it is preferred to denote the fact as (Sheela, Shivam) ∈ is-mother-of, where the relation “is mother of” is considered as the set of all the pairs (m, c), for which m “is mother” of c.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Properties of Relations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X.</li>\n<li>Unless mentioned otherwise, all relations are on the set X (fixed for all the relations under consideration).</li>\n<li>The discussion revolves around three important properties of relations on a set, viz.</li>\n<li>(i) reflexive, (ii) symmetric, and (iii) transitive.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Equivalence relations, and Partition of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>PARTITION OF A SET A relation R on a set X is said to be an equivalence relation, if R is reflexive, symmetric and transitive.</li>\n<li>In more detailed form, R is an equivalence relation on set X, if and only if (i) R is reflexive on X, i.</li>\n<li>for every x ∈ X, we have (x, x) ∈R, and (ii) R is symmetric on X, i.</li>\n<li>for x, y ∈ X, if (x, y)∈ R, then (y, x) ∈ R, and (iii) R is transitive on X, i.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Partial Order Relation, Partially Ordered Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For an equivalence relation R on a set X, the subset [a] of X defined as [a] = {𝑥∈ X: (x, a) ∈R} is called an equivalence class of a under the equivalence relation R.</li>\n<li>Example: Consider the relation R= {(a, a), (b.</li>\n<li>b), (b, c), (c, b), (c, c)} on set X= {a, b, c}.</li>\n<li>Two equivalence classes in X under R are {a} and {b, c}.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.1 Applications of Equivalence Relation and Partition of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Motivation for equivalence relation is that for some specific purpose, many apparently distinct elements behave identically, and hence need not be distinguished from each other.</li>\n<li>By clubbing all such elements, we reduce complexity for designing solutions of problems concerning the purpose.</li>\n<li>These 20 class sections determine a partition of the set of all students in the school.</li>\n<li>The equivalence relation has useful applications in the design of digital computers and other sequential machines.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.2 Partial Order Relation, Partially Ordered Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A relation R on a set X is said to be a partial order, if R is reflexive, antisymmetric and transitive.</li>\n<li>In more detailed form, R is an partial order on set X, if and only if i) R is reflexive on X, i.</li>\n<li>for every x ∈ X, we have (x, x) ∈R, and ii) R is anti-symmetric on X, i.</li>\n<li>for x, y∈ X, if (x, y)∈ R, and (y, x) ∈ R, then x=y, and iii) R is transitive on X, i.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.6.1 Set-type Operations on Relations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The set-type operations on relations include union of relations, intersection of relations etc.</li>\n<li>We explain this type of operation on relations only through examples.</li>\n<li>Mapping-type operations: inverse of operation, composition i) For a relation R from set X to Y, the inverse relation of R, denoted by R-1 is the relation from Y to X, such that (y, x) ∈R-1, if and only if (x, y) ∈R.</li>\n<li>Here, R and S are defined in a slightly different way than these were defined just above.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property viz. is-mother-of is used)</code></div>\n<div class=\"formula-box\"><code>property is-less-than)</code></div>\n<div class=\"formula-box\"><code>property of its argument; e.g., is-male is a property</code></div>\n<div class=\"formula-box\"><code>property of Mohan; similarly, is-prime-number is a</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides an in-depth study of Relations. Regarding Relation, The concept of 'relation' is one of the few fundamental concepts of mathematics. Regarding Definition, Notation and Illustrations, In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY. Regarding Properties of Relations, We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X. Regarding Equivalence relations, and Partition of a Set, PARTITION OF A SET A relation R on a set X is said to be an equivalence relation, if R is reflexive, symmetric and transitive.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-2_Relations.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 2 Relations\"]\n  M1[\"2.2 Relation\"]\n  Root --> M1\n  M1_1[\"2.2.1 Definition, Notation and Illus\"]\n  M1 --> M1_1\n  M2[\"2.3 Properties of Relations\"]\n  Root --> M2\n  M3[\"2.4 Equivalence relations, and Parti\"]\n  Root --> M3\n  M4[\"2.5 Partial Order Relation, Partiall\"]\n  Root --> M4\n  M4_1[\"2.5.1 Applications of Equivalence Re\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Partial Order Relation, Partia\"]\n  M4 --> M4_2\n  M5[\"2.7 Summery\"]\n  Root --> M5\n  M6[\"2.8 Answer to Check Your Progress\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "The Relation",
+      "definition": "The Relation partial order because, some pairs of elements of domain under a partial order may not be related.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Relation",
+      "definition": "The concept of 'relation' is one of the few fundamental concepts of mathematics.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Definition, Notation And Illustrations",
+      "definition": "In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Properties Of Relations",
+      "definition": "We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Set-Type Operations On Relations",
+      "definition": "The set-type operations on relations include union of relations, intersection of relations etc.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "2.2",
+      "topic": "Relation",
+      "points": [
+        "The concept of 'relation' is one of the few fundamental concepts of mathematics.",
+        "We begin the discussion with its formal/ mathematical definition and illustrations through some well-known examples.",
+        "Definition, Notation and Illustrations In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.",
+        "Earlier mentioned relations like is-mother-of or is-less-than can be discussed as subsets of cross-products of some sets as follows."
+      ]
+    },
+    {
+      "section_num": "2.2.1",
+      "topic": "Definition, Notation and Illustrations",
+      "points": [
+        "In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.",
+        "Earlier mentioned relations like is-mother-of or is-less-than can be discussed as subsets of cross-products of some sets as follows.",
+        "Notation (in Mathematics) If Sheela is the mother of Shivam, then the fact may be expressed as Sheela is- mother-of Shivam.",
+        "In mathematics, it is preferred to denote the fact as (Sheela, Shivam) ∈ is-mother-of, where the relation “is mother of” is considered as the set of all the pairs (m, c), for which m “is mother” of c."
+      ]
+    },
+    {
+      "section_num": "2.3",
+      "topic": "Properties of Relations",
+      "points": [
+        "We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X.",
+        "Unless mentioned otherwise, all relations are on the set X (fixed for all the relations under consideration).",
+        "The discussion revolves around three important properties of relations on a set, viz.",
+        "(i) reflexive, (ii) symmetric, and (iii) transitive."
+      ]
+    },
+    {
+      "section_num": "2.4",
+      "topic": "Equivalence relations, and Partition of a Set",
+      "points": [
+        "PARTITION OF A SET A relation R on a set X is said to be an equivalence relation, if R is reflexive, symmetric and transitive.",
+        "In more detailed form, R is an equivalence relation on set X, if and only if (i) R is reflexive on X, i.",
+        "for every x ∈ X, we have (x, x) ∈R, and (ii) R is symmetric on X, i.",
+        "for x, y ∈ X, if (x, y)∈ R, then (y, x) ∈ R, and (iii) R is transitive on X, i."
+      ]
+    },
+    {
+      "section_num": "2.5",
+      "topic": "Partial Order Relation, Partially Ordered Set",
+      "points": [
+        "For an equivalence relation R on a set X, the subset [a] of X defined as [a] = {𝑥∈ X: (x, a) ∈R} is called an equivalence class of a under the equivalence relation R.",
+        "Example: Consider the relation R= {(a, a), (b.",
+        "b), (b, c), (c, b), (c, c)} on set X= {a, b, c}.",
+        "Two equivalence classes in X under R are {a} and {b, c}."
+      ]
+    },
+    {
+      "section_num": "2.5.1",
+      "topic": "Applications of Equivalence Relation and Partition of a Set",
+      "points": [
+        "Motivation for equivalence relation is that for some specific purpose, many apparently distinct elements behave identically, and hence need not be distinguished from each other.",
+        "By clubbing all such elements, we reduce complexity for designing solutions of problems concerning the purpose.",
+        "These 20 class sections determine a partition of the set of all students in the school.",
+        "The equivalence relation has useful applications in the design of digital computers and other sequential machines."
+      ]
+    },
+    {
+      "section_num": "2.5.2",
+      "topic": "Partial Order Relation, Partially Ordered Sets",
+      "points": [
+        "A relation R on a set X is said to be a partial order, if R is reflexive, antisymmetric and transitive.",
+        "In more detailed form, R is an partial order on set X, if and only if i) R is reflexive on X, i.",
+        "for every x ∈ X, we have (x, x) ∈R, and ii) R is anti-symmetric on X, i.",
+        "for x, y∈ X, if (x, y)∈ R, and (y, x) ∈ R, then x=y, and iii) R is transitive on X, i."
+      ]
+    },
+    {
+      "section_num": "2.6.1",
+      "topic": "Set-type Operations on Relations",
+      "points": [
+        "The set-type operations on relations include union of relations, intersection of relations etc.",
+        "We explain this type of operation on relations only through examples.",
+        "Mapping-type operations: inverse of operation, composition i) For a relation R from set X to Y, the inverse relation of R, denoted by R-1 is the relation from Y to X, such that (y, x) ∈R-1, if and only if (x, y) ∈R.",
+        "Here, R and S are defined in a slightly different way than these were defined just above."
+      ]
+    }
+  ],
+  "formulas": [
+    "property viz. is-mother-of is used)",
+    "property is-less-than)",
+    "property of its argument; e.g., is-male is a property",
+    "property of Mohan; similarly, is-prime-number is a"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Relations\"]\n  M1[\"2.2 Relation\"]\n  Root --> M1\n  M1_1[\"2.2.1 Definition, Notation and Illus\"]\n  M1 --> M1_1\n  M2[\"2.3 Properties of Relations\"]\n  Root --> M2\n  M3[\"2.4 Equivalence relations, and Parti\"]\n  Root --> M3\n  M4[\"2.5 Partial Order Relation, Partiall\"]\n  Root --> M4\n  M4_1[\"2.5.1 Applications of Equivalence Re\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Partial Order Relation, Partia\"]\n  M4 --> M4_2\n  M5[\"2.7 Summery\"]\n  Root --> M5\n  M6[\"2.8 Answer to Check Your Progress\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Relation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Relation partial order because, some pairs of elements of domain under a partial order may not be related.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Relation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The concept of 'relation' is one of the few fundamental concepts of mathematics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition, Notation And Illustrations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Properties Of Relations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Set-Type Operations On Relations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The set-type operations on relations include union of relations, intersection of relations etc.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Relation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The concept of 'relation' is one of the few fundamental concepts of mathematics.</li>\n<li>We begin the discussion with its formal/ mathematical definition and illustrations through some well-known examples.</li>\n<li>Definition, Notation and Illustrations In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.</li>\n<li>Earlier mentioned relations like is-mother-of or is-less-than can be discussed as subsets of cross-products of some sets as follows.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.1 Definition, Notation and Illustrations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY.</li>\n<li>Earlier mentioned relations like is-mother-of or is-less-than can be discussed as subsets of cross-products of some sets as follows.</li>\n<li>Notation (in Mathematics) If Sheela is the mother of Shivam, then the fact may be expressed as Sheela is- mother-of Shivam.</li>\n<li>In mathematics, it is preferred to denote the fact as (Sheela, Shivam) ∈ is-mother-of, where the relation “is mother of” is considered as the set of all the pairs (m, c), for which m “is mother” of c.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Properties of Relations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X.</li>\n<li>Unless mentioned otherwise, all relations are on the set X (fixed for all the relations under consideration).</li>\n<li>The discussion revolves around three important properties of relations on a set, viz.</li>\n<li>(i) reflexive, (ii) symmetric, and (iii) transitive.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Equivalence relations, and Partition of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>PARTITION OF A SET A relation R on a set X is said to be an equivalence relation, if R is reflexive, symmetric and transitive.</li>\n<li>In more detailed form, R is an equivalence relation on set X, if and only if (i) R is reflexive on X, i.</li>\n<li>for every x ∈ X, we have (x, x) ∈R, and (ii) R is symmetric on X, i.</li>\n<li>for x, y ∈ X, if (x, y)∈ R, then (y, x) ∈ R, and (iii) R is transitive on X, i.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Partial Order Relation, Partially Ordered Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For an equivalence relation R on a set X, the subset [a] of X defined as [a] = {𝑥∈ X: (x, a) ∈R} is called an equivalence class of a under the equivalence relation R.</li>\n<li>Example: Consider the relation R= {(a, a), (b.</li>\n<li>b), (b, c), (c, b), (c, c)} on set X= {a, b, c}.</li>\n<li>Two equivalence classes in X under R are {a} and {b, c}.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.1 Applications of Equivalence Relation and Partition of a Set</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Motivation for equivalence relation is that for some specific purpose, many apparently distinct elements behave identically, and hence need not be distinguished from each other.</li>\n<li>By clubbing all such elements, we reduce complexity for designing solutions of problems concerning the purpose.</li>\n<li>These 20 class sections determine a partition of the set of all students in the school.</li>\n<li>The equivalence relation has useful applications in the design of digital computers and other sequential machines.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.2 Partial Order Relation, Partially Ordered Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A relation R on a set X is said to be a partial order, if R is reflexive, antisymmetric and transitive.</li>\n<li>In more detailed form, R is an partial order on set X, if and only if i) R is reflexive on X, i.</li>\n<li>for every x ∈ X, we have (x, x) ∈R, and ii) R is anti-symmetric on X, i.</li>\n<li>for x, y∈ X, if (x, y)∈ R, and (y, x) ∈ R, then x=y, and iii) R is transitive on X, i.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.6.1 Set-type Operations on Relations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The set-type operations on relations include union of relations, intersection of relations etc.</li>\n<li>We explain this type of operation on relations only through examples.</li>\n<li>Mapping-type operations: inverse of operation, composition i) For a relation R from set X to Y, the inverse relation of R, denoted by R-1 is the relation from Y to X, such that (y, x) ∈R-1, if and only if (x, y) ∈R.</li>\n<li>Here, R and S are defined in a slightly different way than these were defined just above.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property viz. is-mother-of is used)</code></div>\n<div class=\"formula-box\"><code>property is-less-than)</code></div>\n<div class=\"formula-box\"><code>property of its argument; e.g., is-male is a property</code></div>\n<div class=\"formula-box\"><code>property of Mohan; similarly, is-prime-number is a</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides an in-depth study of Relations. Regarding Relation, The concept of 'relation' is one of the few fundamental concepts of mathematics. Regarding Definition, Notation and Illustrations, In Mathematics, a relation from a set X to a set Y is defined as a subset of the cross- product X xY. Regarding Properties of Relations, We will discuss properties of only for those relations R for which the domain and range is the same set, say X, i.e., the relations on a set, say X. Regarding Equivalence relations, and Partition of a Set, PARTITION OF A SET A relation R on a set X is said to be an equivalence relation, if R is reflexive, symmetric and transitive.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-2_Relations.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

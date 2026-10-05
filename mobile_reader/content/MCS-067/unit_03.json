@@ -1,0 +1,175 @@
+{
+  "course_code": "MCS-067",
+  "unit_id": "unit_03",
+  "unit_num": "Unit 3",
+  "title": "Data Transformation",
+  "filename": "Unit-3_Data_Transformation.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-3_Data_Transformation.pdf",
+  "total_pages": 28,
+  "word_count": 9187,
+  "est_read_time_minutes": 51,
+  "objectives": [
+    "Width Binning with pd.cut()",
+    "Frequency Binning",
+    "with pd.qcut()",
+    "score versus IQR",
+    "Score Method (For Normal Data)",
+    "Hot Encoding"
+  ],
+  "summary": ", trimming and capping both serve as valuable tools for managing outliers. As analysts, our goal is to choose the method that best maintains the integrity of our dataset while ensuring our models remain robust and realistic. Advanced Consideration: Trade-offs in Outlier Treatment When we reach the stage of deciding how to treat outliers, we face an important design decision that shapes the quality of our data preparation. Choosing between trimming",
+  "flashcards": [
+    {
+      "question": "Explain the primary advantage of converting a continuous feature into discrete bins before training a Decision Tree model.",
+      "answer": "In Data Transformation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "A dataset ranges from 0 to 100. If you use pd.cut with bins=5, what is the exact width of each interval?",
+      "answer": "Key Principle: In Equal-Width Binning, the range of the variable (calculated as Maximum value minus Minimum value) is divided into a predetermined number of intervals (N), where each interval has the exact same width.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "A feature has Q1 = 150 and Q3 = 250. Calculate the Interquartile Range (IQR) and the upper fence boundary for outlier detection.",
+      "answer": "Key Principle: Outliers are data points that deviate significantly from other observations.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "If you have a very small dataset (N=50) with 5% outliers, would you generally prefer trimming (removal) or capping?",
+      "answer": "In Data Transformation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What specific type of distribution is the Z-score method best suited for, and why is it problematic to use it directly on highly skewed data?",
+      "answer": "Key Principle: In Equal-Width Binning, the range of the variable (calculated as Maximum value minus Minimum value) is divided into a predetermined number of intervals (N), where each interval has the exact same width.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "If you use df.sample(n=100, replace=True), what type of sampling is being performed, and for what statistical technique is this commonly used?",
+      "answer": "In Data Transformation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Permutation and how is it characterized?",
+      "answer": "Permutation the random rearrangement of elements in a sequence.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Data Transformation\"]\n  M1[\"3.2 Discretisation and Binning\"]\n  Root --> M1\n  M1_1[\"3.2.1 Conceptual Framework Why Discr\"]\n  M1 --> M1_1\n  M1_2[\"3.2.2 Method 1 Equal-Width Binning w\"]\n  M1 --> M1_2\n  M1_3[\"3.2.3 Method 2 Equal-Frequency Binni\"]\n  M1 --> M1_3\n  M2[\"3.3 Detecting and Filtering Outliers\"]\n  Root --> M2\n  M2_1[\"3.3.1 Visualisation Identifying Outl\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Method Selection Z-score versu\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Z-Score Method For Normal Data\"]\n  M2 --> M2_3\n  M3[\"3.4 Permutation and Random Sampling\"]\n  Root --> M3\n  M3_1[\"3.4.1 Random Sampling without Replac\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Random Sampling with Replaceme\"]\n  M3 --> M3_2\n  M3_3[\"3.4.3 Permutation Shuffling Data Ord\"]\n  M3 --> M3_3\n  M4[\"3.5 Computing Indicator Dummy Variab\"]\n  Root --> M4\n  M4_1[\"3.5.1 The Challenge of Categorical D\"]\n  M4 --> M4_1\n  M4_2[\"3.5.2 The Principle of One-Hot Encod\"]\n  M4 --> M4_2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Permutation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Permutation the random rearrangement of elements in a sequence.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Discretisation And Binning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Discretisation is the process of converting continuous numeric data into discrete categories to facilitate certain modelling techniques.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Conceptual Framework: Why Discretise?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This process is called Discretisation or Binning.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Method 2: Equal-Frequency Binning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">pd.qcut() Equal-Frequency Binning, implemented using pd.qcut(), focuses on balancing the number of observations in each bin, rather than balancing the range.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Detecting And Filtering Outliers</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Outliers are data points that deviate significantly from other observations.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Discretisation and Binning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Discretisation is the process of converting continuous numeric data into discrete categories to facilitate certain modelling techniques.</li>\n<li>This section describes the process in detail.</li>\n<li>This process is called Discretisation or Binning.</li>\n<li>For example, instead of using the exact Monthly_Salary (e.g., 50000, 68000, 150000), we may prefer to categorise it into 'Low Salary', 'Medium Salary', and 'High Salary'.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Conceptual Framework: Why Discretise?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This process is called Discretisation or Binning.</li>\n<li>For example, instead of using the exact Monthly_Salary (e.g., 50000, 68000, 150000), we may prefer to categorise it into 'Low Salary', 'Medium Salary', and 'High Salary'.</li>\n<li>We may group ‘Age’ into 5 or 10 age ranges (e.g., 0-10, 11-20, etc.).</li>\n<li>This process offers several benefits: • Data Simplification: By grouping values, we reduce the complexity of the dataset and make it easier to analyse and interpret.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.2 Method 1: Equal-Width Binning with pd.cut()</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Equal-Width Binning, the range of the variable (calculated as Maximum value minus Minimum value) is divided into a predetermined number of intervals (N), where each interval has the exact same width.</li>\n<li>For example, if marks range from 40 to 100 (range of 60), and we choose N=4 bins, each bin will have a width of 15 (60/4).</li>\n<li>We use the Pandas function pd.cut() for this method.</li>\n<li>Let us try an example using the above dataset.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.3 Method 2: Equal-Frequency Binning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>pd.qcut() Equal-Frequency Binning, implemented using pd.qcut(), focuses on balancing the number of observations in each bin, rather than balancing the range.</li>\n<li>This method uses percentiles, or quantiles, to define the bin boundaries.</li>\n<li>For instance, if we request four bins (quartiles), the boundaries will be defined such that the 25th, 50th, 75th, and 100th percentiles split the data, resulting in approximately equal counts in each bin.</li>\n<li>This approach is particularly valuable when the underlying data distribution is highly skewed, preventing all or most data points from clustering into one or two large bins.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.4 Comparison of pd.cut() and pd.qcut()</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us look at the fundamental difference between these two powerful discretization tools: Function Basis of Division Focus/Criteria Best Used When...</li>\n<li>pd.cut() Equal Value Range (Equal Width) The distance between the bin edges must be equal.</li>\n<li>Domain knowledge dictates fixed ranges (e.g., age groups, scores out of 100).</li>\n<li>pd.qcut() Equal Observation Count (Equal Frequency) The number of data points in each bin must be equal (or nearly equal).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Detecting and Filtering Outliers</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Outliers are data points that deviate significantly from other observations.</li>\n<li>They represent rare occurrences, measurement errors, or genuine extreme values.</li>\n<li>If ignored, outliers can skew statistical averages (like the mean) and standard deviations, potentially leading to poorly generalised analytical models.</li>\n<li>Effective data transformation requires robust methods for detecting and managing these anomalies.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.1 Visualisation: Identifying Outliers with Box Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The essential first step in outlier management is visualisation.</li>\n<li>The Box Plot (or Box- and-Whisker Plot) is the standard tool for quickly identifying data spread and potential outliers.</li>\n<li>It provides a clear graphical representation, showing the median and quartiles.</li>\n<li>Please note it uses seaborn library of Python, which is used for making the box plot on Annual Income.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.2 Method Selection: Z-score versus IQR</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The choice of numerical detection method depends critically on the underlying data distribution.</li>\n<li>Z-Score Method The Z-score method assumes that the data is normally (Gaussian) distributed.</li>\n<li>It measures how many standard deviations a data point deviates from the mean.</li>\n<li>Outliers are typically defined as values with a Z-score greater than a threshold, commonly ±2 or ±3.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles of Regular</code></div>\n<div class=\"formula-box\"><code>rule, typically represent potential outliers</code></div>\n<div class=\"formula-box\"><code>property prices, another useful approach is the logarithmic</code></div>\n<div class=\"formula-box\"><code>property value, capping or transforming the data is usually a wiser approach. This way, we</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">, trimming and capping both serve as valuable tools for managing outliers. As analysts, our goal is to choose the method that best maintains the integrity of our dataset while ensuring our models remain robust and realistic. Advanced Consideration: Trade-offs in Outlier Treatment When we reach the stage of deciding how to treat outliers, we face an important design decision that shapes the quality of our data preparation. Choosing between trimming</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-3_Data_Transformation.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 3 Data Transformation\"]\n  M1[\"3.2 Discretisation and Binning\"]\n  Root --> M1\n  M1_1[\"3.2.1 Conceptual Framework Why Discr\"]\n  M1 --> M1_1\n  M1_2[\"3.2.2 Method 1 Equal-Width Binning w\"]\n  M1 --> M1_2\n  M1_3[\"3.2.3 Method 2 Equal-Frequency Binni\"]\n  M1 --> M1_3\n  M2[\"3.3 Detecting and Filtering Outliers\"]\n  Root --> M2\n  M2_1[\"3.3.1 Visualisation Identifying Outl\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Method Selection Z-score versu\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Z-Score Method For Normal Data\"]\n  M2 --> M2_3\n  M3[\"3.4 Permutation and Random Sampling\"]\n  Root --> M3\n  M3_1[\"3.4.1 Random Sampling without Replac\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Random Sampling with Replaceme\"]\n  M3 --> M3_2\n  M3_3[\"3.4.3 Permutation Shuffling Data Ord\"]\n  M3 --> M3_3\n  M4[\"3.5 Computing Indicator Dummy Variab\"]\n  Root --> M4\n  M4_1[\"3.5.1 The Challenge of Categorical D\"]\n  M4 --> M4_1\n  M4_2[\"3.5.2 The Principle of One-Hot Encod\"]\n  M4 --> M4_2",
+  "definitions": [
+    {
+      "term": "Permutation",
+      "definition": "Permutation the random rearrangement of elements in a sequence.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Discretisation And Binning",
+      "definition": "Discretisation is the process of converting continuous numeric data into discrete categories to facilitate certain modelling techniques.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Conceptual Framework: Why Discretise?",
+      "definition": "This process is called Discretisation or Binning.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Method 2: Equal-Frequency Binning",
+      "definition": "pd.qcut() Equal-Frequency Binning, implemented using pd.qcut(), focuses on balancing the number of observations in each bin, rather than balancing the range.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Detecting And Filtering Outliers",
+      "definition": "Outliers are data points that deviate significantly from other observations.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "3.2",
+      "topic": "Discretisation and Binning",
+      "points": [
+        "Discretisation is the process of converting continuous numeric data into discrete categories to facilitate certain modelling techniques.",
+        "This section describes the process in detail.",
+        "This process is called Discretisation or Binning.",
+        "For example, instead of using the exact Monthly_Salary (e.g., 50000, 68000, 150000), we may prefer to categorise it into 'Low Salary', 'Medium Salary', and 'High Salary'."
+      ]
+    },
+    {
+      "section_num": "3.2.1",
+      "topic": "Conceptual Framework: Why Discretise?",
+      "points": [
+        "This process is called Discretisation or Binning.",
+        "For example, instead of using the exact Monthly_Salary (e.g., 50000, 68000, 150000), we may prefer to categorise it into 'Low Salary', 'Medium Salary', and 'High Salary'.",
+        "We may group ‘Age’ into 5 or 10 age ranges (e.g., 0-10, 11-20, etc.).",
+        "This process offers several benefits: • Data Simplification: By grouping values, we reduce the complexity of the dataset and make it easier to analyse and interpret."
+      ]
+    },
+    {
+      "section_num": "3.2.2",
+      "topic": "Method 1: Equal-Width Binning with pd.cut()",
+      "points": [
+        "In Equal-Width Binning, the range of the variable (calculated as Maximum value minus Minimum value) is divided into a predetermined number of intervals (N), where each interval has the exact same width.",
+        "For example, if marks range from 40 to 100 (range of 60), and we choose N=4 bins, each bin will have a width of 15 (60/4).",
+        "We use the Pandas function pd.cut() for this method.",
+        "Let us try an example using the above dataset."
+      ]
+    },
+    {
+      "section_num": "3.2.3",
+      "topic": "Method 2: Equal-Frequency Binning",
+      "points": [
+        "pd.qcut() Equal-Frequency Binning, implemented using pd.qcut(), focuses on balancing the number of observations in each bin, rather than balancing the range.",
+        "This method uses percentiles, or quantiles, to define the bin boundaries.",
+        "For instance, if we request four bins (quartiles), the boundaries will be defined such that the 25th, 50th, 75th, and 100th percentiles split the data, resulting in approximately equal counts in each bin.",
+        "This approach is particularly valuable when the underlying data distribution is highly skewed, preventing all or most data points from clustering into one or two large bins."
+      ]
+    },
+    {
+      "section_num": "3.2.4",
+      "topic": "Comparison of pd.cut() and pd.qcut()",
+      "points": [
+        "Let us look at the fundamental difference between these two powerful discretization tools: Function Basis of Division Focus/Criteria Best Used When...",
+        "pd.cut() Equal Value Range (Equal Width) The distance between the bin edges must be equal.",
+        "Domain knowledge dictates fixed ranges (e.g., age groups, scores out of 100).",
+        "pd.qcut() Equal Observation Count (Equal Frequency) The number of data points in each bin must be equal (or nearly equal)."
+      ]
+    },
+    {
+      "section_num": "3.3",
+      "topic": "Detecting and Filtering Outliers",
+      "points": [
+        "Outliers are data points that deviate significantly from other observations.",
+        "They represent rare occurrences, measurement errors, or genuine extreme values.",
+        "If ignored, outliers can skew statistical averages (like the mean) and standard deviations, potentially leading to poorly generalised analytical models.",
+        "Effective data transformation requires robust methods for detecting and managing these anomalies."
+      ]
+    },
+    {
+      "section_num": "3.3.1",
+      "topic": "Visualisation: Identifying Outliers with Box Plots",
+      "points": [
+        "The essential first step in outlier management is visualisation.",
+        "The Box Plot (or Box- and-Whisker Plot) is the standard tool for quickly identifying data spread and potential outliers.",
+        "It provides a clear graphical representation, showing the median and quartiles.",
+        "Please note it uses seaborn library of Python, which is used for making the box plot on Annual Income."
+      ]
+    },
+    {
+      "section_num": "3.3.2",
+      "topic": "Method Selection: Z-score versus IQR",
+      "points": [
+        "The choice of numerical detection method depends critically on the underlying data distribution.",
+        "Z-Score Method The Z-score method assumes that the data is normally (Gaussian) distributed.",
+        "It measures how many standard deviations a data point deviates from the mean.",
+        "Outliers are typically defined as values with a Z-score greater than a threshold, commonly ±2 or ±3."
+      ]
+    }
+  ],
+  "formulas": [
+    "principles of Regular",
+    "rule, typically represent potential outliers",
+    "property prices, another useful approach is the logarithmic",
+    "property value, capping or transforming the data is usually a wiser approach. This way, we"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Data Transformation\"]\n  M1[\"3.2 Discretisation and Binning\"]\n  Root --> M1\n  M1_1[\"3.2.1 Conceptual Framework Why Discr\"]\n  M1 --> M1_1\n  M1_2[\"3.2.2 Method 1 Equal-Width Binning w\"]\n  M1 --> M1_2\n  M1_3[\"3.2.3 Method 2 Equal-Frequency Binni\"]\n  M1 --> M1_3\n  M2[\"3.3 Detecting and Filtering Outliers\"]\n  Root --> M2\n  M2_1[\"3.3.1 Visualisation Identifying Outl\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Method Selection Z-score versu\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Z-Score Method For Normal Data\"]\n  M2 --> M2_3\n  M3[\"3.4 Permutation and Random Sampling\"]\n  Root --> M3\n  M3_1[\"3.4.1 Random Sampling without Replac\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Random Sampling with Replaceme\"]\n  M3 --> M3_2\n  M3_3[\"3.4.3 Permutation Shuffling Data Ord\"]\n  M3 --> M3_3\n  M4[\"3.5 Computing Indicator Dummy Variab\"]\n  Root --> M4\n  M4_1[\"3.5.1 The Challenge of Categorical D\"]\n  M4 --> M4_1\n  M4_2[\"3.5.2 The Principle of One-Hot Encod\"]\n  M4 --> M4_2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Permutation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Permutation the random rearrangement of elements in a sequence.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Discretisation And Binning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Discretisation is the process of converting continuous numeric data into discrete categories to facilitate certain modelling techniques.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Conceptual Framework: Why Discretise?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This process is called Discretisation or Binning.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Method 2: Equal-Frequency Binning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">pd.qcut() Equal-Frequency Binning, implemented using pd.qcut(), focuses on balancing the number of observations in each bin, rather than balancing the range.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Detecting And Filtering Outliers</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Outliers are data points that deviate significantly from other observations.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Discretisation and Binning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Discretisation is the process of converting continuous numeric data into discrete categories to facilitate certain modelling techniques.</li>\n<li>This section describes the process in detail.</li>\n<li>This process is called Discretisation or Binning.</li>\n<li>For example, instead of using the exact Monthly_Salary (e.g., 50000, 68000, 150000), we may prefer to categorise it into 'Low Salary', 'Medium Salary', and 'High Salary'.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Conceptual Framework: Why Discretise?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This process is called Discretisation or Binning.</li>\n<li>For example, instead of using the exact Monthly_Salary (e.g., 50000, 68000, 150000), we may prefer to categorise it into 'Low Salary', 'Medium Salary', and 'High Salary'.</li>\n<li>We may group ‘Age’ into 5 or 10 age ranges (e.g., 0-10, 11-20, etc.).</li>\n<li>This process offers several benefits: • Data Simplification: By grouping values, we reduce the complexity of the dataset and make it easier to analyse and interpret.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.2 Method 1: Equal-Width Binning with pd.cut()</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Equal-Width Binning, the range of the variable (calculated as Maximum value minus Minimum value) is divided into a predetermined number of intervals (N), where each interval has the exact same width.</li>\n<li>For example, if marks range from 40 to 100 (range of 60), and we choose N=4 bins, each bin will have a width of 15 (60/4).</li>\n<li>We use the Pandas function pd.cut() for this method.</li>\n<li>Let us try an example using the above dataset.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.3 Method 2: Equal-Frequency Binning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>pd.qcut() Equal-Frequency Binning, implemented using pd.qcut(), focuses on balancing the number of observations in each bin, rather than balancing the range.</li>\n<li>This method uses percentiles, or quantiles, to define the bin boundaries.</li>\n<li>For instance, if we request four bins (quartiles), the boundaries will be defined such that the 25th, 50th, 75th, and 100th percentiles split the data, resulting in approximately equal counts in each bin.</li>\n<li>This approach is particularly valuable when the underlying data distribution is highly skewed, preventing all or most data points from clustering into one or two large bins.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.4 Comparison of pd.cut() and pd.qcut()</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us look at the fundamental difference between these two powerful discretization tools: Function Basis of Division Focus/Criteria Best Used When...</li>\n<li>pd.cut() Equal Value Range (Equal Width) The distance between the bin edges must be equal.</li>\n<li>Domain knowledge dictates fixed ranges (e.g., age groups, scores out of 100).</li>\n<li>pd.qcut() Equal Observation Count (Equal Frequency) The number of data points in each bin must be equal (or nearly equal).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Detecting and Filtering Outliers</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Outliers are data points that deviate significantly from other observations.</li>\n<li>They represent rare occurrences, measurement errors, or genuine extreme values.</li>\n<li>If ignored, outliers can skew statistical averages (like the mean) and standard deviations, potentially leading to poorly generalised analytical models.</li>\n<li>Effective data transformation requires robust methods for detecting and managing these anomalies.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.1 Visualisation: Identifying Outliers with Box Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The essential first step in outlier management is visualisation.</li>\n<li>The Box Plot (or Box- and-Whisker Plot) is the standard tool for quickly identifying data spread and potential outliers.</li>\n<li>It provides a clear graphical representation, showing the median and quartiles.</li>\n<li>Please note it uses seaborn library of Python, which is used for making the box plot on Annual Income.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.2 Method Selection: Z-score versus IQR</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The choice of numerical detection method depends critically on the underlying data distribution.</li>\n<li>Z-Score Method The Z-score method assumes that the data is normally (Gaussian) distributed.</li>\n<li>It measures how many standard deviations a data point deviates from the mean.</li>\n<li>Outliers are typically defined as values with a Z-score greater than a threshold, commonly ±2 or ±3.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles of Regular</code></div>\n<div class=\"formula-box\"><code>rule, typically represent potential outliers</code></div>\n<div class=\"formula-box\"><code>property prices, another useful approach is the logarithmic</code></div>\n<div class=\"formula-box\"><code>property value, capping or transforming the data is usually a wiser approach. This way, we</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">, trimming and capping both serve as valuable tools for managing outliers. As analysts, our goal is to choose the method that best maintains the integrity of our dataset while ensuring our models remain robust and realistic. Advanced Consideration: Trade-offs in Outlier Treatment When we reach the stage of deciding how to treat outliers, we face an important design decision that shapes the quality of our data preparation. Choosing between trimming</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-3_Data_Transformation.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

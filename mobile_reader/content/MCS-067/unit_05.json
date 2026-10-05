@@ -1,0 +1,165 @@
+{
+  "course_code": "MCS-067",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Data Aggregation and Group Operations",
+  "filename": "Unit-5_Data_Aggregation_and_Group_Operations.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-5_Data_Aggregation_and_Group_Operations.pdf",
+  "total_pages": 22,
+  "word_count": 7987,
+  "est_read_time_minutes": 44,
+  "objectives": [
+    "wise Aggregation"
+  ],
+  "summary": "This unit discusses the groupby mechanism using examples of Python programming. The following topics have been covered in the unit: Creating a group on one or multiple columns. Iterating the data of the groups using for loop. Selecting only a subgroup from the entire data, like columnar subset. Performing data aggregation over the groups to create summarised data frames.",
+  "flashcards": [
+    {
+      "question": "Rearrange the data in groups using the Category of product and display these subgroups.",
+      "answer": "Key Principle: Groups are created to perform a basic set of analytical functions on the data of the group.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Rearrange the data to display the total sales of the ‘Educational’ Category only.",
+      "answer": "In Data Aggregation and Group Operations, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Rearrange the data to show Region-wise total sales of each category.",
+      "answer": "In Data Aggregation and Group Operations, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Show records of only those regions whose total sales are 2100 thousand or more.",
+      "answer": "In Data Aggregation and Group Operations, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Find the minimum and maximum sales for each category. Also, find the number of regions where products of this category are sold.",
+      "answer": "In Data Aggregation and Group Operations, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Aggregate the Sales data category-wise and create a Row index for this data.",
+      "answer": "Key Principle: Aggregate functions provide a summarised view of data.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Group By Mechanics and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Data Aggregation and Group Op\"]\n  M1[\"5.2 Group By Mechanics\"]\n  Root --> M1\n  M1_1[\"5.2.1 Iterating Over Groups\"]\n  M1 --> M1_1\n  M1_2[\"5.2.2 Selecting a Columnar Subset of\"]\n  M1 --> M1_2\n  M2[\"5.3 Data Aggregation\"]\n  Root --> M2\n  M2_1[\"5.3.1 Multiple Aggregate Functions i\"]\n  M2 --> M2_1\n  M2_2[\"5.3.2 Column-wise Aggregation\"]\n  M2 --> M2_2\n  M3[\"5.4 Grouping with Dictionaries and S\"]\n  Root --> M3\n  M4[\"5.5 Grouping with Functions\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Group By Mechanics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Iterating Over Groups</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Groups are created to perform a basic set of analytical functions on the data of the group.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Aggregation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the context of data wrangling, data aggregation primarily involves the process of summarising data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Column-Wise Aggregation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Interestingly, Python also allows you to perform separate aggregations for separate columns of the data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Grouping With Functions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Functions are, in general, useful for grouping data on date/time columns or a part of a string.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Group By Mechanics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in data aggregation and group operations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.1 Iterating Over Groups</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Groups are created to perform a basic set of analytical functions on the data of the group.</li>\n<li>How will you be able to access data in each group or sub-group?</li>\n<li>This process can help in creating a separate list of records in an object, which can then be handled separately.</li>\n<li>Please note that the for loop is performed on two objects: employee_department and employee_data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.2 Selecting a Columnar Subset of a Group</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>After grouping the data, you may like to perform separate group operations on the data.</li>\n<li>Further, you may not like to display some columns of the data frame at all.</li>\n<li>In addition, some of these columns can be used to compute the aggregated data.</li>\n<li>Part (a) of this program creates the data, data frame and groups the data using the column ‘Department’ 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Data Aggregation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the context of data wrangling, data aggregation primarily involves the process of summarising data.</li>\n<li>Such summarisation of data is possible only if the data is well organised.</li>\n<li>Thus, raw data is first processed and combined to create structured data.</li>\n<li>For example, a University may keep information about students’ assignment results in several files.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.1 Multiple Aggregate Functions in a Column</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Aggregate functions provide a summarised view of data.</li>\n<li>In certain situations, you want to apply several aggregate functions on a column.</li>\n<li>This enhances the efficiency of data processing.</li>\n<li>For example, if you want to find the average salary, total salary and maximum in a department, you will be required to apply multiple aggregate functions in a single aggregation operation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.2 Column-wise Aggregation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Interestingly, Python also allows you to perform separate aggregations for separate columns of the data.</li>\n<li>One such example of this feature is shown in Part (c) of Program 6, where different aggregate functions have been selected on a group by object selected_columns using the.</li>\n<li>You may notice that the ‘Salary’ column is aggregated using the sum method, whereas the ‘YearsWorking’ column is aggregated using the max and min methods.</li>\n<li>This data frame is then grouped on multiple columns, namely ‘Department’ and ‘Specialisation’.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Grouping with Dictionaries and Series</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sections, we have discussed about grouping a dataframe using one or multiple columns.</li>\n<li>In this section, we will discuss how grouping can be done with the help of a dictionary or a series.</li>\n<li>When grouping by dictionary, you create a mapping of a different set of values or column names, whereas a series is used to assign certain labels on which grouping can be performed in rows.</li>\n<li>Grouping is performed using a dictionary or a series when no column is available for grouping or when grouping is needed on metadata.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Grouping with Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Functions are, in general, useful for grouping data on date/time columns or a part of a string.</li>\n<li>Further, the functions can be used to group data frames by index or by column.</li>\n<li>In this section, the grouping by function has been explained with the help of an example involving grouping by date and the first character of the name.</li>\n<li>For this example, we have changed one of the columns of the data, i.e., instead of years of working, we have created a column named DateOfJoining, which contains the data of date type.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule specified by the stated lambda function. Please note that a lambda function is</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit discusses the groupby mechanism using examples of Python programming. The following topics have been covered in the unit: Creating a group on one or multiple columns. Iterating the data of the groups using for loop. Selecting only a subgroup from the entire data, like columnar subset. Performing data aggregation over the groups to create summarised data frames.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-5_Data_Aggregation_and_Group_Operations.pdf')\">\n          📄 Read Original IGNOU PDF (22 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Data Aggregation and Group Op\"]\n  M1[\"5.2 Group By Mechanics\"]\n  Root --> M1\n  M1_1[\"5.2.1 Iterating Over Groups\"]\n  M1 --> M1_1\n  M1_2[\"5.2.2 Selecting a Columnar Subset of\"]\n  M1 --> M1_2\n  M2[\"5.3 Data Aggregation\"]\n  Root --> M2\n  M2_1[\"5.3.1 Multiple Aggregate Functions i\"]\n  M2 --> M2_1\n  M2_2[\"5.3.2 Column-wise Aggregation\"]\n  M2 --> M2_2\n  M3[\"5.4 Grouping with Dictionaries and S\"]\n  Root --> M3\n  M4[\"5.5 Grouping with Functions\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "Group By Mechanics",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Iterating Over Groups",
+      "definition": "Groups are created to perform a basic set of analytical functions on the data of the group.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Aggregation",
+      "definition": "In the context of data wrangling, data aggregation primarily involves the process of summarising data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Column-Wise Aggregation",
+      "definition": "Interestingly, Python also allows you to perform separate aggregations for separate columns of the data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Grouping With Functions",
+      "definition": "Functions are, in general, useful for grouping data on date/time columns or a part of a string.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.2",
+      "topic": "Group By Mechanics",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in data aggregation and group operations."
+      ]
+    },
+    {
+      "section_num": "5.2.1",
+      "topic": "Iterating Over Groups",
+      "points": [
+        "Groups are created to perform a basic set of analytical functions on the data of the group.",
+        "How will you be able to access data in each group or sub-group?",
+        "This process can help in creating a separate list of records in an object, which can then be handled separately.",
+        "Please note that the for loop is performed on two objects: employee_department and employee_data."
+      ]
+    },
+    {
+      "section_num": "5.2.2",
+      "topic": "Selecting a Columnar Subset of a Group",
+      "points": [
+        "After grouping the data, you may like to perform separate group operations on the data.",
+        "Further, you may not like to display some columns of the data frame at all.",
+        "In addition, some of these columns can be used to compute the aggregated data.",
+        "Part (a) of this program creates the data, data frame and groups the data using the column ‘Department’ 2."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Data Aggregation",
+      "points": [
+        "In the context of data wrangling, data aggregation primarily involves the process of summarising data.",
+        "Such summarisation of data is possible only if the data is well organised.",
+        "Thus, raw data is first processed and combined to create structured data.",
+        "For example, a University may keep information about students’ assignment results in several files."
+      ]
+    },
+    {
+      "section_num": "5.3.1",
+      "topic": "Multiple Aggregate Functions in a Column",
+      "points": [
+        "Aggregate functions provide a summarised view of data.",
+        "In certain situations, you want to apply several aggregate functions on a column.",
+        "This enhances the efficiency of data processing.",
+        "For example, if you want to find the average salary, total salary and maximum in a department, you will be required to apply multiple aggregate functions in a single aggregation operation."
+      ]
+    },
+    {
+      "section_num": "5.3.2",
+      "topic": "Column-wise Aggregation",
+      "points": [
+        "Interestingly, Python also allows you to perform separate aggregations for separate columns of the data.",
+        "One such example of this feature is shown in Part (c) of Program 6, where different aggregate functions have been selected on a group by object selected_columns using the.",
+        "You may notice that the ‘Salary’ column is aggregated using the sum method, whereas the ‘YearsWorking’ column is aggregated using the max and min methods.",
+        "This data frame is then grouped on multiple columns, namely ‘Department’ and ‘Specialisation’."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Grouping with Dictionaries and Series",
+      "points": [
+        "In the previous sections, we have discussed about grouping a dataframe using one or multiple columns.",
+        "In this section, we will discuss how grouping can be done with the help of a dictionary or a series.",
+        "When grouping by dictionary, you create a mapping of a different set of values or column names, whereas a series is used to assign certain labels on which grouping can be performed in rows.",
+        "Grouping is performed using a dictionary or a series when no column is available for grouping or when grouping is needed on metadata."
+      ]
+    },
+    {
+      "section_num": "5.5",
+      "topic": "Grouping with Functions",
+      "points": [
+        "Functions are, in general, useful for grouping data on date/time columns or a part of a string.",
+        "Further, the functions can be used to group data frames by index or by column.",
+        "In this section, the grouping by function has been explained with the help of an example involving grouping by date and the first character of the name.",
+        "For this example, we have changed one of the columns of the data, i.e., instead of years of working, we have created a column named DateOfJoining, which contains the data of date type."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule specified by the stated lambda function. Please note that a lambda function is"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Data Aggregation and Group Op\"]\n  M1[\"5.2 Group By Mechanics\"]\n  Root --> M1\n  M1_1[\"5.2.1 Iterating Over Groups\"]\n  M1 --> M1_1\n  M1_2[\"5.2.2 Selecting a Columnar Subset of\"]\n  M1 --> M1_2\n  M2[\"5.3 Data Aggregation\"]\n  Root --> M2\n  M2_1[\"5.3.1 Multiple Aggregate Functions i\"]\n  M2 --> M2_1\n  M2_2[\"5.3.2 Column-wise Aggregation\"]\n  M2 --> M2_2\n  M3[\"5.4 Grouping with Dictionaries and S\"]\n  Root --> M3\n  M4[\"5.5 Grouping with Functions\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Group By Mechanics</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Iterating Over Groups</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Groups are created to perform a basic set of analytical functions on the data of the group.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Aggregation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the context of data wrangling, data aggregation primarily involves the process of summarising data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Column-Wise Aggregation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Interestingly, Python also allows you to perform separate aggregations for separate columns of the data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Grouping With Functions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Functions are, in general, useful for grouping data on date/time columns or a part of a string.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Group By Mechanics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of group by mechanics.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in data aggregation and group operations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.1 Iterating Over Groups</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Groups are created to perform a basic set of analytical functions on the data of the group.</li>\n<li>How will you be able to access data in each group or sub-group?</li>\n<li>This process can help in creating a separate list of records in an object, which can then be handled separately.</li>\n<li>Please note that the for loop is performed on two objects: employee_department and employee_data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.2 Selecting a Columnar Subset of a Group</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>After grouping the data, you may like to perform separate group operations on the data.</li>\n<li>Further, you may not like to display some columns of the data frame at all.</li>\n<li>In addition, some of these columns can be used to compute the aggregated data.</li>\n<li>Part (a) of this program creates the data, data frame and groups the data using the column ‘Department’ 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Data Aggregation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the context of data wrangling, data aggregation primarily involves the process of summarising data.</li>\n<li>Such summarisation of data is possible only if the data is well organised.</li>\n<li>Thus, raw data is first processed and combined to create structured data.</li>\n<li>For example, a University may keep information about students’ assignment results in several files.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.1 Multiple Aggregate Functions in a Column</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Aggregate functions provide a summarised view of data.</li>\n<li>In certain situations, you want to apply several aggregate functions on a column.</li>\n<li>This enhances the efficiency of data processing.</li>\n<li>For example, if you want to find the average salary, total salary and maximum in a department, you will be required to apply multiple aggregate functions in a single aggregation operation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.2 Column-wise Aggregation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Interestingly, Python also allows you to perform separate aggregations for separate columns of the data.</li>\n<li>One such example of this feature is shown in Part (c) of Program 6, where different aggregate functions have been selected on a group by object selected_columns using the.</li>\n<li>You may notice that the ‘Salary’ column is aggregated using the sum method, whereas the ‘YearsWorking’ column is aggregated using the max and min methods.</li>\n<li>This data frame is then grouped on multiple columns, namely ‘Department’ and ‘Specialisation’.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Grouping with Dictionaries and Series</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sections, we have discussed about grouping a dataframe using one or multiple columns.</li>\n<li>In this section, we will discuss how grouping can be done with the help of a dictionary or a series.</li>\n<li>When grouping by dictionary, you create a mapping of a different set of values or column names, whereas a series is used to assign certain labels on which grouping can be performed in rows.</li>\n<li>Grouping is performed using a dictionary or a series when no column is available for grouping or when grouping is needed on metadata.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Grouping with Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Functions are, in general, useful for grouping data on date/time columns or a part of a string.</li>\n<li>Further, the functions can be used to group data frames by index or by column.</li>\n<li>In this section, the grouping by function has been explained with the help of an example involving grouping by date and the first character of the name.</li>\n<li>For this example, we have changed one of the columns of the data, i.e., instead of years of working, we have created a column named DateOfJoining, which contains the data of date type.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule specified by the stated lambda function. Please note that a lambda function is</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit discusses the groupby mechanism using examples of Python programming. The following topics have been covered in the unit: Creating a group on one or multiple columns. Iterating the data of the groups using for loop. Selecting only a subgroup from the entire data, like columnar subset. Performing data aggregation over the groups to create summarised data frames.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-5_Data_Aggregation_and_Group_Operations.pdf')\">\n          📄 Read Original IGNOU PDF (22 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

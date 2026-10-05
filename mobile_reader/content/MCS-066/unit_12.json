@@ -1,0 +1,95 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_12",
+  "unit_num": "Unit 12",
+  "title": "Categorical Data Analysis",
+  "filename": "Unit-12_Categorical_Data_Analysis.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-12_Categorical_Data_Analysis.pdf",
+  "total_pages": 32,
+  "word_count": 13411,
+  "est_read_time_minutes": 75,
+  "objectives": [
+    "Square Test for Goodness of Fit",
+    "Square Test for Independence of Attributes",
+    "world situations, like in business and other areas, the data are",
+    "such as mean(s),",
+    ", variance(s), etc., we perform the following two points:",
+    "We make an assumption regarding the form of the distribution function of"
+  ],
+  "summary": "In this unit, we have discussed the following points: 1. When the data are classified into different categories or groups according to one or more attributes such type of data is known as categorical data. 2. Needs of tests which are applied for categorical data. 3. The chi-square test for goodness of fit. 4. A contingency table is an arrangement of data into a two-way classification.",
+  "flashcards": [
+    {
+      "question": "Write one difference between the chi-square test and Kolmogorov- Smirnov test for goodness of fit.",
+      "answer": "(c –1) = (3 – 1)(3 – 1) = 4. The critical value of the chi-square with",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "The following table gives the numbers of road accidents that occurred during the various days of the week: Days Mon Tue Wed Thu Fri Sat Sun Number of Accidents",
+      "answer": "Here, we want to test that the data have come from the normal distribution with mean",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "The number of customers waiting for service on the checkout counter line of a big supermarket is examined at random on",
+      "answer": ". With the help of Table of Poisson distribution (refer the table from References",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The following contingency table presents the analysis of 300 persons according to hair colour and eye colour: Hair Colour Eye Colour Blue Grey Brown Total Fair",
+      "answer": "Here, we want to test that the data have come from the normal distribution with mean",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Write the main difference between the chi-square test and Kolmogorov- Smirnov (K-S) test for goodness of fit.",
+      "answer": "(c –1) = (3 – 1)(3 – 1) = 4. The critical value of the chi-square with",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "The following data were obtained from a table of random numbers of a normal distribution with mean",
+      "answer": "Here, we want to test that the data have come from the normal distribution with mean",
+      "tag": "Exercise Q2"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 12 Categorical Data Analysis\"]\n  M1[\"12.2 Chi-Square Test for Goodness of\"]\n  Root --> M1\n  M2[\"12.3 Chi-Square Test for Independenc\"]\n  Root --> M2\n  M3[\"12.4 Kolmogorov–Smirnov Goodness of \"]\n  Root --> M3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2 Chi-Square Test for Goodness of Fit</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The parametric tests are the ones in which one first assumes the form of the parent population and then performs a test about some parameter(s) of the population, such as mean, variance, proportion, etc.</li>\n<li>Generally, the parametric tests are based on the assumption of a normal population.</li>\n<li>The suitability of a normal distribution or some other distribution may itself be verified by means of the goodness of fit test.</li>\n<li>The chi-square ( 2 χ ) test for goodness of fit was given by Karl Pearson in 1900.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3 Chi-Square Test for Independence of Attributes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are many situations where we need to test the independence of two characteristics or attributes of categorical data.</li>\n<li>For example, a sociologist may wish to know whether the level of formal education is independent of income, whether the height of sons depending on the height of their fathers or not, etc.</li>\n<li>If there is no association between two variables, we say that they are independent.</li>\n<li>In other words, we can say that two variables are independent if the distribution of one is not depending on the distribution of another.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.4 Kolmogorov–Smirnov Goodness of Fit Test</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This test has its name on the names of its discovers A.</li>\n<li>Therefore, it is a measure of goodness of fit to a theoretical distribution.</li>\n<li>The main difference between the chi-square test and Kolmogorov-Smirnov (K-S) test is that the chi-square test is designed for categorical data whereas the K-S test is designed for continuous data.</li>\n<li>Assumptions This test works under the following assumptions: (i) The sample is randomly selected from some unknown distribution.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>law of probability. According to this law, if two events are independent then</code></div>\n<div class=\"formula-box\"><code>Rule: To take the decision about the null hypothesis, the test statistic</code></div>\n<div class=\"formula-box\"><code>Step 4: If pi (i =1, 2, …, k) is the probability that an observation falls in ith</code></div>\n<div class=\"formula-box\"><code>for all i =1, 2, …, k</code></div>\n<div class=\"formula-box\"><code>where, k = the number of classes</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed the following points: 1. When the data are classified into different categories or groups according to one or more attributes such type of data is known as categorical data. 2. Needs of tests which are applied for categorical data. 3. The chi-square test for goodness of fit. 4. A contingency table is an arrangement of data into a two-way classification.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-12_Categorical_Data_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (32 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 12 Categorical Data Analysis\"]\n  M1[\"12.2 Chi-Square Test for Goodness of\"]\n  Root --> M1\n  M2[\"12.3 Chi-Square Test for Independenc\"]\n  Root --> M2\n  M3[\"12.4 Kolmogorov–Smirnov Goodness of \"]\n  Root --> M3",
+  "definitions": [],
+  "important_points": [
+    {
+      "section_num": "12.2",
+      "topic": "Chi-Square Test for Goodness of Fit",
+      "points": [
+        "The parametric tests are the ones in which one first assumes the form of the parent population and then performs a test about some parameter(s) of the population, such as mean, variance, proportion, etc.",
+        "Generally, the parametric tests are based on the assumption of a normal population.",
+        "The suitability of a normal distribution or some other distribution may itself be verified by means of the goodness of fit test.",
+        "The chi-square ( 2 χ ) test for goodness of fit was given by Karl Pearson in 1900."
+      ]
+    },
+    {
+      "section_num": "12.3",
+      "topic": "Chi-Square Test for Independence of Attributes",
+      "points": [
+        "There are many situations where we need to test the independence of two characteristics or attributes of categorical data.",
+        "For example, a sociologist may wish to know whether the level of formal education is independent of income, whether the height of sons depending on the height of their fathers or not, etc.",
+        "If there is no association between two variables, we say that they are independent.",
+        "In other words, we can say that two variables are independent if the distribution of one is not depending on the distribution of another."
+      ]
+    },
+    {
+      "section_num": "12.4",
+      "topic": "Kolmogorov–Smirnov Goodness of Fit Test",
+      "points": [
+        "This test has its name on the names of its discovers A.",
+        "Therefore, it is a measure of goodness of fit to a theoretical distribution.",
+        "The main difference between the chi-square test and Kolmogorov-Smirnov (K-S) test is that the chi-square test is designed for categorical data whereas the K-S test is designed for continuous data.",
+        "Assumptions This test works under the following assumptions: (i) The sample is randomly selected from some unknown distribution."
+      ]
+    }
+  ],
+  "formulas": [
+    "law of probability. According to this law, if two events are independent then",
+    "Rule: To take the decision about the null hypothesis, the test statistic",
+    "Step 4: If pi (i =1, 2, …, k) is the probability that an observation falls in ith",
+    "for all i =1, 2, …, k",
+    "where, k = the number of classes"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 12 Categorical Data Analysis\"]\n  M1[\"12.2 Chi-Square Test for Goodness of\"]\n  Root --> M1\n  M2[\"12.3 Chi-Square Test for Independenc\"]\n  Root --> M2\n  M3[\"12.4 Kolmogorov–Smirnov Goodness of \"]\n  Root --> M3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2 Chi-Square Test for Goodness of Fit</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The parametric tests are the ones in which one first assumes the form of the parent population and then performs a test about some parameter(s) of the population, such as mean, variance, proportion, etc.</li>\n<li>Generally, the parametric tests are based on the assumption of a normal population.</li>\n<li>The suitability of a normal distribution or some other distribution may itself be verified by means of the goodness of fit test.</li>\n<li>The chi-square ( 2 χ ) test for goodness of fit was given by Karl Pearson in 1900.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3 Chi-Square Test for Independence of Attributes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are many situations where we need to test the independence of two characteristics or attributes of categorical data.</li>\n<li>For example, a sociologist may wish to know whether the level of formal education is independent of income, whether the height of sons depending on the height of their fathers or not, etc.</li>\n<li>If there is no association between two variables, we say that they are independent.</li>\n<li>In other words, we can say that two variables are independent if the distribution of one is not depending on the distribution of another.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.4 Kolmogorov–Smirnov Goodness of Fit Test</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This test has its name on the names of its discovers A.</li>\n<li>Therefore, it is a measure of goodness of fit to a theoretical distribution.</li>\n<li>The main difference between the chi-square test and Kolmogorov-Smirnov (K-S) test is that the chi-square test is designed for categorical data whereas the K-S test is designed for continuous data.</li>\n<li>Assumptions This test works under the following assumptions: (i) The sample is randomly selected from some unknown distribution.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>law of probability. According to this law, if two events are independent then</code></div>\n<div class=\"formula-box\"><code>Rule: To take the decision about the null hypothesis, the test statistic</code></div>\n<div class=\"formula-box\"><code>Step 4: If pi (i =1, 2, …, k) is the probability that an observation falls in ith</code></div>\n<div class=\"formula-box\"><code>for all i =1, 2, …, k</code></div>\n<div class=\"formula-box\"><code>where, k = the number of classes</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed the following points: 1. When the data are classified into different categories or groups according to one or more attributes such type of data is known as categorical data. 2. Needs of tests which are applied for categorical data. 3. The chi-square test for goodness of fit. 4. A contingency table is an arrangement of data into a two-way classification.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-12_Categorical_Data_Analysis.pdf')\">\n          📄 Read Original IGNOU PDF (32 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

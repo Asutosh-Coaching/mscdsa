@@ -1,0 +1,141 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_12",
+  "unit_num": "Unit 12",
+  "title": "Mining Data Streams",
+  "filename": "Unit-12_Mining_Data_Streams.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-12_Mining_Data_Streams.pdf",
+  "total_pages": 13,
+  "word_count": 4878,
+  "est_read_time_minutes": 27,
+  "objectives": [
+    "driven world, vast amounts of data are generated continuously",
+    "sensitive nature",
+    "life examples of data streams and related queries help",
+    "order data, processing at high speeds, and generating timely insights.",
+    "time data in various modern applications."
+  ],
+  "summary": "This unit introduces the concept of mining data streams. Data streams can be processed using different models. Three such models (landmark, sliding windows, and damped model) for data stream processing are introduced in this unit. Further, the data stream management system (DSMS) is explained. In addition, different types of queries of data streams namely, ad-hoc and standing queries are discussed followed by examples of these queries. The",
+  "flashcards": [
+    {
+      "question": "Define the data stream processing. Which model of data stream processing is useful in finding stock market trends?",
+      "answer": "Key Principle: In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Differentiate between DBMS and DSMS. Why is all the data of data streams not stored?",
+      "answer": "Key Principle: In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "How are Standing queries different to ad-hoc queries?",
+      "answer": "Key Principle: When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is the use of mining click streams?",
+      "answer": "In Mining Data Streams, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "In standing queries, the users expect the system to report the answer available at all times, perhaps outputting a new value each time the answer changes. In ad-hoc queries, the users make a query once and",
+      "answer": "In Mining Data Streams, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The use of mining click streams is to know which URLs are getting clicked-on, a lot more, in the past one hour than normal.",
+      "answer": "Key Principle: In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is Data Streams and how is it characterized?",
+      "answer": "In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 12 Mining Data Streams\"]\n  M1[\"12.2 Data Streams\"]\n  Root --> M1\n  M1_1[\"12.2.1 Model for Data Stream Process\"]\n  M1 --> M1_1\n  M2[\"12.3 Data Stream Management\"]\n  Root --> M2\n  M2_1[\"12.3.1 Queries of Data Stream\"]\n  M2 --> M2_1\n  M2_2[\"12.3.2 Examples of Data Stream and Q\"]\n  M2 --> M2_2\n  M2_3[\"12.3.3 Issues and Challenges of Data\"]\n  M2 --> M2_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Streams</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Stream Management</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Queries Of Data Stream</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2 Data Streams</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.</li>\n<li>However, there are certain real-world scenarios where this approach is not practical.</li>\n<li>For example, in real-time applications like data received from weather satellites, the volume and speed of incoming data are so high that storing all of it in a database becomes either impractical or inefficient.</li>\n<li>In some cases, the data might not be stored at all, or if it is, the database may be so large that retrieving information quickly enough to make timely decisions becomes impossible.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2.1 Model for Data Stream Processing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let’s Understanding the Model for Data Stream Processing, when working with traditional datasets, we usually have the entire data available beforehand, stored in a database or a file system.</li>\n<li>We can query it multiple times, sort it, scan it repeatedly, or even join it with other data.</li>\n<li>But in data stream processing, things are different.</li>\n<li>The data arrives continuously, often at high speed, and we only get one chance to process it.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3 Data Stream Management</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.</li>\n<li>Unlike traditional data stored in databases, data streams are continuous, fast, and often infinite.</li>\n<li>This means we usually don’t have the luxury to store all the incoming data or process it multiple times.</li>\n<li>The answer lies in using smart models that help us process, analyze, and summarize data streams efficiently, often with limited memory and computing resources.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3.1 Queries of Data Stream</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.</li>\n<li>But in the world of data streams, where data is constantly flowing in real time, we need a different kind of approach to querying.</li>\n<li>Here, the data is not static—it’s live, fast, and potentially endless.</li>\n<li>This is where understanding how queries work in data streams becomes really important.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3.2 Examples of Data Stream and Queries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To understand what data streams really are, it helps to look at real-world situations where data isn’t stored first, but instead flows in continuously.</li>\n<li>A data stream is a live, ongoing flow of information that must be processed in real time.</li>\n<li>This kind of data appears in many everyday applications, and recognizing these can help you better appreciate how streaming systems work.</li>\n<li>Sensor Data Streams One of the most common sources of data streams is sensors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3.3 Issues and Challenges of Data Stream</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As we explore the world of data stream processing, you'll quickly realize that it’s very different from working with traditional static data.</li>\n<li>In streaming, data flows continuously, and we must process it in real time.</li>\n<li>While this offers exciting possibilities—like instant decision-making and live monitoring—it also introduces a number of technical and conceptual challenges.</li>\n<li>Let’s break these down into key categories so that you can better understand the landscape.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws (like GDPR), is critical. As a learner,</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces the concept of mining data streams. Data streams can be processed using different models. Three such models (landmark, sliding windows, and damped model) for data stream processing are introduced in this unit. Further, the data stream management system (DSMS) is explained. In addition, different types of queries of data streams namely, ad-hoc and standing queries are discussed followed by examples of these queries. The</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-12_Mining_Data_Streams.pdf')\">\n          📄 Read Original IGNOU PDF (13 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 12 Mining Data Streams\"]\n  M1[\"12.2 Data Streams\"]\n  Root --> M1\n  M1_1[\"12.2.1 Model for Data Stream Process\"]\n  M1 --> M1_1\n  M2[\"12.3 Data Stream Management\"]\n  Root --> M2\n  M2_1[\"12.3.1 Queries of Data Stream\"]\n  M2 --> M2_1\n  M2_2[\"12.3.2 Examples of Data Stream and Q\"]\n  M2 --> M2_2\n  M2_3[\"12.3.3 Issues and Challenges of Data\"]\n  M2 --> M2_3",
+  "definitions": [
+    {
+      "term": "Data Streams",
+      "definition": "In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Stream Management",
+      "definition": "Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Queries Of Data Stream",
+      "definition": "When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "12.2",
+      "topic": "Data Streams",
+      "points": [
+        "In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.",
+        "However, there are certain real-world scenarios where this approach is not practical.",
+        "For example, in real-time applications like data received from weather satellites, the volume and speed of incoming data are so high that storing all of it in a database becomes either impractical or inefficient.",
+        "In some cases, the data might not be stored at all, or if it is, the database may be so large that retrieving information quickly enough to make timely decisions becomes impossible."
+      ]
+    },
+    {
+      "section_num": "12.2.1",
+      "topic": "Model for Data Stream Processing",
+      "points": [
+        "Let’s Understanding the Model for Data Stream Processing, when working with traditional datasets, we usually have the entire data available beforehand, stored in a database or a file system.",
+        "We can query it multiple times, sort it, scan it repeatedly, or even join it with other data.",
+        "But in data stream processing, things are different.",
+        "The data arrives continuously, often at high speed, and we only get one chance to process it."
+      ]
+    },
+    {
+      "section_num": "12.3",
+      "topic": "Data Stream Management",
+      "points": [
+        "Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.",
+        "Unlike traditional data stored in databases, data streams are continuous, fast, and often infinite.",
+        "This means we usually don’t have the luxury to store all the incoming data or process it multiple times.",
+        "The answer lies in using smart models that help us process, analyze, and summarize data streams efficiently, often with limited memory and computing resources."
+      ]
+    },
+    {
+      "section_num": "12.3.1",
+      "topic": "Queries of Data Stream",
+      "points": [
+        "When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.",
+        "But in the world of data streams, where data is constantly flowing in real time, we need a different kind of approach to querying.",
+        "Here, the data is not static—it’s live, fast, and potentially endless.",
+        "This is where understanding how queries work in data streams becomes really important."
+      ]
+    },
+    {
+      "section_num": "12.3.2",
+      "topic": "Examples of Data Stream and Queries",
+      "points": [
+        "To understand what data streams really are, it helps to look at real-world situations where data isn’t stored first, but instead flows in continuously.",
+        "A data stream is a live, ongoing flow of information that must be processed in real time.",
+        "This kind of data appears in many everyday applications, and recognizing these can help you better appreciate how streaming systems work.",
+        "Sensor Data Streams One of the most common sources of data streams is sensors."
+      ]
+    },
+    {
+      "section_num": "12.3.3",
+      "topic": "Issues and Challenges of Data Stream",
+      "points": [
+        "As we explore the world of data stream processing, you'll quickly realize that it’s very different from working with traditional static data.",
+        "In streaming, data flows continuously, and we must process it in real time.",
+        "While this offers exciting possibilities—like instant decision-making and live monitoring—it also introduces a number of technical and conceptual challenges.",
+        "Let’s break these down into key categories so that you can better understand the landscape."
+      ]
+    }
+  ],
+  "formulas": [
+    "laws (like GDPR), is critical. As a learner,"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 12 Mining Data Streams\"]\n  M1[\"12.2 Data Streams\"]\n  Root --> M1\n  M1_1[\"12.2.1 Model for Data Stream Process\"]\n  M1 --> M1_1\n  M2[\"12.3 Data Stream Management\"]\n  Root --> M2\n  M2_1[\"12.3.1 Queries of Data Stream\"]\n  M2 --> M2_1\n  M2_2[\"12.3.2 Examples of Data Stream and Q\"]\n  M2 --> M2_2\n  M2_3[\"12.3.3 Issues and Challenges of Data\"]\n  M2 --> M2_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Streams</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Stream Management</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Queries Of Data Stream</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2 Data Streams</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In many traditional applications, data is stored in a database or a distributed file system, allowing users to access the same data multiple times whenever needed.</li>\n<li>However, there are certain real-world scenarios where this approach is not practical.</li>\n<li>For example, in real-time applications like data received from weather satellites, the volume and speed of incoming data are so high that storing all of it in a database becomes either impractical or inefficient.</li>\n<li>In some cases, the data might not be stored at all, or if it is, the database may be so large that retrieving information quickly enough to make timely decisions becomes impossible.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2.1 Model for Data Stream Processing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let’s Understanding the Model for Data Stream Processing, when working with traditional datasets, we usually have the entire data available beforehand, stored in a database or a file system.</li>\n<li>We can query it multiple times, sort it, scan it repeatedly, or even join it with other data.</li>\n<li>But in data stream processing, things are different.</li>\n<li>The data arrives continuously, often at high speed, and we only get one chance to process it.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3 Data Stream Management</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Managing data streams is a critical task in today’s data-centric world, especially when dealing with real-time applications like traffic monitoring, stock trading, or weather forecasting.</li>\n<li>Unlike traditional data stored in databases, data streams are continuous, fast, and often infinite.</li>\n<li>This means we usually don’t have the luxury to store all the incoming data or process it multiple times.</li>\n<li>The answer lies in using smart models that help us process, analyze, and summarize data streams efficiently, often with limited memory and computing resources.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3.1 Queries of Data Stream</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When working with traditional databases, we write queries that run on stored data and return results after the computation is complete.</li>\n<li>But in the world of data streams, where data is constantly flowing in real time, we need a different kind of approach to querying.</li>\n<li>Here, the data is not static—it’s live, fast, and potentially endless.</li>\n<li>This is where understanding how queries work in data streams becomes really important.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3.2 Examples of Data Stream and Queries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To understand what data streams really are, it helps to look at real-world situations where data isn’t stored first, but instead flows in continuously.</li>\n<li>A data stream is a live, ongoing flow of information that must be processed in real time.</li>\n<li>This kind of data appears in many everyday applications, and recognizing these can help you better appreciate how streaming systems work.</li>\n<li>Sensor Data Streams One of the most common sources of data streams is sensors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3.3 Issues and Challenges of Data Stream</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As we explore the world of data stream processing, you'll quickly realize that it’s very different from working with traditional static data.</li>\n<li>In streaming, data flows continuously, and we must process it in real time.</li>\n<li>While this offers exciting possibilities—like instant decision-making and live monitoring—it also introduces a number of technical and conceptual challenges.</li>\n<li>Let’s break these down into key categories so that you can better understand the landscape.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws (like GDPR), is critical. As a learner,</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces the concept of mining data streams. Data streams can be processed using different models. Three such models (landmark, sliding windows, and damped model) for data stream processing are introduced in this unit. Further, the data stream management system (DSMS) is explained. In addition, different types of queries of data streams namely, ad-hoc and standing queries are discussed followed by examples of these queries. The</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-12_Mining_Data_Streams.pdf')\">\n          📄 Read Original IGNOU PDF (13 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

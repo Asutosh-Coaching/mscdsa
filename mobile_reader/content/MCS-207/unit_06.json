@@ -1,0 +1,137 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Higher Normal Forms",
+  "filename": "Unit-6_Higher_Normal_Forms.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-6_Higher_Normal_Forms.pdf",
+  "total_pages": 16,
+  "word_count": 5121,
+  "est_read_time_minutes": 28,
+  "objectives": [],
+  "summary": "This unit explains the concept of multi-valued dependencies, which causes a relation to have data redundancy. This causes a relation to have data anomalies. MVD is a consequence of having a set of attributes in a relation that determines more than one multi-valued attribute, which are independent of each other. MVD forms the basis of decomposition of a relation into 4NF relations. Further, certain relations do not have any FDs and MVDs but have anomalies. Such relations, in general, consist of more than two independent attributes. These relations contain join dependency, that is the relation has several",
+  "flashcards": [
+    {
+      "question": "What are Multi-valued Dependencies? When can you say that a constraint X is multi-valued dependency?",
+      "answer": "In Higher Normal Forms, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Convert the following relation to 4NF relations.",
+      "answer": "DKNF is the “ultimate normal form”. It defines the terms keys, domains and constraints.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is join dependency? ………………………………………………………………………………………………………… …………………………………………………………………………………………………..",
+      "answer": "In Higher Normal Forms, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Define 5NF. ……………………………………………………………………………………………………………… …………………………………………………………………….………………………………………… ……………………………………………………………………………………..",
+      "answer": "Template dependency is a generic representation of various dependencies. It consists of two parts – the hypothesis and conclusion.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Convert the relational instance of SUPPLY relation, as given in question 3 of check your progress 1. to",
+      "answer": "DKNF is the “ultimate normal form”. It defines the terms keys, domains and constraints.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Define Inclusion Dependencies. ……………………………………………………………………………………………………… …………………………………………………………………………….………………………… ………………",
+      "answer": "In Higher Normal Forms, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is A General Constraint and how is it characterized?",
+      "answer": "A General Constraint a predicate on the set of all the relations of a given schema.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Higher Normal Forms\"]\n  M1[\"6.2 Multivalued Dependency\"]\n  Root --> M1\n  M2[\"6.3 Fourth Normal Form 4NF\"]\n  Root --> M2\n  M3[\"6.4 Join Dependency\"]\n  Root --> M3\n  M4[\"6.5 5NF\"]\n  Root --> M4\n  M5[\"6.6 Other Normal Forms\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A General Constraint</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A General Constraint a predicate on the set of all the relations of a given schema.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multivalued Dependency</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of multivalued dependency.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fourth Normal Form (4Nf)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, first we define the fourth normal form (4NF) and then present an example about how MVD can be used to decompose a relation to 4NF.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Join Dependency</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in the previous section, a relation that suffers from insertion, update and deletion anomalies is decomposed using either FD or MVD.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">5Nf</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The researchers of database systems have found additional dependencies and normal forms.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Multivalued Dependency</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of multivalued dependency.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in higher normal forms.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Fourth Normal Form (4NF)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, first we define the fourth normal form (4NF) and then present an example about how MVD can be used to decompose a relation to 4NF.</li>\n<li>A relation R is in 4NF if for all the multivalued dependencies (X ®® Y) any one of the following clauses holds: • the multivalued dependencies (X ®® Y) is trivial, • X is a candidate key for R.</li>\n<li>The dependency X®® ø or X ®® Y in a relation R (X, Y) is trivial, since they must hold for all R (X, Y).</li>\n<li>Similarly, if in a relations R (A, B, C) with only three attributes, if a trivial MVD (A, B) ®® C holds, then R (A, B, C) is in 4NF.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Join Dependency</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section, a relation that suffers from insertion, update and deletion anomalies is decomposed using either FD or MVD.</li>\n<li>The normal forms require that a given relation R, if not in the given normal form, should be decomposed in two relations to meet the requirements of the normal form.</li>\n<li>However, in some cases, a relation can have problems like redundancy leading to anomalies, yet it cannot be decomposed in two relations without loss of information.</li>\n<li>In such cases, it may be possible to decompose the relation in three or more relations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 5NF</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The researchers of database systems have found additional dependencies and normal forms.</li>\n<li>This section introduces the basic concept behind these forms.</li>\n<li>First, we define some additional types of dependencies.</li>\n<li>Inclusion Dependency The inclusion dependency has been designed for two specific types of database constraints that are not defined by the concept of FD, MVD and Join dependency.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Other Normal Forms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This unit explains the concept of multi-valued dependencies, which causes a relation to have data redundancy.</li>\n<li>This causes a relation to have data anomalies.</li>\n<li>MVD is a consequence of having a set of attributes in a relation that determines more than one multi-valued attribute, which are independent of each other.</li>\n<li>MVD forms the basis of decomposition of a relation into 4NF relations.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules of decomposition:</code></div>\n<div class=\"formula-box\"><code>theorem that states:</code></div>\n<div class=\"formula-box\"><code>rule that is to be upheld by any set of legal data of R. A general constraint</code></div>\n<div class=\"formula-box\"><code>(X,Y,Z) of the form X ®®Y, such that X ∩Y=f, that is the set of attributes X and Y are disjoint, then R</code></div>\n<div class=\"formula-box\"><code>𝜋!(𝑟1) ⊆ 𝜋\"(𝑟2)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit explains the concept of multi-valued dependencies, which causes a relation to have data redundancy. This causes a relation to have data anomalies. MVD is a consequence of having a set of attributes in a relation that determines more than one multi-valued attribute, which are independent of each other. MVD forms the basis of decomposition of a relation into 4NF relations. Further, certain relations do not have any FDs and MVDs but have anomalies. Such relations, in general, consist of more than two independent attributes. These relations contain join dependency, that is the relation has several</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-6_Higher_Normal_Forms.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Higher Normal Forms\"]\n  M1[\"6.2 Multivalued Dependency\"]\n  Root --> M1\n  M2[\"6.3 Fourth Normal Form 4NF\"]\n  Root --> M2\n  M3[\"6.4 Join Dependency\"]\n  Root --> M3\n  M4[\"6.5 5NF\"]\n  Root --> M4\n  M5[\"6.6 Other Normal Forms\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "A General Constraint",
+      "definition": "A General Constraint a predicate on the set of all the relations of a given schema.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Multivalued Dependency",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of multivalued dependency.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Fourth Normal Form (4Nf)",
+      "definition": "In this section, first we define the fourth normal form (4NF) and then present an example about how MVD can be used to decompose a relation to 4NF.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Join Dependency",
+      "definition": "As discussed in the previous section, a relation that suffers from insertion, update and deletion anomalies is decomposed using either FD or MVD.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "5Nf",
+      "definition": "The researchers of database systems have found additional dependencies and normal forms.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.2",
+      "topic": "Multivalued Dependency",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of multivalued dependency.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in higher normal forms."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Fourth Normal Form (4NF)",
+      "points": [
+        "In this section, first we define the fourth normal form (4NF) and then present an example about how MVD can be used to decompose a relation to 4NF.",
+        "A relation R is in 4NF if for all the multivalued dependencies (X ®® Y) any one of the following clauses holds: • the multivalued dependencies (X ®® Y) is trivial, • X is a candidate key for R.",
+        "The dependency X®® ø or X ®® Y in a relation R (X, Y) is trivial, since they must hold for all R (X, Y).",
+        "Similarly, if in a relations R (A, B, C) with only three attributes, if a trivial MVD (A, B) ®® C holds, then R (A, B, C) is in 4NF."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Join Dependency",
+      "points": [
+        "As discussed in the previous section, a relation that suffers from insertion, update and deletion anomalies is decomposed using either FD or MVD.",
+        "The normal forms require that a given relation R, if not in the given normal form, should be decomposed in two relations to meet the requirements of the normal form.",
+        "However, in some cases, a relation can have problems like redundancy leading to anomalies, yet it cannot be decomposed in two relations without loss of information.",
+        "In such cases, it may be possible to decompose the relation in three or more relations."
+      ]
+    },
+    {
+      "section_num": "6.5",
+      "topic": "5NF",
+      "points": [
+        "The researchers of database systems have found additional dependencies and normal forms.",
+        "This section introduces the basic concept behind these forms.",
+        "First, we define some additional types of dependencies.",
+        "Inclusion Dependency The inclusion dependency has been designed for two specific types of database constraints that are not defined by the concept of FD, MVD and Join dependency."
+      ]
+    },
+    {
+      "section_num": "6.6",
+      "topic": "Other Normal Forms",
+      "points": [
+        "This unit explains the concept of multi-valued dependencies, which causes a relation to have data redundancy.",
+        "This causes a relation to have data anomalies.",
+        "MVD is a consequence of having a set of attributes in a relation that determines more than one multi-valued attribute, which are independent of each other.",
+        "MVD forms the basis of decomposition of a relation into 4NF relations."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules of decomposition:",
+    "theorem that states:",
+    "rule that is to be upheld by any set of legal data of R. A general constraint",
+    "(X,Y,Z) of the form X ®®Y, such that X ∩Y=f, that is the set of attributes X and Y are disjoint, then R",
+    "𝜋!(𝑟1) ⊆ 𝜋\"(𝑟2)"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Higher Normal Forms\"]\n  M1[\"6.2 Multivalued Dependency\"]\n  Root --> M1\n  M2[\"6.3 Fourth Normal Form 4NF\"]\n  Root --> M2\n  M3[\"6.4 Join Dependency\"]\n  Root --> M3\n  M4[\"6.5 5NF\"]\n  Root --> M4\n  M5[\"6.6 Other Normal Forms\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A General Constraint</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A General Constraint a predicate on the set of all the relations of a given schema.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multivalued Dependency</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of multivalued dependency.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fourth Normal Form (4Nf)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, first we define the fourth normal form (4NF) and then present an example about how MVD can be used to decompose a relation to 4NF.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Join Dependency</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in the previous section, a relation that suffers from insertion, update and deletion anomalies is decomposed using either FD or MVD.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">5Nf</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The researchers of database systems have found additional dependencies and normal forms.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Multivalued Dependency</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of multivalued dependency.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in higher normal forms.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Fourth Normal Form (4NF)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, first we define the fourth normal form (4NF) and then present an example about how MVD can be used to decompose a relation to 4NF.</li>\n<li>A relation R is in 4NF if for all the multivalued dependencies (X ®® Y) any one of the following clauses holds: • the multivalued dependencies (X ®® Y) is trivial, • X is a candidate key for R.</li>\n<li>The dependency X®® ø or X ®® Y in a relation R (X, Y) is trivial, since they must hold for all R (X, Y).</li>\n<li>Similarly, if in a relations R (A, B, C) with only three attributes, if a trivial MVD (A, B) ®® C holds, then R (A, B, C) is in 4NF.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Join Dependency</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section, a relation that suffers from insertion, update and deletion anomalies is decomposed using either FD or MVD.</li>\n<li>The normal forms require that a given relation R, if not in the given normal form, should be decomposed in two relations to meet the requirements of the normal form.</li>\n<li>However, in some cases, a relation can have problems like redundancy leading to anomalies, yet it cannot be decomposed in two relations without loss of information.</li>\n<li>In such cases, it may be possible to decompose the relation in three or more relations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 5NF</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The researchers of database systems have found additional dependencies and normal forms.</li>\n<li>This section introduces the basic concept behind these forms.</li>\n<li>First, we define some additional types of dependencies.</li>\n<li>Inclusion Dependency The inclusion dependency has been designed for two specific types of database constraints that are not defined by the concept of FD, MVD and Join dependency.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Other Normal Forms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This unit explains the concept of multi-valued dependencies, which causes a relation to have data redundancy.</li>\n<li>This causes a relation to have data anomalies.</li>\n<li>MVD is a consequence of having a set of attributes in a relation that determines more than one multi-valued attribute, which are independent of each other.</li>\n<li>MVD forms the basis of decomposition of a relation into 4NF relations.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules of decomposition:</code></div>\n<div class=\"formula-box\"><code>theorem that states:</code></div>\n<div class=\"formula-box\"><code>rule that is to be upheld by any set of legal data of R. A general constraint</code></div>\n<div class=\"formula-box\"><code>(X,Y,Z) of the form X ®®Y, such that X ∩Y=f, that is the set of attributes X and Y are disjoint, then R</code></div>\n<div class=\"formula-box\"><code>𝜋!(𝑟1) ⊆ 𝜋\"(𝑟2)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit explains the concept of multi-valued dependencies, which causes a relation to have data redundancy. This causes a relation to have data anomalies. MVD is a consequence of having a set of attributes in a relation that determines more than one multi-valued attribute, which are independent of each other. MVD forms the basis of decomposition of a relation into 4NF relations. Further, certain relations do not have any FDs and MVDs but have anomalies. Such relations, in general, consist of more than two independent attributes. These relations contain join dependency, that is the relation has several</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-6_Higher_Normal_Forms.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

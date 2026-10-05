@@ -1,0 +1,776 @@
+{
+  "MCS-061": {
+    "semester": "Semester 1",
+    "title": "MCS-061 Mathematical Foundations - I",
+    "url": "https://egyankosh.ac.in/handle/123456789/121379",
+    "pdfs": [
+      {
+        "title": "Unit-4 Graphical Representation of Functions",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121385/1/Unit-4.pdf"
+      },
+      {
+        "title": "Unit-3 Functions",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121384/1/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Relations",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121383/1/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Introduction to Sets",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121382/1/Unit-1.pdf"
+      },
+      {
+        "title": "Block-1 Set, Relations and Functions",
+        "name": "Block-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121381/1/Block-1.pdf"
+      },
+      {
+        "title": "Unit-7 Determinants",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121601/1/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Matrix Algebra",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121600/1/Unit-6.pdf"
+      },
+      {
+        "title": "Unit-5 Progressions",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121387/1/Unit-5.pdf"
+      },
+      {
+        "title": "Unit-9 Linear Spaces-II",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121603/1/Unit-9.pdf"
+      },
+      {
+        "title": "Unit-8 Linear Spaces-I",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121602/1/Unit-8.pdf"
+      },
+      {
+        "title": "Unit-10 Techniques of Counting and Binomial Theorem",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121454/1/Unit-10.pdf"
+      },
+      {
+        "title": "Unit-14 Definite Integration",
+        "name": "Unit-14.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121460/1/Unit-14.pdf"
+      },
+      {
+        "title": "Unit-13 Indefinite Integration",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121459/1/Unit-13.pdf"
+      },
+      {
+        "title": "Unit-12 Differentiation",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121458/1/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-11 Limit and Continuity",
+        "name": "Unit-11.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121457/1/Unit-11.pdf"
+      },
+      {
+        "title": "Block-4 Calculus",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121456/1/Block-4.pdf"
+      }
+    ]
+  },
+  "MCS-062": {
+    "semester": "Semester 1",
+    "title": "MCS-062 Introduction to Data Science",
+    "url": "https://egyankosh.ac.in/handle/123456789/120483",
+    "pdfs": [
+      {
+        "title": "Unit-4 Data Acquisition (DAQ): Process",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120489/1/Unit-4.pdf"
+      },
+      {
+        "title": "Unit-3 Data Acquisition (DAQ): Tools",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120488/1/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Understanding Data and Its Type",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120487/1/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Data Science Fundamentals",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120486/1/Unit-1.pdf"
+      },
+      {
+        "title": "Block-1 Introduction to Data Science-1",
+        "name": "Block-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120485/1/Block-1.pdf"
+      },
+      {
+        "title": "Unit-7 Inferential and Predictive Data Analysis – An Introduction",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120494/1/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Descriptive and Exploratory Data Analysis – An Introduction",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120493/1/Unit-6.pdf"
+      },
+      {
+        "title": "Unit-5 Data Preparation for Analysis",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120492/1/Unit-5.pdf"
+      },
+      {
+        "title": "Block-2 Introduction to Data Science-2",
+        "name": "Block-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120491/1/Block-2.pdf"
+      },
+      {
+        "title": "Unit-10 Excel for Inferential Data Analysis",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120499/1/Unit-10.pdf"
+      },
+      {
+        "title": "Unit-9 Excel for Descriptive Data Analysis",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120498/1/Unit-9.pdf"
+      },
+      {
+        "title": "Unit-8 Data Visualisation and Interpretation",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120497/1/Unit-8.pdf"
+      },
+      {
+        "title": "Block-3 Data Visualization and Interpretation",
+        "name": "Block-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120496/1/Block-3.pdf"
+      },
+      {
+        "title": "Unit-13 Tools for Data Science – An Introduction",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120504/1/Unit-13.pdf"
+      },
+      {
+        "title": "Unit-12 Mining Data Streams",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120503/1/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-11 Introduction to NOSQL and Bigdata",
+        "name": "Unit-11.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120502/1/Unit-11.pdf"
+      },
+      {
+        "title": "Block-4 Data Science-Allied Areas",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120501/1/Block-4.pdf"
+      }
+    ]
+  },
+  "MCS-063": {
+    "semester": "Semester 1",
+    "title": "MCS-063 Data Structures using Python",
+    "url": "https://egyankosh.ac.in/handle/123456789/121563",
+    "pdfs": [
+      {
+        "title": "Block-1 Introduction to Python",
+        "name": "Block-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121569/1/Block-1.pdf"
+      },
+      {
+        "title": "Unit-4 Recursion",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121568/1/Unit-4.pdf"
+      },
+      {
+        "title": "Unit-3 Algorithm Analysis",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121567/1/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Object Oriented Programming",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121566/1/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Python Primer",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121565/1/Unit-1.pdf"
+      },
+      {
+        "title": "Unit-8 Trees",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124132/1/Unit-8.pdf"
+      },
+      {
+        "title": "Unit-7 Linked Lists",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124131/1/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Stacks, Queues and Deques",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124130/1/Unit-6.pdf"
+      },
+      {
+        "title": "Unit-5 Array-Based Sequences",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124129/1/Unit-5.pdf"
+      },
+      {
+        "title": "Block-2 Arrays, Stacks, Queues, Linked Lists and Trees",
+        "name": "Block-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124128/1/Block-2.pdf"
+      },
+      {
+        "title": "Unit-12 Sorting Algorithms",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124137/1/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-10 Maps, Hash Tables and Skip Lists",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124136/1/Unit-10.pdf"
+      },
+      {
+        "title": "Unit-9 Priority Queues",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124135/1/Unit-9.pdf"
+      },
+      {
+        "title": "Block-3 Maps, Hash Tables, Skip Lists, Search Trees and Sorting Algorithms",
+        "name": "Block-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124134/1/Block-3.pdf"
+      },
+      {
+        "title": "Unit-15 Memory Management and B-Trees",
+        "name": "Unit-15.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124141/1/Unit-15.pdf"
+      },
+      {
+        "title": "Unit-13 Text Processing",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124140/1/Unit-13.pdf"
+      },
+      {
+        "title": "Block-4 Text processing, Graph Algorithms,  Memory Management and B-Trees, and Algorithm Design Techniques",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124139/1/Block-4.pdf"
+      }
+    ]
+  },
+  "MCS-207": {
+    "semester": "Semester 1",
+    "title": "MCS-207 Database Management Systems",
+    "url": "https://egyankosh.ac.in/handle/123456789/118710",
+    "pdfs": [
+      {
+        "title": "Unit-4 File Organisation in DBMS",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121554/2/Unit-4.pdf"
+      },
+      {
+        "title": "Unit-3 Entity Relationship Model",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121553/2/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Relational Database",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121552/2/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Database Management System–An Introduction",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121551/2/Unit-1.pdf"
+      },
+      {
+        "title": "Block-1 The Basic Concepts",
+        "name": "Block-1 (1).pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121550/2/Block-1%20%281%29.pdf"
+      },
+      {
+        "title": "Unit-9 Advanced SQL",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121540/1/Unit-9.pdf"
+      },
+      {
+        "title": "Unit-8 Structured Query Language (Part-II)",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121539/1/Unit-8.pdf"
+      },
+      {
+        "title": "Unit-5 Database Integrity, Functional Dependency and Normalisation",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121536/1/Unit-5.pdf"
+      },
+      {
+        "title": "Unit-7 Structured Query Language",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121538/1/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Higher Normal Forms",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121537/1/Unit-6.pdf"
+      },
+      {
+        "title": "Block-2 Database Normalisation and Database Query",
+        "name": "Block-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121535/2/Block-2.pdf"
+      },
+      {
+        "title": "Unit-12 Query Processing and Evaluation",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121544/2/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-10 Transactions and Concurrency Management",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121543/2/Unit-10.pdf"
+      },
+      {
+        "title": "Block-3 Database Transactions and Query Processing",
+        "name": "Block-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121541/2/Block-3.pdf"
+      },
+      {
+        "title": "Unit-11 Database Recovery and Security",
+        "name": "Unit-11.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121542/2/Unit-11.pdf"
+      },
+      {
+        "title": "Unit-15 NoSQL Database",
+        "name": "Unit-15.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121549/1/Unit-15.pdf"
+      },
+      {
+        "title": "Unit-16 Emerging Database Models",
+        "name": "Unit-16.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121548/1/Unit-16.pdf"
+      },
+      {
+        "title": "Block-4 Introduction to Advanced Database Models",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121545/2/Block-4.pdf"
+      },
+      {
+        "title": "Unit-14 Data Warehousing and Data Mining",
+        "name": "Unit-14.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121547/1/Unit-14.pdf"
+      },
+      {
+        "title": "Unit-13 Object-Oriented Database",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/121546/1/Unit-13.pdf"
+      }
+    ]
+  },
+  "MCSL-064": {
+    "semester": "Semester 1",
+    "title": "MCSL-064 Data Structures using Python Lab",
+    "url": "https://egyankosh.ac.in/handle/123456789/123283",
+    "pdfs": [
+      {
+        "title": "Section-2 Data Structures Using Python Lab",
+        "name": "Section-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/123286/1/Section-2.pdf"
+      },
+      {
+        "title": "Section-1 Python Primer",
+        "name": "Section-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/123285/1/Section-1.pdf"
+      }
+    ]
+  },
+  "MCSL-065": {
+    "semester": "Semester 1",
+    "title": "MCSL-065 Data Science Lab",
+    "url": "https://egyankosh.ac.in/handle/123456789/120481",
+    "pdfs": [
+      {
+        "title": "MCSL-065 Data Science Lab",
+        "name": "MCSL-065 English.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/120482/1/MCSL-065%20English.pdf"
+      }
+    ]
+  },
+  "MCS-066": {
+    "semester": "Semester 2",
+    "title": "MCS-066 Mathematical Foundations - II",
+    "url": "https://egyankosh.ac.in/handle/123456789/125376",
+    "pdfs": [
+      {
+        "title": "Unit-3 Measures of Dispersion",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125394/1/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Describing Data Sets and Measures of Central Tendencies",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125380/1/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Introduction to Statistics",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125379/1/Unit-1.pdf"
+      },
+      {
+        "title": "Block-1 Descriptive Statistics",
+        "name": "Block-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125378/1/Block-1.pdf"
+      },
+      {
+        "title": "Unit-7 Continuous Probability Distributions and Exact Sampling Distributions",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125400/1/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Discrete Probability Distributions",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125399/1/Unit-6.pdf"
+      },
+      {
+        "title": "Unit-5 Random Variables and Expectation",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125398/1/Unit-5.pdf"
+      },
+      {
+        "title": "Unit-4 Basics of Probability",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125397/1/Unit-4.pdf"
+      },
+      {
+        "title": "Block-2 Probability and Distributions",
+        "name": "Block-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125396/1/Block-2.pdf"
+      },
+      {
+        "title": "Unit-10 Hypothesis Testing",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125405/1/Unit-10.pdf"
+      },
+      {
+        "title": "Unit-9 Estimating Parameters",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125404/1/Unit-9.pdf"
+      },
+      {
+        "title": "Unit-8 Sampling Distribution",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125403/1/Unit-8.pdf"
+      },
+      {
+        "title": "Block-3 Parameter Estimation and Hypothesis Testing",
+        "name": "Block-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125402/1/Block-3.pdf"
+      },
+      {
+        "title": "Unit-13 Introduction to Optimisation",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125410/1/Unit-13.pdf"
+      },
+      {
+        "title": "Unit-12 Categorical Data Analysis",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125409/1/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-11 Analysis of Variance",
+        "name": "Unit-11.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125408/1/Unit-11.pdf"
+      },
+      {
+        "title": "Block-4 Analysing data and Optimisation",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125407/1/Block-4.pdf"
+      }
+    ]
+  },
+  "MCS-067": {
+    "semester": "Semester 2",
+    "title": "MCS-067 Data Wrangling and Visualization",
+    "url": "https://egyankosh.ac.in/handle/123456789/126103",
+    "pdfs": [
+      {
+        "title": "Unit-3 Data Transformation",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/126109/1/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Data Cleaning and Preparation",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/126108/1/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Data Wrangling and Profiling",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/126107/1/Unit-1.pdf"
+      },
+      {
+        "title": "Unit-6 Plotting and Visualisation using Python",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/126113/1/Unit-6.pdf"
+      },
+      {
+        "title": "Unit-5 Data Aggregation and Group Operations",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/126112/1/Unit-5.pdf"
+      },
+      {
+        "title": "Unit-4 Combining and Reshaping Datasets",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/126111/1/Unit-4.pdf"
+      }
+    ]
+  },
+  "MCS-224": {
+    "semester": "Semester 2",
+    "title": "MCS-224 Artificial Intelligence and Machine Learning",
+    "url": "https://egyankosh.ac.in/handle/123456789/118716",
+    "pdfs": [
+      {
+        "title": "Unit-4 Predicate and Propositional Logic",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86442/3/Unit-4.pdf"
+      },
+      {
+        "title": "Unit-3 Uninformed and Informed Search",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86441/3/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Problem Solving Using Search",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86440/3/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Introduction to Artificial Intelligence",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86439/3/Unit-1.pdf"
+      },
+      {
+        "title": "Block-1 Artificial Intelligence-Introduction",
+        "name": "Block-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86438/3/Block-1.pdf"
+      },
+      {
+        "title": "Unit-8 Fuzzy and Rough Set",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86448/3/Unit-8.pdf"
+      },
+      {
+        "title": "Unit-7 Probabilistic Reasoning",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86447/3/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Rule Based Systems and other Formalism",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86446/3/Unit-6.pdf"
+      },
+      {
+        "title": "Unit-5 First Order Logic",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86445/3/Unit-5.pdf"
+      },
+      {
+        "title": "Block-2 Artificial Intelligence-Knowledge Representation",
+        "name": "Block-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86444/3/Block-2.pdf"
+      },
+      {
+        "title": "Unit-12 Neural Networks and Deep Learning",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86454/3/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-11 Regression",
+        "name": "Unit-11.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86453/3/Unit-11.pdf"
+      },
+      {
+        "title": "Unit-10 Classification",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86452/3/Unit-10.pdf"
+      },
+      {
+        "title": "Unit-9 Introduction to Machine Learning Methods",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86451/3/Unit-9.pdf"
+      },
+      {
+        "title": "Block-3 Machine Learning-I",
+        "name": "Block-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86450/3/Block-3.pdf"
+      },
+      {
+        "title": "Unit-16 Machine Learning-Programming using Python",
+        "name": "Unit-16.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86460/3/Unit-16.pdf"
+      },
+      {
+        "title": "Unit-15 Clustering",
+        "name": "Unit-15.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86459/3/Unit-15.pdf"
+      },
+      {
+        "title": "Unit-14 Association Rules",
+        "name": "Unit-14.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86458/3/Unit-14.pdf"
+      },
+      {
+        "title": "Unit-13 Feature selection and Extraction",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86457/3/Unit-13.pdf"
+      },
+      {
+        "title": "Block-4 Machine Learning-II",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/86456/3/Block-4.pdf"
+      }
+    ]
+  },
+  "MCS-068": {
+    "semester": "Semester 2",
+    "title": "MCS-068 Predictive Data Analysis",
+    "url": "https://egyankosh.ac.in/handle/123456789/124544",
+    "pdfs": [
+      {
+        "title": "Unit-4 Prescriptive Data Analysis",
+        "name": "Unit-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124550/3/Unit-4.pdf"
+      },
+      {
+        "title": "Unit-3 Predictive Data Analysis",
+        "name": "Unit-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124549/3/Unit-3.pdf"
+      },
+      {
+        "title": "Unit-2 Diagnostic Data Analysis",
+        "name": "Unit-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124548/3/Unit-2.pdf"
+      },
+      {
+        "title": "Unit-1 Descriptive Data Analysis",
+        "name": "Unit-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124547/3/Unit-1.pdf"
+      },
+      {
+        "title": "Block-1 Data Analysis - An Introduction",
+        "name": "Block-1.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124546/3/Block-1.pdf"
+      },
+      {
+        "title": "Unit-5 Mining Big Data",
+        "name": "Unit-5.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124594/1/Unit-5.pdf"
+      },
+      {
+        "title": "Unit-7 Predictive Analytics Models",
+        "name": "Unit-7.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124554/3/Unit-7.pdf"
+      },
+      {
+        "title": "Unit-6 Outlier Detection",
+        "name": "Unit-6.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124553/3/Unit-6.pdf"
+      },
+      {
+        "title": "Block-2 Predictive Data Analysis-I",
+        "name": "Block-2.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124552/3/Block-2.pdf"
+      },
+      {
+        "title": "Unit-12 Performance Evaluation Measures",
+        "name": "Unit-12.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124561/1/Unit-12.pdf"
+      },
+      {
+        "title": "Unit-11 Unsupervised Learning Models",
+        "name": "Unit-11.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124560/1/Unit-11.pdf"
+      },
+      {
+        "title": "Unit-10 Supervised Learning Models",
+        "name": "Unit-10.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124559/1/Unit-10.pdf"
+      },
+      {
+        "title": "Unit-9 Mining Big Data",
+        "name": "Unit-9.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124558/1/Unit-9.pdf"
+      },
+      {
+        "title": "Unit-8 Regression Models-II",
+        "name": "Unit-8.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124557/1/Unit-8.pdf"
+      },
+      {
+        "title": "Block-3 Predictive Data Analysis-II",
+        "name": "Block-3.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124556/1/Block-3.pdf"
+      },
+      {
+        "title": "Unit-16 Advanced Analysis Using R",
+        "name": "Unit-16.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124567/1/Unit-16.pdf"
+      },
+      {
+        "title": "Unit-15 Data Analysis and R",
+        "name": "Unit-15.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124566/1/Unit-15.pdf"
+      },
+      {
+        "title": "Unit-14 Data Interfacing and Visualisation in R",
+        "name": "Unit-14.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124565/1/Unit-14.pdf"
+      },
+      {
+        "title": "Unit-13 Basics of Programming",
+        "name": "Unit-13.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124564/1/Unit-13.pdf"
+      },
+      {
+        "title": "Block-4 R- Programming for Data Analysis",
+        "name": "Block-4.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/124563/1/Block-4.pdf"
+      }
+    ]
+  },
+  "MCSL-069": {
+    "semester": "Semester 2",
+    "title": "MCSL-069 Artificial Intelligence & Machine Learning Lab",
+    "url": "https://egyankosh.ac.in/handle/123456789/125294",
+    "pdfs": [
+      {
+        "title": "MCSL-069 Artificial Intelligence & Machine Learning Lab",
+        "name": "MCSL-069.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125295/1/MCSL-069.pdf"
+      }
+    ]
+  },
+  "MCSL-070": {
+    "semester": "Semester 2",
+    "title": "MCSL-070 Data Analysis Lab",
+    "url": "https://egyankosh.ac.in/handle/123456789/125374",
+    "pdfs": [
+      {
+        "title": "MCSL-070 Data Analysis Lab",
+        "name": "MCSL-070.pdf",
+        "url": "https://egyankosh.ac.in/bitstream/123456789/125375/1/MCSL-070.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Regression",
+  "filename": "Unit-11_Regression.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-11_Regression.pdf",
+  "total_pages": 20,
+  "word_count": 5980,
+  "est_read_time_minutes": 33,
+  "objectives": [
+    "x + C describes the relationship between one",
+    "children’s set",
+    "height_parent",
+    "linear regression model.",
+    "Find the relationship: It is required to determine the relationships",
+    "Strength of relationships: By changing the value of one variable how"
+  ],
+  "summary": "In this unit, we discussed about the concepts of regression – linear regression and nonlinear regression. We discussed about how to find relationship between response variable and predictor variable. Various terminologies used in regression are discussed with an example. Concept of dependent variable, independent variables and how to find the relationships are defined in this unit. Different types of regression also discussed in this unit.",
+  "flashcards": [
+    {
+      "question": "What is regression? Define linear regression.",
+      "answer": "Key Principle: Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Describe about overfitting and underfitting.",
+      "answer": "In Regression, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "State True or False T F (a) To determine relationship between numeric variables Linear Regression is used. (b) With the help of logistic regression,",
+      "answer": "Key Principle: Following are various types of regression algorithms.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Define polynomial regression.",
+      "answer": "Key Principle: Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Write down the general equation for the polynomial curve fitting.",
+      "answer": "Key Principle: Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "State True or False (a) A quadratic regression equation can be represented by ŷ = b",
+      "answer": "Key Principle: Following are various types of regression algorithms.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Regression Algorithm and how is it characterized?",
+      "answer": "Following are various types of regression algorithms.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Regression\"]\n  M1[\"11.2 Regression Algorithm\"]\n  Root --> M1\n  M2[\"11.3 Linear Regression\"]\n  Root --> M2\n  M3[\"11.4 Polynomial Regression\"]\n  Root --> M3\n  M4[\"11.5 Support Vector Regression\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Regression Algorithm</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Following are various types of regression algorithms.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Polynomial Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Support Vector Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Support vector machine is used in solving both classification and regression problem.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 Regression Algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Following are various types of regression algorithms.</li>\n<li>Linear regression: Linear regression algorithm comes into existence when there is only one dependent variable and independent variables can be be one or more in numbers.</li>\n<li>If there is a single independent variable, then it is called as simple linear regression.</li>\n<li>In linear regression the relationships between the dependent and independent variables are linear i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Linear Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.</li>\n<li>When the relationships are linear then it is called as linear regression or otherwise it is called as a nonlinear regression.</li>\n<li>Linear regression makes prediction for continuous/real or numerical variables like age, salary, price etc.</li>\n<li>For example, the distance traversed by the car increases when the speed of the car increases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4 Polynomial Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.</li>\n<li>All points are close to the line, linear model regression model can be applied to the data sets.</li>\n<li>Loss value for this graph will be very high and accuracy will be reduced.</li>\n<li>y1=a0+bx is equation of linear regression, with slope b where a0 is the intercept with the x axis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.5 Support Vector Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Support vector machine is used in solving both classification and regression problem.</li>\n<li>It is easy to separate these two categories by using a line between the two.</li>\n<li>There is a hyperplane between these two categories which will separate these two from each other.</li>\n<li>This hyperplane is used to divide the points into different categories lying opposite to the line.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>will be y=a+bx</code></div>\n<div class=\"formula-box\"><code>when x=0 then y=a, which means when there is no independent variable</code></div>\n<div class=\"formula-box\"><code>y=a+b1x1+b2x2+b3x3+…….box.</code></div>\n<div class=\"formula-box\"><code>regression i.e. y=a+bx1+cx2+dx3. ; example weight = a+b * (daily meal)+ c*</code></div>\n<div class=\"formula-box\"><code>variables. It results in a curved line instead of a straight line i.e. y=c+ a*x+b*x2</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we discussed about the concepts of regression – linear regression and nonlinear regression. We discussed about how to find relationship between response variable and predictor variable. Various terminologies used in regression are discussed with an example. Concept of dependent variable, independent variables and how to find the relationships are defined in this unit. Different types of regression also discussed in this unit.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-11_Regression.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Regression\"]\n  M1[\"11.2 Regression Algorithm\"]\n  Root --> M1\n  M2[\"11.3 Linear Regression\"]\n  Root --> M2\n  M3[\"11.4 Polynomial Regression\"]\n  Root --> M3\n  M4[\"11.5 Support Vector Regression\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "Regression Algorithm",
+      "definition": "Following are various types of regression algorithms.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Linear Regression",
+      "definition": "Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Polynomial Regression",
+      "definition": "Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Support Vector Regression",
+      "definition": "Support vector machine is used in solving both classification and regression problem.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "11.2",
+      "topic": "Regression Algorithm",
+      "points": [
+        "Following are various types of regression algorithms.",
+        "Linear regression: Linear regression algorithm comes into existence when there is only one dependent variable and independent variables can be be one or more in numbers.",
+        "If there is a single independent variable, then it is called as simple linear regression.",
+        "In linear regression the relationships between the dependent and independent variables are linear i.e."
+      ]
+    },
+    {
+      "section_num": "11.3",
+      "topic": "Linear Regression",
+      "points": [
+        "Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.",
+        "When the relationships are linear then it is called as linear regression or otherwise it is called as a nonlinear regression.",
+        "Linear regression makes prediction for continuous/real or numerical variables like age, salary, price etc.",
+        "For example, the distance traversed by the car increases when the speed of the car increases."
+      ]
+    },
+    {
+      "section_num": "11.4",
+      "topic": "Polynomial Regression",
+      "points": [
+        "Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.",
+        "All points are close to the line, linear model regression model can be applied to the data sets.",
+        "Loss value for this graph will be very high and accuracy will be reduced.",
+        "y1=a0+bx is equation of linear regression, with slope b where a0 is the intercept with the x axis."
+      ]
+    },
+    {
+      "section_num": "11.5",
+      "topic": "Support Vector Regression",
+      "points": [
+        "Support vector machine is used in solving both classification and regression problem.",
+        "It is easy to separate these two categories by using a line between the two.",
+        "There is a hyperplane between these two categories which will separate these two from each other.",
+        "This hyperplane is used to divide the points into different categories lying opposite to the line."
+      ]
+    }
+  ],
+  "formulas": [
+    "will be y=a+bx",
+    "when x=0 then y=a, which means when there is no independent variable",
+    "y=a+b1x1+b2x2+b3x3+…….box.",
+    "regression i.e. y=a+bx1+cx2+dx3. ; example weight = a+b * (daily meal)+ c*",
+    "variables. It results in a curved line instead of a straight line i.e. y=c+ a*x+b*x2"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Regression\"]\n  M1[\"11.2 Regression Algorithm\"]\n  Root --> M1\n  M2[\"11.3 Linear Regression\"]\n  Root --> M2\n  M3[\"11.4 Polynomial Regression\"]\n  Root --> M3\n  M4[\"11.5 Support Vector Regression\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Regression Algorithm</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Following are various types of regression algorithms.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Polynomial Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Support Vector Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Support vector machine is used in solving both classification and regression problem.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 Regression Algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Following are various types of regression algorithms.</li>\n<li>Linear regression: Linear regression algorithm comes into existence when there is only one dependent variable and independent variables can be be one or more in numbers.</li>\n<li>If there is a single independent variable, then it is called as simple linear regression.</li>\n<li>In linear regression the relationships between the dependent and independent variables are linear i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Linear Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Linear regression is a mathematical method implemented where we want to find the response variable and predictor variables.</li>\n<li>When the relationships are linear then it is called as linear regression or otherwise it is called as a nonlinear regression.</li>\n<li>Linear regression makes prediction for continuous/real or numerical variables like age, salary, price etc.</li>\n<li>For example, the distance traversed by the car increases when the speed of the car increases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4 Polynomial Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Linear model can apply to data set having linear in nature, however if we have data set of nonlinear in nature then nonlinear model is to be applied.</li>\n<li>All points are close to the line, linear model regression model can be applied to the data sets.</li>\n<li>Loss value for this graph will be very high and accuracy will be reduced.</li>\n<li>y1=a0+bx is equation of linear regression, with slope b where a0 is the intercept with the x axis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.5 Support Vector Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Support vector machine is used in solving both classification and regression problem.</li>\n<li>It is easy to separate these two categories by using a line between the two.</li>\n<li>There is a hyperplane between these two categories which will separate these two from each other.</li>\n<li>This hyperplane is used to divide the points into different categories lying opposite to the line.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>will be y=a+bx</code></div>\n<div class=\"formula-box\"><code>when x=0 then y=a, which means when there is no independent variable</code></div>\n<div class=\"formula-box\"><code>y=a+b1x1+b2x2+b3x3+…….box.</code></div>\n<div class=\"formula-box\"><code>regression i.e. y=a+bx1+cx2+dx3. ; example weight = a+b * (daily meal)+ c*</code></div>\n<div class=\"formula-box\"><code>variables. It results in a curved line instead of a straight line i.e. y=c+ a*x+b*x2</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we discussed about the concepts of regression – linear regression and nonlinear regression. We discussed about how to find relationship between response variable and predictor variable. Various terminologies used in regression are discussed with an example. Concept of dependent variable, independent variables and how to find the relationships are defined in this unit. Different types of regression also discussed in this unit.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-11_Regression.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

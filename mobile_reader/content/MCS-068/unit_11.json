@@ -1,0 +1,141 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Unsupervised Learning Models",
+  "filename": "Unit-11_Unsupervised_Learning_Models.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-11_Unsupervised_Learning_Models.pdf",
+  "total_pages": 32,
+  "word_count": 9210,
+  "est_read_time_minutes": 51,
+  "objectives": [
+    "Means Clustering,",
+    "world problems."
+  ],
+  "summary": "This unit introduces the concept of unsupervised learning models, which are used to analyse data without predefined labels or outcomes. Unlike supervised learning, where models learn from known input-output pairs, unsupervised learning focuses on discovering hidden patterns, structures, and relationships within the data. These models are particularly useful in scenarios such as customer segmentation, pattern recognition, and market analysis, where the goal is to extract meaningful insights from raw and unstructured data.",
+  "flashcards": [
+    {
+      "question": "What is Unsupervised Learning? How does it differ from supervised learning? …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "In Unsupervised Learning Models, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "List the applications of Unsupervised Learning in real-world scenarios. …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Explain the basic form of an association rule with an example. Solution: refer to Sub-section",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are Unsupervised Learning Models? Explain their significance in data analysis. .…………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "What are the key measures used in Association Rule Learning? Solution: refer to Sub-section",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Briefly explain different types of Unsupervised Learning techniques. .…………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "List applications of Association Rule Learning in real-world scenarios. Solution: refer to Sub-section",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is K-Means Clustering? Explain its objective. ………………………………………………………………………………………… ………………………………………………………………………………………… Q",
+      "answer": "Key Principle: K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain the working steps of the K-Means algorithm ………………………………………………………………………………………… ………………………………………………………………………………………… Q",
+      "answer": "Explain the basic form of an association rule with an example. Solution: refer to Sub-section",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Expected Learning Outcomes and how is it characterized?",
+      "answer": "After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Unsupervised Learning Models\"]\n  M1[\"11.1 Expected Learning Outcomes\"]\n  Root --> M1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">K-Means Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hierarchical Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Hierarchical Clustering is an imp data points into clusters based o where the number of clusters m tree-like structure (called a d different levels of similarity.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Agglomerative Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Agglomerative Clustering is a type of hierarchical clustering that follows a bottom-up approach.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Association Rules</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">…………………………………………………… …………………………………………………… working of Agglomerative Clustering.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.</li>\n<li> explore different unsupervised learning models and their applications.</li>\n<li> learn the working and implementation of K-Means Clustering technique.</li>\n<li> understand Hierarchical and Agglomerative Clustering methods for grouping data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 K-Means Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.</li>\n<li>The main objective of K-Means is to partition a dataset into K distinct clusters such that data points within the same cluster are more similar to each other than to those in other clusters.</li>\n<li>Since it does not rely on labeled data, K- Means helps in discovering hidden patterns and structures within the dataset.</li>\n<li>The algorithm works iteratively by assigning data points to clusters and updating the cluster centers, known as centroids, until convergence is achieved.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.2 Hierarchical Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hierarchical Clustering is an imp data points into clusters based o where the number of clusters m tree-like structure (called a d different levels of similarity.</li>\n<li>The height at which tw cutting the dendrogram at a certa …………………………………………………… …………………………………………………… CAL CLUSTERING portant unsupervised learning algorithm used to on their similarity or distance.</li>\n<li>Unlike K-Mean must be specified in advance, hierarchical cluste dendrogram) that represents the arrangement is allows us to explore the data at multiple leve interpretation.</li>\n<li>rily on the agglomerative approach, where ea and clusters are gradually merged step by s to a single cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.3 Agglomerative Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Agglomerative Clustering is a type of hierarchical clustering that follows a bottom-up approach.</li>\n<li>This means the algorithm starts with the smallest possible units and gradually builds larger clusters.</li>\n<li>Initially, each data point is considered as a separate cluster.</li>\n<li>Then, the algorithm looks for the two clusters that are closest to each other and merges them into a single cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.4 Association Rules</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>…………………………………………………… …………………………………………………… working of Agglomerative Clustering.</li>\n<li>…………………………………………………… …………………………………………………… n Agglomerative Clustering?</li>\n<li>…………………………………………………… …………………………………………………… gglomerative and Divisive Clustering.</li>\n<li>es is to find rules of the form: 𝑋⇒𝑌 This rule means that if itemset 𝑋 occurs, then is to identify such rules that are strong and mea ………… ………… ………… ………… ………… ………… ………… …… ed to discover tasets.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rule Learning is another important</code></div>\n<div class=\"formula-box\"><code>rules uncover meaningful connections between variables. These</code></div>\n<div class=\"formula-box\"><code>rule where 𝑋and 𝑌are sets of items</code></div>\n<div class=\"formula-box\"><code>rule means that if itemset 𝑋 occurs, then</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces the concept of unsupervised learning models, which are used to analyse data without predefined labels or outcomes. Unlike supervised learning, where models learn from known input-output pairs, unsupervised learning focuses on discovering hidden patterns, structures, and relationships within the data. These models are particularly useful in scenarios such as customer segmentation, pattern recognition, and market analysis, where the goal is to extract meaningful insights from raw and unstructured data.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-11_Unsupervised_Learning_Models.pdf')\">\n          📄 Read Original IGNOU PDF (32 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Unsupervised Learning Models\"]\n  M1[\"11.1 Expected Learning Outcomes\"]\n  Root --> M1",
+  "definitions": [
+    {
+      "term": "Expected Learning Outcomes",
+      "definition": "After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "K-Means Clustering",
+      "definition": "K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Hierarchical Clustering",
+      "definition": "Hierarchical Clustering is an imp data points into clusters based o where the number of clusters m tree-like structure (called a d different levels of similarity.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Agglomerative Clustering",
+      "definition": "Agglomerative Clustering is a type of hierarchical clustering that follows a bottom-up approach.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Association Rules",
+      "definition": "…………………………………………………… …………………………………………………… working of Agglomerative Clustering.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "11.1",
+      "topic": "Expected Learning Outcomes",
+      "points": [
+        "After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.",
+        " explore different unsupervised learning models and their applications.",
+        " learn the working and implementation of K-Means Clustering technique.",
+        " understand Hierarchical and Agglomerative Clustering methods for grouping data."
+      ]
+    },
+    {
+      "section_num": "11.2.1",
+      "topic": "K-Means Clustering",
+      "points": [
+        "K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.",
+        "The main objective of K-Means is to partition a dataset into K distinct clusters such that data points within the same cluster are more similar to each other than to those in other clusters.",
+        "Since it does not rely on labeled data, K- Means helps in discovering hidden patterns and structures within the dataset.",
+        "The algorithm works iteratively by assigning data points to clusters and updating the cluster centers, known as centroids, until convergence is achieved."
+      ]
+    },
+    {
+      "section_num": "11.2.2",
+      "topic": "Hierarchical Clustering",
+      "points": [
+        "Hierarchical Clustering is an imp data points into clusters based o where the number of clusters m tree-like structure (called a d different levels of similarity.",
+        "The height at which tw cutting the dendrogram at a certa …………………………………………………… …………………………………………………… CAL CLUSTERING portant unsupervised learning algorithm used to on their similarity or distance.",
+        "Unlike K-Mean must be specified in advance, hierarchical cluste dendrogram) that represents the arrangement is allows us to explore the data at multiple leve interpretation.",
+        "rily on the agglomerative approach, where ea and clusters are gradually merged step by s to a single cluster."
+      ]
+    },
+    {
+      "section_num": "11.2.3",
+      "topic": "Agglomerative Clustering",
+      "points": [
+        "Agglomerative Clustering is a type of hierarchical clustering that follows a bottom-up approach.",
+        "This means the algorithm starts with the smallest possible units and gradually builds larger clusters.",
+        "Initially, each data point is considered as a separate cluster.",
+        "Then, the algorithm looks for the two clusters that are closest to each other and merges them into a single cluster."
+      ]
+    },
+    {
+      "section_num": "11.2.4",
+      "topic": "Association Rules",
+      "points": [
+        "…………………………………………………… …………………………………………………… working of Agglomerative Clustering.",
+        "…………………………………………………… …………………………………………………… n Agglomerative Clustering?",
+        "…………………………………………………… …………………………………………………… gglomerative and Divisive Clustering.",
+        "es is to find rules of the form: 𝑋⇒𝑌 This rule means that if itemset 𝑋 occurs, then is to identify such rules that are strong and mea ………… ………… ………… ………… ………… ………… ………… …… ed to discover tasets."
+      ]
+    }
+  ],
+  "formulas": [
+    "Rule Learning is another important",
+    "rules uncover meaningful connections between variables. These",
+    "rule where 𝑋and 𝑌are sets of items",
+    "rule means that if itemset 𝑋 occurs, then"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Unsupervised Learning Models\"]\n  M1[\"11.1 Expected Learning Outcomes\"]\n  Root --> M1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">K-Means Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hierarchical Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Hierarchical Clustering is an imp data points into clusters based o where the number of clusters m tree-like structure (called a d different levels of similarity.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Agglomerative Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Agglomerative Clustering is a type of hierarchical clustering that follows a bottom-up approach.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Association Rules</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">…………………………………………………… …………………………………………………… working of Agglomerative Clustering.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>After completing this unit, you will be able to:  understand the concept and significance of unsupervised learning in data analysis.</li>\n<li> explore different unsupervised learning models and their applications.</li>\n<li> learn the working and implementation of K-Means Clustering technique.</li>\n<li> understand Hierarchical and Agglomerative Clustering methods for grouping data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 K-Means Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>K-Means Clustering is one of the most widely used unsupervised learning algorithms for grouping data into clusters based on similarity.</li>\n<li>The main objective of K-Means is to partition a dataset into K distinct clusters such that data points within the same cluster are more similar to each other than to those in other clusters.</li>\n<li>Since it does not rely on labeled data, K- Means helps in discovering hidden patterns and structures within the dataset.</li>\n<li>The algorithm works iteratively by assigning data points to clusters and updating the cluster centers, known as centroids, until convergence is achieved.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.2 Hierarchical Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hierarchical Clustering is an imp data points into clusters based o where the number of clusters m tree-like structure (called a d different levels of similarity.</li>\n<li>The height at which tw cutting the dendrogram at a certa …………………………………………………… …………………………………………………… CAL CLUSTERING portant unsupervised learning algorithm used to on their similarity or distance.</li>\n<li>Unlike K-Mean must be specified in advance, hierarchical cluste dendrogram) that represents the arrangement is allows us to explore the data at multiple leve interpretation.</li>\n<li>rily on the agglomerative approach, where ea and clusters are gradually merged step by s to a single cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.3 Agglomerative Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Agglomerative Clustering is a type of hierarchical clustering that follows a bottom-up approach.</li>\n<li>This means the algorithm starts with the smallest possible units and gradually builds larger clusters.</li>\n<li>Initially, each data point is considered as a separate cluster.</li>\n<li>Then, the algorithm looks for the two clusters that are closest to each other and merges them into a single cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.4 Association Rules</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>…………………………………………………… …………………………………………………… working of Agglomerative Clustering.</li>\n<li>…………………………………………………… …………………………………………………… n Agglomerative Clustering?</li>\n<li>…………………………………………………… …………………………………………………… gglomerative and Divisive Clustering.</li>\n<li>es is to find rules of the form: 𝑋⇒𝑌 This rule means that if itemset 𝑋 occurs, then is to identify such rules that are strong and mea ………… ………… ………… ………… ………… ………… ………… …… ed to discover tasets.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rule Learning is another important</code></div>\n<div class=\"formula-box\"><code>rules uncover meaningful connections between variables. These</code></div>\n<div class=\"formula-box\"><code>rule where 𝑋and 𝑌are sets of items</code></div>\n<div class=\"formula-box\"><code>rule means that if itemset 𝑋 occurs, then</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces the concept of unsupervised learning models, which are used to analyse data without predefined labels or outcomes. Unlike supervised learning, where models learn from known input-output pairs, unsupervised learning focuses on discovering hidden patterns, structures, and relationships within the data. These models are particularly useful in scenarios such as customer segmentation, pattern recognition, and market analysis, where the goal is to extract meaningful insights from raw and unstructured data.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-11_Unsupervised_Learning_Models.pdf')\">\n          📄 Read Original IGNOU PDF (32 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

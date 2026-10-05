@@ -1,0 +1,102 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_07",
+  "unit_num": "Unit 7",
+  "title": "Continuous Probability Distributions and Exact Sampling Distributions",
+  "filename": "Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf",
+  "total_pages": 26,
+  "word_count": 8650,
+  "est_read_time_minutes": 48,
+  "objectives": [
+    "Normal Distribution",
+    "Continuous Uniform Distribution"
+  ],
+  "summary": "The following main points have been covered in this unit: 1) A continuous random variable X is said to follow normal distribution with parameters  ( −) and 2(>0) if it takes on any real value and its probability density function is given by 3) The curve of the normal distribution is bell-shaped and is completely 4) For normal distribution, Mean = Median = Mode.",
+  "flashcards": [
+    {
+      "question": "Write down the p.d.f. of r. v. X in each of the following cases: (i)",
+      "answer": "Here, we are given that",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Below, in each case, is given the p.d.f. of a normally distributed random variable. Obtain the parameters (mean and variance) of the variable. (i)",
+      "answer": "Refer to Section 7.6.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "If X1 and X2 are two independent normal variates with means 30, 40 and variances",
+      "answer": "We know that the mean and variance of F-distribution with",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Suppose that X is uniformly distributed over (–a, a). Determine ‘a’ so that i)  ",
+      "answer": "Here, we are given that",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "A random variable X has a uniform distribution over (–2, 2). Find k for which P[X > k] =",
+      "answer": "Refer to Section 7.6.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are the mean and variance of the chi-square distribution with 10 degrees of freedom?",
+      "answer": "Here, we are given that",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is The Distribution and how is it characterized?",
+      "answer": "The Distribution uniform distribution since it assumes a constant (uniform) value for all x in (a, b).",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Continuous Probability Distri\"]\n  M1[\"7.2 Normal Distribution\"]\n  Root --> M1\n  M2[\"7.3 Continuous Uniform Distribution\"]\n  Root --> M2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Distribution</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Distribution uniform distribution since it assumes a constant (uniform) value for all x in (a, b).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Normal Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Continuous Uniform Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The uniform (or rectangular) distribution is a very simple distribution.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2 Normal Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733.</li>\n<li>De Moivre obtained this continuous distribution as a limiting case of binomial distribution.</li>\n<li>But the contribution of Laplace remained unnoticed for long till it was given concrete shape by Karl Gauss (1777-1855) who first made reference to it in 1809 as the distribution of errors in Astronomy.</li>\n<li>That is why the normal distribution is sometimes called Gaussian distribution.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Continuous Uniform Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The uniform (or rectangular) distribution is a very simple distribution.</li>\n<li>It provides a useful model for a few random phenomena like having random number from the interval [0, 1], then one is thinking of the value of a uniformly distributed random variable over the interval [0, 1].</li>\n<li>7.2: Graph of a uniform function 208 Probability and Distributions Mean and Variance of Uniform Distribution Mean = a b 2 + and Variance = ( ) 2 b a 12 − .</li>\n<li>Let us now take up some examples of continuous uniform distribution.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Property xii (Section 7.3)]</code></div>\n<div class=\"formula-box\"><code>μ = 40, σ = 25</code></div>\n<div class=\"formula-box\"><code>(uniform) value for all x in (a, b). If we draw the graph of y = f(x) over x-axis</code></div>\n<div class=\"formula-box\"><code>and between the ordinates x = a and x = b (say), it describes a rectangle as shown</code></div>\n<div class=\"formula-box\"><code> a + b = 4 … (1)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The following main points have been covered in this unit: 1) A continuous random variable X is said to follow normal distribution with parameters  ( −) and 2(>0) if it takes on any real value and its probability density function is given by 3) The curve of the normal distribution is bell-shaped and is completely 4) For normal distribution, Mean = Median = Mode.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 7 Continuous Probability Distri\"]\n  M1[\"7.2 Normal Distribution\"]\n  Root --> M1\n  M2[\"7.3 Continuous Uniform Distribution\"]\n  Root --> M2",
+  "definitions": [
+    {
+      "term": "The Distribution",
+      "definition": "The Distribution uniform distribution since it assumes a constant (uniform) value for all x in (a, b).",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Normal Distribution",
+      "definition": "The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Continuous Uniform Distribution",
+      "definition": "The uniform (or rectangular) distribution is a very simple distribution.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "7.2",
+      "topic": "Normal Distribution",
+      "points": [
+        "The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733.",
+        "De Moivre obtained this continuous distribution as a limiting case of binomial distribution.",
+        "But the contribution of Laplace remained unnoticed for long till it was given concrete shape by Karl Gauss (1777-1855) who first made reference to it in 1809 as the distribution of errors in Astronomy.",
+        "That is why the normal distribution is sometimes called Gaussian distribution."
+      ]
+    },
+    {
+      "section_num": "7.3",
+      "topic": "Continuous Uniform Distribution",
+      "points": [
+        "The uniform (or rectangular) distribution is a very simple distribution.",
+        "It provides a useful model for a few random phenomena like having random number from the interval [0, 1], then one is thinking of the value of a uniformly distributed random variable over the interval [0, 1].",
+        "7.2: Graph of a uniform function 208 Probability and Distributions Mean and Variance of Uniform Distribution Mean = a b 2 + and Variance = ( ) 2 b a 12 − .",
+        "Let us now take up some examples of continuous uniform distribution."
+      ]
+    }
+  ],
+  "formulas": [
+    "Property xii (Section 7.3)]",
+    "μ = 40, σ = 25",
+    "(uniform) value for all x in (a, b). If we draw the graph of y = f(x) over x-axis",
+    "and between the ordinates x = a and x = b (say), it describes a rectangle as shown",
+    " a + b = 4 … (1)"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 7 Continuous Probability Distri\"]\n  M1[\"7.2 Normal Distribution\"]\n  Root --> M1\n  M2[\"7.3 Continuous Uniform Distribution\"]\n  Root --> M2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Distribution</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Distribution uniform distribution since it assumes a constant (uniform) value for all x in (a, b).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Normal Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Continuous Uniform Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The uniform (or rectangular) distribution is a very simple distribution.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.2 Normal Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The concept of normal distribution was initially discovered by English mathematician Abraham De Moivre (1667-1754) in 1733.</li>\n<li>De Moivre obtained this continuous distribution as a limiting case of binomial distribution.</li>\n<li>But the contribution of Laplace remained unnoticed for long till it was given concrete shape by Karl Gauss (1777-1855) who first made reference to it in 1809 as the distribution of errors in Astronomy.</li>\n<li>That is why the normal distribution is sometimes called Gaussian distribution.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">7.3 Continuous Uniform Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The uniform (or rectangular) distribution is a very simple distribution.</li>\n<li>It provides a useful model for a few random phenomena like having random number from the interval [0, 1], then one is thinking of the value of a uniformly distributed random variable over the interval [0, 1].</li>\n<li>7.2: Graph of a uniform function 208 Probability and Distributions Mean and Variance of Uniform Distribution Mean = a b 2 + and Variance = ( ) 2 b a 12 − .</li>\n<li>Let us now take up some examples of continuous uniform distribution.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Property xii (Section 7.3)]</code></div>\n<div class=\"formula-box\"><code>μ = 40, σ = 25</code></div>\n<div class=\"formula-box\"><code>(uniform) value for all x in (a, b). If we draw the graph of y = f(x) over x-axis</code></div>\n<div class=\"formula-box\"><code>and between the ordinates x = a and x = b (say), it describes a rectangle as shown</code></div>\n<div class=\"formula-box\"><code> a + b = 4 … (1)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The following main points have been covered in this unit: 1) A continuous random variable X is said to follow normal distribution with parameters  ( −) and 2(>0) if it takes on any real value and its probability density function is given by 3) The curve of the normal distribution is bell-shaped and is completely 4) For normal distribution, Mean = Median = Mode.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-7_Continuous_Probability_Distributions_and_Exact_Sampling_Distributions.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

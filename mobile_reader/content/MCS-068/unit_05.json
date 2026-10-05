@@ -1,0 +1,172 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Mining Big Data",
+  "filename": "Unit-5_Mining_Big_Data.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-5_Mining_Big_Data.pdf",
+  "total_pages": 18,
+  "word_count": 7327,
+  "est_read_time_minutes": 41,
+  "objectives": [
+    "based summaries, which use Artificial",
+    "Answering: In the present time, these techniques are",
+    "answering systems. Inputs to",
+    "Answering",
+    "based system, either the related information is retrieved",
+    "answering systems are – Siri, Alexa, Google Assistant,"
+  ],
+  "summary": "This unit introduces you to basic techniques for finding similar items. The Unit first explains the methods of finding similarity between two sets. In this context, the concept of Jaccard similarity, document similarity and collaborative similarity are discussed. This is followed by a detailed discussion on one of the important set similarity applications – document similarity. For finding document similarity of a very large number of documents, a document is first converted to a set of shingles,",
+  "flashcards": [
+    {
+      "question": "What is the purpose of a distance measure? What are the characteristics of distance measures?",
+      "answer": "In Mining Big Data, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is the Cosine distance measure? How is it different from Hamming's distance?",
+      "answer": "In Mining Big Data, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Explain the purpose of text analysis.",
+      "answer": "In Mining Big Data, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Jaccard Similarity of the document is: 𝐽𝑆 ௌ௘",
+      "answer": "Key Principle: Jaccard similarity is defined in the context of sets.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "The minhash signatures for the following three orderings are shown: ORDER Shingle/Documents Set",
+      "answer": "In Mining Big Data, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The minhash signature matrix is: Set",
+      "answer": "In Mining Big Data, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is The Hamming Distance and how is it characterized?",
+      "answer": "The Hamming Distance the difference between the components of two vectors, especially when these vectors are of type Boolean.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Mining Big Data\"]\n  M1[\"5.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"5.2 Finding Similar Items\"]\n  Root --> M2\n  M3[\"5.3 Finding Similar Sets\"]\n  Root --> M3\n  M3_1[\"5.3.1 Jaccard Similarity of Sets\"]\n  M3 --> M3_1\n  M3_2[\"5.3.2 Documents Similarity\"]\n  M3 --> M3_2\n  M3_3[\"5.3.3 Collaborative Filtering and Se\"]\n  M3 --> M3_3\n  M4[\"5.4 Finding Similar Documents\"]\n  Root --> M4\n  M4_1[\"5.4.1 Shingles\"]\n  M4 --> M4_1\n  M4_2[\"5.4.2 Minhashing\"]\n  M4 --> M4_2\n  M4_3[\"5.4.3 Locality Sensitive Hashing\"]\n  M4 --> M4_3\n  M5[\"5.5 Distance Measures\"]\n  Root --> M5\n  M5_1[\"5.5.1 Euclidean Distance\"]\n  M5 --> M5_1\n  M5_2[\"5.5.2 Jaccard Distance\"]\n  M5 --> M5_2\n  M5_3[\"5.5.3 Cosine Distance\"]\n  M5 --> M5_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Hamming Distance</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Hamming Distance the difference between the components of two vectors, especially when these vectors are of type Boolean.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Finding Similar Items</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of finding similar items.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Finding Similar Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Jaccard Similarity of Sets Jaccard similarity is defined in the context of sets.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Jaccard Similarity Of Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Jaccard similarity is defined in the context of sets.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in mining big data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Finding Similar Items</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of finding similar items.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in mining big data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Finding Similar Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Jaccard Similarity of Sets Jaccard similarity is defined in the context of sets.</li>\n<li>Consider two sets – set A and set B, then the Jaccard similarity JSA,B is defined as a ratio of the cardinality of the set A∩B and cardinality of the set A∪B.</li>\n<li>It can be used to identify a collection of almost similar documents, news items, web pages or reports.</li>\n<li>This is also referred to as the character- level similarity of documents.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.1 Jaccard Similarity of Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Jaccard similarity is defined in the context of sets.</li>\n<li>Consider two sets – set A and set B, then the Jaccard similarity JSA,B is defined as a ratio of the cardinality of the set A∩B and cardinality of the set A∪B.</li>\n<li>It can be used to identify a collection of almost similar documents, news items, web pages or reports.</li>\n<li>This is also referred to as the character- level similarity of documents.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.2 Documents Similarity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Finding document similarity is an interesting domain of use of Jaccard similarity.</li>\n<li>It can be used to identify a collection of almost similar documents, news items, web pages or reports.</li>\n<li>This is also referred to as the character- level similarity of documents.</li>\n<li>Another kind of document similarity also looks at documents having similar meanings.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.3 Collaborative Filtering and Set Similarity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the past decade, e-commerce has gained acceptance by customers.</li>\n<li>Many of you, who have purchased and have liked various items on these e-commerce websites, get online recommendations for the purchase of certain items.</li>\n<li>You may have observed that many times those recommendations are very close to purchases that you would like to do in the near future.</li>\n<li>Similarity of the sets is used to address this problem.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Finding Similar Documents</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the last section, we discussed the Jaccard similarity in the context of sets.</li>\n<li>We also explained the issues of document similarity.</li>\n<li>The document similarity can be checked using the following process: Step 1: Create Sets of items from the document (Shingles are used) Step 2: Perform Minhashing and create documents Signatures that can be tested for similarity checking.</li>\n<li>This reduces the number of shingles to be tested for checking the similarity of two documents.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4.1 Shingles</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In order to define the term shingle, let us first try to answer the question: How to represent a document as a set of items so that you can find lexicographically similar documents?</li>\n<li>One way would be to identify words in the document.</li>\n<li>However, the identification of words itself is a time-consuming problem and would be more useful if you are trying to find the semantics of sentences.</li>\n<li>One of the simplest and efficient ways would be to divide the document into smaller substrings of characters, say of size 3 to 7.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle of the Locality-sensitive hashing technique is as follows:</code></div>\n<div class=\"formula-box\"><code>property using certain values for three sets.</code></div>\n<div class=\"formula-box\"><code>cardinality of the set A∩B and cardinality of the set A∪B. The</code></div>\n<div class=\"formula-box\"><code>𝐽𝑆஺,஻= |𝐴∩𝐵|</code></div>\n<div class=\"formula-box\"><code>For example, consider the sets A={a, b, c, d, e} and set B={c, d, e, f, g}, then</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces you to basic techniques for finding similar items. The Unit first explains the methods of finding similarity between two sets. In this context, the concept of Jaccard similarity, document similarity and collaborative similarity are discussed. This is followed by a detailed discussion on one of the important set similarity applications – document similarity. For finding document similarity of a very large number of documents, a document is first converted to a set of shingles,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-5_Mining_Big_Data.pdf')\">\n          📄 Read Original IGNOU PDF (18 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Mining Big Data\"]\n  M1[\"5.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"5.2 Finding Similar Items\"]\n  Root --> M2\n  M3[\"5.3 Finding Similar Sets\"]\n  Root --> M3\n  M3_1[\"5.3.1 Jaccard Similarity of Sets\"]\n  M3 --> M3_1\n  M3_2[\"5.3.2 Documents Similarity\"]\n  M3 --> M3_2\n  M3_3[\"5.3.3 Collaborative Filtering and Se\"]\n  M3 --> M3_3\n  M4[\"5.4 Finding Similar Documents\"]\n  Root --> M4\n  M4_1[\"5.4.1 Shingles\"]\n  M4 --> M4_1\n  M4_2[\"5.4.2 Minhashing\"]\n  M4 --> M4_2\n  M4_3[\"5.4.3 Locality Sensitive Hashing\"]\n  M4 --> M4_3\n  M5[\"5.5 Distance Measures\"]\n  Root --> M5\n  M5_1[\"5.5.1 Euclidean Distance\"]\n  M5 --> M5_1\n  M5_2[\"5.5.2 Jaccard Distance\"]\n  M5 --> M5_2\n  M5_3[\"5.5.3 Cosine Distance\"]\n  M5 --> M5_3",
+  "definitions": [
+    {
+      "term": "The Hamming Distance",
+      "definition": "The Hamming Distance the difference between the components of two vectors, especially when these vectors are of type Boolean.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Expected Learning Outcomes",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Finding Similar Items",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of finding similar items.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Finding Similar Sets",
+      "definition": "Jaccard Similarity of Sets Jaccard similarity is defined in the context of sets.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Jaccard Similarity Of Sets",
+      "definition": "Jaccard similarity is defined in the context of sets.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.1",
+      "topic": "Expected Learning Outcomes",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in mining big data."
+      ]
+    },
+    {
+      "section_num": "5.2",
+      "topic": "Finding Similar Items",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of finding similar items.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in mining big data."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Finding Similar Sets",
+      "points": [
+        "Jaccard Similarity of Sets Jaccard similarity is defined in the context of sets.",
+        "Consider two sets – set A and set B, then the Jaccard similarity JSA,B is defined as a ratio of the cardinality of the set A∩B and cardinality of the set A∪B.",
+        "It can be used to identify a collection of almost similar documents, news items, web pages or reports.",
+        "This is also referred to as the character- level similarity of documents."
+      ]
+    },
+    {
+      "section_num": "5.3.1",
+      "topic": "Jaccard Similarity of Sets",
+      "points": [
+        "Jaccard similarity is defined in the context of sets.",
+        "Consider two sets – set A and set B, then the Jaccard similarity JSA,B is defined as a ratio of the cardinality of the set A∩B and cardinality of the set A∪B.",
+        "It can be used to identify a collection of almost similar documents, news items, web pages or reports.",
+        "This is also referred to as the character- level similarity of documents."
+      ]
+    },
+    {
+      "section_num": "5.3.2",
+      "topic": "Documents Similarity",
+      "points": [
+        "Finding document similarity is an interesting domain of use of Jaccard similarity.",
+        "It can be used to identify a collection of almost similar documents, news items, web pages or reports.",
+        "This is also referred to as the character- level similarity of documents.",
+        "Another kind of document similarity also looks at documents having similar meanings."
+      ]
+    },
+    {
+      "section_num": "5.3.3",
+      "topic": "Collaborative Filtering and Set Similarity",
+      "points": [
+        "In the past decade, e-commerce has gained acceptance by customers.",
+        "Many of you, who have purchased and have liked various items on these e-commerce websites, get online recommendations for the purchase of certain items.",
+        "You may have observed that many times those recommendations are very close to purchases that you would like to do in the near future.",
+        "Similarity of the sets is used to address this problem."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Finding Similar Documents",
+      "points": [
+        "In the last section, we discussed the Jaccard similarity in the context of sets.",
+        "We also explained the issues of document similarity.",
+        "The document similarity can be checked using the following process: Step 1: Create Sets of items from the document (Shingles are used) Step 2: Perform Minhashing and create documents Signatures that can be tested for similarity checking.",
+        "This reduces the number of shingles to be tested for checking the similarity of two documents."
+      ]
+    },
+    {
+      "section_num": "5.4.1",
+      "topic": "Shingles",
+      "points": [
+        "In order to define the term shingle, let us first try to answer the question: How to represent a document as a set of items so that you can find lexicographically similar documents?",
+        "One way would be to identify words in the document.",
+        "However, the identification of words itself is a time-consuming problem and would be more useful if you are trying to find the semantics of sentences.",
+        "One of the simplest and efficient ways would be to divide the document into smaller substrings of characters, say of size 3 to 7."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle of the Locality-sensitive hashing technique is as follows:",
+    "property using certain values for three sets.",
+    "cardinality of the set A∩B and cardinality of the set A∪B. The",
+    "𝐽𝑆஺,஻= |𝐴∩𝐵|",
+    "For example, consider the sets A={a, b, c, d, e} and set B={c, d, e, f, g}, then"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Mining Big Data\"]\n  M1[\"5.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"5.2 Finding Similar Items\"]\n  Root --> M2\n  M3[\"5.3 Finding Similar Sets\"]\n  Root --> M3\n  M3_1[\"5.3.1 Jaccard Similarity of Sets\"]\n  M3 --> M3_1\n  M3_2[\"5.3.2 Documents Similarity\"]\n  M3 --> M3_2\n  M3_3[\"5.3.3 Collaborative Filtering and Se\"]\n  M3 --> M3_3\n  M4[\"5.4 Finding Similar Documents\"]\n  Root --> M4\n  M4_1[\"5.4.1 Shingles\"]\n  M4 --> M4_1\n  M4_2[\"5.4.2 Minhashing\"]\n  M4 --> M4_2\n  M4_3[\"5.4.3 Locality Sensitive Hashing\"]\n  M4 --> M4_3\n  M5[\"5.5 Distance Measures\"]\n  Root --> M5\n  M5_1[\"5.5.1 Euclidean Distance\"]\n  M5 --> M5_1\n  M5_2[\"5.5.2 Jaccard Distance\"]\n  M5 --> M5_2\n  M5_3[\"5.5.3 Cosine Distance\"]\n  M5 --> M5_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Hamming Distance</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Hamming Distance the difference between the components of two vectors, especially when these vectors are of type Boolean.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Finding Similar Items</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of finding similar items.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Finding Similar Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Jaccard Similarity of Sets Jaccard similarity is defined in the context of sets.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Jaccard Similarity Of Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Jaccard similarity is defined in the context of sets.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in mining big data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Finding Similar Items</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of finding similar items.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in mining big data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Finding Similar Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Jaccard Similarity of Sets Jaccard similarity is defined in the context of sets.</li>\n<li>Consider two sets – set A and set B, then the Jaccard similarity JSA,B is defined as a ratio of the cardinality of the set A∩B and cardinality of the set A∪B.</li>\n<li>It can be used to identify a collection of almost similar documents, news items, web pages or reports.</li>\n<li>This is also referred to as the character- level similarity of documents.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.1 Jaccard Similarity of Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Jaccard similarity is defined in the context of sets.</li>\n<li>Consider two sets – set A and set B, then the Jaccard similarity JSA,B is defined as a ratio of the cardinality of the set A∩B and cardinality of the set A∪B.</li>\n<li>It can be used to identify a collection of almost similar documents, news items, web pages or reports.</li>\n<li>This is also referred to as the character- level similarity of documents.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.2 Documents Similarity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Finding document similarity is an interesting domain of use of Jaccard similarity.</li>\n<li>It can be used to identify a collection of almost similar documents, news items, web pages or reports.</li>\n<li>This is also referred to as the character- level similarity of documents.</li>\n<li>Another kind of document similarity also looks at documents having similar meanings.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3.3 Collaborative Filtering and Set Similarity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the past decade, e-commerce has gained acceptance by customers.</li>\n<li>Many of you, who have purchased and have liked various items on these e-commerce websites, get online recommendations for the purchase of certain items.</li>\n<li>You may have observed that many times those recommendations are very close to purchases that you would like to do in the near future.</li>\n<li>Similarity of the sets is used to address this problem.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Finding Similar Documents</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the last section, we discussed the Jaccard similarity in the context of sets.</li>\n<li>We also explained the issues of document similarity.</li>\n<li>The document similarity can be checked using the following process: Step 1: Create Sets of items from the document (Shingles are used) Step 2: Perform Minhashing and create documents Signatures that can be tested for similarity checking.</li>\n<li>This reduces the number of shingles to be tested for checking the similarity of two documents.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4.1 Shingles</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In order to define the term shingle, let us first try to answer the question: How to represent a document as a set of items so that you can find lexicographically similar documents?</li>\n<li>One way would be to identify words in the document.</li>\n<li>However, the identification of words itself is a time-consuming problem and would be more useful if you are trying to find the semantics of sentences.</li>\n<li>One of the simplest and efficient ways would be to divide the document into smaller substrings of characters, say of size 3 to 7.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle of the Locality-sensitive hashing technique is as follows:</code></div>\n<div class=\"formula-box\"><code>property using certain values for three sets.</code></div>\n<div class=\"formula-box\"><code>cardinality of the set A∩B and cardinality of the set A∪B. The</code></div>\n<div class=\"formula-box\"><code>𝐽𝑆஺,஻= |𝐴∩𝐵|</code></div>\n<div class=\"formula-box\"><code>For example, consider the sets A={a, b, c, d, e} and set B={c, d, e, f, g}, then</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces you to basic techniques for finding similar items. The Unit first explains the methods of finding similarity between two sets. In this context, the concept of Jaccard similarity, document similarity and collaborative similarity are discussed. This is followed by a detailed discussion on one of the important set similarity applications – document similarity. For finding document similarity of a very large number of documents, a document is first converted to a set of shingles,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-5_Mining_Big_Data.pdf')\">\n          📄 Read Original IGNOU PDF (18 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

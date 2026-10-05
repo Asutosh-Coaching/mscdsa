@@ -1,0 +1,173 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_10",
+  "unit_num": "Unit 10",
+  "title": "Hypothesis Testing",
+  "filename": "Unit-10_Hypothesis_Testing.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-10_Hypothesis_Testing.pdf",
+  "total_pages": 36,
+  "word_count": 15832,
+  "est_read_time_minutes": 88,
+  "objectives": [
+    "I and Type",
+    "II Errors",
+    "Tailed and Two",
+    "Tailed Tests"
+  ],
+  "summary": "In this unit, we have covered the following points: 1. Statistical hypothesis, null hypothesis, alternative hypothesis. 2. Critical region and Type-I and Type-II errors. 3. One-tailed and two-tailed tests. 4. General procedure of testing a hypothesis. 5. Level of significance and Concept of p-value.",
+  "flashcards": [
+    {
+      "question": "A company manufactures car tyres. The company claims that the average life of its tyres is",
+      "answer": "= 9 df at 5% level of significance are ± t(9) ,0.025 = ±",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Write the null and alternative hypotheses in cases (iii), (iv) and (v) of example given in Section",
+      "answer": "Here, we want to test that the average weight () of all cadets of the centre is",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "If H0: θ = 60 and H1: θ ≠ 60 then critical region lies in one-tail or two-tails.",
+      "answer": "We define our success and failure as a patient is survived and not survived. Here, we are given that n =",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "If the probability of type-I error is 0.05 then what is the level of significance?",
+      "answer": "Since level of significance is the probability of type-I error so in this case level of significance is",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "If we have null and alternative hypotheses as H",
+      "answer": "Before moving further, first, we have to calculate the value of X and S. Calculation for X and S: Sample value",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "The test whether one-tailed or two-tailed depends on (i) Null hypothesis (H",
+      "answer": "Whether the test of testing a hypothesis is one-tailed or two-tailed depends on the alternative hypothesis. So the correct option is",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is I Error and how is it characterized?",
+      "answer": "I Error level of significance of a test.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Hypothesis Testing\"]\n  M1[\"10.2 Hypothesis\"]\n  Root --> M1\n  M2[\"10.3 Key Concepts for Hypothesis Tes\"]\n  Root --> M2\n  M2_1[\"10.3.1 Critical Region\"]\n  M2 --> M2_1\n  M2_2[\"10.3.2 Type-I and Type-II Errors\"]\n  M2 --> M2_2\n  M2_3[\"10.3.3 Level of Significance\"]\n  M2 --> M2_3\n  M3[\"10.4 General Procedure of Testing a \"]\n  Root --> M3\n  M4[\"10.5 Testing of Hypothesis for Popul\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">I Error</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">I Error level of significance of a test.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hypothesis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In our day-to-day life, we see different commercials and advertisements in television, newspapers, magazines, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Critical Region</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Type-I And Type-Ii Errors</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A test statistic is calculated on the basis of observed sample observations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Level Of Significance</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">So far in this unit, we have discussed the hypothesis, types of hypothesis, critical region and types of errors.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Hypothesis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In our day-to-day life, we see different commercials and advertisements in television, newspapers, magazines, etc.</li>\n<li>and if someone may be interested to test such type of claims or statement then we come across the problem of testing of hypothesis.</li>\n<li>In all the cases discussed above, the decision-maker is interested in making inference about the population parameter(s).</li>\n<li>However, he/she is not interested in estimating the value of the parameter(s) but he/she is interested in testing a claim or statement or assumption about the value of population parameter(s).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Key Concepts for Hypothesis Testing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>After describing the hypothesis, let us discuss some basic concepts needed for hypothesis testing.</li>\n<li>Critical Region In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .</li>\n<li> −=  If calculated value of the test statistic lies in , then we reject the null hypothesis and if it lies in , then we do not reject the null hypothesis.</li>\n<li>The region is called a “rejection region or critical region” and the region is called a “non-rejection region”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.1 Critical Region</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .</li>\n<li> −=  If calculated value of the test statistic lies in , then we reject the null hypothesis and if it lies in , then we do not reject the null hypothesis.</li>\n<li>The region is called a “rejection region or critical region” and the region is called a “non-rejection region”.</li>\n<li>A test statistic is calculated on the basis of observed sample observations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.2 Type-I and Type-II Errors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A test statistic is calculated on the basis of observed sample observations.</li>\n<li>But a sample is a small part of the population about which decision is to be taken.</li>\n<li>A random sample may or may not be a good representative of the population.</li>\n<li>A faulty sample misleads the inference (or conclusion) relating to the null hypothesis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.3 Level of Significance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>So far in this unit, we have discussed the hypothesis, types of hypothesis, critical region and types of errors.</li>\n<li>In this section, we shall discuss a very useful concept “level of significance”, which plays an important role in decision making while testing a hypothesis.</li>\n<li>The probability of type-I error is known as level of significance of a test.</li>\n<li>It is also called the size of the test or size of the critical region, denoted by α.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.4 One-Tailed and Two-Tailed Tests</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We have seen that rejection (critical) region lies at one-tail or two-tails on the probability curve of sampling distribution of the test statistic, depending on the form of alternative hypothesis.</li>\n<li>Similarly, the test of testing the null hypothesis also depends on the alternative hypothesis.</li>\n<li>If the null and alternative hypotheses are 0 0 1 0 H : and H :   then the test for testing the null hypothesis is right-tailed because the alternative hypothesis is right-tailed.</li>\n<li>Similarly, if the null and alternative hypotheses are 0 0 1 0 H : and H :   then the test for testing the null hypothesis is left-tailed because the alternative hypothesis is left-tailed.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.5 Concept of p-Value</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Use of p-value is becoming more and more popular because of the following two reasons: • most of the statistical software provides p-value rather than the critical value.</li>\n<li>• p-value provides more information compared to critical value as far as rejection or does not rejection 0 H .</li>\n<li>The first point listed above needs no explanation.</li>\n<li>But the second point lies in the heart of p-value and needs to explain more clearly.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4 General Procedure of Testing a Hypothesis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Testing of hypothesis is a huge demanded statistical tool by many discipline and professionals.</li>\n<li>It is a step by step procedure as you will see in the next three units through a large number of examples.</li>\n<li>The aim of this section just gives you the flavor of that sequence which involves the following steps: 295 Hypothesis Testing Step I: First of all, we have to set up the null hypothesis H0 and alternative hypothesis H1.</li>\n<li>Suppose, we want to test the hypothetical/ claimed/ assumed value θ0 of parameter θ.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule is that the statement containing equality is the null hypothesis.</code></div>\n<div class=\"formula-box\"><code>rule that if the value of test statistic</code></div>\n<div class=\"formula-box\"><code>theorem the sampling distribution of test statistic approximately follows</code></div>\n<div class=\"formula-box\"><code>theorem that sample mean is</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: 1. Statistical hypothesis, null hypothesis, alternative hypothesis. 2. Critical region and Type-I and Type-II errors. 3. One-tailed and two-tailed tests. 4. General procedure of testing a hypothesis. 5. Level of significance and Concept of p-value.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-10_Hypothesis_Testing.pdf')\">\n          📄 Read Original IGNOU PDF (36 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 10 Hypothesis Testing\"]\n  M1[\"10.2 Hypothesis\"]\n  Root --> M1\n  M2[\"10.3 Key Concepts for Hypothesis Tes\"]\n  Root --> M2\n  M2_1[\"10.3.1 Critical Region\"]\n  M2 --> M2_1\n  M2_2[\"10.3.2 Type-I and Type-II Errors\"]\n  M2 --> M2_2\n  M2_3[\"10.3.3 Level of Significance\"]\n  M2 --> M2_3\n  M3[\"10.4 General Procedure of Testing a \"]\n  Root --> M3\n  M4[\"10.5 Testing of Hypothesis for Popul\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "I Error",
+      "definition": "I Error level of significance of a test.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Hypothesis",
+      "definition": "In our day-to-day life, we see different commercials and advertisements in television, newspapers, magazines, etc.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Critical Region",
+      "definition": "In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Type-I And Type-Ii Errors",
+      "definition": "A test statistic is calculated on the basis of observed sample observations.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Level Of Significance",
+      "definition": "So far in this unit, we have discussed the hypothesis, types of hypothesis, critical region and types of errors.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "10.2",
+      "topic": "Hypothesis",
+      "points": [
+        "In our day-to-day life, we see different commercials and advertisements in television, newspapers, magazines, etc.",
+        "and if someone may be interested to test such type of claims or statement then we come across the problem of testing of hypothesis.",
+        "In all the cases discussed above, the decision-maker is interested in making inference about the population parameter(s).",
+        "However, he/she is not interested in estimating the value of the parameter(s) but he/she is interested in testing a claim or statement or assumption about the value of population parameter(s)."
+      ]
+    },
+    {
+      "section_num": "10.3",
+      "topic": "Key Concepts for Hypothesis Testing",
+      "points": [
+        "After describing the hypothesis, let us discuss some basic concepts needed for hypothesis testing.",
+        "Critical Region In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .",
+        " −=  If calculated value of the test statistic lies in , then we reject the null hypothesis and if it lies in , then we do not reject the null hypothesis.",
+        "The region is called a “rejection region or critical region” and the region is called a “non-rejection region”."
+      ]
+    },
+    {
+      "section_num": "10.3.1",
+      "topic": "Critical Region",
+      "points": [
+        "In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .",
+        " −=  If calculated value of the test statistic lies in , then we reject the null hypothesis and if it lies in , then we do not reject the null hypothesis.",
+        "The region is called a “rejection region or critical region” and the region is called a “non-rejection region”.",
+        "A test statistic is calculated on the basis of observed sample observations."
+      ]
+    },
+    {
+      "section_num": "10.3.2",
+      "topic": "Type-I and Type-II Errors",
+      "points": [
+        "A test statistic is calculated on the basis of observed sample observations.",
+        "But a sample is a small part of the population about which decision is to be taken.",
+        "A random sample may or may not be a good representative of the population.",
+        "A faulty sample misleads the inference (or conclusion) relating to the null hypothesis."
+      ]
+    },
+    {
+      "section_num": "10.3.3",
+      "topic": "Level of Significance",
+      "points": [
+        "So far in this unit, we have discussed the hypothesis, types of hypothesis, critical region and types of errors.",
+        "In this section, we shall discuss a very useful concept “level of significance”, which plays an important role in decision making while testing a hypothesis.",
+        "The probability of type-I error is known as level of significance of a test.",
+        "It is also called the size of the test or size of the critical region, denoted by α."
+      ]
+    },
+    {
+      "section_num": "10.3.4",
+      "topic": "One-Tailed and Two-Tailed Tests",
+      "points": [
+        "We have seen that rejection (critical) region lies at one-tail or two-tails on the probability curve of sampling distribution of the test statistic, depending on the form of alternative hypothesis.",
+        "Similarly, the test of testing the null hypothesis also depends on the alternative hypothesis.",
+        "If the null and alternative hypotheses are 0 0 1 0 H : and H :   then the test for testing the null hypothesis is right-tailed because the alternative hypothesis is right-tailed.",
+        "Similarly, if the null and alternative hypotheses are 0 0 1 0 H : and H :   then the test for testing the null hypothesis is left-tailed because the alternative hypothesis is left-tailed."
+      ]
+    },
+    {
+      "section_num": "10.3.5",
+      "topic": "Concept of p-Value",
+      "points": [
+        "Use of p-value is becoming more and more popular because of the following two reasons: • most of the statistical software provides p-value rather than the critical value.",
+        "• p-value provides more information compared to critical value as far as rejection or does not rejection 0 H .",
+        "The first point listed above needs no explanation.",
+        "But the second point lies in the heart of p-value and needs to explain more clearly."
+      ]
+    },
+    {
+      "section_num": "10.4",
+      "topic": "General Procedure of Testing a Hypothesis",
+      "points": [
+        "Testing of hypothesis is a huge demanded statistical tool by many discipline and professionals.",
+        "It is a step by step procedure as you will see in the next three units through a large number of examples.",
+        "The aim of this section just gives you the flavor of that sequence which involves the following steps: 295 Hypothesis Testing Step I: First of all, we have to set up the null hypothesis H0 and alternative hypothesis H1.",
+        "Suppose, we want to test the hypothetical/ claimed/ assumed value θ0 of parameter θ."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule is that the statement containing equality is the null hypothesis.",
+    "rule that if the value of test statistic",
+    "theorem the sampling distribution of test statistic approximately follows",
+    "theorem that sample mean is"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Hypothesis Testing\"]\n  M1[\"10.2 Hypothesis\"]\n  Root --> M1\n  M2[\"10.3 Key Concepts for Hypothesis Tes\"]\n  Root --> M2\n  M2_1[\"10.3.1 Critical Region\"]\n  M2 --> M2_1\n  M2_2[\"10.3.2 Type-I and Type-II Errors\"]\n  M2 --> M2_2\n  M2_3[\"10.3.3 Level of Significance\"]\n  M2 --> M2_3\n  M3[\"10.4 General Procedure of Testing a \"]\n  Root --> M3\n  M4[\"10.5 Testing of Hypothesis for Popul\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">I Error</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">I Error level of significance of a test.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hypothesis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In our day-to-day life, we see different commercials and advertisements in television, newspapers, magazines, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Critical Region</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Type-I And Type-Ii Errors</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A test statistic is calculated on the basis of observed sample observations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Level Of Significance</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">So far in this unit, we have discussed the hypothesis, types of hypothesis, critical region and types of errors.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Hypothesis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In our day-to-day life, we see different commercials and advertisements in television, newspapers, magazines, etc.</li>\n<li>and if someone may be interested to test such type of claims or statement then we come across the problem of testing of hypothesis.</li>\n<li>In all the cases discussed above, the decision-maker is interested in making inference about the population parameter(s).</li>\n<li>However, he/she is not interested in estimating the value of the parameter(s) but he/she is interested in testing a claim or statement or assumption about the value of population parameter(s).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Key Concepts for Hypothesis Testing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>After describing the hypothesis, let us discuss some basic concepts needed for hypothesis testing.</li>\n<li>Critical Region In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .</li>\n<li> −=  If calculated value of the test statistic lies in , then we reject the null hypothesis and if it lies in , then we do not reject the null hypothesis.</li>\n<li>The region is called a “rejection region or critical region” and the region is called a “non-rejection region”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.1 Critical Region</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In order to test a hypothesis, the entire sample space is partitioned into two disjoint sub-spaces, say and S .</li>\n<li> −=  If calculated value of the test statistic lies in , then we reject the null hypothesis and if it lies in , then we do not reject the null hypothesis.</li>\n<li>The region is called a “rejection region or critical region” and the region is called a “non-rejection region”.</li>\n<li>A test statistic is calculated on the basis of observed sample observations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.2 Type-I and Type-II Errors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A test statistic is calculated on the basis of observed sample observations.</li>\n<li>But a sample is a small part of the population about which decision is to be taken.</li>\n<li>A random sample may or may not be a good representative of the population.</li>\n<li>A faulty sample misleads the inference (or conclusion) relating to the null hypothesis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.3 Level of Significance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>So far in this unit, we have discussed the hypothesis, types of hypothesis, critical region and types of errors.</li>\n<li>In this section, we shall discuss a very useful concept “level of significance”, which plays an important role in decision making while testing a hypothesis.</li>\n<li>The probability of type-I error is known as level of significance of a test.</li>\n<li>It is also called the size of the test or size of the critical region, denoted by α.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.4 One-Tailed and Two-Tailed Tests</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We have seen that rejection (critical) region lies at one-tail or two-tails on the probability curve of sampling distribution of the test statistic, depending on the form of alternative hypothesis.</li>\n<li>Similarly, the test of testing the null hypothesis also depends on the alternative hypothesis.</li>\n<li>If the null and alternative hypotheses are 0 0 1 0 H : and H :   then the test for testing the null hypothesis is right-tailed because the alternative hypothesis is right-tailed.</li>\n<li>Similarly, if the null and alternative hypotheses are 0 0 1 0 H : and H :   then the test for testing the null hypothesis is left-tailed because the alternative hypothesis is left-tailed.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.5 Concept of p-Value</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Use of p-value is becoming more and more popular because of the following two reasons: • most of the statistical software provides p-value rather than the critical value.</li>\n<li>• p-value provides more information compared to critical value as far as rejection or does not rejection 0 H .</li>\n<li>The first point listed above needs no explanation.</li>\n<li>But the second point lies in the heart of p-value and needs to explain more clearly.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4 General Procedure of Testing a Hypothesis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Testing of hypothesis is a huge demanded statistical tool by many discipline and professionals.</li>\n<li>It is a step by step procedure as you will see in the next three units through a large number of examples.</li>\n<li>The aim of this section just gives you the flavor of that sequence which involves the following steps: 295 Hypothesis Testing Step I: First of all, we have to set up the null hypothesis H0 and alternative hypothesis H1.</li>\n<li>Suppose, we want to test the hypothetical/ claimed/ assumed value θ0 of parameter θ.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule is that the statement containing equality is the null hypothesis.</code></div>\n<div class=\"formula-box\"><code>rule that if the value of test statistic</code></div>\n<div class=\"formula-box\"><code>theorem the sampling distribution of test statistic approximately follows</code></div>\n<div class=\"formula-box\"><code>theorem that sample mean is</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: 1. Statistical hypothesis, null hypothesis, alternative hypothesis. 2. Critical region and Type-I and Type-II errors. 3. One-tailed and two-tailed tests. 4. General procedure of testing a hypothesis. 5. Level of significance and Concept of p-value.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-10_Hypothesis_Testing.pdf')\">\n          📄 Read Original IGNOU PDF (36 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

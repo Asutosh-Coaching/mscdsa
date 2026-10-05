@@ -1,0 +1,145 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Sampling Distribution",
+  "filename": "Unit-8_Sampling_Distribution.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-8_Sampling_Distribution.pdf",
+  "total_pages": 26,
+  "word_count": 11009,
+  "est_read_time_minutes": 61,
+  "objectives": [
+    "Basic Terminology"
+  ],
+  "summary": "In this unit, we have covered the following points: 1. The statistical procedure which is used for drawing conclusions about the population parameter on the basis of the sample data is called “statistical The group of units or items under study is known as “Population” whereas a part or a fraction of population is known as “sample”. A “parameter” is a function of population values which is used to represent",
+  "flashcards": [
+    {
+      "question": "If the lives of 3 Televisions of a certain company are 8, 6 and 10 years then construct the sampling distribution of average life of Televisions by taking all samples of size",
+      "answer": "Here, we are given that",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "2) The average weight of a certain type of tyres is",
+      "answer": "Since parent population is normal so sampling distribution of sample means is also normal with mean  and variance ",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "A machine produces a large number of items of which 15% are found to be defective. If a random sample of",
+      "answer": "Here, we are given that  =",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The mean of a population is unknown and having a variance equal to 2. Find out that how large a sample must be taken, so that the probability will be at least",
+      "answer": "Here, we are given that",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "95 that the sample mean will lie within the range of 0.5 of the population mean?",
+      "answer": "Key Principle: One of the most important sample statistics, which is used to draw a conclusion about the population mean, is the sample mean.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "If parent population is normal with mean  and variance 2 then, what is sampling distribution of sample means?",
+      "answer": "Since parent population is normal so sampling distribution of sample means is also normal with mean  and variance ",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Basic Terminology and how is it characterized?",
+      "answer": "Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Sampling Distribution\"]\n  M1[\"8.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"8.4 Standard Error\"]\n  Root --> M2\n  M3[\"8.5 Central Limit Theorem\"]\n  Root --> M3\n  M4[\"8.6 Law of Large Numbers\"]\n  Root --> M4\n  M5[\"8.7 Sampling Distribution of Sample \"]\n  Root --> M5\n  M6[\"8.8 Sampling Distribution of Differe\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Terminology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Standard Error</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Central Limit Theorem</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The central limit theorem is the most important theorem of Statistics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Law Of Large Numbers</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">for all samples and with the help of these values we form sampling distribution of that statistic.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Basic Terminology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.</li>\n<li>Population In Statistics, the term population has a broader meaning.</li>\n<li>A population is the collection or group of individuals /items /units/ observations under study.</li>\n<li>For example, the collection of books in a library, the particles in a salt bag, the rivers in India, the students in a classroom, etc., are considered as populations in Statistics.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Standard Error</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter.</li>\n<li>Now, one can be interested to measure how much the values of sample statistic vary from the population parameter on average.</li>\n<li>You may use the standard deviation as a measure of variation.</li>\n<li>Thus, for measuring the variation in the values of sample statistic around the population parameter we calculate the standard deviation of the sampling distribution.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Central Limit Theorem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The central limit theorem is the most important theorem of Statistics.</li>\n<li>It was first introduced by De Movers in the early eighteenth century.</li>\n<li>Here, we will also try to show how large must the sample size be for which we can assume that the central limit theorem applies?</li>\n<li>8.1, we are trying to understand the sampling distribution of sample mean X for different populations and for varying sample sizes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Law of Large Numbers</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>for all samples and with the help of these values we form sampling distribution of that statistic.</li>\n<li>Then we draw inference about the population parameters.</li>\n<li>But in real-world the sampling distributions are never really observed.</li>\n<li>The process of finding sampling distribution would be very tedious because it would involve a very large number of samples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Sampling Distribution of Sample Mean</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the most important sample statistics, which is used to draw a conclusion about the population mean, is the sample mean.</li>\n<li>In the above cases, an estimate of the population mean is required, and one may estimate this on the basis of a sample taken from that population.</li>\n<li>For this, the sampling distribution of sample mean is required.</li>\n<li>After calculating the value of sample mean for each sample we observed that the values of sample mean vary from sample to sample.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.8 Sampling Distribution of Difference of Two Sample Means</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are so many problems where someone may be interested to draw the inference about the difference of two population means.</li>\n<li>Therefore, in such situations, to draw the inference we require the sampling distribution of difference of two sample means.</li>\n<li>Let the same characteristic measures from two populations be represented by X and Y variables and the variation in the values of these constitute two populations, say, population-I for variation in X and population-II for variation in Y.</li>\n<li>Suppose population-I is having mean 1  and variance 2 1 and population- II is having mean 2 and variance 2 2 .</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem of Statistics, “Central Limit Theorem”;</code></div>\n<div class=\"formula-box\"><code>numbers and adequate sample size;</code></div>\n<div class=\"formula-box\"><code>The central limit theorem is the most important theorem of Statistics. It was first</code></div>\n<div class=\"formula-box\"><code>theorem here, but merely show graphical evidence</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: 1. The statistical procedure which is used for drawing conclusions about the population parameter on the basis of the sample data is called “statistical The group of units or items under study is known as “Population” whereas a part or a fraction of population is known as “sample”. A “parameter” is a function of population values which is used to represent</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-8_Sampling_Distribution.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Sampling Distribution\"]\n  M1[\"8.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"8.4 Standard Error\"]\n  Root --> M2\n  M3[\"8.5 Central Limit Theorem\"]\n  Root --> M3\n  M4[\"8.6 Law of Large Numbers\"]\n  Root --> M4\n  M5[\"8.7 Sampling Distribution of Sample \"]\n  Root --> M5\n  M6[\"8.8 Sampling Distribution of Differe\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Basic Terminology",
+      "definition": "Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Standard Error",
+      "definition": "As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Central Limit Theorem",
+      "definition": "The central limit theorem is the most important theorem of Statistics.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Law Of Large Numbers",
+      "definition": "for all samples and with the help of these values we form sampling distribution of that statistic.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.2",
+      "topic": "Basic Terminology",
+      "points": [
+        "Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.",
+        "Population In Statistics, the term population has a broader meaning.",
+        "A population is the collection or group of individuals /items /units/ observations under study.",
+        "For example, the collection of books in a library, the particles in a salt bag, the rivers in India, the students in a classroom, etc., are considered as populations in Statistics."
+      ]
+    },
+    {
+      "section_num": "8.4",
+      "topic": "Standard Error",
+      "points": [
+        "As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter.",
+        "Now, one can be interested to measure how much the values of sample statistic vary from the population parameter on average.",
+        "You may use the standard deviation as a measure of variation.",
+        "Thus, for measuring the variation in the values of sample statistic around the population parameter we calculate the standard deviation of the sampling distribution."
+      ]
+    },
+    {
+      "section_num": "8.5",
+      "topic": "Central Limit Theorem",
+      "points": [
+        "The central limit theorem is the most important theorem of Statistics.",
+        "It was first introduced by De Movers in the early eighteenth century.",
+        "Here, we will also try to show how large must the sample size be for which we can assume that the central limit theorem applies?",
+        "8.1, we are trying to understand the sampling distribution of sample mean X for different populations and for varying sample sizes."
+      ]
+    },
+    {
+      "section_num": "8.6",
+      "topic": "Law of Large Numbers",
+      "points": [
+        "for all samples and with the help of these values we form sampling distribution of that statistic.",
+        "Then we draw inference about the population parameters.",
+        "But in real-world the sampling distributions are never really observed.",
+        "The process of finding sampling distribution would be very tedious because it would involve a very large number of samples."
+      ]
+    },
+    {
+      "section_num": "8.7",
+      "topic": "Sampling Distribution of Sample Mean",
+      "points": [
+        "One of the most important sample statistics, which is used to draw a conclusion about the population mean, is the sample mean.",
+        "In the above cases, an estimate of the population mean is required, and one may estimate this on the basis of a sample taken from that population.",
+        "For this, the sampling distribution of sample mean is required.",
+        "After calculating the value of sample mean for each sample we observed that the values of sample mean vary from sample to sample."
+      ]
+    },
+    {
+      "section_num": "8.8",
+      "topic": "Sampling Distribution of Difference of Two Sample Means",
+      "points": [
+        "There are so many problems where someone may be interested to draw the inference about the difference of two population means.",
+        "Therefore, in such situations, to draw the inference we require the sampling distribution of difference of two sample means.",
+        "Let the same characteristic measures from two populations be represented by X and Y variables and the variation in the values of these constitute two populations, say, population-I for variation in X and population-II for variation in Y.",
+        "Suppose population-I is having mean 1  and variance 2 1 and population- II is having mean 2 and variance 2 2 ."
+      ]
+    }
+  ],
+  "formulas": [
+    "theorem of Statistics, “Central Limit Theorem”;",
+    "numbers and adequate sample size;",
+    "The central limit theorem is the most important theorem of Statistics. It was first",
+    "theorem here, but merely show graphical evidence"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Sampling Distribution\"]\n  M1[\"8.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"8.4 Standard Error\"]\n  Root --> M2\n  M3[\"8.5 Central Limit Theorem\"]\n  Root --> M3\n  M4[\"8.6 Law of Large Numbers\"]\n  Root --> M4\n  M5[\"8.7 Sampling Distribution of Sample \"]\n  Root --> M5\n  M6[\"8.8 Sampling Distribution of Differe\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Terminology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Standard Error</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Central Limit Theorem</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The central limit theorem is the most important theorem of Statistics.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Law Of Large Numbers</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">for all samples and with the help of these values we form sampling distribution of that statistic.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Basic Terminology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before discussing the sampling distribution of a statistic, we shall be discussing basic definitions of some of the important terms which are very helpful to understand the fundamentals of statistical inference.</li>\n<li>Population In Statistics, the term population has a broader meaning.</li>\n<li>A population is the collection or group of individuals /items /units/ observations under study.</li>\n<li>For example, the collection of books in a library, the particles in a salt bag, the rivers in India, the students in a classroom, etc., are considered as populations in Statistics.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Standard Error</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter.</li>\n<li>Now, one can be interested to measure how much the values of sample statistic vary from the population parameter on average.</li>\n<li>You may use the standard deviation as a measure of variation.</li>\n<li>Thus, for measuring the variation in the values of sample statistic around the population parameter we calculate the standard deviation of the sampling distribution.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Central Limit Theorem</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The central limit theorem is the most important theorem of Statistics.</li>\n<li>It was first introduced by De Movers in the early eighteenth century.</li>\n<li>Here, we will also try to show how large must the sample size be for which we can assume that the central limit theorem applies?</li>\n<li>8.1, we are trying to understand the sampling distribution of sample mean X for different populations and for varying sample sizes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Law of Large Numbers</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>for all samples and with the help of these values we form sampling distribution of that statistic.</li>\n<li>Then we draw inference about the population parameters.</li>\n<li>But in real-world the sampling distributions are never really observed.</li>\n<li>The process of finding sampling distribution would be very tedious because it would involve a very large number of samples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Sampling Distribution of Sample Mean</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One of the most important sample statistics, which is used to draw a conclusion about the population mean, is the sample mean.</li>\n<li>In the above cases, an estimate of the population mean is required, and one may estimate this on the basis of a sample taken from that population.</li>\n<li>For this, the sampling distribution of sample mean is required.</li>\n<li>After calculating the value of sample mean for each sample we observed that the values of sample mean vary from sample to sample.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.8 Sampling Distribution of Difference of Two Sample Means</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are so many problems where someone may be interested to draw the inference about the difference of two population means.</li>\n<li>Therefore, in such situations, to draw the inference we require the sampling distribution of difference of two sample means.</li>\n<li>Let the same characteristic measures from two populations be represented by X and Y variables and the variation in the values of these constitute two populations, say, population-I for variation in X and population-II for variation in Y.</li>\n<li>Suppose population-I is having mean 1  and variance 2 1 and population- II is having mean 2 and variance 2 2 .</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem of Statistics, “Central Limit Theorem”;</code></div>\n<div class=\"formula-box\"><code>numbers and adequate sample size;</code></div>\n<div class=\"formula-box\"><code>The central limit theorem is the most important theorem of Statistics. It was first</code></div>\n<div class=\"formula-box\"><code>theorem here, but merely show graphical evidence</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: 1. The statistical procedure which is used for drawing conclusions about the population parameter on the basis of the sample data is called “statistical The group of units or items under study is known as “Population” whereas a part or a fraction of population is known as “sample”. A “parameter” is a function of population values which is used to represent</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-8_Sampling_Distribution.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

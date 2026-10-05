@@ -1,0 +1,151 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_16",
+  "unit_num": "Unit 16",
+  "title": "Advanced Analysis Using R",
+  "filename": "Unit-16_Advanced_Analysis_Using_R.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-16_Advanced_Analysis_Using_R.pdf",
+  "total_pages": 19,
+  "word_count": 4476,
+  "est_read_time_minutes": 25,
+  "objectives": [
+    "Clustering and its application in R",
+    "Means Clustering. The unit"
+  ],
+  "summary": "This unit explores the concepts of advanced data analysis and their application in R. It explains about the Decision Tree model and its application in R. It represents decisions and their results in a tree format. There are various types of decision trees that may fall under the 2 categories based on the target variables, i.e. categorical and continuous variables. Partitioning, pruning and the tree selection are the steps involved in the working of the decision tree. The",
+  "flashcards": [
+    {
+      "question": "Can Random Forest Algorithm be used both for Continuous and Categorical Target Variables?",
+      "answer": "Key Principle: Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Out-of-Bag Error? ………………………………………………………………………………… …………………………………………………………………………………",
+      "answer": "In Advanced Analysis Using R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What does random refer to in ‘Random Forest’? ………………………………………………………………………………… …………………………………………………………………………………",
+      "answer": "Key Principle: Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is the difference between Classification and Clustering? ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "Key Principle: The idea of a classification algorithm is very simple.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Can decision trees be used for performing clustering? ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "Key Principle: A decision tree is a graph that represents decisions and their results in a tree format.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is the minimum no. of variables/ features required to perform clustering?",
+      "answer": "In Advanced Analysis Using R, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Decision Trees and how is it characterized?",
+      "answer": "A decision tree is a graph that represents decisions and their results in a tree format.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 16 Advanced Analysis Using R\"]\n  M1[\"16.2 Decision Trees\"]\n  Root --> M1\n  M2[\"16.3 Random Forest\"]\n  Root --> M2\n  M3[\"16.4 Classification\"]\n  Root --> M3\n  M4[\"16.5 Clustering\"]\n  Root --> M4\n  M5[\"16.6 Association rules\"]\n  Root --> M5\n  M6[\"16.2 DECISION TREES\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Decision Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A decision tree is a graph that represents decisions and their results in a tree format.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Random Forest</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Classification</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The idea of a classification algorithm is very simple.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Clustering in the R programming language is an unsupervised learning technique that divides a dataset into multiple groups and is called a cluster because of its similarities.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Association Rules</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Association Rule Mining in R Language is an Unsupervised Non-linear algorithm to discover how any item is associated with other.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.2 Decision Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A decision tree is a graph that represents decisions and their results in a tree format.</li>\n<li>Graph nodes represent events or selections, and graph edges represent decision rules or conditions.</li>\n<li>It is primarily used in machine learning and data mining applications that use R.</li>\n<li>Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these factors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.3 Random Forest</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.</li>\n<li>To achieve more accurate predictions and forecasts, Random Forest creates and combines numerous decision trees together.</li>\n<li>However, when utilised alone, each decision tree model is used.</li>\n<li>In the cases where the tree is not built, error estimation is performed.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.4 Classification</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The idea of a classification algorithm is very simple.</li>\n<li>Predict the target class by analysing the training dataset.</li>\n<li>Use the training dataset to get better boundary conditions that you can use to determine each target class.</li>\n<li>Once the constraints are determined, the next task is to predict the target class.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.5 Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Clustering in the R programming language is an unsupervised learning technique that divides a dataset into multiple groups and is called a cluster because of its similarities.</li>\n<li>After segmenting the data, multiple data clusters are generated.</li>\n<li>All objects in the cluster have common properties.</li>\n<li>Clustering is used in data mining and analysis to find similar datasets.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.6 Association rules</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Association Rule Mining in R Language is an Unsupervised Non-linear algorithm to discover how any item is associated with other.</li>\n<li>Frequent Mining shows which items appear together in a transaction.</li>\n<li>Major usage is in Retail, grocery stores, an online platform i.e.</li>\n<li>The same way when any online social media or e-commerce websites know what you buy next using recommendations engines.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.2 DECISION TREES</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A decision tree is a graph that represents decisions and their results in a tree format.</li>\n<li>Graph nodes represent events or selections, and graph edges represent decision rules or conditions.</li>\n<li>It is primarily used in machine learning and data mining applications that use R.</li>\n<li>Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these factors.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules or conditions. It is primarily used in machine learning and data</code></div>\n<div class=\"formula-box\"><code>rule-based model, whose nodes can only predict category targets.</code></div>\n<div class=\"formula-box\"><code>property that measures how well the</code></div>\n<div class=\"formula-box\"><code>Rule Mining in R Language is an Unsupervised Non-linear</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit explores the concepts of advanced data analysis and their application in R. It explains about the Decision Tree model and its application in R. It represents decisions and their results in a tree format. There are various types of decision trees that may fall under the 2 categories based on the target variables, i.e. categorical and continuous variables. Partitioning, pruning and the tree selection are the steps involved in the working of the decision tree. The</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-16_Advanced_Analysis_Using_R.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 16 Advanced Analysis Using R\"]\n  M1[\"16.2 Decision Trees\"]\n  Root --> M1\n  M2[\"16.3 Random Forest\"]\n  Root --> M2\n  M3[\"16.4 Classification\"]\n  Root --> M3\n  M4[\"16.5 Clustering\"]\n  Root --> M4\n  M5[\"16.6 Association rules\"]\n  Root --> M5\n  M6[\"16.2 DECISION TREES\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Decision Trees",
+      "definition": "A decision tree is a graph that represents decisions and their results in a tree format.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Random Forest",
+      "definition": "Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Classification",
+      "definition": "The idea of a classification algorithm is very simple.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Clustering",
+      "definition": "Clustering in the R programming language is an unsupervised learning technique that divides a dataset into multiple groups and is called a cluster because of its similarities.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Association Rules",
+      "definition": "Association Rule Mining in R Language is an Unsupervised Non-linear algorithm to discover how any item is associated with other.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "16.2",
+      "topic": "Decision Trees",
+      "points": [
+        "A decision tree is a graph that represents decisions and their results in a tree format.",
+        "Graph nodes represent events or selections, and graph edges represent decision rules or conditions.",
+        "It is primarily used in machine learning and data mining applications that use R.",
+        "Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these factors."
+      ]
+    },
+    {
+      "section_num": "16.3",
+      "topic": "Random Forest",
+      "points": [
+        "Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.",
+        "To achieve more accurate predictions and forecasts, Random Forest creates and combines numerous decision trees together.",
+        "However, when utilised alone, each decision tree model is used.",
+        "In the cases where the tree is not built, error estimation is performed."
+      ]
+    },
+    {
+      "section_num": "16.4",
+      "topic": "Classification",
+      "points": [
+        "The idea of a classification algorithm is very simple.",
+        "Predict the target class by analysing the training dataset.",
+        "Use the training dataset to get better boundary conditions that you can use to determine each target class.",
+        "Once the constraints are determined, the next task is to predict the target class."
+      ]
+    },
+    {
+      "section_num": "16.5",
+      "topic": "Clustering",
+      "points": [
+        "Clustering in the R programming language is an unsupervised learning technique that divides a dataset into multiple groups and is called a cluster because of its similarities.",
+        "After segmenting the data, multiple data clusters are generated.",
+        "All objects in the cluster have common properties.",
+        "Clustering is used in data mining and analysis to find similar datasets."
+      ]
+    },
+    {
+      "section_num": "16.6",
+      "topic": "Association rules",
+      "points": [
+        "Association Rule Mining in R Language is an Unsupervised Non-linear algorithm to discover how any item is associated with other.",
+        "Frequent Mining shows which items appear together in a transaction.",
+        "Major usage is in Retail, grocery stores, an online platform i.e.",
+        "The same way when any online social media or e-commerce websites know what you buy next using recommendations engines."
+      ]
+    },
+    {
+      "section_num": "16.2",
+      "topic": "DECISION TREES",
+      "points": [
+        "A decision tree is a graph that represents decisions and their results in a tree format.",
+        "Graph nodes represent events or selections, and graph edges represent decision rules or conditions.",
+        "It is primarily used in machine learning and data mining applications that use R.",
+        "Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these factors."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules or conditions. It is primarily used in machine learning and data",
+    "rule-based model, whose nodes can only predict category targets.",
+    "property that measures how well the",
+    "Rule Mining in R Language is an Unsupervised Non-linear"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 16 Advanced Analysis Using R\"]\n  M1[\"16.2 Decision Trees\"]\n  Root --> M1\n  M2[\"16.3 Random Forest\"]\n  Root --> M2\n  M3[\"16.4 Classification\"]\n  Root --> M3\n  M4[\"16.5 Clustering\"]\n  Root --> M4\n  M5[\"16.6 Association rules\"]\n  Root --> M5\n  M6[\"16.2 DECISION TREES\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Decision Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A decision tree is a graph that represents decisions and their results in a tree format.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Random Forest</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Classification</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The idea of a classification algorithm is very simple.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Clustering</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Clustering in the R programming language is an unsupervised learning technique that divides a dataset into multiple groups and is called a cluster because of its similarities.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Association Rules</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Association Rule Mining in R Language is an Unsupervised Non-linear algorithm to discover how any item is associated with other.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.2 Decision Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A decision tree is a graph that represents decisions and their results in a tree format.</li>\n<li>Graph nodes represent events or selections, and graph edges represent decision rules or conditions.</li>\n<li>It is primarily used in machine learning and data mining applications that use R.</li>\n<li>Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these factors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.3 Random Forest</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Random forests are a set of decision trees that are used in supervised learning algorithms for classification and regression analysis, but primarily for classification.</li>\n<li>To achieve more accurate predictions and forecasts, Random Forest creates and combines numerous decision trees together.</li>\n<li>However, when utilised alone, each decision tree model is used.</li>\n<li>In the cases where the tree is not built, error estimation is performed.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.4 Classification</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The idea of a classification algorithm is very simple.</li>\n<li>Predict the target class by analysing the training dataset.</li>\n<li>Use the training dataset to get better boundary conditions that you can use to determine each target class.</li>\n<li>Once the constraints are determined, the next task is to predict the target class.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.5 Clustering</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Clustering in the R programming language is an unsupervised learning technique that divides a dataset into multiple groups and is called a cluster because of its similarities.</li>\n<li>After segmenting the data, multiple data clusters are generated.</li>\n<li>All objects in the cluster have common properties.</li>\n<li>Clustering is used in data mining and analysis to find similar datasets.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.6 Association rules</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Association Rule Mining in R Language is an Unsupervised Non-linear algorithm to discover how any item is associated with other.</li>\n<li>Frequent Mining shows which items appear together in a transaction.</li>\n<li>Major usage is in Retail, grocery stores, an online platform i.e.</li>\n<li>The same way when any online social media or e-commerce websites know what you buy next using recommendations engines.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">16.2 DECISION TREES</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A decision tree is a graph that represents decisions and their results in a tree format.</li>\n<li>Graph nodes represent events or selections, and graph edges represent decision rules or conditions.</li>\n<li>It is primarily used in machine learning and data mining applications that use R.</li>\n<li>Examples of use of decision trees include predicting email as spam or non-spam, predicting cancerous tumours, or predicting credit based on the credit risk of each of these factors.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules or conditions. It is primarily used in machine learning and data</code></div>\n<div class=\"formula-box\"><code>rule-based model, whose nodes can only predict category targets.</code></div>\n<div class=\"formula-box\"><code>property that measures how well the</code></div>\n<div class=\"formula-box\"><code>Rule Mining in R Language is an Unsupervised Non-linear</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit explores the concepts of advanced data analysis and their application in R. It explains about the Decision Tree model and its application in R. It represents decisions and their results in a tree format. There are various types of decision trees that may fall under the 2 categories based on the target variables, i.e. categorical and continuous variables. Partitioning, pruning and the tree selection are the steps involved in the working of the decision tree. The</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-16_Advanced_Analysis_Using_R.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

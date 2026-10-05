@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Database Integrity, Functional Dependency and Normalisation",
+  "filename": "Unit-5_Database_Integrity,_Functional_Dependency_and_Normalisation.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-5_Database_Integrity,_Functional_Dependency_and_Normalisation.pdf",
+  "total_pages": 26,
+  "word_count": 9983,
+  "est_read_time_minutes": 55,
+  "objectives": [
+    "Database Integrity",
+    "5.2.2 Referential Integrity",
+    "5.2.3 Entity Integrity",
+    "Redundancy and Associated Problems",
+    "Functional Dependencies"
+  ],
+  "summary": "This unit discusses some of the most important aspects of a good database design. The unit first defines the concept of referential integrity constraint and entity integrity constraints. It then discusses different forms of normalisation based on the concept of function dependency. A functional dependency highlights the relationships among the attributes of a relation. Different dependency among attributes leads to the problems of update anomalies, insertion anomalies and deletion anomalies. Different forms of",
+  "flashcards": [
+    {
+      "question": "Which of the relations S, P, J, SPJ has referential constraints? List those constraints. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "The steps of Normalisation are:",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Identify the functional dependencies in the relation given in question 1. What are the candidate keys and which of these can be a primary key?",
+      "answer": "A lossless join decomposition is one in which you can reconstruct the original table without loss of information that means exactly the same tuples are obtained on taking join of the relations obtained on decomposition. Lossless join decomposition requires that decomposition shou",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Normalise the relation of problem 1. ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. ………………………………………………………………………….….",
+      "answer": "The steps of Normalisation are:",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Explain the term lossless-join decomposition. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "A lossless join decomposition is one in which you can reconstruct the original table without loss of information that means exactly the same tuples are obtained on taking join of the relations obtained on decomposition. Lossless join decomposition requires that decomposition shou",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "List various steps that may be followed to decompose a relation up to BCNF.",
+      "answer": "The steps of Normalisation are:",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "SNO in S, PNO in P, PROJNO in J and (SNO+PNO+PROjNO) in SPJ should not contain NULL value. Also, no part of the primary key of SPJ, that is SNO or PNO or PROJNO should contain NULL value.",
+      "answer": "A lossless join decomposition is one in which you can reconstruct the original table without loss of information that means exactly the same tuples are obtained on taking join of the relations obtained on decomposition. Lossless join decomposition requires that decomposition shou",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is A Relation (Table)R and how is it characterized?",
+      "answer": "A Relation (Table)R in 1NF if every attribute of R takes atomic values.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Database Integrity, Functiona\"]\n  M1[\"5.2 Database Integrity\"]\n  Root --> M1\n  M1_1[\"5.2.1 The Keys\"]\n  M1 --> M1_1\n  M1_2[\"5.2.2 Referential Integrity\"]\n  M1 --> M1_2\n  M1_3[\"5.2.3 Entity Integrity\"]\n  M1 --> M1_3\n  M2[\"5.3 Redundancy and Associated Proble\"]\n  Root --> M2\n  M3[\"5.4 Functional Dependencies\"]\n  Root --> M3\n  M4[\"5.5 Normalisation Using Functional D\"]\n  Root --> M4\n  M4_1[\"5.5.1 The First Normal Form\"]\n  M4 --> M4_1\n  M4_2[\"5.5.2 The Second Normal Form\"]\n  M4 --> M4_2\n  M4_3[\"5.5.3 The Third Normal Form\"]\n  M4 --> M4_3\n  M5[\"5.6 Desirable Properties of Decompos\"]\n  Root --> M5\n  M6[\"5.7 Rules of Data Normalisation\"]\n  Root --> M6\n  M6_1[\"5.7.1 Eliminate Repeating Groups\"]\n  M6 --> M6_1\n  M6_2[\"5.7.2 Eliminate Redundant Data\"]\n  M6 --> M6_2\n  M6_3[\"5.7.3 Eliminate Columns Not Dependen\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Relation (Table)R</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Relation (Table)R in 1NF if every attribute of R takes atomic values.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Relation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Relation in third normal form if it is in 2NF and every non-key attribute of the relation is non-transitively dependent on the primary key of the relation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Base Integrity Database Integrity</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Base Integrity Database Integrity maintaining the consistency of data in the database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Database Integrity</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Database integrity refers to maintaining the consistency of data in the database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Keys</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Every relation must have at least one candidate key which cannot be reduced further.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Database Integrity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Database integrity refers to maintaining the consistency of data in the database.</li>\n<li>Data integrity relates to the correctness of data and often is implemented using constraints on attributes in one or more relations.</li>\n<li>In this section, we will discuss more about two important integrity constraints of a database: the entity integrity constraint and the referential integrity constraint.</li>\n<li>To define these two, let us once again define the term Key with respect to a Database Management System.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.1 The Keys</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Every relation must have at least one candidate key which cannot be reduced further.</li>\n<li>Duplicate tuples are not allowed in relations.</li>\n<li>Any candidate key can be a composite key also.</li>\n<li>For Example, (student-id + course-id) together can form the candidate key of a relation called Result (student-id, course-id, marks).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.2 Referential Integrity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It can be simply defined as: The database must not contain any unmatched foreign key values.</li>\n<li>For example, any value existing in the EMPID attribute in ASSIGNMENT relation must exist in the EMPLOYEE relation.</li>\n<li>If we want to add a tuple with EMPID value 104 in the ASSIGNMENT relation, it will cause violation of referential integrity constraint.</li>\n<li>Logically it is obvious, after all the employee 104 does not exist, so how can s/he be assigned any work.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.3 Entity Integrity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before describing the second type of integrity constraint, viz., Entity Integrity, you should be familiar with the concept of NULL.</li>\n<li>Basically, NULL is intended as a basis for dealing with the problem of missing information.</li>\n<li>This kind of situation is frequently encountered in the real world.</li>\n<li>For example, historical records sometimes have entries such as “Date of birth unknown”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Redundancy and Associated Problems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us consider the following relation STUDENT.</li>\n<li>Conceptually it is convenient to have all the information in one relation, as a single query to the database may produce complete information about a person.</li>\n<li>For example, the student, whose enrolment number is 050112345 has a name - Rohan and the student stays at an address “D-27, Main Road, Ranchi”.</li>\n<li>You can observe that even this information is repetitive in tuple 3 and tuple 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Functional Dependencies</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The information is either single-valued or multi-valued.</li>\n<li>The enrolment number of a student and his/her date of birth are single-valued information; qualifications of a person or subjects that an instructor teaches are multi-valued facts.</li>\n<li>In this section, we will deal with single-valued facts, which forms the basis of the concept of functional dependency.</li>\n<li>Functional Dependency (FD) Let us consider a single universal relation schema “A”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Normalisation Using Functional Dependencies</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Codd in the year 1972 presented three normal forms (1NF, 2NF, and 3NF).</li>\n<li>These were based on functional dependencies among the attributes of a relation.</li>\n<li>Later Boyce and Codd proposed another normal form called the Boyce-Codd normal form (BCNF).</li>\n<li>The fourth and fifth normal forms are based on multi-valued dependency and join dependencies and were proposed later.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5.1 The First Normal Form</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In other words, the following conditions hold in R: 1.</li>\n<li>There are no duplicate rows or tuples in the relation.</li>\n<li>Each data value stored in the relation is single-valued.</li>\n<li>Entries in a column (attribute) are of the same kind (type).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property or attribute of the</code></div>\n<div class=\"formula-box\"><code>rules. The following example explains this.</code></div>\n<div class=\"formula-box\"><code>rule to do so otherwise):</code></div>\n<div class=\"formula-box\"><code>property of functional dependency explains how the attributes in “A”</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit discusses some of the most important aspects of a good database design. The unit first defines the concept of referential integrity constraint and entity integrity constraints. It then discusses different forms of normalisation based on the concept of function dependency. A functional dependency highlights the relationships among the attributes of a relation. Different dependency among attributes leads to the problems of update anomalies, insertion anomalies and deletion anomalies. Different forms of</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-5_Database_Integrity,_Functional_Dependency_and_Normalisation.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Database Integrity, Functiona\"]\n  M1[\"5.2 Database Integrity\"]\n  Root --> M1\n  M1_1[\"5.2.1 The Keys\"]\n  M1 --> M1_1\n  M1_2[\"5.2.2 Referential Integrity\"]\n  M1 --> M1_2\n  M1_3[\"5.2.3 Entity Integrity\"]\n  M1 --> M1_3\n  M2[\"5.3 Redundancy and Associated Proble\"]\n  Root --> M2\n  M3[\"5.4 Functional Dependencies\"]\n  Root --> M3\n  M4[\"5.5 Normalisation Using Functional D\"]\n  Root --> M4\n  M4_1[\"5.5.1 The First Normal Form\"]\n  M4 --> M4_1\n  M4_2[\"5.5.2 The Second Normal Form\"]\n  M4 --> M4_2\n  M4_3[\"5.5.3 The Third Normal Form\"]\n  M4 --> M4_3\n  M5[\"5.6 Desirable Properties of Decompos\"]\n  Root --> M5\n  M6[\"5.7 Rules of Data Normalisation\"]\n  Root --> M6\n  M6_1[\"5.7.1 Eliminate Repeating Groups\"]\n  M6 --> M6_1\n  M6_2[\"5.7.2 Eliminate Redundant Data\"]\n  M6 --> M6_2\n  M6_3[\"5.7.3 Eliminate Columns Not Dependen\"]\n  M6 --> M6_3",
+  "definitions": [
+    {
+      "term": "A Relation (Table)R",
+      "definition": "A Relation (Table)R in 1NF if every attribute of R takes atomic values.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "A Relation",
+      "definition": "A Relation in third normal form if it is in 2NF and every non-key attribute of the relation is non-transitively dependent on the primary key of the relation.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Base Integrity Database Integrity",
+      "definition": "Base Integrity Database Integrity maintaining the consistency of data in the database.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Database Integrity",
+      "definition": "Database integrity refers to maintaining the consistency of data in the database.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "The Keys",
+      "definition": "Every relation must have at least one candidate key which cannot be reduced further.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.2",
+      "topic": "Database Integrity",
+      "points": [
+        "Database integrity refers to maintaining the consistency of data in the database.",
+        "Data integrity relates to the correctness of data and often is implemented using constraints on attributes in one or more relations.",
+        "In this section, we will discuss more about two important integrity constraints of a database: the entity integrity constraint and the referential integrity constraint.",
+        "To define these two, let us once again define the term Key with respect to a Database Management System."
+      ]
+    },
+    {
+      "section_num": "5.2.1",
+      "topic": "The Keys",
+      "points": [
+        "Every relation must have at least one candidate key which cannot be reduced further.",
+        "Duplicate tuples are not allowed in relations.",
+        "Any candidate key can be a composite key also.",
+        "For Example, (student-id + course-id) together can form the candidate key of a relation called Result (student-id, course-id, marks)."
+      ]
+    },
+    {
+      "section_num": "5.2.2",
+      "topic": "Referential Integrity",
+      "points": [
+        "It can be simply defined as: The database must not contain any unmatched foreign key values.",
+        "For example, any value existing in the EMPID attribute in ASSIGNMENT relation must exist in the EMPLOYEE relation.",
+        "If we want to add a tuple with EMPID value 104 in the ASSIGNMENT relation, it will cause violation of referential integrity constraint.",
+        "Logically it is obvious, after all the employee 104 does not exist, so how can s/he be assigned any work."
+      ]
+    },
+    {
+      "section_num": "5.2.3",
+      "topic": "Entity Integrity",
+      "points": [
+        "Before describing the second type of integrity constraint, viz., Entity Integrity, you should be familiar with the concept of NULL.",
+        "Basically, NULL is intended as a basis for dealing with the problem of missing information.",
+        "This kind of situation is frequently encountered in the real world.",
+        "For example, historical records sometimes have entries such as “Date of birth unknown”."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Redundancy and Associated Problems",
+      "points": [
+        "Let us consider the following relation STUDENT.",
+        "Conceptually it is convenient to have all the information in one relation, as a single query to the database may produce complete information about a person.",
+        "For example, the student, whose enrolment number is 050112345 has a name - Rohan and the student stays at an address “D-27, Main Road, Ranchi”.",
+        "You can observe that even this information is repetitive in tuple 3 and tuple 4."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Functional Dependencies",
+      "points": [
+        "The information is either single-valued or multi-valued.",
+        "The enrolment number of a student and his/her date of birth are single-valued information; qualifications of a person or subjects that an instructor teaches are multi-valued facts.",
+        "In this section, we will deal with single-valued facts, which forms the basis of the concept of functional dependency.",
+        "Functional Dependency (FD) Let us consider a single universal relation schema “A”."
+      ]
+    },
+    {
+      "section_num": "5.5",
+      "topic": "Normalisation Using Functional Dependencies",
+      "points": [
+        "Codd in the year 1972 presented three normal forms (1NF, 2NF, and 3NF).",
+        "These were based on functional dependencies among the attributes of a relation.",
+        "Later Boyce and Codd proposed another normal form called the Boyce-Codd normal form (BCNF).",
+        "The fourth and fifth normal forms are based on multi-valued dependency and join dependencies and were proposed later."
+      ]
+    },
+    {
+      "section_num": "5.5.1",
+      "topic": "The First Normal Form",
+      "points": [
+        "In other words, the following conditions hold in R: 1.",
+        "There are no duplicate rows or tuples in the relation.",
+        "Each data value stored in the relation is single-valued.",
+        "Entries in a column (attribute) are of the same kind (type)."
+      ]
+    }
+  ],
+  "formulas": [
+    "property or attribute of the",
+    "rules. The following example explains this.",
+    "rule to do so otherwise):",
+    "property of functional dependency explains how the attributes in “A”"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Database Integrity, Functiona\"]\n  M1[\"5.2 Database Integrity\"]\n  Root --> M1\n  M1_1[\"5.2.1 The Keys\"]\n  M1 --> M1_1\n  M1_2[\"5.2.2 Referential Integrity\"]\n  M1 --> M1_2\n  M1_3[\"5.2.3 Entity Integrity\"]\n  M1 --> M1_3\n  M2[\"5.3 Redundancy and Associated Proble\"]\n  Root --> M2\n  M3[\"5.4 Functional Dependencies\"]\n  Root --> M3\n  M4[\"5.5 Normalisation Using Functional D\"]\n  Root --> M4\n  M4_1[\"5.5.1 The First Normal Form\"]\n  M4 --> M4_1\n  M4_2[\"5.5.2 The Second Normal Form\"]\n  M4 --> M4_2\n  M4_3[\"5.5.3 The Third Normal Form\"]\n  M4 --> M4_3\n  M5[\"5.6 Desirable Properties of Decompos\"]\n  Root --> M5\n  M6[\"5.7 Rules of Data Normalisation\"]\n  Root --> M6\n  M6_1[\"5.7.1 Eliminate Repeating Groups\"]\n  M6 --> M6_1\n  M6_2[\"5.7.2 Eliminate Redundant Data\"]\n  M6 --> M6_2\n  M6_3[\"5.7.3 Eliminate Columns Not Dependen\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Relation (Table)R</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Relation (Table)R in 1NF if every attribute of R takes atomic values.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Relation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Relation in third normal form if it is in 2NF and every non-key attribute of the relation is non-transitively dependent on the primary key of the relation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Base Integrity Database Integrity</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Base Integrity Database Integrity maintaining the consistency of data in the database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Database Integrity</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Database integrity refers to maintaining the consistency of data in the database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Keys</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Every relation must have at least one candidate key which cannot be reduced further.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Database Integrity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Database integrity refers to maintaining the consistency of data in the database.</li>\n<li>Data integrity relates to the correctness of data and often is implemented using constraints on attributes in one or more relations.</li>\n<li>In this section, we will discuss more about two important integrity constraints of a database: the entity integrity constraint and the referential integrity constraint.</li>\n<li>To define these two, let us once again define the term Key with respect to a Database Management System.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.1 The Keys</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Every relation must have at least one candidate key which cannot be reduced further.</li>\n<li>Duplicate tuples are not allowed in relations.</li>\n<li>Any candidate key can be a composite key also.</li>\n<li>For Example, (student-id + course-id) together can form the candidate key of a relation called Result (student-id, course-id, marks).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.2 Referential Integrity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It can be simply defined as: The database must not contain any unmatched foreign key values.</li>\n<li>For example, any value existing in the EMPID attribute in ASSIGNMENT relation must exist in the EMPLOYEE relation.</li>\n<li>If we want to add a tuple with EMPID value 104 in the ASSIGNMENT relation, it will cause violation of referential integrity constraint.</li>\n<li>Logically it is obvious, after all the employee 104 does not exist, so how can s/he be assigned any work.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2.3 Entity Integrity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before describing the second type of integrity constraint, viz., Entity Integrity, you should be familiar with the concept of NULL.</li>\n<li>Basically, NULL is intended as a basis for dealing with the problem of missing information.</li>\n<li>This kind of situation is frequently encountered in the real world.</li>\n<li>For example, historical records sometimes have entries such as “Date of birth unknown”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Redundancy and Associated Problems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us consider the following relation STUDENT.</li>\n<li>Conceptually it is convenient to have all the information in one relation, as a single query to the database may produce complete information about a person.</li>\n<li>For example, the student, whose enrolment number is 050112345 has a name - Rohan and the student stays at an address “D-27, Main Road, Ranchi”.</li>\n<li>You can observe that even this information is repetitive in tuple 3 and tuple 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Functional Dependencies</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The information is either single-valued or multi-valued.</li>\n<li>The enrolment number of a student and his/her date of birth are single-valued information; qualifications of a person or subjects that an instructor teaches are multi-valued facts.</li>\n<li>In this section, we will deal with single-valued facts, which forms the basis of the concept of functional dependency.</li>\n<li>Functional Dependency (FD) Let us consider a single universal relation schema “A”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Normalisation Using Functional Dependencies</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Codd in the year 1972 presented three normal forms (1NF, 2NF, and 3NF).</li>\n<li>These were based on functional dependencies among the attributes of a relation.</li>\n<li>Later Boyce and Codd proposed another normal form called the Boyce-Codd normal form (BCNF).</li>\n<li>The fourth and fifth normal forms are based on multi-valued dependency and join dependencies and were proposed later.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5.1 The First Normal Form</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In other words, the following conditions hold in R: 1.</li>\n<li>There are no duplicate rows or tuples in the relation.</li>\n<li>Each data value stored in the relation is single-valued.</li>\n<li>Entries in a column (attribute) are of the same kind (type).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property or attribute of the</code></div>\n<div class=\"formula-box\"><code>rules. The following example explains this.</code></div>\n<div class=\"formula-box\"><code>rule to do so otherwise):</code></div>\n<div class=\"formula-box\"><code>property of functional dependency explains how the attributes in “A”</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit discusses some of the most important aspects of a good database design. The unit first defines the concept of referential integrity constraint and entity integrity constraints. It then discusses different forms of normalisation based on the concept of function dependency. A functional dependency highlights the relationships among the attributes of a relation. Different dependency among attributes leads to the problems of update anomalies, insertion anomalies and deletion anomalies. Different forms of</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-5_Database_Integrity,_Functional_Dependency_and_Normalisation.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,153 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_04",
+  "unit_num": "Unit 4",
+  "title": "Recursion",
+  "filename": "Unit-4_Recursion.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-4_Recursion.pdf",
+  "total_pages": 16,
+  "word_count": 4285,
+  "est_read_time_minutes": 24,
+  "objectives": [
+    "Illustrative Examples",
+    "Analyzing Recursive Algorithms",
+    "Recursion Run Amok",
+    "Further Examples of Recursion",
+    "Designing Recursive Algorithms"
+  ],
+  "summary": "Recursion is a fundamental programming technique that provides elegant",
+  "flashcards": [
+    {
+      "question": "Write a recursive function to find the maximum element in an array.",
+      "answer": "Key Principle: This section illustrates the process of analyzing recursive algorithms by example.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Calculate the time complexity of Binary Search Algorithm.",
+      "answer": "In Recursion, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Convert the following recursive function to iterative function: def sum_digits_recursive(n): if n ==",
+      "answer": "Key Principle: This section illustrates the process of analyzing recursive algorithms by example.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "5) Implement recursive Binary Search algorithm.",
+      "answer": "Key Principle: This section illustrates the process of analyzing recursive algorithms by example.",
+      "tag": "Exercise Q10"
+    },
+    {
+      "question": "What is Illustrative Examples and how is it characterized?",
+      "answer": "The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Analyzing Recursive Algorithms and how is it characterized?",
+      "answer": "This section illustrates the process of analyzing recursive algorithms by example.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Recursion Run Amok and how is it characterized?",
+      "answer": "If empty, return an empty list (base case) 3.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 Recursion\"]\n  M1[\"4.2 Illustrative Examples\"]\n  Root --> M1\n  M2[\"4.3 Analyzing Recursive Algorithms\"]\n  Root --> M2\n  M3[\"4.4 Recursion Run Amok\"]\n  Root --> M3\n  M4[\"4.5 Further Examples of Recursion\"]\n  Root --> M4\n  M5[\"4.6 Designing Recursive Algorithms\"]\n  Root --> M5\n  M6[\"4.7 Eliminating Tail Recursion\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Illustrative Examples</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Analyzing Recursive Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This section illustrates the process of analyzing recursive algorithms by example.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Recursion Run Amok</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If empty, return an empty list (base case) 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Further Examples Of Recursion</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If empty, return an empty list (base case) 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Designing Recursive Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, the process of designing recursive algorithms shall be discussed: 4.6.1 The Recursive Design Process Step 1: Identify the Base Case(s) Algorithm for Finding Base Cases: 1.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Illustrative Examples</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.</li>\n<li>The factorial of a non-negative integer n (denoted as n!) is the product of all positive integers less than or equal to n.</li>\n<li>Call Stack Visualization When a recursive function is called, each function call is placed on the call stack.</li>\n<li>Understanding this stack behavior is crucial for analyzing recursive algorithms.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Analyzing Recursive Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This section illustrates the process of analyzing recursive algorithms by example.</li>\n<li>Call Stack Visualization When a recursive function is called, each function call is placed on the call stack.</li>\n<li>Understanding this stack behavior is crucial for analyzing recursive algorithms.</li>\n<li>If f(n) = O(n^(log_b(a)-ε)) for ε > 0, then T(n) = Θ(n^log_b(a)) 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 Recursion Run Amok</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If empty, return an empty list (base case) 3.</li>\n<li>Recursively traverse the left subtree and add its values to result 5.</li>\n<li>Recursively traverse the right subtree and add its values to result 7.</li>\n<li>Otherwise, create a result list starting with the current node's value 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.5 Further Examples of Recursion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If empty, return an empty list (base case) 3.</li>\n<li>Recursively traverse the left subtree and add its values to result 5.</li>\n<li>Recursively traverse the right subtree and add its values to result 7.</li>\n<li>Otherwise, create a result list starting with the current node's value 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.6 Designing Recursive Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, the process of designing recursive algorithms shall be discussed: 4.6.1 The Recursive Design Process Step 1: Identify the Base Case(s) Algorithm for Finding Base Cases: 1.</li>\n<li>Ask the Fundamental Question: \"What is the simplest version of this problem that I can solve directly?\" 2.</li>\n<li>Consider Edge Cases: Think about scenarios where: o Input size is 0 or 1 o Range becomes empty or invalid o Target condition is already met 3.</li>\n<li>Ensure Termination: The base case must guarantee that recursion stops 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.7 Eliminating Tail Recursion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Understanding Tail Recursion Tail recursion occurs when the recursive call is the last operation in the function.</li>\n<li>This is significant because tail-recursive functions can be optimized by compilers to use constant stack space.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Theorem for analyzing divide-and-conquer recurrences: For T(n) =</code></div>\n<div class=\"formula-box\"><code>theorem for divide-and-conquer algorithms</code></div>\n<div class=\"formula-box\"><code>Theorem: a=1, b=2, f(n)=O(1)</code></div>\n<div class=\"formula-box\"><code>T(n) = T(n-1) + O(1)</code></div>\n<div class=\"formula-box\"><code>Solution: T(n) = O(n)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Recursion is a fundamental programming technique that provides elegant</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-4_Recursion.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 4 Recursion\"]\n  M1[\"4.2 Illustrative Examples\"]\n  Root --> M1\n  M2[\"4.3 Analyzing Recursive Algorithms\"]\n  Root --> M2\n  M3[\"4.4 Recursion Run Amok\"]\n  Root --> M3\n  M4[\"4.5 Further Examples of Recursion\"]\n  Root --> M4\n  M5[\"4.6 Designing Recursive Algorithms\"]\n  Root --> M5\n  M6[\"4.7 Eliminating Tail Recursion\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Illustrative Examples",
+      "definition": "The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Analyzing Recursive Algorithms",
+      "definition": "This section illustrates the process of analyzing recursive algorithms by example.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Recursion Run Amok",
+      "definition": "If empty, return an empty list (base case) 3.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Further Examples Of Recursion",
+      "definition": "If empty, return an empty list (base case) 3.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Designing Recursive Algorithms",
+      "definition": "In this section, the process of designing recursive algorithms shall be discussed: 4.6.1 The Recursive Design Process Step 1: Identify the Base Case(s) Algorithm for Finding Base Cases: 1.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "4.2",
+      "topic": "Illustrative Examples",
+      "points": [
+        "The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.",
+        "The factorial of a non-negative integer n (denoted as n!) is the product of all positive integers less than or equal to n.",
+        "Call Stack Visualization When a recursive function is called, each function call is placed on the call stack.",
+        "Understanding this stack behavior is crucial for analyzing recursive algorithms."
+      ]
+    },
+    {
+      "section_num": "4.3",
+      "topic": "Analyzing Recursive Algorithms",
+      "points": [
+        "This section illustrates the process of analyzing recursive algorithms by example.",
+        "Call Stack Visualization When a recursive function is called, each function call is placed on the call stack.",
+        "Understanding this stack behavior is crucial for analyzing recursive algorithms.",
+        "If f(n) = O(n^(log_b(a)-ε)) for ε > 0, then T(n) = Θ(n^log_b(a)) 2."
+      ]
+    },
+    {
+      "section_num": "4.4",
+      "topic": "Recursion Run Amok",
+      "points": [
+        "If empty, return an empty list (base case) 3.",
+        "Recursively traverse the left subtree and add its values to result 5.",
+        "Recursively traverse the right subtree and add its values to result 7.",
+        "Otherwise, create a result list starting with the current node's value 4."
+      ]
+    },
+    {
+      "section_num": "4.5",
+      "topic": "Further Examples of Recursion",
+      "points": [
+        "If empty, return an empty list (base case) 3.",
+        "Recursively traverse the left subtree and add its values to result 5.",
+        "Recursively traverse the right subtree and add its values to result 7.",
+        "Otherwise, create a result list starting with the current node's value 4."
+      ]
+    },
+    {
+      "section_num": "4.6",
+      "topic": "Designing Recursive Algorithms",
+      "points": [
+        "In this section, the process of designing recursive algorithms shall be discussed: 4.6.1 The Recursive Design Process Step 1: Identify the Base Case(s) Algorithm for Finding Base Cases: 1.",
+        "Ask the Fundamental Question: \"What is the simplest version of this problem that I can solve directly?\" 2.",
+        "Consider Edge Cases: Think about scenarios where: o Input size is 0 or 1 o Range becomes empty or invalid o Target condition is already met 3.",
+        "Ensure Termination: The base case must guarantee that recursion stops 4."
+      ]
+    },
+    {
+      "section_num": "4.7",
+      "topic": "Eliminating Tail Recursion",
+      "points": [
+        "Understanding Tail Recursion Tail recursion occurs when the recursive call is the last operation in the function.",
+        "This is significant because tail-recursive functions can be optimized by compilers to use constant stack space."
+      ]
+    }
+  ],
+  "formulas": [
+    "Theorem for analyzing divide-and-conquer recurrences: For T(n) =",
+    "theorem for divide-and-conquer algorithms",
+    "Theorem: a=1, b=2, f(n)=O(1)",
+    "T(n) = T(n-1) + O(1)",
+    "Solution: T(n) = O(n)"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 Recursion\"]\n  M1[\"4.2 Illustrative Examples\"]\n  Root --> M1\n  M2[\"4.3 Analyzing Recursive Algorithms\"]\n  Root --> M2\n  M3[\"4.4 Recursion Run Amok\"]\n  Root --> M3\n  M4[\"4.5 Further Examples of Recursion\"]\n  Root --> M4\n  M5[\"4.6 Designing Recursive Algorithms\"]\n  Root --> M5\n  M6[\"4.7 Eliminating Tail Recursion\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Illustrative Examples</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Analyzing Recursive Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This section illustrates the process of analyzing recursive algorithms by example.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Recursion Run Amok</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If empty, return an empty list (base case) 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Further Examples Of Recursion</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If empty, return an empty list (base case) 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Designing Recursive Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, the process of designing recursive algorithms shall be discussed: 4.6.1 The Recursive Design Process Step 1: Identify the Base Case(s) Algorithm for Finding Base Cases: 1.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Illustrative Examples</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The following are some of the examples of Recursion: 4.2.1 Mathematical Recursion: Factorial The factorial function is the classic introduction to recursion.</li>\n<li>The factorial of a non-negative integer n (denoted as n!) is the product of all positive integers less than or equal to n.</li>\n<li>Call Stack Visualization When a recursive function is called, each function call is placed on the call stack.</li>\n<li>Understanding this stack behavior is crucial for analyzing recursive algorithms.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Analyzing Recursive Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This section illustrates the process of analyzing recursive algorithms by example.</li>\n<li>Call Stack Visualization When a recursive function is called, each function call is placed on the call stack.</li>\n<li>Understanding this stack behavior is crucial for analyzing recursive algorithms.</li>\n<li>If f(n) = O(n^(log_b(a)-ε)) for ε > 0, then T(n) = Θ(n^log_b(a)) 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 Recursion Run Amok</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If empty, return an empty list (base case) 3.</li>\n<li>Recursively traverse the left subtree and add its values to result 5.</li>\n<li>Recursively traverse the right subtree and add its values to result 7.</li>\n<li>Otherwise, create a result list starting with the current node's value 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.5 Further Examples of Recursion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If empty, return an empty list (base case) 3.</li>\n<li>Recursively traverse the left subtree and add its values to result 5.</li>\n<li>Recursively traverse the right subtree and add its values to result 7.</li>\n<li>Otherwise, create a result list starting with the current node's value 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.6 Designing Recursive Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, the process of designing recursive algorithms shall be discussed: 4.6.1 The Recursive Design Process Step 1: Identify the Base Case(s) Algorithm for Finding Base Cases: 1.</li>\n<li>Ask the Fundamental Question: \"What is the simplest version of this problem that I can solve directly?\" 2.</li>\n<li>Consider Edge Cases: Think about scenarios where: o Input size is 0 or 1 o Range becomes empty or invalid o Target condition is already met 3.</li>\n<li>Ensure Termination: The base case must guarantee that recursion stops 4.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.7 Eliminating Tail Recursion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Understanding Tail Recursion Tail recursion occurs when the recursive call is the last operation in the function.</li>\n<li>This is significant because tail-recursive functions can be optimized by compilers to use constant stack space.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Theorem for analyzing divide-and-conquer recurrences: For T(n) =</code></div>\n<div class=\"formula-box\"><code>theorem for divide-and-conquer algorithms</code></div>\n<div class=\"formula-box\"><code>Theorem: a=1, b=2, f(n)=O(1)</code></div>\n<div class=\"formula-box\"><code>T(n) = T(n-1) + O(1)</code></div>\n<div class=\"formula-box\"><code>Solution: T(n) = O(n)</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Recursion is a fundamental programming technique that provides elegant</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-4_Recursion.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

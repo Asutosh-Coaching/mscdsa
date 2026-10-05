@@ -1,0 +1,160 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_10",
+  "unit_num": "Unit 10",
+  "title": "Classification",
+  "filename": "Unit-10_Classification.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-10_Classification.pdf",
+  "total_pages": 44,
+  "word_count": 14195,
+  "est_read_time_minutes": 79,
+  "objectives": [
+    "Nearest Neighbour (K"
+  ],
+  "summary": "of the results of the predictions. It shows how many predictions were right and how many were wrong. The matrix looks like as below table: The letters AUC and ROC stand for \"area under the curve\" and \"receiver operating characteristics curve,\" respectively. This graph shows how well the classification model works at several",
+  "flashcards": [
+    {
+      "question": "Compare between Supervised and Un-Supervised Learning.",
+      "answer": "Key Principle: To use machine learning techniques effectively, you need to know how they work.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "List the Steps Involved in Supervised Learning",
+      "answer": "Key Principle: To use machine learning techniques effectively, you need to know how they work.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are the Common Issues Faced While Using Supervised Learning",
+      "answer": "Key Principle: To use machine learning techniques effectively, you need to know how they work.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Compare between Multi Class and Multi Label Classification",
+      "answer": "Key Principle: Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Compare between structured and unstructured data",
+      "answer": "In Classification, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Compare between Lazy learners and Eager Learners algorithms for machine learning.",
+      "answer": "Key Principle: Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Understanding Of Supervised Learning and how is it characterized?",
+      "answer": "To use machine learning techniques effectively, you need to know how they work.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Classification\"]\n  M1[\"10.3 Understanding of Supervised Lea\"]\n  Root --> M1\n  M2[\"10.5 Classification Algorithms\"]\n  Root --> M2\n  M2_1[\"10.5.1 Naïve Bayes\"]\n  M2 --> M2_1\n  M2_2[\"10.5.2 K-Nearest Neighbour K-NN\"]\n  M2 --> M2_2\n  M2_3[\"10.5.3 Decision Trees\"]\n  M2 --> M2_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Understanding Of Supervised Learning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To use machine learning techniques effectively, you need to know how they work.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Classification Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Naïve Bayes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">K-Nearest Neighbour (K-Nn)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Decision Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Understanding of Supervised Learning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To use machine learning techniques effectively, you need to know how they work.</li>\n<li>You can't just use them without knowing how they work and expect to get good results.</li>\n<li>Different techniques work for different kinds of problems, but it's not always clear which techniques will work in a given situation.</li>\n<li>You need to know something about the different kinds of solutions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5 Classification Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.</li>\n<li>\"Yes\" or \"No,\" \"0\" or \"1,\" \"Spam\" or \"Not Spam,\" \"Cat or Dog,\" and so on are all good examples.</li>\n<li>Classes are the same thing that have different names, like categories, objectives, and labels.</li>\n<li>In classification, the output variable is not a value but a category, such as \"Green or Blue,\" \"Fruit or Animal,\" etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.1 Naïve Bayes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question.</li>\n<li>The Bayes theorem provides the foundation for it.</li>\n<li>When used to big databases, the Bayesian classification demonstrates both improved accuracy and increased speed.</li>\n<li>In this section, we will talk about the most basic kind of Bayesian categorization.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.2 K-Nearest Neighbour (K-NN)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class.</li>\n<li>Classes are represented by centroid (Central value) and the individual points.One of the algorithms that is used is K-Nearest Neighbors.</li>\n<li>We know that The classification task maps data into predefined groups or classes.</li>\n<li>A few very simple examples to elucidate classification could be: • Teachers classify students’ marks data into a set of grades as A, B, C, D, or F.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.3 Decision Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}.</li>\n<li>• Each leaf node is labeled with a class, Cj Basics steps in the Decision Tree are as follows: • Building the tree by using the training set dataset/database.</li>\n<li>• Applying the tree to the new dataset/database.</li>\n<li>Decision Tree Induction is the process of learning about the classification using the inductive approach.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.4 Logistic Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Logistic Regression in Machine Learning • Logistic regression, which is part of the Supervised Learning method, is one of the most popular Machine Learning algorithms.</li>\n<li>It is used to predict the categorical dependent variable based on a set of independent variables.</li>\n<li>• Logistic regression predicts the outcome of a dependent variable that has a \"yes\" or \"no\" answer.</li>\n<li>Because of this, the result must be a discrete or categorical value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.5 Support Vector Machines</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Support Vector Machine, also called Support Vector Classification, is a supervised and linear Machine Learning technique that is most often used to solve classification problems.</li>\n<li>In this section, we will take a look at Support Vector Machines, a new approach for categorising data that has a lot of potential and can be used for both linear and nonlinear datasets.</li>\n<li>A support vector machine, often known as an SVM, is a type of algorithm that transforms the primary training data into a new format that has a higher dimension by making use of a nonlinear mapping.</li>\n<li>It searches for the ideal linear separating hyperplane in this additional dimension.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules' or patterns that</code></div>\n<div class=\"formula-box\"><code>rules or variables to follow in</code></div>\n<div class=\"formula-box\"><code>principles have been established,</code></div>\n<div class=\"formula-box\"><code>rule mining is to find interesting connections between</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the results of the predictions. It shows how many predictions were right and how many were wrong. The matrix looks like as below table: The letters AUC and ROC stand for \"area under the curve\" and \"receiver operating characteristics curve,\" respectively. This graph shows how well the classification model works at several</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-10_Classification.pdf')\">\n          📄 Read Original IGNOU PDF (44 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 10 Classification\"]\n  M1[\"10.3 Understanding of Supervised Lea\"]\n  Root --> M1\n  M2[\"10.5 Classification Algorithms\"]\n  Root --> M2\n  M2_1[\"10.5.1 Naïve Bayes\"]\n  M2 --> M2_1\n  M2_2[\"10.5.2 K-Nearest Neighbour K-NN\"]\n  M2 --> M2_2\n  M2_3[\"10.5.3 Decision Trees\"]\n  M2 --> M2_3",
+  "definitions": [
+    {
+      "term": "Understanding Of Supervised Learning",
+      "definition": "To use machine learning techniques effectively, you need to know how they work.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Classification Algorithms",
+      "definition": "Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Naïve Bayes",
+      "definition": "This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "K-Nearest Neighbour (K-Nn)",
+      "definition": "This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Decision Trees",
+      "definition": "Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "10.3",
+      "topic": "Understanding of Supervised Learning",
+      "points": [
+        "To use machine learning techniques effectively, you need to know how they work.",
+        "You can't just use them without knowing how they work and expect to get good results.",
+        "Different techniques work for different kinds of problems, but it's not always clear which techniques will work in a given situation.",
+        "You need to know something about the different kinds of solutions."
+      ]
+    },
+    {
+      "section_num": "10.5",
+      "topic": "Classification Algorithms",
+      "points": [
+        "Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.",
+        "\"Yes\" or \"No,\" \"0\" or \"1,\" \"Spam\" or \"Not Spam,\" \"Cat or Dog,\" and so on are all good examples.",
+        "Classes are the same thing that have different names, like categories, objectives, and labels.",
+        "In classification, the output variable is not a value but a category, such as \"Green or Blue,\" \"Fruit or Animal,\" etc."
+      ]
+    },
+    {
+      "section_num": "10.5.1",
+      "topic": "Naïve Bayes",
+      "points": [
+        "This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question.",
+        "The Bayes theorem provides the foundation for it.",
+        "When used to big databases, the Bayesian classification demonstrates both improved accuracy and increased speed.",
+        "In this section, we will talk about the most basic kind of Bayesian categorization."
+      ]
+    },
+    {
+      "section_num": "10.5.2",
+      "topic": "K-Nearest Neighbour (K-NN)",
+      "points": [
+        "This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class.",
+        "Classes are represented by centroid (Central value) and the individual points.One of the algorithms that is used is K-Nearest Neighbors.",
+        "We know that The classification task maps data into predefined groups or classes.",
+        "A few very simple examples to elucidate classification could be: • Teachers classify students’ marks data into a set of grades as A, B, C, D, or F."
+      ]
+    },
+    {
+      "section_num": "10.5.3",
+      "topic": "Decision Trees",
+      "points": [
+        "Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}.",
+        "• Each leaf node is labeled with a class, Cj Basics steps in the Decision Tree are as follows: • Building the tree by using the training set dataset/database.",
+        "• Applying the tree to the new dataset/database.",
+        "Decision Tree Induction is the process of learning about the classification using the inductive approach."
+      ]
+    },
+    {
+      "section_num": "10.5.4",
+      "topic": "Logistic Regression",
+      "points": [
+        "Logistic Regression in Machine Learning • Logistic regression, which is part of the Supervised Learning method, is one of the most popular Machine Learning algorithms.",
+        "It is used to predict the categorical dependent variable based on a set of independent variables.",
+        "• Logistic regression predicts the outcome of a dependent variable that has a \"yes\" or \"no\" answer.",
+        "Because of this, the result must be a discrete or categorical value."
+      ]
+    },
+    {
+      "section_num": "10.5.5",
+      "topic": "Support Vector Machines",
+      "points": [
+        "Support Vector Machine, also called Support Vector Classification, is a supervised and linear Machine Learning technique that is most often used to solve classification problems.",
+        "In this section, we will take a look at Support Vector Machines, a new approach for categorising data that has a lot of potential and can be used for both linear and nonlinear datasets.",
+        "A support vector machine, often known as an SVM, is a type of algorithm that transforms the primary training data into a new format that has a higher dimension by making use of a nonlinear mapping.",
+        "It searches for the ideal linear separating hyperplane in this additional dimension."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules' or patterns that",
+    "rules or variables to follow in",
+    "principles have been established,",
+    "rule mining is to find interesting connections between"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Classification\"]\n  M1[\"10.3 Understanding of Supervised Lea\"]\n  Root --> M1\n  M2[\"10.5 Classification Algorithms\"]\n  Root --> M2\n  M2_1[\"10.5.1 Naïve Bayes\"]\n  M2 --> M2_1\n  M2_2[\"10.5.2 K-Nearest Neighbour K-NN\"]\n  M2 --> M2_2\n  M2_3[\"10.5.3 Decision Trees\"]\n  M2 --> M2_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Understanding Of Supervised Learning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To use machine learning techniques effectively, you need to know how they work.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Classification Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Naïve Bayes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">K-Nearest Neighbour (K-Nn)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Decision Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Understanding of Supervised Learning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To use machine learning techniques effectively, you need to know how they work.</li>\n<li>You can't just use them without knowing how they work and expect to get good results.</li>\n<li>Different techniques work for different kinds of problems, but it's not always clear which techniques will work in a given situation.</li>\n<li>You need to know something about the different kinds of solutions.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5 Classification Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.</li>\n<li>\"Yes\" or \"No,\" \"0\" or \"1,\" \"Spam\" or \"Not Spam,\" \"Cat or Dog,\" and so on are all good examples.</li>\n<li>Classes are the same thing that have different names, like categories, objectives, and labels.</li>\n<li>In classification, the output variable is not a value but a category, such as \"Green or Blue,\" \"Fruit or Animal,\" etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.1 Naïve Bayes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question.</li>\n<li>The Bayes theorem provides the foundation for it.</li>\n<li>When used to big databases, the Bayesian classification demonstrates both improved accuracy and increased speed.</li>\n<li>In this section, we will talk about the most basic kind of Bayesian categorization.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.2 K-Nearest Neighbour (K-NN)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class.</li>\n<li>Classes are represented by centroid (Central value) and the individual points.One of the algorithms that is used is K-Nearest Neighbors.</li>\n<li>We know that The classification task maps data into predefined groups or classes.</li>\n<li>A few very simple examples to elucidate classification could be: • Teachers classify students’ marks data into a set of grades as A, B, C, D, or F.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.3 Decision Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}.</li>\n<li>• Each leaf node is labeled with a class, Cj Basics steps in the Decision Tree are as follows: • Building the tree by using the training set dataset/database.</li>\n<li>• Applying the tree to the new dataset/database.</li>\n<li>Decision Tree Induction is the process of learning about the classification using the inductive approach.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.4 Logistic Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Logistic Regression in Machine Learning • Logistic regression, which is part of the Supervised Learning method, is one of the most popular Machine Learning algorithms.</li>\n<li>It is used to predict the categorical dependent variable based on a set of independent variables.</li>\n<li>• Logistic regression predicts the outcome of a dependent variable that has a \"yes\" or \"no\" answer.</li>\n<li>Because of this, the result must be a discrete or categorical value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5.5 Support Vector Machines</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Support Vector Machine, also called Support Vector Classification, is a supervised and linear Machine Learning technique that is most often used to solve classification problems.</li>\n<li>In this section, we will take a look at Support Vector Machines, a new approach for categorising data that has a lot of potential and can be used for both linear and nonlinear datasets.</li>\n<li>A support vector machine, often known as an SVM, is a type of algorithm that transforms the primary training data into a new format that has a higher dimension by making use of a nonlinear mapping.</li>\n<li>It searches for the ideal linear separating hyperplane in this additional dimension.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules' or patterns that</code></div>\n<div class=\"formula-box\"><code>rules or variables to follow in</code></div>\n<div class=\"formula-box\"><code>principles have been established,</code></div>\n<div class=\"formula-box\"><code>rule mining is to find interesting connections between</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the results of the predictions. It shows how many predictions were right and how many were wrong. The matrix looks like as below table: The letters AUC and ROC stand for \"area under the curve\" and \"receiver operating characteristics curve,\" respectively. This graph shows how well the classification model works at several</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-10_Classification.pdf')\">\n          📄 Read Original IGNOU PDF (44 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

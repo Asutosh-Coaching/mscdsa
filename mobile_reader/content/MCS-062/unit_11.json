@@ -1,0 +1,173 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Introduction to NOSQL and Bigdata",
+  "filename": "Unit-11_Introduction_to_NOSQL_and_Bigdata.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-11_Introduction_to_NOSQL_and_Bigdata.pdf",
+  "total_pages": 47,
+  "word_count": 16006,
+  "est_read_time_minutes": 89,
+  "objectives": [
+    "value Pair Based",
+    "structured and Unstructured Data",
+    "11.5 Summary",
+    "style search,",
+    "value stores, document databases, column",
+    "oriented databases, and graph"
+  ],
+  "summary": "This Unit provided a foundational understanding of NoSQL databases, detailing the various types such as column-based, graph-based, key-value, and document-oriented databases. It highlighted NoSQL's growing adoption across industries due to its ability to support mission-critical applications, reduce data dispersion, lower ownership costs, and mitigate risks—though selecting the right database platform remains a complex task.",
+  "flashcards": [
+    {
+      "question": "What is NoSQL? …………………………………………………………………………… …………………………………………………………………………… …………….………………………………………………………………",
+      "answer": "Next Generation Databases: NoSQL and Big Data 1st ed. Edition, G. Harrison, Apress, December",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the features of NoSQL databases? …………………………………………………………………………… …………………………………………………………………………… ………..………………………….…………..……………………………",
+      "answer": "Shashank Tiwari, Professional NoSQL, 1st Edition, Wrox, September",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Differentiate between the NoSQL and SQL. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "https://www.kdnuggets.com/",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "How Does a Column Database Work? Discuss. …………………………………………………………………………… …………………………………………………………………………… …………….……………………………………………………………… …………….………………………………………………………………",
+      "answer": "Next Generation Databases: NoSQL and Big Data 1st ed. Edition, G. Harrison, Apress, December",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the different Graph Database Examples? …………………………………………………………………………… …………………………………………………………………………… ………..………………………….…………..……………………………",
+      "answer": "Shashank Tiwari, Professional NoSQL, 1st Edition, Wrox, September",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Explain document based NoSQL database. …………………………………………………………………………… …………………………………………………………………………… ………..………………………….…………..……………………………",
+      "answer": "https://www.kdnuggets.com/",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is A Setup On Dfs and how is it characterized?",
+      "answer": "A Setup On Dfs a group of workstations and mainframes that are linked together over a Local Area Network (LAN).",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Introduction to NOSQL and Bi\"]\n  M1[\"11.3 Types of NoSQL Databases\"]\n  Root --> M1\n  M1_1[\"11.3.1 Column Based\"]\n  M1 --> M1_1\n  M1_2[\"11.3.2 Graph Based\"]\n  M1 --> M1_2\n  M1_3[\"11.3.3 Key-value Pair Based\"]\n  M1 --> M1_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Setup On Dfs</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Setup On Dfs a group of workstations and mainframes that are linked together over a Local Area Network (LAN).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Big Data</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Big Data a very large amount of data that can be utilised by many technologies.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">What Is Nosql</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">NoSQL is a way to build databases that can accommodate many different kinds of information, such as key-value pairs, multimedia files, documents, columnar data, graphs, external files, and more.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Nosql Database Features</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Every NoSQL database comes with its own set of one-of-a-kind capabilities.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Nosql Databases</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, we will discuss the many classifications of NoSQL databases.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 What is NoSQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>NoSQL is a way to build databases that can accommodate many different kinds of information, such as key-value pairs, multimedia files, documents, columnar data, graphs, external files, and more.</li>\n<li>In order to facilitate the development of cutting-edge applications, NoSQL was designed to work with a variety of different data models and schemas.</li>\n<li>The great functionality, ease of development, and performance at scale offered by NoSQL have helped make it a popular name.</li>\n<li>NoSQL is sometimes referred to as a non-relational database due to the numerous data Data Science – Allied Areas 388 handling features it offers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.2 Brief History of NoSQL Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the late 2000s, as the price of storage began to plummet, No-SQL databases began to gain popularity.</li>\n<li>No longer is it necessary to develop a sophisticated, difficult-to-manage data model to prevent data duplication.</li>\n<li>Because developers' time was quickly surpassing the cost of data storage, NoSQL databases were designed with efficiency in mind.</li>\n<li>This data came in all forms— structured, semi-structured, and unstructured — and sizes making it practically difficult to define the schema in advance.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.3 NoSQL Database Features</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Every NoSQL database comes with its own set of one-of-a-kind capabilities.</li>\n<li>Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.</li>\n<li>Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.</li>\n<li>SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.4 Differentiate between RDBMS and NoSQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.</li>\n<li>Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.</li>\n<li>SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.</li>\n<li>Increasing the computing capability of your hardware is the first step in the Data Science – Allied Areas 390 scaling process for SQL databases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Types of NoSQL Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we will discuss the many classifications of NoSQL databases.</li>\n<li>There are typically four types of NoSQL databases: 1) Column-based: Instead of accumulating data in rows, this method organizes it all together into columns, which makes it easier to query large datasets.</li>\n<li>2) Graph-based: These are systems that are utilized for the storage of information regarding networks, such as social relationships.</li>\n<li>3) Key-value pair based: This is the simplest sort of database, in which each item of your database is saved in the form of an attribute name (also known as a \"key\") coupled with the value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.1 Column Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A column store, in contrast to a relational database, is arranged as a set of columns, rather than rows.</li>\n<li>This allows you to read only the columns you need for analysis, saving memory space that would otherwise be taken up by irrelevant information.</li>\n<li>Because columns are frequently of the same kind, they are able to take advantage of more efficient compression, which makes data reading even quicker.</li>\n<li>The value of a specific column can be quickly aggregated using columnar databases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.2 Graph Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The initial hardware hurdles that made it feasible for SQL to handle vast quantities of data are no longer there, despite the fact that SQL is an excellent superb RDBMS and has been used for many years to manage massive amounts of data.</li>\n<li>As a result, NoSQL has rapidly emerged as the dominant form of contemporary database management and many of the largest websites we rely on today are powered by NoSQL, like Twitter's use of FlockDB and Amazon's DynamoDB.</li>\n<li>A database that stores data using graph structures is known as a graph database.</li>\n<li>Relationships between the nodes are represented by the edges.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.3 Key-value Pair Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Key-value stores are perhaps the most widely used of the four major NoSQL database formats because of their simplicity and quick performance.</li>\n<li>Let us examine key-value stores' operation and application in more detail.</li>\n<li>With some of the most well-known platforms and services depending on them to deliver material to users with lightning speed, NoSQL has grown in significance in our daily lives.</li>\n<li>Of course, NoSQL includes a range of database types, but key-value store is unquestionably the most used.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws. Another option is to use</code></div>\n<div class=\"formula-box\"><code>rules for privacy and security that work</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This Unit provided a foundational understanding of NoSQL databases, detailing the various types such as column-based, graph-based, key-value, and document-oriented databases. It highlighted NoSQL's growing adoption across industries due to its ability to support mission-critical applications, reduce data dispersion, lower ownership costs, and mitigate risks—though selecting the right database platform remains a complex task.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-11_Introduction_to_NOSQL_and_Bigdata.pdf')\">\n          📄 Read Original IGNOU PDF (47 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Introduction to NOSQL and Bi\"]\n  M1[\"11.3 Types of NoSQL Databases\"]\n  Root --> M1\n  M1_1[\"11.3.1 Column Based\"]\n  M1 --> M1_1\n  M1_2[\"11.3.2 Graph Based\"]\n  M1 --> M1_2\n  M1_3[\"11.3.3 Key-value Pair Based\"]\n  M1 --> M1_3",
+  "definitions": [
+    {
+      "term": "A Setup On Dfs",
+      "definition": "A Setup On Dfs a group of workstations and mainframes that are linked together over a Local Area Network (LAN).",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Big Data",
+      "definition": "Big Data a very large amount of data that can be utilised by many technologies.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "What Is Nosql",
+      "definition": "NoSQL is a way to build databases that can accommodate many different kinds of information, such as key-value pairs, multimedia files, documents, columnar data, graphs, external files, and more.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Nosql Database Features",
+      "definition": "Every NoSQL database comes with its own set of one-of-a-kind capabilities.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Types Of Nosql Databases",
+      "definition": "In this section, we will discuss the many classifications of NoSQL databases.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "11.2.1",
+      "topic": "What is NoSQL",
+      "points": [
+        "NoSQL is a way to build databases that can accommodate many different kinds of information, such as key-value pairs, multimedia files, documents, columnar data, graphs, external files, and more.",
+        "In order to facilitate the development of cutting-edge applications, NoSQL was designed to work with a variety of different data models and schemas.",
+        "The great functionality, ease of development, and performance at scale offered by NoSQL have helped make it a popular name.",
+        "NoSQL is sometimes referred to as a non-relational database due to the numerous data Data Science – Allied Areas 388 handling features it offers."
+      ]
+    },
+    {
+      "section_num": "11.2.2",
+      "topic": "Brief History of NoSQL Databases",
+      "points": [
+        "In the late 2000s, as the price of storage began to plummet, No-SQL databases began to gain popularity.",
+        "No longer is it necessary to develop a sophisticated, difficult-to-manage data model to prevent data duplication.",
+        "Because developers' time was quickly surpassing the cost of data storage, NoSQL databases were designed with efficiency in mind.",
+        "This data came in all forms— structured, semi-structured, and unstructured — and sizes making it practically difficult to define the schema in advance."
+      ]
+    },
+    {
+      "section_num": "11.2.3",
+      "topic": "NoSQL Database Features",
+      "points": [
+        "Every NoSQL database comes with its own set of one-of-a-kind capabilities.",
+        "Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.",
+        "Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.",
+        "SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction."
+      ]
+    },
+    {
+      "section_num": "11.2.4",
+      "topic": "Differentiate between RDBMS and NoSQL",
+      "points": [
+        "Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.",
+        "Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.",
+        "SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.",
+        "Increasing the computing capability of your hardware is the first step in the Data Science – Allied Areas 390 scaling process for SQL databases."
+      ]
+    },
+    {
+      "section_num": "11.3",
+      "topic": "Types of NoSQL Databases",
+      "points": [
+        "In this section, we will discuss the many classifications of NoSQL databases.",
+        "There are typically four types of NoSQL databases: 1) Column-based: Instead of accumulating data in rows, this method organizes it all together into columns, which makes it easier to query large datasets.",
+        "2) Graph-based: These are systems that are utilized for the storage of information regarding networks, such as social relationships.",
+        "3) Key-value pair based: This is the simplest sort of database, in which each item of your database is saved in the form of an attribute name (also known as a \"key\") coupled with the value."
+      ]
+    },
+    {
+      "section_num": "11.3.1",
+      "topic": "Column Based",
+      "points": [
+        "A column store, in contrast to a relational database, is arranged as a set of columns, rather than rows.",
+        "This allows you to read only the columns you need for analysis, saving memory space that would otherwise be taken up by irrelevant information.",
+        "Because columns are frequently of the same kind, they are able to take advantage of more efficient compression, which makes data reading even quicker.",
+        "The value of a specific column can be quickly aggregated using columnar databases."
+      ]
+    },
+    {
+      "section_num": "11.3.2",
+      "topic": "Graph Based",
+      "points": [
+        "The initial hardware hurdles that made it feasible for SQL to handle vast quantities of data are no longer there, despite the fact that SQL is an excellent superb RDBMS and has been used for many years to manage massive amounts of data.",
+        "As a result, NoSQL has rapidly emerged as the dominant form of contemporary database management and many of the largest websites we rely on today are powered by NoSQL, like Twitter's use of FlockDB and Amazon's DynamoDB.",
+        "A database that stores data using graph structures is known as a graph database.",
+        "Relationships between the nodes are represented by the edges."
+      ]
+    },
+    {
+      "section_num": "11.3.3",
+      "topic": "Key-value Pair Based",
+      "points": [
+        "Key-value stores are perhaps the most widely used of the four major NoSQL database formats because of their simplicity and quick performance.",
+        "Let us examine key-value stores' operation and application in more detail.",
+        "With some of the most well-known platforms and services depending on them to deliver material to users with lightning speed, NoSQL has grown in significance in our daily lives.",
+        "Of course, NoSQL includes a range of database types, but key-value store is unquestionably the most used."
+      ]
+    }
+  ],
+  "formulas": [
+    "laws. Another option is to use",
+    "rules for privacy and security that work"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Introduction to NOSQL and Bi\"]\n  M1[\"11.3 Types of NoSQL Databases\"]\n  Root --> M1\n  M1_1[\"11.3.1 Column Based\"]\n  M1 --> M1_1\n  M1_2[\"11.3.2 Graph Based\"]\n  M1 --> M1_2\n  M1_3[\"11.3.3 Key-value Pair Based\"]\n  M1 --> M1_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Setup On Dfs</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Setup On Dfs a group of workstations and mainframes that are linked together over a Local Area Network (LAN).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Big Data</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Big Data a very large amount of data that can be utilised by many technologies.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">What Is Nosql</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">NoSQL is a way to build databases that can accommodate many different kinds of information, such as key-value pairs, multimedia files, documents, columnar data, graphs, external files, and more.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Nosql Database Features</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Every NoSQL database comes with its own set of one-of-a-kind capabilities.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Nosql Databases</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this section, we will discuss the many classifications of NoSQL databases.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 What is NoSQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>NoSQL is a way to build databases that can accommodate many different kinds of information, such as key-value pairs, multimedia files, documents, columnar data, graphs, external files, and more.</li>\n<li>In order to facilitate the development of cutting-edge applications, NoSQL was designed to work with a variety of different data models and schemas.</li>\n<li>The great functionality, ease of development, and performance at scale offered by NoSQL have helped make it a popular name.</li>\n<li>NoSQL is sometimes referred to as a non-relational database due to the numerous data Data Science – Allied Areas 388 handling features it offers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.2 Brief History of NoSQL Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the late 2000s, as the price of storage began to plummet, No-SQL databases began to gain popularity.</li>\n<li>No longer is it necessary to develop a sophisticated, difficult-to-manage data model to prevent data duplication.</li>\n<li>Because developers' time was quickly surpassing the cost of data storage, NoSQL databases were designed with efficiency in mind.</li>\n<li>This data came in all forms— structured, semi-structured, and unstructured — and sizes making it practically difficult to define the schema in advance.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.3 NoSQL Database Features</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Every NoSQL database comes with its own set of one-of-a-kind capabilities.</li>\n<li>Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.</li>\n<li>Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.</li>\n<li>SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.4 Differentiate between RDBMS and NoSQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Unlike NoSQL databases, which have dynamic or flexible schema to manage unstructured data, SQL databases have a strict or static schema.</li>\n<li>Structured data is stored using SQL, whereas both structured and unstructured data can be stored using NoSQL.</li>\n<li>SQL databases are thought to be scalable in a vertical direction, whereas NoSQL databases are thought to be scalable in a horizontal direction.</li>\n<li>Increasing the computing capability of your hardware is the first step in the Data Science – Allied Areas 390 scaling process for SQL databases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Types of NoSQL Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we will discuss the many classifications of NoSQL databases.</li>\n<li>There are typically four types of NoSQL databases: 1) Column-based: Instead of accumulating data in rows, this method organizes it all together into columns, which makes it easier to query large datasets.</li>\n<li>2) Graph-based: These are systems that are utilized for the storage of information regarding networks, such as social relationships.</li>\n<li>3) Key-value pair based: This is the simplest sort of database, in which each item of your database is saved in the form of an attribute name (also known as a \"key\") coupled with the value.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.1 Column Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A column store, in contrast to a relational database, is arranged as a set of columns, rather than rows.</li>\n<li>This allows you to read only the columns you need for analysis, saving memory space that would otherwise be taken up by irrelevant information.</li>\n<li>Because columns are frequently of the same kind, they are able to take advantage of more efficient compression, which makes data reading even quicker.</li>\n<li>The value of a specific column can be quickly aggregated using columnar databases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.2 Graph Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The initial hardware hurdles that made it feasible for SQL to handle vast quantities of data are no longer there, despite the fact that SQL is an excellent superb RDBMS and has been used for many years to manage massive amounts of data.</li>\n<li>As a result, NoSQL has rapidly emerged as the dominant form of contemporary database management and many of the largest websites we rely on today are powered by NoSQL, like Twitter's use of FlockDB and Amazon's DynamoDB.</li>\n<li>A database that stores data using graph structures is known as a graph database.</li>\n<li>Relationships between the nodes are represented by the edges.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.3 Key-value Pair Based</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Key-value stores are perhaps the most widely used of the four major NoSQL database formats because of their simplicity and quick performance.</li>\n<li>Let us examine key-value stores' operation and application in more detail.</li>\n<li>With some of the most well-known platforms and services depending on them to deliver material to users with lightning speed, NoSQL has grown in significance in our daily lives.</li>\n<li>Of course, NoSQL includes a range of database types, but key-value store is unquestionably the most used.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>laws. Another option is to use</code></div>\n<div class=\"formula-box\"><code>rules for privacy and security that work</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This Unit provided a foundational understanding of NoSQL databases, detailing the various types such as column-based, graph-based, key-value, and document-oriented databases. It highlighted NoSQL's growing adoption across industries due to its ability to support mission-critical applications, reduce data dispersion, lower ownership costs, and mitigate risks—though selecting the right database platform remains a complex task.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-11_Introduction_to_NOSQL_and_Bigdata.pdf')\">\n          📄 Read Original IGNOU PDF (47 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

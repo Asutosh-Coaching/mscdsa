@@ -1,0 +1,253 @@
+=== PAGE 1 ===
+1  
+ 
+MASTER OF SCIENCE 
+DATA SCIENCE AND ANALYTICS 
+ 
+(MSCDSA) 
+ 
+ 
+ 
+ 
+ 
+ 
+ASSIGNMENTS 
+ 
+(July – 2026 & January – 2027) 
+ 
+ 
+ 
+ 
+ 
+MCS-066, MCS-067, MCS-224, MCS-068, MCSL-069,  
+MCSL-070 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SCHOOL OF COMPUTER AND INFORMATION SCIENCES 
+INDIRA GANDHI NATIONAL OPEN UNIVERSITY 
+MAIDAN GARHI, NEW DELHI – 110 068 
+ 
+MSCDSA/ASSIGN/SEMESTER-II 
+
+=== PAGE 2 ===
+2  
+CONTENTS 
+ 
+ 
+ 
+Course 
+Code 
+Assignment No. Submission-Schedule Page 
+No. 
+For July- 
+December 
+Session 
+For January- 
+June Session 
+MCS-066 MSCDSA(II)/066/Assign/26-27 31st October, 2026 30th April, 2027 3 
+MCS-067 MSCDSA(II)/067/Assign/26-27 31st October, 2026 30th April, 2027 7 
+MCS-224 MSCDSA(II)/224/Assign/26-27 31st October, 2026 30th April, 2027 10 
+MCS-068 MSCDSA(II)/068/Assign/26-27 31st October, 2026 30th April, 2027 13 
+MCSL-069 MSCDSA(II)/L-069/Assign/26-27 31st October, 2026 30th April, 2027 16 
+MCSL-070 MSCDSA(II)/L-070/Assign/26-27 31st October, 2026 30th April, 2027 17 
+ 
+ 
+ 
+ 
+ 
+Important Notes 
+ 
+ 
+1. Submit your assignments to the Coordinator of your Study Centre on or before the 
+due date. 
+2. Assignment submission before due dates is compulsory to become eligible for  
+appearing in corresponding Term End Examinations. For further details, please 
+refer to MSCDSA Programme Guide. 
+3. To become eligible for appearing the Term End Practical Examination for the lab 
+courses, it is essential to fulfill the minimum attendance requirements as well as  
+submission of assignments (on or before the due date). For further details, please  
+refer to the MSCDSA Programme Guide. 
+4. The viva voce is compulsory for the assignments. For any course, if a student  
+submitted the assignment and not attended the viva -voce, then the assignment is  
+treated as not successfully completed and would be marked as ZERO. 
+
+=== PAGE 3 ===
+10  
+Course Code : MCS-224 
+Course Title : Artificial Intelligence & Machine Learning   
+ Assignment Number : MSCDSA (II)/224/Assign/2026-27  
+Maximum Marks : 100 
+Weightage : 30% 
+Last Date of Submission : 31st October, 2026 (for July session) 
+  30th April, 2027 (for January session) 
+ 
+ 
+This assignment has sixteen questions with a total  marks 80, answer all questions. The 
+remaining 20 marks are for viva voce. You may use illustrations and diagrams to enhance the 
+explanations. Please go through the guidelines regarding assignments given in the Programme 
+Guide for the format of presentation. 
+ 
+ 
+Q1: What is learning? Define the following ways of learning:                            (5 Marks) 
+(I) Rote Learning  (II) Learning by Instruction  (III) Learning by analogy  (IV) Learning by 
+Induction (V) Learning by deduction 
+ 
+Q2: Define is Artificial Intelligence? What are the applications of AI in the healthcare and agricultural 
+domains?                                                     (4 Marks) 
+ 
+Q3: Find the minimum cost path for the 8-puzzle problem, where the start and goal state are given as 
+follows:                                (4 Marks) 
+  
+ 
+ 
+ 
+ 
+        Start State                         Goal State 
+ 
+Q4: Apply BFS algorithm on the following graph.              (5 Marks) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Q5: Draw a semantic network for the following English statement:            (4 Marks) 
+"Shyam owns a dog named Sheru, and Sheru likes to chase cats". 
+ 
+ Q6: In a class, three students tossed one coin (one each) 3 times. Answer the following.             (4 Marks) 
+ 
+1 2 3 
+4 8 - 
+7 6 5 
+1 2 3 
+4 5 6 
+- 7 8 
+
+
+=== PAGE 4 ===
+11  
+(a) Write down all the possible outcomes which can be obtained in this experiment.  
+(b) What is the probability of getting 2 or more than 2 heads at a time? Also, write the probability of 
+getting three tails at a time. 
+(c) Calculate the Relative frequency of tail rn(T). 
+Q7: Explain Dempster-Shafer theory with a suitable example.             (4 Marks) 
+ 
+Q8: For the following fuzzy sets:                (5 Marks) 
+ A = { a/0.6, b/0.4, c/0.5, d/0.0, e/0.8};  B =  {a/0.2, b/0.8, c/0.7, d/0.3, e/0.5} 
+C = {a/0.1, b/0.2, c/0.8, d/0.6, e/0.2} 
+ 
+Find the fuzzy sets:  (i) AυBυC    (ii) A∩B∩C    (iii) A’υB’υC’    (iv) A’∩B’∩C’   (v)  (A∩BυC)’ 
+ 
+Q9: What is ensemble learning? Explain three primary classes of ensemble learning methods.  
+         (4 Marks) 
+ 
+Q10: Use Naive Bayes classification method for the following dataset and classify the class (Species) of  X 
+= {Color=Green, Legs=2, Height=Tall, Smelly=No}                           (7 Marks)
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Q11: What is a Decision Tree? Use ID3 algorithm to create the decision tree for the following dataset and 
+use it to find the class of unknown sample X = {Peter, red, short, average}                         (7 Marks) 
+ 
+Independent Attributes / Condition Attributes Dependent Attributes / 
+Decision Attributes 
+Name Hair Height Weight Lotion Result 
+Sarah blonde average light no sunburned (positive) 
+Dana blonde tall average yes none (negative) 
+Alex brown short average yes none 
+Sl. No. Color Legs Height Smelly Species 
+1 White 3 Short Yes M 
+2 Green 2 Tall No M 
+3 Green 3 Short Yes M 
+4 White 3 Short Yes M 
+5 Green 2 Short No H 
+6 White 2 Tall No H 
+7 White 2 Tall No H 
+8 White 2 Short Yes H 
+
+=== PAGE 5 ===
+12  
+Annie blonde short average no sunburned 
+Emily red average heavy no sunburned 
+Pete brown tall heavy no none 
+John brown average heavy no none 
+Katie blonde short light yes none 
+ 
+Q12: Find a quadratic regression model for the following data. Use the regression model and calculate the 
+value of Y at X = 9.                          (5 Marks) 
+  
+ 
+ 
+ 
+Q13: For the given points of two classes Blue and Yellow:              (6 Marks) 
+ Blue: { (1,2), (2,3), (-1,2), (-1,4), (-1,-1)} 
+ Yello: { (4,2), (5,-1), (5,1), (6,1), (5,3)} 
+Plot a graph for the Blue and Yello categories. Find the support vectors and optimal separating line.   
+ 
+Q14: The following diagram represents a feed-forward neural network with one hidden layer:      (6 Marks) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+For the following input patterns, calculate the output of the network (y1 and y2) if weights are 
+initialized as: W 11 = -1, W 12 = 2, W 21 = 1, W 22 = -2, V 11 = 2, V 12 = -1, V 21 = -2, V 22 = 2  . Use 
+activation function F(Y) =1 for Y>=0 and F(Y) = 0 otherwise. 
+ 
+Pattern P1 P2 P3 P4 
+X1 0 1 0 1 
+X2 0 0 1 1 
+ 
+Q15: Consider the following two -dimensional pattern. Using PCA algorithm, calculate the principal 
+component.                   (5 Marks) 
+ 
+ 
+ 
+ 
+Q16: Explain Apriori algorithm with the help of a suitable example.            (5 Marks)  
+X 3 4 5 6 7 
+Y 2.5 3.2 3.8 6.5 11.5 
+Xi 2 4 5 6 6 7 9 8 
+Yi 1 6 4 5 7 7 10 9 
+
+

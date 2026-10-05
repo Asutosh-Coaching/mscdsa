@@ -1,0 +1,159 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Linear Spaces-I",
+  "filename": "Unit-8_Linear_Spaces-I.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-8_Linear_Spaces-I.pdf",
+  "total_pages": 11,
+  "word_count": 3234,
+  "est_read_time_minutes": 18,
+  "objectives": [],
+  "summary": "This unit provides an in-depth study of Linear Spaces-I. Regarding Vector Addition and Scalar Multiplication, MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐. Regarding Geometrical and Physical Interpretations, Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →). Regarding Norm and Inner Product, Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector. Regarding Vector Spaces and Subspaces, u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.",
+  "flashcards": [
+    {
+      "question": "If a1 = (2,3,4,7), a2 = (0,0,0,1) and a3 = (1,0,1,0), find a1+2a2+3a3.",
+      "answer": "In Linear Spaces-I, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "If x1 = (2,9,8) , x2= (0,1,0) and x3 = (1,0,1), find 2x2+5x3-x1.",
+      "answer": "In Linear Spaces-I, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Find the norm of the following vectors: (i) (2,5); (ii) (-2,2).",
+      "answer": "In Linear Spaces-I, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Find a basis for the subspace W = {(x, y, z) :",
+      "answer": "Key Principle: u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Find the inner product of the following pairs of vectors: i) (",
+      "answer": "Key Principle: Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Find a basis for the subspace W= {(x, y, z): x = 2y = 3z}",
+      "answer": "Key Principle: u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is Geometrical And Physical Interpretations and how is it characterized?",
+      "answer": "Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Linear Spaces-I\"]\n  M1[\"8.2 Vector Addition and Scalar Multi\"]\n  Root --> M1\n  M2[\"8.3 Geometrical and Physical Interpr\"]\n  Root --> M2\n  M3[\"8.4 Norm and Inner Product\"]\n  Root --> M3\n  M4[\"8.5 Vector Spaces and Subspaces\"]\n  Root --> M4\n  M5[\"8.6 Linear Dependence of Vectors\"]\n  Root --> M5\n  M6[\"8.7 Generators and Basis\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Geometrical And Physical Interpretations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Norm And Inner Product</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Vector Spaces And Subspaces</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Dependence Of Vectors</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Generators And Basis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Consider the case of two-dimensional Euclidian space (E2).</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Vector Addition and Scalar Multiplication</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐.</li>\n<li>These are referred to as row and column vectors respectively.</li>\n<li>Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑.</li>\n<li>Then the vector a is said to be a vector over the field R.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Geometrical and Physical Interpretations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).</li>\n<li>The length of the line indicates the magnitude of the vector, and the arrow denotes its direction.</li>\n<li>It should be noted that a vector is not just a number.</li>\n<li>If we are considering vector lying in a plane, then two numbers are needed to describe any vector: one for its magnitude and another giving its direction (the angle it makes with one of the coordinate axes).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Norm and Inner Product</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.</li>\n<li>Unlike these concepts defined in section 8.2, we will now define functions, which transform a pair of vectors into a scalar, a real number.</li>\n<li>The inner product would be ‖𝒂‖ = √𝑎12 + 𝑎22 + ⋯+ 𝑎𝑛2.</li>\n<li>𝑬𝒙𝒂𝒎𝒑𝒍𝒆: 𝐼𝑓 𝒂= (5, −2,3) 𝑡ℎ𝑒𝑛 ‖𝒂‖ = √52 + (−2)2 + 32 = 38.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Vector Spaces and Subspaces</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.</li>\n<li>For each u there exists – u such that u + (-u) = (-u) + u =0 6.</li>\n<li>𝟏𝒖= 𝒖 The set V satisfying i, ii and iii above said to be a vector space or a linear space over the field R.</li>\n<li>Summarizing: The aforesaid properties imply that V is closed under vector addition as well as under scalar multiplication of vectors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Linear Dependence of Vectors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0.</li>\n<li>On the contrary, if no such scalars exist, then the vectors x1, ..., xn are said to be linearly independent.</li>\n<li>The term 'linearly' in the above definition is important because only linear operations, i.e., scalar multiplication and vector addition, are permitted in obtaining the null vector.</li>\n<li>b) If a set of vectors x1, x2, ...,xn are linearly independent, then any subset of vectors, say, x1, x2,..., xk ( k < n ) are also linearly independent.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Generators and Basis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the case of two-dimensional Euclidian space (E2).</li>\n<li>In E2 , for the vectors u = (1 0) 𝑎𝑛𝑑 𝒗= (0 1), it is easily seen that any vector 𝒙= (𝑥1 𝑥2) may be generated from the vectors u and v as follows 9 Linear Spaces - 1 𝒙= 𝑥1𝒖+ 𝑥2𝒗, 𝑓𝑜𝑟 𝑥1, 𝑥2 ∈R.</li>\n<li>Such vectors u and v- from which all other vectors can be obtained as linear combinations as above – are called ‘generators’ of the vector space, in this case, of the two-dimensional space (E2).</li>\n<li>Each of these pairs of these combinations of vectors like (1 2) , (1 1), and (0 0), is called a generator of E2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.8 Summery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This unit explained the way of presenting a variable with magnitude and direction.</li>\n<li>It also gives the idea about the basic vector operations such as addition, subtraction, and multiplication along with the concepts such as norm, inner product, generator, basis, characteristic equation, eigen value, and eigen vector.</li>\n<li>Also, the relationship between vector and matrices is covered in this unit.</li>\n<li>3) Suppose (x, y, z) ∈ W , then 2x+y −z = 0 or 2x+y Not that (x, y, z) = (x, y, 2x+y) = (x, 0, 2x) + (0, y, y) x(1, 0, 2) + y(0, 1, 1) Thus, W is generated by the elements (1,0,2) and (0,1,1).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑. Then the vector</code></div>\n<div class=\"formula-box\"><code>Thus, if, a = (a1, a2, ..., an); and b= (b1,b2, ..., bn)</code></div>\n<div class=\"formula-box\"><code>then a + b = (a1+b1, a2+b2, ..., an+bn) and</code></div>\n<div class=\"formula-box\"><code>a − b = (a1 − b1, a2 − b2, ..., an−bn)</code></div>\n<div class=\"formula-box\"><code>Note that here a = b if and only if a1 = b1, a2 = b2, ..., an = bn</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides an in-depth study of Linear Spaces-I. Regarding Vector Addition and Scalar Multiplication, MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐. Regarding Geometrical and Physical Interpretations, Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →). Regarding Norm and Inner Product, Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector. Regarding Vector Spaces and Subspaces, u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-8_Linear_Spaces-I.pdf')\">\n          📄 Read Original IGNOU PDF (11 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Linear Spaces-I\"]\n  M1[\"8.2 Vector Addition and Scalar Multi\"]\n  Root --> M1\n  M2[\"8.3 Geometrical and Physical Interpr\"]\n  Root --> M2\n  M3[\"8.4 Norm and Inner Product\"]\n  Root --> M3\n  M4[\"8.5 Vector Spaces and Subspaces\"]\n  Root --> M4\n  M5[\"8.6 Linear Dependence of Vectors\"]\n  Root --> M5\n  M6[\"8.7 Generators and Basis\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Geometrical And Physical Interpretations",
+      "definition": "Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Norm And Inner Product",
+      "definition": "Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Vector Spaces And Subspaces",
+      "definition": "u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Linear Dependence Of Vectors",
+      "definition": "A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Generators And Basis",
+      "definition": "Consider the case of two-dimensional Euclidian space (E2).",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.2",
+      "topic": "Vector Addition and Scalar Multiplication",
+      "points": [
+        "MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐.",
+        "These are referred to as row and column vectors respectively.",
+        "Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑.",
+        "Then the vector a is said to be a vector over the field R."
+      ]
+    },
+    {
+      "section_num": "8.3",
+      "topic": "Geometrical and Physical Interpretations",
+      "points": [
+        "Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).",
+        "The length of the line indicates the magnitude of the vector, and the arrow denotes its direction.",
+        "It should be noted that a vector is not just a number.",
+        "If we are considering vector lying in a plane, then two numbers are needed to describe any vector: one for its magnitude and another giving its direction (the angle it makes with one of the coordinate axes)."
+      ]
+    },
+    {
+      "section_num": "8.4",
+      "topic": "Norm and Inner Product",
+      "points": [
+        "Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.",
+        "Unlike these concepts defined in section 8.2, we will now define functions, which transform a pair of vectors into a scalar, a real number.",
+        "The inner product would be ‖𝒂‖ = √𝑎12 + 𝑎22 + ⋯+ 𝑎𝑛2.",
+        "𝑬𝒙𝒂𝒎𝒑𝒍𝒆: 𝐼𝑓 𝒂= (5, −2,3) 𝑡ℎ𝑒𝑛 ‖𝒂‖ = √52 + (−2)2 + 32 = 38."
+      ]
+    },
+    {
+      "section_num": "8.5",
+      "topic": "Vector Spaces and Subspaces",
+      "points": [
+        "u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.",
+        "For each u there exists – u such that u + (-u) = (-u) + u =0 6.",
+        "𝟏𝒖= 𝒖 The set V satisfying i, ii and iii above said to be a vector space or a linear space over the field R.",
+        "Summarizing: The aforesaid properties imply that V is closed under vector addition as well as under scalar multiplication of vectors."
+      ]
+    },
+    {
+      "section_num": "8.6",
+      "topic": "Linear Dependence of Vectors",
+      "points": [
+        "A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0.",
+        "On the contrary, if no such scalars exist, then the vectors x1, ..., xn are said to be linearly independent.",
+        "The term 'linearly' in the above definition is important because only linear operations, i.e., scalar multiplication and vector addition, are permitted in obtaining the null vector.",
+        "b) If a set of vectors x1, x2, ...,xn are linearly independent, then any subset of vectors, say, x1, x2,..., xk ( k < n ) are also linearly independent."
+      ]
+    },
+    {
+      "section_num": "8.7",
+      "topic": "Generators and Basis",
+      "points": [
+        "Consider the case of two-dimensional Euclidian space (E2).",
+        "In E2 , for the vectors u = (1 0) 𝑎𝑛𝑑 𝒗= (0 1), it is easily seen that any vector 𝒙= (𝑥1 𝑥2) may be generated from the vectors u and v as follows 9 Linear Spaces - 1 𝒙= 𝑥1𝒖+ 𝑥2𝒗, 𝑓𝑜𝑟 𝑥1, 𝑥2 ∈R.",
+        "Such vectors u and v- from which all other vectors can be obtained as linear combinations as above – are called ‘generators’ of the vector space, in this case, of the two-dimensional space (E2).",
+        "Each of these pairs of these combinations of vectors like (1 2) , (1 1), and (0 0), is called a generator of E2."
+      ]
+    },
+    {
+      "section_num": "8.8",
+      "topic": "Summery",
+      "points": [
+        "This unit explained the way of presenting a variable with magnitude and direction.",
+        "It also gives the idea about the basic vector operations such as addition, subtraction, and multiplication along with the concepts such as norm, inner product, generator, basis, characteristic equation, eigen value, and eigen vector.",
+        "Also, the relationship between vector and matrices is covered in this unit.",
+        "3) Suppose (x, y, z) ∈ W , then 2x+y −z = 0 or 2x+y Not that (x, y, z) = (x, y, 2x+y) = (x, 0, 2x) + (0, y, y) x(1, 0, 2) + y(0, 1, 1) Thus, W is generated by the elements (1,0,2) and (0,1,1)."
+      ]
+    }
+  ],
+  "formulas": [
+    "Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑. Then the vector",
+    "Thus, if, a = (a1, a2, ..., an); and b= (b1,b2, ..., bn)",
+    "then a + b = (a1+b1, a2+b2, ..., an+bn) and",
+    "a − b = (a1 − b1, a2 − b2, ..., an−bn)",
+    "Note that here a = b if and only if a1 = b1, a2 = b2, ..., an = bn"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Linear Spaces-I\"]\n  M1[\"8.2 Vector Addition and Scalar Multi\"]\n  Root --> M1\n  M2[\"8.3 Geometrical and Physical Interpr\"]\n  Root --> M2\n  M3[\"8.4 Norm and Inner Product\"]\n  Root --> M3\n  M4[\"8.5 Vector Spaces and Subspaces\"]\n  Root --> M4\n  M5[\"8.6 Linear Dependence of Vectors\"]\n  Root --> M5\n  M6[\"8.7 Generators and Basis\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Geometrical And Physical Interpretations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Norm And Inner Product</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Vector Spaces And Subspaces</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Dependence Of Vectors</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Generators And Basis</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Consider the case of two-dimensional Euclidian space (E2).</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 Vector Addition and Scalar Multiplication</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐.</li>\n<li>These are referred to as row and column vectors respectively.</li>\n<li>Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑.</li>\n<li>Then the vector a is said to be a vector over the field R.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Geometrical and Physical Interpretations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →).</li>\n<li>The length of the line indicates the magnitude of the vector, and the arrow denotes its direction.</li>\n<li>It should be noted that a vector is not just a number.</li>\n<li>If we are considering vector lying in a plane, then two numbers are needed to describe any vector: one for its magnitude and another giving its direction (the angle it makes with one of the coordinate axes).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Norm and Inner Product</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector.</li>\n<li>Unlike these concepts defined in section 8.2, we will now define functions, which transform a pair of vectors into a scalar, a real number.</li>\n<li>The inner product would be ‖𝒂‖ = √𝑎12 + 𝑎22 + ⋯+ 𝑎𝑛2.</li>\n<li>𝑬𝒙𝒂𝒎𝒑𝒍𝒆: 𝐼𝑓 𝒂= (5, −2,3) 𝑡ℎ𝑒𝑛 ‖𝒂‖ = √52 + (−2)2 + 32 = 38.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Vector Spaces and Subspaces</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.</li>\n<li>For each u there exists – u such that u + (-u) = (-u) + u =0 6.</li>\n<li>𝟏𝒖= 𝒖 The set V satisfying i, ii and iii above said to be a vector space or a linear space over the field R.</li>\n<li>Summarizing: The aforesaid properties imply that V is closed under vector addition as well as under scalar multiplication of vectors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Linear Dependence of Vectors</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0.</li>\n<li>On the contrary, if no such scalars exist, then the vectors x1, ..., xn are said to be linearly independent.</li>\n<li>The term 'linearly' in the above definition is important because only linear operations, i.e., scalar multiplication and vector addition, are permitted in obtaining the null vector.</li>\n<li>b) If a set of vectors x1, x2, ...,xn are linearly independent, then any subset of vectors, say, x1, x2,..., xk ( k < n ) are also linearly independent.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.7 Generators and Basis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the case of two-dimensional Euclidian space (E2).</li>\n<li>In E2 , for the vectors u = (1 0) 𝑎𝑛𝑑 𝒗= (0 1), it is easily seen that any vector 𝒙= (𝑥1 𝑥2) may be generated from the vectors u and v as follows 9 Linear Spaces - 1 𝒙= 𝑥1𝒖+ 𝑥2𝒗, 𝑓𝑜𝑟 𝑥1, 𝑥2 ∈R.</li>\n<li>Such vectors u and v- from which all other vectors can be obtained as linear combinations as above – are called ‘generators’ of the vector space, in this case, of the two-dimensional space (E2).</li>\n<li>Each of these pairs of these combinations of vectors like (1 2) , (1 1), and (0 0), is called a generator of E2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.8 Summery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This unit explained the way of presenting a variable with magnitude and direction.</li>\n<li>It also gives the idea about the basic vector operations such as addition, subtraction, and multiplication along with the concepts such as norm, inner product, generator, basis, characteristic equation, eigen value, and eigen vector.</li>\n<li>Also, the relationship between vector and matrices is covered in this unit.</li>\n<li>3) Suppose (x, y, z) ∈ W , then 2x+y −z = 0 or 2x+y Not that (x, y, z) = (x, y, 2x+y) = (x, 0, 2x) + (0, y, y) x(1, 0, 2) + y(0, 1, 1) Thus, W is generated by the elements (1,0,2) and (0,1,1).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Let us consider a vector a = (a1, a2, ..., an) in which each 𝑎𝑖𝜖𝐑. Then the vector</code></div>\n<div class=\"formula-box\"><code>Thus, if, a = (a1, a2, ..., an); and b= (b1,b2, ..., bn)</code></div>\n<div class=\"formula-box\"><code>then a + b = (a1+b1, a2+b2, ..., an+bn) and</code></div>\n<div class=\"formula-box\"><code>a − b = (a1 − b1, a2 − b2, ..., an−bn)</code></div>\n<div class=\"formula-box\"><code>Note that here a = b if and only if a1 = b1, a2 = b2, ..., an = bn</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides an in-depth study of Linear Spaces-I. Regarding Vector Addition and Scalar Multiplication, MULTIPLICATION A given vector, i.e., an ordered set of finite number of elements, can be written as a row, e.g., (a, b, c...) or, as a column, e.g., ( 𝑎 𝑏 𝑐. Regarding Geometrical and Physical Interpretations, Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →). Regarding Norm and Inner Product, Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector. Regarding Vector Spaces and Subspaces, u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-8_Linear_Spaces-I.pdf')\">\n          📄 Read Original IGNOU PDF (11 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

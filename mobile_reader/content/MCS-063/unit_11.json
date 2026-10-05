@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Sorting Algorithms",
+  "filename": "Unit-12_Sorting_Algorithms.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-12_Sorting_Algorithms.pdf",
+  "total_pages": 19,
+  "word_count": 3530,
+  "est_read_time_minutes": 20,
+  "objectives": [
+    "12.2  Why Study Algorithms?",
+    "12.3  Categories of Sorting Algorithms",
+    "12.4 Bubble Sort",
+    "12.5 Selection Sort",
+    "12.6  Insertion Sort"
+  ],
+  "summary": " Sorting is the method of arranging elements in either ascending or descending The algorithm that preserves the relative order of the same elements during sorting is known as a stable sorting algorithm. The algorithm thatdo not need extra space for sorting is known as in-place Bubble sort works by comparing each pair of elements and swapping elements if they are in the wrong order.",
+  "flashcards": [
+    {
+      "question": "Sort the array using bubble sort. b. Sort the given array of numbers using bubble sort.",
+      "answer": "Key Principle: Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.",
+      "tag": "Exercise Q76"
+    },
+    {
+      "question": "Sort the array using selection sort. b. Show all steps to sort given array",
+      "answer": "Key Principle: Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.",
+      "tag": "Exercise Q76"
+    },
+    {
+      "question": "Sort the array using insertion sort.",
+      "answer": "Key Principle: It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.",
+      "tag": "Exercise Q76"
+    },
+    {
+      "question": "Sort the array using bubble sort.",
+      "answer": "Key Principle: Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.",
+      "tag": "Exercise Q76"
+    },
+    {
+      "question": "As 90 is greater, no swap Compare",
+      "answer": "In Sorting Algorithms, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q90"
+    },
+    {
+      "question": "What is Why Study Algorithms? and how is it characterized?",
+      "answer": "In the field of Computer Science, everything is related to databases.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Categories Of Sorting Algorithms and how is it characterized?",
+      "answer": "Sorting algorithms are generally compared on the following parameters: 1.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Sorting Algorithms\"]\n  M1[\"12.2 Why Study Algorithms?\"]\n  Root --> M1\n  M2[\"12.3 Categories of Sorting Algorithm\"]\n  Root --> M2\n  M3[\"12.4 Bubble Sort\"]\n  Root --> M3\n  M4[\"12.5 Selection Sort\"]\n  Root --> M4\n  M5[\"12.6 Insertion Sort\"]\n  Root --> M5\n  M6[\"12.7 Merge Sort\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Why Study Algorithms?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the field of Computer Science, everything is related to databases.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Categories Of Sorting Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Sorting algorithms are generally compared on the following parameters: 1.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Bubble Sort</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Selection Sort</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Insertion Sort</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2 Why Study Algorithms?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the field of Computer Science, everything is related to databases.</li>\n<li>When we talk about a database that contains various columns, sorting algorithms are needed to arrange the data in a particular order (increasing/ decreasing).</li>\n<li>Sorting is an important category of algorithms in the field of Computer Science and a lot of research is still going on.</li>\n<li>Categories of Sorting Algorithms Sorting algorithms are generally compared on the following parameters: 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3 Categories of Sorting Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sorting algorithms are generally compared on the following parameters: 1.</li>\n<li>Number of Comparisons The most important parameter to judge a sorting algorithm is the number of comparisons done to sort a given list of items.</li>\n<li>The comparison sorting algorithms consists of merge sort, quick sort, bubble, insertion, and selection sort.</li>\n<li>Whereas, non-comparison sorting algorithms consist of count sort, bucket sort, and radix sort.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.4 Bubble Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.</li>\n<li>The algorithm continues iteration until no more swaps are required.</li>\n<li>The largest element goes to the end of array after first pass.</li>\n<li>The second largest element goes to second last position after second pass and so on.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.5 Selection Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.</li>\n<li>The process continues till the array is sorted.</li>\n<li>The algorithm is easy to understand and does not require additional memory space for sorting.</li>\n<li>Find the minimum element in the unsorted array and swap it with element at current position.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.6 Insertion Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.</li>\n<li>The algorithm works by iteratively inserting each element of unsorted list into the right place in the sorted list.</li>\n<li>The first element of the array is assured to be sorted.</li>\n<li>Compare the second element with the element in the sorted array if it is smaller than swap.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.7 Merge Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Merge sort is popular sorting algorithm that works on Divide and Conquer strategy.</li>\n<li>It works by recursively dividing i/p array into two halves, sorting both halves and merging them together to obtain sorted array.</li>\n<li>Divide the unsorted array into parts until it cannot be sub-divided- Divide 2.</li>\n<li>Conquer each sub-array created and sort them – Conquer Note – If an array contains single element, it is considered sorted.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.8 Quick Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Quick sort works on divide and conquer strategy and is also known as partition exchange sort.</li>\n<li>Just like merge sort, it uses recursive calls to sort the array.</li>\n<li>The algorithm picks an element as a pivot and partitions the unsorted array around pivot with an aim of placing pivot in the correct position in the sorted array.</li>\n<li>It is in-place algorithm that do not require auxiliary space for sorting.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.9 Comparing Various Sorting Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we will discuss best, average, and worst case time complexity of various sorting algorithms.</li>\n<li>Let’s understand this with help of an example: 1.</li>\n<li>List.sort() Given a list of numbers, it sorts the list in ascending or descending order without using any additional space.</li>\n<li>It makes changes in the original list and does not return a new list.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>complexity is O(1).</code></div>\n<div class=\"formula-box\"><code>additional memory space i.e., space complexity is O(1).</code></div>\n<div class=\"formula-box\"><code>It does not require any auxiliary space i.e.,O(1) space complexity. Insertion sort is</code></div>\n<div class=\"formula-box\"><code>It is not an in-place sorting algorithm i.e., needs additional memory space of O(n).</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\"> Sorting is the method of arranging elements in either ascending or descending The algorithm that preserves the relative order of the same elements during sorting is known as a stable sorting algorithm. The algorithm thatdo not need extra space for sorting is known as in-place Bubble sort works by comparing each pair of elements and swapping elements if they are in the wrong order.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-12_Sorting_Algorithms.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Sorting Algorithms\"]\n  M1[\"12.2 Why Study Algorithms?\"]\n  Root --> M1\n  M2[\"12.3 Categories of Sorting Algorithm\"]\n  Root --> M2\n  M3[\"12.4 Bubble Sort\"]\n  Root --> M3\n  M4[\"12.5 Selection Sort\"]\n  Root --> M4\n  M5[\"12.6 Insertion Sort\"]\n  Root --> M5\n  M6[\"12.7 Merge Sort\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Why Study Algorithms?",
+      "definition": "In the field of Computer Science, everything is related to databases.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Categories Of Sorting Algorithms",
+      "definition": "Sorting algorithms are generally compared on the following parameters: 1.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Bubble Sort",
+      "definition": "Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Selection Sort",
+      "definition": "Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Insertion Sort",
+      "definition": "It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "12.2",
+      "topic": "Why Study Algorithms?",
+      "points": [
+        "In the field of Computer Science, everything is related to databases.",
+        "When we talk about a database that contains various columns, sorting algorithms are needed to arrange the data in a particular order (increasing/ decreasing).",
+        "Sorting is an important category of algorithms in the field of Computer Science and a lot of research is still going on.",
+        "Categories of Sorting Algorithms Sorting algorithms are generally compared on the following parameters: 1."
+      ]
+    },
+    {
+      "section_num": "12.3",
+      "topic": "Categories of Sorting Algorithms",
+      "points": [
+        "Sorting algorithms are generally compared on the following parameters: 1.",
+        "Number of Comparisons The most important parameter to judge a sorting algorithm is the number of comparisons done to sort a given list of items.",
+        "The comparison sorting algorithms consists of merge sort, quick sort, bubble, insertion, and selection sort.",
+        "Whereas, non-comparison sorting algorithms consist of count sort, bucket sort, and radix sort."
+      ]
+    },
+    {
+      "section_num": "12.4",
+      "topic": "Bubble Sort",
+      "points": [
+        "Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.",
+        "The algorithm continues iteration until no more swaps are required.",
+        "The largest element goes to the end of array after first pass.",
+        "The second largest element goes to second last position after second pass and so on."
+      ]
+    },
+    {
+      "section_num": "12.5",
+      "topic": "Selection Sort",
+      "points": [
+        "Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.",
+        "The process continues till the array is sorted.",
+        "The algorithm is easy to understand and does not require additional memory space for sorting.",
+        "Find the minimum element in the unsorted array and swap it with element at current position."
+      ]
+    },
+    {
+      "section_num": "12.6",
+      "topic": "Insertion Sort",
+      "points": [
+        "It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.",
+        "The algorithm works by iteratively inserting each element of unsorted list into the right place in the sorted list.",
+        "The first element of the array is assured to be sorted.",
+        "Compare the second element with the element in the sorted array if it is smaller than swap."
+      ]
+    },
+    {
+      "section_num": "12.7",
+      "topic": "Merge Sort",
+      "points": [
+        "Merge sort is popular sorting algorithm that works on Divide and Conquer strategy.",
+        "It works by recursively dividing i/p array into two halves, sorting both halves and merging them together to obtain sorted array.",
+        "Divide the unsorted array into parts until it cannot be sub-divided- Divide 2.",
+        "Conquer each sub-array created and sort them – Conquer Note – If an array contains single element, it is considered sorted."
+      ]
+    },
+    {
+      "section_num": "12.8",
+      "topic": "Quick Sort",
+      "points": [
+        "Quick sort works on divide and conquer strategy and is also known as partition exchange sort.",
+        "Just like merge sort, it uses recursive calls to sort the array.",
+        "The algorithm picks an element as a pivot and partitions the unsorted array around pivot with an aim of placing pivot in the correct position in the sorted array.",
+        "It is in-place algorithm that do not require auxiliary space for sorting."
+      ]
+    },
+    {
+      "section_num": "12.9",
+      "topic": "Comparing Various Sorting Algorithms",
+      "points": [
+        "In this section, we will discuss best, average, and worst case time complexity of various sorting algorithms.",
+        "Let’s understand this with help of an example: 1.",
+        "List.sort() Given a list of numbers, it sorts the list in ascending or descending order without using any additional space.",
+        "It makes changes in the original list and does not return a new list."
+      ]
+    }
+  ],
+  "formulas": [
+    "complexity is O(1).",
+    "additional memory space i.e., space complexity is O(1).",
+    "It does not require any auxiliary space i.e.,O(1) space complexity. Insertion sort is",
+    "It is not an in-place sorting algorithm i.e., needs additional memory space of O(n)."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Sorting Algorithms\"]\n  M1[\"12.2 Why Study Algorithms?\"]\n  Root --> M1\n  M2[\"12.3 Categories of Sorting Algorithm\"]\n  Root --> M2\n  M3[\"12.4 Bubble Sort\"]\n  Root --> M3\n  M4[\"12.5 Selection Sort\"]\n  Root --> M4\n  M5[\"12.6 Insertion Sort\"]\n  Root --> M5\n  M6[\"12.7 Merge Sort\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Why Study Algorithms?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the field of Computer Science, everything is related to databases.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Categories Of Sorting Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Sorting algorithms are generally compared on the following parameters: 1.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Bubble Sort</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Selection Sort</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Insertion Sort</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.2 Why Study Algorithms?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the field of Computer Science, everything is related to databases.</li>\n<li>When we talk about a database that contains various columns, sorting algorithms are needed to arrange the data in a particular order (increasing/ decreasing).</li>\n<li>Sorting is an important category of algorithms in the field of Computer Science and a lot of research is still going on.</li>\n<li>Categories of Sorting Algorithms Sorting algorithms are generally compared on the following parameters: 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.3 Categories of Sorting Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sorting algorithms are generally compared on the following parameters: 1.</li>\n<li>Number of Comparisons The most important parameter to judge a sorting algorithm is the number of comparisons done to sort a given list of items.</li>\n<li>The comparison sorting algorithms consists of merge sort, quick sort, bubble, insertion, and selection sort.</li>\n<li>Whereas, non-comparison sorting algorithms consist of count sort, bucket sort, and radix sort.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.4 Bubble Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order.</li>\n<li>The algorithm continues iteration until no more swaps are required.</li>\n<li>The largest element goes to the end of array after first pass.</li>\n<li>The second largest element goes to second last position after second pass and so on.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.5 Selection Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array 76 array and swapping it with the first unsorted element.</li>\n<li>The process continues till the array is sorted.</li>\n<li>The algorithm is easy to understand and does not require additional memory space for sorting.</li>\n<li>Find the minimum element in the unsorted array and swap it with element at current position.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.6 Insertion Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted.</li>\n<li>The algorithm works by iteratively inserting each element of unsorted list into the right place in the sorted list.</li>\n<li>The first element of the array is assured to be sorted.</li>\n<li>Compare the second element with the element in the sorted array if it is smaller than swap.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.7 Merge Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Merge sort is popular sorting algorithm that works on Divide and Conquer strategy.</li>\n<li>It works by recursively dividing i/p array into two halves, sorting both halves and merging them together to obtain sorted array.</li>\n<li>Divide the unsorted array into parts until it cannot be sub-divided- Divide 2.</li>\n<li>Conquer each sub-array created and sort them – Conquer Note – If an array contains single element, it is considered sorted.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.8 Quick Sort</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Quick sort works on divide and conquer strategy and is also known as partition exchange sort.</li>\n<li>Just like merge sort, it uses recursive calls to sort the array.</li>\n<li>The algorithm picks an element as a pivot and partitions the unsorted array around pivot with an aim of placing pivot in the correct position in the sorted array.</li>\n<li>It is in-place algorithm that do not require auxiliary space for sorting.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">12.9 Comparing Various Sorting Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we will discuss best, average, and worst case time complexity of various sorting algorithms.</li>\n<li>Let’s understand this with help of an example: 1.</li>\n<li>List.sort() Given a list of numbers, it sorts the list in ascending or descending order without using any additional space.</li>\n<li>It makes changes in the original list and does not return a new list.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>complexity is O(1).</code></div>\n<div class=\"formula-box\"><code>additional memory space i.e., space complexity is O(1).</code></div>\n<div class=\"formula-box\"><code>It does not require any auxiliary space i.e.,O(1) space complexity. Insertion sort is</code></div>\n<div class=\"formula-box\"><code>It is not an in-place sorting algorithm i.e., needs additional memory space of O(n).</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\"> Sorting is the method of arranging elements in either ascending or descending The algorithm that preserves the relative order of the same elements during sorting is known as a stable sorting algorithm. The algorithm thatdo not need extra space for sorting is known as in-place Bubble sort works by comparing each pair of elements and swapping elements if they are in the wrong order.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-12_Sorting_Algorithms.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,143 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Trees",
+  "filename": "Unit-8_Trees.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-8_Trees.pdf",
+  "total_pages": 16,
+  "word_count": 3257,
+  "est_read_time_minutes": 18,
+  "objectives": [
+    "8.2 General Trees",
+    "8.3 Binary Trees",
+    "8.4 Implementing Trees",
+    "8.5 Tree Traversal Algorithms",
+    "8.6 Case Study: An Expression Tree"
+  ],
+  "summary": "Trees are versatile data structures that provide efficient ways to organize hierarchical data. The unit covered: General trees and binary trees with their properties and implementations Different types of binary trees (full, complete, perfect) Tree traversal algorithms (pre-order, in-order, post-order, level-order) Expression trees and their evaluation",
+  "flashcards": [
+    {
+      "question": "Question: Give the highest possible nodes at level 3 (assuming root is at level",
+      "answer": "In Trees, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "? a) 4 b) 8 c) 16 d) 2 a. Answer: b)",
+      "answer": "? a) 4 b) 8 c) 16 d) 2 a. Answer: b",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "Question: A binary tree with 10 nodes has how many NULL links (empty child references)?",
+      "answer": ", then level 2 (4,5).",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "), where (n-1) is the number of actual parent-child links. For",
+      "answer": "b) O(log n) c) O(n) d) O(n^2) a. Answer: c",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "- 9 = 11 NULL references.",
+      "answer": "- 9 = 11 NULL references.",
+      "tag": "Exercise Q10"
+    },
+    {
+      "question": "Question: Which type of binary tree has all internal nodes containing exactly two children?",
+      "answer": "Key Principle: In Binary tree data structure each node has left child node and right child node.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is A Full Binary Tree and how is it characterized?",
+      "answer": "A Full Binary Tree a tree where every node has either 0 or 2 children.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Trees\"]\n  M1[\"8.2 General Trees\"]\n  Root --> M1\n  M2[\"8.3 Binary Trees\"]\n  Root --> M2\n  M3[\"8.4 Implementing Trees\"]\n  Root --> M3\n  M4[\"8.5 Tree Traversal Algorithms\"]\n  Root --> M4\n  M5[\"8.6 Case Study An Expression Tree\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Full Binary Tree</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Full Binary Tree a tree where every node has either 0 or 2 children.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Raversing General Trees Traversal</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Raversing General Trees Traversal visiting all nodes of the tree in a specific order.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">General Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of general trees.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Binary Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In Binary tree data structure each node has left child node and right child node.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Implementing Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 General Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of general trees.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in trees.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Binary Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Binary tree data structure each node has left child node and right child node.</li>\n<li>BINARY TREES: DEFINITION AND STRUCTURE A node of binary tree consist of - - A data element.</li>\n<li>- A reference to the left child (which is also a binary tree).</li>\n<li>- A reference to the right child (which is also a binary tree).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Implementing Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.</li>\n<li>Each node will hold data and a list of its children.</li>\n<li>TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.</li>\n<li>The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Tree Traversal Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We shall look at various traversal algorithms in this section.</li>\n<li>TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.</li>\n<li>The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.</li>\n<li>The main types of tree traversal algorithms are: - Depth-First Traversal: Visits nodes along a branch before backtracking.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Case Study: An Expression Tree</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In computer science, expression trees are a specialized form of binary trees used to represent expressions.</li>\n<li>Each internal node corresponds to an operator, while the leaf nodes represent operands.</li>\n<li>We can efficientlyevaluate expressions and is widely used in compilers and interpreters.</li>\n<li>EXPRESSION TREES: DEFINITION AND STRUCTURE An expression tree is a binary tree where: - Each internal node represents an operator (e.g., +, -, *, /).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Insertion: O(n) for a basic binary tree</code></div>\n<div class=\"formula-box\"><code>Searching: O(n) for a basic binary tree</code></div>\n<div class=\"formula-box\"><code>Traversal: O(n) for all methods</code></div>\n<div class=\"formula-box\"><code>tree using level-order insertion? a) O(1) b) O(log n) c) O(n) d) O(n^2)</code></div>\n<div class=\"formula-box\"><code>a. Answer: c) O(n) Explanation: Level-order insertion requires</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Trees are versatile data structures that provide efficient ways to organize hierarchical data. The unit covered: General trees and binary trees with their properties and implementations Different types of binary trees (full, complete, perfect) Tree traversal algorithms (pre-order, in-order, post-order, level-order) Expression trees and their evaluation</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-8_Trees.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Trees\"]\n  M1[\"8.2 General Trees\"]\n  Root --> M1\n  M2[\"8.3 Binary Trees\"]\n  Root --> M2\n  M3[\"8.4 Implementing Trees\"]\n  Root --> M3\n  M4[\"8.5 Tree Traversal Algorithms\"]\n  Root --> M4\n  M5[\"8.6 Case Study An Expression Tree\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "A Full Binary Tree",
+      "definition": "A Full Binary Tree a tree where every node has either 0 or 2 children.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Raversing General Trees Traversal",
+      "definition": "Raversing General Trees Traversal visiting all nodes of the tree in a specific order.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "General Trees",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of general trees.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Binary Trees",
+      "definition": "In Binary tree data structure each node has left child node and right child node.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Implementing Trees",
+      "definition": "To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.2",
+      "topic": "General Trees",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of general trees.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in trees."
+      ]
+    },
+    {
+      "section_num": "8.3",
+      "topic": "Binary Trees",
+      "points": [
+        "In Binary tree data structure each node has left child node and right child node.",
+        "BINARY TREES: DEFINITION AND STRUCTURE A node of binary tree consist of - - A data element.",
+        "- A reference to the left child (which is also a binary tree).",
+        "- A reference to the right child (which is also a binary tree)."
+      ]
+    },
+    {
+      "section_num": "8.4",
+      "topic": "Implementing Trees",
+      "points": [
+        "To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.",
+        "Each node will hold data and a list of its children.",
+        "TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.",
+        "The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting."
+      ]
+    },
+    {
+      "section_num": "8.5",
+      "topic": "Tree Traversal Algorithms",
+      "points": [
+        "We shall look at various traversal algorithms in this section.",
+        "TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.",
+        "The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.",
+        "The main types of tree traversal algorithms are: - Depth-First Traversal: Visits nodes along a branch before backtracking."
+      ]
+    },
+    {
+      "section_num": "8.6",
+      "topic": "Case Study: An Expression Tree",
+      "points": [
+        "In computer science, expression trees are a specialized form of binary trees used to represent expressions.",
+        "Each internal node corresponds to an operator, while the leaf nodes represent operands.",
+        "We can efficientlyevaluate expressions and is widely used in compilers and interpreters.",
+        "EXPRESSION TREES: DEFINITION AND STRUCTURE An expression tree is a binary tree where: - Each internal node represents an operator (e.g., +, -, *, /)."
+      ]
+    }
+  ],
+  "formulas": [
+    "Insertion: O(n) for a basic binary tree",
+    "Searching: O(n) for a basic binary tree",
+    "Traversal: O(n) for all methods",
+    "tree using level-order insertion? a) O(1) b) O(log n) c) O(n) d) O(n^2)",
+    "a. Answer: c) O(n) Explanation: Level-order insertion requires"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Trees\"]\n  M1[\"8.2 General Trees\"]\n  Root --> M1\n  M2[\"8.3 Binary Trees\"]\n  Root --> M2\n  M3[\"8.4 Implementing Trees\"]\n  Root --> M3\n  M4[\"8.5 Tree Traversal Algorithms\"]\n  Root --> M4\n  M5[\"8.6 Case Study An Expression Tree\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Full Binary Tree</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Full Binary Tree a tree where every node has either 0 or 2 children.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Raversing General Trees Traversal</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Raversing General Trees Traversal visiting all nodes of the tree in a specific order.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">General Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of general trees.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Binary Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In Binary tree data structure each node has left child node and right child node.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Implementing Trees</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.2 General Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of general trees.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in trees.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Binary Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In Binary tree data structure each node has left child node and right child node.</li>\n<li>BINARY TREES: DEFINITION AND STRUCTURE A node of binary tree consist of - - A data element.</li>\n<li>- A reference to the left child (which is also a binary tree).</li>\n<li>- A reference to the right child (which is also a binary tree).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.4 Implementing Trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To implement a general tree in Python, we can create a `Node` class to represent each node in the tree.</li>\n<li>Each node will hold data and a list of its children.</li>\n<li>TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.</li>\n<li>The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.5 Tree Traversal Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We shall look at various traversal algorithms in this section.</li>\n<li>TREE TRAVERSAL: DEFINITION AND IMPORTANCE Tree traversal refers to the process of visiting all the nodes in a tree data structure in a systematic manner.</li>\n<li>The order in which nodes are visited can significantly affect the performance of operations such as searching and sorting.</li>\n<li>The main types of tree traversal algorithms are: - Depth-First Traversal: Visits nodes along a branch before backtracking.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.6 Case Study: An Expression Tree</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In computer science, expression trees are a specialized form of binary trees used to represent expressions.</li>\n<li>Each internal node corresponds to an operator, while the leaf nodes represent operands.</li>\n<li>We can efficientlyevaluate expressions and is widely used in compilers and interpreters.</li>\n<li>EXPRESSION TREES: DEFINITION AND STRUCTURE An expression tree is a binary tree where: - Each internal node represents an operator (e.g., +, -, *, /).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Insertion: O(n) for a basic binary tree</code></div>\n<div class=\"formula-box\"><code>Searching: O(n) for a basic binary tree</code></div>\n<div class=\"formula-box\"><code>Traversal: O(n) for all methods</code></div>\n<div class=\"formula-box\"><code>tree using level-order insertion? a) O(1) b) O(log n) c) O(n) d) O(n^2)</code></div>\n<div class=\"formula-box\"><code>a. Answer: c) O(n) Explanation: Level-order insertion requires</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Trees are versatile data structures that provide efficient ways to organize hierarchical data. The unit covered: General trees and binary trees with their properties and implementations Different types of binary trees (full, complete, perfect) Tree traversal algorithms (pre-order, in-order, post-order, level-order) Expression trees and their evaluation</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-8_Trees.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

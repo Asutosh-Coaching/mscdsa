@@ -1,0 +1,153 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_08",
+  "unit_num": "Unit 8",
+  "title": "Regression Models-II",
+  "filename": "Unit-8_Regression_Models-II.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-8_Regression_Models-II.pdf",
+  "total_pages": 49,
+  "word_count": 15912,
+  "est_read_time_minutes": 88,
+  "objectives": [
+    "unit change in the independent variable, while β₀ gives the expected value of Y when X",
+    "fitting straight line for the given dataset.",
+    "and Marks Obtained is the Dependent variable (Y). The data is:",
+    "Marks Obtained (Y)"
+  ],
+  "summary": "for the given numerical problem is as follows: Total squared prediction error is very low Average prediction error is about 0.62 marks About 99.15% of variation in marks is explained by study hours Overall Interpretation: These values together show that the simple linear regression model provides a very strong fit for the given data.",
+  "flashcards": [
+    {
+      "question": "What is Regression Analysis? Explain its purpose in predictive data analysis. …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Key Principle: Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain the difference between dependent and independent variables with examples. …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Explain the concept of ε (epsilon)-insensitive loss in SVR. Solution: refer to Subsection",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Write the general form of a regression equation and explain its components. .…………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Differentiate between Linear Regression and Support Vector Regression. Solution: refer to Subsection",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Discuss the advantages and limitations of regression analysis. .…………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "What are the advantages of Support Vector Regression? Solution: refer to Subsection",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is the role of regression in predictive analytics? .…………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "What are the limitations of Support Vector Regression? Solution: refer to Subsection",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is a Regression Model? Explain its significance in predictive analytics. …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Key Principle: Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Expected Learning Outcomes and how is it characterized?",
+      "answer": "The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Regression Models-II\"]\n  M1[\"8.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"8.3 Regression Models\"]\n  Root --> M2\n  M2_1[\"8.3.1 Linear Regression\"]\n  M2 --> M2_1\n  M2_2[\"8.3.2 Multiple Regression\"]\n  M2 --> M2_2\n  M2_3[\"8.3.3 Polynomial Regression\"]\n  M2 --> M2_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Regression Models</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of linear regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multiple Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of multiple regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Polynomial Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of polynomial regression.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.</li>\n<li>The concept of regression was first introduced by Sir Francis Galton in the 1880s while studying the relationship between the heights of parents and their children.</li>\n<li>Galton observed that extremely tall parents tend to have children who are tall but closer to the average height - a phenomenon he called “regression toward the mean”.</li>\n<li>This foundational observation led to the development of what we now know as regression analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Regression Models</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.</li>\n<li>In predictive analytics, the purpose of regression is not limited to estimating future values; it is also used to identify influential factors, measure the strength of relationships, and support evidence-based decision making.</li>\n<li>Different regression models are used depending on the nature of the data, the type of dependent variable, the relationship among variables, and the assumptions that can reasonably be satisfied.</li>\n<li>Therefore, a proper understanding of regression models is essential for selecting the right analytical method in real-world applications.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.1 Linear Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of linear regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.2 Multiple Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of multiple regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.3 Polynomial Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of polynomial regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.4 Ridge and Lasso Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of ridge and lasso regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.5 Support Vector Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of support vector regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle, the estimates of the slope and intercept are obtained</code></div>\n<div class=\"formula-box\"><code>principle of ceteris paribus, which means “all other things remaining constant.”</code></div>\n<div class=\"formula-box\"><code>property, and nearby amenities. Multiple linear</code></div>\n<div class=\"formula-box\"><code>property distinguishes lasso regression from ridge regression. Ridge regression shrinks</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">for the given numerical problem is as follows: Total squared prediction error is very low Average prediction error is about 0.62 marks About 99.15% of variation in marks is explained by study hours Overall Interpretation: These values together show that the simple linear regression model provides a very strong fit for the given data.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-8_Regression_Models-II.pdf')\">\n          📄 Read Original IGNOU PDF (49 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 8 Regression Models-II\"]\n  M1[\"8.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"8.3 Regression Models\"]\n  Root --> M2\n  M2_1[\"8.3.1 Linear Regression\"]\n  M2 --> M2_1\n  M2_2[\"8.3.2 Multiple Regression\"]\n  M2 --> M2_2\n  M2_3[\"8.3.3 Polynomial Regression\"]\n  M2 --> M2_3",
+  "definitions": [
+    {
+      "term": "Expected Learning Outcomes",
+      "definition": "The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Regression Models",
+      "definition": "Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Linear Regression",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of linear regression.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Multiple Regression",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of multiple regression.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Polynomial Regression",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of polynomial regression.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "8.1",
+      "topic": "Expected Learning Outcomes",
+      "points": [
+        "The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.",
+        "The concept of regression was first introduced by Sir Francis Galton in the 1880s while studying the relationship between the heights of parents and their children.",
+        "Galton observed that extremely tall parents tend to have children who are tall but closer to the average height - a phenomenon he called “regression toward the mean”.",
+        "This foundational observation led to the development of what we now know as regression analysis."
+      ]
+    },
+    {
+      "section_num": "8.3",
+      "topic": "Regression Models",
+      "points": [
+        "Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.",
+        "In predictive analytics, the purpose of regression is not limited to estimating future values; it is also used to identify influential factors, measure the strength of relationships, and support evidence-based decision making.",
+        "Different regression models are used depending on the nature of the data, the type of dependent variable, the relationship among variables, and the assumptions that can reasonably be satisfied.",
+        "Therefore, a proper understanding of regression models is essential for selecting the right analytical method in real-world applications."
+      ]
+    },
+    {
+      "section_num": "8.3.1",
+      "topic": "Linear Regression",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of linear regression.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii."
+      ]
+    },
+    {
+      "section_num": "8.3.2",
+      "topic": "Multiple Regression",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of multiple regression.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii."
+      ]
+    },
+    {
+      "section_num": "8.3.3",
+      "topic": "Polynomial Regression",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of polynomial regression.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii."
+      ]
+    },
+    {
+      "section_num": "8.3.4",
+      "topic": "Ridge and Lasso Regression",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of ridge and lasso regression.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii."
+      ]
+    },
+    {
+      "section_num": "8.3.5",
+      "topic": "Support Vector Regression",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of support vector regression.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle, the estimates of the slope and intercept are obtained",
+    "principle of ceteris paribus, which means “all other things remaining constant.”",
+    "property, and nearby amenities. Multiple linear",
+    "property distinguishes lasso regression from ridge regression. Ridge regression shrinks"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 8 Regression Models-II\"]\n  M1[\"8.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"8.3 Regression Models\"]\n  Root --> M2\n  M2_1[\"8.3.1 Linear Regression\"]\n  M2 --> M2_1\n  M2_2[\"8.3.2 Multiple Regression\"]\n  M2 --> M2_2\n  M2_3[\"8.3.3 Polynomial Regression\"]\n  M2 --> M2_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Regression Models</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of linear regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multiple Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of multiple regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Polynomial Regression</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of polynomial regression.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The primary goal of regression analysis is to model this relationship in a way that allows us to predict the value of the dependent variable based on known values of the independent variables.</li>\n<li>The concept of regression was first introduced by Sir Francis Galton in the 1880s while studying the relationship between the heights of parents and their children.</li>\n<li>Galton observed that extremely tall parents tend to have children who are tall but closer to the average height - a phenomenon he called “regression toward the mean”.</li>\n<li>This foundational observation led to the development of what we now know as regression analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3 Regression Models</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Regression models form one of the most important components of predictive data analysis because they help in understanding, explaining, and predicting the relationship between a dependent variable and one or more independent variables.</li>\n<li>In predictive analytics, the purpose of regression is not limited to estimating future values; it is also used to identify influential factors, measure the strength of relationships, and support evidence-based decision making.</li>\n<li>Different regression models are used depending on the nature of the data, the type of dependent variable, the relationship among variables, and the assumptions that can reasonably be satisfied.</li>\n<li>Therefore, a proper understanding of regression models is essential for selecting the right analytical method in real-world applications.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.1 Linear Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of linear regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.2 Multiple Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of multiple regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.3 Polynomial Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of polynomial regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.4 Ridge and Lasso Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of ridge and lasso regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">8.3.5 Support Vector Regression</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of support vector regression.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in regression models-ii.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle, the estimates of the slope and intercept are obtained</code></div>\n<div class=\"formula-box\"><code>principle of ceteris paribus, which means “all other things remaining constant.”</code></div>\n<div class=\"formula-box\"><code>property, and nearby amenities. Multiple linear</code></div>\n<div class=\"formula-box\"><code>property distinguishes lasso regression from ridge regression. Ridge regression shrinks</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">for the given numerical problem is as follows: Total squared prediction error is very low Average prediction error is about 0.62 marks About 99.15% of variation in marks is explained by study hours Overall Interpretation: These values together show that the simple linear regression model provides a very strong fit for the given data.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-8_Regression_Models-II.pdf')\">\n          📄 Read Original IGNOU PDF (49 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

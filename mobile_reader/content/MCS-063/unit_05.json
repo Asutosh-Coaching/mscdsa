@@ -1,0 +1,140 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Array-Based Sequences",
+  "filename": "Unit-5_Array-Based_Sequences.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-5_Array-Based_Sequences.pdf",
+  "total_pages": 19,
+  "word_count": 4074,
+  "est_read_time_minutes": 23,
+  "objectives": [
+    "Level Arrays",
+    "Based Sequences"
+  ],
+  "summary": "Fundamental Sequence Types Python offers four primary sequence Key operations: indexing, slicing, appending, inserting, deleting Lightweight memory representation Hashable (can be used as dictionary keys) More memory-efficient than lists Immutable sequences of Unicode characters",
+  "flashcards": [
+    {
+      "question": "What is Python’S Sequence Types and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Low-Level Arrays and how is it characterized?",
+      "answer": "Arrays are crucial for understanding memory management and performance optimization in Python.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Dynamic Arrays And Amortization and how is it characterized?",
+      "answer": "Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Using Array-Based Sequences and how is it characterized?",
+      "answer": "Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Multidimensional Data Sets and how is it characterized?",
+      "answer": "In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Array-Based Sequences\"]\n  M1[\"5.2 Python’s Sequence Types\"]\n  Root --> M1\n  M2[\"5.3 Low-Level Arrays\"]\n  Root --> M2\n  M3[\"5.4 Dynamic Arrays and Amortization\"]\n  Root --> M3\n  M4[\"5.5 Efficiency of Python’s Sequences\"]\n  Root --> M4\n  M5[\"5.6 Using Array-Based Sequences\"]\n  Root --> M5\n  M6[\"5.7 Multidimensional Data Sets\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Python’S Sequence Types</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Low-Level Arrays</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Arrays are crucial for understanding memory management and performance optimization in Python.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Dynamic Arrays And Amortization</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Using Array-Based Sequences</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multidimensional Data Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Python’s Sequence Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in array-based sequences.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Low-Level Arrays</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Arrays are crucial for understanding memory management and performance optimization in Python.</li>\n<li>Low-level arrays manage collection of items allowing for efficient access and manipulation.</li>\n<li>In Python, low-level arrays differ significantly from high-level lists.</li>\n<li>While lists are dynamic and can store heterogeneous data types, low-level arrays provide type-constrained, memory- efficient data storage.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Dynamic Arrays and Amortization</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.</li>\n<li>In Python, lists serve as dynamic arrays, but understanding their underlying mechanics provides insight into their efficiency.</li>\n<li>A dynamic array allows elements to be added or removed dynamically, with automatic memory reallocation.</li>\n<li>In Python, lists serve as the primary implementation of dynamic arrays.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Efficiency of Python’s Sequences Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Time Complexity Of Sequence Types Lists Python lists are dynamic arrays that allow for efficient element access and modification.</li>\n<li>Tuples Tuples are more memory-efficient than lists because they no additional space is required for dynamic resizing.</li>\n<li>Strings 14 Strings also consume more memory due to their immutability and the need for additional storage when concatenating or modifying.</li>\n<li>Ranges Ranges are highly space-efficient as they do not store all values in memory but instead generate them on demand.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6 Using Array-Based Sequences</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.</li>\n<li>Python's Built-in List Python's list type is a highly flexible data structure for representing array-based sequences.</li>\n<li>It provides a dynamic and efficient way to store and manipulate collections of elements.</li>\n<li>NumPy arrays store elements of the same data type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.7 Multidimensional Data Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.</li>\n<li>However, in many real-world applications, data is often multidimensional, requiring more complex structures to represent it efficiently.</li>\n<li>Multidimensional Data Structures Multidimensional data structures allow us to store data in more than one dimension.</li>\n<li>The most common type is the matrix, which is a two-dimensional array.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles, common operations, and real-</code></div>\n<div class=\"formula-box\"><code>Principles with Python\" by Joel Grus</code></div>\n<div class=\"formula-box\"><code>• O(1) access time by index</code></div>\n<div class=\"formula-box\"><code>• O(n) insertion/deletion time complexity deletion, visiting, etc.</code></div>\n<div class=\"formula-box\"><code>expandable element sequence with O(1) amortized time complexity for</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Fundamental Sequence Types Python offers four primary sequence Key operations: indexing, slicing, appending, inserting, deleting Lightweight memory representation Hashable (can be used as dictionary keys) More memory-efficient than lists Immutable sequences of Unicode characters</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-5_Array-Based_Sequences.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Array-Based Sequences\"]\n  M1[\"5.2 Python’s Sequence Types\"]\n  Root --> M1\n  M2[\"5.3 Low-Level Arrays\"]\n  Root --> M2\n  M3[\"5.4 Dynamic Arrays and Amortization\"]\n  Root --> M3\n  M4[\"5.5 Efficiency of Python’s Sequences\"]\n  Root --> M4\n  M5[\"5.6 Using Array-Based Sequences\"]\n  Root --> M5\n  M6[\"5.7 Multidimensional Data Sets\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Python’S Sequence Types",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Low-Level Arrays",
+      "definition": "Arrays are crucial for understanding memory management and performance optimization in Python.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Dynamic Arrays And Amortization",
+      "definition": "Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Using Array-Based Sequences",
+      "definition": "Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Multidimensional Data Sets",
+      "definition": "In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.2",
+      "topic": "Python’s Sequence Types",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in array-based sequences."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Low-Level Arrays",
+      "points": [
+        "Arrays are crucial for understanding memory management and performance optimization in Python.",
+        "Low-level arrays manage collection of items allowing for efficient access and manipulation.",
+        "In Python, low-level arrays differ significantly from high-level lists.",
+        "While lists are dynamic and can store heterogeneous data types, low-level arrays provide type-constrained, memory- efficient data storage."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Dynamic Arrays and Amortization",
+      "points": [
+        "Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.",
+        "In Python, lists serve as dynamic arrays, but understanding their underlying mechanics provides insight into their efficiency.",
+        "A dynamic array allows elements to be added or removed dynamically, with automatic memory reallocation.",
+        "In Python, lists serve as the primary implementation of dynamic arrays."
+      ]
+    },
+    {
+      "section_num": "5.5",
+      "topic": "Efficiency of Python’s Sequences Types",
+      "points": [
+        "Time Complexity Of Sequence Types Lists Python lists are dynamic arrays that allow for efficient element access and modification.",
+        "Tuples Tuples are more memory-efficient than lists because they no additional space is required for dynamic resizing.",
+        "Strings 14 Strings also consume more memory due to their immutability and the need for additional storage when concatenating or modifying.",
+        "Ranges Ranges are highly space-efficient as they do not store all values in memory but instead generate them on demand."
+      ]
+    },
+    {
+      "section_num": "5.6",
+      "topic": "Using Array-Based Sequences",
+      "points": [
+        "Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.",
+        "Python's Built-in List Python's list type is a highly flexible data structure for representing array-based sequences.",
+        "It provides a dynamic and efficient way to store and manipulate collections of elements.",
+        "NumPy arrays store elements of the same data type."
+      ]
+    },
+    {
+      "section_num": "5.7",
+      "topic": "Multidimensional Data Sets",
+      "points": [
+        "In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.",
+        "However, in many real-world applications, data is often multidimensional, requiring more complex structures to represent it efficiently.",
+        "Multidimensional Data Structures Multidimensional data structures allow us to store data in more than one dimension.",
+        "The most common type is the matrix, which is a two-dimensional array."
+      ]
+    }
+  ],
+  "formulas": [
+    "principles, common operations, and real-",
+    "Principles with Python\" by Joel Grus",
+    "• O(1) access time by index",
+    "• O(n) insertion/deletion time complexity deletion, visiting, etc.",
+    "expandable element sequence with O(1) amortized time complexity for"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Array-Based Sequences\"]\n  M1[\"5.2 Python’s Sequence Types\"]\n  Root --> M1\n  M2[\"5.3 Low-Level Arrays\"]\n  Root --> M2\n  M3[\"5.4 Dynamic Arrays and Amortization\"]\n  Root --> M3\n  M4[\"5.5 Efficiency of Python’s Sequences\"]\n  Root --> M4\n  M5[\"5.6 Using Array-Based Sequences\"]\n  Root --> M5\n  M6[\"5.7 Multidimensional Data Sets\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Python’S Sequence Types</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Low-Level Arrays</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Arrays are crucial for understanding memory management and performance optimization in Python.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Dynamic Arrays And Amortization</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Using Array-Based Sequences</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Multidimensional Data Sets</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Python’s Sequence Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of python’s sequence types.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in array-based sequences.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Low-Level Arrays</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Arrays are crucial for understanding memory management and performance optimization in Python.</li>\n<li>Low-level arrays manage collection of items allowing for efficient access and manipulation.</li>\n<li>In Python, low-level arrays differ significantly from high-level lists.</li>\n<li>While lists are dynamic and can store heterogeneous data types, low-level arrays provide type-constrained, memory- efficient data storage.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Dynamic Arrays and Amortization</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Dynamic Arrays in Python Dynamic arrays expand and shrink in size as elements are added or removed.</li>\n<li>In Python, lists serve as dynamic arrays, but understanding their underlying mechanics provides insight into their efficiency.</li>\n<li>A dynamic array allows elements to be added or removed dynamically, with automatic memory reallocation.</li>\n<li>In Python, lists serve as the primary implementation of dynamic arrays.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Efficiency of Python’s Sequences Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Time Complexity Of Sequence Types Lists Python lists are dynamic arrays that allow for efficient element access and modification.</li>\n<li>Tuples Tuples are more memory-efficient than lists because they no additional space is required for dynamic resizing.</li>\n<li>Strings 14 Strings also consume more memory due to their immutability and the need for additional storage when concatenating or modifying.</li>\n<li>Ranges Ranges are highly space-efficient as they do not store all values in memory but instead generate them on demand.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6 Using Array-Based Sequences</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python, a versatile programming language, offers robust support for array- based sequences through its built-in list type and the powerful NumPy library.</li>\n<li>Python's Built-in List Python's list type is a highly flexible data structure for representing array-based sequences.</li>\n<li>It provides a dynamic and efficient way to store and manipulate collections of elements.</li>\n<li>NumPy arrays store elements of the same data type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.7 Multidimensional Data Sets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sections, we explored the concept of one-dimensional data structures, such as lists and arrays.</li>\n<li>However, in many real-world applications, data is often multidimensional, requiring more complex structures to represent it efficiently.</li>\n<li>Multidimensional Data Structures Multidimensional data structures allow us to store data in more than one dimension.</li>\n<li>The most common type is the matrix, which is a two-dimensional array.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles, common operations, and real-</code></div>\n<div class=\"formula-box\"><code>Principles with Python\" by Joel Grus</code></div>\n<div class=\"formula-box\"><code>• O(1) access time by index</code></div>\n<div class=\"formula-box\"><code>• O(n) insertion/deletion time complexity deletion, visiting, etc.</code></div>\n<div class=\"formula-box\"><code>expandable element sequence with O(1) amortized time complexity for</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Fundamental Sequence Types Python offers four primary sequence Key operations: indexing, slicing, appending, inserting, deleting Lightweight memory representation Hashable (can be used as dictionary keys) More memory-efficient than lists Immutable sequences of Unicode characters</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-5_Array-Based_Sequences.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Database Recovery and Security",
+  "filename": "Unit-11_Database_Recovery_and_Security.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-11_Database_Recovery_and_Security.pdf",
+  "total_pages": 23,
+  "word_count": 10579,
+  "est_read_time_minutes": 59,
+  "objectives": [
+    "Based Recovery",
+    "made disasters. Database recovery techniques are"
+  ],
+  "summary": ", it can be said that the basic access matrix is the representation of basic access rules. These rules can be written using SQL statements, which are given in the 11.5.3 SQL Support for Security and Recovery You would need to create the users or roles before you grant them various permissions. The permissions then can be granted to a created user or role. This can be done with the use of the SQL GRANT statement.",
+  "flashcards": [
+    {
+      "question": "What is the need for recovery? What is the basic unit of recovery? …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "The database system security may depend on the security of the Operating system, including the network security; and the application that uses the database and services that interact with the web server.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is the log-based recovery? …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "GRANT ALTER DATABASE TO UserName",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is a checkpoint? Why is it needed? How does a checkpoint help in recovery?",
+      "answer": "REVOKE GRANT OPTION FOR <permissions> ON <table> FROM <user/role>",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is deferred database modification in recovery algorithms? …………………………………………………………………………………",
+      "answer": "The database system security may depend on the security of the Operating system, including the network security; and the application that uses the database and services that interact with the web server.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "How is log of the deferred database modification technique differ from the log of Immediate database modification?",
+      "answer": "GRANT ALTER DATABASE TO UserName",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Define buffer management and remote backup system in the context of recovery. …………………………………………………………………………………… ……………………………………………………………………………………",
+      "answer": "REVOKE GRANT OPTION FOR <permissions> ON <table> FROM <user/role>",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Integrity Database Security Usually and how is it characterized?",
+      "answer": "Integrity Database Security Usually the avoidance of unauthorised access and modification of data of the database, whereas database integrity refers to the avoidance of accidental loss of consistency of data.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Database Recovery and Securi\"]\n  M1[\"11.2 What Is Recovery?\"]\n  Root --> M1\n  M1_1[\"11.2.1 Kinds of Failures\"]\n  M1 --> M1_1\n  M1_2[\"11.2.2 Storage Structures for Recove\"]\n  M1 --> M1_2\n  M1_3[\"11.2.3 Recovery and Atomicity\"]\n  M1 --> M1_3\n  M2[\"11.3 Transaction Recovery\"]\n  Root --> M2\n  M2_1[\"11.3.1 Log-Based Recovery\"]\n  M2 --> M2_1\n  M2_2[\"11.3.2 Checkpoints in Recovery\"]\n  M2 --> M2_2\n  M2_3[\"11.3.3 Recovery Algorithms\"]\n  M2 --> M2_3\n  M3[\"11.4 Security in Commercial Database\"]\n  Root --> M3\n  M3_1[\"11.4.1 Common Database Security Fail\"]\n  M3 --> M3_1\n  M3_2[\"11.4.2 Database Security Levels\"]\n  M3 --> M3_2\n  M3_3[\"11.4.3 Relationship Between Security\"]\n  M3 --> M3_3\n  M4[\"11.5 Access Control\"]\n  Root --> M4\n  M4_1[\"11.5.1 Authorisation of Data Items\"]\n  M4 --> M4_1\n  M4_2[\"11.5.2 A Basic Model of Database Acc\"]\n  M4 --> M4_2\n  M4_3[\"11.5.3 SQL Support for Security and \"]\n  M4 --> M4_3\n  M5[\"11.6 Audit Trails in Databases\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integrity Database Security Usually</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Integrity Database Security Usually the avoidance of unauthorised access and modification of data of the database, whereas database integrity refers to the avoidance of accidental loss of consistency of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">What Is Recovery?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">after the start of a transaction but before the transaction commits, it makes several uncommitted changes in data items of a database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Kinds Of Failures</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An abnormal termination of a transaction may occur due to several reasons, including: a) user may decide to abort the transaction issued by him/her, b) there might be a deadlock in the system, c) there might be a system failure.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Storage Structures For Recovery</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">All these failures result in the inconsistent state of a database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Recovery And Atomicity</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The concept of recovery relates to the atomic nature of a transaction.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 What Is Recovery?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>after the start of a transaction but before the transaction commits, it makes several uncommitted changes in data items of a database.</li>\n<li>The database during this time may be in an inconsistent state.</li>\n<li>In practice, several things might happen to prevent a transaction from completing.</li>\n<li>Recovery techniques are designed to bring an inconsistent database, after a failure, into a consistent database state.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 Kinds of Failures</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An abnormal termination of a transaction may occur due to several reasons, including: a) user may decide to abort the transaction issued by him/her, b) there might be a deadlock in the system, c) there might be a system failure.</li>\n<li>The recovery mechanisms must ensure that a consistent state of the database can be restored under all circumstances.</li>\n<li>In case of transaction abort or deadlock, the system remains in control and can deal with the failure, but in case of a system failure, the system loses control because the computer itself has failed.</li>\n<li>Will the results of such failure be catastrophic?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.2 Storage Structures for Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>All these failures result in the inconsistent state of a database.</li>\n<li>Thus, we need a recovery scheme in a database system, but before we discuss recovery, let us briefly define the storage structure from the recovery point of view.</li>\n<li>There are various ways for storing information for database system recovery.</li>\n<li>These are: Volatile storage: Volatile storage does not survive system crashes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.3 Recovery and Atomicity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The concept of recovery relates to the atomic nature of a transaction.</li>\n<li>Atomicity is the property of a transaction, which states that a transaction is a complete unit.</li>\n<li>Thus, the execution of a part transaction can lead to an inconsistent state of the database, which may require database recovery.</li>\n<li>Let us explain this with the help of an example: Assume that a transaction transfers Rs.2000/- from A’s account to B’s account.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.4 Transactions and Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But how are the transactions handled during recovery?</li>\n<li>In other words, you may ROLLBACK the effect of a transaction.</li>\n<li>A transaction has committed, but the changes made by the transaction have not been communicated to the physical database on the hard disk.</li>\n<li>A software failure now occurs, and the contents of the CPU/ RAM are lost.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.5 Recovery in Small Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Failures can be handled using different recovery techniques that are discussed later in the unit.</li>\n<li>But the first question is: Do you really need recovery techniques as a failure control mechanism?</li>\n<li>The recovery techniques are somewhat expensive both in terms of time and memory space for small systems.</li>\n<li>In such a case, it is beneficial to avoid failures by some checks instead of deploying recovery techniques to make the database consistent.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Transaction Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section, a transaction is the unit of recovery.</li>\n<li>A commercial database system, like a banking system, may support many concurrent transactions at a time.</li>\n<li>A failure may affect multiple transactions in such systems.</li>\n<li>Several recovery techniques have been designed for commercial DBMSs.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.1 Log-Based Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us first define the term transaction log in the context of DBMS.</li>\n<li>A transaction log, in DBMS, records information about every transaction that modifies any data values in the database.</li>\n<li>A log contains the following information about a transaction: 6 • A transaction BEGIN marker.</li>\n<li>• Transaction identification - transaction ID, terminal ID, user ID, etc.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of transactions given in Unit</code></div>\n<div class=\"formula-box\"><code>property of a transaction, which states that a transaction is a complete unit. Thus, the</code></div>\n<div class=\"formula-box\"><code>property of the redo operation is called idempotent.</code></div>\n<div class=\"formula-box\"><code>rules that can be used to determine which user has what type</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">, it can be said that the basic access matrix is the representation of basic access rules. These rules can be written using SQL statements, which are given in the 11.5.3 SQL Support for Security and Recovery You would need to create the users or roles before you grant them various permissions. The permissions then can be granted to a created user or role. This can be done with the use of the SQL GRANT statement.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-11_Database_Recovery_and_Security.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Database Recovery and Securi\"]\n  M1[\"11.2 What Is Recovery?\"]\n  Root --> M1\n  M1_1[\"11.2.1 Kinds of Failures\"]\n  M1 --> M1_1\n  M1_2[\"11.2.2 Storage Structures for Recove\"]\n  M1 --> M1_2\n  M1_3[\"11.2.3 Recovery and Atomicity\"]\n  M1 --> M1_3\n  M2[\"11.3 Transaction Recovery\"]\n  Root --> M2\n  M2_1[\"11.3.1 Log-Based Recovery\"]\n  M2 --> M2_1\n  M2_2[\"11.3.2 Checkpoints in Recovery\"]\n  M2 --> M2_2\n  M2_3[\"11.3.3 Recovery Algorithms\"]\n  M2 --> M2_3\n  M3[\"11.4 Security in Commercial Database\"]\n  Root --> M3\n  M3_1[\"11.4.1 Common Database Security Fail\"]\n  M3 --> M3_1\n  M3_2[\"11.4.2 Database Security Levels\"]\n  M3 --> M3_2\n  M3_3[\"11.4.3 Relationship Between Security\"]\n  M3 --> M3_3\n  M4[\"11.5 Access Control\"]\n  Root --> M4\n  M4_1[\"11.5.1 Authorisation of Data Items\"]\n  M4 --> M4_1\n  M4_2[\"11.5.2 A Basic Model of Database Acc\"]\n  M4 --> M4_2\n  M4_3[\"11.5.3 SQL Support for Security and \"]\n  M4 --> M4_3\n  M5[\"11.6 Audit Trails in Databases\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Integrity Database Security Usually",
+      "definition": "Integrity Database Security Usually the avoidance of unauthorised access and modification of data of the database, whereas database integrity refers to the avoidance of accidental loss of consistency of data.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "What Is Recovery?",
+      "definition": "after the start of a transaction but before the transaction commits, it makes several uncommitted changes in data items of a database.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Kinds Of Failures",
+      "definition": "An abnormal termination of a transaction may occur due to several reasons, including: a) user may decide to abort the transaction issued by him/her, b) there might be a deadlock in the system, c) there might be a system failure.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Storage Structures For Recovery",
+      "definition": "All these failures result in the inconsistent state of a database.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Recovery And Atomicity",
+      "definition": "The concept of recovery relates to the atomic nature of a transaction.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "11.2",
+      "topic": "What Is Recovery?",
+      "points": [
+        "after the start of a transaction but before the transaction commits, it makes several uncommitted changes in data items of a database.",
+        "The database during this time may be in an inconsistent state.",
+        "In practice, several things might happen to prevent a transaction from completing.",
+        "Recovery techniques are designed to bring an inconsistent database, after a failure, into a consistent database state."
+      ]
+    },
+    {
+      "section_num": "11.2.1",
+      "topic": "Kinds of Failures",
+      "points": [
+        "An abnormal termination of a transaction may occur due to several reasons, including: a) user may decide to abort the transaction issued by him/her, b) there might be a deadlock in the system, c) there might be a system failure.",
+        "The recovery mechanisms must ensure that a consistent state of the database can be restored under all circumstances.",
+        "In case of transaction abort or deadlock, the system remains in control and can deal with the failure, but in case of a system failure, the system loses control because the computer itself has failed.",
+        "Will the results of such failure be catastrophic?"
+      ]
+    },
+    {
+      "section_num": "11.2.2",
+      "topic": "Storage Structures for Recovery",
+      "points": [
+        "All these failures result in the inconsistent state of a database.",
+        "Thus, we need a recovery scheme in a database system, but before we discuss recovery, let us briefly define the storage structure from the recovery point of view.",
+        "There are various ways for storing information for database system recovery.",
+        "These are: Volatile storage: Volatile storage does not survive system crashes."
+      ]
+    },
+    {
+      "section_num": "11.2.3",
+      "topic": "Recovery and Atomicity",
+      "points": [
+        "The concept of recovery relates to the atomic nature of a transaction.",
+        "Atomicity is the property of a transaction, which states that a transaction is a complete unit.",
+        "Thus, the execution of a part transaction can lead to an inconsistent state of the database, which may require database recovery.",
+        "Let us explain this with the help of an example: Assume that a transaction transfers Rs.2000/- from A’s account to B’s account."
+      ]
+    },
+    {
+      "section_num": "11.2.4",
+      "topic": "Transactions and Recovery",
+      "points": [
+        "But how are the transactions handled during recovery?",
+        "In other words, you may ROLLBACK the effect of a transaction.",
+        "A transaction has committed, but the changes made by the transaction have not been communicated to the physical database on the hard disk.",
+        "A software failure now occurs, and the contents of the CPU/ RAM are lost."
+      ]
+    },
+    {
+      "section_num": "11.2.5",
+      "topic": "Recovery in Small Databases",
+      "points": [
+        "Failures can be handled using different recovery techniques that are discussed later in the unit.",
+        "But the first question is: Do you really need recovery techniques as a failure control mechanism?",
+        "The recovery techniques are somewhat expensive both in terms of time and memory space for small systems.",
+        "In such a case, it is beneficial to avoid failures by some checks instead of deploying recovery techniques to make the database consistent."
+      ]
+    },
+    {
+      "section_num": "11.3",
+      "topic": "Transaction Recovery",
+      "points": [
+        "As discussed in the previous section, a transaction is the unit of recovery.",
+        "A commercial database system, like a banking system, may support many concurrent transactions at a time.",
+        "A failure may affect multiple transactions in such systems.",
+        "Several recovery techniques have been designed for commercial DBMSs."
+      ]
+    },
+    {
+      "section_num": "11.3.1",
+      "topic": "Log-Based Recovery",
+      "points": [
+        "Let us first define the term transaction log in the context of DBMS.",
+        "A transaction log, in DBMS, records information about every transaction that modifies any data values in the database.",
+        "A log contains the following information about a transaction: 6 • A transaction BEGIN marker.",
+        "• Transaction identification - transaction ID, terminal ID, user ID, etc."
+      ]
+    }
+  ],
+  "formulas": [
+    "property of transactions given in Unit",
+    "property of a transaction, which states that a transaction is a complete unit. Thus, the",
+    "property of the redo operation is called idempotent.",
+    "rules that can be used to determine which user has what type"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Database Recovery and Securi\"]\n  M1[\"11.2 What Is Recovery?\"]\n  Root --> M1\n  M1_1[\"11.2.1 Kinds of Failures\"]\n  M1 --> M1_1\n  M1_2[\"11.2.2 Storage Structures for Recove\"]\n  M1 --> M1_2\n  M1_3[\"11.2.3 Recovery and Atomicity\"]\n  M1 --> M1_3\n  M2[\"11.3 Transaction Recovery\"]\n  Root --> M2\n  M2_1[\"11.3.1 Log-Based Recovery\"]\n  M2 --> M2_1\n  M2_2[\"11.3.2 Checkpoints in Recovery\"]\n  M2 --> M2_2\n  M2_3[\"11.3.3 Recovery Algorithms\"]\n  M2 --> M2_3\n  M3[\"11.4 Security in Commercial Database\"]\n  Root --> M3\n  M3_1[\"11.4.1 Common Database Security Fail\"]\n  M3 --> M3_1\n  M3_2[\"11.4.2 Database Security Levels\"]\n  M3 --> M3_2\n  M3_3[\"11.4.3 Relationship Between Security\"]\n  M3 --> M3_3\n  M4[\"11.5 Access Control\"]\n  Root --> M4\n  M4_1[\"11.5.1 Authorisation of Data Items\"]\n  M4 --> M4_1\n  M4_2[\"11.5.2 A Basic Model of Database Acc\"]\n  M4 --> M4_2\n  M4_3[\"11.5.3 SQL Support for Security and \"]\n  M4 --> M4_3\n  M5[\"11.6 Audit Trails in Databases\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Integrity Database Security Usually</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Integrity Database Security Usually the avoidance of unauthorised access and modification of data of the database, whereas database integrity refers to the avoidance of accidental loss of consistency of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">What Is Recovery?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">after the start of a transaction but before the transaction commits, it makes several uncommitted changes in data items of a database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Kinds Of Failures</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An abnormal termination of a transaction may occur due to several reasons, including: a) user may decide to abort the transaction issued by him/her, b) there might be a deadlock in the system, c) there might be a system failure.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Storage Structures For Recovery</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">All these failures result in the inconsistent state of a database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Recovery And Atomicity</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The concept of recovery relates to the atomic nature of a transaction.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 What Is Recovery?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>after the start of a transaction but before the transaction commits, it makes several uncommitted changes in data items of a database.</li>\n<li>The database during this time may be in an inconsistent state.</li>\n<li>In practice, several things might happen to prevent a transaction from completing.</li>\n<li>Recovery techniques are designed to bring an inconsistent database, after a failure, into a consistent database state.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 Kinds of Failures</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An abnormal termination of a transaction may occur due to several reasons, including: a) user may decide to abort the transaction issued by him/her, b) there might be a deadlock in the system, c) there might be a system failure.</li>\n<li>The recovery mechanisms must ensure that a consistent state of the database can be restored under all circumstances.</li>\n<li>In case of transaction abort or deadlock, the system remains in control and can deal with the failure, but in case of a system failure, the system loses control because the computer itself has failed.</li>\n<li>Will the results of such failure be catastrophic?</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.2 Storage Structures for Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>All these failures result in the inconsistent state of a database.</li>\n<li>Thus, we need a recovery scheme in a database system, but before we discuss recovery, let us briefly define the storage structure from the recovery point of view.</li>\n<li>There are various ways for storing information for database system recovery.</li>\n<li>These are: Volatile storage: Volatile storage does not survive system crashes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.3 Recovery and Atomicity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The concept of recovery relates to the atomic nature of a transaction.</li>\n<li>Atomicity is the property of a transaction, which states that a transaction is a complete unit.</li>\n<li>Thus, the execution of a part transaction can lead to an inconsistent state of the database, which may require database recovery.</li>\n<li>Let us explain this with the help of an example: Assume that a transaction transfers Rs.2000/- from A’s account to B’s account.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.4 Transactions and Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>But how are the transactions handled during recovery?</li>\n<li>In other words, you may ROLLBACK the effect of a transaction.</li>\n<li>A transaction has committed, but the changes made by the transaction have not been communicated to the physical database on the hard disk.</li>\n<li>A software failure now occurs, and the contents of the CPU/ RAM are lost.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.5 Recovery in Small Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Failures can be handled using different recovery techniques that are discussed later in the unit.</li>\n<li>But the first question is: Do you really need recovery techniques as a failure control mechanism?</li>\n<li>The recovery techniques are somewhat expensive both in terms of time and memory space for small systems.</li>\n<li>In such a case, it is beneficial to avoid failures by some checks instead of deploying recovery techniques to make the database consistent.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Transaction Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section, a transaction is the unit of recovery.</li>\n<li>A commercial database system, like a banking system, may support many concurrent transactions at a time.</li>\n<li>A failure may affect multiple transactions in such systems.</li>\n<li>Several recovery techniques have been designed for commercial DBMSs.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.1 Log-Based Recovery</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us first define the term transaction log in the context of DBMS.</li>\n<li>A transaction log, in DBMS, records information about every transaction that modifies any data values in the database.</li>\n<li>A log contains the following information about a transaction: 6 • A transaction BEGIN marker.</li>\n<li>• Transaction identification - transaction ID, terminal ID, user ID, etc.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of transactions given in Unit</code></div>\n<div class=\"formula-box\"><code>property of a transaction, which states that a transaction is a complete unit. Thus, the</code></div>\n<div class=\"formula-box\"><code>property of the redo operation is called idempotent.</code></div>\n<div class=\"formula-box\"><code>rules that can be used to determine which user has what type</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">, it can be said that the basic access matrix is the representation of basic access rules. These rules can be written using SQL statements, which are given in the 11.5.3 SQL Support for Security and Recovery You would need to create the users or roles before you grant them various permissions. The permissions then can be granted to a created user or role. This can be done with the use of the SQL GRANT statement.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-11_Database_Recovery_and_Security.pdf')\">\n          📄 Read Original IGNOU PDF (23 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

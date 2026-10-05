@@ -1,0 +1,173 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_03",
+  "unit_num": "Unit 3",
+  "title": "Entity Relationship Model",
+  "filename": "Unit-3_Entity_Relationship_Model.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-3_Entity_Relationship_Model.pdf",
+  "total_pages": 28,
+  "word_count": 8375,
+  "est_read_time_minutes": 47,
+  "objectives": [
+    "R diagram Basics",
+    "R Features",
+    "R Diagram to Relational Database",
+    "R and EER Diagram to Relations",
+    "Relationship (E",
+    "R) model. The E"
+  ],
+  "summary": "This unit presents the concept of E-R model and EER models. Both these models are represented with the help of E-R diagram and EER diagram. These diagrams are very powerful tools to represent the need of data in a database system and can be used for the design of a good database system. The E-R model explained in this unit covers the basic aspects of E-R modeling. The unit defines the concept of entities, attributes and relationships. Further, it defines different types of entities like strong",
+  "flashcards": [
+    {
+      "question": "Convert the E-R diagram created for question 2 above into a relational database. ………………………………………………………………………… …………………………………………………………………………",
+      "answer": "The modified EER diagram is: FullTimeFaculty",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is the use of the EER diagram? ………………………………………………………………………… ………………………………………………………………………… …………………………………………………………………………",
+      "answer": "In Entity Relationship Model, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the constraints used in EER diagrams? ………………………………………………………………………… ………………………………………………………………………… …………………………………………………………………………",
+      "answer": "The basic constraints used in EER diagrams are disjointness, overlapping and unions.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "How is an EER diagram converted into a relation? ………………………………………………………………………… ………………………………………………………………………… …………………………………………………………………………",
+      "answer": "For disjointness and union constraints the chances are that you create separate relations for the subclasses and no relation for super class. For overlapping constraints, it is advisable to create a relation of super class and the relations of sub-classes will have only those att",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The E-R diagram for supplier-and-parts database is given as follows:",
+      "answer": "For disjointness and union constraints the chances are that you create separate relations for the subclasses and no relation for super class. For overlapping constraints, it is advisable to create a relation of super class and the relations of sub-classes will have only those att",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Let us first make a simple relation for the E-R diagram in the answer to question",
+      "answer": "The modified EER diagram is: FullTimeFaculty",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is Rollno and how is it characterized?",
+      "answer": "Rollno relation Student Figure 3.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Entity Relationship Model\"]\n  M1[\"3.1 Objective\"]\n  Root --> M1\n  M2[\"3.2 Entity Relationship E-R Model\"]\n  Root --> M2\n  M2_1[\"3.2.1 Entities\"]\n  M2 --> M2_1\n  M2_2[\"3.2.2 Attributes\"]\n  M2 --> M2_2\n  M2_3[\"3.2.3 Relationships\"]\n  M2 --> M2_3\n  M3[\"3.3 An Example\"]\n  Root --> M3\n  M4[\"3.4 Conversion of E-R Diagram to Rel\"]\n  Root --> M4\n  M5[\"3.5 Enhanced E-R Model\"]\n  Root --> M5\n  M6[\"3.6 Converting E-R and EER Diagram t\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Rollno</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Rollno relation Student Figure 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Objective</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of objective.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Entity Relationship (E-R) Model</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Entities</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">First let us answer the question: What are entities?</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Attributes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An attribute is an element of an entity, which can contain a representative value.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.1 Objective</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of objective.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in entity relationship model.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Entity Relationship (E-R) Model</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model.</li>\n<li>• It allows you to describe the data involved in a real-world enterprise in terms of entities and their relationships.</li>\n<li>• It is widely used to create an initial design of a database.</li>\n<li>• It provides a set of useful concepts that make it convenient for a developer to move from a basic set of information to a detailed and precise description of information that can be easily implemented in a database system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Entities</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>First let us answer the question: What are entities?</li>\n<li>• An entity need not be a physical entity, it can also represent a concept in the real world, e.g., project, loan, etc.</li>\n<li>• It represents a class of things, not any one instance, e.g., ‘STUDENT’ entity has instances of ‘Ramesh’ and ‘Mohan’.</li>\n<li>Entity Set or Entity Type: A collection of a similar kind of entity is called an Entity Set or entity type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.2 Attributes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An attribute is an element of an entity, which can contain a representative value.</li>\n<li>In other words, an entity is represented by a set of attributes.</li>\n<li>For example, a Student entity set may consist of attributes - Roll no, student’s name, age, address, course, etc.</li>\n<li>An entity will have a value for each of its attributes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.3 Relationships</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>First, let us define the term relationships, i.e.</li>\n<li>Relationship Sets A relationship set is a set of relationships of the same type.</li>\n<li>For example, consider the relationship between two entity sets STUDENT and COURSE.</li>\n<li>Collection of all the instances of relationship opts forms a relationship set.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.4 E-R diagram Basics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The logical structure of a database is modeled using an E-R model, which is graphically represented with the help of an E-R diagram.</li>\n<li>Degree of a relationship set: The degree of a relationship set is the number of participating Entity sets.</li>\n<li>The relationship between two entities is called a binary relationship.</li>\n<li>A relationship among three entities is called a ternary relationship.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.5 More about Relationships</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, you will go through some of the important concepts, which are used for making good E-R models.</li>\n<li>Degree of a relationship set: The degree of a relationship set is the number of participating Entity sets.</li>\n<li>The relationship between two entities is called a binary relationship.</li>\n<li>A relationship among three entities is called a ternary relationship.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.6 Extended E-R Features</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Although, the basic features of E-R diagrams are sufficient to design many database situations.</li>\n<li>However, with more complex relations and advanced database applications, it is required to use extended features of E-R models.</li>\n<li>The three such features are: • Generalisation • Specialisation, and • Aggregation TaughtBy Course Faculty N M WrittenBy Book Author N M We have explained them with the help of an example.</li>\n<li>More details on them are available in the further readings.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule for communication among entities:</code></div>\n<div class=\"formula-box\"><code>rule for conversation may be to decompose all the specialised entities into</code></div>\n<div class=\"formula-box\"><code>rules for converting the EER diagram, which primarily includes specialisation</code></div>\n<div class=\"formula-box\"><code>rules stated above. A relation is</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit presents the concept of E-R model and EER models. Both these models are represented with the help of E-R diagram and EER diagram. These diagrams are very powerful tools to represent the need of data in a database system and can be used for the design of a good database system. The E-R model explained in this unit covers the basic aspects of E-R modeling. The unit defines the concept of entities, attributes and relationships. Further, it defines different types of entities like strong</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-3_Entity_Relationship_Model.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 3 Entity Relationship Model\"]\n  M1[\"3.1 Objective\"]\n  Root --> M1\n  M2[\"3.2 Entity Relationship E-R Model\"]\n  Root --> M2\n  M2_1[\"3.2.1 Entities\"]\n  M2 --> M2_1\n  M2_2[\"3.2.2 Attributes\"]\n  M2 --> M2_2\n  M2_3[\"3.2.3 Relationships\"]\n  M2 --> M2_3\n  M3[\"3.3 An Example\"]\n  Root --> M3\n  M4[\"3.4 Conversion of E-R Diagram to Rel\"]\n  Root --> M4\n  M5[\"3.5 Enhanced E-R Model\"]\n  Root --> M5\n  M6[\"3.6 Converting E-R and EER Diagram t\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Rollno",
+      "definition": "Rollno relation Student Figure 3.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Objective",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of objective.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Entity Relationship (E-R) Model",
+      "definition": "Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Entities",
+      "definition": "First let us answer the question: What are entities?",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Attributes",
+      "definition": "An attribute is an element of an entity, which can contain a representative value.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "3.1",
+      "topic": "Objective",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of objective.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in entity relationship model."
+      ]
+    },
+    {
+      "section_num": "3.2",
+      "topic": "Entity Relationship (E-R) Model",
+      "points": [
+        "Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model.",
+        "• It allows you to describe the data involved in a real-world enterprise in terms of entities and their relationships.",
+        "• It is widely used to create an initial design of a database.",
+        "• It provides a set of useful concepts that make it convenient for a developer to move from a basic set of information to a detailed and precise description of information that can be easily implemented in a database system."
+      ]
+    },
+    {
+      "section_num": "3.2.1",
+      "topic": "Entities",
+      "points": [
+        "First let us answer the question: What are entities?",
+        "• An entity need not be a physical entity, it can also represent a concept in the real world, e.g., project, loan, etc.",
+        "• It represents a class of things, not any one instance, e.g., ‘STUDENT’ entity has instances of ‘Ramesh’ and ‘Mohan’.",
+        "Entity Set or Entity Type: A collection of a similar kind of entity is called an Entity Set or entity type."
+      ]
+    },
+    {
+      "section_num": "3.2.2",
+      "topic": "Attributes",
+      "points": [
+        "An attribute is an element of an entity, which can contain a representative value.",
+        "In other words, an entity is represented by a set of attributes.",
+        "For example, a Student entity set may consist of attributes - Roll no, student’s name, age, address, course, etc.",
+        "An entity will have a value for each of its attributes."
+      ]
+    },
+    {
+      "section_num": "3.2.3",
+      "topic": "Relationships",
+      "points": [
+        "First, let us define the term relationships, i.e.",
+        "Relationship Sets A relationship set is a set of relationships of the same type.",
+        "For example, consider the relationship between two entity sets STUDENT and COURSE.",
+        "Collection of all the instances of relationship opts forms a relationship set."
+      ]
+    },
+    {
+      "section_num": "3.2.4",
+      "topic": "E-R diagram Basics",
+      "points": [
+        "The logical structure of a database is modeled using an E-R model, which is graphically represented with the help of an E-R diagram.",
+        "Degree of a relationship set: The degree of a relationship set is the number of participating Entity sets.",
+        "The relationship between two entities is called a binary relationship.",
+        "A relationship among three entities is called a ternary relationship."
+      ]
+    },
+    {
+      "section_num": "3.2.5",
+      "topic": "More about Relationships",
+      "points": [
+        "In this section, you will go through some of the important concepts, which are used for making good E-R models.",
+        "Degree of a relationship set: The degree of a relationship set is the number of participating Entity sets.",
+        "The relationship between two entities is called a binary relationship.",
+        "A relationship among three entities is called a ternary relationship."
+      ]
+    },
+    {
+      "section_num": "3.2.6",
+      "topic": "Extended E-R Features",
+      "points": [
+        "Although, the basic features of E-R diagrams are sufficient to design many database situations.",
+        "However, with more complex relations and advanced database applications, it is required to use extended features of E-R models.",
+        "The three such features are: • Generalisation • Specialisation, and • Aggregation TaughtBy Course Faculty N M WrittenBy Book Author N M We have explained them with the help of an example.",
+        "More details on them are available in the further readings."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule for communication among entities:",
+    "rule for conversation may be to decompose all the specialised entities into",
+    "rules for converting the EER diagram, which primarily includes specialisation",
+    "rules stated above. A relation is"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Entity Relationship Model\"]\n  M1[\"3.1 Objective\"]\n  Root --> M1\n  M2[\"3.2 Entity Relationship E-R Model\"]\n  Root --> M2\n  M2_1[\"3.2.1 Entities\"]\n  M2 --> M2_1\n  M2_2[\"3.2.2 Attributes\"]\n  M2 --> M2_2\n  M2_3[\"3.2.3 Relationships\"]\n  M2 --> M2_3\n  M3[\"3.3 An Example\"]\n  Root --> M3\n  M4[\"3.4 Conversion of E-R Diagram to Rel\"]\n  Root --> M4\n  M5[\"3.5 Enhanced E-R Model\"]\n  Root --> M5\n  M6[\"3.6 Converting E-R and EER Diagram t\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Rollno</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Rollno relation Student Figure 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Objective</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of objective.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Entity Relationship (E-R) Model</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Entities</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">First let us answer the question: What are entities?</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Attributes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An attribute is an element of an entity, which can contain a representative value.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.1 Objective</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of objective.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in entity relationship model.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Entity Relationship (E-R) Model</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Some of the important characteristics of E-R model are listed below: • Entity relationship model is a high-level conceptual data model.</li>\n<li>• It allows you to describe the data involved in a real-world enterprise in terms of entities and their relationships.</li>\n<li>• It is widely used to create an initial design of a database.</li>\n<li>• It provides a set of useful concepts that make it convenient for a developer to move from a basic set of information to a detailed and precise description of information that can be easily implemented in a database system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Entities</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>First let us answer the question: What are entities?</li>\n<li>• An entity need not be a physical entity, it can also represent a concept in the real world, e.g., project, loan, etc.</li>\n<li>• It represents a class of things, not any one instance, e.g., ‘STUDENT’ entity has instances of ‘Ramesh’ and ‘Mohan’.</li>\n<li>Entity Set or Entity Type: A collection of a similar kind of entity is called an Entity Set or entity type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.2 Attributes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An attribute is an element of an entity, which can contain a representative value.</li>\n<li>In other words, an entity is represented by a set of attributes.</li>\n<li>For example, a Student entity set may consist of attributes - Roll no, student’s name, age, address, course, etc.</li>\n<li>An entity will have a value for each of its attributes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.3 Relationships</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>First, let us define the term relationships, i.e.</li>\n<li>Relationship Sets A relationship set is a set of relationships of the same type.</li>\n<li>For example, consider the relationship between two entity sets STUDENT and COURSE.</li>\n<li>Collection of all the instances of relationship opts forms a relationship set.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.4 E-R diagram Basics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The logical structure of a database is modeled using an E-R model, which is graphically represented with the help of an E-R diagram.</li>\n<li>Degree of a relationship set: The degree of a relationship set is the number of participating Entity sets.</li>\n<li>The relationship between two entities is called a binary relationship.</li>\n<li>A relationship among three entities is called a ternary relationship.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.5 More about Relationships</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, you will go through some of the important concepts, which are used for making good E-R models.</li>\n<li>Degree of a relationship set: The degree of a relationship set is the number of participating Entity sets.</li>\n<li>The relationship between two entities is called a binary relationship.</li>\n<li>A relationship among three entities is called a ternary relationship.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.6 Extended E-R Features</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Although, the basic features of E-R diagrams are sufficient to design many database situations.</li>\n<li>However, with more complex relations and advanced database applications, it is required to use extended features of E-R models.</li>\n<li>The three such features are: • Generalisation • Specialisation, and • Aggregation TaughtBy Course Faculty N M WrittenBy Book Author N M We have explained them with the help of an example.</li>\n<li>More details on them are available in the further readings.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule for communication among entities:</code></div>\n<div class=\"formula-box\"><code>rule for conversation may be to decompose all the specialised entities into</code></div>\n<div class=\"formula-box\"><code>rules for converting the EER diagram, which primarily includes specialisation</code></div>\n<div class=\"formula-box\"><code>rules stated above. A relation is</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit presents the concept of E-R model and EER models. Both these models are represented with the help of E-R diagram and EER diagram. These diagrams are very powerful tools to represent the need of data in a database system and can be used for the design of a good database system. The E-R model explained in this unit covers the basic aspects of E-R modeling. The unit defines the concept of entities, attributes and relationships. Further, it defines different types of entities like strong</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-3_Entity_Relationship_Model.pdf')\">\n          📄 Read Original IGNOU PDF (28 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,132 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_12",
+  "unit_num": "Unit 12",
+  "title": "Text Processing",
+  "filename": "Unit-13_Text_Processing.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-13_Text_Processing.pdf",
+  "total_pages": 41,
+  "word_count": 9182,
+  "est_read_time_minutes": 51,
+  "objectives": [
+    "Matching Algorithms",
+    "matching algorithms for finding occurrences of patterns within"
+  ],
+  "summary": "Text processing algorithms and data structures are fundamental to modern computing, enabling efficient handling of the massive amounts of digital text data generated daily. This unit covered essential concepts and techniques that form the backbone of search engines, compression tools, bioinformatics applications, and natural language processing systems. • Digitized Text Challenges: Understanding the scale and complexity of modern",
+  "flashcards": [
+    {
+      "question": "Question: What is the time complexity of the brute force pattern matching algorithm?",
+      "answer": "× (n+1) to store intermediate results, resulting in O(m × n) space complexity.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Question: What advantage does the KMP algorithm provide over brute force pattern matching?",
+      "answer": "Key Principle: Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Question: In dynamic programming for edit distance, what do the three operations represent?",
+      "answer": "Key Principle: Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Question: What is the time complexity of searching for a word of length m in a trie?",
+      "answer": "In Text Processing, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "Question: Which compression technique is most suitable for data with many consecutive repeated characters?",
+      "answer": "Key Principle: Text compression reduces storage space and transmission time.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "Question: What is the space complexity of computing edit distance using dynamic programming?",
+      "answer": "Key Principle: Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.",
+      "tag": "Exercise Q7"
+    },
+    {
+      "question": "What is Abundance Of Digitized Text and how is it characterized?",
+      "answer": "The amount of digitized text has grown exponentially over the past decades.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 12 Text Processing\"]\n  M1[\"13.2 Abundance of Digitized Text\"]\n  Root --> M1\n  M2[\"13.3 Pattern-Matching Algorithms\"]\n  Root --> M2\n  M3[\"13.4 Dynamic Programming\"]\n  Root --> M3\n  M4[\"13.5 Text Compression and the Greedy\"]\n  Root --> M4\n  M5[\"13.6 Tries\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Abundance Of Digitized Text</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The amount of digitized text has grown exponentially over the past decades.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Pattern-Matching Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Dynamic Programming</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Tries</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A trie (prefix tree) is a specialized tree data structure for storing strings, enabling efficient prefix-based operations.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Abundance of Digitized Text</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The amount of digitized text has grown exponentially over the past decades.</li>\n<li>Just as humans use different alphabets (Latin, Cyrillic, Chinese), computers use different encoding schemes to represent text.</li>\n<li>The Fundamental Problem: Computers only understand numbers (0s and 1s), but humans work with letters, symbols, and characters.</li>\n<li>We need a systematic way to convert between human text and computer numbers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Pattern-Matching Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.</li>\n<li>Start at the beginning: Place your finger at the first character of the text 2.</li>\n<li>Try to match: Compare each character of the pattern with the text starting from your current position 3.</li>\n<li>If all characters match: You found the pattern!</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Dynamic Programming</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.</li>\n<li>EDIT DISTANCE (LEVENSHTEIN DISTANCE) The edit distance between two strings is the minimum number of operations (insert, delete, substitute) needed to transform one string into another.</li>\n<li>Substitute: Replace one character with another The Dynamic Programming Approach: 1.</li>\n<li>Fill base cases: The first row and column represent the cost of transforming from/to an empty string (just insertions or deletions) 3.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Text Compression and the Greedy Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Text compression reduces storage space and transmission time.</li>\n<li>Greedy algorithms like Huffman coding provide optimal prefix-free codes.</li>\n<li>Huffman coding assigns shorter codes to more frequent characters.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.6 Tries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A trie (prefix tree) is a specialized tree data structure for storing strings, enabling efficient prefix-based operations.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle behind Huffman coding? a) Assign</code></div>\n<div class=\"formula-box\"><code>property makes Huffman codes uniquely decodable? a) All</code></div>\n<div class=\"formula-box\"><code>principle behind Huffman coding? a) Assign</code></div>\n<div class=\"formula-box\"><code>rule and good suffix</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Text processing algorithms and data structures are fundamental to modern computing, enabling efficient handling of the massive amounts of digital text data generated daily. This unit covered essential concepts and techniques that form the backbone of search engines, compression tools, bioinformatics applications, and natural language processing systems. • Digitized Text Challenges: Understanding the scale and complexity of modern</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-13_Text_Processing.pdf')\">\n          📄 Read Original IGNOU PDF (41 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 12 Text Processing\"]\n  M1[\"13.2 Abundance of Digitized Text\"]\n  Root --> M1\n  M2[\"13.3 Pattern-Matching Algorithms\"]\n  Root --> M2\n  M3[\"13.4 Dynamic Programming\"]\n  Root --> M3\n  M4[\"13.5 Text Compression and the Greedy\"]\n  Root --> M4\n  M5[\"13.6 Tries\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Abundance Of Digitized Text",
+      "definition": "The amount of digitized text has grown exponentially over the past decades.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Pattern-Matching Algorithms",
+      "definition": "Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Dynamic Programming",
+      "definition": "Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Tries",
+      "definition": "A trie (prefix tree) is a specialized tree data structure for storing strings, enabling efficient prefix-based operations.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "13.2",
+      "topic": "Abundance of Digitized Text",
+      "points": [
+        "The amount of digitized text has grown exponentially over the past decades.",
+        "Just as humans use different alphabets (Latin, Cyrillic, Chinese), computers use different encoding schemes to represent text.",
+        "The Fundamental Problem: Computers only understand numbers (0s and 1s), but humans work with letters, symbols, and characters.",
+        "We need a systematic way to convert between human text and computer numbers."
+      ]
+    },
+    {
+      "section_num": "13.3",
+      "topic": "Pattern-Matching Algorithms",
+      "points": [
+        "Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.",
+        "Start at the beginning: Place your finger at the first character of the text 2.",
+        "Try to match: Compare each character of the pattern with the text starting from your current position 3.",
+        "If all characters match: You found the pattern!"
+      ]
+    },
+    {
+      "section_num": "13.4",
+      "topic": "Dynamic Programming",
+      "points": [
+        "Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.",
+        "EDIT DISTANCE (LEVENSHTEIN DISTANCE) The edit distance between two strings is the minimum number of operations (insert, delete, substitute) needed to transform one string into another.",
+        "Substitute: Replace one character with another The Dynamic Programming Approach: 1.",
+        "Fill base cases: The first row and column represent the cost of transforming from/to an empty string (just insertions or deletions) 3."
+      ]
+    },
+    {
+      "section_num": "13.5",
+      "topic": "Text Compression and the Greedy Method",
+      "points": [
+        "Text compression reduces storage space and transmission time.",
+        "Greedy algorithms like Huffman coding provide optimal prefix-free codes.",
+        "Huffman coding assigns shorter codes to more frequent characters."
+      ]
+    },
+    {
+      "section_num": "13.6",
+      "topic": "Tries",
+      "points": [
+        "A trie (prefix tree) is a specialized tree data structure for storing strings, enabling efficient prefix-based operations."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle behind Huffman coding? a) Assign",
+    "property makes Huffman codes uniquely decodable? a) All",
+    "principle behind Huffman coding? a) Assign",
+    "rule and good suffix"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 12 Text Processing\"]\n  M1[\"13.2 Abundance of Digitized Text\"]\n  Root --> M1\n  M2[\"13.3 Pattern-Matching Algorithms\"]\n  Root --> M2\n  M3[\"13.4 Dynamic Programming\"]\n  Root --> M3\n  M4[\"13.5 Text Compression and the Greedy\"]\n  Root --> M4\n  M5[\"13.6 Tries\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Abundance Of Digitized Text</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The amount of digitized text has grown exponentially over the past decades.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Pattern-Matching Algorithms</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Dynamic Programming</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Tries</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A trie (prefix tree) is a specialized tree data structure for storing strings, enabling efficient prefix-based operations.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Abundance of Digitized Text</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The amount of digitized text has grown exponentially over the past decades.</li>\n<li>Just as humans use different alphabets (Latin, Cyrillic, Chinese), computers use different encoding schemes to represent text.</li>\n<li>The Fundamental Problem: Computers only understand numbers (0s and 1s), but humans work with letters, symbols, and characters.</li>\n<li>We need a systematic way to convert between human text and computer numbers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Pattern-Matching Algorithms</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Pattern matching is fundamental to text processing - finding all occurrences of a pattern string P within a text string T.</li>\n<li>Start at the beginning: Place your finger at the first character of the text 2.</li>\n<li>Try to match: Compare each character of the pattern with the text starting from your current position 3.</li>\n<li>If all characters match: You found the pattern!</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Dynamic Programming</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Dynamic programming is particularly useful for text processing problems involving sequence alignment, edit distance, and longest common subsequences.</li>\n<li>EDIT DISTANCE (LEVENSHTEIN DISTANCE) The edit distance between two strings is the minimum number of operations (insert, delete, substitute) needed to transform one string into another.</li>\n<li>Substitute: Replace one character with another The Dynamic Programming Approach: 1.</li>\n<li>Fill base cases: The first row and column represent the cost of transforming from/to an empty string (just insertions or deletions) 3.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.5 Text Compression and the Greedy Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Text compression reduces storage space and transmission time.</li>\n<li>Greedy algorithms like Huffman coding provide optimal prefix-free codes.</li>\n<li>Huffman coding assigns shorter codes to more frequent characters.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.6 Tries</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A trie (prefix tree) is a specialized tree data structure for storing strings, enabling efficient prefix-based operations.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle behind Huffman coding? a) Assign</code></div>\n<div class=\"formula-box\"><code>property makes Huffman codes uniquely decodable? a) All</code></div>\n<div class=\"formula-box\"><code>principle behind Huffman coding? a) Assign</code></div>\n<div class=\"formula-box\"><code>rule and good suffix</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Text processing algorithms and data structures are fundamental to modern computing, enabling efficient handling of the massive amounts of digital text data generated daily. This unit covered essential concepts and techniques that form the backbone of search engines, compression tools, bioinformatics applications, and natural language processing systems. • Digitized Text Challenges: Understanding the scale and complexity of modern</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-13_Text_Processing.pdf')\">\n          📄 Read Original IGNOU PDF (41 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

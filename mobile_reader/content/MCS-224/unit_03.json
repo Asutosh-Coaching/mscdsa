@@ -1,0 +1,175 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_03",
+  "unit_num": "Unit 3",
+  "title": "Uninformed and Informed Search",
+  "filename": "Unit-3_Uninformed_and_Informed_Search.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-3_Uninformed_and_Informed_Search.pdf",
+  "total_pages": 52,
+  "word_count": 15510,
+  "est_read_time_minutes": 86,
+  "objectives": [
+    "First search (BFS)",
+    "3.3.5\t Performance of DFS algorithm",
+    "3.4.1\t Time and space complexity of IDDFS",
+    "search problem as state space",
+    "First search",
+    "Algorithm"
+  ],
+  "summary": "Before an AI problem can be solved it must be represented as a state space. In AI, a wide range of problems can be formulated as search problem. The process of searching means a sequence of action that take you from an initial state to a goal state as sown in the following figure 1. Fig 1: A sequence of action in a search space from initial to goal state. In the unit 2 we have already examined the concept of a state space and",
+  "flashcards": [
+    {
+      "question": "Q.5 Apply AO* algorithm on the following graph. Heuristic value is also given at every node and assume the edge cost value of each node is",
+      "answer": "×p_i. Problem is to determine the order of multiplication or the way of parenthesizing the product of matrices, so that the minimum number of required operations",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Example 6: Given the 3 matrices A1, A2, A3 with their dimensions (",
+      "answer": "×p_i. Problem is to determine the order of multiplication or the way of parenthesizing the product of matrices, so that the minimum number of required operations",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": ",(4×10),(10×1). Consider the problem of solving this chain matrix multiplication. Apply the concept of AND-OR graph and find a minimum cost solution tree. (Multiple choice Questions) Q.",
+      "answer": "In Uninformed and Informed Search, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "open = [A]; closed = [ ] B is not the goal.",
+      "answer": "×p_i. Problem is to determine the order of multiplication or the way of parenthesizing the product of matrices, so that the minimum number of required operations",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "open = [B,C,D]; closed = [A] Put his children onto the queue.",
+      "answer": "×A3 and the minimum cost of multiplying A1×A2×A3 is",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "open = [C,D,E,F}; closed = [B,A] Put him in closed. He is done.",
+      "answer": "=3×5×10=150. Thus the total cost will be",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is A Heuristic Function H and how is it characterized?",
+      "answer": "A Heuristic Function H admissive if many general estimates.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Uninformed and Informed Searc\"]\n  M1[\"3.2 Formulating search in state spac\"]\n  Root --> M1\n  M1_1[\"3.2.1 Evaluation of search Algorithm\"]\n  M1 --> M1_1\n  M2[\"3.3 Uninformed Search\"]\n  Root --> M2\n  M2_1[\"3.3.1 Breath-First search BFS\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Time and space complexity of B\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Advantages & disadvantages of \"]\n  M2 --> M2_3\n  M3[\"3.4 Iterative Deepening Depth First \"]\n  Root --> M3\n  M3_1[\"3.4.1 Time and space complexity of I\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Advantages and Disadvantages o\"]\n  M3 --> M3_2\n  M4[\"3.5 Bidirectional search\"]\n  Root --> M4\n  M5[\"3.6 Comparison of Uninformed search \"]\n  Root --> M5\n  M6[\"3.7 Informed heuristic search\"]\n  Root --> M6\n  M6_1[\"3.7.1 Strategies for providing heuri\"]\n  M6 --> M6_1\n  M6_2[\"3.7.2 Formulation of Informed heuris\"]\n  M6 --> M6_2\n  M6_3[\"3.7.3 Best-First search\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Heuristic Function H</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Heuristic Function H admissive if many general estimates.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Evaluation Of Search Algorithm</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In any search algorithm, we select a node and generate its successor.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Uninformed Search</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The uninformed search does not contain any domain knowledge such as closeness, the location of the goal.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Breath-First Search (Bfs)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this technique the root node is expanded first, then all its successors are expanded and then their successors and so on.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Depth First Search (Dfs)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A Depth-First Search (DFS) explores a path all the way to a leaf before backtracking and exploring another path.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Formulating search in state space</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A state space is a graph, (V, E) where V is a set of nodes and E is a set of arcs, where each arc is directed from one node to another node.</li>\n<li> V: a node is a data structure that contains state description, plus, optionally other information related to the parent of the node, operation to generate the node from that parent, and other bookkeeping data.</li>\n<li> E: Each arc corresponds to an applicable action/operation.</li>\n<li>The source and destination nodes are called as parent (immediate predecessor) and child (immediate successor) nodes with respect to each other.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Evaluation of search Algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In any search algorithm, we select a node and generate its successor.</li>\n<li>Search strategies differ mainly on how to select an OPEN node for expansion at each step of search.</li>\n<li>Also, Insertion or deletion of any node from OPEN list depends on specific search strategy.</li>\n<li>Any search algorithms are commonly evaluated according to the following 4 criteria:It is the measure to evaluate the performance of the search algorithms:  Completeness: Guarantees finding a solution whenever one exists.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Uninformed Search</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The uninformed search does not contain any domain knowledge such as closeness, the location of the goal.</li>\n<li>It operates in a brute-force way as it only includes information about how to traverse the tree and how to identify leaf and goal nodes.</li>\n<li>Uninformed search applies a way in which searchtree is searched without any information about the search space like initial state operators and test for the goal, so it is also called blind search.</li>\n<li>It examines each node of the tree until it achieves the goal node.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.1 Breath-First search (BFS)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this technique the root node is expanded first, then all its successors are expanded and then their successors and so on.</li>\n<li>In general, in BFS, all nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.</li>\n<li>It means that all immediate children of nodes are explored before any of the children’s children are considered.</li>\n<li>A BFS algorithm uses a data structure-queue that works on FIFO principle.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.2 Time and space complexity of BFS</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider a complete search tree of depth d where each non-leaf node has b children (i.e., branching factor), has a total of 1+b+b2+b3+⋯+bd = 1.(bd+1-1) nodes.</li>\n<li>(b-1) Time complexity is the number of nodes generated, so time complexity of BFS algorithm is O(bd) Open= D,E,D,G CLOSED={A,B,C} Open=C,F,B,F CLOSED={A,B,C,D,E.G} Step2: A is removed from open.</li>\n<li>The node is expended, and its children B and C are generated.</li>\n<li>Step: 3: Node B is removed from open and is expended.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.3 Advantages & disadvantages of BFS</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Advantages: BFS has some advantages and are given below 1.</li>\n<li>BFS will never get trapped exploring bund alley.</li>\n<li>It is guaranteed to find a solution if one exists.</li>\n<li>Disadvantages: BFS has certain disadvantages also.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.4 Depth First search (DFS)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A Depth-First Search (DFS) explores a path all the way to a leaf before backtracking and exploring another path.</li>\n<li>That is expand deepest unexpanded node (expand most recently generated deepest node first).</li>\n<li>It works by always generating a descendent of the most recently expanded node until some depth cut off is reached and then backtracks to next most recently expanded node and generates one of its descendants.</li>\n<li>So only path of nodes from the initial node to the current node is stored, in order to execute the algorithm.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.5 Performance of DFS algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li> Time Required for DFS for tree of b branching factor and m depth (of shallowest goal node) is O(b^m).</li>\n<li> Space (memory) requirement for a tree with b branching factor and m depth (of shallowest goal node) is also O(bm)  BFS algorithm is Complete (if b is finite).</li>\n<li>Space is the advantage of DFS as compared to BFS.</li>\n<li>Advantages and disadvantages of DFS Advantages:  If depth-first search finds solution without exploring much in a path then the time and space it takes will be very less.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles for deciding which among</code></div>\n<div class=\"formula-box\"><code>rules), used to change the current state to another state and</code></div>\n<div class=\"formula-box\"><code>rules (operators), in combination with</code></div>\n<div class=\"formula-box\"><code>property: If A1 and A2 are two Admissible versions of</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Before an AI problem can be solved it must be represented as a state space. In AI, a wide range of problems can be formulated as search problem. The process of searching means a sequence of action that take you from an initial state to a goal state as sown in the following figure 1. Fig 1: A sequence of action in a search space from initial to goal state. In the unit 2 we have already examined the concept of a state space and</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-3_Uninformed_and_Informed_Search.pdf')\">\n          📄 Read Original IGNOU PDF (52 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 3 Uninformed and Informed Searc\"]\n  M1[\"3.2 Formulating search in state spac\"]\n  Root --> M1\n  M1_1[\"3.2.1 Evaluation of search Algorithm\"]\n  M1 --> M1_1\n  M2[\"3.3 Uninformed Search\"]\n  Root --> M2\n  M2_1[\"3.3.1 Breath-First search BFS\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Time and space complexity of B\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Advantages & disadvantages of \"]\n  M2 --> M2_3\n  M3[\"3.4 Iterative Deepening Depth First \"]\n  Root --> M3\n  M3_1[\"3.4.1 Time and space complexity of I\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Advantages and Disadvantages o\"]\n  M3 --> M3_2\n  M4[\"3.5 Bidirectional search\"]\n  Root --> M4\n  M5[\"3.6 Comparison of Uninformed search \"]\n  Root --> M5\n  M6[\"3.7 Informed heuristic search\"]\n  Root --> M6\n  M6_1[\"3.7.1 Strategies for providing heuri\"]\n  M6 --> M6_1\n  M6_2[\"3.7.2 Formulation of Informed heuris\"]\n  M6 --> M6_2\n  M6_3[\"3.7.3 Best-First search\"]\n  M6 --> M6_3",
+  "definitions": [
+    {
+      "term": "A Heuristic Function H",
+      "definition": "A Heuristic Function H admissive if many general estimates.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Evaluation Of Search Algorithm",
+      "definition": "In any search algorithm, we select a node and generate its successor.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Uninformed Search",
+      "definition": "The uninformed search does not contain any domain knowledge such as closeness, the location of the goal.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Breath-First Search (Bfs)",
+      "definition": "In this technique the root node is expanded first, then all its successors are expanded and then their successors and so on.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Depth First Search (Dfs)",
+      "definition": "A Depth-First Search (DFS) explores a path all the way to a leaf before backtracking and exploring another path.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "3.2",
+      "topic": "Formulating search in state space",
+      "points": [
+        "A state space is a graph, (V, E) where V is a set of nodes and E is a set of arcs, where each arc is directed from one node to another node.",
+        " V: a node is a data structure that contains state description, plus, optionally other information related to the parent of the node, operation to generate the node from that parent, and other bookkeeping data.",
+        " E: Each arc corresponds to an applicable action/operation.",
+        "The source and destination nodes are called as parent (immediate predecessor) and child (immediate successor) nodes with respect to each other."
+      ]
+    },
+    {
+      "section_num": "3.2.1",
+      "topic": "Evaluation of search Algorithm",
+      "points": [
+        "In any search algorithm, we select a node and generate its successor.",
+        "Search strategies differ mainly on how to select an OPEN node for expansion at each step of search.",
+        "Also, Insertion or deletion of any node from OPEN list depends on specific search strategy.",
+        "Any search algorithms are commonly evaluated according to the following 4 criteria:It is the measure to evaluate the performance of the search algorithms:  Completeness: Guarantees finding a solution whenever one exists."
+      ]
+    },
+    {
+      "section_num": "3.3",
+      "topic": "Uninformed Search",
+      "points": [
+        "The uninformed search does not contain any domain knowledge such as closeness, the location of the goal.",
+        "It operates in a brute-force way as it only includes information about how to traverse the tree and how to identify leaf and goal nodes.",
+        "Uninformed search applies a way in which searchtree is searched without any information about the search space like initial state operators and test for the goal, so it is also called blind search.",
+        "It examines each node of the tree until it achieves the goal node."
+      ]
+    },
+    {
+      "section_num": "3.3.1",
+      "topic": "Breath-First search (BFS)",
+      "points": [
+        "In this technique the root node is expanded first, then all its successors are expanded and then their successors and so on.",
+        "In general, in BFS, all nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.",
+        "It means that all immediate children of nodes are explored before any of the children’s children are considered.",
+        "A BFS algorithm uses a data structure-queue that works on FIFO principle."
+      ]
+    },
+    {
+      "section_num": "3.3.2",
+      "topic": "Time and space complexity of BFS",
+      "points": [
+        "Consider a complete search tree of depth d where each non-leaf node has b children (i.e., branching factor), has a total of 1+b+b2+b3+⋯+bd = 1.(bd+1-1) nodes.",
+        "(b-1) Time complexity is the number of nodes generated, so time complexity of BFS algorithm is O(bd) Open= D,E,D,G CLOSED={A,B,C} Open=C,F,B,F CLOSED={A,B,C,D,E.G} Step2: A is removed from open.",
+        "The node is expended, and its children B and C are generated.",
+        "Step: 3: Node B is removed from open and is expended."
+      ]
+    },
+    {
+      "section_num": "3.3.3",
+      "topic": "Advantages & disadvantages of BFS",
+      "points": [
+        "Advantages: BFS has some advantages and are given below 1.",
+        "BFS will never get trapped exploring bund alley.",
+        "It is guaranteed to find a solution if one exists.",
+        "Disadvantages: BFS has certain disadvantages also."
+      ]
+    },
+    {
+      "section_num": "3.3.4",
+      "topic": "Depth First search (DFS)",
+      "points": [
+        "A Depth-First Search (DFS) explores a path all the way to a leaf before backtracking and exploring another path.",
+        "That is expand deepest unexpanded node (expand most recently generated deepest node first).",
+        "It works by always generating a descendent of the most recently expanded node until some depth cut off is reached and then backtracks to next most recently expanded node and generates one of its descendants.",
+        "So only path of nodes from the initial node to the current node is stored, in order to execute the algorithm."
+      ]
+    },
+    {
+      "section_num": "3.3.5",
+      "topic": "Performance of DFS algorithm",
+      "points": [
+        " Time Required for DFS for tree of b branching factor and m depth (of shallowest goal node) is O(b^m).",
+        " Space (memory) requirement for a tree with b branching factor and m depth (of shallowest goal node) is also O(bm)  BFS algorithm is Complete (if b is finite).",
+        "Space is the advantage of DFS as compared to BFS.",
+        "Advantages and disadvantages of DFS Advantages:  If depth-first search finds solution without exploring much in a path then the time and space it takes will be very less."
+      ]
+    }
+  ],
+  "formulas": [
+    "principles for deciding which among",
+    "rules), used to change the current state to another state and",
+    "rules (operators), in combination with",
+    "property: If A1 and A2 are two Admissible versions of"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Uninformed and Informed Searc\"]\n  M1[\"3.2 Formulating search in state spac\"]\n  Root --> M1\n  M1_1[\"3.2.1 Evaluation of search Algorithm\"]\n  M1 --> M1_1\n  M2[\"3.3 Uninformed Search\"]\n  Root --> M2\n  M2_1[\"3.3.1 Breath-First search BFS\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Time and space complexity of B\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Advantages & disadvantages of \"]\n  M2 --> M2_3\n  M3[\"3.4 Iterative Deepening Depth First \"]\n  Root --> M3\n  M3_1[\"3.4.1 Time and space complexity of I\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Advantages and Disadvantages o\"]\n  M3 --> M3_2\n  M4[\"3.5 Bidirectional search\"]\n  Root --> M4\n  M5[\"3.6 Comparison of Uninformed search \"]\n  Root --> M5\n  M6[\"3.7 Informed heuristic search\"]\n  Root --> M6\n  M6_1[\"3.7.1 Strategies for providing heuri\"]\n  M6 --> M6_1\n  M6_2[\"3.7.2 Formulation of Informed heuris\"]\n  M6 --> M6_2\n  M6_3[\"3.7.3 Best-First search\"]\n  M6 --> M6_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Heuristic Function H</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Heuristic Function H admissive if many general estimates.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Evaluation Of Search Algorithm</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In any search algorithm, we select a node and generate its successor.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Uninformed Search</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The uninformed search does not contain any domain knowledge such as closeness, the location of the goal.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Breath-First Search (Bfs)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In this technique the root node is expanded first, then all its successors are expanded and then their successors and so on.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Depth First Search (Dfs)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A Depth-First Search (DFS) explores a path all the way to a leaf before backtracking and exploring another path.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Formulating search in state space</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A state space is a graph, (V, E) where V is a set of nodes and E is a set of arcs, where each arc is directed from one node to another node.</li>\n<li> V: a node is a data structure that contains state description, plus, optionally other information related to the parent of the node, operation to generate the node from that parent, and other bookkeeping data.</li>\n<li> E: Each arc corresponds to an applicable action/operation.</li>\n<li>The source and destination nodes are called as parent (immediate predecessor) and child (immediate successor) nodes with respect to each other.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Evaluation of search Algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In any search algorithm, we select a node and generate its successor.</li>\n<li>Search strategies differ mainly on how to select an OPEN node for expansion at each step of search.</li>\n<li>Also, Insertion or deletion of any node from OPEN list depends on specific search strategy.</li>\n<li>Any search algorithms are commonly evaluated according to the following 4 criteria:It is the measure to evaluate the performance of the search algorithms:  Completeness: Guarantees finding a solution whenever one exists.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Uninformed Search</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The uninformed search does not contain any domain knowledge such as closeness, the location of the goal.</li>\n<li>It operates in a brute-force way as it only includes information about how to traverse the tree and how to identify leaf and goal nodes.</li>\n<li>Uninformed search applies a way in which searchtree is searched without any information about the search space like initial state operators and test for the goal, so it is also called blind search.</li>\n<li>It examines each node of the tree until it achieves the goal node.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.1 Breath-First search (BFS)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this technique the root node is expanded first, then all its successors are expanded and then their successors and so on.</li>\n<li>In general, in BFS, all nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.</li>\n<li>It means that all immediate children of nodes are explored before any of the children’s children are considered.</li>\n<li>A BFS algorithm uses a data structure-queue that works on FIFO principle.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.2 Time and space complexity of BFS</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider a complete search tree of depth d where each non-leaf node has b children (i.e., branching factor), has a total of 1+b+b2+b3+⋯+bd = 1.(bd+1-1) nodes.</li>\n<li>(b-1) Time complexity is the number of nodes generated, so time complexity of BFS algorithm is O(bd) Open= D,E,D,G CLOSED={A,B,C} Open=C,F,B,F CLOSED={A,B,C,D,E.G} Step2: A is removed from open.</li>\n<li>The node is expended, and its children B and C are generated.</li>\n<li>Step: 3: Node B is removed from open and is expended.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.3 Advantages & disadvantages of BFS</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Advantages: BFS has some advantages and are given below 1.</li>\n<li>BFS will never get trapped exploring bund alley.</li>\n<li>It is guaranteed to find a solution if one exists.</li>\n<li>Disadvantages: BFS has certain disadvantages also.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.4 Depth First search (DFS)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A Depth-First Search (DFS) explores a path all the way to a leaf before backtracking and exploring another path.</li>\n<li>That is expand deepest unexpanded node (expand most recently generated deepest node first).</li>\n<li>It works by always generating a descendent of the most recently expanded node until some depth cut off is reached and then backtracks to next most recently expanded node and generates one of its descendants.</li>\n<li>So only path of nodes from the initial node to the current node is stored, in order to execute the algorithm.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.5 Performance of DFS algorithm</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li> Time Required for DFS for tree of b branching factor and m depth (of shallowest goal node) is O(b^m).</li>\n<li> Space (memory) requirement for a tree with b branching factor and m depth (of shallowest goal node) is also O(bm)  BFS algorithm is Complete (if b is finite).</li>\n<li>Space is the advantage of DFS as compared to BFS.</li>\n<li>Advantages and disadvantages of DFS Advantages:  If depth-first search finds solution without exploring much in a path then the time and space it takes will be very less.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principles for deciding which among</code></div>\n<div class=\"formula-box\"><code>rules), used to change the current state to another state and</code></div>\n<div class=\"formula-box\"><code>rules (operators), in combination with</code></div>\n<div class=\"formula-box\"><code>property: If A1 and A2 are two Admissible versions of</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Before an AI problem can be solved it must be represented as a state space. In AI, a wide range of problems can be formulated as search problem. The process of searching means a sequence of action that take you from an initial state to a goal state as sown in the following figure 1. Fig 1: A sequence of action in a search space from initial to goal state. In the unit 2 we have already examined the concept of a state space and</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-3_Uninformed_and_Informed_Search.pdf')\">\n          📄 Read Original IGNOU PDF (52 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

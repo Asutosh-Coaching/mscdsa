@@ -1,0 +1,175 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_03",
+  "unit_num": "Unit 3",
+  "title": "Measures of Dispersion",
+  "filename": "Unit-3_Measures_of_Dispersion.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-3_Measures_of_Dispersion.pdf",
+  "total_pages": 24,
+  "word_count": 7150,
+  "est_read_time_minutes": 40,
+  "objectives": [
+    "Basic Measures of Dispersion",
+    "3.2.2 Quartile Deviation",
+    "3.2.3 Mean Deviation",
+    "Variance and Standard Deviation",
+    "3.3.2 Standard Deviation"
+  ],
+  "summary": "In this unit, we have discussed: 1. A point to remember - While the mean value gives the value around which a distribution is scattered, the measure of dispersion tells how it is scattered. 2. This unit discusses the measures of dispersion, its use and measures of 3. The properties of a good measure of dispersion are also explained. 4. The different types of measures of dispersion were also discussed.",
+  "flashcards": [
+    {
+      "question": "Calculate the range for the following data:",
+      "answer": "95 Measures of Dispersion and it is given Q",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Calculate range for the following frequency distribution: Class",
+      "answer": "We have given Sk = 1.2 Q",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Calculate the Quartile Deviation for the following data: Class",
+      "answer": "Let us calculate the mean and median from the given distribution because mode is not well defined. Class f x CF",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Following are the marks of 7 students in Statistics:",
+      "answer": "We have the following distribution: x",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Find mean deviation for the following distribution: Class",
+      "answer": "We have the formulae for coefficient of variation",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "For a group containing 100 observations the arithmetic mean and standard deviation are",
+      "answer": "95 Measures of Dispersion and it is given Q",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Mean Deviation Mean Deviation and how is it characterized?",
+      "answer": "Mean Deviation Mean Deviation average of the sum of the absolute values of deviation from any arbitrary value viz.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Measures of Dispersion\"]\n  M1[\"3.2 Basic Measures of Dispersion\"]\n  Root --> M1\n  M1_1[\"3.2.1 Range\"]\n  M1 --> M1_1\n  M1_2[\"3.2.2 Quartile Deviation\"]\n  M1 --> M1_2\n  M1_3[\"3.2.3 Mean Deviation\"]\n  M1 --> M1_3\n  M2[\"3.3 Variance and Standard Deviation\"]\n  Root --> M2\n  M2_1[\"3.3.1 Variance\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Standard Deviation\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Root Mean Square Deviation\"]\n  M2 --> M2_3\n  M3[\"3.4 Normal Data Sets\"]\n  Root --> M3\n  M4[\"3.5 Concept of Skewness\"]\n  Root --> M4\n  M5[\"3.6 Various Measures of Skewness\"]\n  Root --> M5\n  M6[\"3.7 Concept of Kurtosis\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mean Deviation Mean Deviation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Mean Deviation Mean Deviation average of the sum of the absolute values of deviation from any arbitrary value viz.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Measures Of Dispersion</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">According to Spiegel, the degree to which numerical data tend to spread about an average value is called the variation or dispersion of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Range</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Quartile Deviation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The Descriptive Statistics 76 semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mean Deviation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Basic Measures of Dispersion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>According to Spiegel, the degree to which numerical data tend to spread about an average value is called the variation or dispersion of data.</li>\n<li>Actually, there are two basic kinds of measures of dispersion: (i) Absolute measures and (ii) Relative measures.</li>\n<li>The absolute measures of dispersion are used to measure the variability of a given data expressed in the same unit, while the relative measures are used to compare the variability of two or more sets of observations.</li>\n<li>Following are the different measures of dispersion: 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Range</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution.</li>\n<li>The demerit is that it is a crude measure because it is using only the maximum and the minimum observations of variable.</li>\n<li>However, it still finds applications in Order Statistics and Statistical Quality Control.</li>\n<li>It can be defined as Min Max X X R − = where, Max X : Maximum value of variable and Min X : Minimum value of variable.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.2 Quartile Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The Descriptive Statistics 76 semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D.</li>\n<li>Similarly, 3N/4 = 21 and 21st observation falls in the interval 30-40.</li>\n<li>It is often suggested to calculate it from the median because it gives least value when measured from the median.</li>\n<li>The deviation of an observation xi from the assumed mean A is defined as (xi – A).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.3 Mean Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz.</li>\n<li>It is often suggested to calculate it from the median because it gives least value when measured from the median.</li>\n<li>The deviation of an observation xi from the assumed mean A is defined as (xi – A).</li>\n<li>Therefore, the mean deviation can be defined as  = − = n 1 i i A x n 1 D M The quantity xi – Ais minimum when A is median.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Variance and Standard Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we discuss one of the most used measures of dispersion and certain related measures.</li>\n<li>We will first discuss the variance, followed by the standard deviation and the root mean square variation.</li>\n<li>Variance Variance is the average of the square of deviations of the values taken from mean.</li>\n<li>Taking a square of the deviation is a better technique to get rid of negative deviations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.1 Variance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Variance is the average of the square of deviations of the values taken from mean.</li>\n<li>Taking a square of the deviation is a better technique to get rid of negative deviations.</li>\n<li>Variance is defined as Var(x) = σ2 = ( )  = − n 1 i 2 i x x n 1 and for a frequency distribution, the formula is σ2 = ( )  = − k 1 i 2 i i x x f N 1 where, all symbols have their usual meanings.</li>\n<li>Descriptive Statistics 80 It should be noted that sum of squares of deviations is least when deviations are measured from the mean.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.2 Standard Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Standard deviation (SD) is defined as the positive square root of variance.</li>\n<li>The formula is SD = ( ) n x x n 1 i 2 i  = − and for a frequency distribution the formula is SD = ( )   = = − k i i k 1 i 2 i i f x x f where, all symbols have usual meanings.</li>\n<li>Descriptive Statistics 82 Example 9: Find the SD for the data in Example 2.</li>\n<li>Solution: In the Example 7, we have already found the Variance = 145.408 So SD = + 04 .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.3 Root Mean Square Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As we have discussed in the last sub-section, standard deviation is the positive square root of the average of the squares of deviations taken from the mean.</li>\n<li>If we take the deviations from assumed mean then it is called Root Mean Square Deviation and it is defined as RMSD = ( ) n A x n 1 i 2 i  = − where, A is the assumed mean.</li>\n<li>For a frequency distribution, the formula is RMSD = ( )   = = − k 1 i i k 1 i 2 i i f A x f When assumed mean is equal to the actual mean x A .e.i x = root mean square deviation will be equal to the standard deviation.</li>\n<li>Coefficient Of Variation Coefficient of Variation (CV) is defined as CV = 100 x   It is a relative measure of variability.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>∑fi |xi − median| =</code></div>\n<div class=\"formula-box\"><code>Var(x) = σ2 =</code></div>\n<div class=\"formula-box\"><code>measured from the mean. This means (xi – A)2 is least when A = Mean.</code></div>\n<div class=\"formula-box\"><code>are the means and σ12 , σ22,…,σk2 are the variances of k populations, then the</code></div>\n<div class=\"formula-box\"><code>6. The Points of Influx occur at point ±1 Standard Deviation (± 1 σ): The</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed: 1. A point to remember - While the mean value gives the value around which a distribution is scattered, the measure of dispersion tells how it is scattered. 2. This unit discusses the measures of dispersion, its use and measures of 3. The properties of a good measure of dispersion are also explained. 4. The different types of measures of dispersion were also discussed.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-3_Measures_of_Dispersion.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 3 Measures of Dispersion\"]\n  M1[\"3.2 Basic Measures of Dispersion\"]\n  Root --> M1\n  M1_1[\"3.2.1 Range\"]\n  M1 --> M1_1\n  M1_2[\"3.2.2 Quartile Deviation\"]\n  M1 --> M1_2\n  M1_3[\"3.2.3 Mean Deviation\"]\n  M1 --> M1_3\n  M2[\"3.3 Variance and Standard Deviation\"]\n  Root --> M2\n  M2_1[\"3.3.1 Variance\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Standard Deviation\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Root Mean Square Deviation\"]\n  M2 --> M2_3\n  M3[\"3.4 Normal Data Sets\"]\n  Root --> M3\n  M4[\"3.5 Concept of Skewness\"]\n  Root --> M4\n  M5[\"3.6 Various Measures of Skewness\"]\n  Root --> M5\n  M6[\"3.7 Concept of Kurtosis\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Mean Deviation Mean Deviation",
+      "definition": "Mean Deviation Mean Deviation average of the sum of the absolute values of deviation from any arbitrary value viz.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Basic Measures Of Dispersion",
+      "definition": "According to Spiegel, the degree to which numerical data tend to spread about an average value is called the variation or dispersion of data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Range",
+      "definition": "It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Quartile Deviation",
+      "definition": "The Descriptive Statistics 76 semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Mean Deviation",
+      "definition": "Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "3.2",
+      "topic": "Basic Measures of Dispersion",
+      "points": [
+        "According to Spiegel, the degree to which numerical data tend to spread about an average value is called the variation or dispersion of data.",
+        "Actually, there are two basic kinds of measures of dispersion: (i) Absolute measures and (ii) Relative measures.",
+        "The absolute measures of dispersion are used to measure the variability of a given data expressed in the same unit, while the relative measures are used to compare the variability of two or more sets of observations.",
+        "Following are the different measures of dispersion: 1."
+      ]
+    },
+    {
+      "section_num": "3.2.1",
+      "topic": "Range",
+      "points": [
+        "It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution.",
+        "The demerit is that it is a crude measure because it is using only the maximum and the minimum observations of variable.",
+        "However, it still finds applications in Order Statistics and Statistical Quality Control.",
+        "It can be defined as Min Max X X R − = where, Max X : Maximum value of variable and Min X : Minimum value of variable."
+      ]
+    },
+    {
+      "section_num": "3.2.2",
+      "topic": "Quartile Deviation",
+      "points": [
+        "The Descriptive Statistics 76 semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D.",
+        "Similarly, 3N/4 = 21 and 21st observation falls in the interval 30-40.",
+        "It is often suggested to calculate it from the median because it gives least value when measured from the median.",
+        "The deviation of an observation xi from the assumed mean A is defined as (xi – A)."
+      ]
+    },
+    {
+      "section_num": "3.2.3",
+      "topic": "Mean Deviation",
+      "points": [
+        "Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz.",
+        "It is often suggested to calculate it from the median because it gives least value when measured from the median.",
+        "The deviation of an observation xi from the assumed mean A is defined as (xi – A).",
+        "Therefore, the mean deviation can be defined as  = − = n 1 i i A x n 1 D M The quantity xi – Ais minimum when A is median."
+      ]
+    },
+    {
+      "section_num": "3.3",
+      "topic": "Variance and Standard Deviation",
+      "points": [
+        "In this section, we discuss one of the most used measures of dispersion and certain related measures.",
+        "We will first discuss the variance, followed by the standard deviation and the root mean square variation.",
+        "Variance Variance is the average of the square of deviations of the values taken from mean.",
+        "Taking a square of the deviation is a better technique to get rid of negative deviations."
+      ]
+    },
+    {
+      "section_num": "3.3.1",
+      "topic": "Variance",
+      "points": [
+        "Variance is the average of the square of deviations of the values taken from mean.",
+        "Taking a square of the deviation is a better technique to get rid of negative deviations.",
+        "Variance is defined as Var(x) = σ2 = ( )  = − n 1 i 2 i x x n 1 and for a frequency distribution, the formula is σ2 = ( )  = − k 1 i 2 i i x x f N 1 where, all symbols have their usual meanings.",
+        "Descriptive Statistics 80 It should be noted that sum of squares of deviations is least when deviations are measured from the mean."
+      ]
+    },
+    {
+      "section_num": "3.3.2",
+      "topic": "Standard Deviation",
+      "points": [
+        "Standard deviation (SD) is defined as the positive square root of variance.",
+        "The formula is SD = ( ) n x x n 1 i 2 i  = − and for a frequency distribution the formula is SD = ( )   = = − k i i k 1 i 2 i i f x x f where, all symbols have usual meanings.",
+        "Descriptive Statistics 82 Example 9: Find the SD for the data in Example 2.",
+        "Solution: In the Example 7, we have already found the Variance = 145.408 So SD = + 04 ."
+      ]
+    },
+    {
+      "section_num": "3.3.3",
+      "topic": "Root Mean Square Deviation",
+      "points": [
+        "As we have discussed in the last sub-section, standard deviation is the positive square root of the average of the squares of deviations taken from the mean.",
+        "If we take the deviations from assumed mean then it is called Root Mean Square Deviation and it is defined as RMSD = ( ) n A x n 1 i 2 i  = − where, A is the assumed mean.",
+        "For a frequency distribution, the formula is RMSD = ( )   = = − k 1 i i k 1 i 2 i i f A x f When assumed mean is equal to the actual mean x A .e.i x = root mean square deviation will be equal to the standard deviation.",
+        "Coefficient Of Variation Coefficient of Variation (CV) is defined as CV = 100 x   It is a relative measure of variability."
+      ]
+    }
+  ],
+  "formulas": [
+    "∑fi |xi − median| =",
+    "Var(x) = σ2 =",
+    "measured from the mean. This means (xi – A)2 is least when A = Mean.",
+    "are the means and σ12 , σ22,…,σk2 are the variances of k populations, then the",
+    "6. The Points of Influx occur at point ±1 Standard Deviation (± 1 σ): The"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Measures of Dispersion\"]\n  M1[\"3.2 Basic Measures of Dispersion\"]\n  Root --> M1\n  M1_1[\"3.2.1 Range\"]\n  M1 --> M1_1\n  M1_2[\"3.2.2 Quartile Deviation\"]\n  M1 --> M1_2\n  M1_3[\"3.2.3 Mean Deviation\"]\n  M1 --> M1_3\n  M2[\"3.3 Variance and Standard Deviation\"]\n  Root --> M2\n  M2_1[\"3.3.1 Variance\"]\n  M2 --> M2_1\n  M2_2[\"3.3.2 Standard Deviation\"]\n  M2 --> M2_2\n  M2_3[\"3.3.3 Root Mean Square Deviation\"]\n  M2 --> M2_3\n  M3[\"3.4 Normal Data Sets\"]\n  Root --> M3\n  M4[\"3.5 Concept of Skewness\"]\n  Root --> M4\n  M5[\"3.6 Various Measures of Skewness\"]\n  Root --> M5\n  M6[\"3.7 Concept of Kurtosis\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mean Deviation Mean Deviation</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Mean Deviation Mean Deviation average of the sum of the absolute values of deviation from any arbitrary value viz.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Measures Of Dispersion</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">According to Spiegel, the degree to which numerical data tend to spread about an average value is called the variation or dispersion of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Range</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Quartile Deviation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The Descriptive Statistics 76 semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mean Deviation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Basic Measures of Dispersion</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>According to Spiegel, the degree to which numerical data tend to spread about an average value is called the variation or dispersion of data.</li>\n<li>Actually, there are two basic kinds of measures of dispersion: (i) Absolute measures and (ii) Relative measures.</li>\n<li>The absolute measures of dispersion are used to measure the variability of a given data expressed in the same unit, while the relative measures are used to compare the variability of two or more sets of observations.</li>\n<li>Following are the different measures of dispersion: 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.1 Range</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution.</li>\n<li>The demerit is that it is a crude measure because it is using only the maximum and the minimum observations of variable.</li>\n<li>However, it still finds applications in Order Statistics and Statistical Quality Control.</li>\n<li>It can be defined as Min Max X X R − = where, Max X : Maximum value of variable and Min X : Minimum value of variable.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.2 Quartile Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The Descriptive Statistics 76 semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D.</li>\n<li>Similarly, 3N/4 = 21 and 21st observation falls in the interval 30-40.</li>\n<li>It is often suggested to calculate it from the median because it gives least value when measured from the median.</li>\n<li>The deviation of an observation xi from the assumed mean A is defined as (xi – A).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2.3 Mean Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz.</li>\n<li>It is often suggested to calculate it from the median because it gives least value when measured from the median.</li>\n<li>The deviation of an observation xi from the assumed mean A is defined as (xi – A).</li>\n<li>Therefore, the mean deviation can be defined as  = − = n 1 i i A x n 1 D M The quantity xi – Ais minimum when A is median.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Variance and Standard Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we discuss one of the most used measures of dispersion and certain related measures.</li>\n<li>We will first discuss the variance, followed by the standard deviation and the root mean square variation.</li>\n<li>Variance Variance is the average of the square of deviations of the values taken from mean.</li>\n<li>Taking a square of the deviation is a better technique to get rid of negative deviations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.1 Variance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Variance is the average of the square of deviations of the values taken from mean.</li>\n<li>Taking a square of the deviation is a better technique to get rid of negative deviations.</li>\n<li>Variance is defined as Var(x) = σ2 = ( )  = − n 1 i 2 i x x n 1 and for a frequency distribution, the formula is σ2 = ( )  = − k 1 i 2 i i x x f N 1 where, all symbols have their usual meanings.</li>\n<li>Descriptive Statistics 80 It should be noted that sum of squares of deviations is least when deviations are measured from the mean.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.2 Standard Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Standard deviation (SD) is defined as the positive square root of variance.</li>\n<li>The formula is SD = ( ) n x x n 1 i 2 i  = − and for a frequency distribution the formula is SD = ( )   = = − k i i k 1 i 2 i i f x x f where, all symbols have usual meanings.</li>\n<li>Descriptive Statistics 82 Example 9: Find the SD for the data in Example 2.</li>\n<li>Solution: In the Example 7, we have already found the Variance = 145.408 So SD = + 04 .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3.3 Root Mean Square Deviation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As we have discussed in the last sub-section, standard deviation is the positive square root of the average of the squares of deviations taken from the mean.</li>\n<li>If we take the deviations from assumed mean then it is called Root Mean Square Deviation and it is defined as RMSD = ( ) n A x n 1 i 2 i  = − where, A is the assumed mean.</li>\n<li>For a frequency distribution, the formula is RMSD = ( )   = = − k 1 i i k 1 i 2 i i f A x f When assumed mean is equal to the actual mean x A .e.i x = root mean square deviation will be equal to the standard deviation.</li>\n<li>Coefficient Of Variation Coefficient of Variation (CV) is defined as CV = 100 x   It is a relative measure of variability.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>∑fi |xi − median| =</code></div>\n<div class=\"formula-box\"><code>Var(x) = σ2 =</code></div>\n<div class=\"formula-box\"><code>measured from the mean. This means (xi – A)2 is least when A = Mean.</code></div>\n<div class=\"formula-box\"><code>are the means and σ12 , σ22,…,σk2 are the variances of k populations, then the</code></div>\n<div class=\"formula-box\"><code>6. The Points of Influx occur at point ±1 Standard Deviation (± 1 σ): The</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed: 1. A point to remember - While the mean value gives the value around which a distribution is scattered, the measure of dispersion tells how it is scattered. 2. This unit discusses the measures of dispersion, its use and measures of 3. The properties of a good measure of dispersion are also explained. 4. The different types of measures of dispersion were also discussed.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-3_Measures_of_Dispersion.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

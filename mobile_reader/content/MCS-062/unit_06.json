@@ -1,0 +1,159 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Descriptive and Exploratory Data Analysis - An Introduction",
+  "filename": "Unit-6_Descriptive_and_Exploratory_Data_Analysis_-_An_Introduction.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-6_Descriptive_and_Exploratory_Data_Analysis_-_An_Introduction.pdf",
+  "total_pages": 16,
+  "word_count": 4775,
+  "est_read_time_minutes": 27,
+  "objectives": [
+    "Definition"
+  ],
+  "summary": "of categorical data in this Figure. Please note that the variable enrolment number need not be used in the analysis, so no summary data for the enrolment number will be performed. Descriptive Analysis of Categorical Data: Gender is a categorical variable in Figure 6. In this case, the summary would be the frequency table of various categories. For example, for the given data,",
+  "flashcards": [
+    {
+      "question": "Define the term data science.",
+      "answer": "In Descriptive and Exploratory Data Analysis - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Differentiate between structured, semi-structured, unstructured and stream data.",
+      "answer": "In Descriptive and Exploratory Data Analysis - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What would be the measurement scale for the following? Give reasons in support of your answer.   Sample Population",
+      "answer": "In Descriptive and Exploratory Data Analysis - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "The age category of students is categorical data. What information would you like to show for its descriptive analysis?",
+      "answer": "Key Principle: Descriptive analysis is used to present basic data summaries; however, it does not attempt to interpret the data.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Age is quantitative data; how will you describe its data?",
+      "answer": "In Descriptive and Exploratory Data Analysis - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "How can you find that given data is left skewed?",
+      "answer": "In Descriptive and Exploratory Data Analysis - An Introduction, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Mode and how is it characterized?",
+      "answer": "Mode the most frequent value of a set of observations.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Descriptive and Exploratory D\"]\n  M1[\"6.2 Data Science - Definition\"]\n  Root --> M1\n  M2[\"6.3 Types of Data\"]\n  Root --> M2\n  M2_1[\"6.3.1 Statistical Data Types\"]\n  M2 --> M2_1\n  M2_2[\"6.3.2 Sampling\"]\n  M2 --> M2_2\n  M3[\"6.4 Basic Methods of Data Analysis\"]\n  Root --> M3\n  M3_1[\"6.4.1 Descriptive Analysis\"]\n  M3 --> M3_1\n  M3_2[\"6.4.2 Exploratory Analysis\"]\n  M3 --> M3_2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mode</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Mode the most frequent value of a set of observations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Science - Definition</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data Science is a multidisciplinary science with the objective of performing data analysis to generate knowledge that can be used for decision-making.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Data</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The type of data is one of the essential aspects determining the kind of analysis that can be performed on data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Statistical Data Types</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Two distinct types of data can be used in statistical analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sampling</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In general, the size of the data that is to be processed is quite large.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Data Science - Definition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data Science is a multidisciplinary science with the objective of performing data analysis to generate knowledge that can be used for decision-making.</li>\n<li>This knowledge can be in the form of similar patterns or predictive planning models, forecasting models etc.</li>\n<li>A data science application collects data and information from multiple heterogeneous sources, cleans, integrates, processes and analyses this data using various tools and presents information and knowledge in various visual forms.</li>\n<li>The following are some areas in which data science can be useful.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Types of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The type of data is one of the essential aspects determining the kind of analysis that can be performed on data.</li>\n<li>In data science, the following are the different types of data that are required to be processed: 1.</li>\n<li>Data Streams Structured Data Since the start of the era of computing, the computer has been used as a data processing device.</li>\n<li>However, it was not before the 1960s when businesses started using computers to process their data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.1 Statistical Data Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Two distinct types of data can be used in statistical analysis.</li>\n<li>These are – Categorical data and Quantitative data.</li>\n<li>Categorical or qualitative Data: Categorical data identifies the category of data.</li>\n<li>For example, the occupation of a person may take values of the categories \"Business\", \"Salaried\".</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.2 Sampling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In general, the size of the data that is to be processed is quite large.</li>\n<li>This leads you to the question: whether you would use the entire data or some representative sample of this data?.</li>\n<li>In several data science techniques, sample data is used to develop an exploratory model.</li>\n<li>Thus, even in data science, sampling is one of the ways to enhance the speed of exploratory data analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Basic Methods of Data Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data for data science is obtained from several data sources.</li>\n<li>This data is first cleaned of errors, duplication, aggregated and then presented in a form that can be analysed by various methods.</li>\n<li>This section defines some of the basic techniques used for analysing data.</li>\n<li>These are Descriptive analysis, Exploratory data analysis and Inferential data analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.1 Descriptive Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Descriptive analysis is used to present basic data summaries; however, it does not attempt to interpret the data.</li>\n<li>These summaries may include different statistical values and certain graphs.</li>\n<li>Different types of data are described using different ways.</li>\n<li>In general, you draw a bar graph if the number of categories exceeds three.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.2 Exploratory Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Exploratory data analysis was suggested by John Turkey of Princeton University in 1960 as a group of methods that can be used to learn the possibilities of relationships amongst data.</li>\n<li>After obtaining relevant data for analysis, instead of performing the final analysis, you may like to explore the data for possible relationships using exploratory data analysis.</li>\n<li>In general, graphs are some of the best ways to perform exploratory analysis.</li>\n<li>Some of the standard methods that you can perform during exploratory analysis are as follows: 1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle component analysis,</code></div>\n<div class=\"formula-box\"><code>principles of computer science, mathematics</code></div>\n<div class=\"formula-box\"><code>Population Standard deviation (σ),</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of categorical data in this Figure. Please note that the variable enrolment number need not be used in the analysis, so no summary data for the enrolment number will be performed. Descriptive Analysis of Categorical Data: Gender is a categorical variable in Figure 6. In this case, the summary would be the frequency table of various categories. For example, for the given data,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-6_Descriptive_and_Exploratory_Data_Analysis_-_An_Introduction.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Descriptive and Exploratory D\"]\n  M1[\"6.2 Data Science - Definition\"]\n  Root --> M1\n  M2[\"6.3 Types of Data\"]\n  Root --> M2\n  M2_1[\"6.3.1 Statistical Data Types\"]\n  M2 --> M2_1\n  M2_2[\"6.3.2 Sampling\"]\n  M2 --> M2_2\n  M3[\"6.4 Basic Methods of Data Analysis\"]\n  Root --> M3\n  M3_1[\"6.4.1 Descriptive Analysis\"]\n  M3 --> M3_1\n  M3_2[\"6.4.2 Exploratory Analysis\"]\n  M3 --> M3_2",
+  "definitions": [
+    {
+      "term": "Mode",
+      "definition": "Mode the most frequent value of a set of observations.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Data Science - Definition",
+      "definition": "Data Science is a multidisciplinary science with the objective of performing data analysis to generate knowledge that can be used for decision-making.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Types Of Data",
+      "definition": "The type of data is one of the essential aspects determining the kind of analysis that can be performed on data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Statistical Data Types",
+      "definition": "Two distinct types of data can be used in statistical analysis.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Sampling",
+      "definition": "In general, the size of the data that is to be processed is quite large.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.2",
+      "topic": "Data Science - Definition",
+      "points": [
+        "Data Science is a multidisciplinary science with the objective of performing data analysis to generate knowledge that can be used for decision-making.",
+        "This knowledge can be in the form of similar patterns or predictive planning models, forecasting models etc.",
+        "A data science application collects data and information from multiple heterogeneous sources, cleans, integrates, processes and analyses this data using various tools and presents information and knowledge in various visual forms.",
+        "The following are some areas in which data science can be useful."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Types of Data",
+      "points": [
+        "The type of data is one of the essential aspects determining the kind of analysis that can be performed on data.",
+        "In data science, the following are the different types of data that are required to be processed: 1.",
+        "Data Streams Structured Data Since the start of the era of computing, the computer has been used as a data processing device.",
+        "However, it was not before the 1960s when businesses started using computers to process their data."
+      ]
+    },
+    {
+      "section_num": "6.3.1",
+      "topic": "Statistical Data Types",
+      "points": [
+        "Two distinct types of data can be used in statistical analysis.",
+        "These are – Categorical data and Quantitative data.",
+        "Categorical or qualitative Data: Categorical data identifies the category of data.",
+        "For example, the occupation of a person may take values of the categories \"Business\", \"Salaried\"."
+      ]
+    },
+    {
+      "section_num": "6.3.2",
+      "topic": "Sampling",
+      "points": [
+        "In general, the size of the data that is to be processed is quite large.",
+        "This leads you to the question: whether you would use the entire data or some representative sample of this data?.",
+        "In several data science techniques, sample data is used to develop an exploratory model.",
+        "Thus, even in data science, sampling is one of the ways to enhance the speed of exploratory data analysis."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Basic Methods of Data Analysis",
+      "points": [
+        "The data for data science is obtained from several data sources.",
+        "This data is first cleaned of errors, duplication, aggregated and then presented in a form that can be analysed by various methods.",
+        "This section defines some of the basic techniques used for analysing data.",
+        "These are Descriptive analysis, Exploratory data analysis and Inferential data analysis."
+      ]
+    },
+    {
+      "section_num": "6.4.1",
+      "topic": "Descriptive Analysis",
+      "points": [
+        "Descriptive analysis is used to present basic data summaries; however, it does not attempt to interpret the data.",
+        "These summaries may include different statistical values and certain graphs.",
+        "Different types of data are described using different ways.",
+        "In general, you draw a bar graph if the number of categories exceeds three."
+      ]
+    },
+    {
+      "section_num": "6.4.2",
+      "topic": "Exploratory Analysis",
+      "points": [
+        "Exploratory data analysis was suggested by John Turkey of Princeton University in 1960 as a group of methods that can be used to learn the possibilities of relationships amongst data.",
+        "After obtaining relevant data for analysis, instead of performing the final analysis, you may like to explore the data for possible relationships using exploratory data analysis.",
+        "In general, graphs are some of the best ways to perform exploratory analysis.",
+        "Some of the standard methods that you can perform during exploratory analysis are as follows: 1."
+      ]
+    }
+  ],
+  "formulas": [
+    "principle component analysis,",
+    "principles of computer science, mathematics",
+    "Population Standard deviation (σ),"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Descriptive and Exploratory D\"]\n  M1[\"6.2 Data Science - Definition\"]\n  Root --> M1\n  M2[\"6.3 Types of Data\"]\n  Root --> M2\n  M2_1[\"6.3.1 Statistical Data Types\"]\n  M2 --> M2_1\n  M2_2[\"6.3.2 Sampling\"]\n  M2 --> M2_2\n  M3[\"6.4 Basic Methods of Data Analysis\"]\n  Root --> M3\n  M3_1[\"6.4.1 Descriptive Analysis\"]\n  M3 --> M3_1\n  M3_2[\"6.4.2 Exploratory Analysis\"]\n  M3 --> M3_2\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mode</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Mode the most frequent value of a set of observations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Science - Definition</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data Science is a multidisciplinary science with the objective of performing data analysis to generate knowledge that can be used for decision-making.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Types Of Data</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The type of data is one of the essential aspects determining the kind of analysis that can be performed on data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Statistical Data Types</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Two distinct types of data can be used in statistical analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sampling</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In general, the size of the data that is to be processed is quite large.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Data Science - Definition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data Science is a multidisciplinary science with the objective of performing data analysis to generate knowledge that can be used for decision-making.</li>\n<li>This knowledge can be in the form of similar patterns or predictive planning models, forecasting models etc.</li>\n<li>A data science application collects data and information from multiple heterogeneous sources, cleans, integrates, processes and analyses this data using various tools and presents information and knowledge in various visual forms.</li>\n<li>The following are some areas in which data science can be useful.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Types of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The type of data is one of the essential aspects determining the kind of analysis that can be performed on data.</li>\n<li>In data science, the following are the different types of data that are required to be processed: 1.</li>\n<li>Data Streams Structured Data Since the start of the era of computing, the computer has been used as a data processing device.</li>\n<li>However, it was not before the 1960s when businesses started using computers to process their data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.1 Statistical Data Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Two distinct types of data can be used in statistical analysis.</li>\n<li>These are – Categorical data and Quantitative data.</li>\n<li>Categorical or qualitative Data: Categorical data identifies the category of data.</li>\n<li>For example, the occupation of a person may take values of the categories \"Business\", \"Salaried\".</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3.2 Sampling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In general, the size of the data that is to be processed is quite large.</li>\n<li>This leads you to the question: whether you would use the entire data or some representative sample of this data?.</li>\n<li>In several data science techniques, sample data is used to develop an exploratory model.</li>\n<li>Thus, even in data science, sampling is one of the ways to enhance the speed of exploratory data analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Basic Methods of Data Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data for data science is obtained from several data sources.</li>\n<li>This data is first cleaned of errors, duplication, aggregated and then presented in a form that can be analysed by various methods.</li>\n<li>This section defines some of the basic techniques used for analysing data.</li>\n<li>These are Descriptive analysis, Exploratory data analysis and Inferential data analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.1 Descriptive Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Descriptive analysis is used to present basic data summaries; however, it does not attempt to interpret the data.</li>\n<li>These summaries may include different statistical values and certain graphs.</li>\n<li>Different types of data are described using different ways.</li>\n<li>In general, you draw a bar graph if the number of categories exceeds three.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4.2 Exploratory Analysis</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Exploratory data analysis was suggested by John Turkey of Princeton University in 1960 as a group of methods that can be used to learn the possibilities of relationships amongst data.</li>\n<li>After obtaining relevant data for analysis, instead of performing the final analysis, you may like to explore the data for possible relationships using exploratory data analysis.</li>\n<li>In general, graphs are some of the best ways to perform exploratory analysis.</li>\n<li>Some of the standard methods that you can perform during exploratory analysis are as follows: 1.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>principle component analysis,</code></div>\n<div class=\"formula-box\"><code>principles of computer science, mathematics</code></div>\n<div class=\"formula-box\"><code>Population Standard deviation (σ),</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of categorical data in this Figure. Please note that the variable enrolment number need not be used in the analysis, so no summary data for the enrolment number will be performed. Descriptive Analysis of Categorical Data: Gender is a categorical variable in Figure 6. In this case, the summary would be the frequency table of various categories. For example, for the given data,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-6_Descriptive_and_Exploratory_Data_Analysis_-_An_Introduction.pdf')\">\n          📄 Read Original IGNOU PDF (16 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

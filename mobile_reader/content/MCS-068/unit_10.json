@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_10",
+  "unit_num": "Unit 10",
+  "title": "Supervised Learning Models",
+  "filename": "Unit-10_Supervised_Learning_Models.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-10_Supervised_Learning_Models.pdf",
+  "total_pages": 71,
+  "word_count": 21062,
+  "est_read_time_minutes": 117,
+  "objectives": [
+    "and the correct",
+    "are known. The model learns from this data and tries to predict the correct",
+    "related messages.",
+    "quality labeled data, which can be expensive and",
+    "consuming to collect because it often involves human effort.",
+    "life terms,"
+  ],
+  "summary": "of the steps performed in above numerical the customer belongs to class 1. i.e. Customer will purchase the Term deposit. In Logistic Regression numerical, always follow the steps, given below:  First, calculate the linear expression:𝑧= 𝛽଴+ 𝛽ଵ𝑥  Second, convert this value into probability using the sigmoid function:  Third, compare the obtained probability with the threshold, usually 0.5.",
+  "flashcards": [
+    {
+      "question": "What is the main difference between supervised and unsupervised learning? …………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "Key Principle: In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Which type of learning is used for predicting house prices and why? …………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "What is a hyperplane and margin in SVM? Solution: Refer to Sub-section",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Give one real-life example of unsupervised learning. …………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "What are Support Vectors? Why are they important? Solution: Refer to Sub-section",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Why is data preprocessing important in machine learning? …………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "How does SVM handle non-linear data? Solution: Refer to Sub-section",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "How is supervised learning similar to learning with a teacher? …………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "What are the advantages and limitations of SVM? Solution: Refer to Sub-section",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is Supervised Learning and how does it support predictive analytics? …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Expected Learning Outcomes and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Supervised Learning Models\"]\n  M1[\"10.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"10.2 Supervised Vs Unsupervised Lear\"]\n  Root --> M2\n  M3[\"10.3 Supervised Learning models\"]\n  Root --> M3\n  M3_1[\"10.3.1 K-Nearest Neighbour,\"]\n  M3 --> M3_1\n  M3_2[\"10.3.2 Naïve-Bayes,\"]\n  M3 --> M3_2\n  M3_3[\"10.3.3 Logistic regression,\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Supervised Vs Unsupervised Learning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Supervised Learning Models</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">K-Nearest Neighbour,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Naïve-Bayes,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of naïve-bayes,.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in supervised learning models.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Supervised Vs Unsupervised Learning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.</li>\n<li>These two approaches help in solving different kinds of real-world prediction problems depending on whether the output is categorical or continuous.</li>\n<li>Classification tasks are used when we need to predict a category or label.</li>\n<li>In this case, the output is discrete, meaning it belongs to a fixed set of classes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Supervised Learning models</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects.</li>\n<li>Now, in this section we are going to discuss about various Supervised learning models, which are widely used in data analysis, and they learn from labeled data to make predictions or classifications.</li>\n<li>These models identify patterns between input features and known outputs, enabling them to classify/predict outcomes for new, unseen data.</li>\n<li>Different supervised learning algorithms are designed to handle various types of problems such as classification and regression, each with its own strengths and applications.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.1 K-Nearest Neighbour,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks.</li>\n<li>It is a non- parametric and instance-based learning algorithm, meaning it does not build an explicit model during training but instead makes predictions based on the stored training data.</li>\n<li>The core idea behind KNN is that similar data points exist close to each other in the feature space.</li>\n<li>Therefore, the class or value of a new data point can be determined by examining its nearest neighbors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.2 Naïve-Bayes,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of naïve-bayes,.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in supervised learning models.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.3 Logistic regression,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Logistic Regression is one of t algorithms for solving classificat (such as Yes/No, 0/1, True/Fals traditional sense; instead, it is us particular class.</li>\n<li>At its core, Logistic Regression probability of an outcome usin Function.</li>\n<li>When 𝑧= 0, the sigmoid function gi an uncertain or neutral state.</li>\n<li>As the value of 𝑧 b … vised learning nary in nature gorithm in the ut belongs to a tures and the oid (Logistic) d in Logistic nd 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.4 Decision trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Decision Trees are one of the most intuitive and widely used supervised learning algorithms for both classification and regression problems.</li>\n<li>The core idea of a Decision Tree is to break down a complex decision-making process into a series of simple, sequential decisions, represented in the form of a tree-like structure.</li>\n<li>Each internal node of the tree represents a test on a feature, each branch represents the outcome of that test, and each leaf node represents the final prediction or class label.</li>\n<li>This structure closely resembles human decision-making, making Decision Trees easy to understand and interpret.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.5 Random Forest</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Decision Trees and Random Forest are both supervised learning algorithms based on tree structures, but they differ significantly in their approach and performance.</li>\n<li>A Decision Tree is a single model that splits the dataset into smaller subsets based on feature conditions, forming a tree-like structure of decisions.</li>\n<li>However, this simplicity comes with a drawback: Decision Trees are highly prone to overfitting, especially when the tree becomes deep and captures noise in the data.</li>\n<li>They are also sensitive to small changes in the dataset, which can lead to completely different tree structures.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem and is particularly effective in text classification</code></div>\n<div class=\"formula-box\"><code>rule-based, hierarchical structure for</code></div>\n<div class=\"formula-box\"><code>rules derived from the data. They are easy to understand and interpret</code></div>\n<div class=\"formula-box\"><code>principle of “Similarity” or “Closeness.” For example,</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the steps performed in above numerical the customer belongs to class 1. i.e. Customer will purchase the Term deposit. In Logistic Regression numerical, always follow the steps, given below:  First, calculate the linear expression:𝑧= 𝛽଴+ 𝛽ଵ𝑥  Second, convert this value into probability using the sigmoid function:  Third, compare the obtained probability with the threshold, usually 0.5.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-10_Supervised_Learning_Models.pdf')\">\n          📄 Read Original IGNOU PDF (71 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 10 Supervised Learning Models\"]\n  M1[\"10.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"10.2 Supervised Vs Unsupervised Lear\"]\n  Root --> M2\n  M3[\"10.3 Supervised Learning models\"]\n  Root --> M3\n  M3_1[\"10.3.1 K-Nearest Neighbour,\"]\n  M3 --> M3_1\n  M3_2[\"10.3.2 Naïve-Bayes,\"]\n  M3 --> M3_2\n  M3_3[\"10.3.3 Logistic regression,\"]\n  M3 --> M3_3",
+  "definitions": [
+    {
+      "term": "Expected Learning Outcomes",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Supervised Vs Unsupervised Learning",
+      "definition": "In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Supervised Learning Models",
+      "definition": "In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "K-Nearest Neighbour,",
+      "definition": "The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Naïve-Bayes,",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of naïve-bayes,.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "10.1",
+      "topic": "Expected Learning Outcomes",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in supervised learning models."
+      ]
+    },
+    {
+      "section_num": "10.2",
+      "topic": "Supervised Vs Unsupervised Learning",
+      "points": [
+        "In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.",
+        "These two approaches help in solving different kinds of real-world prediction problems depending on whether the output is categorical or continuous.",
+        "Classification tasks are used when we need to predict a category or label.",
+        "In this case, the output is discrete, meaning it belongs to a fixed set of classes."
+      ]
+    },
+    {
+      "section_num": "10.3",
+      "topic": "Supervised Learning models",
+      "points": [
+        "In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects.",
+        "Now, in this section we are going to discuss about various Supervised learning models, which are widely used in data analysis, and they learn from labeled data to make predictions or classifications.",
+        "These models identify patterns between input features and known outputs, enabling them to classify/predict outcomes for new, unseen data.",
+        "Different supervised learning algorithms are designed to handle various types of problems such as classification and regression, each with its own strengths and applications."
+      ]
+    },
+    {
+      "section_num": "10.3.1",
+      "topic": "K-Nearest Neighbour,",
+      "points": [
+        "The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks.",
+        "It is a non- parametric and instance-based learning algorithm, meaning it does not build an explicit model during training but instead makes predictions based on the stored training data.",
+        "The core idea behind KNN is that similar data points exist close to each other in the feature space.",
+        "Therefore, the class or value of a new data point can be determined by examining its nearest neighbors."
+      ]
+    },
+    {
+      "section_num": "10.3.2",
+      "topic": "Naïve-Bayes,",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of naïve-bayes,.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in supervised learning models."
+      ]
+    },
+    {
+      "section_num": "10.3.3",
+      "topic": "Logistic regression,",
+      "points": [
+        "Logistic Regression is one of t algorithms for solving classificat (such as Yes/No, 0/1, True/Fals traditional sense; instead, it is us particular class.",
+        "At its core, Logistic Regression probability of an outcome usin Function.",
+        "When 𝑧= 0, the sigmoid function gi an uncertain or neutral state.",
+        "As the value of 𝑧 b … vised learning nary in nature gorithm in the ut belongs to a tures and the oid (Logistic) d in Logistic nd 1."
+      ]
+    },
+    {
+      "section_num": "10.3.4",
+      "topic": "Decision trees",
+      "points": [
+        "Decision Trees are one of the most intuitive and widely used supervised learning algorithms for both classification and regression problems.",
+        "The core idea of a Decision Tree is to break down a complex decision-making process into a series of simple, sequential decisions, represented in the form of a tree-like structure.",
+        "Each internal node of the tree represents a test on a feature, each branch represents the outcome of that test, and each leaf node represents the final prediction or class label.",
+        "This structure closely resembles human decision-making, making Decision Trees easy to understand and interpret."
+      ]
+    },
+    {
+      "section_num": "10.3.5",
+      "topic": "Random Forest",
+      "points": [
+        "Decision Trees and Random Forest are both supervised learning algorithms based on tree structures, but they differ significantly in their approach and performance.",
+        "A Decision Tree is a single model that splits the dataset into smaller subsets based on feature conditions, forming a tree-like structure of decisions.",
+        "However, this simplicity comes with a drawback: Decision Trees are highly prone to overfitting, especially when the tree becomes deep and captures noise in the data.",
+        "They are also sensitive to small changes in the dataset, which can lead to completely different tree structures."
+      ]
+    }
+  ],
+  "formulas": [
+    "theorem and is particularly effective in text classification",
+    "rule-based, hierarchical structure for",
+    "rules derived from the data. They are easy to understand and interpret",
+    "principle of “Similarity” or “Closeness.” For example,"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Supervised Learning Models\"]\n  M1[\"10.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"10.2 Supervised Vs Unsupervised Lear\"]\n  Root --> M2\n  M3[\"10.3 Supervised Learning models\"]\n  Root --> M3\n  M3_1[\"10.3.1 K-Nearest Neighbour,\"]\n  M3 --> M3_1\n  M3_2[\"10.3.2 Naïve-Bayes,\"]\n  M3 --> M3_2\n  M3_3[\"10.3.3 Logistic regression,\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Supervised Vs Unsupervised Learning</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Supervised Learning Models</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">K-Nearest Neighbour,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Naïve-Bayes,</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of naïve-bayes,.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of expected learning outcomes.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in supervised learning models.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Supervised Vs Unsupervised Learning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression.</li>\n<li>These two approaches help in solving different kinds of real-world prediction problems depending on whether the output is categorical or continuous.</li>\n<li>Classification tasks are used when we need to predict a category or label.</li>\n<li>In this case, the output is discrete, meaning it belongs to a fixed set of classes.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Supervised Learning models</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects.</li>\n<li>Now, in this section we are going to discuss about various Supervised learning models, which are widely used in data analysis, and they learn from labeled data to make predictions or classifications.</li>\n<li>These models identify patterns between input features and known outputs, enabling them to classify/predict outcomes for new, unseen data.</li>\n<li>Different supervised learning algorithms are designed to handle various types of problems such as classification and regression, each with its own strengths and applications.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.1 K-Nearest Neighbour,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks.</li>\n<li>It is a non- parametric and instance-based learning algorithm, meaning it does not build an explicit model during training but instead makes predictions based on the stored training data.</li>\n<li>The core idea behind KNN is that similar data points exist close to each other in the feature space.</li>\n<li>Therefore, the class or value of a new data point can be determined by examining its nearest neighbors.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.2 Naïve-Bayes,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of naïve-bayes,.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in supervised learning models.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.3 Logistic regression,</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Logistic Regression is one of t algorithms for solving classificat (such as Yes/No, 0/1, True/Fals traditional sense; instead, it is us particular class.</li>\n<li>At its core, Logistic Regression probability of an outcome usin Function.</li>\n<li>When 𝑧= 0, the sigmoid function gi an uncertain or neutral state.</li>\n<li>As the value of 𝑧 b … vised learning nary in nature gorithm in the ut belongs to a tures and the oid (Logistic) d in Logistic nd 1.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.4 Decision trees</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Decision Trees are one of the most intuitive and widely used supervised learning algorithms for both classification and regression problems.</li>\n<li>The core idea of a Decision Tree is to break down a complex decision-making process into a series of simple, sequential decisions, represented in the form of a tree-like structure.</li>\n<li>Each internal node of the tree represents a test on a feature, each branch represents the outcome of that test, and each leaf node represents the final prediction or class label.</li>\n<li>This structure closely resembles human decision-making, making Decision Trees easy to understand and interpret.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.5 Random Forest</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Decision Trees and Random Forest are both supervised learning algorithms based on tree structures, but they differ significantly in their approach and performance.</li>\n<li>A Decision Tree is a single model that splits the dataset into smaller subsets based on feature conditions, forming a tree-like structure of decisions.</li>\n<li>However, this simplicity comes with a drawback: Decision Trees are highly prone to overfitting, especially when the tree becomes deep and captures noise in the data.</li>\n<li>They are also sensitive to small changes in the dataset, which can lead to completely different tree structures.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem and is particularly effective in text classification</code></div>\n<div class=\"formula-box\"><code>rule-based, hierarchical structure for</code></div>\n<div class=\"formula-box\"><code>rules derived from the data. They are easy to understand and interpret</code></div>\n<div class=\"formula-box\"><code>principle of “Similarity” or “Closeness.” For example,</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the steps performed in above numerical the customer belongs to class 1. i.e. Customer will purchase the Term deposit. In Logistic Regression numerical, always follow the steps, given below:  First, calculate the linear expression:𝑧= 𝛽଴+ 𝛽ଵ𝑥  Second, convert this value into probability using the sigmoid function:  Third, compare the obtained probability with the threshold, usually 0.5.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-10_Supervised_Learning_Models.pdf')\">\n          📄 Read Original IGNOU PDF (71 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

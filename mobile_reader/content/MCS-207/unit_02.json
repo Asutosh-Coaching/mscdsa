@@ -1,0 +1,173 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_02",
+  "unit_num": "Unit 2",
+  "title": "Relational Database",
+  "filename": "Unit-2_Relational_Database.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-2_Relational_Database.pdf",
+  "total_pages": 20,
+  "word_count": 7111,
+  "est_read_time_minutes": 40,
+  "objectives": [
+    "The Relational Model",
+    "Domain, Attribute, Tuple and Relation",
+    "Super keys Candidate keys and Primary keys for the Relations",
+    "Relational Constraints",
+    "2.3.1   Domain Constraint"
+  ],
+  "summary": "This unit is an attempt to provide a detailed viewpoint of database design. The topics covered in this unit include the relational model including the representation of relations, operations such as set type operators and relational operators on relations. The E-R model explained in this unit covers the basic aspects of E-R modeling. E-R modeling is quite common to database design, therefore, you must attempt as many problems as possible from the further reading. The E-R diagram has also been",
+  "flashcards": [
+    {
+      "question": "What are the different attributes of relation S and how many tuples does S have?",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the domains of the attributes of S? ………………………………………………. …………………………………………..…….",
+      "answer": "In Relational Database, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "On sorting this relation on the field CITY, will the relation change? Will the order of tuples in the relation change?",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "List the super keys, all the possible candidate keys, and the primary key of the relation. …………………………………..",
+      "answer": "Key Principle: Relations As discussed in the previous section, ordering of relations does not matter and all tuples in a relation are unique.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "A database system is fully relational if it supports a language as powerful as",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Which of the following is not a traditional set operator in relational algebra? ¹ X Y A",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is An Attribute and how is it characterized?",
+      "answer": "An Attribute extraneous if even after removing it from the key, the remaining attributes still has the properties of a super key.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Relational Database\"]\n  M1[\"2.2 The Relational Model\"]\n  Root --> M1\n  M1_1[\"2.2.1 Domain, Attribute, Tuple and R\"]\n  M1 --> M1_1\n  M1_2[\"2.2.2 Super keys Candidate keys and \"]\n  M1 --> M1_2\n  M2[\"2.3 Relational Constraints\"]\n  Root --> M2\n  M2_1[\"2.3.1 Domain Constraint\"]\n  M2 --> M2_1\n  M2_2[\"2.3.2 Key Constraint\"]\n  M2 --> M2_2\n  M2_3[\"2.3.3 Integrity Constraint\"]\n  M2 --> M2_3\n  M3[\"2.4 Relational Algebra\"]\n  Root --> M3\n  M3_1[\"2.4.1 Basic Set Operation\"]\n  M3 --> M3_1\n  M3_2[\"2.4.2 Cartesian Product\"]\n  M3 --> M3_2\n  M3_3[\"2.4.3 Relational Operations\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">An Attribute</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">An Attribute extraneous if even after removing it from the key, the remaining attributes still has the properties of a super key.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Relational Model</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Relational Constraints</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A relational database is a collection of relations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Domain Constraint</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">These constraints bind the possible values of the attribute in a relation to a specific set of values, called the domain of the attribute.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Key Constraint</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This constraint states that the key attribute value in each tuple must be unique, i.e., no two tuples can contain the same value for the key attribute.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 The Relational Model</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in relational database.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.1 Domain, Attribute, Tuple and Relation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before we discuss the relational model in more detail, let us first define some very basic terms used in this model.</li>\n<li>A record/tuple consists of a number of attributes, which is defined next.</li>\n<li>Attribute: A relation consists of a large number of columns.</li>\n<li>Each of these columns, which defines a separate data value, is termed as an attribute.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.2 Super keys Candidate keys and Primary keys for the Relations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Relations As discussed in the previous section, ordering of relations does not matter and all tuples in a relation are unique.</li>\n<li>However, can you uniquely identify a tuple in a relation?</li>\n<li>To answer this question, let us discuss the concept of keys in relations.</li>\n<li>Super Keys A super key is an attribute or set of attributes used to identify the records uniquely in a relation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Relational Constraints</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A relational database is a collection of relations.</li>\n<li>Each relation consists of tuples, which consist of attributes.</li>\n<li>You can associate constraints, called relational constraints, with the attributes.</li>\n<li>For example, an attribute COUNTRY may have a domain of names of all the possible names of the countries.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.1 Domain Constraint</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>These constraints bind the possible values of the attribute in a relation to a specific set of values, called the domain of the attribute.</li>\n<li>For example, an attribute COUNTRY may have a domain of names of all the possible names of the countries.</li>\n<li>In commercial relational database management systems, the data type associated with an attribute defines the broad domain of an attribute.</li>\n<li>These domains include: 1) Integral Data type like integer, long etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.2 Key Constraint</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This constraint states that the key attribute value in each tuple must be unique, i.e., no two tuples can contain the same value for the key attribute.</li>\n<li>This is because the value of the primary key is used to identify a unique tuple in a relation.</li>\n<li>Example 3: If A is the key attribute in the following relation R, then A1, A2 and A3 must be unique.</li>\n<li>R Example 4: In relation PERSON, PERSON_ID is the primary key so PERSON_ID cannot be assigned the same for two different persons.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.3 Integrity Constraint</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are two types of integrity constraints: • Entity Integrity Constraint • Referential Integrity Constraint Entity Integrity Constraint: It states that any attribute of a primary key cannot take a Null value.</li>\n<li>This is because the primary key is used to identify individual tuple in the relation.</li>\n<li>You will not be able to identify the records uniquely if they contain null values for the primary key attributes.</li>\n<li>This constraint is specified for each relation of a database.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.4 Update Operations and Dealing with Constraint Violations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For example, in the instance r of R of example 6, you may like to add a new record <’A5’, 25,’ C6’>.</li>\n<li>e inserting a numeric value 25 into attribute B, whose domain is alphanumeric sting.</li>\n<li>This will cause a domain constraint violation.</li>\n<li>• Violation of Key constraint: This violation occurs when you try to insert a key value, which already exists in some tuple of existing relational instance.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule is also termed the entity integrity rule. Thus, a candidate key is unique and</code></div>\n<div class=\"formula-box\"><code>rule, as SPJ contains tuples</code></div>\n<div class=\"formula-box\"><code>rule, as SPJ contains tuples</code></div>\n<div class=\"formula-box\"><code>r = {t1,t2,…………tm} has m tuples</code></div>\n<div class=\"formula-box\"><code>number of tuples m = 2 and each tuple contains n = 4 values.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit is an attempt to provide a detailed viewpoint of database design. The topics covered in this unit include the relational model including the representation of relations, operations such as set type operators and relational operators on relations. The E-R model explained in this unit covers the basic aspects of E-R modeling. E-R modeling is quite common to database design, therefore, you must attempt as many problems as possible from the further reading. The E-R diagram has also been</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-2_Relational_Database.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 2 Relational Database\"]\n  M1[\"2.2 The Relational Model\"]\n  Root --> M1\n  M1_1[\"2.2.1 Domain, Attribute, Tuple and R\"]\n  M1 --> M1_1\n  M1_2[\"2.2.2 Super keys Candidate keys and \"]\n  M1 --> M1_2\n  M2[\"2.3 Relational Constraints\"]\n  Root --> M2\n  M2_1[\"2.3.1 Domain Constraint\"]\n  M2 --> M2_1\n  M2_2[\"2.3.2 Key Constraint\"]\n  M2 --> M2_2\n  M2_3[\"2.3.3 Integrity Constraint\"]\n  M2 --> M2_3\n  M3[\"2.4 Relational Algebra\"]\n  Root --> M3\n  M3_1[\"2.4.1 Basic Set Operation\"]\n  M3 --> M3_1\n  M3_2[\"2.4.2 Cartesian Product\"]\n  M3 --> M3_2\n  M3_3[\"2.4.3 Relational Operations\"]\n  M3 --> M3_3",
+  "definitions": [
+    {
+      "term": "An Attribute",
+      "definition": "An Attribute extraneous if even after removing it from the key, the remaining attributes still has the properties of a super key.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "The Relational Model",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Relational Constraints",
+      "definition": "A relational database is a collection of relations.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Domain Constraint",
+      "definition": "These constraints bind the possible values of the attribute in a relation to a specific set of values, called the domain of the attribute.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Key Constraint",
+      "definition": "This constraint states that the key attribute value in each tuple must be unique, i.e., no two tuples can contain the same value for the key attribute.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "2.2",
+      "topic": "The Relational Model",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in relational database."
+      ]
+    },
+    {
+      "section_num": "2.2.1",
+      "topic": "Domain, Attribute, Tuple and Relation",
+      "points": [
+        "Before we discuss the relational model in more detail, let us first define some very basic terms used in this model.",
+        "A record/tuple consists of a number of attributes, which is defined next.",
+        "Attribute: A relation consists of a large number of columns.",
+        "Each of these columns, which defines a separate data value, is termed as an attribute."
+      ]
+    },
+    {
+      "section_num": "2.2.2",
+      "topic": "Super keys Candidate keys and Primary keys for the Relations",
+      "points": [
+        "Relations As discussed in the previous section, ordering of relations does not matter and all tuples in a relation are unique.",
+        "However, can you uniquely identify a tuple in a relation?",
+        "To answer this question, let us discuss the concept of keys in relations.",
+        "Super Keys A super key is an attribute or set of attributes used to identify the records uniquely in a relation."
+      ]
+    },
+    {
+      "section_num": "2.3",
+      "topic": "Relational Constraints",
+      "points": [
+        "A relational database is a collection of relations.",
+        "Each relation consists of tuples, which consist of attributes.",
+        "You can associate constraints, called relational constraints, with the attributes.",
+        "For example, an attribute COUNTRY may have a domain of names of all the possible names of the countries."
+      ]
+    },
+    {
+      "section_num": "2.3.1",
+      "topic": "Domain Constraint",
+      "points": [
+        "These constraints bind the possible values of the attribute in a relation to a specific set of values, called the domain of the attribute.",
+        "For example, an attribute COUNTRY may have a domain of names of all the possible names of the countries.",
+        "In commercial relational database management systems, the data type associated with an attribute defines the broad domain of an attribute.",
+        "These domains include: 1) Integral Data type like integer, long etc."
+      ]
+    },
+    {
+      "section_num": "2.3.2",
+      "topic": "Key Constraint",
+      "points": [
+        "This constraint states that the key attribute value in each tuple must be unique, i.e., no two tuples can contain the same value for the key attribute.",
+        "This is because the value of the primary key is used to identify a unique tuple in a relation.",
+        "Example 3: If A is the key attribute in the following relation R, then A1, A2 and A3 must be unique.",
+        "R Example 4: In relation PERSON, PERSON_ID is the primary key so PERSON_ID cannot be assigned the same for two different persons."
+      ]
+    },
+    {
+      "section_num": "2.3.3",
+      "topic": "Integrity Constraint",
+      "points": [
+        "There are two types of integrity constraints: • Entity Integrity Constraint • Referential Integrity Constraint Entity Integrity Constraint: It states that any attribute of a primary key cannot take a Null value.",
+        "This is because the primary key is used to identify individual tuple in the relation.",
+        "You will not be able to identify the records uniquely if they contain null values for the primary key attributes.",
+        "This constraint is specified for each relation of a database."
+      ]
+    },
+    {
+      "section_num": "2.3.4",
+      "topic": "Update Operations and Dealing with Constraint Violations",
+      "points": [
+        "For example, in the instance r of R of example 6, you may like to add a new record <’A5’, 25,’ C6’>.",
+        "e inserting a numeric value 25 into attribute B, whose domain is alphanumeric sting.",
+        "This will cause a domain constraint violation.",
+        "• Violation of Key constraint: This violation occurs when you try to insert a key value, which already exists in some tuple of existing relational instance."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule is also termed the entity integrity rule. Thus, a candidate key is unique and",
+    "rule, as SPJ contains tuples",
+    "rule, as SPJ contains tuples",
+    "r = {t1,t2,…………tm} has m tuples",
+    "number of tuples m = 2 and each tuple contains n = 4 values."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Relational Database\"]\n  M1[\"2.2 The Relational Model\"]\n  Root --> M1\n  M1_1[\"2.2.1 Domain, Attribute, Tuple and R\"]\n  M1 --> M1_1\n  M1_2[\"2.2.2 Super keys Candidate keys and \"]\n  M1 --> M1_2\n  M2[\"2.3 Relational Constraints\"]\n  Root --> M2\n  M2_1[\"2.3.1 Domain Constraint\"]\n  M2 --> M2_1\n  M2_2[\"2.3.2 Key Constraint\"]\n  M2 --> M2_2\n  M2_3[\"2.3.3 Integrity Constraint\"]\n  M2 --> M2_3\n  M3[\"2.4 Relational Algebra\"]\n  Root --> M3\n  M3_1[\"2.4.1 Basic Set Operation\"]\n  M3 --> M3_1\n  M3_2[\"2.4.2 Cartesian Product\"]\n  M3 --> M3_2\n  M3_3[\"2.4.3 Relational Operations\"]\n  M3 --> M3_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">An Attribute</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">An Attribute extraneous if even after removing it from the key, the remaining attributes still has the properties of a super key.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Relational Model</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Relational Constraints</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A relational database is a collection of relations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Domain Constraint</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">These constraints bind the possible values of the attribute in a relation to a specific set of values, called the domain of the attribute.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Key Constraint</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This constraint states that the key attribute value in each tuple must be unique, i.e., no two tuples can contain the same value for the key attribute.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 The Relational Model</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of the relational model.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in relational database.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.1 Domain, Attribute, Tuple and Relation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before we discuss the relational model in more detail, let us first define some very basic terms used in this model.</li>\n<li>A record/tuple consists of a number of attributes, which is defined next.</li>\n<li>Attribute: A relation consists of a large number of columns.</li>\n<li>Each of these columns, which defines a separate data value, is termed as an attribute.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2.2 Super keys Candidate keys and Primary keys for the Relations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Relations As discussed in the previous section, ordering of relations does not matter and all tuples in a relation are unique.</li>\n<li>However, can you uniquely identify a tuple in a relation?</li>\n<li>To answer this question, let us discuss the concept of keys in relations.</li>\n<li>Super Keys A super key is an attribute or set of attributes used to identify the records uniquely in a relation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Relational Constraints</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A relational database is a collection of relations.</li>\n<li>Each relation consists of tuples, which consist of attributes.</li>\n<li>You can associate constraints, called relational constraints, with the attributes.</li>\n<li>For example, an attribute COUNTRY may have a domain of names of all the possible names of the countries.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.1 Domain Constraint</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>These constraints bind the possible values of the attribute in a relation to a specific set of values, called the domain of the attribute.</li>\n<li>For example, an attribute COUNTRY may have a domain of names of all the possible names of the countries.</li>\n<li>In commercial relational database management systems, the data type associated with an attribute defines the broad domain of an attribute.</li>\n<li>These domains include: 1) Integral Data type like integer, long etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.2 Key Constraint</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This constraint states that the key attribute value in each tuple must be unique, i.e., no two tuples can contain the same value for the key attribute.</li>\n<li>This is because the value of the primary key is used to identify a unique tuple in a relation.</li>\n<li>Example 3: If A is the key attribute in the following relation R, then A1, A2 and A3 must be unique.</li>\n<li>R Example 4: In relation PERSON, PERSON_ID is the primary key so PERSON_ID cannot be assigned the same for two different persons.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.3 Integrity Constraint</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are two types of integrity constraints: • Entity Integrity Constraint • Referential Integrity Constraint Entity Integrity Constraint: It states that any attribute of a primary key cannot take a Null value.</li>\n<li>This is because the primary key is used to identify individual tuple in the relation.</li>\n<li>You will not be able to identify the records uniquely if they contain null values for the primary key attributes.</li>\n<li>This constraint is specified for each relation of a database.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3.4 Update Operations and Dealing with Constraint Violations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>For example, in the instance r of R of example 6, you may like to add a new record <’A5’, 25,’ C6’>.</li>\n<li>e inserting a numeric value 25 into attribute B, whose domain is alphanumeric sting.</li>\n<li>This will cause a domain constraint violation.</li>\n<li>• Violation of Key constraint: This violation occurs when you try to insert a key value, which already exists in some tuple of existing relational instance.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule is also termed the entity integrity rule. Thus, a candidate key is unique and</code></div>\n<div class=\"formula-box\"><code>rule, as SPJ contains tuples</code></div>\n<div class=\"formula-box\"><code>rule, as SPJ contains tuples</code></div>\n<div class=\"formula-box\"><code>r = {t1,t2,…………tm} has m tuples</code></div>\n<div class=\"formula-box\"><code>number of tuples m = 2 and each tuple contains n = 4 values.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit is an attempt to provide a detailed viewpoint of database design. The topics covered in this unit include the relational model including the representation of relations, operations such as set type operators and relational operators on relations. The E-R model explained in this unit covers the basic aspects of E-R modeling. E-R modeling is quite common to database design, therefore, you must attempt as many problems as possible from the further reading. The E-R diagram has also been</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-2_Relational_Database.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

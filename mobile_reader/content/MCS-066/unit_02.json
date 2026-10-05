@@ -1,0 +1,169 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_02",
+  "unit_num": "Unit 2",
+  "title": "Describing Data Sets and Measures of Central Tendencies",
+  "filename": "Unit-2_Describing_Data_Sets_and_Measures_of_Central_Tendencies.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-2_Describing_Data_Sets_and_Measures_of_Central_Tendencies.pdf",
+  "total_pages": 42,
+  "word_count": 14026,
+  "est_read_time_minutes": 78,
+  "objectives": [],
+  "summary": ", i.e. the smallest observation (sample minimum), observation (sample maximum). Box plots are used to describe a distribution generally when it is extremely skewed or multimodal. A box plot also indicates which observation(s), if any, might be considered as outliers. A box plot is a quick graphic approach for examining one or more sets of data. Box plots display differences between populations without making any",
+  "flashcards": [
+    {
+      "question": "Find the missing frequency when median is given as Rs 50. Expenditure (Rs)",
+      "answer": "Key Principle: A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "4 and 38.6 respectively. Calculate the median.",
+      "answer": "In Describing Data Sets and Measures of Central Tendencies, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q35"
+    },
+    {
+      "question": "13: The Box Plot with Whisker and + Signs for Boys and Girls Data.",
+      "answer": "In Describing Data Sets and Measures of Central Tendencies, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "91 = 8.97 ≃9 Since values like",
+      "answer": "In Describing Data Sets and Measures of Central Tendencies, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "322𝐿𝑜𝑔60 ≃13.03 ≃13 Since, values like",
+      "answer": "In Describing Data Sets and Measures of Central Tendencies, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "25th item = 10th item + 0.25 (11th item –10th item) =",
+      "answer": "In Describing Data Sets and Measures of Central Tendencies, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q10"
+    },
+    {
+      "question": "What is Stribution A Frequency Distribution and how is it characterized?",
+      "answer": "Stribution A Frequency Distribution the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Describing Data Sets and Meas\"]\n  M1[\"2.2 Frequency Distribution\"]\n  Root --> M1\n  M2[\"2.3 Grouping Data in Class Intervals\"]\n  Root --> M2\n  M3[\"2.4 Graphical Representation of Data\"]\n  Root --> M3\n  M3_1[\"2.4.1 Graphs of Frequency Distributi\"]\n  M3 --> M3_1\n  M3_2[\"2.4.2 Stem and Leaf Plots\"]\n  M3 --> M3_2\n  M4[\"2.5 Measures of Central Tendency\"]\n  Root --> M4\n  M4_1[\"2.5.1 Mean\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Median\"]\n  M4 --> M4_2\n  M4_3[\"2.5.3 Mode\"]\n  M4 --> M4_3\n  M5[\"2.6 Partition Values\"]\n  Root --> M5\n  M5_1[\"2.6.1 Quartiles\"]\n  M5 --> M5_1\n  M5_2[\"2.6.2 Deciles\"]\n  M5 --> M5_2\n  M5_3[\"2.6.3 Percentiles\"]\n  M5 --> M5_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Stribution A Frequency Distribution</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Stribution A Frequency Distribution the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Variable</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Variable the characteristic that varies in magnitude in a frequency distribution.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Frequency Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Graphical Representation Of Data</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A graphical presentation is a geometric image of a set of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Graphs Of Frequency Distributions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The graphical presentation of frequency distributions is drawn for discrete as well as continuous frequency distributions.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Frequency Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.</li>\n<li>A variable refers to the characteristic that varies in magnitude in a frequency distribution.</li>\n<li>A discrete variable is one that generally takes integer values.</li>\n<li>For example, the number of students, the number of books, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Grouping Data in Class Intervals</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To make data understandable, data are divided into number of homogeneous groups or subgroups.</li>\n<li>In classification, according to class intervals, the observations are arranged systematically into a number of groups called classes.</li>\n<li>Such classification is most popular in practice.</li>\n<li>But before this discussion we have to define some terms which will be used in the above classification.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Graphical Representation of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A graphical presentation is a geometric image of a set of data.</li>\n<li>Graphical presentation is done for both frequency distributions and time series.</li>\n<li>They also help us in studying cause and effect relationship between two variables.</li>\n<li>The graph of a frequency distribution presents the huge data in an interesting and effective manner and brings to light the salient features of the data at a glance.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.1 Graphs of Frequency Distributions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The graphical presentation of frequency distributions is drawn for discrete as well as continuous frequency distributions.</li>\n<li>Let us first consider the frequency distribution of a discrete variable.</li>\n<li>Frequency Bar Diagram: To represent a discrete frequency distribution graphically, we take two rectangular axes of coordinates, the horizontal axis for the variable and the vertical axis for the frequency.</li>\n<li>The different values of the variable are then located as points on the horizontal axis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.2 Stem and Leaf Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A stem-and-leaf display is very similar to a histogram but shows more information.</li>\n<li>The stem-and-leaf display summarises the shape of a set of data and provides the details regarding individual values.</li>\n<li>A stem-and-leaf display quickly summarises data while maintaining the individual data points.</li>\n<li>Now a day’s use of stem-and-leaf displays is increasing, so let us formally define it in the next paragraph with some examples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Measures of Central Tendency</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>According to Professor Bowley, averages are “statistical constants which enable us to comprehend in a single effort the significance of the whole”.</li>\n<li>They throw light as to how the values are concentrated in the central part of the distribution.</li>\n<li>For this reason they are also called the measures of central tendency, an average is a single value which is considered as the most representative for a given set of data.</li>\n<li>Measures of central tendency show the tendency of some central value around which data tend to cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.1 Mean</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Arithmetic mean (also called mean) is defined as the sum of all the observations divided by the number of observations.</li>\n<li>Arithmetic mean (AM) may be calculated for the following two types of data: 1.</li>\n<li>For Ungrouped Data For ungrouped data, arithmetic mean may be computed by applying any of the following methods: (1) Direct Method Mathematically, if x1, x2,…, xn are the n observations then their mean is n ) x .</li>\n<li>x x x ( X n 3 2 1 + + + + = n x X n 1 i i  = = If fi is the frequency of xi (i=1, 2,…, k), the formula for arithmetic mean would be ( ) ( ) k 2 1 k k 2 2 1 1 f ...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.2 Median</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Median is that value of the variable which divides the whole distribution into two equal parts.</li>\n<li>Here, it may be noted that the data should be arranged in ascending or descending order of magnitude.</li>\n<li>When the number of observations is odd then the median is the middle value of the data.</li>\n<li>For even number of observations, there will be two middle values.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Principles of Classification</code></div>\n<div class=\"formula-box\"><code>rule for classifying the data.</code></div>\n<div class=\"formula-box\"><code>principle of correction factor in classification.</code></div>\n<div class=\"formula-box\"><code>K = 1 + 3.322 Log N, where K = the approximate number of classes</code></div>\n<div class=\"formula-box\"><code>N = total number of observations</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">, i.e. the smallest observation (sample minimum), observation (sample maximum). Box plots are used to describe a distribution generally when it is extremely skewed or multimodal. A box plot also indicates which observation(s), if any, might be considered as outliers. A box plot is a quick graphic approach for examining one or more sets of data. Box plots display differences between populations without making any</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-2_Describing_Data_Sets_and_Measures_of_Central_Tendencies.pdf')\">\n          📄 Read Original IGNOU PDF (42 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 2 Describing Data Sets and Meas\"]\n  M1[\"2.2 Frequency Distribution\"]\n  Root --> M1\n  M2[\"2.3 Grouping Data in Class Intervals\"]\n  Root --> M2\n  M3[\"2.4 Graphical Representation of Data\"]\n  Root --> M3\n  M3_1[\"2.4.1 Graphs of Frequency Distributi\"]\n  M3 --> M3_1\n  M3_2[\"2.4.2 Stem and Leaf Plots\"]\n  M3 --> M3_2\n  M4[\"2.5 Measures of Central Tendency\"]\n  Root --> M4\n  M4_1[\"2.5.1 Mean\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Median\"]\n  M4 --> M4_2\n  M4_3[\"2.5.3 Mode\"]\n  M4 --> M4_3\n  M5[\"2.6 Partition Values\"]\n  Root --> M5\n  M5_1[\"2.6.1 Quartiles\"]\n  M5 --> M5_1\n  M5_2[\"2.6.2 Deciles\"]\n  M5 --> M5_2\n  M5_3[\"2.6.3 Percentiles\"]\n  M5 --> M5_3",
+  "definitions": [
+    {
+      "term": "Stribution A Frequency Distribution",
+      "definition": "Stribution A Frequency Distribution the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "A Variable",
+      "definition": "A Variable the characteristic that varies in magnitude in a frequency distribution.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Frequency Distribution",
+      "definition": "A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Graphical Representation Of Data",
+      "definition": "A graphical presentation is a geometric image of a set of data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Graphs Of Frequency Distributions",
+      "definition": "The graphical presentation of frequency distributions is drawn for discrete as well as continuous frequency distributions.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "2.2",
+      "topic": "Frequency Distribution",
+      "points": [
+        "A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.",
+        "A variable refers to the characteristic that varies in magnitude in a frequency distribution.",
+        "A discrete variable is one that generally takes integer values.",
+        "For example, the number of students, the number of books, etc."
+      ]
+    },
+    {
+      "section_num": "2.3",
+      "topic": "Grouping Data in Class Intervals",
+      "points": [
+        "To make data understandable, data are divided into number of homogeneous groups or subgroups.",
+        "In classification, according to class intervals, the observations are arranged systematically into a number of groups called classes.",
+        "Such classification is most popular in practice.",
+        "But before this discussion we have to define some terms which will be used in the above classification."
+      ]
+    },
+    {
+      "section_num": "2.4",
+      "topic": "Graphical Representation of Data",
+      "points": [
+        "A graphical presentation is a geometric image of a set of data.",
+        "Graphical presentation is done for both frequency distributions and time series.",
+        "They also help us in studying cause and effect relationship between two variables.",
+        "The graph of a frequency distribution presents the huge data in an interesting and effective manner and brings to light the salient features of the data at a glance."
+      ]
+    },
+    {
+      "section_num": "2.4.1",
+      "topic": "Graphs of Frequency Distributions",
+      "points": [
+        "The graphical presentation of frequency distributions is drawn for discrete as well as continuous frequency distributions.",
+        "Let us first consider the frequency distribution of a discrete variable.",
+        "Frequency Bar Diagram: To represent a discrete frequency distribution graphically, we take two rectangular axes of coordinates, the horizontal axis for the variable and the vertical axis for the frequency.",
+        "The different values of the variable are then located as points on the horizontal axis."
+      ]
+    },
+    {
+      "section_num": "2.4.2",
+      "topic": "Stem and Leaf Plots",
+      "points": [
+        "A stem-and-leaf display is very similar to a histogram but shows more information.",
+        "The stem-and-leaf display summarises the shape of a set of data and provides the details regarding individual values.",
+        "A stem-and-leaf display quickly summarises data while maintaining the individual data points.",
+        "Now a day’s use of stem-and-leaf displays is increasing, so let us formally define it in the next paragraph with some examples."
+      ]
+    },
+    {
+      "section_num": "2.5",
+      "topic": "Measures of Central Tendency",
+      "points": [
+        "According to Professor Bowley, averages are “statistical constants which enable us to comprehend in a single effort the significance of the whole”.",
+        "They throw light as to how the values are concentrated in the central part of the distribution.",
+        "For this reason they are also called the measures of central tendency, an average is a single value which is considered as the most representative for a given set of data.",
+        "Measures of central tendency show the tendency of some central value around which data tend to cluster."
+      ]
+    },
+    {
+      "section_num": "2.5.1",
+      "topic": "Mean",
+      "points": [
+        "Arithmetic mean (also called mean) is defined as the sum of all the observations divided by the number of observations.",
+        "Arithmetic mean (AM) may be calculated for the following two types of data: 1.",
+        "For Ungrouped Data For ungrouped data, arithmetic mean may be computed by applying any of the following methods: (1) Direct Method Mathematically, if x1, x2,…, xn are the n observations then their mean is n ) x .",
+        "x x x ( X n 3 2 1 + + + + = n x X n 1 i i  = = If fi is the frequency of xi (i=1, 2,…, k), the formula for arithmetic mean would be ( ) ( ) k 2 1 k k 2 2 1 1 f ..."
+      ]
+    },
+    {
+      "section_num": "2.5.2",
+      "topic": "Median",
+      "points": [
+        "Median is that value of the variable which divides the whole distribution into two equal parts.",
+        "Here, it may be noted that the data should be arranged in ascending or descending order of magnitude.",
+        "When the number of observations is odd then the median is the middle value of the data.",
+        "For even number of observations, there will be two middle values."
+      ]
+    }
+  ],
+  "formulas": [
+    "Principles of Classification",
+    "rule for classifying the data.",
+    "principle of correction factor in classification.",
+    "K = 1 + 3.322 Log N, where K = the approximate number of classes",
+    "N = total number of observations"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Describing Data Sets and Meas\"]\n  M1[\"2.2 Frequency Distribution\"]\n  Root --> M1\n  M2[\"2.3 Grouping Data in Class Intervals\"]\n  Root --> M2\n  M3[\"2.4 Graphical Representation of Data\"]\n  Root --> M3\n  M3_1[\"2.4.1 Graphs of Frequency Distributi\"]\n  M3 --> M3_1\n  M3_2[\"2.4.2 Stem and Leaf Plots\"]\n  M3 --> M3_2\n  M4[\"2.5 Measures of Central Tendency\"]\n  Root --> M4\n  M4_1[\"2.5.1 Mean\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Median\"]\n  M4 --> M4_2\n  M4_3[\"2.5.3 Mode\"]\n  M4 --> M4_3\n  M5[\"2.6 Partition Values\"]\n  Root --> M5\n  M5_1[\"2.6.1 Quartiles\"]\n  M5 --> M5_1\n  M5_2[\"2.6.2 Deciles\"]\n  M5 --> M5_2\n  M5_3[\"2.6.3 Percentiles\"]\n  M5 --> M5_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Stribution A Frequency Distribution</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Stribution A Frequency Distribution the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Variable</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Variable the characteristic that varies in magnitude in a frequency distribution.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Frequency Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Graphical Representation Of Data</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A graphical presentation is a geometric image of a set of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Graphs Of Frequency Distributions</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The graphical presentation of frequency distributions is drawn for discrete as well as continuous frequency distributions.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Frequency Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A frequency distribution refers to the data which are classified on the basis of some variables that can be measured such as wages, age of children, etc.</li>\n<li>A variable refers to the characteristic that varies in magnitude in a frequency distribution.</li>\n<li>A discrete variable is one that generally takes integer values.</li>\n<li>For example, the number of students, the number of books, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Grouping Data in Class Intervals</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>To make data understandable, data are divided into number of homogeneous groups or subgroups.</li>\n<li>In classification, according to class intervals, the observations are arranged systematically into a number of groups called classes.</li>\n<li>Such classification is most popular in practice.</li>\n<li>But before this discussion we have to define some terms which will be used in the above classification.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Graphical Representation of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A graphical presentation is a geometric image of a set of data.</li>\n<li>Graphical presentation is done for both frequency distributions and time series.</li>\n<li>They also help us in studying cause and effect relationship between two variables.</li>\n<li>The graph of a frequency distribution presents the huge data in an interesting and effective manner and brings to light the salient features of the data at a glance.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.1 Graphs of Frequency Distributions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The graphical presentation of frequency distributions is drawn for discrete as well as continuous frequency distributions.</li>\n<li>Let us first consider the frequency distribution of a discrete variable.</li>\n<li>Frequency Bar Diagram: To represent a discrete frequency distribution graphically, we take two rectangular axes of coordinates, the horizontal axis for the variable and the vertical axis for the frequency.</li>\n<li>The different values of the variable are then located as points on the horizontal axis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4.2 Stem and Leaf Plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A stem-and-leaf display is very similar to a histogram but shows more information.</li>\n<li>The stem-and-leaf display summarises the shape of a set of data and provides the details regarding individual values.</li>\n<li>A stem-and-leaf display quickly summarises data while maintaining the individual data points.</li>\n<li>Now a day’s use of stem-and-leaf displays is increasing, so let us formally define it in the next paragraph with some examples.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Measures of Central Tendency</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>According to Professor Bowley, averages are “statistical constants which enable us to comprehend in a single effort the significance of the whole”.</li>\n<li>They throw light as to how the values are concentrated in the central part of the distribution.</li>\n<li>For this reason they are also called the measures of central tendency, an average is a single value which is considered as the most representative for a given set of data.</li>\n<li>Measures of central tendency show the tendency of some central value around which data tend to cluster.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.1 Mean</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Arithmetic mean (also called mean) is defined as the sum of all the observations divided by the number of observations.</li>\n<li>Arithmetic mean (AM) may be calculated for the following two types of data: 1.</li>\n<li>For Ungrouped Data For ungrouped data, arithmetic mean may be computed by applying any of the following methods: (1) Direct Method Mathematically, if x1, x2,…, xn are the n observations then their mean is n ) x .</li>\n<li>x x x ( X n 3 2 1 + + + + = n x X n 1 i i  = = If fi is the frequency of xi (i=1, 2,…, k), the formula for arithmetic mean would be ( ) ( ) k 2 1 k k 2 2 1 1 f ...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.2 Median</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Median is that value of the variable which divides the whole distribution into two equal parts.</li>\n<li>Here, it may be noted that the data should be arranged in ascending or descending order of magnitude.</li>\n<li>When the number of observations is odd then the median is the middle value of the data.</li>\n<li>For even number of observations, there will be two middle values.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Principles of Classification</code></div>\n<div class=\"formula-box\"><code>rule for classifying the data.</code></div>\n<div class=\"formula-box\"><code>principle of correction factor in classification.</code></div>\n<div class=\"formula-box\"><code>K = 1 + 3.322 Log N, where K = the approximate number of classes</code></div>\n<div class=\"formula-box\"><code>N = total number of observations</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">, i.e. the smallest observation (sample minimum), observation (sample maximum). Box plots are used to describe a distribution generally when it is extremely skewed or multimodal. A box plot also indicates which observation(s), if any, might be considered as outliers. A box plot is a quick graphic approach for examining one or more sets of data. Box plots display differences between populations without making any</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-2_Describing_Data_Sets_and_Measures_of_Central_Tendencies.pdf')\">\n          📄 Read Original IGNOU PDF (42 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

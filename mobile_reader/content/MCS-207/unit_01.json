@@ -1,0 +1,167 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Database Management System-An Introduction",
+  "filename": "Unit-1_Database_Management_System-An_Introduction.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-1_Database_Management_System-An_Introduction.pdf",
+  "total_pages": 18,
+  "word_count": 7213,
+  "est_read_time_minutes": 40,
+  "objectives": [
+    "commerce website, depositing and/or withdrawing from a bank,"
+  ],
+  "summary": "This unit provides you an introduction about the database system and database management system. It first defines the need of a database management system by comparing the database system approach to file system approach. The file system has several limitations due to data redundancy, however, the database approach integrates and shares the data among several applications. The unit also discusses the basic advantages of the database approach are - sharing of",
+  "flashcards": [
+    {
+      "question": "What is a DBMS? ……………………………………………………………………………. …………………………………………………………………………….",
+      "answer": "Integrity enforcement, control of file manager, security, backup, recovery, concurrency control, etc.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What are the advantages of a DBMS? ……………………………………………………………………………. ……………………………………………………………………………..",
+      "answer": "A database administrator is normally given such controls. His/her functions are: defining database, defining and optimising storage structures, and control of security, integrity and recovery. Check Your Progress",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Compare and contrast the traditional File based system with Database approach. ……………………………………………………………………………. ……………………………………………………………………………..",
+      "answer": "File Based System Database Approach Cheaper Data dependent Data redundancy Inconsistent Data Fixed Queries Costly Data independent Controlled data redundancy Consistent Data Unforeseen queries can be answered Check Your Progress",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What are the major components of Database Manager? ……………………………………………………………………………. ……………………………………………………………………………. …………………………………………………………….……………….",
+      "answer": "Integrity enforcement, control of file manager, security, backup, recovery, concurrency control, etc.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain the functions of the person who has control of both data and programs accessing that data. …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "A database administrator is normally given such controls. His/her functions are: defining database, defining and optimising storage structures, and control of security, integrity and recovery. Check Your Progress",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is a database backend? ……………………………………………………………",
+      "answer": "Integrity enforcement, control of file manager, security, backup, recovery, concurrency control, etc.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Language (Ddl) and how is it characterized?",
+      "answer": "Language (Ddl) often used in DBMSs to define the conceptual level or schema of a database system.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Database Management System-An\"]\n  M1[\"1.2 Need for a Database Management S\"]\n  Root --> M1\n  M1_1[\"1.2.1 The File Based System\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Limitations of File Based Syst\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 The Database Approach\"]\n  M1 --> M1_3\n  M2[\"1.3 Logical DBMS Architecture\"]\n  Root --> M2\n  M2_1[\"1.3.1 Three Level Architecture of DB\"]\n  M2 --> M2_1\n  M2_2[\"1.3.2 Mappings between Levels and Da\"]\n  M2 --> M2_2\n  M2_3[\"1.3.3 The Need of Three Level Archit\"]\n  M2 --> M2_3\n  M3[\"1.4 Physical DBMS Structure\"]\n  Root --> M3\n  M3_1[\"1.4.1 DML Precompiler\"]\n  M3 --> M3_1\n  M3_2[\"1.4.2 DDL Compiler\"]\n  M3 --> M3_2\n  M3_3[\"1.4.3 File Manager\"]\n  M3 --> M3_3\n  M4[\"1.5 Database System Architectures\"]\n  Root --> M4\n  M5[\"1.6 Data Models and Trends\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Language (Ddl)</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Language (Ddl) often used in DBMSs to define the conceptual level or schema of a database system.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Improved Integrity Data Integrity</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Improved Integrity Data Integrity validity and consistency of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The File Based System</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Computerised file-based systems were primarily designed to make electronic versions of physical filing systems used by businesses.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Database Approach</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in the previous section, the file system has many weaknesses.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Logical Dbms Architecture</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in the previous section that most of the advantages of database systems are because of the creation of DBMS software.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Need for a Database Management System</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Database is an organised, persistent collection of data of an organisation.</li>\n<li>The database management system manages the database of an enterprise.</li>\n<li>Prior to use of the database systems, file-based systems were popularly used.</li>\n<li>In order to appreciate the strengths of database management systems, you may first list the problems associated with the file base systems, which are discussed next.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 The File Based System</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Computerised file-based systems were primarily designed to make electronic versions of physical filing systems used by businesses.</li>\n<li>For example, a physical file can be set up to hold all the correspondence relating to a particular matter of a project, product, task, client or employee.</li>\n<li>In an organisation there could be many such files, which may be labeled and stored.</li>\n<li>Similarly, at homes you may have to maintain files relating to bank statements, loans, receipts, tax payments, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.2 Limitations of File Based System</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>File based systems required that several files should be opened for a particular system application.</li>\n<li>Several files may consist of duplicate data, which can result in several shortcomings.</li>\n<li>Some of these shortcomings are listed below: • Data isolation: Since the file system stores data in separate files, which may belong to different applications.</li>\n<li>These files are not accessible to other applications and are difficult to share, especially when an application needs to use more than one file.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 The Database Approach</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section, the file system has many weaknesses.</li>\n<li>Therefore, a new approach was proposed that eliminates the weaknesses of the file system.</li>\n<li>This approach, called the database approach, separated data from application programs.</li>\n<li>The data in this approach is integrated from various applications and securely shared using a management system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Logical DBMS Architecture</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section that most of the advantages of database systems are because of the creation of DBMS software.</li>\n<li>DBMSs must support many services and therefore are complex in nature.</li>\n<li>In addition, DBMSs are also required to store, manipulate and control a very large amount of data in a reliable manner.</li>\n<li>In this and subsequent section, we discuss the architecture of DBMS, which will help you with the processes and features of a DBMS.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.1 Three Level Architecture of DBMS</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The three-level database architecture of a database defines the three different levels of abstraction of data for different types of users of the database.</li>\n<li>The proposed architecture was designed and standardised by the American National Standards Institute (ANSI) and is also known as ANSI/SPARC architecture.</li>\n<li>As per this architecture, a database schema can be visualised at three different levels.</li>\n<li>The External or View Level This level of abstraction provides a view of data for the users of a database system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.2 Mappings between Levels and Data Independence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Independence The three level architecture defines a single database system across all the three levels.</li>\n<li>Therefore, different levels must map with each other.</li>\n<li>This mapping led to the concept of data independence, which was one of the major weaknesses in the file systems.</li>\n<li>The first mapping is between the conceptual level and the external level.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.3 The Need of Three Level Architecture</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>13 Basic Concepts The three level architecture separates the data that is presented to the user from the data that is stored in the database physically.</li>\n<li>The basic objectives of three level architecture are: • It can support different views for different users.</li>\n<li>In case of change in any application, the views related to that application are required to change.</li>\n<li>Thus, three level architecture ensures the independence of data and programs.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules. Constraints may apply to</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides you an introduction about the database system and database management system. It first defines the need of a database management system by comparing the database system approach to file system approach. The file system has several limitations due to data redundancy, however, the database approach integrates and shares the data among several applications. The unit also discusses the basic advantages of the database approach are - sharing of</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-1_Database_Management_System-An_Introduction.pdf')\">\n          📄 Read Original IGNOU PDF (18 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Database Management System-An\"]\n  M1[\"1.2 Need for a Database Management S\"]\n  Root --> M1\n  M1_1[\"1.2.1 The File Based System\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Limitations of File Based Syst\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 The Database Approach\"]\n  M1 --> M1_3\n  M2[\"1.3 Logical DBMS Architecture\"]\n  Root --> M2\n  M2_1[\"1.3.1 Three Level Architecture of DB\"]\n  M2 --> M2_1\n  M2_2[\"1.3.2 Mappings between Levels and Da\"]\n  M2 --> M2_2\n  M2_3[\"1.3.3 The Need of Three Level Archit\"]\n  M2 --> M2_3\n  M3[\"1.4 Physical DBMS Structure\"]\n  Root --> M3\n  M3_1[\"1.4.1 DML Precompiler\"]\n  M3 --> M3_1\n  M3_2[\"1.4.2 DDL Compiler\"]\n  M3 --> M3_2\n  M3_3[\"1.4.3 File Manager\"]\n  M3 --> M3_3\n  M4[\"1.5 Database System Architectures\"]\n  Root --> M4\n  M5[\"1.6 Data Models and Trends\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "Language (Ddl)",
+      "definition": "Language (Ddl) often used in DBMSs to define the conceptual level or schema of a database system.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Improved Integrity Data Integrity",
+      "definition": "Improved Integrity Data Integrity validity and consistency of data.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "The File Based System",
+      "definition": "Computerised file-based systems were primarily designed to make electronic versions of physical filing systems used by businesses.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "The Database Approach",
+      "definition": "As discussed in the previous section, the file system has many weaknesses.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Logical Dbms Architecture",
+      "definition": "As discussed in the previous section that most of the advantages of database systems are because of the creation of DBMS software.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.2",
+      "topic": "Need for a Database Management System",
+      "points": [
+        "Database is an organised, persistent collection of data of an organisation.",
+        "The database management system manages the database of an enterprise.",
+        "Prior to use of the database systems, file-based systems were popularly used.",
+        "In order to appreciate the strengths of database management systems, you may first list the problems associated with the file base systems, which are discussed next."
+      ]
+    },
+    {
+      "section_num": "1.2.1",
+      "topic": "The File Based System",
+      "points": [
+        "Computerised file-based systems were primarily designed to make electronic versions of physical filing systems used by businesses.",
+        "For example, a physical file can be set up to hold all the correspondence relating to a particular matter of a project, product, task, client or employee.",
+        "In an organisation there could be many such files, which may be labeled and stored.",
+        "Similarly, at homes you may have to maintain files relating to bank statements, loans, receipts, tax payments, etc."
+      ]
+    },
+    {
+      "section_num": "1.2.2",
+      "topic": "Limitations of File Based System",
+      "points": [
+        "File based systems required that several files should be opened for a particular system application.",
+        "Several files may consist of duplicate data, which can result in several shortcomings.",
+        "Some of these shortcomings are listed below: • Data isolation: Since the file system stores data in separate files, which may belong to different applications.",
+        "These files are not accessible to other applications and are difficult to share, especially when an application needs to use more than one file."
+      ]
+    },
+    {
+      "section_num": "1.2.3",
+      "topic": "The Database Approach",
+      "points": [
+        "As discussed in the previous section, the file system has many weaknesses.",
+        "Therefore, a new approach was proposed that eliminates the weaknesses of the file system.",
+        "This approach, called the database approach, separated data from application programs.",
+        "The data in this approach is integrated from various applications and securely shared using a management system."
+      ]
+    },
+    {
+      "section_num": "1.3",
+      "topic": "Logical DBMS Architecture",
+      "points": [
+        "As discussed in the previous section that most of the advantages of database systems are because of the creation of DBMS software.",
+        "DBMSs must support many services and therefore are complex in nature.",
+        "In addition, DBMSs are also required to store, manipulate and control a very large amount of data in a reliable manner.",
+        "In this and subsequent section, we discuss the architecture of DBMS, which will help you with the processes and features of a DBMS."
+      ]
+    },
+    {
+      "section_num": "1.3.1",
+      "topic": "Three Level Architecture of DBMS",
+      "points": [
+        "The three-level database architecture of a database defines the three different levels of abstraction of data for different types of users of the database.",
+        "The proposed architecture was designed and standardised by the American National Standards Institute (ANSI) and is also known as ANSI/SPARC architecture.",
+        "As per this architecture, a database schema can be visualised at three different levels.",
+        "The External or View Level This level of abstraction provides a view of data for the users of a database system."
+      ]
+    },
+    {
+      "section_num": "1.3.2",
+      "topic": "Mappings between Levels and Data Independence",
+      "points": [
+        "Independence The three level architecture defines a single database system across all the three levels.",
+        "Therefore, different levels must map with each other.",
+        "This mapping led to the concept of data independence, which was one of the major weaknesses in the file systems.",
+        "The first mapping is between the conceptual level and the external level."
+      ]
+    },
+    {
+      "section_num": "1.3.3",
+      "topic": "The Need of Three Level Architecture",
+      "points": [
+        "13 Basic Concepts The three level architecture separates the data that is presented to the user from the data that is stored in the database physically.",
+        "The basic objectives of three level architecture are: • It can support different views for different users.",
+        "In case of change in any application, the views related to that application are required to change.",
+        "Thus, three level architecture ensures the independence of data and programs."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules. Constraints may apply to"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Database Management System-An\"]\n  M1[\"1.2 Need for a Database Management S\"]\n  Root --> M1\n  M1_1[\"1.2.1 The File Based System\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Limitations of File Based Syst\"]\n  M1 --> M1_2\n  M1_3[\"1.2.3 The Database Approach\"]\n  M1 --> M1_3\n  M2[\"1.3 Logical DBMS Architecture\"]\n  Root --> M2\n  M2_1[\"1.3.1 Three Level Architecture of DB\"]\n  M2 --> M2_1\n  M2_2[\"1.3.2 Mappings between Levels and Da\"]\n  M2 --> M2_2\n  M2_3[\"1.3.3 The Need of Three Level Archit\"]\n  M2 --> M2_3\n  M3[\"1.4 Physical DBMS Structure\"]\n  Root --> M3\n  M3_1[\"1.4.1 DML Precompiler\"]\n  M3 --> M3_1\n  M3_2[\"1.4.2 DDL Compiler\"]\n  M3 --> M3_2\n  M3_3[\"1.4.3 File Manager\"]\n  M3 --> M3_3\n  M4[\"1.5 Database System Architectures\"]\n  Root --> M4\n  M5[\"1.6 Data Models and Trends\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Language (Ddl)</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Language (Ddl) often used in DBMSs to define the conceptual level or schema of a database system.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Improved Integrity Data Integrity</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Improved Integrity Data Integrity validity and consistency of data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The File Based System</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Computerised file-based systems were primarily designed to make electronic versions of physical filing systems used by businesses.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Database Approach</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in the previous section, the file system has many weaknesses.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Logical Dbms Architecture</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">As discussed in the previous section that most of the advantages of database systems are because of the creation of DBMS software.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Need for a Database Management System</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Database is an organised, persistent collection of data of an organisation.</li>\n<li>The database management system manages the database of an enterprise.</li>\n<li>Prior to use of the database systems, file-based systems were popularly used.</li>\n<li>In order to appreciate the strengths of database management systems, you may first list the problems associated with the file base systems, which are discussed next.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 The File Based System</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Computerised file-based systems were primarily designed to make electronic versions of physical filing systems used by businesses.</li>\n<li>For example, a physical file can be set up to hold all the correspondence relating to a particular matter of a project, product, task, client or employee.</li>\n<li>In an organisation there could be many such files, which may be labeled and stored.</li>\n<li>Similarly, at homes you may have to maintain files relating to bank statements, loans, receipts, tax payments, etc.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.2 Limitations of File Based System</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>File based systems required that several files should be opened for a particular system application.</li>\n<li>Several files may consist of duplicate data, which can result in several shortcomings.</li>\n<li>Some of these shortcomings are listed below: • Data isolation: Since the file system stores data in separate files, which may belong to different applications.</li>\n<li>These files are not accessible to other applications and are difficult to share, especially when an application needs to use more than one file.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.3 The Database Approach</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section, the file system has many weaknesses.</li>\n<li>Therefore, a new approach was proposed that eliminates the weaknesses of the file system.</li>\n<li>This approach, called the database approach, separated data from application programs.</li>\n<li>The data in this approach is integrated from various applications and securely shared using a management system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Logical DBMS Architecture</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the previous section that most of the advantages of database systems are because of the creation of DBMS software.</li>\n<li>DBMSs must support many services and therefore are complex in nature.</li>\n<li>In addition, DBMSs are also required to store, manipulate and control a very large amount of data in a reliable manner.</li>\n<li>In this and subsequent section, we discuss the architecture of DBMS, which will help you with the processes and features of a DBMS.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.1 Three Level Architecture of DBMS</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The three-level database architecture of a database defines the three different levels of abstraction of data for different types of users of the database.</li>\n<li>The proposed architecture was designed and standardised by the American National Standards Institute (ANSI) and is also known as ANSI/SPARC architecture.</li>\n<li>As per this architecture, a database schema can be visualised at three different levels.</li>\n<li>The External or View Level This level of abstraction provides a view of data for the users of a database system.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.2 Mappings between Levels and Data Independence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Independence The three level architecture defines a single database system across all the three levels.</li>\n<li>Therefore, different levels must map with each other.</li>\n<li>This mapping led to the concept of data independence, which was one of the major weaknesses in the file systems.</li>\n<li>The first mapping is between the conceptual level and the external level.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3.3 The Need of Three Level Architecture</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>13 Basic Concepts The three level architecture separates the data that is presented to the user from the data that is stored in the database physically.</li>\n<li>The basic objectives of three level architecture are: • It can support different views for different users.</li>\n<li>In case of change in any application, the views related to that application are required to change.</li>\n<li>Thus, three level architecture ensures the independence of data and programs.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules. Constraints may apply to</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides you an introduction about the database system and database management system. It first defines the need of a database management system by comparing the database system approach to file system approach. The file system has several limitations due to data redundancy, however, the database approach integrates and shares the data among several applications. The unit also discusses the basic advantages of the database approach are - sharing of</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-1_Database_Management_System-An_Introduction.pdf')\">\n          📄 Read Original IGNOU PDF (18 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

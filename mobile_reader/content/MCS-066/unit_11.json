@@ -1,0 +1,136 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Analysis of Variance",
+  "filename": "Unit-11_Analysis_of_Variance.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-11_Analysis_of_Variance.pdf",
+  "total_pages": 22,
+  "word_count": 7932,
+  "est_read_time_minutes": 44,
+  "objectives": [
+    "11.2.1 Significance of Analysis of Variance",
+    "way Analysis of Variance (ANOVA)",
+    "Way ANOVA",
+    "way Analysis of Variance (ANOVA)",
+    "way ANOVA",
+    "test. Sometimes, situations may arise where testing of more than two"
+  ],
+  "summary": "In this unit, we have discussed: 1. Basic ideas and concepts related tothe technique of analysis of variance as applied to test the equality of several population means simultaneously; 2. Types of data which can be analysed through ANOVA technique and the meaning of one-way and two-way classified data as well as the concept of 3. Formation of null and alternative hypotheses to be tested and different steps",
+  "flashcards": [
+    {
+      "question": "Describe the analysis of variance and differentiate between one-way and two-way ANOVA.",
+      "answer": ". So, H0S is not rejected. Hence there is no any difference in shrimp yield due the salinity level of",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain the significance of analysis of variance briefly.",
+      "answer": "If i is the average effect of ith level of temperature then we can set up the null and alternative hypotheses as follows:",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Section (2) Section (",
+      "answer": ". So, H0S is not rejected. Hence there is no any difference in shrimp yield due the salinity level of",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "A researcher wants to test four diets A, B, C, D on growth rate in mice. These animals are divided into",
+      "answer": ". So, H0S is not rejected. Hence there is no any difference in shrimp yield due the salinity level of",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Referred to Section 11.2.",
+      "answer": ". So, H0S is not rejected. Hence there is no any difference in shrimp yield due the salinity level of",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Referred to sub-section 11.2.1.",
+      "answer": "If i is the average effect of ith level of temperature then we can set up the null and alternative hypotheses as follows:",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Analysis Of Variance (Anova) and how is it characterized?",
+      "answer": "The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Analysis of Variance\"]\n  M1[\"11.2 Analysis of Variance ANOVA\"]\n  Root --> M1\n  M1_1[\"11.2.1 Significance of Analysis of V\"]\n  M1 --> M1_1\n  M2[\"11.3 One-way Analysis of Variance AN\"]\n  Root --> M2\n  M2_1[\"11.3.1 Procedure of Testing of Hypot\"]\n  M2 --> M2_1\n  M3[\"11.4 Two-way Analysis of Variance AN\"]\n  Root --> M3\n  M3_1[\"11.4.1 Procedure of Testing of Hypot\"]\n  M3 --> M3_1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Analysis Of Variance (Anova)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 Analysis of Variance (ANOVA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.</li>\n<li>Fisher in 1920’s, in which he developed the method of testing equality of means of several sub-populations by dividing the total variability into different components.</li>\n<li>Variation is inherent in nature, so analysis of variance means examining the variation present in data or parts of data.</li>\n<li>In other words, analysis of variance means to find out the cause of variation in the data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 Significance of Analysis of Variance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One obvious question may arise that why test of equality of several means (more than two) is called analysis of variance test instead of the analysis of means?</li>\n<li>How do test for equality of means for more than two populations propose by analysis the variances?</li>\n<li>As a matter of fact, in order to determine that means of several populations are equal or not, the measure of variance is considered.</li>\n<li>The amount of the total variation in the population 2 is computed by two different approaches.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 One-way Analysis of Variance (ANOVA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If we consider only one independent variable which affects the response / dependent variable then it is called One-way ANOVA.</li>\n<li>It is used to test the equality of more than two means when the observations are classified according to one factor/treatment at different levels.</li>\n<li>For example, we may wish to study the simultaneous effects of five varieties of wheat (independent variable) on the yield (dependent variable) or test the stress level of employees in three different organisations, and so on.</li>\n<li>In such situations, we can also apply one-way ANOVA for each treatment/factor.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.1 Procedure of Testing of Hypothesisof One-Way ANOVA</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we discuss the step-by-step computation procedure for one-way analysis of variance for k independent samples as Step 1: We first formulate the null hypothesis (H0) and the alternative hypothesis(H1).</li>\n<li>We want to test the equality of the population means μ1, μ2 ,.</li>\n<li>., μk or test the homogeneity of the effect of different levels of a factor.</li>\n<li>Hence, the null and alternative hypotheses are H0: μ1 = μ2 = .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4 Two-way Analysis of Variance (ANOVA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, we considered the case where only one predictor/ independent/ explanatory variable was categorised at different levels.</li>\n<li>If we are interested in studying the simultaneous effect of two independent factors each at different levels on the dependent variable, we use two-way ANOVA.</li>\n<li>In such situations, we can also apply two separate one-way ANOVA for each treatment/factor.</li>\n<li>However, it is more advantageous to use two-way ANOVA because the variance can be reduced by introducing the second factor.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.1 Procedure of Testing of Hypothesis of Two-way ANOVA</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In two-way ANOVA, the total variation in the data is divided into three components: variation due to the first criterion (factor), variation due to the second criterion (factor) and variation due to error.</li>\n<li>Now, let us discuss the testing procedure of two-way ANOVA briefly mentioning the main steps and formulae as follows: Step 1: We first formulate the null hypothesis (H0) and the alternative hypothesis (H1).</li>\n<li>In two-way ANOVA, we can test two hypotheses simultaneously: one for different levels of factor A and the other for different levels of factor B.</li>\n<li>If factor A has r levels and i is the average effect of ith level of factor A then we can set up the null and alternative hypotheses as follows: r 2 1 A 0 ...</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem that we have applied in Large sample</code></div>\n<div class=\"formula-box\"><code>Theorem, we have previously found that the standard</code></div>\n<div class=\"formula-box\"><code>random samples one from each population of size ni (i = 1,2, …, k). The</code></div>\n<div class=\"formula-box\"><code>calculated value of F = 2.22 is less than the critical value of F = 3.24, we cannot</code></div>\n<div class=\"formula-box\"><code>Grand Total G = 35 + 34 + 42 + 37 = 148</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed: 1. Basic ideas and concepts related tothe technique of analysis of variance as applied to test the equality of several population means simultaneously; 2. Types of data which can be analysed through ANOVA technique and the meaning of one-way and two-way classified data as well as the concept of 3. Formation of null and alternative hypotheses to be tested and different steps</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-11_Analysis_of_Variance.pdf')\">\n          📄 Read Original IGNOU PDF (22 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Analysis of Variance\"]\n  M1[\"11.2 Analysis of Variance ANOVA\"]\n  Root --> M1\n  M1_1[\"11.2.1 Significance of Analysis of V\"]\n  M1 --> M1_1\n  M2[\"11.3 One-way Analysis of Variance AN\"]\n  Root --> M2\n  M2_1[\"11.3.1 Procedure of Testing of Hypot\"]\n  M2 --> M2_1\n  M3[\"11.4 Two-way Analysis of Variance AN\"]\n  Root --> M3\n  M3_1[\"11.4.1 Procedure of Testing of Hypot\"]\n  M3 --> M3_1",
+  "definitions": [
+    {
+      "term": "Analysis Of Variance (Anova)",
+      "definition": "The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "11.2",
+      "topic": "Analysis of Variance (ANOVA)",
+      "points": [
+        "The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.",
+        "Fisher in 1920’s, in which he developed the method of testing equality of means of several sub-populations by dividing the total variability into different components.",
+        "Variation is inherent in nature, so analysis of variance means examining the variation present in data or parts of data.",
+        "In other words, analysis of variance means to find out the cause of variation in the data."
+      ]
+    },
+    {
+      "section_num": "11.2.1",
+      "topic": "Significance of Analysis of Variance",
+      "points": [
+        "One obvious question may arise that why test of equality of several means (more than two) is called analysis of variance test instead of the analysis of means?",
+        "How do test for equality of means for more than two populations propose by analysis the variances?",
+        "As a matter of fact, in order to determine that means of several populations are equal or not, the measure of variance is considered.",
+        "The amount of the total variation in the population 2 is computed by two different approaches."
+      ]
+    },
+    {
+      "section_num": "11.3",
+      "topic": "One-way Analysis of Variance (ANOVA)",
+      "points": [
+        "If we consider only one independent variable which affects the response / dependent variable then it is called One-way ANOVA.",
+        "It is used to test the equality of more than two means when the observations are classified according to one factor/treatment at different levels.",
+        "For example, we may wish to study the simultaneous effects of five varieties of wheat (independent variable) on the yield (dependent variable) or test the stress level of employees in three different organisations, and so on.",
+        "In such situations, we can also apply one-way ANOVA for each treatment/factor."
+      ]
+    },
+    {
+      "section_num": "11.3.1",
+      "topic": "Procedure of Testing of Hypothesisof One-Way ANOVA",
+      "points": [
+        "In this section, we discuss the step-by-step computation procedure for one-way analysis of variance for k independent samples as Step 1: We first formulate the null hypothesis (H0) and the alternative hypothesis(H1).",
+        "We want to test the equality of the population means μ1, μ2 ,.",
+        "., μk or test the homogeneity of the effect of different levels of a factor.",
+        "Hence, the null and alternative hypotheses are H0: μ1 = μ2 = ."
+      ]
+    },
+    {
+      "section_num": "11.4",
+      "topic": "Two-way Analysis of Variance (ANOVA)",
+      "points": [
+        "In the previous section, we considered the case where only one predictor/ independent/ explanatory variable was categorised at different levels.",
+        "If we are interested in studying the simultaneous effect of two independent factors each at different levels on the dependent variable, we use two-way ANOVA.",
+        "In such situations, we can also apply two separate one-way ANOVA for each treatment/factor.",
+        "However, it is more advantageous to use two-way ANOVA because the variance can be reduced by introducing the second factor."
+      ]
+    },
+    {
+      "section_num": "11.4.1",
+      "topic": "Procedure of Testing of Hypothesis of Two-way ANOVA",
+      "points": [
+        "In two-way ANOVA, the total variation in the data is divided into three components: variation due to the first criterion (factor), variation due to the second criterion (factor) and variation due to error.",
+        "Now, let us discuss the testing procedure of two-way ANOVA briefly mentioning the main steps and formulae as follows: Step 1: We first formulate the null hypothesis (H0) and the alternative hypothesis (H1).",
+        "In two-way ANOVA, we can test two hypotheses simultaneously: one for different levels of factor A and the other for different levels of factor B.",
+        "If factor A has r levels and i is the average effect of ith level of factor A then we can set up the null and alternative hypotheses as follows: r 2 1 A 0 ..."
+      ]
+    }
+  ],
+  "formulas": [
+    "theorem that we have applied in Large sample",
+    "Theorem, we have previously found that the standard",
+    "random samples one from each population of size ni (i = 1,2, …, k). The",
+    "calculated value of F = 2.22 is less than the critical value of F = 3.24, we cannot",
+    "Grand Total G = 35 + 34 + 42 + 37 = 148"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Analysis of Variance\"]\n  M1[\"11.2 Analysis of Variance ANOVA\"]\n  Root --> M1\n  M1_1[\"11.2.1 Significance of Analysis of V\"]\n  M1 --> M1_1\n  M2[\"11.3 One-way Analysis of Variance AN\"]\n  Root --> M2\n  M2_1[\"11.3.1 Procedure of Testing of Hypot\"]\n  M2 --> M2_1\n  M3[\"11.4 Two-way Analysis of Variance AN\"]\n  Root --> M3\n  M3_1[\"11.4.1 Procedure of Testing of Hypot\"]\n  M3 --> M3_1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Analysis Of Variance (Anova)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 Analysis of Variance (ANOVA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The statistical technique known as \"Analysis of Variance\"(abbreviated as ANOVA), was propounded by Professor R.A.</li>\n<li>Fisher in 1920’s, in which he developed the method of testing equality of means of several sub-populations by dividing the total variability into different components.</li>\n<li>Variation is inherent in nature, so analysis of variance means examining the variation present in data or parts of data.</li>\n<li>In other words, analysis of variance means to find out the cause of variation in the data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2.1 Significance of Analysis of Variance</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One obvious question may arise that why test of equality of several means (more than two) is called analysis of variance test instead of the analysis of means?</li>\n<li>How do test for equality of means for more than two populations propose by analysis the variances?</li>\n<li>As a matter of fact, in order to determine that means of several populations are equal or not, the measure of variance is considered.</li>\n<li>The amount of the total variation in the population 2 is computed by two different approaches.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 One-way Analysis of Variance (ANOVA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If we consider only one independent variable which affects the response / dependent variable then it is called One-way ANOVA.</li>\n<li>It is used to test the equality of more than two means when the observations are classified according to one factor/treatment at different levels.</li>\n<li>For example, we may wish to study the simultaneous effects of five varieties of wheat (independent variable) on the yield (dependent variable) or test the stress level of employees in three different organisations, and so on.</li>\n<li>In such situations, we can also apply one-way ANOVA for each treatment/factor.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3.1 Procedure of Testing of Hypothesisof One-Way ANOVA</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In this section, we discuss the step-by-step computation procedure for one-way analysis of variance for k independent samples as Step 1: We first formulate the null hypothesis (H0) and the alternative hypothesis(H1).</li>\n<li>We want to test the equality of the population means μ1, μ2 ,.</li>\n<li>., μk or test the homogeneity of the effect of different levels of a factor.</li>\n<li>Hence, the null and alternative hypotheses are H0: μ1 = μ2 = .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4 Two-way Analysis of Variance (ANOVA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, we considered the case where only one predictor/ independent/ explanatory variable was categorised at different levels.</li>\n<li>If we are interested in studying the simultaneous effect of two independent factors each at different levels on the dependent variable, we use two-way ANOVA.</li>\n<li>In such situations, we can also apply two separate one-way ANOVA for each treatment/factor.</li>\n<li>However, it is more advantageous to use two-way ANOVA because the variance can be reduced by introducing the second factor.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.1 Procedure of Testing of Hypothesis of Two-way ANOVA</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In two-way ANOVA, the total variation in the data is divided into three components: variation due to the first criterion (factor), variation due to the second criterion (factor) and variation due to error.</li>\n<li>Now, let us discuss the testing procedure of two-way ANOVA briefly mentioning the main steps and formulae as follows: Step 1: We first formulate the null hypothesis (H0) and the alternative hypothesis (H1).</li>\n<li>In two-way ANOVA, we can test two hypotheses simultaneously: one for different levels of factor A and the other for different levels of factor B.</li>\n<li>If factor A has r levels and i is the average effect of ith level of factor A then we can set up the null and alternative hypotheses as follows: r 2 1 A 0 ...</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem that we have applied in Large sample</code></div>\n<div class=\"formula-box\"><code>Theorem, we have previously found that the standard</code></div>\n<div class=\"formula-box\"><code>random samples one from each population of size ni (i = 1,2, …, k). The</code></div>\n<div class=\"formula-box\"><code>calculated value of F = 2.22 is less than the critical value of F = 3.24, we cannot</code></div>\n<div class=\"formula-box\"><code>Grand Total G = 35 + 34 + 42 + 37 = 148</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have discussed: 1. Basic ideas and concepts related tothe technique of analysis of variance as applied to test the equality of several population means simultaneously; 2. Types of data which can be analysed through ANOVA technique and the meaning of one-way and two-way classified data as well as the concept of 3. Formation of null and alternative hypotheses to be tested and different steps</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-11_Analysis_of_Variance.pdf')\">\n          📄 Read Original IGNOU PDF (22 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

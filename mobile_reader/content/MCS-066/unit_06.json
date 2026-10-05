@@ -1,0 +1,141 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Discrete Probability Distributions",
+  "filename": "Unit-6_Discrete_Probability_Distributions.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-6_Discrete_Probability_Distributions.pdf",
+  "total_pages": 26,
+  "word_count": 10351,
+  "est_read_time_minutes": 58,
+  "objectives": [
+    "1840) in the year 1837. Poisson"
+  ],
+  "summary": "The following main points have been covered in this unit: 1) A discrete random variable X is said to follow Bernoulli distribution with parameter p if its probability mass function is given by Its mean and variance are p and p(1 −p), respectively. 2) A discrete random variable X is said to follow binomial distribution if it assumes only a finite number of non-negative integer values and its",
+  "flashcards": [
+    {
+      "question": "The probability of a man hitting a target",
+      "answer": "Let X be the number on the ticket drawn randomly from an urn containing tickets numbered from",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "A policeman fires 6 bullets on a dacoit. The probability that the dacoit will be killed by a bullet is",
+      "answer": "Here N = 25, M = 10 and n = 2. The desired probability = none of the",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "6. What is the probability that the dacoit is still alive?",
+      "answer": "Key Principle: Here, is this section, we will discuss binomial distribution which was discovered by J.",
+      "tag": "Exercise Q0"
+    },
+    {
+      "question": "Comment on the following: The mean of a binomial distribution is",
+      "answer": "Let  be the mean of the distribution,  by Poisson distribution, we have   x e P X x ;x",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "4) Find the binomial distribution when sum of mean and variance of",
+      "answer": "Let X  B(n, p), then n =",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "The mean of a binomial distribution is 30 and standard deviation is 5. Find the values of n, p and q,.",
+      "answer": "Given that Mean = 30 and S.D. = 5 Thus, np =",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is X As Specified Above and how is it characterized?",
+      "answer": "X As Specified Above the Bernoulli distribution in honour of J.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Discrete Probability Distribu\"]\n  M1[\"6.2 Bernoulli Distribution and its P\"]\n  Root --> M1\n  M2[\"6.3 Binomial Probability Function\"]\n  Root --> M2\n  M3[\"6.4 Poisson Distribution\"]\n  Root --> M3\n  M4[\"6.5 Discrete Uniform Distribution\"]\n  Root --> M4\n  M5[\"6.6 Hypergeometric Distribution\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">X As Specified Above</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">X As Specified Above the Bernoulli distribution in honour of J.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Binomial Probability Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Here, is this section, we will discuss binomial distribution which was discovered by J.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Poisson Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In case of binomial distributions, as discussed in the last section, we deal with events whose occurrences and non-occurrences are almost equally important.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Discrete Uniform Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Discrete uniform distribution can be conceived in practice if under the given experimental conditions, the different values of the random variable are equally likely.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hypergeometric Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">One such distribution which is applicable in such a situation is binomial distribution.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Bernoulli Distribution and its Properties</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are experiments where the outcomes can be divided into two categories with reference to presence or absence of a particular attribute or characteristic.</li>\n<li>A convenient method of representing the two is to designate either of them as success and the other as failure.</li>\n<li>For example, head coming up in the toss of a fair coin may be treated as a success and tail as failure, or vice-versa.</li>\n<li>Accordingly, probabilities can be assigned to the success and failure.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Binomial Probability Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Here, is this section, we will discuss binomial distribution which was discovered by J.</li>\n<li>Bernoulli (1654-1705) and was first published eight years after his death i.e.</li>\n<li>in 1713 and is also known as “Bernoulli distribution for n trials”.</li>\n<li>Binomial distribution is applicable for a random experiment comprising a finite number (n) of independent Bernoulli trials having the constant probability of success for each trial.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Poisson Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In case of binomial distributions, as discussed in the last section, we deal with events whose occurrences and non-occurrences are almost equally important.</li>\n<li>Examples of such events are: i) Our interest may lie in how many printing mistakes are there on each page of a book but we are not interested in counting the number of words without any printing mistake.</li>\n<li>ii) In production where control of quality is the major concern, it often requires counting the number of defects (and not the non-defects) per item.</li>\n<li>iii) One may intend to know the number of accidents during a particular time interval.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Discrete Uniform Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Discrete uniform distribution can be conceived in practice if under the given experimental conditions, the different values of the random variable are equally likely.</li>\n<li>For example, the number on an unbiased die when thrown may be 1 or 2 or 3 or 4 or 5 or 6.</li>\n<li>These values of random variable, “the number on an unbiased die when thrown” are equally likely and for such an experiment, the discrete uniform distribution is appropriate.</li>\n<li>Definition: A random variable X is said to have a discrete uniform (rectangular) distribution if it takes any positive integer value from 1 to n, and its probability mass function is given by   1 for x 1, 2, ...,n P X x n 0, otherwise.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Hypergeometric Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One such distribution which is applicable in such a situation is binomial distribution.</li>\n<li>The binomial distribution deals with finite and independent trials, each of which has exactly two possible outcomes (Success or Failure) with constant probability of success in each trial.</li>\n<li>For example, if we again consider the example of drawing ticket randomly from an urn containing 10 tickets bearing numbers from 1 to 10.</li>\n<li>Then, the probability that the drawn ticket bears an odd number is 5 1 10 2 = .</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of Poisson distribution.</code></div>\n<div class=\"formula-box\"><code>theorem for dependent events]</code></div>\n<div class=\"formula-box\"><code>q = 1 – p be the probability that it is defective. Let X be a random variable such</code></div>\n<div class=\"formula-box\"><code>[putting x = 1]</code></div>\n<div class=\"formula-box\"><code>[putting x = 0]</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The following main points have been covered in this unit: 1) A discrete random variable X is said to follow Bernoulli distribution with parameter p if its probability mass function is given by Its mean and variance are p and p(1 −p), respectively. 2) A discrete random variable X is said to follow binomial distribution if it assumes only a finite number of non-negative integer values and its</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-6_Discrete_Probability_Distributions.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Discrete Probability Distribu\"]\n  M1[\"6.2 Bernoulli Distribution and its P\"]\n  Root --> M1\n  M2[\"6.3 Binomial Probability Function\"]\n  Root --> M2\n  M3[\"6.4 Poisson Distribution\"]\n  Root --> M3\n  M4[\"6.5 Discrete Uniform Distribution\"]\n  Root --> M4\n  M5[\"6.6 Hypergeometric Distribution\"]\n  Root --> M5",
+  "definitions": [
+    {
+      "term": "X As Specified Above",
+      "definition": "X As Specified Above the Bernoulli distribution in honour of J.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Binomial Probability Function",
+      "definition": "Here, is this section, we will discuss binomial distribution which was discovered by J.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Poisson Distribution",
+      "definition": "In case of binomial distributions, as discussed in the last section, we deal with events whose occurrences and non-occurrences are almost equally important.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Discrete Uniform Distribution",
+      "definition": "Discrete uniform distribution can be conceived in practice if under the given experimental conditions, the different values of the random variable are equally likely.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Hypergeometric Distribution",
+      "definition": "One such distribution which is applicable in such a situation is binomial distribution.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.2",
+      "topic": "Bernoulli Distribution and its Properties",
+      "points": [
+        "There are experiments where the outcomes can be divided into two categories with reference to presence or absence of a particular attribute or characteristic.",
+        "A convenient method of representing the two is to designate either of them as success and the other as failure.",
+        "For example, head coming up in the toss of a fair coin may be treated as a success and tail as failure, or vice-versa.",
+        "Accordingly, probabilities can be assigned to the success and failure."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Binomial Probability Function",
+      "points": [
+        "Here, is this section, we will discuss binomial distribution which was discovered by J.",
+        "Bernoulli (1654-1705) and was first published eight years after his death i.e.",
+        "in 1713 and is also known as “Bernoulli distribution for n trials”.",
+        "Binomial distribution is applicable for a random experiment comprising a finite number (n) of independent Bernoulli trials having the constant probability of success for each trial."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Poisson Distribution",
+      "points": [
+        "In case of binomial distributions, as discussed in the last section, we deal with events whose occurrences and non-occurrences are almost equally important.",
+        "Examples of such events are: i) Our interest may lie in how many printing mistakes are there on each page of a book but we are not interested in counting the number of words without any printing mistake.",
+        "ii) In production where control of quality is the major concern, it often requires counting the number of defects (and not the non-defects) per item.",
+        "iii) One may intend to know the number of accidents during a particular time interval."
+      ]
+    },
+    {
+      "section_num": "6.5",
+      "topic": "Discrete Uniform Distribution",
+      "points": [
+        "Discrete uniform distribution can be conceived in practice if under the given experimental conditions, the different values of the random variable are equally likely.",
+        "For example, the number on an unbiased die when thrown may be 1 or 2 or 3 or 4 or 5 or 6.",
+        "These values of random variable, “the number on an unbiased die when thrown” are equally likely and for such an experiment, the discrete uniform distribution is appropriate.",
+        "Definition: A random variable X is said to have a discrete uniform (rectangular) distribution if it takes any positive integer value from 1 to n, and its probability mass function is given by   1 for x 1, 2, ...,n P X x n 0, otherwise."
+      ]
+    },
+    {
+      "section_num": "6.6",
+      "topic": "Hypergeometric Distribution",
+      "points": [
+        "One such distribution which is applicable in such a situation is binomial distribution.",
+        "The binomial distribution deals with finite and independent trials, each of which has exactly two possible outcomes (Success or Failure) with constant probability of success in each trial.",
+        "For example, if we again consider the example of drawing ticket randomly from an urn containing 10 tickets bearing numbers from 1 to 10.",
+        "Then, the probability that the drawn ticket bears an odd number is 5 1 10 2 = ."
+      ]
+    }
+  ],
+  "formulas": [
+    "property of Poisson distribution.",
+    "theorem for dependent events]",
+    "q = 1 – p be the probability that it is defective. Let X be a random variable such",
+    "[putting x = 1]",
+    "[putting x = 0]"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Discrete Probability Distribu\"]\n  M1[\"6.2 Bernoulli Distribution and its P\"]\n  Root --> M1\n  M2[\"6.3 Binomial Probability Function\"]\n  Root --> M2\n  M3[\"6.4 Poisson Distribution\"]\n  Root --> M3\n  M4[\"6.5 Discrete Uniform Distribution\"]\n  Root --> M4\n  M5[\"6.6 Hypergeometric Distribution\"]\n  Root --> M5\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">X As Specified Above</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">X As Specified Above the Bernoulli distribution in honour of J.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Binomial Probability Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Here, is this section, we will discuss binomial distribution which was discovered by J.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Poisson Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In case of binomial distributions, as discussed in the last section, we deal with events whose occurrences and non-occurrences are almost equally important.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Discrete Uniform Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Discrete uniform distribution can be conceived in practice if under the given experimental conditions, the different values of the random variable are equally likely.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hypergeometric Distribution</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">One such distribution which is applicable in such a situation is binomial distribution.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Bernoulli Distribution and its Properties</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are experiments where the outcomes can be divided into two categories with reference to presence or absence of a particular attribute or characteristic.</li>\n<li>A convenient method of representing the two is to designate either of them as success and the other as failure.</li>\n<li>For example, head coming up in the toss of a fair coin may be treated as a success and tail as failure, or vice-versa.</li>\n<li>Accordingly, probabilities can be assigned to the success and failure.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Binomial Probability Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Here, is this section, we will discuss binomial distribution which was discovered by J.</li>\n<li>Bernoulli (1654-1705) and was first published eight years after his death i.e.</li>\n<li>in 1713 and is also known as “Bernoulli distribution for n trials”.</li>\n<li>Binomial distribution is applicable for a random experiment comprising a finite number (n) of independent Bernoulli trials having the constant probability of success for each trial.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Poisson Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In case of binomial distributions, as discussed in the last section, we deal with events whose occurrences and non-occurrences are almost equally important.</li>\n<li>Examples of such events are: i) Our interest may lie in how many printing mistakes are there on each page of a book but we are not interested in counting the number of words without any printing mistake.</li>\n<li>ii) In production where control of quality is the major concern, it often requires counting the number of defects (and not the non-defects) per item.</li>\n<li>iii) One may intend to know the number of accidents during a particular time interval.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Discrete Uniform Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Discrete uniform distribution can be conceived in practice if under the given experimental conditions, the different values of the random variable are equally likely.</li>\n<li>For example, the number on an unbiased die when thrown may be 1 or 2 or 3 or 4 or 5 or 6.</li>\n<li>These values of random variable, “the number on an unbiased die when thrown” are equally likely and for such an experiment, the discrete uniform distribution is appropriate.</li>\n<li>Definition: A random variable X is said to have a discrete uniform (rectangular) distribution if it takes any positive integer value from 1 to n, and its probability mass function is given by   1 for x 1, 2, ...,n P X x n 0, otherwise.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 Hypergeometric Distribution</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>One such distribution which is applicable in such a situation is binomial distribution.</li>\n<li>The binomial distribution deals with finite and independent trials, each of which has exactly two possible outcomes (Success or Failure) with constant probability of success in each trial.</li>\n<li>For example, if we again consider the example of drawing ticket randomly from an urn containing 10 tickets bearing numbers from 1 to 10.</li>\n<li>Then, the probability that the drawn ticket bears an odd number is 5 1 10 2 = .</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of Poisson distribution.</code></div>\n<div class=\"formula-box\"><code>theorem for dependent events]</code></div>\n<div class=\"formula-box\"><code>q = 1 – p be the probability that it is defective. Let X be a random variable such</code></div>\n<div class=\"formula-box\"><code>[putting x = 1]</code></div>\n<div class=\"formula-box\"><code>[putting x = 0]</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The following main points have been covered in this unit: 1) A discrete random variable X is said to follow Bernoulli distribution with parameter p if its probability mass function is given by Its mean and variance are p and p(1 −p), respectively. 2) A discrete random variable X is said to follow binomial distribution if it assumes only a finite number of non-negative integer values and its</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-6_Discrete_Probability_Distributions.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

@@ -1,0 +1,221 @@
+=== PAGE 1 ===
+1  
+ 
+MASTER OF SCIENCE 
+DATA SCIENCE AND ANALYTICS 
+ 
+(MSCDSA) 
+ 
+ 
+ 
+ 
+ 
+ 
+ASSIGNMENTS 
+ 
+(January – 2026 & July – 2026) 
+ 
+ 
+ 
+ 
+ 
+MCS-061, MCS-062, MCS-063, MCS-207, MCSL-064,  
+MCSL-065 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SCHOOL OF COMPUTER AND INFORMATION SCIENCES 
+INDIRA GANDHI NATIONAL OPEN UNIVERSITY 
+MAIDAN GARHI, NEW DELHI – 110 068 
+ 
+MSCDSA/ASSIGN/SEMESTER-I 
+
+=== PAGE 2 ===
+2  
+CONTENTS 
+ 
+ 
+ 
+Course 
+Code 
+Assignment No. Submission-Schedule Page 
+No. 
+For January- 
+June Session 
+For July- 
+December Session 
+MCS-061 MSCDSA(I)/061/Assign/26 30th April, 2026 31st October, 2026 3 
+MCS-062 MSCDSA(I)/062/Assign/26 30th April, 2026 31st October, 2026 5 
+MCS-063 MSCDSA(I)/063/Assign/26 30th April, 2026 31st October, 2026 8 
+MCS-207 MSCDSA(I)/207/Assign/26 30th April, 2026 31st October, 2026 9 
+MCSL-064 MSCDSA(I)/L-064/Assign/26 30th April, 2026 31st October, 2026 10 
+MCSL-065 MSCDSA(I)/L-065/Assign/26 30th April, 2026 31st October, 2026 12 
+ 
+ 
+ 
+ 
+ 
+Important Notes 
+ 
+ 
+1. Submit your assignments to the Coordinator of your Study Centre on or before the 
+due date. 
+2. Assignment submission before due dates is compulsory to become eligible for  
+appearing in corresponding Term End Examinations. For further details, please 
+refer to MSCDSA Programme Guide. 
+3. To become eligible for appearing the Term End Practical Examination for the lab 
+courses, it is essential to fulfill the minimum attendance requirements as well as  
+submission of assignments (on or before the due date). For f urther details, please 
+refer to the MSCDSA Programme Guide. 
+4. The viva voce is compulsory for the assignments. For any course, if a student  
+submitted the assignment and not attended the viva -voce, then the assignment is  
+treated as not successfully completed and would be marked as ZERO. 
+
+=== PAGE 3 ===
+3  
+Course Code : MCS-061 
+Course Title : Mathematical Foundations-I  
+ Assignment Number : MSCDSA (I)/061/Assign/2026  
+Maximum Marks : 100 
+Weightage : 30% 
+Last Date of Submission : 30th April, 2026 (for January session) 
+31st October, 2026 (for July session) 
+ 
+Note: There are four questions in this assignment, carrying a total of 80 marks.  The 
+remaining 20 marks are for viva-voce.  Answer all the questions. 
+ 
+ 
+ 
+Q1 a) What is set? Explain the Finite set and the Infinite set with example.       (3 Marks) 
+      b) What is Power Set? Find  P(A) for A = { a,b,c,e,f,g)        (2 Marks) 
+       c) What is a function? Explain the following types of functions with examples.               (3 Marks) 
+ 
+i)    Surgective 
+ii)  Injective 
+iii)  Bijective 
+ 
+ d) Explain how to draw a graph of a linear function. Draw graph of (x) = 5x +2              (3 Marks) 
+ e) Find the inverse of the following function:         (3 Marks) 
+f(x) = x2 + 9
+x − 5 , x ≠ 5 
+ 
+      f) What is a relation? Explain an equivalence relation with the help of an example.         (3 Marks) 
+  
+      g) Draw Venn diagram to represent the followings:        (3 Marks) 
+ 
+i) A 
+ B  
+ii) (A
+ B 
+iii) (A
+ B
+  C) 
+ (A
+ B
+ C) 
+ 
+ h) Explain whether the function f(x) = x2 + 2 is  one-one or not.      (2 Marks) 
+  i) Let f and g be the two functions such that f(x) = x2+ 5 and g(x) = 2x+5. Define fof, fog,  gof and  
+gog.             (3 Marks) 
+ 
+Q2 a) Show that:|
+b + c c + a a + b
+c + a a + b b + c
+a + b b + c c + a
+| = 2 |
+a b c
+b c a
+c a b
+|                     (2 Marks) 
+ 
+ b) If A=[
+−1 2 0
+−1 1 1
+0 1 0
+], show that A2 = A-1         (2 Marks) 
+ 
+      c) What is a matrix? Explai n Upper Triangular Matrix and Lower Triangular Matrix with 
+examples.            (2 Marks) 
+ 
+ 
+ 
+
+=== PAGE 4 ===
+4  
+ d) Find the inverse of the matrix A =   
+1 6 4
+2 4 −1
+−1 2 5
+,   if it exists.        (3 Marks) 
+ 
+ e) Solve the following system of equations by using the Matrix Method.     (3 Marks) 
+ 
+3x+ 4y+ 7z= 14 
+2x-y+ 3z= 4 
+2x + 2y - 3z = 0 
+ 
+ f) Explain how to find sum of n terms of a G.P.        (2 Marks) 
+ g) If m times the mth term of an A.P. is n times its nth term, show that (m + n)th term of the  
+A.P. is zero.            (3 Marks) 
+ h) Explain what minors and cofactors are in a determinant? Find minor of each element of the 
+following matrix.            (3 Marks) 
+ 
+1 6 4
+2 4 −1
+−1 2 5
+ 
+ 
+ 
+Q3 a) What is vector? Explain how to find the inner product of vectors with an example.    (3 Marks) 
+      b) What is Eigen Vector? What is Eigen Value? Explain the characteristic equation.       (3 Marks) 
+      c) Explain the fundamental principle of multiplication.       (3 Marks) 
+      d) Prove  n+1Cr  = nCr  + nCrn           (3 Marks) 
+   
+ e) Expend (𝑥 +
+1
+𝑥)
+4
+  by binomial theorem.                     (3 Marks)
+  
+Q4 a) Explain the concept of limit.                (2 Marks) 
+      b) Show that if y = aemx + be-mx,prove that d2y/dx2 = m2 y       (2 Marks) 
+      c) Evaluate the integrals:           (3 Marks) 
+ 
+    i)∫ 𝑒𝑥(𝑒𝑥 + 7)5  𝑑𝑥. 
+ 
+ ii)∫
+1
+𝑥 𝑙𝑜𝑔 𝑥 𝑑𝑥 
+   
+ d) Evaluate ∫(𝑥 + 1)𝑒𝑥(𝑥𝑒𝑥 + 5)4 𝑑𝑥.         (2 Marks) 
+ e) Evaluate the followings:           (3 Marks) 
+ 
+i) ∫(𝑥 + 1)𝑒𝑥(𝑥𝑒 𝑥 + 5)4 𝑑𝑥.    ii) ∫
+𝑥6−𝑥3+1
+𝑥2 𝑑𝑥 
+ f) Evaluate the followings:           (3 Marks) 
+ 
+i)lim
+𝑛→0
+|𝑥|
+𝑥 does not exist   ii) f(x) = |x| is continuous at x = 0. 
+ 
+iii)
+)x(flim
+0x , where f(x) = {2 − 𝑥2, 𝑥 ≠ 0
+2, x = 0        
+ 
+ g) What is a derivative? Explain its meaning and geometrical interpretation with an example.  
+                (3 Marks) 
+ h) What is definite integration? Give a geometrical interpretation of it with the help of an example.  
+   (2 Marks)  
+

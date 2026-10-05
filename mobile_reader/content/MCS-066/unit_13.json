@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-066",
+  "unit_id": "unit_13",
+  "unit_num": "Unit 13",
+  "title": "Introduction to Optimisation",
+  "filename": "Unit-13_Introduction_to_Optimisation.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-13_Introduction_to_Optimisation.pdf",
+  "total_pages": 40,
+  "word_count": 18100,
+  "est_read_time_minutes": 101,
+  "objectives": [
+    "Differentiability",
+    "Order Derivative and Condition for Optima"
+  ],
+  "summary": "In this unit, we have covered the following points: Basic terminology for optimisation The concept of global and local optima Use derivatives to find the extrema’s Extreme cases when extrema are cannot be addressed. Use of Gradient descent to find the minima and use of gradient ascent",
+  "flashcards": [
+    {
+      "question": "Find the maximum and minimum values of (a) y = x",
+      "answer": "We have xi = (1573xi-1 +19) mod (103 ) with x0 = 89 Therefore, x",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Find the relative maxima and minima of y by the second-derivative test: (a) y = x",
+      "answer": "Degrees of Freedom for Numerator (n1)",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "In the gradient descent method, instead of selecting an optimal value of k  at each step, what are the possible problems that we may face if we take a fixed constant value of k  in each iteration?",
+      "answer": "We have xi = (1573xi-1 +19) mod (103 ) with x0 = 89 Therefore, x",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Write one drawback of the gradient descent method",
+      "answer": "Degrees of Freedom for Numerator (n1)",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Using the following LCG xi = (1573 xi-1+19) mod (103 ), obtain four xi’s with x",
+      "answer": "We have xi = (1573xi-1 +19) mod (103 ) with x0 = 89 Therefore, x",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "2) Using PRN generated in question 1, obtain four U (0, 1) random variables.",
+      "answer": "In Introduction to Optimisation, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q89"
+    },
+    {
+      "question": "What is The Shaded Region and how is it characterized?",
+      "answer": "The Shaded Region the feasible region or the solution space, as the coordinates of any point lying in this region always satisfy the constraints.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Introduction to Optimisation\"]\n  M1[\"13.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"13.3 Global and Local Maxima and Min\"]\n  Root --> M2\n  M2_1[\"13.3.1 Definition\"]\n  M2 --> M2_1\n  M2_2[\"13.3.2 Slope of a Function\"]\n  M2 --> M2_2\n  M2_3[\"13.3.3 First Derivative Test and Rel\"]\n  M2 --> M2_3\n  M3[\"13.4 Gradient Descent and Ascent\"]\n  Root --> M3\n  M4[\"13.5 Randomisation\"]\n  Root --> M4\n  M4_1[\"13.5.1 Random Numbers and Pseudo Ran\"]\n  M4 --> M4_1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Shaded Region</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Shaded Region the feasible region or the solution space, as the coordinates of any point lying in this region always satisfy the constraints.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Terminology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us first define basic terms: local minima, local maxima, global minimum and global maximum.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Slope Of A Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The relative extreme values of a function can also be characterised in terms of its slope.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Problem Of Non-Differentiability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">So far, we have assumed that the function is a continuous, differentiable function.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Basic Terminology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation.</li>\n<li>Objective Function The objective function is the function that is to be optimised, i.e.</li>\n<li>Please note that the final output of the optimisation function is the optimal value.</li>\n<li>Variables Different input to the objective functions are defined as the variables.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Global and Local Maxima and Minima</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Several computer science problems, called optimisation problems, require you to find the maximum or the minimum value for an objective function.</li>\n<li>These extreme points, which form the solution to the problem, are called maxima or minima.</li>\n<li>For example, the Knapsack problem maximises the profit while packing a number of items in a sack/bag of finite capacity (weight), given the weight and profit of each item.</li>\n<li>On the other hand, a travelling salesman minimises the distance covered by a salesperson in their visit to several destinations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.1 Definition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us first define basic terms: local minima, local maxima, global minimum and global maximum.</li>\n<li>13.3), we see that the global minimum of the function is at the point x = x2, while the global maximum of the function is at the point x = x3.</li>\n<li>So, a global minimum means the function takes the minimum value at that point compared to the values of the function at all other points of the domain of the function.</li>\n<li>Similarly, global maximum means function takes maxima value at that point compared to the values of the function at all other points of the domain of the function.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.2 Slope of a Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The relative extreme values of a function can also be characterised in terms of its slope.</li>\n<li>Assume that the total cost (C) incurred by a producer depends on his output (Q) alone.</li>\n<li>This output-cost combination corresponds to point T at the total cost curve.</li>\n<li>To produce an additional output of Q1Q3, the producer has to increase his cost by the amount C1C3, thus C/Q = C1C3 / Q1Q3.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.3 First Derivative Test and Relative Optima</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>(ii) A relative minimum - if the derivative f (x) changes its sign from negative to positive from the immediate left of the point x0 to its immediate right.</li>\n<li>Introduction to Optimisation (iii) Neither a relative maximum nor a relative minimum if f (x) has the same sign on both the immediate left and right of the point x0.</li>\n<li>The value of the dependent variable, at which the first derivative of the function is equal to zero, i.e.</li>\n<li>at x0, is referred to as the critical value of x.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.4 The Problem of Non-Differentiability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>So far, we have assumed that the function is a continuous, differentiable function.</li>\n<li>In this section, we will look into two cases where this restrictive assumption is relaxed.</li>\n<li>13.8 and 13.9, we represent relationships between x and y that exhibit two important types of irregularities.</li>\n<li>At x1, the graph has a complete break or discontinuity AB.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.5 The Second-Order Derivative and Condition for Optima</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Assuming that the first derivative f (x) is itself a function of x, the second derivative of the function is obtained by differentiating this function again with respect to x.</li>\n<li>Symbolically, the second derivative is represented as f (x).</li>\n<li>The double prime indicates that the function y = f (x) has been differentiated twice with respect to x.</li>\n<li>The expression (x) following the double prime indicates that the second derivative is also a function of x.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Gradient Descent and Ascent</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sometimes, analytic methods do not work to solve optimisation problems.</li>\n<li>So, we need some method that, if not exact, at least can provide an approximate solution.</li>\n<li>The gradient descent method is one such method that is discussed in this section.</li>\n<li>But, before we discuss the gradient descent method, let us describe some terms.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem for this can be written as follows.</code></div>\n<div class=\"formula-box\"><code>rules that can be used as a stopping criterion. Suppose</code></div>\n<div class=\"formula-box\"><code>Rule 1: We can choose to stop when</code></div>\n<div class=\"formula-box\"><code>Rule 2: We can choose to stop when</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: Basic terminology for optimisation The concept of global and local optima Use derivatives to find the extrema’s Extreme cases when extrema are cannot be addressed. Use of Gradient descent to find the minima and use of gradient ascent</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-13_Introduction_to_Optimisation.pdf')\">\n          📄 Read Original IGNOU PDF (40 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 13 Introduction to Optimisation\"]\n  M1[\"13.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"13.3 Global and Local Maxima and Min\"]\n  Root --> M2\n  M2_1[\"13.3.1 Definition\"]\n  M2 --> M2_1\n  M2_2[\"13.3.2 Slope of a Function\"]\n  M2 --> M2_2\n  M2_3[\"13.3.3 First Derivative Test and Rel\"]\n  M2 --> M2_3\n  M3[\"13.4 Gradient Descent and Ascent\"]\n  Root --> M3\n  M4[\"13.5 Randomisation\"]\n  Root --> M4\n  M4_1[\"13.5.1 Random Numbers and Pseudo Ran\"]\n  M4 --> M4_1",
+  "definitions": [
+    {
+      "term": "The Shaded Region",
+      "definition": "The Shaded Region the feasible region or the solution space, as the coordinates of any point lying in this region always satisfy the constraints.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Basic Terminology",
+      "definition": "Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Definition",
+      "definition": "Let us first define basic terms: local minima, local maxima, global minimum and global maximum.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Slope Of A Function",
+      "definition": "The relative extreme values of a function can also be characterised in terms of its slope.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "The Problem Of Non-Differentiability",
+      "definition": "So far, we have assumed that the function is a continuous, differentiable function.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "13.2",
+      "topic": "Basic Terminology",
+      "points": [
+        "Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation.",
+        "Objective Function The objective function is the function that is to be optimised, i.e.",
+        "Please note that the final output of the optimisation function is the optimal value.",
+        "Variables Different input to the objective functions are defined as the variables."
+      ]
+    },
+    {
+      "section_num": "13.3",
+      "topic": "Global and Local Maxima and Minima",
+      "points": [
+        "Several computer science problems, called optimisation problems, require you to find the maximum or the minimum value for an objective function.",
+        "These extreme points, which form the solution to the problem, are called maxima or minima.",
+        "For example, the Knapsack problem maximises the profit while packing a number of items in a sack/bag of finite capacity (weight), given the weight and profit of each item.",
+        "On the other hand, a travelling salesman minimises the distance covered by a salesperson in their visit to several destinations."
+      ]
+    },
+    {
+      "section_num": "13.3.1",
+      "topic": "Definition",
+      "points": [
+        "Let us first define basic terms: local minima, local maxima, global minimum and global maximum.",
+        "13.3), we see that the global minimum of the function is at the point x = x2, while the global maximum of the function is at the point x = x3.",
+        "So, a global minimum means the function takes the minimum value at that point compared to the values of the function at all other points of the domain of the function.",
+        "Similarly, global maximum means function takes maxima value at that point compared to the values of the function at all other points of the domain of the function."
+      ]
+    },
+    {
+      "section_num": "13.3.2",
+      "topic": "Slope of a Function",
+      "points": [
+        "The relative extreme values of a function can also be characterised in terms of its slope.",
+        "Assume that the total cost (C) incurred by a producer depends on his output (Q) alone.",
+        "This output-cost combination corresponds to point T at the total cost curve.",
+        "To produce an additional output of Q1Q3, the producer has to increase his cost by the amount C1C3, thus C/Q = C1C3 / Q1Q3."
+      ]
+    },
+    {
+      "section_num": "13.3.3",
+      "topic": "First Derivative Test and Relative Optima",
+      "points": [
+        "(ii) A relative minimum - if the derivative f (x) changes its sign from negative to positive from the immediate left of the point x0 to its immediate right.",
+        "Introduction to Optimisation (iii) Neither a relative maximum nor a relative minimum if f (x) has the same sign on both the immediate left and right of the point x0.",
+        "The value of the dependent variable, at which the first derivative of the function is equal to zero, i.e.",
+        "at x0, is referred to as the critical value of x."
+      ]
+    },
+    {
+      "section_num": "13.3.4",
+      "topic": "The Problem of Non-Differentiability",
+      "points": [
+        "So far, we have assumed that the function is a continuous, differentiable function.",
+        "In this section, we will look into two cases where this restrictive assumption is relaxed.",
+        "13.8 and 13.9, we represent relationships between x and y that exhibit two important types of irregularities.",
+        "At x1, the graph has a complete break or discontinuity AB."
+      ]
+    },
+    {
+      "section_num": "13.3.5",
+      "topic": "The Second-Order Derivative and Condition for Optima",
+      "points": [
+        "Assuming that the first derivative f (x) is itself a function of x, the second derivative of the function is obtained by differentiating this function again with respect to x.",
+        "Symbolically, the second derivative is represented as f (x).",
+        "The double prime indicates that the function y = f (x) has been differentiated twice with respect to x.",
+        "The expression (x) following the double prime indicates that the second derivative is also a function of x."
+      ]
+    },
+    {
+      "section_num": "13.4",
+      "topic": "Gradient Descent and Ascent",
+      "points": [
+        "Sometimes, analytic methods do not work to solve optimisation problems.",
+        "So, we need some method that, if not exact, at least can provide an approximate solution.",
+        "The gradient descent method is one such method that is discussed in this section.",
+        "But, before we discuss the gradient descent method, let us describe some terms."
+      ]
+    }
+  ],
+  "formulas": [
+    "theorem for this can be written as follows.",
+    "rules that can be used as a stopping criterion. Suppose",
+    "Rule 1: We can choose to stop when",
+    "Rule 2: We can choose to stop when"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Introduction to Optimisation\"]\n  M1[\"13.2 Basic Terminology\"]\n  Root --> M1\n  M2[\"13.3 Global and Local Maxima and Min\"]\n  Root --> M2\n  M2_1[\"13.3.1 Definition\"]\n  M2 --> M2_1\n  M2_2[\"13.3.2 Slope of a Function\"]\n  M2 --> M2_2\n  M2_3[\"13.3.3 First Derivative Test and Rel\"]\n  M2 --> M2_3\n  M3[\"13.4 Gradient Descent and Ascent\"]\n  Root --> M3\n  M4[\"13.5 Randomisation\"]\n  Root --> M4\n  M4_1[\"13.5.1 Random Numbers and Pseudo Ran\"]\n  M4 --> M4_1\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Shaded Region</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Shaded Region the feasible region or the solution space, as the coordinates of any point lying in this region always satisfy the constraints.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Terminology</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Let us first define basic terms: local minima, local maxima, global minimum and global maximum.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Slope Of A Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The relative extreme values of a function can also be characterised in terms of its slope.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Problem Of Non-Differentiability</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">So far, we have assumed that the function is a continuous, differentiable function.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Basic Terminology</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before discussing the optimisation problem, we shall discuss basic definitions of some of the important terms, which are very helpful to understand the fundamentals of optimisation.</li>\n<li>Objective Function The objective function is the function that is to be optimised, i.e.</li>\n<li>Please note that the final output of the optimisation function is the optimal value.</li>\n<li>Variables Different input to the objective functions are defined as the variables.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Global and Local Maxima and Minima</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Several computer science problems, called optimisation problems, require you to find the maximum or the minimum value for an objective function.</li>\n<li>These extreme points, which form the solution to the problem, are called maxima or minima.</li>\n<li>For example, the Knapsack problem maximises the profit while packing a number of items in a sack/bag of finite capacity (weight), given the weight and profit of each item.</li>\n<li>On the other hand, a travelling salesman minimises the distance covered by a salesperson in their visit to several destinations.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.1 Definition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Let us first define basic terms: local minima, local maxima, global minimum and global maximum.</li>\n<li>13.3), we see that the global minimum of the function is at the point x = x2, while the global maximum of the function is at the point x = x3.</li>\n<li>So, a global minimum means the function takes the minimum value at that point compared to the values of the function at all other points of the domain of the function.</li>\n<li>Similarly, global maximum means function takes maxima value at that point compared to the values of the function at all other points of the domain of the function.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.2 Slope of a Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The relative extreme values of a function can also be characterised in terms of its slope.</li>\n<li>Assume that the total cost (C) incurred by a producer depends on his output (Q) alone.</li>\n<li>This output-cost combination corresponds to point T at the total cost curve.</li>\n<li>To produce an additional output of Q1Q3, the producer has to increase his cost by the amount C1C3, thus C/Q = C1C3 / Q1Q3.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.3 First Derivative Test and Relative Optima</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>(ii) A relative minimum - if the derivative f (x) changes its sign from negative to positive from the immediate left of the point x0 to its immediate right.</li>\n<li>Introduction to Optimisation (iii) Neither a relative maximum nor a relative minimum if f (x) has the same sign on both the immediate left and right of the point x0.</li>\n<li>The value of the dependent variable, at which the first derivative of the function is equal to zero, i.e.</li>\n<li>at x0, is referred to as the critical value of x.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.4 The Problem of Non-Differentiability</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>So far, we have assumed that the function is a continuous, differentiable function.</li>\n<li>In this section, we will look into two cases where this restrictive assumption is relaxed.</li>\n<li>13.8 and 13.9, we represent relationships between x and y that exhibit two important types of irregularities.</li>\n<li>At x1, the graph has a complete break or discontinuity AB.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.5 The Second-Order Derivative and Condition for Optima</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Assuming that the first derivative f (x) is itself a function of x, the second derivative of the function is obtained by differentiating this function again with respect to x.</li>\n<li>Symbolically, the second derivative is represented as f (x).</li>\n<li>The double prime indicates that the function y = f (x) has been differentiated twice with respect to x.</li>\n<li>The expression (x) following the double prime indicates that the second derivative is also a function of x.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.4 Gradient Descent and Ascent</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sometimes, analytic methods do not work to solve optimisation problems.</li>\n<li>So, we need some method that, if not exact, at least can provide an approximate solution.</li>\n<li>The gradient descent method is one such method that is discussed in this section.</li>\n<li>But, before we discuss the gradient descent method, let us describe some terms.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>theorem for this can be written as follows.</code></div>\n<div class=\"formula-box\"><code>rules that can be used as a stopping criterion. Suppose</code></div>\n<div class=\"formula-box\"><code>Rule 1: We can choose to stop when</code></div>\n<div class=\"formula-box\"><code>Rule 2: We can choose to stop when</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In this unit, we have covered the following points: Basic terminology for optimisation The concept of global and local optima Use derivatives to find the extrema’s Extreme cases when extrema are cannot be addressed. Use of Gradient descent to find the minima and use of gradient ascent</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-066_Mathematical_Foundations_-_II/Unit-13_Introduction_to_Optimisation.pdf')\">\n          📄 Read Original IGNOU PDF (40 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

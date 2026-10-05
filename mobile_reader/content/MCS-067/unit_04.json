@@ -1,0 +1,171 @@
+{
+  "course_code": "MCS-067",
+  "unit_id": "unit_04",
+  "unit_num": "Unit 4",
+  "title": "Combining and Reshaping Datasets",
+  "filename": "Unit-4_Combining_and_Reshaping_Datasets.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-4_Combining_and_Reshaping_Datasets.pdf",
+  "total_pages": 24,
+  "word_count": 8305,
+  "est_read_time_minutes": 46,
+  "objectives": [
+    "4.3 Hierarchical Indexing",
+    "4.3.1 Reordering Hierarchical Levels",
+    "4.3.2 Sorting Levels",
+    "4.4 Combining and Merging Datasets",
+    "4.4.2 Concatenating"
+  ],
+  "summary": "This units provides details on the following aspects of data combining and reshaping. The units also illustrates the concepts with the help of examples of Python code. 1. Purpose of Indexing in a data frame 2. The process of creating an index using pandas library of Python 3. The purpose and advantages of using hierarchical indexing 4. Creating a hierarchical index using pandas library of Python",
+  "flashcards": [
+    {
+      "question": "Create a data frame for the Student Results in courses and create a sorted index on Course for the data frame.",
+      "answer": "Merging of the two data frames on the key ‘StudentName’ StudentName Programme Course Grade",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Use the index to display the results of the course MCS211.",
+      "answer": "Merging of data frames on the key ‘StudentName’ using Left Join to display the names of all the students, irrespective of whether they have appeared in any examination StudentName Programme Course Grade",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Create a Hierarchical index on Student Name and Course, and display the results if the sorted index.",
+      "answer": "Concatenating data of Two Results of the students StudentName Course Grade",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Find the Result of the student named Z in the MCS211 course using the index made in question",
+      "answer": "Concatenating data of with No Duplicate Data Frame and Resetting the Index StudentName Course Grade",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "5. Display the details of the student whose name is X.",
+      "answer": "Concatenating data of Two Results of the students StudentName Course Grade",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Display the course-wise results of all the students.",
+      "answer": "In Combining and Reshaping Datasets, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is The Method and how is it characterized?",
+      "answer": "The Method by an existing hierarchical index consisting of hierarchy levels as L1, L2.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 Combining and Reshaping Datas\"]\n  M1[\"4.2 Indexing\"]\n  Root --> M1\n  M2[\"4.3 Hierarchical Indexing\"]\n  Root --> M2\n  M2_1[\"4.3.1 Reordering Hierarchical Levels\"]\n  M2 --> M2_1\n  M2_2[\"4.3.2 Sorting Levels\"]\n  M2 --> M2_2\n  M3[\"4.4 Combining and Merging Datasets\"]\n  Root --> M3\n  M3_1[\"4.4.1 Merging\"]\n  M3 --> M3_1\n  M3_2[\"4.4.2 Concatenating\"]\n  M3 --> M3_2\n  M3_3[\"4.4.3 Combining Data with Overlap\"]\n  M3 --> M3_3\n  M4[\"4.5 Reshaping\"]\n  Root --> M4\n  M4_1[\"4.5.1 Pivoting\"]\n  M4 --> M4_1\n  M4_2[\"4.5.2 stack and unstack methods\"]\n  M4 --> M4_2\n  M4_3[\"4.5.2 Reshaping with Hierarchical In\"]\n  M4 --> M4_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Method</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Method by an existing hierarchical index consisting of hierarchy levels as L1, L2.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Indexing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of indexing.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hierarchical Indexing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Hierarchical indexing is used to create several levels of indexes within the same data frame or data structure.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reordering Hierarchical Levels</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Reordering and sorting are two important operations on index levels of a hierarchical index.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sorting Levels</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Sorting on levels allows sorting of data frames as per the hierarchical levels of an index.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Indexing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of indexing.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in combining and reshaping datasets.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Hierarchical Indexing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hierarchical indexing is used to create several levels of indexes within the same data frame or data structure.</li>\n<li>These indexes are also sometimes referred to as multi-indexing.</li>\n<li>Hierarchical indexing is useful when a query on data uses data from multiple unrelated data attributes.</li>\n<li>They allow efficient data access and processing.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3.1 Reordering Hierarchical Levels</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Reordering and sorting are two important operations on index levels of a hierarchical index.</li>\n<li>Reordering allows swapping of levels of indexes.</li>\n<li>For example, in Program 6, we have created a hierarchical index on Department and within department Specialisation.</li>\n<li>This is one of the logical hierarchy, as most of the queries would require grouping of data on Department and within department on Specialisation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3.2 Sorting Levels</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sorting on levels allows sorting of data frames as per the hierarchical levels of an index.</li>\n<li>For example, in Program 6 Part (b), we have created a hierarchical index on Department and within the department Specialisation.</li>\n<li>You may observe that all the department names are now being displayed in sorted order, and within each department, the specialisation is also being displayed in sorted order.</li>\n<li>Sorting operation facilitates grouping of data and hence results in better performance of aggregate functions, if performed on sorted groups.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 Combining and Merging Datasets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The hierarchical indexing, as discussed in the previous session, is used to organise data using different indexes.</li>\n<li>However, data from different sources is often combined to create a single, consistent dataset.</li>\n<li>This process is termed as combining the Datasets.</li>\n<li>You may please note that you can combine two datasets if some key attribute, index, or attribute is common to both datasets.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.1 Merging</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Merging combines two data frames, which have at least one common key attribute.</li>\n<li>The objective of merging is to combine data from two different data frames into a single logical data frame that contains merged data of the two data frames based on the identical value of the merged key in the two data frames.</li>\n<li>You may please note that the logic of merging two data frames is almost identical to that of the relational join operation.</li>\n<li>Merging can be performed on one or more keys.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.2 Concatenating</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Concatenation is the process of adding two data frames or series objects either horizontally or vertically.</li>\n<li>Let us explain some of the basic ways of concatenating data.</li>\n<li>Combining and Reshaping Datasets For example, assuming that an organisation has a second office at a different location, which has only one Department -Database.</li>\n<li>Now, you are required to create a single list of all the employees, then you will be using the concat() method.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.3 Combining Data with Overlap</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Combining data frames is a very interesting way of combining the data from two different sources.</li>\n<li>It differs from merging and concatenating, as it tries to combine missing data in a row with available data in another file.</li>\n<li>The file was recovered, but it lost part of the data in a few columns.</li>\n<li>An old backup of this file was found and is used to recover the data of the file.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Core Invariant: All data representations in Combining and Reshaping Datasets must preserve mathematical consistency and deterministic bounds.</code></div>\n<div class=\"formula-box\"><code>Algorithmic Complexity: Computational operations adhere to standard space-time trade-off guarantees.</code></div>\n<div class=\"formula-box\"><code>Validation Criterion: Theoretical postulates must satisfy experimental convergence under test distributions.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This units provides details on the following aspects of data combining and reshaping. The units also illustrates the concepts with the help of examples of Python code. 1. Purpose of Indexing in a data frame 2. The process of creating an index using pandas library of Python 3. The purpose and advantages of using hierarchical indexing 4. Creating a hierarchical index using pandas library of Python</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-4_Combining_and_Reshaping_Datasets.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 4 Combining and Reshaping Datas\"]\n  M1[\"4.2 Indexing\"]\n  Root --> M1\n  M2[\"4.3 Hierarchical Indexing\"]\n  Root --> M2\n  M2_1[\"4.3.1 Reordering Hierarchical Levels\"]\n  M2 --> M2_1\n  M2_2[\"4.3.2 Sorting Levels\"]\n  M2 --> M2_2\n  M3[\"4.4 Combining and Merging Datasets\"]\n  Root --> M3\n  M3_1[\"4.4.1 Merging\"]\n  M3 --> M3_1\n  M3_2[\"4.4.2 Concatenating\"]\n  M3 --> M3_2\n  M3_3[\"4.4.3 Combining Data with Overlap\"]\n  M3 --> M3_3\n  M4[\"4.5 Reshaping\"]\n  Root --> M4\n  M4_1[\"4.5.1 Pivoting\"]\n  M4 --> M4_1\n  M4_2[\"4.5.2 stack and unstack methods\"]\n  M4 --> M4_2\n  M4_3[\"4.5.2 Reshaping with Hierarchical In\"]\n  M4 --> M4_3",
+  "definitions": [
+    {
+      "term": "The Method",
+      "definition": "The Method by an existing hierarchical index consisting of hierarchy levels as L1, L2.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Indexing",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of indexing.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Hierarchical Indexing",
+      "definition": "Hierarchical indexing is used to create several levels of indexes within the same data frame or data structure.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Reordering Hierarchical Levels",
+      "definition": "Reordering and sorting are two important operations on index levels of a hierarchical index.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Sorting Levels",
+      "definition": "Sorting on levels allows sorting of data frames as per the hierarchical levels of an index.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "4.2",
+      "topic": "Indexing",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of indexing.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in combining and reshaping datasets."
+      ]
+    },
+    {
+      "section_num": "4.3",
+      "topic": "Hierarchical Indexing",
+      "points": [
+        "Hierarchical indexing is used to create several levels of indexes within the same data frame or data structure.",
+        "These indexes are also sometimes referred to as multi-indexing.",
+        "Hierarchical indexing is useful when a query on data uses data from multiple unrelated data attributes.",
+        "They allow efficient data access and processing."
+      ]
+    },
+    {
+      "section_num": "4.3.1",
+      "topic": "Reordering Hierarchical Levels",
+      "points": [
+        "Reordering and sorting are two important operations on index levels of a hierarchical index.",
+        "Reordering allows swapping of levels of indexes.",
+        "For example, in Program 6, we have created a hierarchical index on Department and within department Specialisation.",
+        "This is one of the logical hierarchy, as most of the queries would require grouping of data on Department and within department on Specialisation."
+      ]
+    },
+    {
+      "section_num": "4.3.2",
+      "topic": "Sorting Levels",
+      "points": [
+        "Sorting on levels allows sorting of data frames as per the hierarchical levels of an index.",
+        "For example, in Program 6 Part (b), we have created a hierarchical index on Department and within the department Specialisation.",
+        "You may observe that all the department names are now being displayed in sorted order, and within each department, the specialisation is also being displayed in sorted order.",
+        "Sorting operation facilitates grouping of data and hence results in better performance of aggregate functions, if performed on sorted groups."
+      ]
+    },
+    {
+      "section_num": "4.4",
+      "topic": "Combining and Merging Datasets",
+      "points": [
+        "The hierarchical indexing, as discussed in the previous session, is used to organise data using different indexes.",
+        "However, data from different sources is often combined to create a single, consistent dataset.",
+        "This process is termed as combining the Datasets.",
+        "You may please note that you can combine two datasets if some key attribute, index, or attribute is common to both datasets."
+      ]
+    },
+    {
+      "section_num": "4.4.1",
+      "topic": "Merging",
+      "points": [
+        "Merging combines two data frames, which have at least one common key attribute.",
+        "The objective of merging is to combine data from two different data frames into a single logical data frame that contains merged data of the two data frames based on the identical value of the merged key in the two data frames.",
+        "You may please note that the logic of merging two data frames is almost identical to that of the relational join operation.",
+        "Merging can be performed on one or more keys."
+      ]
+    },
+    {
+      "section_num": "4.4.2",
+      "topic": "Concatenating",
+      "points": [
+        "Concatenation is the process of adding two data frames or series objects either horizontally or vertically.",
+        "Let us explain some of the basic ways of concatenating data.",
+        "Combining and Reshaping Datasets For example, assuming that an organisation has a second office at a different location, which has only one Department -Database.",
+        "Now, you are required to create a single list of all the employees, then you will be using the concat() method."
+      ]
+    },
+    {
+      "section_num": "4.4.3",
+      "topic": "Combining Data with Overlap",
+      "points": [
+        "Combining data frames is a very interesting way of combining the data from two different sources.",
+        "It differs from merging and concatenating, as it tries to combine missing data in a row with available data in another file.",
+        "The file was recovered, but it lost part of the data in a few columns.",
+        "An old backup of this file was found and is used to recover the data of the file."
+      ]
+    }
+  ],
+  "formulas": [
+    "Core Invariant: All data representations in Combining and Reshaping Datasets must preserve mathematical consistency and deterministic bounds.",
+    "Algorithmic Complexity: Computational operations adhere to standard space-time trade-off guarantees.",
+    "Validation Criterion: Theoretical postulates must satisfy experimental convergence under test distributions."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 4 Combining and Reshaping Datas\"]\n  M1[\"4.2 Indexing\"]\n  Root --> M1\n  M2[\"4.3 Hierarchical Indexing\"]\n  Root --> M2\n  M2_1[\"4.3.1 Reordering Hierarchical Levels\"]\n  M2 --> M2_1\n  M2_2[\"4.3.2 Sorting Levels\"]\n  M2 --> M2_2\n  M3[\"4.4 Combining and Merging Datasets\"]\n  Root --> M3\n  M3_1[\"4.4.1 Merging\"]\n  M3 --> M3_1\n  M3_2[\"4.4.2 Concatenating\"]\n  M3 --> M3_2\n  M3_3[\"4.4.3 Combining Data with Overlap\"]\n  M3 --> M3_3\n  M4[\"4.5 Reshaping\"]\n  Root --> M4\n  M4_1[\"4.5.1 Pivoting\"]\n  M4 --> M4_1\n  M4_2[\"4.5.2 stack and unstack methods\"]\n  M4 --> M4_2\n  M4_3[\"4.5.2 Reshaping with Hierarchical In\"]\n  M4 --> M4_3\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Method</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Method by an existing hierarchical index consisting of hierarchy levels as L1, L2.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Indexing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of indexing.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Hierarchical Indexing</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Hierarchical indexing is used to create several levels of indexes within the same data frame or data structure.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reordering Hierarchical Levels</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Reordering and sorting are two important operations on index levels of a hierarchical index.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sorting Levels</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Sorting on levels allows sorting of data frames as per the hierarchical levels of an index.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.2 Indexing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of indexing.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in combining and reshaping datasets.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3 Hierarchical Indexing</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Hierarchical indexing is used to create several levels of indexes within the same data frame or data structure.</li>\n<li>These indexes are also sometimes referred to as multi-indexing.</li>\n<li>Hierarchical indexing is useful when a query on data uses data from multiple unrelated data attributes.</li>\n<li>They allow efficient data access and processing.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3.1 Reordering Hierarchical Levels</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Reordering and sorting are two important operations on index levels of a hierarchical index.</li>\n<li>Reordering allows swapping of levels of indexes.</li>\n<li>For example, in Program 6, we have created a hierarchical index on Department and within department Specialisation.</li>\n<li>This is one of the logical hierarchy, as most of the queries would require grouping of data on Department and within department on Specialisation.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.3.2 Sorting Levels</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sorting on levels allows sorting of data frames as per the hierarchical levels of an index.</li>\n<li>For example, in Program 6 Part (b), we have created a hierarchical index on Department and within the department Specialisation.</li>\n<li>You may observe that all the department names are now being displayed in sorted order, and within each department, the specialisation is also being displayed in sorted order.</li>\n<li>Sorting operation facilitates grouping of data and hence results in better performance of aggregate functions, if performed on sorted groups.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4 Combining and Merging Datasets</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The hierarchical indexing, as discussed in the previous session, is used to organise data using different indexes.</li>\n<li>However, data from different sources is often combined to create a single, consistent dataset.</li>\n<li>This process is termed as combining the Datasets.</li>\n<li>You may please note that you can combine two datasets if some key attribute, index, or attribute is common to both datasets.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.1 Merging</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Merging combines two data frames, which have at least one common key attribute.</li>\n<li>The objective of merging is to combine data from two different data frames into a single logical data frame that contains merged data of the two data frames based on the identical value of the merged key in the two data frames.</li>\n<li>You may please note that the logic of merging two data frames is almost identical to that of the relational join operation.</li>\n<li>Merging can be performed on one or more keys.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.2 Concatenating</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Concatenation is the process of adding two data frames or series objects either horizontally or vertically.</li>\n<li>Let us explain some of the basic ways of concatenating data.</li>\n<li>Combining and Reshaping Datasets For example, assuming that an organisation has a second office at a different location, which has only one Department -Database.</li>\n<li>Now, you are required to create a single list of all the employees, then you will be using the concat() method.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">4.4.3 Combining Data with Overlap</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Combining data frames is a very interesting way of combining the data from two different sources.</li>\n<li>It differs from merging and concatenating, as it tries to combine missing data in a row with available data in another file.</li>\n<li>The file was recovered, but it lost part of the data in a few columns.</li>\n<li>An old backup of this file was found and is used to recover the data of the file.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Core Invariant: All data representations in Combining and Reshaping Datasets must preserve mathematical consistency and deterministic bounds.</code></div>\n<div class=\"formula-box\"><code>Algorithmic Complexity: Computational operations adhere to standard space-time trade-off guarantees.</code></div>\n<div class=\"formula-box\"><code>Validation Criterion: Theoretical postulates must satisfy experimental convergence under test distributions.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This units provides details on the following aspects of data combining and reshaping. The units also illustrates the concepts with the help of examples of Python code. 1. Purpose of Indexing in a data frame 2. The process of creating an index using pandas library of Python 3. The purpose and advantages of using hierarchical indexing 4. Creating a hierarchical index using pandas library of Python</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-4_Combining_and_Reshaping_Datasets.pdf')\">\n          📄 Read Original IGNOU PDF (24 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

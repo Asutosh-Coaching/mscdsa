@@ -1,0 +1,173 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_11",
+  "unit_num": "Unit 11",
+  "title": "Limit and Continuity",
+  "filename": "Unit-11_Limit_and_Continuity.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-11_Limit_and_Continuity.pdf",
+  "total_pages": 31,
+  "word_count": 11024,
+  "est_read_time_minutes": 61,
+  "objectives": [
+    "11.2   Concept of Limit",
+    "11.3   Direct Substitution Method",
+    "11.4   Failure of Direct Substitution Method",
+    "11.4.1 Factorisation Method",
+    "11.4.2   Least Common Multiplier Method"
+  ],
+  "summary": "This unit introduces the foundational concept of a limit in calculus, which describes the behaviour of a function as it approaches a specific value. This unit details various evaluation techniques, starting with the direct substitution method. Further, this unit highlights the importance of direction through Left- Hand Limits (L.H.L.) and Right-Hand Limits (R.H.L.), noting that a limit exists only if both sides converge to the same value, and also explores infinite limits in",
+  "flashcards": [
+    {
+      "question": "Evaluate the following limits: (i)",
+      "answer": "and (2) L.H.L. R.H.L.  x x lim",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "(x f(x) e wher ), x ( f",
+      "answer": "In Limit and Continuity, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "Evaluate the following limits: (i)",
+      "answer": "Since, it is given that",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Evaluate       − + − + − → x",
+      "answer": "− − → → = = + + Putting x =",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Evaluate the following limits: (i)",
+      "answer": "and (2) L.H.L. R.H.L.  x x lim",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Evaluate the following limits: (i) x",
+      "answer": "− − → → = = + + Putting x =",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Concept Of Limit and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Limit and Continuity\"]\n  M1[\"11.2 Concept of Limit\"]\n  Root --> M1\n  M2[\"11.3 Direct Substitution Method\"]\n  Root --> M2\n  M3[\"11.4 Failure of Direct Substitution \"]\n  Root --> M3\n  M3_1[\"11.4.1 Factorisation Method\"]\n  M3 --> M3_1\n  M3_2[\"11.4.2 Least Common Multiplier Metho\"]\n  M3 --> M3_2\n  M3_3[\"11.4.3 Rationalisation Method\"]\n  M3 --> M3_3\n  M4[\"11.5 Concept of Infinite Limit\"]\n  Root --> M4\n  M5[\"11.6 Concept of Left Hand and Right \"]\n  Root --> M5\n  M6[\"11.7 Continuity of a Function at a P\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Concept Of Limit</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Direct Substitution Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Suppose we want to evaluate ) x ( f lim a x→ .</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Factorisation Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Least Common Multiplier Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Rationalisation Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This method is explained in the following example.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 Concept of Limit</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in limit and continuity.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Direct Substitution Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Suppose we want to evaluate ) x ( f lim a x→ .</li>\n<li>This method is applied when limiting value of f(x) remains same irrespective of this fact whether x approaches to a from left hand side (L.H.S.) or right hand side (R.H.S.).</li>\n<li>As the name of this method itself suggests, in this method we directly substitute a in place of x.</li>\n<li>Before we take some examples based on the direct substitution method we list some results (algebra of limits) without proof.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4 Failure of Direct Substitution Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In mathematics following seven forms are known as indeterminate form, i.e.</li>\n<li>(i) 0 0 (ii)   (iii)   0 (iv)  −  (v) 0 0 (vi)  1 (vii) 0  So, if by direct substitution any of the above mentioned forms take place then D.S.M.</li>\n<li>This will happen if f(x) and g(x) both becomes zero on direct substitution.</li>\n<li> both have at least one common factor (x – a).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.1 Factorisation Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .</li>\n<li>This will happen if f(x) and g(x) both becomes zero on direct substitution.</li>\n<li> both have at least one common factor (x – a).</li>\n<li>In this case express f(x) = (x – a) (some factor) and g(x) = (x – a) (some factor) either by long division method or by any other method known to you.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.2 Least Common Multiplier Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.</li>\n<li>Example 3: Evaluate       − − − → x 3 x 3 3 x 1 lim 2 3 x Solution:       − − − → x 3 x 3 3 x 1 lim 2 3 x [  −  form, so D.S.M.</li>\n<li>Example 4: Evaluate the following limits: (i) x 2 x 4 lim 0 x − + → (ii) 9 x 6 x 6 x 5 lim 2 3 x − + − − → Solution: (i) x 2 x 4 lim 0 x − + →     fails D.S.M.</li>\n<li>Use of some Standard Results Here, we list without proof some very useful standard results which hold in limits.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.3 Rationalisation Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This method is explained in the following example.</li>\n<li>Example 4: Evaluate the following limits: (i) x 2 x 4 lim 0 x − + → (ii) 9 x 6 x 6 x 5 lim 2 3 x − + − − → Solution: (i) x 2 x 4 lim 0 x − + →     fails D.S.M.</li>\n<li>Use of some Standard Results Here, we list without proof some very useful standard results which hold in limits.</li>\n<li>1 n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided 1 n n a , a −exist] 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.4 Use of some Standard Results</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Here, we list without proof some very useful standard results which hold in limits.</li>\n<li>1 n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided 1 n n a , a −exist] 2.</li>\n<li>1 tan lim tan lim 0 0 =   =   →  →  10 Limit and Continuity 5.</li>\n<li>, , where a>0, a≠1 in particular, 1 e log x 1 e lim e x 0 x = = − → 6.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.5 Concept of Infinite Limit</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the following cases 1.0 10 1 = 01 .0 100 1 = 001 .0 1000 1 = 0001 .0 10000 1 = … … …    times n n 1 ...</li>\n<li>000 .0 10 1 = We see that as x (denominator) becomes larger and larger than x 1 becomes smaller and smaller and approaches to zero.</li>\n<li>we write 0 x 1 lim x =  → 13 Calculus Or 0 n where ,0 x 1 lim n x  =  → Remark 3:  → x means that whatever large real number K (say) we take then x > K, i.e.</li>\n<li>Let us consider an example, which involve infinite limit.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>y = f(x) = 3x + 2</code></div>\n<div class=\"formula-box\"><code>2 but remains > 2), then y = f(x) approaches to 8 in the same manner.</code></div>\n<div class=\"formula-box\"><code>Note: Numerator ≠ 0 for x = 3</code></div>\n<div class=\"formula-box\"><code>As on putting x = 3, the numerator and as well denominator both becomes</code></div>\n<div class=\"formula-box\"><code>Let us put x = 0 – h, where h is + ve real and is very small.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces the foundational concept of a limit in calculus, which describes the behaviour of a function as it approaches a specific value. This unit details various evaluation techniques, starting with the direct substitution method. Further, this unit highlights the importance of direction through Left- Hand Limits (L.H.L.) and Right-Hand Limits (R.H.L.), noting that a limit exists only if both sides converge to the same value, and also explores infinite limits in</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-11_Limit_and_Continuity.pdf')\">\n          📄 Read Original IGNOU PDF (31 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 11 Limit and Continuity\"]\n  M1[\"11.2 Concept of Limit\"]\n  Root --> M1\n  M2[\"11.3 Direct Substitution Method\"]\n  Root --> M2\n  M3[\"11.4 Failure of Direct Substitution \"]\n  Root --> M3\n  M3_1[\"11.4.1 Factorisation Method\"]\n  M3 --> M3_1\n  M3_2[\"11.4.2 Least Common Multiplier Metho\"]\n  M3 --> M3_2\n  M3_3[\"11.4.3 Rationalisation Method\"]\n  M3 --> M3_3\n  M4[\"11.5 Concept of Infinite Limit\"]\n  Root --> M4\n  M5[\"11.6 Concept of Left Hand and Right \"]\n  Root --> M5\n  M6[\"11.7 Continuity of a Function at a P\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Concept Of Limit",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Direct Substitution Method",
+      "definition": "Suppose we want to evaluate ) x ( f lim a x→ .",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Factorisation Method",
+      "definition": "This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Least Common Multiplier Method",
+      "definition": "Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Rationalisation Method",
+      "definition": "This method is explained in the following example.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "11.2",
+      "topic": "Concept of Limit",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in limit and continuity."
+      ]
+    },
+    {
+      "section_num": "11.3",
+      "topic": "Direct Substitution Method",
+      "points": [
+        "Suppose we want to evaluate ) x ( f lim a x→ .",
+        "This method is applied when limiting value of f(x) remains same irrespective of this fact whether x approaches to a from left hand side (L.H.S.) or right hand side (R.H.S.).",
+        "As the name of this method itself suggests, in this method we directly substitute a in place of x.",
+        "Before we take some examples based on the direct substitution method we list some results (algebra of limits) without proof."
+      ]
+    },
+    {
+      "section_num": "11.4",
+      "topic": "Failure of Direct Substitution Method",
+      "points": [
+        "In mathematics following seven forms are known as indeterminate form, i.e.",
+        "(i) 0 0 (ii)   (iii)   0 (iv)  −  (v) 0 0 (vi)  1 (vii) 0  So, if by direct substitution any of the above mentioned forms take place then D.S.M.",
+        "This will happen if f(x) and g(x) both becomes zero on direct substitution.",
+        " both have at least one common factor (x – a)."
+      ]
+    },
+    {
+      "section_num": "11.4.1",
+      "topic": "Factorisation Method",
+      "points": [
+        "This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .",
+        "This will happen if f(x) and g(x) both becomes zero on direct substitution.",
+        " both have at least one common factor (x – a).",
+        "In this case express f(x) = (x – a) (some factor) and g(x) = (x – a) (some factor) either by long division method or by any other method known to you."
+      ]
+    },
+    {
+      "section_num": "11.4.2",
+      "topic": "Least Common Multiplier Method",
+      "points": [
+        "Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.",
+        "Example 3: Evaluate       − − − → x 3 x 3 3 x 1 lim 2 3 x Solution:       − − − → x 3 x 3 3 x 1 lim 2 3 x [  −  form, so D.S.M.",
+        "Example 4: Evaluate the following limits: (i) x 2 x 4 lim 0 x − + → (ii) 9 x 6 x 6 x 5 lim 2 3 x − + − − → Solution: (i) x 2 x 4 lim 0 x − + →     fails D.S.M.",
+        "Use of some Standard Results Here, we list without proof some very useful standard results which hold in limits."
+      ]
+    },
+    {
+      "section_num": "11.4.3",
+      "topic": "Rationalisation Method",
+      "points": [
+        "This method is explained in the following example.",
+        "Example 4: Evaluate the following limits: (i) x 2 x 4 lim 0 x − + → (ii) 9 x 6 x 6 x 5 lim 2 3 x − + − − → Solution: (i) x 2 x 4 lim 0 x − + →     fails D.S.M.",
+        "Use of some Standard Results Here, we list without proof some very useful standard results which hold in limits.",
+        "1 n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided 1 n n a , a −exist] 2."
+      ]
+    },
+    {
+      "section_num": "11.4.4",
+      "topic": "Use of some Standard Results",
+      "points": [
+        "Here, we list without proof some very useful standard results which hold in limits.",
+        "1 n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided 1 n n a , a −exist] 2.",
+        "1 tan lim tan lim 0 0 =   =   →  →  10 Limit and Continuity 5.",
+        ", , where a>0, a≠1 in particular, 1 e log x 1 e lim e x 0 x = = − → 6."
+      ]
+    },
+    {
+      "section_num": "11.5",
+      "topic": "Concept of Infinite Limit",
+      "points": [
+        "Consider the following cases 1.0 10 1 = 01 .0 100 1 = 001 .0 1000 1 = 0001 .0 10000 1 = … … …    times n n 1 ...",
+        "000 .0 10 1 = We see that as x (denominator) becomes larger and larger than x 1 becomes smaller and smaller and approaches to zero.",
+        "we write 0 x 1 lim x =  → 13 Calculus Or 0 n where ,0 x 1 lim n x  =  → Remark 3:  → x means that whatever large real number K (say) we take then x > K, i.e.",
+        "Let us consider an example, which involve infinite limit."
+      ]
+    }
+  ],
+  "formulas": [
+    "y = f(x) = 3x + 2",
+    "2 but remains > 2), then y = f(x) approaches to 8 in the same manner.",
+    "Note: Numerator ≠ 0 for x = 3",
+    "As on putting x = 3, the numerator and as well denominator both becomes",
+    "Let us put x = 0 – h, where h is + ve real and is very small."
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 11 Limit and Continuity\"]\n  M1[\"11.2 Concept of Limit\"]\n  Root --> M1\n  M2[\"11.3 Direct Substitution Method\"]\n  Root --> M2\n  M3[\"11.4 Failure of Direct Substitution \"]\n  Root --> M3\n  M3_1[\"11.4.1 Factorisation Method\"]\n  M3 --> M3_1\n  M3_2[\"11.4.2 Least Common Multiplier Metho\"]\n  M3 --> M3_2\n  M3_3[\"11.4.3 Rationalisation Method\"]\n  M3 --> M3_3\n  M4[\"11.5 Concept of Infinite Limit\"]\n  Root --> M4\n  M5[\"11.6 Concept of Left Hand and Right \"]\n  Root --> M5\n  M6[\"11.7 Continuity of a Function at a P\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Concept Of Limit</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Direct Substitution Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Suppose we want to evaluate ) x ( f lim a x→ .</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Factorisation Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Least Common Multiplier Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Rationalisation Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">This method is explained in the following example.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.2 Concept of Limit</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of concept of limit.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in limit and continuity.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.3 Direct Substitution Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Suppose we want to evaluate ) x ( f lim a x→ .</li>\n<li>This method is applied when limiting value of f(x) remains same irrespective of this fact whether x approaches to a from left hand side (L.H.S.) or right hand side (R.H.S.).</li>\n<li>As the name of this method itself suggests, in this method we directly substitute a in place of x.</li>\n<li>Before we take some examples based on the direct substitution method we list some results (algebra of limits) without proof.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4 Failure of Direct Substitution Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In mathematics following seven forms are known as indeterminate form, i.e.</li>\n<li>(i) 0 0 (ii)   (iii)   0 (iv)  −  (v) 0 0 (vi)  1 (vii) 0  So, if by direct substitution any of the above mentioned forms take place then D.S.M.</li>\n<li>This will happen if f(x) and g(x) both becomes zero on direct substitution.</li>\n<li> both have at least one common factor (x – a).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.1 Factorisation Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This method is useful, when we get 0 0 form by direct substitution in the given expression of the type ) x ( g ) x ( f lim a x→ .</li>\n<li>This will happen if f(x) and g(x) both becomes zero on direct substitution.</li>\n<li> both have at least one common factor (x – a).</li>\n<li>In this case express f(x) = (x – a) (some factor) and g(x) = (x – a) (some factor) either by long division method or by any other method known to you.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.2 Least Common Multiplier Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Most of the times after simplification it reduces to 0 0 form then solve it as explained in factorisation method.</li>\n<li>Example 3: Evaluate       − − − → x 3 x 3 3 x 1 lim 2 3 x Solution:       − − − → x 3 x 3 3 x 1 lim 2 3 x [  −  form, so D.S.M.</li>\n<li>Example 4: Evaluate the following limits: (i) x 2 x 4 lim 0 x − + → (ii) 9 x 6 x 6 x 5 lim 2 3 x − + − − → Solution: (i) x 2 x 4 lim 0 x − + →     fails D.S.M.</li>\n<li>Use of some Standard Results Here, we list without proof some very useful standard results which hold in limits.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.3 Rationalisation Method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>This method is explained in the following example.</li>\n<li>Example 4: Evaluate the following limits: (i) x 2 x 4 lim 0 x − + → (ii) 9 x 6 x 6 x 5 lim 2 3 x − + − − → Solution: (i) x 2 x 4 lim 0 x − + →     fails D.S.M.</li>\n<li>Use of some Standard Results Here, we list without proof some very useful standard results which hold in limits.</li>\n<li>1 n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided 1 n n a , a −exist] 2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.4.4 Use of some Standard Results</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Here, we list without proof some very useful standard results which hold in limits.</li>\n<li>1 n n n a x na a x a x lim − → = − − [a and n are any real numbers, provided 1 n n a , a −exist] 2.</li>\n<li>1 tan lim tan lim 0 0 =   =   →  →  10 Limit and Continuity 5.</li>\n<li>, , where a>0, a≠1 in particular, 1 e log x 1 e lim e x 0 x = = − → 6.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">11.5 Concept of Infinite Limit</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the following cases 1.0 10 1 = 01 .0 100 1 = 001 .0 1000 1 = 0001 .0 10000 1 = … … …    times n n 1 ...</li>\n<li>000 .0 10 1 = We see that as x (denominator) becomes larger and larger than x 1 becomes smaller and smaller and approaches to zero.</li>\n<li>we write 0 x 1 lim x =  → 13 Calculus Or 0 n where ,0 x 1 lim n x  =  → Remark 3:  → x means that whatever large real number K (say) we take then x > K, i.e.</li>\n<li>Let us consider an example, which involve infinite limit.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>y = f(x) = 3x + 2</code></div>\n<div class=\"formula-box\"><code>2 but remains > 2), then y = f(x) approaches to 8 in the same manner.</code></div>\n<div class=\"formula-box\"><code>Note: Numerator ≠ 0 for x = 3</code></div>\n<div class=\"formula-box\"><code>As on putting x = 3, the numerator and as well denominator both becomes</code></div>\n<div class=\"formula-box\"><code>Let us put x = 0 – h, where h is + ve real and is very small.</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit introduces the foundational concept of a limit in calculus, which describes the behaviour of a function as it approaches a specific value. This unit details various evaluation techniques, starting with the direct substitution method. Further, this unit highlights the importance of direction through Left- Hand Limits (L.H.L.) and Right-Hand Limits (R.H.L.), noting that a limit exists only if both sides converge to the same value, and also explores infinite limits in</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-11_Limit_and_Continuity.pdf')\">\n          📄 Read Original IGNOU PDF (31 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

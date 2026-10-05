@@ -1,0 +1,165 @@
+{
+  "course_code": "MCS-068",
+  "unit_id": "unit_06",
+  "unit_num": "Unit 6",
+  "title": "Outlier Detection",
+  "filename": "Unit-6_Outlier_Detection.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-6_Outlier_Detection.pdf",
+  "total_pages": 38,
+  "word_count": 12112,
+  "est_read_time_minutes": 67,
+  "objectives": [
+    "based methods such as K",
+    "means, DBSCAN does not require the number of",
+    "∣  ≥𝑀𝑖𝑛𝑃𝑡𝑠",
+    "∣ means the number of points in the Eps",
+    "neighbourhood",
+    "Neighbourhood: For a point 𝑝, the Eps"
+  ],
+  "summary": "● Maximum (without outlier) = 22 The box (8 to 18) shows middle 50% of data The median (12) divides data into two halves The whiskers (5 to 22) show normal range The point 50 lies far beyond the upper bound It can read from the Box plot that Left whisker is Minimum = 5, the Box starts at Q1 = 8",
+  "flashcards": [
+    {
+      "question": "What are outliers? Explain their significance in predictive data analysis. ……………………………………………………………………………………………",
+      "answer": "In Outlier Detection, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain the Standard Deviation method for detecting outliers. …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Define the key parameters of DBSCAN. Solution: Refer to Section",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Define Z-score and explain its role in outlier detection. .…………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Differentiate between core, border, and noise points in DBSCAN. Solution: Refer to Section",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Differentiate between Standard Deviation method and Z-score method. .…………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "What are the advantages of DBSCAN in outlier detection? Solution: Refer to Section",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "Explain the relationship between Standard Deviation and Z-score in outlier detection. .…………………………………………………………………………………………… ……………………………………………………………………………………………",
+      "answer": "What is the Local Outlier Factor (LOF)? Solution: Refer to Section",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What are Percentiles and how are they used in outlier detection? …………………………………………………………………………………………… …………………………………………………………………………………………… Q",
+      "answer": "Key Principle: The Box plots are widely used for outlier detection, skewness analysis, and spread visualization.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is A Point and how is it characterized?",
+      "answer": "A Point a core point if at least MinPts points lie within its neighbourhood of radius Eps.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Outlier Detection\"]\n  M1[\"6.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"6.2 Standard deviation method\"]\n  Root --> M2\n  M3[\"6.3 Box-plots\"]\n  Root --> M3\n  M4[\"6.4 Z-score\"]\n  Root --> M4\n  M5[\"6.5 Percentiles\"]\n  Root --> M5\n  M6[\"6.6 DBSCAN\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Point</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Point a core point if at least MinPts points lie within its neighbourhood of radius Eps.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">● Understand the concept and significance of outliers in predictive data analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Standard Deviation Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The standard deviation method is one of the most widely used statistical techniques for identifying how much individual data points deviate from the mean (average) of a dataset.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Box-Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">We learned about the role of standard deviation in outlier detection, in the section 6.2 above.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Z-Score</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Quantiles are positional measures that divide a dataset into equal parts and provide a deeper understanding of the distribution of data.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>● Understand the concept and significance of outliers in predictive data analysis.</li>\n<li>● Apply the standard deviation method to identify deviations from the mean.</li>\n<li>● Use Z-score to quantify how far a data point lies from the average.</li>\n<li>● Interpret percentiles to detect extreme values within a dataset.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Standard deviation method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The standard deviation method is one of the most widely used statistical techniques for identifying how much individual data points deviate from the mean (average) of a dataset.</li>\n<li>In the context of outlier detection, it helps us determine whether a data point lies unusually far from the central tendency of the data.</li>\n<li>Standard deviation measures the spread or dispersion of data around the mean.</li>\n<li>● A small standard deviation indicates that values are close to the mean.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Box-plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We learned about the role of standard deviation in outlier detection, in the section 6.2 above.</li>\n<li>Here in this section 6.3, we are going to discuss the next important characteristic for outlier detection i.e.</li>\n<li>The Z-score (or standard score) is a statistical measure that indicates how far a data point lies from the mean in terms of standard deviations.</li>\n<li>It standardizes data, allowing us to compare observations across different scales.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Z-score</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Quantiles are positional measures that divide a dataset into equal parts and provide a deeper understanding of the distribution of data.</li>\n<li>Unlike measures such as mean, quantiles focus on the relative position of observations, making them highly useful in identifying the spread, concentration, and presence of extreme values (outliers).</li>\n<li>The most commonly used quantiles are quartiles, deciles, and percentiles.</li>\n<li>In this section we are going to discuss these Quantiles with their relevance to Outlier detection.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Percentiles</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The Box plots are widely used for outlier detection, skewness analysis, and spread visualization.</li>\n<li>Now let’s discuss the Steps to Create a Box Plot : 1.</li>\n<li>The Right whisker is Maximum (without outlier) = 22 and Point on far right is the Outlier = 50.</li>\n<li>It clearly highlights extreme values visually and uses IQR, a robust measure, not affected by outliers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 DBSCAN</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>DBSCAN stands for Density-Based Spatial Clustering of Applications with Noise.</li>\n<li>It is a density-based clustering algorithm used to identify groups of closely packed data points and, at the same time, detect points that do not belong to any dense region.</li>\n<li>These isolated points are treated as outliers or noise.</li>\n<li>DBSCAN is especially useful when the data contains irregularly shaped clusters and when outlier detection is an important objective.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.7 Local Outlier factor</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The Local Outlier Factor (LOF) is a powerful density-based technique used in anomaly detection to identify observations that deviate significantly from their local neighbourhood.</li>\n<li>Unlike traditional global outlier detection methods, which evaluate a data point against the entire dataset, LOF focuses on the local structure of the data.</li>\n<li>This makes it particularly useful in real-world datasets where data is not uniformly distributed, and different regions exhibit varying densities.</li>\n<li>The fundamental idea behind LOF is intuitive yet mathematically grounded, where a data point is considered an outlier if its local density is substantially lower than that of its surrounding neighbours.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule for outlier detection is as follows:</code></div>\n<div class=\"formula-box\"><code>rule let’s Calculate Range for Lower & Upper Bounds respectively:</code></div>\n<div class=\"formula-box\"><code>rules (such as ±2σ or ±3σ), analysts can effectively detect</code></div>\n<div class=\"formula-box\"><code>rule for identifying outliers’ states following:</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">● Maximum (without outlier) = 22 The box (8 to 18) shows middle 50% of data The median (12) divides data into two halves The whiskers (5 to 22) show normal range The point 50 lies far beyond the upper bound It can read from the Box plot that Left whisker is Minimum = 5, the Box starts at Q1 = 8</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-6_Outlier_Detection.pdf')\">\n          📄 Read Original IGNOU PDF (38 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 6 Outlier Detection\"]\n  M1[\"6.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"6.2 Standard deviation method\"]\n  Root --> M2\n  M3[\"6.3 Box-plots\"]\n  Root --> M3\n  M4[\"6.4 Z-score\"]\n  Root --> M4\n  M5[\"6.5 Percentiles\"]\n  Root --> M5\n  M6[\"6.6 DBSCAN\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "A Point",
+      "definition": "A Point a core point if at least MinPts points lie within its neighbourhood of radius Eps.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Expected Learning Outcomes",
+      "definition": "● Understand the concept and significance of outliers in predictive data analysis.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Standard Deviation Method",
+      "definition": "The standard deviation method is one of the most widely used statistical techniques for identifying how much individual data points deviate from the mean (average) of a dataset.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Box-Plots",
+      "definition": "We learned about the role of standard deviation in outlier detection, in the section 6.2 above.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Z-Score",
+      "definition": "Quantiles are positional measures that divide a dataset into equal parts and provide a deeper understanding of the distribution of data.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "6.1",
+      "topic": "Expected Learning Outcomes",
+      "points": [
+        "● Understand the concept and significance of outliers in predictive data analysis.",
+        "● Apply the standard deviation method to identify deviations from the mean.",
+        "● Use Z-score to quantify how far a data point lies from the average.",
+        "● Interpret percentiles to detect extreme values within a dataset."
+      ]
+    },
+    {
+      "section_num": "6.2",
+      "topic": "Standard deviation method",
+      "points": [
+        "The standard deviation method is one of the most widely used statistical techniques for identifying how much individual data points deviate from the mean (average) of a dataset.",
+        "In the context of outlier detection, it helps us determine whether a data point lies unusually far from the central tendency of the data.",
+        "Standard deviation measures the spread or dispersion of data around the mean.",
+        "● A small standard deviation indicates that values are close to the mean."
+      ]
+    },
+    {
+      "section_num": "6.3",
+      "topic": "Box-plots",
+      "points": [
+        "We learned about the role of standard deviation in outlier detection, in the section 6.2 above.",
+        "Here in this section 6.3, we are going to discuss the next important characteristic for outlier detection i.e.",
+        "The Z-score (or standard score) is a statistical measure that indicates how far a data point lies from the mean in terms of standard deviations.",
+        "It standardizes data, allowing us to compare observations across different scales."
+      ]
+    },
+    {
+      "section_num": "6.4",
+      "topic": "Z-score",
+      "points": [
+        "Quantiles are positional measures that divide a dataset into equal parts and provide a deeper understanding of the distribution of data.",
+        "Unlike measures such as mean, quantiles focus on the relative position of observations, making them highly useful in identifying the spread, concentration, and presence of extreme values (outliers).",
+        "The most commonly used quantiles are quartiles, deciles, and percentiles.",
+        "In this section we are going to discuss these Quantiles with their relevance to Outlier detection."
+      ]
+    },
+    {
+      "section_num": "6.5",
+      "topic": "Percentiles",
+      "points": [
+        "The Box plots are widely used for outlier detection, skewness analysis, and spread visualization.",
+        "Now let’s discuss the Steps to Create a Box Plot : 1.",
+        "The Right whisker is Maximum (without outlier) = 22 and Point on far right is the Outlier = 50.",
+        "It clearly highlights extreme values visually and uses IQR, a robust measure, not affected by outliers."
+      ]
+    },
+    {
+      "section_num": "6.6",
+      "topic": "DBSCAN",
+      "points": [
+        "DBSCAN stands for Density-Based Spatial Clustering of Applications with Noise.",
+        "It is a density-based clustering algorithm used to identify groups of closely packed data points and, at the same time, detect points that do not belong to any dense region.",
+        "These isolated points are treated as outliers or noise.",
+        "DBSCAN is especially useful when the data contains irregularly shaped clusters and when outlier detection is an important objective."
+      ]
+    },
+    {
+      "section_num": "6.7",
+      "topic": "Local Outlier factor",
+      "points": [
+        "The Local Outlier Factor (LOF) is a powerful density-based technique used in anomaly detection to identify observations that deviate significantly from their local neighbourhood.",
+        "Unlike traditional global outlier detection methods, which evaluate a data point against the entire dataset, LOF focuses on the local structure of the data.",
+        "This makes it particularly useful in real-world datasets where data is not uniformly distributed, and different regions exhibit varying densities.",
+        "The fundamental idea behind LOF is intuitive yet mathematically grounded, where a data point is considered an outlier if its local density is substantially lower than that of its surrounding neighbours."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule for outlier detection is as follows:",
+    "rule let’s Calculate Range for Lower & Upper Bounds respectively:",
+    "rules (such as ±2σ or ±3σ), analysts can effectively detect",
+    "rule for identifying outliers’ states following:"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 6 Outlier Detection\"]\n  M1[\"6.1 Expected Learning Outcomes\"]\n  Root --> M1\n  M2[\"6.2 Standard deviation method\"]\n  Root --> M2\n  M3[\"6.3 Box-plots\"]\n  Root --> M3\n  M4[\"6.4 Z-score\"]\n  Root --> M4\n  M5[\"6.5 Percentiles\"]\n  Root --> M5\n  M6[\"6.6 DBSCAN\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">A Point</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">A Point a core point if at least MinPts points lie within its neighbourhood of radius Eps.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expected Learning Outcomes</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">● Understand the concept and significance of outliers in predictive data analysis.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Standard Deviation Method</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The standard deviation method is one of the most widely used statistical techniques for identifying how much individual data points deviate from the mean (average) of a dataset.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Box-Plots</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">We learned about the role of standard deviation in outlier detection, in the section 6.2 above.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Z-Score</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Quantiles are positional measures that divide a dataset into equal parts and provide a deeper understanding of the distribution of data.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.1 Expected Learning Outcomes</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>● Understand the concept and significance of outliers in predictive data analysis.</li>\n<li>● Apply the standard deviation method to identify deviations from the mean.</li>\n<li>● Use Z-score to quantify how far a data point lies from the average.</li>\n<li>● Interpret percentiles to detect extreme values within a dataset.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.2 Standard deviation method</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The standard deviation method is one of the most widely used statistical techniques for identifying how much individual data points deviate from the mean (average) of a dataset.</li>\n<li>In the context of outlier detection, it helps us determine whether a data point lies unusually far from the central tendency of the data.</li>\n<li>Standard deviation measures the spread or dispersion of data around the mean.</li>\n<li>● A small standard deviation indicates that values are close to the mean.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.3 Box-plots</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>We learned about the role of standard deviation in outlier detection, in the section 6.2 above.</li>\n<li>Here in this section 6.3, we are going to discuss the next important characteristic for outlier detection i.e.</li>\n<li>The Z-score (or standard score) is a statistical measure that indicates how far a data point lies from the mean in terms of standard deviations.</li>\n<li>It standardizes data, allowing us to compare observations across different scales.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.4 Z-score</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Quantiles are positional measures that divide a dataset into equal parts and provide a deeper understanding of the distribution of data.</li>\n<li>Unlike measures such as mean, quantiles focus on the relative position of observations, making them highly useful in identifying the spread, concentration, and presence of extreme values (outliers).</li>\n<li>The most commonly used quantiles are quartiles, deciles, and percentiles.</li>\n<li>In this section we are going to discuss these Quantiles with their relevance to Outlier detection.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.5 Percentiles</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The Box plots are widely used for outlier detection, skewness analysis, and spread visualization.</li>\n<li>Now let’s discuss the Steps to Create a Box Plot : 1.</li>\n<li>The Right whisker is Maximum (without outlier) = 22 and Point on far right is the Outlier = 50.</li>\n<li>It clearly highlights extreme values visually and uses IQR, a robust measure, not affected by outliers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.6 DBSCAN</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>DBSCAN stands for Density-Based Spatial Clustering of Applications with Noise.</li>\n<li>It is a density-based clustering algorithm used to identify groups of closely packed data points and, at the same time, detect points that do not belong to any dense region.</li>\n<li>These isolated points are treated as outliers or noise.</li>\n<li>DBSCAN is especially useful when the data contains irregularly shaped clusters and when outlier detection is an important objective.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">6.7 Local Outlier factor</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The Local Outlier Factor (LOF) is a powerful density-based technique used in anomaly detection to identify observations that deviate significantly from their local neighbourhood.</li>\n<li>Unlike traditional global outlier detection methods, which evaluate a data point against the entire dataset, LOF focuses on the local structure of the data.</li>\n<li>This makes it particularly useful in real-world datasets where data is not uniformly distributed, and different regions exhibit varying densities.</li>\n<li>The fundamental idea behind LOF is intuitive yet mathematically grounded, where a data point is considered an outlier if its local density is substantially lower than that of its surrounding neighbours.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule for outlier detection is as follows:</code></div>\n<div class=\"formula-box\"><code>rule let’s Calculate Range for Lower & Upper Bounds respectively:</code></div>\n<div class=\"formula-box\"><code>rules (such as ±2σ or ±3σ), analysts can effectively detect</code></div>\n<div class=\"formula-box\"><code>rule for identifying outliers’ states following:</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">● Maximum (without outlier) = 22 The box (8 to 18) shows middle 50% of data The median (12) divides data into two halves The whiskers (5 to 22) show normal range The point 50 lies far beyond the upper bound It can read from the Box plot that Left whisker is Minimum = 5, the Box starts at Q1 = 8</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-068_Predictive_Data_Analysis/Unit-6_Outlier_Detection.pdf')\">\n          📄 Read Original IGNOU PDF (38 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

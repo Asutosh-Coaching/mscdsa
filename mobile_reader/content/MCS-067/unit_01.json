@@ -1,0 +1,170 @@
+{
+  "course_code": "MCS-067",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Data Wrangling and Profiling",
+  "filename": "Unit-1_Data_Wrangling_and_Profiling.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-1_Data_Wrangling_and_Profiling.pdf",
+  "total_pages": 20,
+  "word_count": 6716,
+  "est_read_time_minutes": 37,
+  "objectives": [
+    "based profiling"
+  ],
+  "summary": "A statistical summary gives information about the data in a sample. It may help with a more thorough understanding of the values. It may include a set of data's mean and standard deviation in addition to the total number of values, lowest value, and greatest value. This aids in understanding the distribution of values, patterns, and outliers within a data set. Better data analysis may result from this, which is especially useful when dealing with large amounts of data.",
+  "flashcards": [
+    {
+      "question": "Why is data wrangling important for AI and Machine Learning?",
+      "answer": "Key Principle: The relevance of data wrangling continues to grow for several reasons: 1.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is the primary goal of data wrangling? Define data profiling.",
+      "answer": "In Data Wrangling and Profiling, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Why is data wrangling needed?",
+      "answer": "Key Principle: The relevance of data wrangling continues to grow for several reasons: 1.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is the main purpose of using data semantics?",
+      "answer": "Key Principle: Sometimes the available data may need to be generalised or aggregated into different categories.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Explain the \"Is A\" relationship (generalisation) with an example.",
+      "answer": "In Data Wrangling and Profiling, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "How can you perform Is A mapping in data using Python?",
+      "answer": "Key Principle: Sometimes the available data may need to be generalised or aggregated into different categories.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is Data Wrangling and how is it characterized?",
+      "answer": "Data Wrangling the process in which raw data is converted to a more usable form, which can be used for analysis readily.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Data Wrangling and Profiling\"]\n  M1[\"1.2 Basic Concepts\"]\n  Root --> M1\n  M1_1[\"1.2.1 Definition\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Need of Data Wrangling\"]\n  M1 --> M1_2\n  M2[\"1.3 Process of Data Wrangling\"]\n  Root --> M2\n  M3[\"1.4 Benefits of Data Wrangling\"]\n  Root --> M3\n  M4[\"1.5 Data Semantics\"]\n  Root --> M4\n  M4_1[\"1.5.1 Data Semantic Process\"]\n  M4 --> M4_1\n  M4_2[\"1.5.2 Semantic Wrangling using Data \"]\n  M4 --> M4_2\n  M5[\"1.6 Set-based profiling\"]\n  Root --> M5\n  M6[\"1.7 Data Wrangling Tools\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Wrangling</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Data Wrangling the process in which raw data is converted to a more usable form, which can be used for analysis readily.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Concepts</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data wrangling and profiling are the first steps of data analysis process.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Need Of Data Wrangling</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The relevance of data wrangling continues to grow for several reasons: 1.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Process Of Data Wrangling</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data wrangling involves several steps to convert raw data into a form which can be readily used.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Basic Concepts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling and profiling are the first steps of data analysis process.</li>\n<li>It is performed to enhance data quality and accuracy, resulting in better analysis.</li>\n<li>Let us first define the two terms used in this unit - Data Wrangling and Profiling in the next sub-section.</li>\n<li>Definition Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 Definition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.</li>\n<li>Data Wrangling is also known as Data munging.</li>\n<li>Data Profiling: Data types, formats, value distributions, patterns, and their interactions, etc., are better understood through this approach.</li>\n<li>Raw data often has lot of errors, is not accessible for every row and column of the data (missing values), and sometimes is not in an easily usable format.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.2 Need of Data Wrangling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The relevance of data wrangling continues to grow for several reasons: 1.</li>\n<li>Volume, type and variety of Data: Data generation volume has increased multi fold by the evolution of social media, the internet, IoT devices, and many other sources must be appropriately managed and analysed by organisations.</li>\n<li>Data wrangling enables efficient handling of this exponentially massive and heterogeneous data.</li>\n<li>Advanced Analytics and Artificial Intelligence: The advancements in analytics and artificial intelligence (AI) require high-quality data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Process of Data Wrangling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling involves several steps to convert raw data into a form which can be readily used.</li>\n<li>Following steps show how data wrangling works: 1.</li>\n<li>Collection First step in data wrangling is collecting required data from several sources.</li>\n<li>These sources include files, databases, IoT device data input, data extraction from websites, and numerous other data streams.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Benefits of Data Wrangling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling has numerous advantages that significantly increase the worth of data for companies and organisations.</li>\n<li>Data wrangling opens the door to more accurate, effective, and insightful research by transforming unstructured data into more structured and clean format.</li>\n<li>Inaccuracies, inconsistencies, missing values, and repetitions are common in raw data, which can skew analysis and can lead to inaccurate conclusions.</li>\n<li>To solve these problems, the data wrangling process - cleaning is used, and later the validation step assures that the accurate, consistent and reliable data is used in the analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Data Semantics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data Semantics represents the meaning and structure of data.</li>\n<li>By transforming unstructured, confusing data into information with a common meaning, it helps you enforce data integrity and data integration and enhances data analysis.</li>\n<li>Semantic data models can be produced via an abstraction process that selects real-world data elements and creates links between these attributes to generate organised, meaningful data.</li>\n<li>Additionally, metadata—data about data—is frequently poorly defined.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5.1 Data Semantic Process</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The following example shows the basic steps that may be used in data semantic process Example: 1.</li>\n<li>Data Collection: Raw data is gathered from sources.</li>\n<li>For example, the following raw data may be obtained as a series of data bytes: Name | Value A | 25 B | 30 2.</li>\n<li>The first record of the raw data, as shown in point 1 above, is organised as JSON object as: { \"person\": \"A\", \"value\": 25 } 15 Introduction to Data Wrangling It is still unclear what “person” and \"value\" means.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5.2 Semantic Wrangling using Data Abstraction</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sometimes the available data may need to be generalised or aggregated into different categories.</li>\n<li>In such situations, you may use data abstraction terms like \"is a\" (generalisation), \"has a\" (aggregation), and \"instance of\" (classification) to perform semantic wrangling.</li>\n<li>The following semantic relationships describe the connections between the attributes: o Generalisation (Is A): For example, a manager \"is a\" type of employee.</li>\n<li>You can establish generalisation (\"is a\") for a more general object.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rules for Digital Personal Data Protection, 2025.</code></div>\n<div class=\"formula-box\"><code>rules and regulations.</code></div>\n<div class=\"formula-box\"><code>rules like (Age-> must be</code></div>\n<div class=\"formula-box\"><code>Principles of Data Wrangling Practical Techniques for Data Preparation”, O’reilly</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">A statistical summary gives information about the data in a sample. It may help with a more thorough understanding of the values. It may include a set of data's mean and standard deviation in addition to the total number of values, lowest value, and greatest value. This aids in understanding the distribution of values, patterns, and outliers within a data set. Better data analysis may result from this, which is especially useful when dealing with large amounts of data.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-1_Data_Wrangling_and_Profiling.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Data Wrangling and Profiling\"]\n  M1[\"1.2 Basic Concepts\"]\n  Root --> M1\n  M1_1[\"1.2.1 Definition\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Need of Data Wrangling\"]\n  M1 --> M1_2\n  M2[\"1.3 Process of Data Wrangling\"]\n  Root --> M2\n  M3[\"1.4 Benefits of Data Wrangling\"]\n  Root --> M3\n  M4[\"1.5 Data Semantics\"]\n  Root --> M4\n  M4_1[\"1.5.1 Data Semantic Process\"]\n  M4 --> M4_1\n  M4_2[\"1.5.2 Semantic Wrangling using Data \"]\n  M4 --> M4_2\n  M5[\"1.6 Set-based profiling\"]\n  Root --> M5\n  M6[\"1.7 Data Wrangling Tools\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Data Wrangling",
+      "definition": "Data Wrangling the process in which raw data is converted to a more usable form, which can be used for analysis readily.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Basic Concepts",
+      "definition": "Data wrangling and profiling are the first steps of data analysis process.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Definition",
+      "definition": "Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Need Of Data Wrangling",
+      "definition": "The relevance of data wrangling continues to grow for several reasons: 1.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Process Of Data Wrangling",
+      "definition": "Data wrangling involves several steps to convert raw data into a form which can be readily used.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.2",
+      "topic": "Basic Concepts",
+      "points": [
+        "Data wrangling and profiling are the first steps of data analysis process.",
+        "It is performed to enhance data quality and accuracy, resulting in better analysis.",
+        "Let us first define the two terms used in this unit - Data Wrangling and Profiling in the next sub-section.",
+        "Definition Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily."
+      ]
+    },
+    {
+      "section_num": "1.2.1",
+      "topic": "Definition",
+      "points": [
+        "Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.",
+        "Data Wrangling is also known as Data munging.",
+        "Data Profiling: Data types, formats, value distributions, patterns, and their interactions, etc., are better understood through this approach.",
+        "Raw data often has lot of errors, is not accessible for every row and column of the data (missing values), and sometimes is not in an easily usable format."
+      ]
+    },
+    {
+      "section_num": "1.2.2",
+      "topic": "Need of Data Wrangling",
+      "points": [
+        "The relevance of data wrangling continues to grow for several reasons: 1.",
+        "Volume, type and variety of Data: Data generation volume has increased multi fold by the evolution of social media, the internet, IoT devices, and many other sources must be appropriately managed and analysed by organisations.",
+        "Data wrangling enables efficient handling of this exponentially massive and heterogeneous data.",
+        "Advanced Analytics and Artificial Intelligence: The advancements in analytics and artificial intelligence (AI) require high-quality data."
+      ]
+    },
+    {
+      "section_num": "1.3",
+      "topic": "Process of Data Wrangling",
+      "points": [
+        "Data wrangling involves several steps to convert raw data into a form which can be readily used.",
+        "Following steps show how data wrangling works: 1.",
+        "Collection First step in data wrangling is collecting required data from several sources.",
+        "These sources include files, databases, IoT device data input, data extraction from websites, and numerous other data streams."
+      ]
+    },
+    {
+      "section_num": "1.4",
+      "topic": "Benefits of Data Wrangling",
+      "points": [
+        "Data wrangling has numerous advantages that significantly increase the worth of data for companies and organisations.",
+        "Data wrangling opens the door to more accurate, effective, and insightful research by transforming unstructured data into more structured and clean format.",
+        "Inaccuracies, inconsistencies, missing values, and repetitions are common in raw data, which can skew analysis and can lead to inaccurate conclusions.",
+        "To solve these problems, the data wrangling process - cleaning is used, and later the validation step assures that the accurate, consistent and reliable data is used in the analysis."
+      ]
+    },
+    {
+      "section_num": "1.5",
+      "topic": "Data Semantics",
+      "points": [
+        "Data Semantics represents the meaning and structure of data.",
+        "By transforming unstructured, confusing data into information with a common meaning, it helps you enforce data integrity and data integration and enhances data analysis.",
+        "Semantic data models can be produced via an abstraction process that selects real-world data elements and creates links between these attributes to generate organised, meaningful data.",
+        "Additionally, metadata—data about data—is frequently poorly defined."
+      ]
+    },
+    {
+      "section_num": "1.5.1",
+      "topic": "Data Semantic Process",
+      "points": [
+        "The following example shows the basic steps that may be used in data semantic process Example: 1.",
+        "Data Collection: Raw data is gathered from sources.",
+        "For example, the following raw data may be obtained as a series of data bytes: Name | Value A | 25 B | 30 2.",
+        "The first record of the raw data, as shown in point 1 above, is organised as JSON object as: { \"person\": \"A\", \"value\": 25 } 15 Introduction to Data Wrangling It is still unclear what “person” and \"value\" means."
+      ]
+    },
+    {
+      "section_num": "1.5.2",
+      "topic": "Semantic Wrangling using Data Abstraction",
+      "points": [
+        "Sometimes the available data may need to be generalised or aggregated into different categories.",
+        "In such situations, you may use data abstraction terms like \"is a\" (generalisation), \"has a\" (aggregation), and \"instance of\" (classification) to perform semantic wrangling.",
+        "The following semantic relationships describe the connections between the attributes: o Generalisation (Is A): For example, a manager \"is a\" type of employee.",
+        "You can establish generalisation (\"is a\") for a more general object."
+      ]
+    }
+  ],
+  "formulas": [
+    "Rules for Digital Personal Data Protection, 2025.",
+    "rules and regulations.",
+    "rules like (Age-> must be",
+    "Principles of Data Wrangling Practical Techniques for Data Preparation”, O’reilly"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Data Wrangling and Profiling\"]\n  M1[\"1.2 Basic Concepts\"]\n  Root --> M1\n  M1_1[\"1.2.1 Definition\"]\n  M1 --> M1_1\n  M1_2[\"1.2.2 Need of Data Wrangling\"]\n  M1 --> M1_2\n  M2[\"1.3 Process of Data Wrangling\"]\n  Root --> M2\n  M3[\"1.4 Benefits of Data Wrangling\"]\n  Root --> M3\n  M4[\"1.5 Data Semantics\"]\n  Root --> M4\n  M4_1[\"1.5.1 Data Semantic Process\"]\n  M4 --> M4_1\n  M4_2[\"1.5.2 Semantic Wrangling using Data \"]\n  M4 --> M4_2\n  M5[\"1.6 Set-based profiling\"]\n  Root --> M5\n  M6[\"1.7 Data Wrangling Tools\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Wrangling</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Data Wrangling the process in which raw data is converted to a more usable form, which can be used for analysis readily.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Basic Concepts</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data wrangling and profiling are the first steps of data analysis process.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Definition</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Need Of Data Wrangling</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The relevance of data wrangling continues to grow for several reasons: 1.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Process Of Data Wrangling</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data wrangling involves several steps to convert raw data into a form which can be readily used.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Basic Concepts</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling and profiling are the first steps of data analysis process.</li>\n<li>It is performed to enhance data quality and accuracy, resulting in better analysis.</li>\n<li>Let us first define the two terms used in this unit - Data Wrangling and Profiling in the next sub-section.</li>\n<li>Definition Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.1 Definition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling is the process in which raw data is converted to a more usable form, which can be used for analysis readily.</li>\n<li>Data Wrangling is also known as Data munging.</li>\n<li>Data Profiling: Data types, formats, value distributions, patterns, and their interactions, etc., are better understood through this approach.</li>\n<li>Raw data often has lot of errors, is not accessible for every row and column of the data (missing values), and sometimes is not in an easily usable format.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2.2 Need of Data Wrangling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The relevance of data wrangling continues to grow for several reasons: 1.</li>\n<li>Volume, type and variety of Data: Data generation volume has increased multi fold by the evolution of social media, the internet, IoT devices, and many other sources must be appropriately managed and analysed by organisations.</li>\n<li>Data wrangling enables efficient handling of this exponentially massive and heterogeneous data.</li>\n<li>Advanced Analytics and Artificial Intelligence: The advancements in analytics and artificial intelligence (AI) require high-quality data.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Process of Data Wrangling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling involves several steps to convert raw data into a form which can be readily used.</li>\n<li>Following steps show how data wrangling works: 1.</li>\n<li>Collection First step in data wrangling is collecting required data from several sources.</li>\n<li>These sources include files, databases, IoT device data input, data extraction from websites, and numerous other data streams.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Benefits of Data Wrangling</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data wrangling has numerous advantages that significantly increase the worth of data for companies and organisations.</li>\n<li>Data wrangling opens the door to more accurate, effective, and insightful research by transforming unstructured data into more structured and clean format.</li>\n<li>Inaccuracies, inconsistencies, missing values, and repetitions are common in raw data, which can skew analysis and can lead to inaccurate conclusions.</li>\n<li>To solve these problems, the data wrangling process - cleaning is used, and later the validation step assures that the accurate, consistent and reliable data is used in the analysis.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Data Semantics</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data Semantics represents the meaning and structure of data.</li>\n<li>By transforming unstructured, confusing data into information with a common meaning, it helps you enforce data integrity and data integration and enhances data analysis.</li>\n<li>Semantic data models can be produced via an abstraction process that selects real-world data elements and creates links between these attributes to generate organised, meaningful data.</li>\n<li>Additionally, metadata—data about data—is frequently poorly defined.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5.1 Data Semantic Process</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The following example shows the basic steps that may be used in data semantic process Example: 1.</li>\n<li>Data Collection: Raw data is gathered from sources.</li>\n<li>For example, the following raw data may be obtained as a series of data bytes: Name | Value A | 25 B | 30 2.</li>\n<li>The first record of the raw data, as shown in point 1 above, is organised as JSON object as: { \"person\": \"A\", \"value\": 25 } 15 Introduction to Data Wrangling It is still unclear what “person” and \"value\" means.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5.2 Semantic Wrangling using Data Abstraction</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Sometimes the available data may need to be generalised or aggregated into different categories.</li>\n<li>In such situations, you may use data abstraction terms like \"is a\" (generalisation), \"has a\" (aggregation), and \"instance of\" (classification) to perform semantic wrangling.</li>\n<li>The following semantic relationships describe the connections between the attributes: o Generalisation (Is A): For example, a manager \"is a\" type of employee.</li>\n<li>You can establish generalisation (\"is a\") for a more general object.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Rules for Digital Personal Data Protection, 2025.</code></div>\n<div class=\"formula-box\"><code>rules and regulations.</code></div>\n<div class=\"formula-box\"><code>rules like (Age-> must be</code></div>\n<div class=\"formula-box\"><code>Principles of Data Wrangling Practical Techniques for Data Preparation”, O’reilly</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">A statistical summary gives information about the data in a sample. It may help with a more thorough understanding of the values. It may include a set of data's mean and standard deviation in addition to the total number of values, lowest value, and greatest value. This aids in understanding the distribution of values, patterns, and outliers within a data set. Better data analysis may result from this, which is especially useful when dealing with large amounts of data.</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-067_Data_Wrangling_and_Visualization/Unit-1_Data_Wrangling_and_Profiling.pdf')\">\n          📄 Read Original IGNOU PDF (20 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

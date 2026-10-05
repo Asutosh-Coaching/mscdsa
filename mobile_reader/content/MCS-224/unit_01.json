@@ -1,0 +1,165 @@
+{
+  "course_code": "MCS-224",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Introduction to Artificial Intelligence",
+  "filename": "Unit-1_Introduction_to_Artificial_Intelligence.pdf",
+  "relative_pdf_path": "pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-1_Introduction_to_Artificial_Intelligence.pdf",
+  "total_pages": 30,
+  "word_count": 12277,
+  "est_read_time_minutes": 68,
+  "objectives": [
+    ", Machine Learning",
+    "and DeepLearning (DL).",
+    "Response Agents"
+  ],
+  "summary": "of the Turing test. See figure 2 for more details. For the purpose of the test, There are three rooms that will be used for the test. In one of the rooms, there is a computer system that is said to be smart. In each of the other two rooms, there is one person sitting. One of the people, who we'll call C, is supposed to ask questions of the computer and the other person, who we'll call B, without knowing who each question is for and, of course, with",
+  "flashcards": [
+    {
+      "question": "3 ☞ Check Your Progress",
+      "answer": "In Introduction to Artificial Intelligence, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "6 ☞ Check Your Progress",
+      "answer": "In Introduction to Artificial Intelligence, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "7 ☞ Check Your Progress",
+      "answer": "In Introduction to Artificial Intelligence, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Components Of Intelligence and how is it characterized?",
+      "answer": "According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Approaches To Artificial Intelligence and how is it characterized?",
+      "answer": "Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Intelligent Agents and how is it characterized?",
+      "answer": "An agent may be thought of as an entity that acts, generally on behalf of someone else.",
+      "tag": "Key Definition"
+    },
+    {
+      "question": "What is Stimulus - Response Agents and how is it characterized?",
+      "answer": "Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Introduction to Artificial In\"]\n  M1[\"1.3 Basics of Artificial Intelligenc\"]\n  Root --> M1\n  M2[\"1.4 Brief history of Artificial Inte\"]\n  Root --> M2\n  M3[\"1.5 Components of Intelligence\"]\n  Root --> M3\n  M4[\"1.6 Approaches to Artificial Intelli\"]\n  Root --> M4\n  M5[\"1.7 Comparison between Artificial In\"]\n  Root --> M5\n  M6[\"1.8 Application Areas of Artificial \"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Components Of Intelligence</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Approaches To Artificial Intelligence</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Intelligent Agents</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An agent may be thought of as an entity that acts, generally on behalf of someone else.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Stimulus - Response Agents</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Basics of Artificial Intelligence (AI)?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Knowledge and intelligence are two important concepts, and we were able to gain an understanding of the fundamental distinction between the two terms.</li>\n<li>Now that we have your attention, let's talk about what artificial intelligence actually is.</li>\n<li>The following is a list of eight definitions of artificial intelligence that have been provided by well-known authors of artificial intelligence textbooks.</li>\n<li>1) According to Haugeland in 1985, \"The Exciting New Effort to Make Computers Think...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Brief history of Artificial Intelligence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>AI's ideas come from early research into how people learn and think.</li>\n<li>Also very old is the idea that a computer could act like a person.</li>\n<li>Greek mythology is where the idea of machines that can think for themselves comes from.</li>\n<li>• Aristotle, who lived from 384 BC to 322 BC, made a syllogistic logic system that was not formal.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Components of Intelligence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.</li>\n<li>The majority of attention in the field of artificial intelligence research has been paid to the following aspects of intelligence: learning, reasoning, problem-solving, perception, and language comprehension.</li>\n<li>Learning: There are numerous approaches to develop a learning system.</li>\n<li>Making mistakes is the simplest way to learn.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.6 Approaches to Artificial Intelligence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?</li>\n<li>But it is hard to find a good balance between approaches that focus on people and approaches that focus on logic.</li>\n<li>Researchers have found through their studies that a human-centered approach must be an empirical science with hypotheses and experiments to prove them.</li>\n<li>In a rationalist approach, math and engineering are used together.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.7 Comparison between Artificial Intelligence (AI), Machine Learning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>INTELLIGENCE, MACHINE LEARNING & DEEP LEARNING Artificial intelligence is a big field that includes a lot of different ways of doing things, from top-down (knowledge representation) to bottom-up (machine learning).</li>\n<li>In recent years, people have often talked about three related ideas: artificial intelligence (AI), machine learning (ML), and deep learning (DL) (DL).</li>\n<li>AI is the most general term, machine learning is a part of AI, and deep learning is a type of machine learning.</li>\n<li>However, AI's recent rise in popularity is largely due to how well machine learning, especially deep learning, works.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.8 Application Areas of Artificial Intelligence Systems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Artificial intelligence is the most important factor in the transformation of economies straight from the ground up, and it is contributing as an efficient alternative.</li>\n<li>This is especially true in areas where the supply of healthcare professionals is limited.</li>\n<li>The deployment of use cases like as AI-driven diagnostics, personalised treatment, early diagnosis of potential pandemics, and imaging diagnostics, amongst others, is one way to accomplish this goal.</li>\n<li>It also has the ability to resolve issues such as inadequate demand prediction, a lack of secure irrigation, and the abuse or misuse of pesticides and fertilizers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.9 Intelligent Agents</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An agent may be thought of as an entity that acts, generally on behalf of someone else.</li>\n<li>More precisely, an agent is an entity that perceives its environment through sensors and acts on the environment through actuators.</li>\n<li>Some experts in the field require an agent to be additionally autonomous and goal directed also.</li>\n<li>A percept may be thought of as an input to the agent through its censors, over a unit of time, sufficient enough to make some sense from the input.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.9.1 Stimulus - Response Agents</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in introduction to artificial intelligence.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules to data in order to simulate the way</code></div>\n<div class=\"formula-box\"><code>rule-based systems can be</code></div>\n<div class=\"formula-box\"><code>rule and thus form the past tense of</code></div>\n<div class=\"formula-box\"><code>approach: This approach Relates</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the Turing test. See figure 2 for more details. For the purpose of the test, There are three rooms that will be used for the test. In one of the rooms, there is a computer system that is said to be smart. In each of the other two rooms, there is one person sitting. One of the people, who we'll call C, is supposed to ask questions of the computer and the other person, who we'll call B, without knowing who each question is for and, of course, with</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-1_Introduction_to_Artificial_Intelligence.pdf')\">\n          📄 Read Original IGNOU PDF (30 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Introduction to Artificial In\"]\n  M1[\"1.3 Basics of Artificial Intelligenc\"]\n  Root --> M1\n  M2[\"1.4 Brief history of Artificial Inte\"]\n  Root --> M2\n  M3[\"1.5 Components of Intelligence\"]\n  Root --> M3\n  M4[\"1.6 Approaches to Artificial Intelli\"]\n  Root --> M4\n  M5[\"1.7 Comparison between Artificial In\"]\n  Root --> M5\n  M6[\"1.8 Application Areas of Artificial \"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Components Of Intelligence",
+      "definition": "According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Approaches To Artificial Intelligence",
+      "definition": "Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Intelligent Agents",
+      "definition": "An agent may be thought of as an entity that acts, generally on behalf of someone else.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Stimulus - Response Agents",
+      "definition": "Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.3",
+      "topic": "Basics of Artificial Intelligence (AI)?",
+      "points": [
+        "Knowledge and intelligence are two important concepts, and we were able to gain an understanding of the fundamental distinction between the two terms.",
+        "Now that we have your attention, let's talk about what artificial intelligence actually is.",
+        "The following is a list of eight definitions of artificial intelligence that have been provided by well-known authors of artificial intelligence textbooks.",
+        "1) According to Haugeland in 1985, \"The Exciting New Effort to Make Computers Think..."
+      ]
+    },
+    {
+      "section_num": "1.4",
+      "topic": "Brief history of Artificial Intelligence",
+      "points": [
+        "AI's ideas come from early research into how people learn and think.",
+        "Also very old is the idea that a computer could act like a person.",
+        "Greek mythology is where the idea of machines that can think for themselves comes from.",
+        "• Aristotle, who lived from 384 BC to 322 BC, made a syllogistic logic system that was not formal."
+      ]
+    },
+    {
+      "section_num": "1.5",
+      "topic": "Components of Intelligence",
+      "points": [
+        "According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.",
+        "The majority of attention in the field of artificial intelligence research has been paid to the following aspects of intelligence: learning, reasoning, problem-solving, perception, and language comprehension.",
+        "Learning: There are numerous approaches to develop a learning system.",
+        "Making mistakes is the simplest way to learn."
+      ]
+    },
+    {
+      "section_num": "1.6",
+      "topic": "Approaches to Artificial Intelligence",
+      "points": [
+        "Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?",
+        "But it is hard to find a good balance between approaches that focus on people and approaches that focus on logic.",
+        "Researchers have found through their studies that a human-centered approach must be an empirical science with hypotheses and experiments to prove them.",
+        "In a rationalist approach, math and engineering are used together."
+      ]
+    },
+    {
+      "section_num": "1.7",
+      "topic": "Comparison between Artificial Intelligence (AI), Machine Learning",
+      "points": [
+        "INTELLIGENCE, MACHINE LEARNING & DEEP LEARNING Artificial intelligence is a big field that includes a lot of different ways of doing things, from top-down (knowledge representation) to bottom-up (machine learning).",
+        "In recent years, people have often talked about three related ideas: artificial intelligence (AI), machine learning (ML), and deep learning (DL) (DL).",
+        "AI is the most general term, machine learning is a part of AI, and deep learning is a type of machine learning.",
+        "However, AI's recent rise in popularity is largely due to how well machine learning, especially deep learning, works."
+      ]
+    },
+    {
+      "section_num": "1.8",
+      "topic": "Application Areas of Artificial Intelligence Systems",
+      "points": [
+        "Artificial intelligence is the most important factor in the transformation of economies straight from the ground up, and it is contributing as an efficient alternative.",
+        "This is especially true in areas where the supply of healthcare professionals is limited.",
+        "The deployment of use cases like as AI-driven diagnostics, personalised treatment, early diagnosis of potential pandemics, and imaging diagnostics, amongst others, is one way to accomplish this goal.",
+        "It also has the ability to resolve issues such as inadequate demand prediction, a lack of secure irrigation, and the abuse or misuse of pesticides and fertilizers."
+      ]
+    },
+    {
+      "section_num": "1.9",
+      "topic": "Intelligent Agents",
+      "points": [
+        "An agent may be thought of as an entity that acts, generally on behalf of someone else.",
+        "More precisely, an agent is an entity that perceives its environment through sensors and acts on the environment through actuators.",
+        "Some experts in the field require an agent to be additionally autonomous and goal directed also.",
+        "A percept may be thought of as an input to the agent through its censors, over a unit of time, sufficient enough to make some sense from the input."
+      ]
+    },
+    {
+      "section_num": "1.9.1",
+      "topic": "Stimulus - Response Agents",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in introduction to artificial intelligence."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules to data in order to simulate the way",
+    "rule-based systems can be",
+    "rule and thus form the past tense of",
+    "approach: This approach Relates"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Introduction to Artificial In\"]\n  M1[\"1.3 Basics of Artificial Intelligenc\"]\n  Root --> M1\n  M2[\"1.4 Brief history of Artificial Inte\"]\n  Root --> M2\n  M3[\"1.5 Components of Intelligence\"]\n  Root --> M3\n  M4[\"1.6 Approaches to Artificial Intelli\"]\n  Root --> M4\n  M5[\"1.7 Comparison between Artificial In\"]\n  Root --> M5\n  M6[\"1.8 Application Areas of Artificial \"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Components Of Intelligence</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Approaches To Artificial Intelligence</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Intelligent Agents</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An agent may be thought of as an entity that acts, generally on behalf of someone else.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Stimulus - Response Agents</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Basics of Artificial Intelligence (AI)?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Knowledge and intelligence are two important concepts, and we were able to gain an understanding of the fundamental distinction between the two terms.</li>\n<li>Now that we have your attention, let's talk about what artificial intelligence actually is.</li>\n<li>The following is a list of eight definitions of artificial intelligence that have been provided by well-known authors of artificial intelligence textbooks.</li>\n<li>1) According to Haugeland in 1985, \"The Exciting New Effort to Make Computers Think...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Brief history of Artificial Intelligence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>AI's ideas come from early research into how people learn and think.</li>\n<li>Also very old is the idea that a computer could act like a person.</li>\n<li>Greek mythology is where the idea of machines that can think for themselves comes from.</li>\n<li>• Aristotle, who lived from 384 BC to 322 BC, made a syllogistic logic system that was not formal.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Components of Intelligence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>According to the dominant school of thought in psychology, human intelligence should not be viewed as a singular talent or cognitive process but rather as a collection of distinct components.</li>\n<li>The majority of attention in the field of artificial intelligence research has been paid to the following aspects of intelligence: learning, reasoning, problem-solving, perception, and language comprehension.</li>\n<li>Learning: There are numerous approaches to develop a learning system.</li>\n<li>Making mistakes is the simplest way to learn.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.6 Approaches to Artificial Intelligence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Is it possible to make a system that acts like a human to test the certainty of Artificial Intelligence?</li>\n<li>But it is hard to find a good balance between approaches that focus on people and approaches that focus on logic.</li>\n<li>Researchers have found through their studies that a human-centered approach must be an empirical science with hypotheses and experiments to prove them.</li>\n<li>In a rationalist approach, math and engineering are used together.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.7 Comparison between Artificial Intelligence (AI), Machine Learning</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>INTELLIGENCE, MACHINE LEARNING & DEEP LEARNING Artificial intelligence is a big field that includes a lot of different ways of doing things, from top-down (knowledge representation) to bottom-up (machine learning).</li>\n<li>In recent years, people have often talked about three related ideas: artificial intelligence (AI), machine learning (ML), and deep learning (DL) (DL).</li>\n<li>AI is the most general term, machine learning is a part of AI, and deep learning is a type of machine learning.</li>\n<li>However, AI's recent rise in popularity is largely due to how well machine learning, especially deep learning, works.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.8 Application Areas of Artificial Intelligence Systems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Artificial intelligence is the most important factor in the transformation of economies straight from the ground up, and it is contributing as an efficient alternative.</li>\n<li>This is especially true in areas where the supply of healthcare professionals is limited.</li>\n<li>The deployment of use cases like as AI-driven diagnostics, personalised treatment, early diagnosis of potential pandemics, and imaging diagnostics, amongst others, is one way to accomplish this goal.</li>\n<li>It also has the ability to resolve issues such as inadequate demand prediction, a lack of secure irrigation, and the abuse or misuse of pesticides and fertilizers.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.9 Intelligent Agents</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An agent may be thought of as an entity that acts, generally on behalf of someone else.</li>\n<li>More precisely, an agent is an entity that perceives its environment through sensors and acts on the environment through actuators.</li>\n<li>Some experts in the field require an agent to be additionally autonomous and goal directed also.</li>\n<li>A percept may be thought of as an input to the agent through its censors, over a unit of time, sufficient enough to make some sense from the input.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.9.1 Stimulus - Response Agents</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of stimulus - response agents.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in introduction to artificial intelligence.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules to data in order to simulate the way</code></div>\n<div class=\"formula-box\"><code>rule-based systems can be</code></div>\n<div class=\"formula-box\"><code>rule and thus form the past tense of</code></div>\n<div class=\"formula-box\"><code>approach: This approach Relates</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">of the Turing test. See figure 2 for more details. For the purpose of the test, There are three rooms that will be used for the test. In one of the rooms, there is a computer system that is said to be smart. In each of the other two rooms, there is one person sitting. One of the people, who we'll call C, is supposed to ask questions of the computer and the other person, who we'll call B, without knowing who each question is for and, of course, with</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_2/MCS-224_Artificial_Intelligence_and_Machine_Learning/Unit-1_Introduction_to_Artificial_Intelligence.pdf')\">\n          📄 Read Original IGNOU PDF (30 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

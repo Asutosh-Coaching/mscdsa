@@ -1,0 +1,170 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_03",
+  "unit_num": "Unit 3",
+  "title": "Functions",
+  "filename": "Unit-3_Functions.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-3_Functions.pdf",
+  "total_pages": 31,
+  "word_count": 9756,
+  "est_read_time_minutes": 54,
+  "objectives": [
+    "1 of this block."
+  ],
+  "summary": "This unit provides a foundation of Functions, beginning with basic definitions like quantities and intervals before moving into the mechanics of how sets interact. This unit explains various ways to represent functions—whether through mapping diagrams, pictorial graphs, or algebraic operations and also introduces monotonicity, which describes whether a function consistently increases or decreases. Further, this unit",
+  "flashcards": [
+    {
+      "question": ". Let N N : f → defined by f(n) =",
+      "answer": "2 Since the square of any real number R is always non-negative, the output of this function can never be a negative number. The minimum value of f",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": ". If R R : f → be a function defined by then obtain (i) Domain of (ii) Range of ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "iii) (f.g) (x)= (1/x) (x3 +2) iv",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": ". Find the domain and range of the following real-valued real functions: (i) f(x)= - |x| (ii) f(x) = + ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "Step 4: f -1(x) = ∛(x+3)",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": ". For each of the following, tell whether f is a function or not. Justify , your answer. i) f: N→N, such that f(x) = x -",
+      "answer": "produce the same output",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": ". Find the domain of the function , defined by ) x",
+      "answer": "Key Principle: 50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": ", f(4), f(5). ……………………………………………………………………………… ………………………………………………………………………………",
+      "answer": "Step 4: f -1(x) = ∛(x+3)",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "What is The Set A and how is it characterized?",
+      "answer": "The Set A the domain of the function f and B is called the co-domain of function f.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Functions\"]\n  M1[\"3.2 Quantity\"]\n  Root --> M1\n  M2[\"3.3 Interval\"]\n  Root --> M2\n  M3[\"3.4 Function\"]\n  Root --> M3\n  M3_1[\"3.4.1 Mapping\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Pictorial Presentation of Func\"]\n  M3 --> M3_2\n  M3_3[\"3.4.3 Operations on Functions\"]\n  M3 --> M3_3\n  M4[\"3.5 Types of Functions Based on Mapp\"]\n  Root --> M4\n  M4_1[\"3.5.1 Injective Function\"]\n  M4 --> M4_1\n  M4_2[\"3.5.2 Surjective Function\"]\n  M4 --> M4_2\n  M4_3[\"3.5.3 Bijective Function\"]\n  M4 --> M4_3\n  M5[\"3.6 Inverse of Functions\"]\n  Root --> M5\n  M6[\"3.8 Answer to Check Your Progress\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Set A</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Set A the domain of the function f and B is called the co-domain of function f.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Quantity</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before defining function, let us first explain what we mean by quantity, constant, variable and intervals.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Interval</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Then a set I R is said to be an interval if whenever a < then I For example, the set of all real numbers satisfying is an interval where x can take any real value between 2 and 3 including 2 and 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mapping</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If f(x) = y, then y is called image of x under f, and x is called pre-image of y.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Quantity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before defining function, let us first explain what we mean by quantity, constant, variable and intervals.</li>\n<li>Quantity Here, by quantity we mean those things on which four basic mathematical operations addition, subtraction, multiplication and division can be applied.</li>\n<li>For example, temperature, height, weight, and time all these are quantities but they are continuous in nature, whereas books in a library, number of trees, number of balls is discrete in nature.</li>\n<li>Note 1: If the nature of the quantity is such that it can take any possible value between two certain limits, then such a quantity is known as continuous in nature.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Interval</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Then a set I R is said to be an interval if whenever a < then I For example, the set of all real numbers satisfying is an interval where x can take any real value between 2 and 3 including 2 and 3.</li>\n<li>length of the interval = difference of the end points For example, if I = (2, 7) then (I) = 7 – 2 = 5, where (I) denotes the length of the interval I.</li>\n<li>Finite Interval An interval is said to be finite if its length is finite.</li>\n<li>For example, if I = (– 3, 5) then (I) = 5 – (– 3) = 5 + 3 = 8 which is finite.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4 Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.</li>\n<li>c) The area (say Area) of a circle depends on the radius (say r) of the circle.</li>\n<li>The statements (a), (b) and (c) above express some real life situations, and each of which can be mathematically expressed respectively as (a) d = 50* t, (a) A = 50000 (1+6/100)t, and Area = π.r2.</li>\n<li>In each of these cases, there are two variable quantities involved: one on LHS and the other on RHS.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.1 Mapping</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If f(x) = y, then y is called image of x under f, and x is called pre-image of y.</li>\n<li>Also, the y, or f(x), is called the value of x under the function f.</li>\n<li>The names 'map' and 'mapping' are also used instead of the name 'function'.</li>\n<li>The subset of Y which consists of all images f(x) of elements of X is called the range of function f (in Y) Remarks 2: Important to note that the role/meaning of ‘→’ is just a part of notation for a function.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.2 Pictorial Presentation of Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A function can be presented diagrammatically.</li>\n<li>In next unit of this block, you will learn in more detail about diagrammatical representation of different types of functions.</li>\n<li>Consider A = {1,2,3,4}, B= {1,4,5} and the rule f which associates 1→1, 2→4, 3→5, 4→5.</li>\n<li>3.2: The rule f is a function Let us take another example of function f where f(x) = x+5 .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.3 Operations on Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The binary operation '+' on Natural numbers may be considered for the function Plus: N × N→N, such that Plus (x, y) = (x+y), for each pair of Natural numbers.</li>\n<li>The union operation X U Y on sets can be considered as a function Union: P×P→P, where P is a set of all subsets of universal set U, such that Union (X, Y) = X U Y, for each pair X, Y of sets from P.</li>\n<li>In general, an operation is a function in which the domain of function is either the codomain or cross-product of codomain of function, Cross-product may involve the codomain finitely many times: Codomain × Codomain ...</li>\n<li>For example, the square operation on N is the function SQ: N →N, such that SQ (n) = n2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.4 Some Commonly Used Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Based on the nature of classification a function may be given some particular names.</li>\n<li>In this section you will see some commonly used function names, their definitions and their graphical representations.</li>\n<li>More on graphical representations of different types of functions you will learn in next unit of this Block.</li>\n<li>Constant Function then a function is said to be a constant function if it is defined as: , where a is a real constant.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.5 Monotonic Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When a function that is either entirely non-increasing or non-decreasing it is called monotonic function.</li>\n<li>For Example, Increasing: If x ≤ y, then f(x) ≤ f(y).</li>\n<li>Any straight line with a positive slope is an increasing function.</li>\n<li>The general form is f(x) = mx+c, where the slope m is greater than 0.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule which associates each</code></div>\n<div class=\"formula-box\"><code>rule that assigns to every mother her eldest child is a</code></div>\n<div class=\"formula-box\"><code>rule that assigns to each mother her children is not a</code></div>\n<div class=\"formula-box\"><code>rule which associates to each element x of X a unique element,</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides a foundation of Functions, beginning with basic definitions like quantities and intervals before moving into the mechanics of how sets interact. This unit explains various ways to represent functions—whether through mapping diagrams, pictorial graphs, or algebraic operations and also introduces monotonicity, which describes whether a function consistently increases or decreases. Further, this unit</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-3_Functions.pdf')\">\n          📄 Read Original IGNOU PDF (31 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 3 Functions\"]\n  M1[\"3.2 Quantity\"]\n  Root --> M1\n  M2[\"3.3 Interval\"]\n  Root --> M2\n  M3[\"3.4 Function\"]\n  Root --> M3\n  M3_1[\"3.4.1 Mapping\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Pictorial Presentation of Func\"]\n  M3 --> M3_2\n  M3_3[\"3.4.3 Operations on Functions\"]\n  M3 --> M3_3\n  M4[\"3.5 Types of Functions Based on Mapp\"]\n  Root --> M4\n  M4_1[\"3.5.1 Injective Function\"]\n  M4 --> M4_1\n  M4_2[\"3.5.2 Surjective Function\"]\n  M4 --> M4_2\n  M4_3[\"3.5.3 Bijective Function\"]\n  M4 --> M4_3\n  M5[\"3.6 Inverse of Functions\"]\n  Root --> M5\n  M6[\"3.8 Answer to Check Your Progress\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "The Set A",
+      "definition": "The Set A the domain of the function f and B is called the co-domain of function f.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Quantity",
+      "definition": "Before defining function, let us first explain what we mean by quantity, constant, variable and intervals.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Interval",
+      "definition": "Then a set I R is said to be an interval if whenever a < then I For example, the set of all real numbers satisfying is an interval where x can take any real value between 2 and 3 including 2 and 3.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Function",
+      "definition": "50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Mapping",
+      "definition": "If f(x) = y, then y is called image of x under f, and x is called pre-image of y.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "3.2",
+      "topic": "Quantity",
+      "points": [
+        "Before defining function, let us first explain what we mean by quantity, constant, variable and intervals.",
+        "Quantity Here, by quantity we mean those things on which four basic mathematical operations addition, subtraction, multiplication and division can be applied.",
+        "For example, temperature, height, weight, and time all these are quantities but they are continuous in nature, whereas books in a library, number of trees, number of balls is discrete in nature.",
+        "Note 1: If the nature of the quantity is such that it can take any possible value between two certain limits, then such a quantity is known as continuous in nature."
+      ]
+    },
+    {
+      "section_num": "3.3",
+      "topic": "Interval",
+      "points": [
+        "Then a set I R is said to be an interval if whenever a < then I For example, the set of all real numbers satisfying is an interval where x can take any real value between 2 and 3 including 2 and 3.",
+        "length of the interval = difference of the end points For example, if I = (2, 7) then (I) = 7 – 2 = 5, where (I) denotes the length of the interval I.",
+        "Finite Interval An interval is said to be finite if its length is finite.",
+        "For example, if I = (– 3, 5) then (I) = 5 – (– 3) = 5 + 3 = 8 which is finite."
+      ]
+    },
+    {
+      "section_num": "3.4",
+      "topic": "Function",
+      "points": [
+        "50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.",
+        "c) The area (say Area) of a circle depends on the radius (say r) of the circle.",
+        "The statements (a), (b) and (c) above express some real life situations, and each of which can be mathematically expressed respectively as (a) d = 50* t, (a) A = 50000 (1+6/100)t, and Area = π.r2.",
+        "In each of these cases, there are two variable quantities involved: one on LHS and the other on RHS."
+      ]
+    },
+    {
+      "section_num": "3.4.1",
+      "topic": "Mapping",
+      "points": [
+        "If f(x) = y, then y is called image of x under f, and x is called pre-image of y.",
+        "Also, the y, or f(x), is called the value of x under the function f.",
+        "The names 'map' and 'mapping' are also used instead of the name 'function'.",
+        "The subset of Y which consists of all images f(x) of elements of X is called the range of function f (in Y) Remarks 2: Important to note that the role/meaning of ‘→’ is just a part of notation for a function."
+      ]
+    },
+    {
+      "section_num": "3.4.2",
+      "topic": "Pictorial Presentation of Functions",
+      "points": [
+        "A function can be presented diagrammatically.",
+        "In next unit of this block, you will learn in more detail about diagrammatical representation of different types of functions.",
+        "Consider A = {1,2,3,4}, B= {1,4,5} and the rule f which associates 1→1, 2→4, 3→5, 4→5.",
+        "3.2: The rule f is a function Let us take another example of function f where f(x) = x+5 ."
+      ]
+    },
+    {
+      "section_num": "3.4.3",
+      "topic": "Operations on Functions",
+      "points": [
+        "The binary operation '+' on Natural numbers may be considered for the function Plus: N × N→N, such that Plus (x, y) = (x+y), for each pair of Natural numbers.",
+        "The union operation X U Y on sets can be considered as a function Union: P×P→P, where P is a set of all subsets of universal set U, such that Union (X, Y) = X U Y, for each pair X, Y of sets from P.",
+        "In general, an operation is a function in which the domain of function is either the codomain or cross-product of codomain of function, Cross-product may involve the codomain finitely many times: Codomain × Codomain ...",
+        "For example, the square operation on N is the function SQ: N →N, such that SQ (n) = n2."
+      ]
+    },
+    {
+      "section_num": "3.4.4",
+      "topic": "Some Commonly Used Functions",
+      "points": [
+        "Based on the nature of classification a function may be given some particular names.",
+        "In this section you will see some commonly used function names, their definitions and their graphical representations.",
+        "More on graphical representations of different types of functions you will learn in next unit of this Block.",
+        "Constant Function then a function is said to be a constant function if it is defined as: , where a is a real constant."
+      ]
+    },
+    {
+      "section_num": "3.4.5",
+      "topic": "Monotonic Functions",
+      "points": [
+        "When a function that is either entirely non-increasing or non-decreasing it is called monotonic function.",
+        "For Example, Increasing: If x ≤ y, then f(x) ≤ f(y).",
+        "Any straight line with a positive slope is an increasing function.",
+        "The general form is f(x) = mx+c, where the slope m is greater than 0."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule which associates each",
+    "rule that assigns to every mother her eldest child is a",
+    "rule that assigns to each mother her children is not a",
+    "rule which associates to each element x of X a unique element,"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 3 Functions\"]\n  M1[\"3.2 Quantity\"]\n  Root --> M1\n  M2[\"3.3 Interval\"]\n  Root --> M2\n  M3[\"3.4 Function\"]\n  Root --> M3\n  M3_1[\"3.4.1 Mapping\"]\n  M3 --> M3_1\n  M3_2[\"3.4.2 Pictorial Presentation of Func\"]\n  M3 --> M3_2\n  M3_3[\"3.4.3 Operations on Functions\"]\n  M3 --> M3_3\n  M4[\"3.5 Types of Functions Based on Mapp\"]\n  Root --> M4\n  M4_1[\"3.5.1 Injective Function\"]\n  M4 --> M4_1\n  M4_2[\"3.5.2 Surjective Function\"]\n  M4 --> M4_2\n  M4_3[\"3.5.3 Bijective Function\"]\n  M4 --> M4_3\n  M5[\"3.6 Inverse of Functions\"]\n  Root --> M5\n  M6[\"3.8 Answer to Check Your Progress\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">The Set A</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">The Set A the domain of the function f and B is called the co-domain of function f.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Quantity</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Before defining function, let us first explain what we mean by quantity, constant, variable and intervals.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Interval</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Then a set I R is said to be an interval if whenever a < then I For example, the set of all real numbers satisfying is an interval where x can take any real value between 2 and 3 including 2 and 3.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Function</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Mapping</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">If f(x) = y, then y is called image of x under f, and x is called pre-image of y.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.2 Quantity</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Before defining function, let us first explain what we mean by quantity, constant, variable and intervals.</li>\n<li>Quantity Here, by quantity we mean those things on which four basic mathematical operations addition, subtraction, multiplication and division can be applied.</li>\n<li>For example, temperature, height, weight, and time all these are quantities but they are continuous in nature, whereas books in a library, number of trees, number of balls is discrete in nature.</li>\n<li>Note 1: If the nature of the quantity is such that it can take any possible value between two certain limits, then such a quantity is known as continuous in nature.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.3 Interval</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Then a set I R is said to be an interval if whenever a < then I For example, the set of all real numbers satisfying is an interval where x can take any real value between 2 and 3 including 2 and 3.</li>\n<li>length of the interval = difference of the end points For example, if I = (2, 7) then (I) = 7 – 2 = 5, where (I) denotes the length of the interval I.</li>\n<li>Finite Interval An interval is said to be finite if its length is finite.</li>\n<li>For example, if I = (– 3, 5) then (I) = 5 – (– 3) = 5 + 3 = 8 which is finite.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4 Function</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>50,000/-) on simple interest R (say, at 6% per annum), the amount (say A) payable depends on the time T, after which the payment is made, in addition to L and R.</li>\n<li>c) The area (say Area) of a circle depends on the radius (say r) of the circle.</li>\n<li>The statements (a), (b) and (c) above express some real life situations, and each of which can be mathematically expressed respectively as (a) d = 50* t, (a) A = 50000 (1+6/100)t, and Area = π.r2.</li>\n<li>In each of these cases, there are two variable quantities involved: one on LHS and the other on RHS.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.1 Mapping</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>If f(x) = y, then y is called image of x under f, and x is called pre-image of y.</li>\n<li>Also, the y, or f(x), is called the value of x under the function f.</li>\n<li>The names 'map' and 'mapping' are also used instead of the name 'function'.</li>\n<li>The subset of Y which consists of all images f(x) of elements of X is called the range of function f (in Y) Remarks 2: Important to note that the role/meaning of ‘→’ is just a part of notation for a function.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.2 Pictorial Presentation of Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A function can be presented diagrammatically.</li>\n<li>In next unit of this block, you will learn in more detail about diagrammatical representation of different types of functions.</li>\n<li>Consider A = {1,2,3,4}, B= {1,4,5} and the rule f which associates 1→1, 2→4, 3→5, 4→5.</li>\n<li>3.2: The rule f is a function Let us take another example of function f where f(x) = x+5 .</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.3 Operations on Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The binary operation '+' on Natural numbers may be considered for the function Plus: N × N→N, such that Plus (x, y) = (x+y), for each pair of Natural numbers.</li>\n<li>The union operation X U Y on sets can be considered as a function Union: P×P→P, where P is a set of all subsets of universal set U, such that Union (X, Y) = X U Y, for each pair X, Y of sets from P.</li>\n<li>In general, an operation is a function in which the domain of function is either the codomain or cross-product of codomain of function, Cross-product may involve the codomain finitely many times: Codomain × Codomain ...</li>\n<li>For example, the square operation on N is the function SQ: N →N, such that SQ (n) = n2.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.4 Some Commonly Used Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Based on the nature of classification a function may be given some particular names.</li>\n<li>In this section you will see some commonly used function names, their definitions and their graphical representations.</li>\n<li>More on graphical representations of different types of functions you will learn in next unit of this Block.</li>\n<li>Constant Function then a function is said to be a constant function if it is defined as: , where a is a real constant.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">3.4.5 Monotonic Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>When a function that is either entirely non-increasing or non-decreasing it is called monotonic function.</li>\n<li>For Example, Increasing: If x ≤ y, then f(x) ≤ f(y).</li>\n<li>Any straight line with a positive slope is an increasing function.</li>\n<li>The general form is f(x) = mx+c, where the slope m is greater than 0.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule which associates each</code></div>\n<div class=\"formula-box\"><code>rule that assigns to every mother her eldest child is a</code></div>\n<div class=\"formula-box\"><code>rule that assigns to each mother her children is not a</code></div>\n<div class=\"formula-box\"><code>rule which associates to each element x of X a unique element,</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provides a foundation of Functions, beginning with basic definitions like quantities and intervals before moving into the mechanics of how sets interact. This unit explains various ways to represent functions—whether through mapping diagrams, pictorial graphs, or algebraic operations and also introduces monotonicity, which describes whether a function consistently increases or decreases. Further, this unit</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-3_Functions.pdf')\">\n          📄 Read Original IGNOU PDF (31 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

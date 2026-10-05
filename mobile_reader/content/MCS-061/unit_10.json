@@ -1,0 +1,170 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_10",
+  "unit_num": "Unit 10",
+  "title": "Techniques of Counting and Binomial Theorem",
+  "filename": "Unit-10_Techniques_of_Counting_and_Binomial_Theorem.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-10_Techniques_of_Counting_and_Binomial_Theorem.pdf",
+  "total_pages": 31,
+  "word_count": 10418,
+  "est_read_time_minutes": 58,
+  "objectives": [
+    "10.3.2   Fundamental Principle of Addition (FPA)"
+  ],
+  "summary": "This unit provided a comprehensive discussion on counting and algebraic expansions, grounded in the factorial as the mathematical engine for arrangements and selections. This unit explains the fundamental principles of counting, addition and multiplication, which then leads to Permutations, where the specific order of objects matters. Further, the concept of combinations has been explained, where only the selection itself is relevant. Further this unit extends to the explanation of",
+  "flashcards": [
+    {
+      "question": "Evaluate the following (i) !",
+      "answer": "! ways. But president and vice president can change their seats in two ways",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Express the following in terms of factorial. (i)",
+      "answer": "Here n = 9 r = 4, s = 3 possible",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "In an examination there are 10 multiple choice questions. First five questions have",
+      "answer": "! ways. But president and vice president can change their seats in two ways",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "How many four-letter words can be formed by using letters a, b, g, h, k, if: (i) Repetition is not allowed (ii) Repetition is allowed",
+      "answer": "Here n = 9 r = 4, s = 3 possible",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Evaluate the following (i)",
+      "answer": "Possible number of garlands with 8 flowers =",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "How many different signals are possible with 3 red, 4 white and 2 green flags by using all at a time in a queue?",
+      "answer": "! ways. But president and vice president can change their seats in two ways",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Factorial And Its Notations and how is it characterized?",
+      "answer": "The product of first n natural numbers is denoted by n!",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Techniques of Counting and B\"]\n  M1[\"10.2 Factorial and its Notations\"]\n  Root --> M1\n  M2[\"10.3 Fundamental Principles of Count\"]\n  Root --> M2\n  M2_1[\"10.3.1 Fundamental Principle of Mult\"]\n  M2 --> M2_1\n  M2_2[\"10.3.2 Fundamental Principle of Addi\"]\n  M2 --> M2_2\n  M3[\"10.4 Permutation\"]\n  Root --> M3\n  M3_1[\"10.4.1 Linear Permutation\"]\n  M3 --> M3_1\n  M3_2[\"10.4.2 Circular Permutation\"]\n  M3 --> M3_2\n  M4[\"10.5 Combination\"]\n  Root --> M4\n  M5[\"10.6 Selection of Permutation or Com\"]\n  Root --> M5\n  M6[\"10.7 Some Important Results\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Factorial And Its Notations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The product of first n natural numbers is denoted by n!</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fundamental Principles Of Counting</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">There are two fundamental principles of counting.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Permutation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Permutation is related to the arrangement of things.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Permutation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Circular Permutation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Factorial and its Notations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The product of first n natural numbers is denoted by n!</li>\n<li>= n (n –1) …321 If n = 0, then we define 0!</li>\n<li>= n (n–1)  (n–2) …321 = nn 1 − for n ≥ 1 = n (n–1) n 2 − for n ≥ 2 and so on.</li>\n<li>= 40320 1 2 3 4 5 6 7 8 =        (ii) (4!) (3!) = )1 2 3 )( 1 2 3 4 (      = 144 6 24 =  (iii) 10!</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Fundamental Principles of Counting</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are two fundamental principles of counting.</li>\n<li>These two principles solve the problems of counting.</li>\n<li>So it becomes necessary for us first to define what is the counting problem?</li>\n<li>According to Grinstead and Snell (2006) it is defined as if you “Consider an experiment that takes place in several stages and is such that the number of outcomes m at the nth stage is independent of the outcomes of the previous stages.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.1 Fundamental Principle of Multiplication (FPM)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Suppose we want to complete two jobs, where first job can be done in m distinct ways, second job can be done in n distinct ways then both jobs can take place (one followed by other) in n m distinct ways.</li>\n<li>In general, suppose we want to complete n jobs, where first job can be done in 1 m distinct ways, second job can be done in 2 m distinct ways, third job can be done in 3 m distinct ways, and so on th n job can be done in n m distinct ways.</li>\n<li>Then these n jobs can take place (in succession) in n 3 2 1 m ...</li>\n<li>For example, suppose a teacher wants to select one boy and one girl student out of a class having 15 boys and 10 girls students, then teacher can make such selection in 150 10 15 =  distinct ways.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.2 Fundamental Principle of Addition (FPA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Suppose we want to complete one job out of two jobs, where first job can be done in m distinct ways and second independent job can be done in n distinct ways.</li>\n<li>Then one of the two jobs can be completed in m + n distinct ways.</li>\n<li>Then one of the n jobs (any two or any three… or all of these can not occur simultaneously) can be completed in n 3 2 1 m ...</li>\n<li>For example, suppose a teacher wants to select either a boy or a girl student out of a class having 15 boys and 10 girls, then the teacher can select either a boy or a girl student in 15 + 10 = 25 distinct ways.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4 Permutation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Permutation is related to the arrangement of things.</li>\n<li>Things arranged in a line come under the heading of linear permutation, while arrangement of things in a circle comes under the heading of circular permutation.</li>\n<li>12 Linear Spaces and Counting Techniques 10.4.1 Linear Permutation Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.</li>\n<li>Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4.1 Linear Permutation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.</li>\n<li>Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e.</li>\n<li>1 3 ( !3 = − or P(3, 1) Permutations of three books when taken two at a time are RG, GR, RW, WR, GW, WG, i.e.</li>\n<li>2 3 ( !3 = − or P(3, 2) Permutations of three books when taken all at a time are RGW, RWG, GRW, GWR, WRG, WGR, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4.2 Circular Permutation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line.</li>\n<li>in case of 4 letters, 4 linear arrangements = 1 circular arrangement 1 linear arrangement = 4 1 circular arrangement So, 4!</li>\n<li>Linear arrangements = !3 4 !4 = circular arrangements.</li>\n<li>In general, if anticlock wise and clock wise order of arrangements makes different permutations then number of circular permutations of n distinct things = (n – 1)!</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5 Combination</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>10.4 of this unit we have discussed permutation.</li>\n<li>We have seen that in case of permutation we want to know the possible number of arrangements of n things taken some or all at a time.</li>\n<li>But sometimes we are interested in forming only groups or making selections or drawing items without bothering about the arrangements.</li>\n<li>Before giving the general formula, let us consider an example, where we are to form the groups of say three books of different colours (Red, Green, Orange).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Theorem (iii) 1.3.5.7.9.11 =</code></div>\n<div class=\"formula-box\"><code>principles of counting. These two principles solve the</code></div>\n<div class=\"formula-box\"><code>Theorem (b) there are two choices for main course: veg and non-veg</code></div>\n<div class=\"formula-box\"><code>principles of counting in coming two sub-</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provided a comprehensive discussion on counting and algebraic expansions, grounded in the factorial as the mathematical engine for arrangements and selections. This unit explains the fundamental principles of counting, addition and multiplication, which then leads to Permutations, where the specific order of objects matters. Further, the concept of combinations has been explained, where only the selection itself is relevant. Further this unit extends to the explanation of</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-10_Techniques_of_Counting_and_Binomial_Theorem.pdf')\">\n          📄 Read Original IGNOU PDF (31 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 10 Techniques of Counting and B\"]\n  M1[\"10.2 Factorial and its Notations\"]\n  Root --> M1\n  M2[\"10.3 Fundamental Principles of Count\"]\n  Root --> M2\n  M2_1[\"10.3.1 Fundamental Principle of Mult\"]\n  M2 --> M2_1\n  M2_2[\"10.3.2 Fundamental Principle of Addi\"]\n  M2 --> M2_2\n  M3[\"10.4 Permutation\"]\n  Root --> M3\n  M3_1[\"10.4.1 Linear Permutation\"]\n  M3 --> M3_1\n  M3_2[\"10.4.2 Circular Permutation\"]\n  M3 --> M3_2\n  M4[\"10.5 Combination\"]\n  Root --> M4\n  M5[\"10.6 Selection of Permutation or Com\"]\n  Root --> M5\n  M6[\"10.7 Some Important Results\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Factorial And Its Notations",
+      "definition": "The product of first n natural numbers is denoted by n!",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Fundamental Principles Of Counting",
+      "definition": "There are two fundamental principles of counting.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Permutation",
+      "definition": "Permutation is related to the arrangement of things.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Linear Permutation",
+      "definition": "Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Circular Permutation",
+      "definition": "Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "10.2",
+      "topic": "Factorial and its Notations",
+      "points": [
+        "The product of first n natural numbers is denoted by n!",
+        "= n (n –1) …321 If n = 0, then we define 0!",
+        "= n (n–1)  (n–2) …321 = nn 1 − for n ≥ 1 = n (n–1) n 2 − for n ≥ 2 and so on.",
+        "= 40320 1 2 3 4 5 6 7 8 =        (ii) (4!) (3!) = )1 2 3 )( 1 2 3 4 (      = 144 6 24 =  (iii) 10!"
+      ]
+    },
+    {
+      "section_num": "10.3",
+      "topic": "Fundamental Principles of Counting",
+      "points": [
+        "There are two fundamental principles of counting.",
+        "These two principles solve the problems of counting.",
+        "So it becomes necessary for us first to define what is the counting problem?",
+        "According to Grinstead and Snell (2006) it is defined as if you “Consider an experiment that takes place in several stages and is such that the number of outcomes m at the nth stage is independent of the outcomes of the previous stages."
+      ]
+    },
+    {
+      "section_num": "10.3.1",
+      "topic": "Fundamental Principle of Multiplication (FPM)",
+      "points": [
+        "Suppose we want to complete two jobs, where first job can be done in m distinct ways, second job can be done in n distinct ways then both jobs can take place (one followed by other) in n m distinct ways.",
+        "In general, suppose we want to complete n jobs, where first job can be done in 1 m distinct ways, second job can be done in 2 m distinct ways, third job can be done in 3 m distinct ways, and so on th n job can be done in n m distinct ways.",
+        "Then these n jobs can take place (in succession) in n 3 2 1 m ...",
+        "For example, suppose a teacher wants to select one boy and one girl student out of a class having 15 boys and 10 girls students, then teacher can make such selection in 150 10 15 =  distinct ways."
+      ]
+    },
+    {
+      "section_num": "10.3.2",
+      "topic": "Fundamental Principle of Addition (FPA)",
+      "points": [
+        "Suppose we want to complete one job out of two jobs, where first job can be done in m distinct ways and second independent job can be done in n distinct ways.",
+        "Then one of the two jobs can be completed in m + n distinct ways.",
+        "Then one of the n jobs (any two or any three… or all of these can not occur simultaneously) can be completed in n 3 2 1 m ...",
+        "For example, suppose a teacher wants to select either a boy or a girl student out of a class having 15 boys and 10 girls, then the teacher can select either a boy or a girl student in 15 + 10 = 25 distinct ways."
+      ]
+    },
+    {
+      "section_num": "10.4",
+      "topic": "Permutation",
+      "points": [
+        "Permutation is related to the arrangement of things.",
+        "Things arranged in a line come under the heading of linear permutation, while arrangement of things in a circle comes under the heading of circular permutation.",
+        "12 Linear Spaces and Counting Techniques 10.4.1 Linear Permutation Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.",
+        "Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e."
+      ]
+    },
+    {
+      "section_num": "10.4.1",
+      "topic": "Linear Permutation",
+      "points": [
+        "Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.",
+        "Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e.",
+        "1 3 ( !3 = − or P(3, 1) Permutations of three books when taken two at a time are RG, GR, RW, WR, GW, WG, i.e.",
+        "2 3 ( !3 = − or P(3, 2) Permutations of three books when taken all at a time are RGW, RWG, GRW, GWR, WRG, WGR, i.e."
+      ]
+    },
+    {
+      "section_num": "10.4.2",
+      "topic": "Circular Permutation",
+      "points": [
+        "Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line.",
+        "in case of 4 letters, 4 linear arrangements = 1 circular arrangement 1 linear arrangement = 4 1 circular arrangement So, 4!",
+        "Linear arrangements = !3 4 !4 = circular arrangements.",
+        "In general, if anticlock wise and clock wise order of arrangements makes different permutations then number of circular permutations of n distinct things = (n – 1)!"
+      ]
+    },
+    {
+      "section_num": "10.5",
+      "topic": "Combination",
+      "points": [
+        "10.4 of this unit we have discussed permutation.",
+        "We have seen that in case of permutation we want to know the possible number of arrangements of n things taken some or all at a time.",
+        "But sometimes we are interested in forming only groups or making selections or drawing items without bothering about the arrangements.",
+        "Before giving the general formula, let us consider an example, where we are to form the groups of say three books of different colours (Red, Green, Orange)."
+      ]
+    }
+  ],
+  "formulas": [
+    "Theorem (iii) 1.3.5.7.9.11 =",
+    "principles of counting. These two principles solve the",
+    "Theorem (b) there are two choices for main course: veg and non-veg",
+    "principles of counting in coming two sub-"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 10 Techniques of Counting and B\"]\n  M1[\"10.2 Factorial and its Notations\"]\n  Root --> M1\n  M2[\"10.3 Fundamental Principles of Count\"]\n  Root --> M2\n  M2_1[\"10.3.1 Fundamental Principle of Mult\"]\n  M2 --> M2_1\n  M2_2[\"10.3.2 Fundamental Principle of Addi\"]\n  M2 --> M2_2\n  M3[\"10.4 Permutation\"]\n  Root --> M3\n  M3_1[\"10.4.1 Linear Permutation\"]\n  M3 --> M3_1\n  M3_2[\"10.4.2 Circular Permutation\"]\n  M3 --> M3_2\n  M4[\"10.5 Combination\"]\n  Root --> M4\n  M5[\"10.6 Selection of Permutation or Com\"]\n  Root --> M5\n  M6[\"10.7 Some Important Results\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Factorial And Its Notations</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The product of first n natural numbers is denoted by n!</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Fundamental Principles Of Counting</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">There are two fundamental principles of counting.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Permutation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Permutation is related to the arrangement of things.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Linear Permutation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Circular Permutation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.2 Factorial and its Notations</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The product of first n natural numbers is denoted by n!</li>\n<li>= n (n –1) …321 If n = 0, then we define 0!</li>\n<li>= n (n–1)  (n–2) …321 = nn 1 − for n ≥ 1 = n (n–1) n 2 − for n ≥ 2 and so on.</li>\n<li>= 40320 1 2 3 4 5 6 7 8 =        (ii) (4!) (3!) = )1 2 3 )( 1 2 3 4 (      = 144 6 24 =  (iii) 10!</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3 Fundamental Principles of Counting</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>There are two fundamental principles of counting.</li>\n<li>These two principles solve the problems of counting.</li>\n<li>So it becomes necessary for us first to define what is the counting problem?</li>\n<li>According to Grinstead and Snell (2006) it is defined as if you “Consider an experiment that takes place in several stages and is such that the number of outcomes m at the nth stage is independent of the outcomes of the previous stages.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.1 Fundamental Principle of Multiplication (FPM)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Suppose we want to complete two jobs, where first job can be done in m distinct ways, second job can be done in n distinct ways then both jobs can take place (one followed by other) in n m distinct ways.</li>\n<li>In general, suppose we want to complete n jobs, where first job can be done in 1 m distinct ways, second job can be done in 2 m distinct ways, third job can be done in 3 m distinct ways, and so on th n job can be done in n m distinct ways.</li>\n<li>Then these n jobs can take place (in succession) in n 3 2 1 m ...</li>\n<li>For example, suppose a teacher wants to select one boy and one girl student out of a class having 15 boys and 10 girls students, then teacher can make such selection in 150 10 15 =  distinct ways.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.3.2 Fundamental Principle of Addition (FPA)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Suppose we want to complete one job out of two jobs, where first job can be done in m distinct ways and second independent job can be done in n distinct ways.</li>\n<li>Then one of the two jobs can be completed in m + n distinct ways.</li>\n<li>Then one of the n jobs (any two or any three… or all of these can not occur simultaneously) can be completed in n 3 2 1 m ...</li>\n<li>For example, suppose a teacher wants to select either a boy or a girl student out of a class having 15 boys and 10 girls, then the teacher can select either a boy or a girl student in 15 + 10 = 25 distinct ways.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4 Permutation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Permutation is related to the arrangement of things.</li>\n<li>Things arranged in a line come under the heading of linear permutation, while arrangement of things in a circle comes under the heading of circular permutation.</li>\n<li>12 Linear Spaces and Counting Techniques 10.4.1 Linear Permutation Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.</li>\n<li>Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4.1 Linear Permutation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Possible arrangements in a line of a number of things taken some or all at a time are called the permutation.</li>\n<li>Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e.</li>\n<li>1 3 ( !3 = − or P(3, 1) Permutations of three books when taken two at a time are RG, GR, RW, WR, GW, WG, i.e.</li>\n<li>2 3 ( !3 = − or P(3, 2) Permutations of three books when taken all at a time are RGW, RWG, GRW, GWR, WRG, WGR, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.4.2 Circular Permutation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line.</li>\n<li>in case of 4 letters, 4 linear arrangements = 1 circular arrangement 1 linear arrangement = 4 1 circular arrangement So, 4!</li>\n<li>Linear arrangements = !3 4 !4 = circular arrangements.</li>\n<li>In general, if anticlock wise and clock wise order of arrangements makes different permutations then number of circular permutations of n distinct things = (n – 1)!</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">10.5 Combination</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>10.4 of this unit we have discussed permutation.</li>\n<li>We have seen that in case of permutation we want to know the possible number of arrangements of n things taken some or all at a time.</li>\n<li>But sometimes we are interested in forming only groups or making selections or drawing items without bothering about the arrangements.</li>\n<li>Before giving the general formula, let us consider an example, where we are to form the groups of say three books of different colours (Red, Green, Orange).</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>Theorem (iii) 1.3.5.7.9.11 =</code></div>\n<div class=\"formula-box\"><code>principles of counting. These two principles solve the</code></div>\n<div class=\"formula-box\"><code>Theorem (b) there are two choices for main course: veg and non-veg</code></div>\n<div class=\"formula-box\"><code>principles of counting in coming two sub-</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">This unit provided a comprehensive discussion on counting and algebraic expansions, grounded in the factorial as the mathematical engine for arrangements and selections. This unit explains the fundamental principles of counting, addition and multiplication, which then leads to Permutations, where the specific order of objects matters. Further, the concept of combinations has been explained, where only the selection itself is relevant. Further this unit extends to the explanation of</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-10_Techniques_of_Counting_and_Binomial_Theorem.pdf')\">\n          📄 Read Original IGNOU PDF (31 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

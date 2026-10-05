@@ -1,0 +1,155 @@
+{
+  "course_code": "MCS-061",
+  "unit_id": "unit_05",
+  "unit_num": "Unit 5",
+  "title": "Progressions",
+  "filename": "Unit-5_Progressions.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-5_Progressions.pdf",
+  "total_pages": 22,
+  "word_count": 7658,
+  "est_read_time_minutes": 43,
+  "objectives": [
+    "5.3   Arithmetic Progresses (A.P.)",
+    "5.4   Geometric Progression (G.P.)",
+    "5.5   Sum of Infinite G.P.",
+    "5.6   Concept of Summation",
+    "5.7   Sum of some Special Sequences"
+  ],
+  "summary": "The study of sequences and series begins by identifying the logical patterns that govern a list of numbers, transitioning from basic sequences to structured progressions. In this unit you have learned Arithmetic Progression (A.P.), in which terms increase or decrease by a steady common difference, making it the mathematical equivalent of walking at a constant pace. Conversely, unit discussed Geometric Progression (G.P.) which represents exponential change,",
+  "flashcards": [
+    {
+      "question": "(i) If 5k + 1, 6k + 5 and 10k + 3 are three consecutive terms of an A.P. then find k. (ii) Is",
+      "answer": "Since 5k + 1, 6k + 5 and 10k + 3 are three consecutive terms of an A.P. ",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "(i) Find the 10th term of the G.P. 128, 32, 8, 2, … (ii)",
+      "answer": "In Progressions, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "(i) Since 5k + 1, 6k + 5 and 10k + 3 are three consecutive terms of an A.P. (",
+      "answer": "Since 5k + 1, 6k + 5 and 10k + 3 are three consecutive terms of an A.P. ",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "– (5k + 1) = (10k + 3) – (6k + 5)  ",
+      "answer": "– (5k + 1) = (10k + 3) – (6k + 5)  ",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "That is 14 is the st",
+      "answer": "In Progressions, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q21"
+    },
+    {
+      "question": " = =   = =  Dividing (",
+      "answer": " = =   = =  Dividing",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What is Sequence and how is it characterized?",
+      "answer": "In the introduction of this unit, we have indicated that sequences are special types of functions.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Progressions\"]\n  M1[\"5.2 Sequence\"]\n  Root --> M1\n  M2[\"5.3 Arithmetic Progresses A.P.\"]\n  Root --> M2\n  M3[\"5.4 Geometric Progression G.P.\"]\n  Root --> M3\n  M4[\"5.5 Sum of Infinite G.P.\"]\n  Root --> M4\n  M5[\"5.6 Concept of Summation\"]\n  Root --> M5\n  M6[\"5.7 Sum of some Special Sequences\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sequence</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the introduction of this unit, we have indicated that sequences are special types of functions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Arithmetic Progresses (A.P.)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An Arithmetic progression (A.P.) is also a sequence which follows a particular pattern as defined below.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Geometric Progression (G.P.)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A sequence } a { n is said to be geometric progression (G.P.) if N n r a a n 1 n   = + i.e.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sum Of Infinite G.P.</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A geometric progression (G.P.) is said to be infinite G.P.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Concept Of Summation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">to  is a sequence then expression  + + + to ...</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Sequence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the introduction of this unit, we have indicated that sequences are special types of functions.</li>\n<li>So let us first give a mathematical definition of sequence.</li>\n<li>Sequence: A sequence is a function whose domain is the set of all natural numbers and range may be any set.</li>\n<li>A sequence is generally denoted by writing ,...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Arithmetic Progresses (A.P.)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An Arithmetic progression (A.P.) is also a sequence which follows a particular pattern as defined below.</li>\n<li>Arithmetic progression (A.P.): A sequence   n n a or } a { is said to be arithmetic progression (A.P.) if ...</li>\n<li>3, 2, 1, n n, ,d a a n 1 n =  = − + where d is a fixed constant known as common difference of the A.P.</li>\n<li>difference of any term to its preceding term always remains constant.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Geometric Progression (G.P.)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A sequence } a { n is said to be geometric progression (G.P.) if N n r a a n 1 n   = + i.e.</li>\n<li>ratio of any term to its preceding term is same (remains constant).</li>\n<li>where r is a non zero fixed constant and is known as common ratio For example, 3, 6, 12, 24, 48, … is G.P.</li>\n<li>2 3 6 12 24   = = = = =     Remark 5: (i) In case of G.P.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Sum of Infinite G.P.</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A geometric progression (G.P.) is said to be infinite G.P.</li>\n<li>will be finite if common ratio is less than 1 in magnitude.</li>\n<li>to = + + + +  … (2) Multiplying on both sides of (2) by r (common ratio), we get 2 3 rS ar ar ar ...</li>\n<li>to = + + +  … (3) (2) (3) gives − (1 r)S a, 1<r 1, i.e r 1 − = −   [All other terms cancel out in pairs] a S , 1<r 1, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6 Concept of Summation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>to  is a sequence then expression  + + + to ...</li>\n<li>This series in the form of summation is written as   =1 n n a 18 Progressions i.e.</li>\n<li>a a a 3 2 1 In case of finite expression n 3 2 1 x ...</li>\n<li>x x x + + + + We write as n 2 1 n 1 i i x ...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.7 Sum of some Special Sequences</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Following are given sum of some special sequences as they will be helpful at various occasions during study of the programme.</li>\n<li>Always keep these in mind 19 Progression, Matrices and Determinants (1) 2 )1 n ( n n ...</li>\n<li>3 2 1 k n n 1 k + = + + + + = =   = = sum of first n natural numbers.</li>\n<li>3 2 1 k n 2 2 2 2 n 1 k 2 2 + + = + + + + = =   = = sum of squares of first n natural numbers.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule for writing down the other</code></div>\n<div class=\"formula-box\"><code>For n = 1, 2, r, we have</code></div>\n<div class=\"formula-box\"><code>For n = 1, 2, 3, 4, we have</code></div>\n<div class=\"formula-box\"><code>For n = 3, 4, we have</code></div>\n<div class=\"formula-box\"><code>(v) For n = 1, 2, 3, 4, we have</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The study of sequences and series begins by identifying the logical patterns that govern a list of numbers, transitioning from basic sequences to structured progressions. In this unit you have learned Arithmetic Progression (A.P.), in which terms increase or decrease by a steady common difference, making it the mathematical equivalent of walking at a constant pace. Conversely, unit discussed Geometric Progression (G.P.) which represents exponential change,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-5_Progressions.pdf')\">\n          📄 Read Original IGNOU PDF (22 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 5 Progressions\"]\n  M1[\"5.2 Sequence\"]\n  Root --> M1\n  M2[\"5.3 Arithmetic Progresses A.P.\"]\n  Root --> M2\n  M3[\"5.4 Geometric Progression G.P.\"]\n  Root --> M3\n  M4[\"5.5 Sum of Infinite G.P.\"]\n  Root --> M4\n  M5[\"5.6 Concept of Summation\"]\n  Root --> M5\n  M6[\"5.7 Sum of some Special Sequences\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Sequence",
+      "definition": "In the introduction of this unit, we have indicated that sequences are special types of functions.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Arithmetic Progresses (A.P.)",
+      "definition": "An Arithmetic progression (A.P.) is also a sequence which follows a particular pattern as defined below.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Geometric Progression (G.P.)",
+      "definition": "A sequence } a { n is said to be geometric progression (G.P.) if N n r a a n 1 n   = + i.e.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Sum Of Infinite G.P.",
+      "definition": "A geometric progression (G.P.) is said to be infinite G.P.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Concept Of Summation",
+      "definition": "to  is a sequence then expression  + + + to ...",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "5.2",
+      "topic": "Sequence",
+      "points": [
+        "In the introduction of this unit, we have indicated that sequences are special types of functions.",
+        "So let us first give a mathematical definition of sequence.",
+        "Sequence: A sequence is a function whose domain is the set of all natural numbers and range may be any set.",
+        "A sequence is generally denoted by writing ,..."
+      ]
+    },
+    {
+      "section_num": "5.3",
+      "topic": "Arithmetic Progresses (A.P.)",
+      "points": [
+        "An Arithmetic progression (A.P.) is also a sequence which follows a particular pattern as defined below.",
+        "Arithmetic progression (A.P.): A sequence   n n a or } a { is said to be arithmetic progression (A.P.) if ...",
+        "3, 2, 1, n n, ,d a a n 1 n =  = − + where d is a fixed constant known as common difference of the A.P.",
+        "difference of any term to its preceding term always remains constant."
+      ]
+    },
+    {
+      "section_num": "5.4",
+      "topic": "Geometric Progression (G.P.)",
+      "points": [
+        "A sequence } a { n is said to be geometric progression (G.P.) if N n r a a n 1 n   = + i.e.",
+        "ratio of any term to its preceding term is same (remains constant).",
+        "where r is a non zero fixed constant and is known as common ratio For example, 3, 6, 12, 24, 48, … is G.P.",
+        "2 3 6 12 24   = = = = =     Remark 5: (i) In case of G.P."
+      ]
+    },
+    {
+      "section_num": "5.5",
+      "topic": "Sum of Infinite G.P.",
+      "points": [
+        "A geometric progression (G.P.) is said to be infinite G.P.",
+        "will be finite if common ratio is less than 1 in magnitude.",
+        "to = + + + +  … (2) Multiplying on both sides of (2) by r (common ratio), we get 2 3 rS ar ar ar ...",
+        "to = + + +  … (3) (2) (3) gives − (1 r)S a, 1<r 1, i.e r 1 − = −   [All other terms cancel out in pairs] a S , 1<r 1, i.e."
+      ]
+    },
+    {
+      "section_num": "5.6",
+      "topic": "Concept of Summation",
+      "points": [
+        "to  is a sequence then expression  + + + to ...",
+        "This series in the form of summation is written as   =1 n n a 18 Progressions i.e.",
+        "a a a 3 2 1 In case of finite expression n 3 2 1 x ...",
+        "x x x + + + + We write as n 2 1 n 1 i i x ..."
+      ]
+    },
+    {
+      "section_num": "5.7",
+      "topic": "Sum of some Special Sequences",
+      "points": [
+        "Following are given sum of some special sequences as they will be helpful at various occasions during study of the programme.",
+        "Always keep these in mind 19 Progression, Matrices and Determinants (1) 2 )1 n ( n n ...",
+        "3 2 1 k n n 1 k + = + + + + = =   = = sum of first n natural numbers.",
+        "3 2 1 k n 2 2 2 2 n 1 k 2 2 + + = + + + + = =   = = sum of squares of first n natural numbers."
+      ]
+    }
+  ],
+  "formulas": [
+    "rule for writing down the other",
+    "For n = 1, 2, r, we have",
+    "For n = 1, 2, 3, 4, we have",
+    "For n = 3, 4, we have",
+    "(v) For n = 1, 2, 3, 4, we have"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 5 Progressions\"]\n  M1[\"5.2 Sequence\"]\n  Root --> M1\n  M2[\"5.3 Arithmetic Progresses A.P.\"]\n  Root --> M2\n  M3[\"5.4 Geometric Progression G.P.\"]\n  Root --> M3\n  M4[\"5.5 Sum of Infinite G.P.\"]\n  Root --> M4\n  M5[\"5.6 Concept of Summation\"]\n  Root --> M5\n  M6[\"5.7 Sum of some Special Sequences\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sequence</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the introduction of this unit, we have indicated that sequences are special types of functions.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Arithmetic Progresses (A.P.)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An Arithmetic progression (A.P.) is also a sequence which follows a particular pattern as defined below.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Geometric Progression (G.P.)</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A sequence } a { n is said to be geometric progression (G.P.) if N n r a a n 1 n   = + i.e.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Sum Of Infinite G.P.</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">A geometric progression (G.P.) is said to be infinite G.P.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Concept Of Summation</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">to  is a sequence then expression  + + + to ...</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.2 Sequence</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the introduction of this unit, we have indicated that sequences are special types of functions.</li>\n<li>So let us first give a mathematical definition of sequence.</li>\n<li>Sequence: A sequence is a function whose domain is the set of all natural numbers and range may be any set.</li>\n<li>A sequence is generally denoted by writing ,...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.3 Arithmetic Progresses (A.P.)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An Arithmetic progression (A.P.) is also a sequence which follows a particular pattern as defined below.</li>\n<li>Arithmetic progression (A.P.): A sequence   n n a or } a { is said to be arithmetic progression (A.P.) if ...</li>\n<li>3, 2, 1, n n, ,d a a n 1 n =  = − + where d is a fixed constant known as common difference of the A.P.</li>\n<li>difference of any term to its preceding term always remains constant.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.4 Geometric Progression (G.P.)</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A sequence } a { n is said to be geometric progression (G.P.) if N n r a a n 1 n   = + i.e.</li>\n<li>ratio of any term to its preceding term is same (remains constant).</li>\n<li>where r is a non zero fixed constant and is known as common ratio For example, 3, 6, 12, 24, 48, … is G.P.</li>\n<li>2 3 6 12 24   = = = = =     Remark 5: (i) In case of G.P.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.5 Sum of Infinite G.P.</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A geometric progression (G.P.) is said to be infinite G.P.</li>\n<li>will be finite if common ratio is less than 1 in magnitude.</li>\n<li>to = + + + +  … (2) Multiplying on both sides of (2) by r (common ratio), we get 2 3 rS ar ar ar ...</li>\n<li>to = + + +  … (3) (2) (3) gives − (1 r)S a, 1<r 1, i.e r 1 − = −   [All other terms cancel out in pairs] a S , 1<r 1, i.e.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.6 Concept of Summation</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>to  is a sequence then expression  + + + to ...</li>\n<li>This series in the form of summation is written as   =1 n n a 18 Progressions i.e.</li>\n<li>a a a 3 2 1 In case of finite expression n 3 2 1 x ...</li>\n<li>x x x + + + + We write as n 2 1 n 1 i i x ...</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">5.7 Sum of some Special Sequences</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Following are given sum of some special sequences as they will be helpful at various occasions during study of the programme.</li>\n<li>Always keep these in mind 19 Progression, Matrices and Determinants (1) 2 )1 n ( n n ...</li>\n<li>3 2 1 k n n 1 k + = + + + + = =   = = sum of first n natural numbers.</li>\n<li>3 2 1 k n 2 2 2 2 n 1 k 2 2 + + = + + + + = =   = = sum of squares of first n natural numbers.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rule for writing down the other</code></div>\n<div class=\"formula-box\"><code>For n = 1, 2, r, we have</code></div>\n<div class=\"formula-box\"><code>For n = 1, 2, 3, 4, we have</code></div>\n<div class=\"formula-box\"><code>For n = 3, 4, we have</code></div>\n<div class=\"formula-box\"><code>(v) For n = 1, 2, 3, 4, we have</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">The study of sequences and series begins by identifying the logical patterns that govern a list of numbers, transitioning from basic sequences to structured progressions. In this unit you have learned Arithmetic Progression (A.P.), in which terms increase or decrease by a steady common difference, making it the mathematical equivalent of walking at a constant pace. Conversely, unit discussed Geometric Progression (G.P.) which represents exponential change,</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-061_Mathematical_Foundations_-_I/Unit-5_Progressions.pdf')\">\n          📄 Read Original IGNOU PDF (22 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

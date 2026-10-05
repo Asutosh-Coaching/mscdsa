@@ -1,0 +1,164 @@
+{
+  "course_code": "MCS-062",
+  "unit_id": "unit_02",
+  "unit_num": "Unit 2",
+  "title": "Understanding Data and Its Type",
+  "filename": "Unit-2_Understanding_Data_and_Its_Type.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-2_Understanding_Data_and_Its_Type.pdf",
+  "total_pages": 19,
+  "word_count": 5744,
+  "est_read_time_minutes": 32,
+  "objectives": [
+    "structured Data",
+    "sectional Data and Time Series Data"
+  ],
+  "summary": "When you know what kind of data you have, it is easier to choose the right Every kind of data presents its own set of obstacles and opportunities when it comes to processing and interpretation. This chapter provided the groundwork for comprehending how to efficiently handle various types of data. This course examined a variety of data kinds and forms. Additionally, the quality of the data is discussed. Students can gather several types of data",
+  "flashcards": [
+    {
+      "question": "Define any 5 characteristics of good quality data. …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Understanding Data and Its Type, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Why is timely updating of information important for any organization? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "In Understanding Data and Its Type, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Do datafication of your television watching activity or mobile phone usage activity. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: Organizations have acknowledged the power of informed, data-backed decisions for their operations.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Write major differences between structured and unstructured data. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of structured data.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "Give three examples of both structured and unstructured data. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: Establishes essential concepts, mathematical or computational foundations, and techniques of structured data.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Design a questionnaire and collect primary data for the feedback about a movie from your friends’ group. …………………………………………………………………………… …………………………………………………………………………… ……………………………………………………………………………",
+      "answer": "Key Principle: The data format defines the structure of data within a system be it database/filebase system, imparting relevance to the processed data i.e.",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "What is Timeliness and how is it characterized?",
+      "answer": "Timeliness how current and up-to-date the information is.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Understanding Data and Its Ty\"]\n  M1[\"2.2 Properties of Data\"]\n  Root --> M1\n  M2[\"2.3 Datafication\"]\n  Root --> M2\n  M3[\"2.4 Data Categories Qualitative & Qu\"]\n  Root --> M3\n  M4[\"2.5 Data Format\"]\n  Root --> M4\n  M4_1[\"2.5.1 Structured Data\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Unstructured Data\"]\n  M4 --> M4_2\n  M4_3[\"2.5.3 Semi-structured Data\"]\n  M4 --> M4_3\n  M5[\"2.6 Primary Data & Secondary Data\"]\n  Root --> M5\n  M6[\"2.7 Categorical Data & Numerical Dat\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Timeliness</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Timeliness how current and up-to-date the information is.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reliability</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Reliability data accuracy, across the several sources and systems.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Properties Of Data</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The effectiveness of data-backed decision- making primarily depends on the quality of the data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Datafication</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Organizations have acknowledged the power of informed, data-backed decisions for their operations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Format</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Two types of data are possible: quantitative and qualitative.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Properties of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The effectiveness of data-backed decision- making primarily depends on the quality of the data.</li>\n<li>Inadequate data quality might result in inferior decision- making and unnecessary expenditures or possible business losses.</li>\n<li>Evaluating and improving data quality is essential for the successful execution of data science projects and the overall performance of the organization.</li>\n<li>The following aspects of data are crucial in assessing data quality.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Datafication</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Organizations have acknowledged the power of informed, data-backed decisions for their operations.</li>\n<li>The effectiveness of data-backed decision- making primarily depends on the quality of the data.</li>\n<li>Inadequate data quality might result in inferior decision- making and unnecessary expenditures or possible business losses.</li>\n<li>Evaluating and improving data quality is essential for the successful execution of data science projects and the overall performance of the organization.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Data Categories: Qualitative & Quantitative Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data science sees every activity in the form of data.</li>\n<li>It essentially converts everything we do into data.</li>\n<li>This process of converting various aspects of our lives into data is called datafication.</li>\n<li>Datafication is then used to draw insights, make predictions, and improve various aspects of life and business.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Data Format</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Two types of data are possible: quantitative and qualitative.</li>\n<li>It's important to know the difference between the two because they need different ways to collect and analyse data.</li>\n<li>Quantitative data implies the data which can be measured or counted and expressed in the form of numerical values.</li>\n<li>Accordingly, it gives us Introduction to Data Science-1 62 information about “how many,” “how much,” or “how often”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.1 Structured Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of structured data.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.2 Unstructured Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of unstructured data.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.3 Semi-structured Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of semi-structured data.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.6 Primary Data & Secondary Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data format defines the structure of data within a system be it database/filebase system, imparting relevance to the processed data i.e.</li>\n<li>Sources of the data may exist in various formats.</li>\n<li>The following three formats are often utilized.</li>\n<li>Structured data is typically characterised by rows and columns, with columns denoting various attributes/elements such as emp_name, emp_ address, and emp_phone number, each field possessing a certain type, including various data types viz.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules and criteria, confirming its accuracy and</code></div>\n<div class=\"formula-box\"><code>property where statistical properties like central</code></div>\n<div class=\"formula-box\"><code>principles with Python, Joel Grus, 2nd</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">When you know what kind of data you have, it is easier to choose the right Every kind of data presents its own set of obstacles and opportunities when it comes to processing and interpretation. This chapter provided the groundwork for comprehending how to efficiently handle various types of data. This course examined a variety of data kinds and forms. Additionally, the quality of the data is discussed. Students can gather several types of data</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-2_Understanding_Data_and_Its_Type.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 2 Understanding Data and Its Ty\"]\n  M1[\"2.2 Properties of Data\"]\n  Root --> M1\n  M2[\"2.3 Datafication\"]\n  Root --> M2\n  M3[\"2.4 Data Categories Qualitative & Qu\"]\n  Root --> M3\n  M4[\"2.5 Data Format\"]\n  Root --> M4\n  M4_1[\"2.5.1 Structured Data\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Unstructured Data\"]\n  M4 --> M4_2\n  M4_3[\"2.5.3 Semi-structured Data\"]\n  M4 --> M4_3\n  M5[\"2.6 Primary Data & Secondary Data\"]\n  Root --> M5\n  M6[\"2.7 Categorical Data & Numerical Dat\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Timeliness",
+      "definition": "Timeliness how current and up-to-date the information is.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Reliability",
+      "definition": "Reliability data accuracy, across the several sources and systems.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Properties Of Data",
+      "definition": "The effectiveness of data-backed decision- making primarily depends on the quality of the data.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Datafication",
+      "definition": "Organizations have acknowledged the power of informed, data-backed decisions for their operations.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Format",
+      "definition": "Two types of data are possible: quantitative and qualitative.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "2.2",
+      "topic": "Properties of Data",
+      "points": [
+        "The effectiveness of data-backed decision- making primarily depends on the quality of the data.",
+        "Inadequate data quality might result in inferior decision- making and unnecessary expenditures or possible business losses.",
+        "Evaluating and improving data quality is essential for the successful execution of data science projects and the overall performance of the organization.",
+        "The following aspects of data are crucial in assessing data quality."
+      ]
+    },
+    {
+      "section_num": "2.3",
+      "topic": "Datafication",
+      "points": [
+        "Organizations have acknowledged the power of informed, data-backed decisions for their operations.",
+        "The effectiveness of data-backed decision- making primarily depends on the quality of the data.",
+        "Inadequate data quality might result in inferior decision- making and unnecessary expenditures or possible business losses.",
+        "Evaluating and improving data quality is essential for the successful execution of data science projects and the overall performance of the organization."
+      ]
+    },
+    {
+      "section_num": "2.4",
+      "topic": "Data Categories: Qualitative & Quantitative Data",
+      "points": [
+        "Data science sees every activity in the form of data.",
+        "It essentially converts everything we do into data.",
+        "This process of converting various aspects of our lives into data is called datafication.",
+        "Datafication is then used to draw insights, make predictions, and improve various aspects of life and business."
+      ]
+    },
+    {
+      "section_num": "2.5",
+      "topic": "Data Format",
+      "points": [
+        "Two types of data are possible: quantitative and qualitative.",
+        "It's important to know the difference between the two because they need different ways to collect and analyse data.",
+        "Quantitative data implies the data which can be measured or counted and expressed in the form of numerical values.",
+        "Accordingly, it gives us Introduction to Data Science-1 62 information about “how many,” “how much,” or “how often”."
+      ]
+    },
+    {
+      "section_num": "2.5.1",
+      "topic": "Structured Data",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of structured data.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type."
+      ]
+    },
+    {
+      "section_num": "2.5.2",
+      "topic": "Unstructured Data",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of unstructured data.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type."
+      ]
+    },
+    {
+      "section_num": "2.5.3",
+      "topic": "Semi-structured Data",
+      "points": [
+        "Establishes essential concepts, mathematical or computational foundations, and techniques of semi-structured data.",
+        "Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type."
+      ]
+    },
+    {
+      "section_num": "2.6",
+      "topic": "Primary Data & Secondary Data",
+      "points": [
+        "The data format defines the structure of data within a system be it database/filebase system, imparting relevance to the processed data i.e.",
+        "Sources of the data may exist in various formats.",
+        "The following three formats are often utilized.",
+        "Structured data is typically characterised by rows and columns, with columns denoting various attributes/elements such as emp_name, emp_ address, and emp_phone number, each field possessing a certain type, including various data types viz."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules and criteria, confirming its accuracy and",
+    "property where statistical properties like central",
+    "principles with Python, Joel Grus, 2nd"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 2 Understanding Data and Its Ty\"]\n  M1[\"2.2 Properties of Data\"]\n  Root --> M1\n  M2[\"2.3 Datafication\"]\n  Root --> M2\n  M3[\"2.4 Data Categories Qualitative & Qu\"]\n  Root --> M3\n  M4[\"2.5 Data Format\"]\n  Root --> M4\n  M4_1[\"2.5.1 Structured Data\"]\n  M4 --> M4_1\n  M4_2[\"2.5.2 Unstructured Data\"]\n  M4 --> M4_2\n  M4_3[\"2.5.3 Semi-structured Data\"]\n  M4 --> M4_3\n  M5[\"2.6 Primary Data & Secondary Data\"]\n  Root --> M5\n  M6[\"2.7 Categorical Data & Numerical Dat\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Timeliness</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Timeliness how current and up-to-date the information is.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Reliability</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Reliability data accuracy, across the several sources and systems.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Properties Of Data</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">The effectiveness of data-backed decision- making primarily depends on the quality of the data.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Datafication</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Organizations have acknowledged the power of informed, data-backed decisions for their operations.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Format</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Two types of data are possible: quantitative and qualitative.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.2 Properties of Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The effectiveness of data-backed decision- making primarily depends on the quality of the data.</li>\n<li>Inadequate data quality might result in inferior decision- making and unnecessary expenditures or possible business losses.</li>\n<li>Evaluating and improving data quality is essential for the successful execution of data science projects and the overall performance of the organization.</li>\n<li>The following aspects of data are crucial in assessing data quality.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.3 Datafication</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Organizations have acknowledged the power of informed, data-backed decisions for their operations.</li>\n<li>The effectiveness of data-backed decision- making primarily depends on the quality of the data.</li>\n<li>Inadequate data quality might result in inferior decision- making and unnecessary expenditures or possible business losses.</li>\n<li>Evaluating and improving data quality is essential for the successful execution of data science projects and the overall performance of the organization.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.4 Data Categories: Qualitative & Quantitative Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data science sees every activity in the form of data.</li>\n<li>It essentially converts everything we do into data.</li>\n<li>This process of converting various aspects of our lives into data is called datafication.</li>\n<li>Datafication is then used to draw insights, make predictions, and improve various aspects of life and business.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5 Data Format</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Two types of data are possible: quantitative and qualitative.</li>\n<li>It's important to know the difference between the two because they need different ways to collect and analyse data.</li>\n<li>Quantitative data implies the data which can be measured or counted and expressed in the form of numerical values.</li>\n<li>Accordingly, it gives us Introduction to Data Science-1 62 information about “how many,” “how much,” or “how often”.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.1 Structured Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of structured data.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.2 Unstructured Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of unstructured data.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.5.3 Semi-structured Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Establishes essential concepts, mathematical or computational foundations, and techniques of semi-structured data.</li>\n<li>Applies standard methodologies relevant to modern data science workflows and analysis in understanding data and its type.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">2.6 Primary Data & Secondary Data</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The data format defines the structure of data within a system be it database/filebase system, imparting relevance to the processed data i.e.</li>\n<li>Sources of the data may exist in various formats.</li>\n<li>The following three formats are often utilized.</li>\n<li>Structured data is typically characterised by rows and columns, with columns denoting various attributes/elements such as emp_name, emp_ address, and emp_phone number, each field possessing a certain type, including various data types viz.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules and criteria, confirming its accuracy and</code></div>\n<div class=\"formula-box\"><code>property where statistical properties like central</code></div>\n<div class=\"formula-box\"><code>principles with Python, Joel Grus, 2nd</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">When you know what kind of data you have, it is easier to choose the right Every kind of data presents its own set of obstacles and opportunities when it comes to processing and interpretation. This chapter provided the groundwork for comprehending how to efficiently handle various types of data. This course examined a variety of data kinds and forms. Additionally, the quality of the data is discussed. Students can gather several types of data</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-062_Introduction_to_Data_Science/Unit-2_Understanding_Data_and_Its_Type.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

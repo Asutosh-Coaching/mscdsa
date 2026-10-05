@@ -1,0 +1,175 @@
+{
+  "course_code": "MCS-063",
+  "unit_id": "unit_01",
+  "unit_num": "Unit 1",
+  "title": "Python Primer",
+  "filename": "Unit-1_Python_Primer.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-1_Python_Primer.pdf",
+  "total_pages": 26,
+  "word_count": 7793,
+  "est_read_time_minutes": 43,
+  "objectives": [
+    "Python Language Overview",
+    "Data Types in Python",
+    "Classes and Objects in Python",
+    "Aliasing in Python",
+    "Expressions in Python"
+  ],
+  "summary": "In recent years, Python has become a language of choice since it has simple syntax, easier code readability, user friendly and can be used with wide variety of applications. It has extensive library, large active user community, cross-platform compatibility and beginner-friendly design philosophy. To understand its acceptability, for web and software development, Python is behind many websites and applications. For understand the hidden data patterns, Data analysts use Python’s",
+  "flashcards": [
+    {
+      "question": "What operators does python support?",
+      "answer": "Key Principle: Python is a dynamic, interpreted or a byte code-compiled language.",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "What are the common built-in data types in Python?",
+      "answer": "Key Principle: Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.",
+      "tag": "Exercise Q3"
+    },
+    {
+      "question": "Where and how is a Python function defined?",
+      "answer": "Key Principle: Python is a dynamic, interpreted or a byte code-compiled language.",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "What is a Try block in Python?",
+      "answer": "In Python Primer, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "What is recursion in Python?",
+      "answer": "In Python Primer, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q6"
+    },
+    {
+      "question": "What is meant by module in python?",
+      "answer": "In Python Primer, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q7"
+    },
+    {
+      "question": "What is Scope and how is it characterized?",
+      "answer": "Scope the part of the program from where a particular Python object can be referenced.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Python Primer\"]\n  M1[\"1.2 Python Language Overview\"]\n  Root --> M1\n  M2[\"1.3 Data Types in Python\"]\n  Root --> M2\n  M3[\"1.4 Classes and Objects in Python\"]\n  Root --> M3\n  M4[\"1.5 Aliasing in Python\"]\n  Root --> M4\n  M5[\"1.6 Expressions in Python\"]\n  Root --> M5\n  M6[\"1.7 Control Flow\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Scope</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Scope the part of the program from where a particular Python object can be referenced.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Python Language Overview</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Python is a dynamic, interpreted or a byte code-compiled language.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Types In Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Aliasing In Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Each identifier is associated with the memory address of the object to which it referring to.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expressions In Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Like in C or C++, a combination of operands and operators is called an expression.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Python Language Overview</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python is a dynamic, interpreted or a byte code-compiled language.</li>\n<li>This means that prototyping can be very quick while testing the code.</li>\n<li>As you code in Python, you shall look at it like procedural at times or object-oriented.</li>\n<li>One doesnot have to bother about the type declarations of variables, parameters, functions, or methods in code you write.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Data Types in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.</li>\n<li>Data Type Description Numeric int, float, complex Sequence list, tuple range Mapping dict Set set, frozenset Text str Binary bytes, bytearray, memoryview Numeric Types: int: Used to represents whole numbers (e.g.: 2, -15, 0).</li>\n<li>float: Used to represents decimal numbers (e.g.: 2.14, -0.8, 8.0).</li>\n<li>complex: Used to represents complex numbers in the form a + bk, where a and b are floats and k is the imaginary unit (e.g.: 6 + 8k, -1k).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Classes and Objects in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python is an object-oriented language and classes form the basis for all its data types.</li>\n<li>Classes are a means of bringing together data and functionality together.</li>\n<li>Each class encapsulates data and behaviour (methods) into a single entity.</li>\n<li>This structure allows you to model real-world objects and create organized, reusable code.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Aliasing in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Each identifier is associated with the memory address of the object to which it referring to.</li>\n<li>An identifier can be associated with one type of object initially and later it can be reassigned to another object that is of the same or different type.</li>\n<li>Modifying any one of the the list will affect the other.</li>\n<li>Aliasing can lead to unexpected side effects if not handled carefully.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.6 Expressions in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Like in C or C++, a combination of operands and operators is called an expression.</li>\n<li>The expression produces some value or result after being interpreted by the Python interpreter.</li>\n<li>It combines operators, variables, literals, and function calls to produce a value.</li>\n<li>The programming language uses distinct expressions for various requirements.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.7 Control Flow</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Program execution happens sequentially in Python wherein the Python interpreter reads a code written by you line by line from top to bottom with each statement interpreted from left to right and.</li>\n<li>The interpreter executes operations and functions in the order that it reads which is what the control flow signifies.</li>\n<li>Not every program shall follow this pattern since the program shall also encounter conditional statement and based on this outcome, the control gets transferred to the desired statement.</li>\n<li>Without control flow expressions, a program is simply a list of statements that are sequentially executed.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.8 Looping / Repetition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Understanding loops is essential for any python programmer as these provide a powerful tool to automate code logic and process data.</li>\n<li>Python being popular programming language, offers several loop structures to iterate over sequences and execute repetitive tasks efficiently.</li>\n<li>These are also referred to as repetition statement used to repeat a block of code statements.</li>\n<li>Python has two loops structures which are: for loop while loop 1.8.1 for loop It is used to iterate over a sequence that can be a list, tuple, dictionary, or a set.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.9 Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A function is a block of reusable code that performs a specific task.</li>\n<li>This task is generally one which is used multiple times to develop an application in Python.</li>\n<li>Suppose we need to create a program to compute area of a given land or the volume of a box.</li>\n<li>The idea is to organize code, make it more readable, and avoid repetition of the same code statements.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules that constitutes the iterator protocol. This consists of</code></div>\n<div class=\"formula-box\"><code>y = x.copy()</code></div>\n<div class=\"formula-box\"><code>x, y = input(\"Enter two values: \").split()</code></div>\n<div class=\"formula-box\"><code>y, z = input(\"Enter three values: \").split()</code></div>\n<div class=\"formula-box\"><code>y, z = input(\"Enter two values: \").split()</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In recent years, Python has become a language of choice since it has simple syntax, easier code readability, user friendly and can be used with wide variety of applications. It has extensive library, large active user community, cross-platform compatibility and beginner-friendly design philosophy. To understand its acceptability, for web and software development, Python is behind many websites and applications. For understand the hidden data patterns, Data analysts use Python’s</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-1_Python_Primer.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 1 Python Primer\"]\n  M1[\"1.2 Python Language Overview\"]\n  Root --> M1\n  M2[\"1.3 Data Types in Python\"]\n  Root --> M2\n  M3[\"1.4 Classes and Objects in Python\"]\n  Root --> M3\n  M4[\"1.5 Aliasing in Python\"]\n  Root --> M4\n  M5[\"1.6 Expressions in Python\"]\n  Root --> M5\n  M6[\"1.7 Control Flow\"]\n  Root --> M6",
+  "definitions": [
+    {
+      "term": "Scope",
+      "definition": "Scope the part of the program from where a particular Python object can be referenced.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Python Language Overview",
+      "definition": "Python is a dynamic, interpreted or a byte code-compiled language.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Data Types In Python",
+      "definition": "Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Aliasing In Python",
+      "definition": "Each identifier is associated with the memory address of the object to which it referring to.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Expressions In Python",
+      "definition": "Like in C or C++, a combination of operands and operators is called an expression.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "1.2",
+      "topic": "Python Language Overview",
+      "points": [
+        "Python is a dynamic, interpreted or a byte code-compiled language.",
+        "This means that prototyping can be very quick while testing the code.",
+        "As you code in Python, you shall look at it like procedural at times or object-oriented.",
+        "One doesnot have to bother about the type declarations of variables, parameters, functions, or methods in code you write."
+      ]
+    },
+    {
+      "section_num": "1.3",
+      "topic": "Data Types in Python",
+      "points": [
+        "Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.",
+        "Data Type Description Numeric int, float, complex Sequence list, tuple range Mapping dict Set set, frozenset Text str Binary bytes, bytearray, memoryview Numeric Types: int: Used to represents whole numbers (e.g.: 2, -15, 0).",
+        "float: Used to represents decimal numbers (e.g.: 2.14, -0.8, 8.0).",
+        "complex: Used to represents complex numbers in the form a + bk, where a and b are floats and k is the imaginary unit (e.g.: 6 + 8k, -1k)."
+      ]
+    },
+    {
+      "section_num": "1.4",
+      "topic": "Classes and Objects in Python",
+      "points": [
+        "Python is an object-oriented language and classes form the basis for all its data types.",
+        "Classes are a means of bringing together data and functionality together.",
+        "Each class encapsulates data and behaviour (methods) into a single entity.",
+        "This structure allows you to model real-world objects and create organized, reusable code."
+      ]
+    },
+    {
+      "section_num": "1.5",
+      "topic": "Aliasing in Python",
+      "points": [
+        "Each identifier is associated with the memory address of the object to which it referring to.",
+        "An identifier can be associated with one type of object initially and later it can be reassigned to another object that is of the same or different type.",
+        "Modifying any one of the the list will affect the other.",
+        "Aliasing can lead to unexpected side effects if not handled carefully."
+      ]
+    },
+    {
+      "section_num": "1.6",
+      "topic": "Expressions in Python",
+      "points": [
+        "Like in C or C++, a combination of operands and operators is called an expression.",
+        "The expression produces some value or result after being interpreted by the Python interpreter.",
+        "It combines operators, variables, literals, and function calls to produce a value.",
+        "The programming language uses distinct expressions for various requirements."
+      ]
+    },
+    {
+      "section_num": "1.7",
+      "topic": "Control Flow",
+      "points": [
+        "Program execution happens sequentially in Python wherein the Python interpreter reads a code written by you line by line from top to bottom with each statement interpreted from left to right and.",
+        "The interpreter executes operations and functions in the order that it reads which is what the control flow signifies.",
+        "Not every program shall follow this pattern since the program shall also encounter conditional statement and based on this outcome, the control gets transferred to the desired statement.",
+        "Without control flow expressions, a program is simply a list of statements that are sequentially executed."
+      ]
+    },
+    {
+      "section_num": "1.8",
+      "topic": "Looping / Repetition",
+      "points": [
+        "Understanding loops is essential for any python programmer as these provide a powerful tool to automate code logic and process data.",
+        "Python being popular programming language, offers several loop structures to iterate over sequences and execute repetitive tasks efficiently.",
+        "These are also referred to as repetition statement used to repeat a block of code statements.",
+        "Python has two loops structures which are: for loop while loop 1.8.1 for loop It is used to iterate over a sequence that can be a list, tuple, dictionary, or a set."
+      ]
+    },
+    {
+      "section_num": "1.9",
+      "topic": "Functions",
+      "points": [
+        "A function is a block of reusable code that performs a specific task.",
+        "This task is generally one which is used multiple times to develop an application in Python.",
+        "Suppose we need to create a program to compute area of a given land or the volume of a box.",
+        "The idea is to organize code, make it more readable, and avoid repetition of the same code statements."
+      ]
+    }
+  ],
+  "formulas": [
+    "rules that constitutes the iterator protocol. This consists of",
+    "y = x.copy()",
+    "x, y = input(\"Enter two values: \").split()",
+    "y, z = input(\"Enter three values: \").split()",
+    "y, z = input(\"Enter two values: \").split()"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 1 Python Primer\"]\n  M1[\"1.2 Python Language Overview\"]\n  Root --> M1\n  M2[\"1.3 Data Types in Python\"]\n  Root --> M2\n  M3[\"1.4 Classes and Objects in Python\"]\n  Root --> M3\n  M4[\"1.5 Aliasing in Python\"]\n  Root --> M4\n  M5[\"1.6 Expressions in Python\"]\n  Root --> M5\n  M6[\"1.7 Control Flow\"]\n  Root --> M6\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Scope</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Scope the part of the program from where a particular Python object can be referenced.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Python Language Overview</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Python is a dynamic, interpreted or a byte code-compiled language.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Data Types In Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Aliasing In Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Each identifier is associated with the memory address of the object to which it referring to.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Expressions In Python</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Like in C or C++, a combination of operands and operators is called an expression.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.2 Python Language Overview</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python is a dynamic, interpreted or a byte code-compiled language.</li>\n<li>This means that prototyping can be very quick while testing the code.</li>\n<li>As you code in Python, you shall look at it like procedural at times or object-oriented.</li>\n<li>One doesnot have to bother about the type declarations of variables, parameters, functions, or methods in code you write.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.3 Data Types in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Data types define the type of a variable that represents the type of data that can be stored in a variable and the kind of operations that can be done on it.</li>\n<li>Data Type Description Numeric int, float, complex Sequence list, tuple range Mapping dict Set set, frozenset Text str Binary bytes, bytearray, memoryview Numeric Types: int: Used to represents whole numbers (e.g.: 2, -15, 0).</li>\n<li>float: Used to represents decimal numbers (e.g.: 2.14, -0.8, 8.0).</li>\n<li>complex: Used to represents complex numbers in the form a + bk, where a and b are floats and k is the imaginary unit (e.g.: 6 + 8k, -1k).</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.4 Classes and Objects in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Python is an object-oriented language and classes form the basis for all its data types.</li>\n<li>Classes are a means of bringing together data and functionality together.</li>\n<li>Each class encapsulates data and behaviour (methods) into a single entity.</li>\n<li>This structure allows you to model real-world objects and create organized, reusable code.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.5 Aliasing in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Each identifier is associated with the memory address of the object to which it referring to.</li>\n<li>An identifier can be associated with one type of object initially and later it can be reassigned to another object that is of the same or different type.</li>\n<li>Modifying any one of the the list will affect the other.</li>\n<li>Aliasing can lead to unexpected side effects if not handled carefully.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.6 Expressions in Python</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Like in C or C++, a combination of operands and operators is called an expression.</li>\n<li>The expression produces some value or result after being interpreted by the Python interpreter.</li>\n<li>It combines operators, variables, literals, and function calls to produce a value.</li>\n<li>The programming language uses distinct expressions for various requirements.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.7 Control Flow</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Program execution happens sequentially in Python wherein the Python interpreter reads a code written by you line by line from top to bottom with each statement interpreted from left to right and.</li>\n<li>The interpreter executes operations and functions in the order that it reads which is what the control flow signifies.</li>\n<li>Not every program shall follow this pattern since the program shall also encounter conditional statement and based on this outcome, the control gets transferred to the desired statement.</li>\n<li>Without control flow expressions, a program is simply a list of statements that are sequentially executed.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.8 Looping / Repetition</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Understanding loops is essential for any python programmer as these provide a powerful tool to automate code logic and process data.</li>\n<li>Python being popular programming language, offers several loop structures to iterate over sequences and execute repetitive tasks efficiently.</li>\n<li>These are also referred to as repetition statement used to repeat a block of code statements.</li>\n<li>Python has two loops structures which are: for loop while loop 1.8.1 for loop It is used to iterate over a sequence that can be a list, tuple, dictionary, or a set.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">1.9 Functions</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>A function is a block of reusable code that performs a specific task.</li>\n<li>This task is generally one which is used multiple times to develop an application in Python.</li>\n<li>Suppose we need to create a program to compute area of a given land or the volume of a box.</li>\n<li>The idea is to organize code, make it more readable, and avoid repetition of the same code statements.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>rules that constitutes the iterator protocol. This consists of</code></div>\n<div class=\"formula-box\"><code>y = x.copy()</code></div>\n<div class=\"formula-box\"><code>x, y = input(\"Enter two values: \").split()</code></div>\n<div class=\"formula-box\"><code>y, z = input(\"Enter three values: \").split()</code></div>\n<div class=\"formula-box\"><code>y, z = input(\"Enter two values: \").split()</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">In recent years, Python has become a language of choice since it has simple syntax, easier code readability, user friendly and can be used with wide variety of applications. It has extensive library, large active user community, cross-platform compatibility and beginner-friendly design philosophy. To understand its acceptability, for web and software development, Python is behind many websites and applications. For understand the hidden data patterns, Data analysts use Python’s</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-063_Data_Structures_using_Python/Unit-1_Python_Primer.pdf')\">\n          📄 Read Original IGNOU PDF (26 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}

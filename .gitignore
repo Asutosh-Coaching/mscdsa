@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# SQLite & local study databases
+mobile_reader/study_data.db
+*.db
+*.sqlite3
+
+# Logs & temp artifacts
+*.log
+scratch/
+.gemini/
+.system_generated/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

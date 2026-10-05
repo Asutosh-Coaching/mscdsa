@@ -1,0 +1,174 @@
+{
+  "course_code": "MCS-207",
+  "unit_id": "unit_13",
+  "unit_num": "Unit 13",
+  "title": "Object-Oriented Database",
+  "filename": "Unit-13_Object-Oriented_Database.pdf",
+  "relative_pdf_path": "pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-13_Object-Oriented_Database.pdf",
+  "total_pages": 19,
+  "word_count": 5860,
+  "est_read_time_minutes": 33,
+  "objectives": [
+    "Oriented Database?",
+    "Oriented Databases",
+    "Relational Database Systems",
+    "Oriented Database Systems",
+    "Relational Database",
+    "oriented software development methodologies have become very popular in the"
+  ],
+  "summary": "Object-oriented technologies are one of the most popular technologies in the present era. Object orientation has also found its way into database technologies. The object- oriented database systems allow the representation of user-defined types, including operation on these types. They also allow the representation of inheritance using the type and table inheritance. The idea here is to represent the whole range of newer types if needed. Such features help in enhancing the performance of a database application",
+  "flashcards": [
+    {
+      "question": "What is the need for object-oriented databases? ………………………………………………………………………………………………………………………… ………………………………………………………………………………………………………………………… …………………………………………………………………………………………………………………………",
+      "answer": "False 2) False 3) False 4) False 5) True",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "How will you represent a complex data type? ………………………………………………………………………………………………………………………… ………………………………………………………………………………………………………………………… …………………………………………………………………………………………………………………………",
+      "answer": "The Book class needs to represent the relationship that is with the Staff class. This would be added to it by using the following commands: RELATIONSHIP SET < Staff > issuedto INVERSE :: issues Staff",
+      "tag": "Exercise Q2"
+    },
+    {
+      "question": "Create a table using the type created in question 3 above. ………………………………………………………………………………………………………………………… ………………………………………………………………………………………………………………………… …………………………………………………………………………………………………………………………",
+      "answer": "CREATE TABLE addresswithpin OF Addrtype",
+      "tag": "Exercise Q4"
+    },
+    {
+      "question": "How can you establish a relationship with multiple tables? ………………………………………………………………………………………………………………………… ………………………………………………………………………………………………………………………… …………………………………………………………………………………………………………………………",
+      "answer": "The relationship can be established with multiple tables by specifying the keyword “SCOPE”. For example: CREATE TABLE mylibrary",
+      "tag": "Exercise Q5"
+    },
+    {
+      "question": "Create a class staff using ODL that also references the Book class given in section",
+      "answer": "False 2) False 3) False 4) False 5) True",
+      "tag": "Exercise Q1"
+    },
+    {
+      "question": "4. ………………………………………………………………………………………………………………………… …………………………………………………………………………………………………………………………",
+      "answer": "In Object-Oriented Database, this question verifies core theoretical understanding. Refer to unit takeaways and governing rules.",
+      "tag": "Exercise Q13"
+    },
+    {
+      "question": "What is Language (Odl) and how is it characterized?",
+      "answer": "Language (Odl) a standard language on the same lines as the DDL of SQL, that is used to represent the structure of an object-oriented database.",
+      "tag": "Key Definition"
+    }
+  ],
+  "html_content": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Object-Oriented Database\"]\n  M1[\"13.2 Why Object-Oriented Database?\"]\n  Root --> M1\n  M1_1[\"13.2.1 Limitations of Relational Dat\"]\n  M1 --> M1_1\n  M1_2[\"13.2.2 The Need for Object-Oriented \"]\n  M1 --> M1_2\n  M2[\"13.3 Object-Relational Database Syst\"]\n  Root --> M2\n  M2_1[\"13.3.1 Complex Data Types\"]\n  M2 --> M2_1\n  M2_2[\"13.3.2 Types and Inheritances in SQL\"]\n  M2 --> M2_2\n  M2_3[\"13.3.3 Additional Data Types of OOP \"]\n  M2 --> M2_3\n  M3[\"13.4 Object-Oriented Database System\"]\n  Root --> M3\n  M3_1[\"13.4.1 Object Model\"]\n  M3 --> M3_1\n  M3_2[\"13.4.2 Object Definition Language\"]\n  M3 --> M3_2\n  M3_3[\"13.4.3 Object Query Language\"]\n  M3 --> M3_3\n  M4[\"13.5 OODBMS Vs Object-Relational Dat\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Language (Odl)</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Language (Odl) a standard language on the same lines as the DDL of SQL, that is used to represent the structure of an object-oriented database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Why Object-Oriented Database?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An object-oriented database is used for complex data types.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Limitations Of Relational Databases</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Thus, the main asset of relational databases, viz., its simplicity for such applications, is also one of its weaknesses in the case of complex applications.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Object-Relational Database Systems</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Object-Relational Database Systems are the relational database systems that have been enhanced to include the features of object-oriented paradigm.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Complex Data Types</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous section, we have used the term complex data types without defining it.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Why Object-Oriented Database?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An object-oriented database is used for complex data types.</li>\n<li>Such database applications require complex interrelationships among object hierarchies to be represented in database systems.</li>\n<li>These interrelationships are difficult to implement in relational systems.</li>\n<li>Let us discuss the need for object-oriented systems in advanced applications in more detail.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2.1 Limitations of Relational Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus, the main asset of relational databases, viz., its simplicity for such applications, is also one of its weaknesses in the case of complex applications.</li>\n<li>The data domains in a relational system can be represented in relational databases as standard data types defined in the SQL.</li>\n<li>However, the relational model does not allow extending these data types or creating the user’s own data types.</li>\n<li>Thus, limiting the types of data that may be represented using relational databases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2.2 The Need for Object-Oriented Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the earlier section, relational database management systems have certain limitations.</li>\n<li>Let us discuss some of the basic issues with respect to object-oriented databases.</li>\n<li>The objects may be complex, or they may consist of low-level objects (for example, a window object may consist of many simpler objects like a menu bar, scroll bar, etc.).</li>\n<li>On the other hand, object-oriented models would represent such a system very naturally through, an inheritance hierarchy.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Object-Relational Database Systems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Object-Relational Database Systems are the relational database systems that have been enhanced to include the features of object-oriented paradigm.</li>\n<li>This section provides details on how these newer features have been implemented in the SQL.</li>\n<li>Some of the basic object-oriented concepts that have been discussed in this section in the context of their inclusion into SQL standards include, the complex types, inheritance and object identity and reference types.</li>\n<li>Complex Data Types In the previous section, we have used the term complex data types without defining it.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.1 Complex Data Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, we have used the term complex data types without defining it.</li>\n<li>Let us explain this with the help of a simple example.</li>\n<li>The second approach is very inflexible, as it would require complex string related operations for extracting information.</li>\n<li>If you represent the attributes of the Address as separate attributes, then the problem would be with respect to writing queries.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.2 Types and Inheritances in SQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sub-section, we discussed the data type – Address.</li>\n<li>In this section, let us give more examples for such types, using SQL.</li>\n<li>Consider the attribute: • Name – that includes given name, middle name and surname.</li>\n<li>• Address – that includes address details, city, state and pin code.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.3 Additional Data Types of OOP in SQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The object-oriented/relational database must support the data types that allow multi- valued attributes to be represented easily.</li>\n<li>Two such data types that exist in SQL are: • Arrays – stores information in an order and • Multisets – stores information in an unordered set.</li>\n<li>Arrays not only allow authors to be represented but also allow the sequencing of the authors' names.</li>\n<li>Multiset allows a number of keywords without any ordering imposed on them.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.4 Object Identity and Reference Type Using SQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus, an object-relational database system should address the following two concerns: • In relational databases, foreign keys are used to link the attributes in two different relations.</li>\n<li>Can such keys be used in an object-relational database?</li>\n<li>• How will you identify the object that is being referenced?</li>\n<li>The following example will address the concerns stated above.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of a relational</code></div>\n<div class=\"formula-box\"><code>SELECT name FROM university_members ONLY;</code></div>\n<div class=\"formula-box\"><code>Max(SELECT s.MARKS FROM Student s);</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Object-oriented technologies are one of the most popular technologies in the present era. Object orientation has also found its way into database technologies. The object- oriented database systems allow the representation of user-defined types, including operation on these types. They also allow the representation of inheritance using the type and table inheritance. The idea here is to represent the whole range of newer types if needed. Such features help in enhancing the performance of a database application</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-13_Object-Oriented_Database.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    ",
+  "flowchart_mermaid": "graph TD\n  Root[\"Unit 13 Object-Oriented Database\"]\n  M1[\"13.2 Why Object-Oriented Database?\"]\n  Root --> M1\n  M1_1[\"13.2.1 Limitations of Relational Dat\"]\n  M1 --> M1_1\n  M1_2[\"13.2.2 The Need for Object-Oriented \"]\n  M1 --> M1_2\n  M2[\"13.3 Object-Relational Database Syst\"]\n  Root --> M2\n  M2_1[\"13.3.1 Complex Data Types\"]\n  M2 --> M2_1\n  M2_2[\"13.3.2 Types and Inheritances in SQL\"]\n  M2 --> M2_2\n  M2_3[\"13.3.3 Additional Data Types of OOP \"]\n  M2 --> M2_3\n  M3[\"13.4 Object-Oriented Database System\"]\n  Root --> M3\n  M3_1[\"13.4.1 Object Model\"]\n  M3 --> M3_1\n  M3_2[\"13.4.2 Object Definition Language\"]\n  M3 --> M3_2\n  M3_3[\"13.4.3 Object Query Language\"]\n  M3 --> M3_3\n  M4[\"13.5 OODBMS Vs Object-Relational Dat\"]\n  Root --> M4",
+  "definitions": [
+    {
+      "term": "Language (Odl)",
+      "definition": "Language (Odl) a standard language on the same lines as the DDL of SQL, that is used to represent the structure of an object-oriented database.",
+      "category": "Core Definition"
+    },
+    {
+      "term": "Why Object-Oriented Database?",
+      "definition": "An object-oriented database is used for complex data types.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Limitations Of Relational Databases",
+      "definition": "Thus, the main asset of relational databases, viz., its simplicity for such applications, is also one of its weaknesses in the case of complex applications.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Object-Relational Database Systems",
+      "definition": "Object-Relational Database Systems are the relational database systems that have been enhanced to include the features of object-oriented paradigm.",
+      "category": "Key Concept"
+    },
+    {
+      "term": "Complex Data Types",
+      "definition": "In the previous section, we have used the term complex data types without defining it.",
+      "category": "Key Concept"
+    }
+  ],
+  "important_points": [
+    {
+      "section_num": "13.2",
+      "topic": "Why Object-Oriented Database?",
+      "points": [
+        "An object-oriented database is used for complex data types.",
+        "Such database applications require complex interrelationships among object hierarchies to be represented in database systems.",
+        "These interrelationships are difficult to implement in relational systems.",
+        "Let us discuss the need for object-oriented systems in advanced applications in more detail."
+      ]
+    },
+    {
+      "section_num": "13.2.1",
+      "topic": "Limitations of Relational Databases",
+      "points": [
+        "Thus, the main asset of relational databases, viz., its simplicity for such applications, is also one of its weaknesses in the case of complex applications.",
+        "The data domains in a relational system can be represented in relational databases as standard data types defined in the SQL.",
+        "However, the relational model does not allow extending these data types or creating the user’s own data types.",
+        "Thus, limiting the types of data that may be represented using relational databases."
+      ]
+    },
+    {
+      "section_num": "13.2.2",
+      "topic": "The Need for Object-Oriented Databases",
+      "points": [
+        "As discussed in the earlier section, relational database management systems have certain limitations.",
+        "Let us discuss some of the basic issues with respect to object-oriented databases.",
+        "The objects may be complex, or they may consist of low-level objects (for example, a window object may consist of many simpler objects like a menu bar, scroll bar, etc.).",
+        "On the other hand, object-oriented models would represent such a system very naturally through, an inheritance hierarchy."
+      ]
+    },
+    {
+      "section_num": "13.3",
+      "topic": "Object-Relational Database Systems",
+      "points": [
+        "Object-Relational Database Systems are the relational database systems that have been enhanced to include the features of object-oriented paradigm.",
+        "This section provides details on how these newer features have been implemented in the SQL.",
+        "Some of the basic object-oriented concepts that have been discussed in this section in the context of their inclusion into SQL standards include, the complex types, inheritance and object identity and reference types.",
+        "Complex Data Types In the previous section, we have used the term complex data types without defining it."
+      ]
+    },
+    {
+      "section_num": "13.3.1",
+      "topic": "Complex Data Types",
+      "points": [
+        "In the previous section, we have used the term complex data types without defining it.",
+        "Let us explain this with the help of a simple example.",
+        "The second approach is very inflexible, as it would require complex string related operations for extracting information.",
+        "If you represent the attributes of the Address as separate attributes, then the problem would be with respect to writing queries."
+      ]
+    },
+    {
+      "section_num": "13.3.2",
+      "topic": "Types and Inheritances in SQL",
+      "points": [
+        "In the previous sub-section, we discussed the data type – Address.",
+        "In this section, let us give more examples for such types, using SQL.",
+        "Consider the attribute: • Name – that includes given name, middle name and surname.",
+        "• Address – that includes address details, city, state and pin code."
+      ]
+    },
+    {
+      "section_num": "13.3.3",
+      "topic": "Additional Data Types of OOP in SQL",
+      "points": [
+        "The object-oriented/relational database must support the data types that allow multi- valued attributes to be represented easily.",
+        "Two such data types that exist in SQL are: • Arrays – stores information in an order and • Multisets – stores information in an unordered set.",
+        "Arrays not only allow authors to be represented but also allow the sequencing of the authors' names.",
+        "Multiset allows a number of keywords without any ordering imposed on them."
+      ]
+    },
+    {
+      "section_num": "13.3.4",
+      "topic": "Object Identity and Reference Type Using SQL",
+      "points": [
+        "Thus, an object-relational database system should address the following two concerns: • In relational databases, foreign keys are used to link the attributes in two different relations.",
+        "Can such keys be used in an object-relational database?",
+        "• How will you identify the object that is being referenced?",
+        "The following example will address the concerns stated above."
+      ]
+    }
+  ],
+  "formulas": [
+    "property of a relational",
+    "SELECT name FROM university_members ONLY;",
+    "Max(SELECT s.MARKS FROM Student s);"
+  ],
+  "study_notes_html": "\n    <div class=\"study-card flowchart-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🗺️ Concept Map & Hierarchy</span>\n        <h3 class=\"study-card-title\">Visual Knowledge Architecture</h3>\n      </div>\n      <div class=\"mermaid-diagram-box\">\n        <pre class=\"mermaid\">\ngraph TD\n  Root[\"Unit 13 Object-Oriented Database\"]\n  M1[\"13.2 Why Object-Oriented Database?\"]\n  Root --> M1\n  M1_1[\"13.2.1 Limitations of Relational Dat\"]\n  M1 --> M1_1\n  M1_2[\"13.2.2 The Need for Object-Oriented \"]\n  M1 --> M1_2\n  M2[\"13.3 Object-Relational Database Syst\"]\n  Root --> M2\n  M2_1[\"13.3.1 Complex Data Types\"]\n  M2 --> M2_1\n  M2_2[\"13.3.2 Types and Inheritances in SQL\"]\n  M2 --> M2_2\n  M2_3[\"13.3.3 Additional Data Types of OOP \"]\n  M2 --> M2_3\n  M3[\"13.4 Object-Oriented Database System\"]\n  Root --> M3\n  M3_1[\"13.4.1 Object Model\"]\n  M3 --> M3_1\n  M3_2[\"13.4.2 Object Definition Language\"]\n  M3 --> M3_2\n  M3_3[\"13.4.3 Object Query Language\"]\n  M3 --> M3_3\n  M4[\"13.5 OODBMS Vs Object-Relational Dat\"]\n  Root --> M4\n        </pre>\n      </div>\n    </div>\n    \n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📖 Core Definitions</span>\n            <h3 class=\"study-card-title\">Essential Terminology & Concepts</h3>\n          </div>\n          <div class=\"definitions-grid\">\n        \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Language (Odl)</span>\n                <span class=\"def-tag\">Core Definition</span>\n              </div>\n              <p class=\"def-text\">Language (Odl) a standard language on the same lines as the DDL of SQL, that is used to represent the structure of an object-oriented database.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Why Object-Oriented Database?</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">An object-oriented database is used for complex data types.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Limitations Of Relational Databases</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Thus, the main asset of relational databases, viz., its simplicity for such applications, is also one of its weaknesses in the case of complex applications.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Object-Relational Database Systems</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">Object-Relational Database Systems are the relational database systems that have been enhanced to include the features of object-oriented paradigm.</p>\n            </div>\n            \n\n            <div class=\"def-card\">\n              <div class=\"def-header\">\n                <span class=\"def-term\">Complex Data Types</span>\n                <span class=\"def-tag\">Key Concept</span>\n              </div>\n              <p class=\"def-text\">In the previous section, we have used the term complex data types without defining it.</p>\n            </div>\n            \n</div></div>\n\n        <div class=\"study-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">📌 Key Takeaways</span>\n            <h3 class=\"study-card-title\">Section-by-Section Study Breakdown</h3>\n          </div>\n          <div class=\"topics-summary-list\">\n        \n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2 Why Object-Oriented Database?</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>An object-oriented database is used for complex data types.</li>\n<li>Such database applications require complex interrelationships among object hierarchies to be represented in database systems.</li>\n<li>These interrelationships are difficult to implement in relational systems.</li>\n<li>Let us discuss the need for object-oriented systems in advanced applications in more detail.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2.1 Limitations of Relational Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus, the main asset of relational databases, viz., its simplicity for such applications, is also one of its weaknesses in the case of complex applications.</li>\n<li>The data domains in a relational system can be represented in relational databases as standard data types defined in the SQL.</li>\n<li>However, the relational model does not allow extending these data types or creating the user’s own data types.</li>\n<li>Thus, limiting the types of data that may be represented using relational databases.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.2.2 The Need for Object-Oriented Databases</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>As discussed in the earlier section, relational database management systems have certain limitations.</li>\n<li>Let us discuss some of the basic issues with respect to object-oriented databases.</li>\n<li>The objects may be complex, or they may consist of low-level objects (for example, a window object may consist of many simpler objects like a menu bar, scroll bar, etc.).</li>\n<li>On the other hand, object-oriented models would represent such a system very naturally through, an inheritance hierarchy.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3 Object-Relational Database Systems</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Object-Relational Database Systems are the relational database systems that have been enhanced to include the features of object-oriented paradigm.</li>\n<li>This section provides details on how these newer features have been implemented in the SQL.</li>\n<li>Some of the basic object-oriented concepts that have been discussed in this section in the context of their inclusion into SQL standards include, the complex types, inheritance and object identity and reference types.</li>\n<li>Complex Data Types In the previous section, we have used the term complex data types without defining it.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.1 Complex Data Types</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous section, we have used the term complex data types without defining it.</li>\n<li>Let us explain this with the help of a simple example.</li>\n<li>The second approach is very inflexible, as it would require complex string related operations for extracting information.</li>\n<li>If you represent the attributes of the Address as separate attributes, then the problem would be with respect to writing queries.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.2 Types and Inheritances in SQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>In the previous sub-section, we discussed the data type – Address.</li>\n<li>In this section, let us give more examples for such types, using SQL.</li>\n<li>Consider the attribute: • Name – that includes given name, middle name and surname.</li>\n<li>• Address – that includes address details, city, state and pin code.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.3 Additional Data Types of OOP in SQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>The object-oriented/relational database must support the data types that allow multi- valued attributes to be represented easily.</li>\n<li>Two such data types that exist in SQL are: • Arrays – stores information in an order and • Multisets – stores information in an unordered set.</li>\n<li>Arrays not only allow authors to be represented but also allow the sequencing of the authors' names.</li>\n<li>Multiset allows a number of keywords without any ordering imposed on them.</li>\n</ul></div>\n\n            <div class=\"topic-item\">\n              <h4 class=\"topic-item-title\">13.3.4 Object Identity and Reference Type Using SQL</h4>\n              <ul class=\"topic-item-bullets\">\n            \n<li>Thus, an object-relational database system should address the following two concerns: • In relational databases, foreign keys are used to link the attributes in two different relations.</li>\n<li>Can such keys be used in an object-relational database?</li>\n<li>• How will you identify the object that is being referenced?</li>\n<li>The following example will address the concerns stated above.</li>\n</ul></div>\n</div></div>\n\n        <div class=\"study-card formulas-card\">\n          <div class=\"study-card-header\">\n            <span class=\"study-card-badge\">⚡ Laws & Formulas</span>\n            <h3 class=\"study-card-title\">Governing Equations, Complexity & Rules</h3>\n          </div>\n          <div class=\"formulas-list\">\n        \n<div class=\"formula-box\"><code>property of a relational</code></div>\n<div class=\"formula-box\"><code>SELECT name FROM university_members ONLY;</code></div>\n<div class=\"formula-box\"><code>Max(SELECT s.MARKS FROM Student s);</code></div>\n</div></div>\n\n    <div class=\"study-card summary-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">🎯 Unit Summary</span>\n        <h3 class=\"study-card-title\">High-Impact Wrap-Up</h3>\n      </div>\n      <p class=\"summary-text\">Object-oriented technologies are one of the most popular technologies in the present era. Object orientation has also found its way into database technologies. The object- oriented database systems allow the representation of user-defined types, including operation on these types. They also allow the representation of inheritance using the type and table inheritance. The idea here is to represent the whole range of newer types if needed. Such features help in enhancing the performance of a database application</p>\n    </div>\n    \n\n    <div class=\"study-card pdf-switch-card\">\n      <div class=\"study-card-header\">\n        <span class=\"study-card-badge\">📚 Authentic Deep Dive</span>\n        <h3 class=\"study-card-title\">Need the Complete Unabridged Textbook?</h3>\n      </div>\n      <p class=\"reader-p\" style=\"margin-bottom:14px; font-size:14px; color:var(--text-secondary);\">\n        You have covered the high-yield study notes. If you wish to read the authentic full textbook, examine diagrams, or solve extensive exercises:\n      </p>\n      <div style=\"display:flex; justify-content:center;\">\n        <button class=\"btn-primary\" style=\"background:var(--primary); width:100%; font-size:14px; padding:12px 18px;\" onclick=\"togglePdfView('pdfs/Semester_1/MCS-207_Database_Management_Systems/Unit-13_Object-Oriented_Database.pdf')\">\n          📄 Read Original IGNOU PDF (19 Pages)\n        </button>\n      </div>\n    </div>\n    "
+}
