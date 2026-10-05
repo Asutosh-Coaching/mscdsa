@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Classification** forms a vital conceptual pillar. Artificial Intelligence models autonomous decision-making, while Machine Learning extracts predictive statistical patterns from data. From A* pathfinding in logistics to Deep Neural Networks powering Computer Vision and LLMs, AI/ML drives modern automated systems.
+In modern data systems and advanced analytics, **Classification** forms a vital conceptual pillar. Artificial Intelligence models autonomous decision-making, while Machine Learning extracts predictive statistical patterns from data. From A* pathfinding in logistics to Deep Neural Networks powering Computer Vision and LLMs, AI/ML drives modern automated systems.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering classification equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["10.5.1 Naïve Bayes"]
   N4["10.5.2 K-Nearest Neighbour K-NN"]
   N5["10.5.3 Decision Trees"]
+  N6["10.5.4 Logistic Regression"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -83,137 +85,151 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `10.3` Understanding of Supervised Learning
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 LEARNING To use machine learning techniques effectively, you need to know how they work. You can't just use them without knowing how they work and expect to get good results. Different techniques work for different kinds of problems, but it's not always clear which techniques will work in a given situation.
 
 You need to know something about the different kinds of solutions. Every workflow for machine learning starts with the following three questions: • What kind of data do you have available to work with? • What kinds of realisations are you hoping to arrive at as a result of it? • In what ways and contexts will those realisations be utilised?
 
 CLASSIFICATION CLUSTERING REGRESSION MACHINE LEARNING Supervised Learning Develop predictive model based on both input and output data Unsupervised Learning Group and interpret data based on input data Machine Learning Techniques Classification Your responses to these questions will assist you in determining whether supervised or unsupervised learning is best for you.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing understanding of supervised learning.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in understanding of supervised learning can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define understanding of supervised learning formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 #### `10.5` Classification Algorithms
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The Classification algorithm is a type of Supervised Learning that uses the training data to figure out the category of new observations. This method is used to figure out what kind of thing a new observation is. Classification is the process by which a computer programme learns from a set of data or observations and then sorts new observations into different classes or groups.
 
 "Yes" or "No," "0" or "1," "Spam" or "Not Spam," "Cat or Dog," and so on are all good examples. Classes are the same thing that have different names, like categories, objectives, and labels. In classification, the output variable is not a value but a category, such as "Green or Blue," "Fruit or Animal," etc.
 
 This is different from regression, where the output variable is a value. Since the classification method is a supervised learning method, it needs data that has been labelled in order to work. This means that the implementation of the algorithm includes both the input and the output that go with it.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing classification algorithms.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in classification algorithms can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define classification algorithms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `10.5.1` Naïve Bayes
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 This is an example of a statistical classification, which estimates the likelihood that a particular sample belongs to a particular group given the sample in question. The Bayes theorem provides the foundation for it. When used to big databases, the Bayesian classification demonstrates both improved accuracy and increased speed.
 
 In this section, we will talk about the most basic kind of Bayesian categorization. "The effect of a given attribute value on a certain class is unaffected by the values of other attributes, i.e. both are independent," is one of the fundamental underlying assumptions that underpin the native Bayesian classification, which is the simplest form of Bayesian classification.
 
 Class conditional independence is another name for this basic assumption. Let's go into greater depth about the naïve Bayesian classification, shall we? But before we get into it, let's take a moment to define the fundamental theorem that underpins this classification i.e. Bayes Theorem: In order to understand this theorem firstly lets understand the meaning of the following symbols or assumptions, they are as follows : • X is an example of a data set whose class needs to be determined.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing naïve bayes.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability measure satisfying Kolmogorov axioms: $P(S)=1, P(A) \ge 0$, and countable additivity. Bayes' Theorem computes posterior probability: $P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$. Variance measures dispersion: $\text{Var}(X) = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$.
+- **Boundary Conditions:** Zero probability conditioning events ($P(B) = 0$), distinguishing mutually exclusive events ($A \cap B = \emptyset$) from independent events ($P(A \cap B) = P(A)P(B)$), and heavy-tailed infinite variance.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in naïve bayes can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** A/B test statistical significance, Naive Bayes spam classifiers, Bayesian hyperparameter optimization, and stochastic risk quantification in financial algorithms.
+- **Real-World Pitfall:** Confusing conditional probability $P(A \mid B)$ with $P(B \mid A)$ (the Prosecutor's Fallacy), or falsely assuming independence between correlated feature variables.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define naïve bayes formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate conditional probabilities using the Law of Total Probability and Bayes' Theorem; calculate expectation $\mathbb{E}[X]$ and variance for discrete and continuous random variables.
 
 #### `10.5.2` K-Nearest Neighbour (K-NN)
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 This approach, places items in the class to which they are “closest” to their neighbour.It must determine distance between an item and a class. Classes are represented by centroid (Central value) and the individual points.One of the algorithms that is used is K-Nearest Neighbors.
 
 We know that The classification task maps data into predefined groups or classes. Given database/dataset D={t1,t2,…,tn} and a set of classes C={C1,… ,Cm}, the classification Problem is to define a mapping f:D→C where each ti is assigned to one class, that is, it divides database/dataset D into classes specified in the Set C.
 
 A few very simple examples to elucidate classification could be: • Teachers classify students’ marks data into a set of grades as A, B, C, D, or F. • Classification of the height of a set of persons into the classes tall, medium or short. The basic approaches to classification are: • To create specific models by, evaluating training data, which is basically the old data, that has already been classified by using the domain of the experts’ knowledge.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing k-nearest neighbour (k-nn).
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in k-nearest neighbour (k-nn) can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define k-nearest neighbour (k-nn) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 #### `10.5.3` Decision Trees
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Given a data set D = {t1,t2 …, tn} where ti=<ti1, …, tih>, that is, each tuple is represented by h attributes, assume that, the database schema contains attributes as {A1, A2, …, Ah}. Also, let us suppose that the classes are C={C1, …., Cm}, then: Decision or Classification Tree is a tree associated with D such that • Each internal node is labeled with attribute, Ai • Each arc is labeled with the predicate which can be applied to the attribute at the parent node.
 
 • Each leaf node is labeled with a class, Cj Basics steps in the Decision Tree are as follows: • Building the tree by using the training set dataset/database. • Applying the tree to the new dataset/database. Decision Tree Induction is the process of learning about the classification using the inductive approach.
 
 During this process, we create a decision tree from the training data. This decision tree can, then be used, for making classifications. To define this we need to define the following. Let us assume that we are given probabilities p1, p2, .., ps whose sum is 1. Let us also define the term Entropy, which is the measure of the amount of randomness or surprise or uncertainty.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing decision trees.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Hierarchical acyclic data structure. Binary Search Trees enforce $\text{left} < \text{root} \le \text{right}$. Self-balancing AVL and Red-Black trees execute pointer rotations to maintain $\mathcal{O}(\log n)$ depth invariants.
+- **Boundary Conditions:** Degenerate skewed trees degenerating to $\mathcal{O}(n)$ singly linked lists, empty roots, and deletions of nodes with two children requiring in-order successor replacements.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in decision trees can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** B+ tree indexing in SQL relational databases, ensemble decision trees (Random Forest, XGBoost), and Min/Max Heaps in priority queues for top-$k$ recommendation retrieval.
+- **Real-World Pitfall:** Unbalanced sequential insertions degrading search times from $\mathcal{O}(\log n)$ to $\mathcal{O}(n)$, or failing to update parent pointers during tree rebalancing.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define decision trees formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Draw step-by-step tree insertion and deletion states; write recursive traversals (Pre-order, In-order, Post-order); illustrate AVL single/double rotations.
 
 #### `10.5.4` Logistic Regression
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Logistic Regression in Machine Learning • Logistic regression, which is part of the Supervised Learning method, is one of the most popular Machine Learning algorithms. It is used to predict the categorical dependent variable based on a set of independent variables. • Logistic regression predicts the outcome of a dependent variable that has a "yes" or "no" answer.
 
 Because of this, the result must be a discrete or categorical value. It can be Yes or No, 0 or 1, true or false, etc., but instead of giving the exact value as 0 or 1, it gives the probabilistic values that lie between 0 and 1. • Logistic Regression is a lot like Linear Regression, but the way they are used is different.
 
 Linear regression is used to solve regression problems, while logistic regression is used to solve classification problems. • In logistic regression, we fit a "S"-shaped logistic function, which predicts two maximum values, instead of a regression line (0 or 1). • The curve from the logistic function shows how likely something is, like whether the cells are cancerous or not, whether a mouse is overweight or not based on its weight, etc.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing logistic regression.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Ordinary Least Squares (OLS) minimizes residual sum of squares: $\min_\beta \sum (y_i - x_i^T \beta)^2$. Normal equation analytical solution: $\hat{\beta} = (X^T X)^{-1} X^T y$. Logistic regression applies sigmoid link $\sigma(z) = \frac{1}{1 + e^{-z}}$ optimizing log-likelihood.
+- **Boundary Conditions:** Perfect multicollinearity causing singular non-invertible $X^T X$, heteroscedasticity (non-constant residual variance), and high-leverage outlier leverage points.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in logistic regression can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Predictive target forecasting, econometric attribution modeling, risk scoring models, and baseline benchmark modeling in data science pipelines.
+- **Real-World Pitfall:** High multicollinearity inflating coefficient standard errors, or fitting linear models without verifying residual normality and homoscedasticity plots.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define logistic regression formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Derive OLS normal equations; interpret slope $\beta_1$ and intercept $\beta_0$; calculate $R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}}$ and conduct $F$-tests for overall model significance.
 
 #### `10.5.5` Support Vector Machines
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Support Vector Machine, also called Support Vector Classification, is a supervised and linear Machine Learning technique that is most often used to solve classification problems. In this section, we will take a look at Support Vector Machines, a new approach for categorising data that has a lot of potential and can be used for both linear and nonlinear datasets.
 
 A support vector machine, often known as an SVM, is a type of algorithm that transforms the primary training data into a new format that has a higher dimension by making use of a nonlinear mapping. It searches for the ideal linear separating hyperplane in this additional dimension.
 
 This hyperplane is referred to as a "decision boundary" since it separates the tuples of one class from those of another. A hyperplane can always be used to split data from two classes if the appropriate nonlinear mapping to a high enough dimension is used. This hyperplane is located by the SVM through the use of support vectors, also known as important training tuples, and margins (defined by the support vectors).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing support vector machines.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in support vector machines can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define support vector machines formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -225,23 +241,29 @@ To solidify your theoretical understanding, work through these fully solved, ste
 **Detailed Step-by-Step Solution:**
 
 1. **Parent Entropy $H(S)$:**
+
 $$
 H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
 $$
+
 
 2. **Subset Entropies:**
 - For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
 - For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
 
 3. **Weighted Child Entropy:**
+
 $$
 H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
 $$
 
+
 4. **Information Gain:**
+
 $$
 IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
 $$
+
 (Attribute provides 0.048 bits of entropy reduction).
 
 #### 🧮 Example 2: A* Search Step Evaluation
@@ -288,45 +310,61 @@ print(f"Information Gain: {ig:.4f} bits")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Compare between Supervised and Un-Supervised Learning. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Classification.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> List the Steps Involved in Supervised Learning <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Classification.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> What are the Common Issues Faced While Using Supervised Learning <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Classification.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Compare between Multi Class and Multi Label Classification <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Classification.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ( $h(n) \le h^*(n)$ ).
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the formula for Information Gain used in Decision Trees? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> What is the formula for Information Gain used in Decision Trees? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > $IG(S, A) = H(S) - \sum_{v \in \text{Values}(A)} \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> Why is the Softmax function used in multi-class classification neural networks? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Compare between Supervised and Un-Supervised Learning. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Classification. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> List the Steps Involved in Supervised Learning <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Classification. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> What are the Common Issues Faced While Using Supervised Learning <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Classification. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

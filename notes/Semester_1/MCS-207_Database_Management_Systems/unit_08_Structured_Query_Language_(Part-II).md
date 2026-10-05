@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Structured Query Language (Part-II)** forms a vital conceptual pillar. Relational algebra and SQL form the query engine of every data warehouse (Snowflake, BigQuery, Postgres). Concurrency protocols and normalization ensure data integrity and ACID consistency across concurrent transaction streams.
+In modern data systems and advanced analytics, **Structured Query Language (Part-II)** forms a vital conceptual pillar. Relational algebra and SQL form the query engine of every data warehouse (Snowflake, BigQuery, Postgres). Concurrency protocols and normalization ensure data integrity and ACID consistency across concurrent transaction streams.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering structured query language (part-ii) equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["8.2.2 Outer Join"]
   N4["8.2.3 Self-Join"]
   N5["8.3 Nested Queries"]
+  N6["8.3.1 Subqueries"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -77,152 +79,168 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `8.2` SQL Joins
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Equi-join, as the name suggests, has equality as the joining condition. This means that the attributes that you are using to join would be checked for equality. Please note that the names of the joining columns in the two tables may be different. The following is an example of an equijoin operation: Example 1: Using the tables of Figure 1answer the query: List the ID, name of the client, and the order ids of all the clients who have placed an order.
 
 You need to use the CLIENT and ORDER tables to answer this query, as the name of the clients are in the CLIENT table and the order id information is in the ORDER table. You may use equi-join operation for this query using the columns ClientNo in CLIENT and ClientNo in the ORDER table.
 
 Though in this present example, both the columns have the same name, i.e. ClentID, equi-join operation does not require these names to be the same. SQL query for the query is presented below: Query Using equi-join: SELECT c.ClientID, c.ClientName, o.ClientID, o.OrderID FROM CLIENT c, ORDER o WHERE c.ClientID = o.ClientID; The result of the query, on the tables of Figure 1, will be: c.ClientID ClientName o.ClientID OrderID C001 ABCD C001 O001 C001 ABCD C001 O003 C002 BCDE C002 O002 C002 BCDE C002 O005 C003 CDEF C003 O004 The output of shows the ClientID of both the CLIENT and the ORDER tables.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sql joins.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Organizes data into mathematical relations with schema constraints. Normalization (1NF $\to$ 2NF $\to$ 3NF $\to$ BCNF) decomposes relations using functional dependencies $X \to Y$ to eliminate insertion, update, and deletion anomalies. ACID guarantees are enforced via Two-Phase Locking (2PL) and Write-Ahead Logging (WAL).
+- **Boundary Conditions:** NULL values violating primary key Entity Integrity, dangling foreign key references violating Referential Integrity, lossy table decompositions, and deadlocks in concurrent schedules.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sql joins can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production OLTP database schemas, enterprise data warehouse dimensional modeling, SQL query optimizer explain plans, and microservice distributed transactions.
+- **Real-World Pitfall:** Over-normalizing analytical (OLAP) schemas causing costly multi-table joins, or selecting inappropriate transaction isolation levels leading to dirty or phantom reads.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define sql joins formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Determine candidate keys using attribute closures $X^+$; test whether a table satisfies 3NF or BCNF; verify lossless join and dependency preservation.
 
 #### `8.2.1` Equi-join
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Equi-join, as the name suggests, has equality as the joining condition. This means that the attributes that you are using to join would be checked for equality. Please note that the names of the joining columns in the two tables may be different. The following is an example of an equijoin operation: Example 1: Using the tables of Figure 1answer the query: List the ID, name of the client, and the order ids of all the clients who have placed an order.
 
 You need to use the CLIENT and ORDER tables to answer this query, as the name of the clients are in the CLIENT table and the order id information is in the ORDER table. You may use equi-join operation for this query using the columns ClientNo in CLIENT and ClientNo in the ORDER table.
 
 Though in this present example, both the columns have the same name, i.e. ClentID, equi-join operation does not require these names to be the same. SQL query for the query is presented below: Query Using equi-join: SELECT c.ClientID, c.ClientName, o.ClientID, o.OrderID FROM CLIENT c, ORDER o WHERE c.ClientID = o.ClientID; The result of the query, on the tables of Figure 1, will be: c.ClientID ClientName o.ClientID OrderID C001 ABCD C001 O001 C001 ABCD C001 O003 C002 BCDE C002 O002 C002 BCDE C002 O005 C003 CDEF C003 O004 The output of shows the ClientID of both the CLIENT and the ORDER tables.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing equi-join.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language (part-ii).
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in equi-join can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define equi-join formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in equi-join and articulate practical applications in real-world scenarios.
 
 #### `8.2.2` Outer Join
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Consider the situation that a new client has been added to the client table and the present state of the CLIENT table is: Table Name: CLIENT ClientID ClientName ClientAddress ClientPhone C001 ABCD 79, MGRoad C002 BCDE Raman Street C003 CDEF Vindyachal apatments 9999999993 C004 DEFG Maidan Road Further, assume that this new client has not issued any order.
 
 Let us now issue the query of example 1 again on the present state of the database. You will find the result of the query will still be the same, as shown in example 1. So, we get no information about C004, in the result of the query. If the objective of the query was to show the list of all the clients and their OrderIDs, irrespective of the fact, that they have given zero or more orders, then how would you extract such information?
 
 In effect, you want that all the records from the CLIENT table should participate in joining even if there is no joining row in the ORDER table. This requires the use of OUTER JOIN operation. Example 2: List all the clients and their orders (NULL in case no order is given by a client).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing outer join.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language (part-ii).
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in outer join can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define outer join formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in outer join and articulate practical applications in real-world scenarios.
 
 #### `8.2.3` Self-Join
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In the self-join operation, a table is joined with a copy of itself. This is very useful for queries, which draw information from within a column of a table. The following is an example of the self-join. Example 3: Find the pairs of similar priced items in the ITEM table. You may first simply inspect the ITEM table.
 
 You will find that pairs -Pen and Paper Sheet; and Pencil and Sharpener, have the same price. How did you find this information? You compared the ItemPrice of each item with other ItemPrice. This inspection, in general, can be performed by join operation. Hence, you can answer the query using the following SQL command: SELECT i1.ItemName, i2.ItemName FROM ITEM i1, ITEM i2 WHERE i1.ItemPrice = i2.ItemPrice; Thus, you are joining the two tables on identical ItemPrice, and displaying the pair of names of the items that have similar prices.
 
 However, you will get the following output of this SQL command: i1.ItemName i2.ItemName Pen Pen Pen Paper Sheet Pencil Pencil Pencil Sharpener Paper Sheet Paper Sheet Paper Sheet Pen Sharpener Sharpener Sharpener Pencil You may observe that the output of the command has many extra records like records with the same item, e.g.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing self-join.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language (part-ii).
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in self-join can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define self-join formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in self-join and articulate practical applications in real-world scenarios.
 
 #### `8.3` Nested Queries
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In the previous section, we discussed join queries, which are responsible for joining the data from two tables. Nested queries are used when the output of a query may be useful for the execution of another query. Thus, you can create a main query nest a sub-query in any of the clauses of this main query.
 
 In this section, we discuss the basic type of nested queries and then a special type of nested subqueries called correlated subqueries.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing nested queries.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language (part-ii).
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in nested queries can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define nested queries formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in nested queries and articulate practical applications in real-world scenarios.
 
 #### `8.3.1` Subqueries
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 A sub-query is another SELECT statement that is used in the main SELECT statement. Please remember the following points about a subquery: • A sub-query is executed prior to the main query. Therefore, you can use the result of a sub-query in an expression of the main query. • A sub-query, on its execution, can return either a single value or a set of values or a relation.
 
 Therefore, the result of the sub-query can be used in a comparison in the WHERE or HAVING clause or for comparison with a set operator; or even in the FROM clause when a relation is returned. • You can put a sub-query inside a sub-query. You can use a separate table in the main and sub-query.
 
 • You should not use the ORDER BY clause in a sub-query, rather it should be used as the last clause of the main query. However, you can use the GROUP BY clause in the sub-query. • When you use sub-queries in the WHERE or HAVING clause of the main query, you may be required to use comparison or set operators.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing subqueries.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language (part-ii).
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in subqueries can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define subqueries formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in subqueries and articulate practical applications in real-world scenarios.
 
 #### `8.3.2` Correlated Subqueries
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In many queries, the columns of the tables used in FROM clause are also used in the subquery. Such subqueries are called Correlated subqueries and generally are time-consuming queries. These queries are explained with the help of the following example. Example 11: List the client id and name of the clients, who have ordered ItemID I01 and ItemID I03, as part of a single order.
 
 This query can be answered as a correlated query as follows: SELECT DISTINCT OrderID FROM ORDERDETAILS outer WHERE ORDERDETAILS.ItemID = “I01” AND EXISTS ( SELECT DISTINCT OrderID FROM ORDERDETAILS inner WHERE outer.OrderID=inner.OrderID AND outer.ItemID<inner.ItemID AND inner.ItemID = “I03” ); The execution of such a correlated query is time-consuming.
 
 Since in these queries, the subquery is executed for each instance of the main query. For example, in the case of example 11, the main query will find that the order O003 fulfils the main clause. This will trigger the execution of the subquery, which will check that for the same value of order O003, there exists a record for item I03.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing correlated subqueries.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language (part-ii).
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in correlated subqueries can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define correlated subqueries formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in correlated subqueries and articulate practical applications in real-world scenarios.
 
 #### `8.4` Database Objects
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Database objects are useful concepts in a database system. In this section, we discuss four different types of objects, which are defined in many database management systems. Views are virtual tables, which may be used for implementing database security. In addition, they can also be used for database query optimisation.
 
 Sequences are used to maintain an automatic sequence of numbers, which can be very useful for input of unique values in a column. Indexes are used to enhance the performance of a database system. The following sub-section discusses these concepts in detail.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing database objects.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Organizes data into mathematical relations with schema constraints. Normalization (1NF $\to$ 2NF $\to$ 3NF $\to$ BCNF) decomposes relations using functional dependencies $X \to Y$ to eliminate insertion, update, and deletion anomalies. ACID guarantees are enforced via Two-Phase Locking (2PL) and Write-Ahead Logging (WAL).
+- **Boundary Conditions:** NULL values violating primary key Entity Integrity, dangling foreign key references violating Referential Integrity, lossy table decompositions, and deadlocks in concurrent schedules.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in database objects can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production OLTP database schemas, enterprise data warehouse dimensional modeling, SQL query optimizer explain plans, and microservice distributed transactions.
+- **Real-World Pitfall:** Over-normalizing analytical (OLAP) schemas causing costly multi-table joins, or selecting inappropriate transaction isolation levels leading to dirty or phantom reads.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define database objects formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Determine candidate keys using attribute closures $X^+$; test whether a table satisfies 3NF or BCNF; verify lossless join and dependency preservation.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -291,45 +309,61 @@ print("Natural Join Result:\n", natural_join[['name', 'dept_name']])
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What does ACID stand for in database management? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Consider the Tables, given in Figure 1, and answer the following questions: <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language (Part-II).
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Find the list of all the item IDs, item names and related Order IDs. This query should list the name of the items even if it is not part of any order. ………………………………………………………………………………………………………………… ………………………………………………………………………………………………… ………………………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language (Part-II).
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Find the list of items that have been purchased together. ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language (Part-II).
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> What is a subquery? When would you like to use the sub-query? ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… ………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language (Part-II).
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What does ACID stand for in database management? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Atomicity, Consistency, Isolation, and Durability.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the difference between 3NF and BCNF? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> What is the difference between 3NF and BCNF? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > In 3NF, for any non-trivial $X \to Y$, $X$ must be a superkey OR $Y$ must be a prime attribute. In BCNF (Boyce-Codd Normal Form), $X$ MUST strictly be a superkey (eliminating all dependencies on prime attributes).
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> What is the relational algebra symbol for row selection and column projection? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> Row selection: $\sigma$ (Sigma). Column projection: $\pi$ (Pi).
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Find the list of items that have been purchased together. ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Structured Query Language (Part-II). Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> What is a subquery? When would you like to use the sub-query? ………………………………………………………………………………………………………… ………………………………………………………………………………………………………… ………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Structured Query Language (Part-II). Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Consider the following relations Schema given in question 2 above, and the following two SQL queries on this schema. What is the purpose of these two queries? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Structured Query Language (Part-II). Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

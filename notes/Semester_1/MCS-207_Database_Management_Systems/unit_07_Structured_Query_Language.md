@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Structured Query Language** forms a vital conceptual pillar. Relational algebra and SQL form the query engine of every data warehouse (Snowflake, BigQuery, Postgres). Concurrency protocols and normalization ensure data integrity and ACID consistency across concurrent transaction streams.
+In modern data systems and advanced analytics, **Structured Query Language** forms a vital conceptual pillar. Relational algebra and SQL form the query engine of every data warehouse (Snowflake, BigQuery, Postgres). Concurrency protocols and normalization ensure data integrity and ACID consistency across concurrent transaction streams.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering structured query language equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["7.4.1 Data insertion, Updating and Deletion"]
   N4["7.4.2 Data Retrieval"]
   N5["7.5 GROUP BY Clause and Aggregate functions"]
+  N6["7.6 Data Control Language"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -77,116 +79,127 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `7.3` Data Definition Language
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Data Definition Language** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Structured Query Language**, understanding data definition language is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In database architecture, **Data Definition Language** formalizes data persistence, relational integrity, and schema normalization. Within **Structured Query Language**, this section establishes formal guarantees that prevent data anomalies (insertion, update, and deletion anomalies) while ensuring ACID transaction compliance.
+
+By anchoring schemas to mathematical relations, query optimizers can rewrite declarative SQL queries into optimal relational algebra execution trees without altering the result set.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data definition language.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data definition language can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data definition language formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in data definition language and articulate practical applications in real-world scenarios.
 
 #### `7.4` Data Manipulation Language
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Once you have created a database and database tables along with the necessary constraints, the next step is to insert data in the tables. While inserting the data in the tables, you may commit some mistakes or there may be the need of making certain changes in the data of the tables, therefore, you would be requiring SQL commands to INSERT, UPDATE and DELETE records in a database table.
 
 These are Data manipulation language (DML) commands. These DML commands allow you to input and edit the data in the tables. Further, you would like to retrieve selected information from the database. In this section, first, we discuss the command to insert, update or delete the data followed by commands to retrieve information from the database.
 
 You may please note that the changes made by the DML statements are made permanent only after these operations are COMMITTED. You will learn about
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data manipulation language.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data manipulation language can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data manipulation language formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in data manipulation language and articulate practical applications in real-world scenarios.
 
 #### `7.4.1` Data insertion, Updating and Deletion
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The DML commands are used for inputting and editing data in a database table. To insert data in a table, you may use the insert command, which is explained next. Inserting Data: The following command is used to insert a record into a table. The following two formats of insert commands are used: If you are inserting a record that had data for all the columns, then you can simply use the command format: INSERT INTO <name of the table> VALUES (v1, v2, v3, …); Please note that v1, v2, etc.
 
 are the values that are to be inserted into the respective column of the database. For example, to insert data into the PROGRAMME table, you can use the following INSERT command: INSERT INTO PROGRAMME VALUES (“PGDCA”, “Postgraduate Diploma in Computer Applications”, 22000); Please note the following with respect to the insert command, given above: • The values inserted into the table would be PROGCODE as PGDCA; PROGNAME as Postgraduate Diploma in Computer Applications; and FEE as 22000.
 
 • You can use parameters instead of actual values, for example, you can use INSERT INTO PROGRAMME VALUES (&1, &2, &3); These parameter values can be input at the time of execution of the query. • You can use a sub-query (which will be explained in the next unit) instead of the values given in the command in the (…).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data insertion, updating and deletion.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data insertion, updating and deletion can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data insertion, updating and deletion formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in data insertion, updating and deletion and articulate practical applications in real-world scenarios.
 
 #### `7.4.2` Data Retrieval
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 One of the most popular features of any DBMS is the ad-hoc query facility, which requires data retrieval as per the need and access rights of the user. SELECT statement is one of the most used statements of DML, as it helps in the retrieval of requisite data. In this section, we discuss various clauses of this statement.
 
 SELECT Statement: The following is the basic format of the select statement. SELECT <List of Column names or expressions to be displayed> FROM <List of Tables that contain the data, whose columns are in select> WHERE <Conditions for selection of records for display> ; The following are examples of the use of this statement for the retrieval of data from the two relations given in Figure 1.
 
 Example 1: List the details of all the programmes of the University. For answering this query, are using one wildcard character (*), which represents all the columns of a table. Please note that in case, you have used * in an arithmetic expression in the SELECT clause, it will be treated as a multiplication sign.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data retrieval.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data retrieval can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data retrieval formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in data retrieval and articulate practical applications in real-world scenarios.
 
 #### `7.5` GROUP BY Clause and Aggregate functions
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In the previous section, you have gone through the concept of data manipulation language (DML). We have discussed the SELECT statement and its various clauses. In a database system, several queries require DBMS to produce information about a group. For example, you may be interested in finding the average marks of the group of PGDCA students vis-à-vis BCA students.
 
 The SQL supports a GROUP BY clause for such cases. In addition, SQL also supports a number of functions that can find aggregate information for a group of records. These functions are required to find the sum, average, counting of records etc. These are called aggregate functions.
 
 The following table defines some of the important aggregate functions used in SQL. count Used to count the number of records sum Finds the sum of the data of a column avg Finds the average of the data of a column max Finds the maximum value from the data of a column min Find the minimum value from the data of a column Figure 3: Some Aggregate functions in SQL Let us explain the use of these functions with the help of a few examples.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing group by clause and aggregate functions.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in group by clause and aggregate functions can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define group by clause and aggregate functions formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `7.6` Data Control Language
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The purpose of data control language (DCL) is to create users and assign access rights to them. In general, these commands are executed by a database administrator. The following are some of the most used DCL commands. Creating a new user: You can create a new user using the following command: CREATE USER < username for database user> IDENTIFIED BY < Password for the user> For example, you can create a new user with the username “PGDCA_Student” with the password “PGDCA123” CREATE USER PGDCA_Student IDENTIFIED BY PGDCA123 Use of GRANT Command: GRANT is used to give different kinds of accesses to a database user.
 
 Block3 covers the basic aspects of the GRANT option. In general, SQL supports two kinds of access permissions: • The permissions that are at the system level. • The permissions at the level of an object, such as a table, record, column etc. The system-level permissions are, in general, specific to the DBMS environment, therefore, you may refer to the system documentation for details on such permissions.
 
 In this section, we provide a basic introduction to object-level permissions with the help of examples. To give permission to get information from a table, the following SQL command may be used. GRANT SELECT ON STUDENT, PROGRAMME TO PGDCA_Student; To give permission for inserting and updating a record in the STUDENT table, you may use the following SQL command: GRANT INSERT, UPDATE ON STUDENT TO PGDCA_Student; In case you want to GRANT the SELECT access rights to more than one user on STUDENT table, then you may use the following command: GRANT SELECT ON STUDENT TO PGDCA_Student1, PGDCA_Student2; Use of REVOKE command: The REVOKE command is used to remove the access permissions that were granted to a user.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data control language.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for structured query language.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data control language can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data control language formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in data control language and articulate practical applications in real-world scenarios.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -255,45 +268,61 @@ print("Natural Join Result:\n", natural_join[['name', 'dept_name']])
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What does ACID stand for in database management? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> List the advantages and disadvantages of using SQL. …………………………………………………………………………………….…………………… ……………………………………………………………….………………………………………… …………………………………………………………………………………….…………………… ……………………………………………………………….………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> List the various clauses of the SELECT statement giving their purpose. ……………………………………………………………………………………..…………………… ………………………………………………………………..………………………………………... <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Consider the supplier relations given in Question 3 of Check Your Progress 2. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Write the SQL commands for the following queries: a) List the suppliers who have made more than one supply. b) List the suppliers who have made more than one supply, with each supply being more than <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Structured Query Language.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What does ACID stand for in database management? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Atomicity, Consistency, Isolation, and Durability.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the difference between 3NF and BCNF? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> What is the difference between 3NF and BCNF? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > In 3NF, for any non-trivial $X \to Y$, $X$ must be a superkey OR $Y$ must be a prime attribute. In BCNF (Boyce-Codd Normal Form), $X$ MUST strictly be a superkey (eliminating all dependencies on prime attributes).
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> What is the relational algebra symbol for row selection and column projection? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> Row selection: $\sigma$ (Sigma). Column projection: $\pi$ (Pi).
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> List the advantages and disadvantages of using SQL. …………………………………………………………………………………….…………………… ……………………………………………………………….………………………………………… …………………………………………………………………………………….…………………… ……………………………………………………………….………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Structured Query Language. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> • While booking the room the BookedFrom and BookedTo should follow the following relationship: Today’s Date <= BookedFrom <= BookedTo <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Structured Query Language. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Write the SQL commands to insert the following data in the STUDENT and PROGRAMME table. Highlight the errors, if any. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Structured Query Language. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Database Integrity, Functional Dependency and Normalisation** forms a vital conceptual pillar. Functions are deterministic mappings between inputs and outputs. In machine learning, a predictive model is an approximating function $\hat{y} = f(\mathbf{x}; \mathbf{\theta})$. Understanding injective, surjective, and bijective mappings is essential for dimensionality reduction, autoencoders, and invertibility.
+In modern data systems and advanced analytics, **Database Integrity, Functional Dependency and Normalisation** forms a vital conceptual pillar. Functions are deterministic mappings between inputs and outputs. In machine learning, a predictive model is an approximating function $\hat{y} = f(\mathbf{x}; \mathbf{\theta})$. Understanding injective, surjective, and bijective mappings is essential for dimensionality reduction, autoencoders, and invertibility.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering database integrity, functional dependency and normalisation equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["5.2.2 Referential Integrity"]
   N4["5.2.3 Entity Integrity"]
   N5["5.3 Redundancy and Associated Problems"]
+  N6["5.4 Functional Dependencies"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -78,154 +80,169 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `5.2` Database Integrity
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 It can be simply defined as: The database must not contain any unmatched foreign key values. ROLEID Role_descrption EMPID PROJID ROLEID Design TCS Coding LG Marketing B++1 PROJECT EMPLOYEE ROLE ASSIGNMENT Figure 5.1: E-R diagram for employee role in development Database Integrity and Normalisation The term “unmatched foreign key value” means a foreign key value for which there does not exist a matching value of the relevant candidate key in the relevant target (referenced) relation.
 
 For example, any value existing in the EMPID attribute in ASSIGNMENT relation must exist in the EMPLOYEE relation. That is, the only EMPIDs that can exist in the EMPLOYEE relation are 101, 102 and 103 for the present state/ instance of the database given in Figure 5.2. If we want to add a tuple with EMPID value 104 in the ASSIGNMENT relation, it will cause violation of referential integrity constraint.
 
 Logically it is obvious, after all the employee 104 does not exist, so how can s/he be assigned any work. Database modifications can cause violations of referential integrity. We list here the referential action that you may specify for each type of database modification to preserve the referential-integrity constraint: Delete During the deletion of a tuple two cases can occur: Deletion of tuple in relation having the foreign key: In such a case simply delete the desired tuple.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing database integrity.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in database integrity can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define database integrity formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.2.1` The Keys
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **The Keys** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Database Integrity, Functional Dependency and Normalisation**, understanding the keys is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In database architecture, **The Keys** formalizes data persistence, relational integrity, and schema normalization. Within **Database Integrity, Functional Dependency and Normalisation**, this section establishes formal guarantees that prevent data anomalies (insertion, update, and deletion anomalies) while ensuring ACID transaction compliance.
+
+By anchoring schemas to mathematical relations, query optimizers can rewrite declarative SQL queries into optimal relational algebra execution trees without altering the result set.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing the keys.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in the keys can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define the keys formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.2.2` Referential Integrity
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 It can be simply defined as: The database must not contain any unmatched foreign key values. ROLEID Role_descrption EMPID PROJID ROLEID Design TCS Coding LG Marketing B++1 PROJECT EMPLOYEE ROLE ASSIGNMENT Figure 5.1: E-R diagram for employee role in development Database Integrity and Normalisation The term “unmatched foreign key value” means a foreign key value for which there does not exist a matching value of the relevant candidate key in the relevant target (referenced) relation.
 
 For example, any value existing in the EMPID attribute in ASSIGNMENT relation must exist in the EMPLOYEE relation. That is, the only EMPIDs that can exist in the EMPLOYEE relation are 101, 102 and 103 for the present state/ instance of the database given in Figure 5.2. If we want to add a tuple with EMPID value 104 in the ASSIGNMENT relation, it will cause violation of referential integrity constraint.
 
 Logically it is obvious, after all the employee 104 does not exist, so how can s/he be assigned any work. Database modifications can cause violations of referential integrity. We list here the referential action that you may specify for each type of database modification to preserve the referential-integrity constraint: Delete During the deletion of a tuple two cases can occur: Deletion of tuple in relation having the foreign key: In such a case simply delete the desired tuple.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing referential integrity.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in referential integrity can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define referential integrity formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.2.3` Entity Integrity
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Before describing the second type of integrity constraint, viz., Entity Integrity, you should be familiar with the concept of NULL. Basically, NULL is intended as a basis for dealing with the problem of missing information. This kind of situation is frequently encountered in the real world.
 
 For example, historical records sometimes have entries such as “Date of birth unknown”. Hence it is necessary to have some way of dealing with such situations in database systems. Codd proposed an approach to this issue that makes use of special markers called NULL to represent such missing information.
 
 A given attribute in the relation might or might not be allowed to contain NULL. But can the Primary key or any of its components (in case primary key is a composite key) contain a NULL? To answer this question an Entity Integrity Rule states: No component of the primary key of a relation is allowed to accept NULL.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing entity integrity.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in entity integrity can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define entity integrity formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.3` Redundancy and Associated Problems
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Let us consider the following relation STUDENT. The Database Management System Concepts Figure 5.3: A state of STUDENT relation The above relation satisfies the properties of a relation and contains a single value in each cell. Conceptually it is convenient to have all the information in one relation, as a single query to the database may produce complete information about a person.
 
 Does the student relation, as given in Figure 5.3 has any undesirable characteristics? You may observe that Figure 5.3 contains duplicate information in several attributes. For example, the student, whose enrolment number is 050112345 has a name - Rohan and the student stays at an address “D-27, Main Road, Ranchi”.
 
 This information is repetitive in the first three attributes of tuples 1, 2 and 3 (shown in Figure 5.3 in red is taught by “Preeti Anand”, whose office number is 103 (shown in Figure 5.3 in purple colour). You can observe that even this information is repetitive in tuple 3 and tuple 4.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing redundancy and associated problems.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in redundancy and associated problems can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define redundancy and associated problems formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.4` Functional Dependencies
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 A database is a collection of related information and it is therefore inevitable that some items of information in the database would depend on some other items of information. The information is either single-valued or multi-valued. The enrolment number of a student and his/her date of birth are single-valued information; qualifications of a person or subjects that an instructor teaches are multi-valued facts.
 
 In this section, we will deal with single-valued facts, which forms the basis of the concept of functional dependency. Let us define this concept logically. Functional Dependency (FD) Let us consider a single universal relation schema “A”. A functional dependency denoted by X à Y, between two sets of attributes X and Y that are subset of universal relation “A” specifies a constraint on the possible tuples that can form a relational state of “A”.
 
 Consider any two tuples of a relation A, say t1 and t2, a FD is said to exist between two sets of attributes X to Y, if the following holds in A: If t1(X) = t2(X), then t1(Y) = t2(Y) must be true. It means that, if tuple t1 and tuple t2 have same values for attributes X, then to hold XàY on “A”, t1 and t2 must have same values for attributes Y also.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing functional dependencies.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in functional dependencies can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define functional dependencies formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.5` Normalisation Using Functional Dependencies
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 NORMALISATION USING FUNCTIONAL DEPENDENCIES Codd in the year 1972 presented three normal forms (1NF, 2NF, and 3NF). These were based on functional dependencies among the attributes of a relation. Later Boyce and Codd proposed another normal form called the Boyce-Codd normal form (BCNF).
 
 The fourth and fifth normal forms are based on multi-valued dependency and join dependencies and were proposed later. In this section we will cover normal forms till BCNF only. Fourth and fifth normal forms are discussed in the next unit. For all practical purposes, 3NF or the BCNF are quite adequate since they remove the anomalies discussed for most common situations.
 
 It should be clearly understood that there is no obligation to normalise relations to the highest possible level. Performance should be taken into account and sometimes an organisation may take a decision not to normalise, say, beyond third normal form. But it should be noted that such designs should be careful enough to take care of anomalies that would result because of the decision above.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing normalisation using functional dependencies.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in normalisation using functional dependencies can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define normalisation using functional dependencies formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.5.1` The First Normal Form
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Let us first define 1NF: Definition: A relation (table)R is in 1NF if every attribute of R takes atomic values. In other words, the following conditions hold in R: 1. There are no duplicate rows or tuples in the relation. Each data value stored in the relation is single-valued. Entries in a column (attribute) are of the same kind (type).
 
 Please note that in a 1NF relation, the order of the tuples (rows) and attributes (columns) does not matter. The first requirement above means that the relation must have a key. The key may be single attribute or composite key. It may even, possibly, contain all the columns. The first normal form defines only the basic structure of the relation and does not resolve the anomalies discussed in Section 5.3.
 
 The relation STUDENT (StEnrolNo, StName, StAddress, CoNo, CoName, CoInstructor, InOffice) of Figure 5.3 is in 1NF. The primary key of the relation is a composite key of attributes StEnrolNo and CoNo.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing the first normal form.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in the first normal form can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define the first normal form formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -237,21 +254,29 @@ To solidify your theoretical understanding, work through these fully solved, ste
 **Detailed Step-by-Step Solution:**
 
 1. **Injectivity:** Suppose $f(x_1) = f(x_2)$:
+
 $$
 \frac{2x_1 + 1}{x_1 - 3} = \frac{2x_2 + 1}{x_2 - 3} \implies (2x_1 + 1)(x_2 - 3) = (2x_2 + 1)(x_1 - 3)
 $$
+
+
 $$
 2x_1 x_2 - 6x_1 + x_2 - 3 = 2x_1 x_2 - 6x_2 + x_1 - 3 \implies -7x_1 = -7x_2 \implies x_1 = x_2
 $$
+
 Thus $f$ is **Injective**.
 
 2. **Surjectivity & Inverse:** Let $y = \frac{2x + 1}{x - 3}$. Solve for $x$:
+
 $$
 y(x - 3) = 2x + 1 \implies yx - 3y = 2x + 1 \implies x(y - 2) = 3y + 1
 $$
+
+
 $$
 x = \frac{3y + 1}{y - 2}
 $$
+
 Since $y 
 eq 2$, $x$ is well-defined in the domain for every $y$. Thus $f$ is **Surjective**.
 
@@ -264,9 +289,11 @@ Conclusion: $f$ is **Bijective**, with inverse $f^{-1}(x) = \frac{3x + 1}{x - 2}
 **Detailed Step-by-Step Solution:**
 
 By the Generalized Pigeonhole Principle, with $n = 1001$ items and $k = 100$ bins:
+
 $$
 \lceil n/k \rceil = \lceil 1001 / 100 \rceil = \lceil 10.01 \rceil = 11
 $$
+
 Therefore, at least one partition bucket is guaranteed to receive $\ge 11$ logs.
 
 ### 💻 Practical Data Science Implementation (Python)
@@ -296,45 +323,61 @@ assert raw_data == decoded, "Lossless reconstruction failed!"
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What condition must a function satisfy to possess an inverse $f^{-1}$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> For each of the relations, as given above, list the candidate keys. Also, identify the Primary key to each of the relations. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Database Integrity, Functional Dependency and Normalisation.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> List the entity integrity constraints, which can be found in relations S, P, J, SPJ? List the domain constraints, if any. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Database Integrity, Functional Dependency and Normalisation.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Which of the relations S, P, J, SPJ has referential constraints? List those constraints. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Database Integrity, Functional Dependency and Normalisation.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> For the referential constraints as identified in question 3, suggest suitable referential actions. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Database Integrity, Functional Dependency and Normalisation.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What condition must a function satisfy to possess an inverse $f^{-1}$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The function must be **Bijective** (both injective/one-to-one and surjective/onto).
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> If $f(x) = 2x + 3$, find the inverse function $f^{-1}(x)$. <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> If $f(x) = 2x + 3$, find the inverse function $f^{-1}(x)$. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Let $y = 2x + 3 \implies y - 3 = 2x \implies x = \frac{y - 3}{2}$. Therefore, $f^{-1}(x) = \frac{x - 3}{2}$.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> Is the function $f(x) = x^2$ from $\mathbb{R} \to \mathbb{R}$ injective? Why? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> No, because $f(-2) = 4$ and $f(2) = 4$. Distinct inputs produce identical outputs.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Which of the relations S, P, J, SPJ has referential constraints? List those constraints. …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… …………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Database Integrity, Functional Dependency and Normalisation. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> Identify the functional dependencies in the relation given in question 1. What are the candidate keys and which of these can be a primary key? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Database Integrity, Functional Dependency and Normalisation. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Normalise the relation of problem 1. ……………………………………………………………………………. ……………………………………………………………………………. ……………………………………………………………………………. ………………………………………………………………………….…. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Database Integrity, Functional Dependency and Normalisation. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

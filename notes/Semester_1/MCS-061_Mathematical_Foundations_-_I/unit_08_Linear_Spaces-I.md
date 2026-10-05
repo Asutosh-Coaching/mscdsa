@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Linear Spaces-I** forms a vital conceptual pillar. Linear algebra is the foundational language of Data Science and Machine Learning. Datasets are matrices $X \in \mathbb{R}^{n \times p}$, neural network weights are tensor matrices, and dimensionality reduction (PCA, SVD) relies directly on matrix decompositions, eigenvalues, and rank.
+In modern data systems and advanced analytics, **Linear Spaces-I** forms a vital conceptual pillar. Linear algebra is the foundational language of Data Science and Machine Learning. Datasets are matrices $X \in \mathbb{R}^{n \times p}$, neural network weights are tensor matrices, and dimensionality reduction (PCA, SVD) relies directly on matrix decompositions, eigenvalues, and rank.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering linear spaces-i equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["8.4 Norm and Inner Product"]
   N4["8.5 Vector Spaces and Subspaces"]
   N5["8.6 Linear Dependence of Vectors"]
+  N6["8.7 Generators and Basis"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -85,133 +87,147 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `8.2` Vector Addition and Scalar Multiplication
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Scalar multiplication is distributive over vector addition. And V contains an element 0, the null vector, in which each component is equal to zero. Definition: A nonempty subset W, along with the two-operations vector addition and scalar multiplication, is said to be a subspace of V if a) W is a subset of V and, b) W is a vector space in its own right, i.e., it satisfies all the axioms specified above for a vector space.
 
 Example: Consider a two-dimensional plane, V2, and suppose the set w consisting of all points lying along the horizontal (or the vertical) axis. Here w is a subset of V2, and it satisfies all the properties listed above. In fact, all points on any line drawn through the origin constitute a subspace.
 
 Algebraically, each of the following 𝑊= {(𝑥1, 𝑥2)|𝑥1𝜖 ℝ, 𝑥2 = 0}, 𝑊= {(𝑥1, 𝑥2)|𝑥2 ∈ℝ, 𝑥1 = 0} and , 𝑊= {(𝑥1, 𝑥2)|𝑐1𝑥1 + 𝑐2𝑥2 = 0} Linear Spaces - 1 is a subspace of V2 = {(𝑥1, 𝑥2)|𝑥1 ∈ ℝ, 𝑥2 ∈ ℝ} Example: Show that the vectors a = (1, 2, -1) , b= (3, 2, 5) and c = (-2, 0, -6) are linearly dependent.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing vector addition and scalar multiplication.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in vector addition and scalar multiplication can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define vector addition and scalar multiplication formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `8.3` Geometrical and Physical Interpretations
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 GEOMETRICAL AND PHYSICAL INTERPRETATIONS OF VECTORS IN TWO OR THREE DIMENSION Vector is often represented geometrically by a line with an arrowhead on it (𝑠𝑎𝑦, 𝑥 →). The length of the line indicates the magnitude of the vector, and the arrow denotes its direction. It should be noted that a vector is not just a number.
 
 If we are considering vector lying in a plane, then two numbers are needed to describe any vector: one for its magnitude and another giving its direction (the angle it makes with one of the coordinate axes). If vectors in three-dimensional spaces are being studied, three numbers are needed to describe any vector: one number for its magnitude, and two to denote its orientation with respect to some coordinate system.
 
 In general, a vector may originate at any point in space and may terminate at any point. Physical quantities such as force are, of course, independent of where one places the vector in a coordinate system. They depend only on the magnitude and direction of the vector. For this reason, it is convenient to have a vector start always at the origin of the coordinate system as in Figure 8.1.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing geometrical and physical interpretations.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in geometrical and physical interpretations can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define geometrical and physical interpretations formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `8.4` Norm and Inner Product
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 NORM AND INNER PRODUCT Both through scalar multiplication and vector addition transform one vector, or, a pair of vectors into another vector. Unlike these concepts defined in section 8.2, we will now define functions, which transform a pair of vectors into a scalar, a real number.
 
 For a pair of vectors (the same length say n): a= (a1, a2, …., an) and b = (b1, b2, …, bn), we define their scalar product (as against scalar multiplication of section 8.2 as: <a,b> = a1b1+a2b2+…+anbn = ∑ 𝑎𝑖𝑏𝑖 𝑛 𝑖=1 Scalar product is also called inner product and even dot product of two vectors, these terms are often used interchangeably to refer to the same operation.
 
 Example: If a = (1, -1, 2); b= (-2, 3, 6), then <a.b> = (1).(-2) + (11).(3) +(2) .(6) = 7 Norm of a vector: As the first step towards finding the norm of a vector, let us consider a given vector a = (a1, a2, …, an), and find out inner product of a with itself. The inner product would be ‖𝒂‖ = √𝑎12 + 𝑎22 + ⋯+ 𝑎𝑛2.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing norm and inner product.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in norm and inner product can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define norm and inner product formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `8.5` Vector Spaces and Subspaces
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 VECTOR SPACES AND SUBSPACES Let us now define a set V such that it contains, as its elements, all n-component vector that can be generated from the field of real numbers, i.e., 𝑽= {(𝑥1, 𝑥2 … … , 𝑥𝑛|𝑥𝑖∈𝐑; 𝑖= 1,2, … , 𝑛} Properties of vectors: Let u,v,w be vectors and ∝, 𝛽, 𝛿∈ℝ. u+0 = 0+u =u Where 0 = (0,0,…,0) is a zero vector.
 
 For each u there exists – u such that u + (-u) = (-u) + u =0 6. 𝟏𝒖= 𝒖 The set V satisfying i, ii and iii above said to be a vector space or a linear space over the field R. Summarizing: The aforesaid properties imply that V is closed under vector addition as well as under scalar multiplication of vectors.
 
 Both operations of vector addition and scalar multiplication are commutative and associative. Scalar multiplication is distributive over vector addition. And V contains an element 0, the null vector, in which each component is equal to zero. Definition: A nonempty subset W, along with the two-operations vector addition and scalar multiplication, is said to be a subspace of V if a) W is a subset of V and, b) W is a vector space in its own right, i.e., it satisfies all the axioms specified above for a vector space.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing vector spaces and subspaces.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in vector spaces and subspaces can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define vector spaces and subspaces formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `8.6` Linear Dependence of Vectors
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 LINEAR DEPENDENCE OF VECTORS A set of vectors 𝒙𝟏, 𝒙𝟐, … , 𝒙𝒏 are said to be linearly independent if there exists scalars c1, c2,...,cn not all zero such that c1x1+ c2x2+...+ cnxn=0. On the contrary, if no such scalars exist, then the vectors x1, ..., xn are said to be linearly independent.
 
 The term 'linearly' in the above definition is important because only linear operations, i.e., scalar multiplication and vector addition, are permitted in obtaining the null vector. Two important results regarding linear independence or lack of it are as follows: Linear Spaces and Counting Techniques a) If x1, x2, ..., xk a subset of a set of vectors x1, x2, ..., xn ( n > k ), are linearly dependent, then the entire set is linearly dependent.
 
 b) If a set of vectors x1, x2, ...,xn are linearly independent, then any subset of vectors, say, x1, x2,..., xk ( k < n ) are also linearly independent. Example: For the two vectors x = ( ) and y = ( ) we have, 3x - y = 0. Therefore, the two vectors x and y are linearly dependent.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing linear dependence of vectors.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in linear dependence of vectors can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define linear dependence of vectors formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `8.7` Generators and Basis
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 GENERATORS AND BASIS Consider the case of two-dimensional Euclidian space (E2). Note: An n-dimensional Euclidian space (Euclidian vector space) is defined as the collection of all vectors (points) a = (a1,a2, ...,an), for aI ∈ R , along with the operationsof vector addition and scalar multiplication;, and with the concept of distance between the vectors.
 
 In E2 , for the vectors u = (1 0) 𝑎𝑛𝑑 𝒗= (0 1), it is easily seen that any vector 𝒙= (𝑥1 𝑥2) may be generated from the vectors u and v as follows Linear Spaces - 1 𝒙= 𝑥1𝒖+ 𝑥2𝒗, 𝑓𝑜𝑟 𝑥1, 𝑥2 ∈R. Such vectors u and v- from which all other vectors can be obtained as linear combinations as above – are called ‘generators’ of the vector space, in this case, of the two-dimensional space (E2).
 
 Example: Consider the vector (2 5). This can be expressed as: 2 (1 0) + 5 (0 1) , 𝑜𝑟 2 (1 1) + 3 (0 1), 𝑜𝑟 (1 0) + (1 1) + 4 (0 1) 𝑜𝑟 𝑒𝑣𝑒𝑛 2 (1 2) + 1 (0 1) + 3 (0 1) Thus, we can generate the vector (2 5) in a variety ways by taking a set of vectors such (0 1) and (1 0), or (1 1) , and (0 1) , 𝑜𝑟 (1 0) , (1 1), and (0 1), , 𝒐𝒓 (1 2) , (1 1)and (0 0).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing generators and basis.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in generators and basis can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define generators and basis formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `8.8` Summery
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 SUMMERY This unit explained the way of presenting a variable with magnitude and direction. It also gives the idea about the basic vector operations such as addition, subtraction, and multiplication along with the concepts such as norm, inner product, generator, basis, characteristic equation, eigen value, and eigen vector.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing summery.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in summery can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define summery formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -223,24 +239,32 @@ To solidify your theoretical understanding, work through these fully solved, ste
 **Detailed Step-by-Step Solution:**
 
 1. **Characteristic Equation:** $\det(A - \lambda I) = 0$:
+
 $$
 \det\begin{bmatrix} 4 - \lambda & 2 \\ 2 & 1 - \lambda \end{bmatrix} = (4 - \lambda)(1 - \lambda) - (2)(2) = 0
 $$
+
+
 $$
 \lambda^2 - 5\lambda + 4 - 4 = 0 \implies \lambda(\lambda - 5) = 0
 $$
+
 Eigenvalues: $\lambda_1 = 5, \; \lambda_2 = 0$.
 
 2. **Eigenvector for $\lambda_1 = 5$:**
+
 $$
 (A - 5I)\mathbf{v}_1 = \begin{bmatrix} -1 & 2 \\ 2 & -4 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies -x_1 + 2x_2 = 0 \implies x_1 = 2x_2
 $$
+
 Normalized eigenvector: $\mathbf{v}_1 = \frac{1}{\sqrt{5}} [2, 1]^T$.
 
 3. **Eigenvector for $\lambda_2 = 0$:**
+
 $$
 (A - 0I)\mathbf{v}_2 = \begin{bmatrix} 4 & 2 \\ 2 & 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \implies 2x_1 + x_2 = 0 \implies x_2 = -2x_1
 $$
+
 Normalized eigenvector: $\mathbf{v}_2 = \frac{1}{\sqrt{5}} [1, -2]^T$.
 
 #### 🧮 Example 2: Matrix Inversion via Adjugate Formula
@@ -253,14 +277,18 @@ Normalized eigenvector: $\mathbf{v}_2 = \frac{1}{\sqrt{5}} [1, -2]^T$.
 eq 0$. Invertible.
 
 2. **Adjugate:** Swap diagonal, negate off-diagonal:
+
 $$
 \text{adj}(B) = \begin{bmatrix} 2 & -1 \\ -5 & 3 \end{bmatrix}
 $$
 
+
 3. **Inverse:**
+
 $$
 B^{-1} = \frac{1}{1} \begin{bmatrix} 2 & -1 \\ -5 & 3 \end{bmatrix} = \begin{bmatrix} 2 & -1 \\ -5 & 3 \end{bmatrix}
 $$
+
 
 ### 💻 Practical Data Science Implementation (Python)
 Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
@@ -300,45 +328,61 @@ print("Projected 1D Data:", projected_1d)
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What happens if $\det(A) = 0$ for a square matrix $A$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Given x = [5 1] and y = [0 3], find 2y and x-y graphically. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Linear Spaces-I.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Find the norm of the following vectors: (i) (2,5); (ii) (-2,2). <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Linear Spaces-I.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Find a basis for the subspace W = {(x, y, z) : 2x + y −z = 0} <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Linear Spaces-I.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Find the inner product of the following pairs of vectors: i) (2,3,4) and (4,5,5) ii) (-2, -3, 4) and (4,5,-6). <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Linear Spaces-I.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What happens if $\det(A) = 0$ for a square matrix $A$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The matrix is **singular**, has no multiplicative inverse ( $A^{-1}$ does not exist ), and its row vectors are linearly dependent.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> State the relationship between $(AB)^T$ and the transposes of $A$ and $B$. <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> State the relationship between $(AB)^T$ and the transposes of $A$ and $B$. <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > $(AB)^T = B^T A^T$. The order of multiplication is reversed upon transposition.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> What is the characteristic equation used for finding eigenvalues? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> $\det(A - \lambda I) = 0$, where $I$ is the identity matrix of matching dimension.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> If a1 = (2,3,4,7), a2 = (0,0,0,1) and a3 = (1,0,1,0), find a1+2a2+3a3. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Linear Spaces-I. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> If x1 = (2,9,8) , x2= (0,1,0) and x3 = (1,0,1), find 2x2+5x3-x1. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Linear Spaces-I. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Find the norm of the following vectors: (i) (2,5); (ii) (-2,2). <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Linear Spaces-I. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

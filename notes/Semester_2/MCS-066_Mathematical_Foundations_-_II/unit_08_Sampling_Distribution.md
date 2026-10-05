@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Sampling Distribution** forms a vital conceptual pillar. Statistical inference bridges sample data to population reality. In A/B testing, feature significance testing, and model benchmarking, hypothesis tests determine whether performance gains are statistically significant or merely random fluctuations.
+In modern data systems and advanced analytics, **Sampling Distribution** forms a vital conceptual pillar. Statistical inference bridges sample data to population reality. In A/B testing, feature significance testing, and model benchmarking, hypothesis tests determine whether performance gains are statistically significant or merely random fluctuations.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering sampling distribution equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["8.5 Central Limit Theorem"]
   N4["8.6 Law of Large Numbers"]
   N5["8.7 Sampling Distribution of Sample Mean"]
+  N6["8.8 Sampling Distribution of Difference of Two"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -89,116 +91,127 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `8.2` Basic Terminology
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Basic Terminology** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Sampling Distribution**, understanding basic terminology is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In probability theory and statistical inference, **Basic Terminology** formalizes the stochastic behavior of random phenomena. Within **Sampling Distribution**, this framework allows data scientists to infer population parameters from finite empirical samples while quantifying uncertainty via confidence intervals and hypothesis tests.
+
+The mathematical rigor here prevents statistical misinterpretations, such as confusing correlation with causation, overlooking sample selection bias, or violating distributional assumptions.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing basic terminology.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in basic terminology can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define basic terminology formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `8.4` Standard Error
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 As we have seen in the previous section that the values of sample statistic may vary from sample to sample and all the sample values are not equal to the population parameter. Now, one can be interested to measure how much the values of sample statistic vary from the population parameter on average.
 
 You may use the standard deviation as a measure of variation. Thus, for measuring the variation in the values of sample statistic around the population parameter we calculate the standard deviation of the sampling distribution. This is known as the standard error of that statistic.
 
 Thus, the standard error of a statistic can be defined as: “The standard deviation of a sampling distribution of a statistic is known as standard error and it is denoted by SE.” The computation of the standard error is a tedious process. There is a simple formula to compute the standard error of the mean from a single sample as: If n X ,X , ..., X is a random sample of size n taken from a population with mean µ and variance σ2 then the standard error of the sample mean ( X ) is given by ( ) SE X n  = The standard error is used to express the accuracy or precision of the estimate of population parameter because the reciprocal of the standard error is the measure of reliability or precision of the statistic.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing standard error.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in standard error can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define standard error formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `8.5` Central Limit Theorem
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The central limit theorem is the most important theorem of Statistics. It was first introduced by De Movers in the early eighteenth century. According to the central limit theorem, if n X ,X , ..., X is a random sample of size n taken from a population with mean µ and variance σ2 then the sampling distribution of the Sampling Distribution sample mean tends to a normal distribution with mean µ and variance σ2/n as the sample size tends to be large (n 30)  , whatever may be the form of the parent population, that is: X ~ N , n         and the variate ( ) X Z ~ N 0,1 / n − =  follows a normal distribution with mean 0 and variance unity, that is, the variate Z follows a standard normal distribution.
 
 We do not intend to prove this theorem here, but merely show graphical evidence of its validity in Fig. Here, we will also try to show how large must the sample size be for which we can assume that the central limit theorem applies? 8.1, we are trying to understand the sampling distribution of sample mean X for different populations and for varying sample sizes.
 
 We divide this figure into four parts A, B, C and D. The part ‘A’ of this figure shows four different populations as normal, uniform, binomial and exponential. The rest parts B, C and D represent the shape of the sampling distribution of mean of sizes n = 2, n = 5 and n = 30 respectively drawn from the populations shown in first row (Part- A).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing central limit theorem.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Derivatives compute instantaneous rates of change $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$. Multivariable gradient vectors $\nabla f$ point in the direction of steepest ascent, with stationary critical points satisfying $\nabla f = 0$.
+- **Boundary Conditions:** Discontinuities, non-differentiable sharp cusps (e.g. $|x|$ at $x=0$), vanishing gradients in saturating regions, and indefinite Hessian saddle points.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in central limit theorem can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Gradient descent parameter optimization $\theta_{t+1} = \theta_t - \eta \nabla L(\theta)$ across deep neural networks, backpropagation autograd engines, and marginal utility modeling.
+- **Real-World Pitfall:** Selecting an overly aggressive learning rate $\eta$ causing objective divergence around sharp local minima, or getting trapped along flat plateau regions.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define central limit theorem formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Memorize the product rule, quotient rule, and multivariable chain rule; solve optimization problems by verifying local extrema using second derivative / Hessian tests.
 
 #### `8.6` Law of Large Numbers
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 We have already discussed in the previous sections that the population parameters are generally unknown and for estimating parameters, we draw all possible random samples of the same size from the population and calculate the values of sample statistic such as sample mean, sample proportion, sample variance, etc.
 
 for all samples and with the help of these values we form sampling distribution of that statistic. Then we draw inference about the population parameters. But in real-world the sampling distributions are never really observed. The process of finding sampling distribution would be very tedious because it would involve a very large number of samples.
 
 So in real-world problems, we draw a random sample from the population to draw inference about the population parameters. A very crucial question then arises: “Using a random sample of finite size, say n, can we make a reliable inference about population parameter?” The answer is “yes”, reliable inference about population parameter can be made by using only a finite sample and we shall demonstrate this by “law of large numbers”.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing law of large numbers.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in law of large numbers can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define law of large numbers formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `8.7` Sampling Distribution of Sample Mean
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 One of the most important sample statistics, which is used to draw a conclusion about the population mean, is the sample mean. For example, an investigator may want to estimate the average income of the people living in a particular geographical area, a product manager may want to estimate the average life of electric bulbs manufactured by a company, a pathologist may want to estimate the mean time required to complete a certain analysis, etc.
 
 In the above cases, an estimate of the population mean is required, and one may estimate this on the basis of a sample taken from that population. For this, the sampling distribution of sample mean is required. We have already given you the flavour of the sampling distribution of sample mean with the help of an example in earlier section in which we draw all possible samples of the same size from the population and calculate the sample mean for each sample.
 
 After calculating the value of sample mean for each sample we observed that the values of sample mean vary from sample to sample. Then the sample mean is treated as a random variable and a probability distribution is constructed for the values of sample mean. This probability distribution is known as the sampling distribution of sample mean.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sampling distribution of sample mean.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sampling distribution of sample mean can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define sampling distribution of sample mean formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `8.8` Sampling Distribution of Difference of Two Sample Means
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 OF TWO SAMPLE MEANS There are so many problems where someone may be interested to draw the inference about the difference of two population means. For example, two manufacturing companies of blubs are produced the same type of bulbs and one may be interested to know which one is better than the other, an investigator may want to know the difference of average income of the peoples living in two cities, say, A and B, two different types of drugs, were tried on a certain number of patients for controlling blood pressure and one may be interested to know which one has a better effect on controlling blood pressure, etc.
 
 Therefore, in such situations, to draw the inference we require the sampling distribution of difference of two sample means. Let the same characteristic measures from two populations be represented by X and Y variables and the variation in the values of these constitute two populations, say, population-I for variation in X and population-II for variation in Y.
 
 Suppose population-I is having mean  and variance and population- II is having mean and variance . Then we take all possible samples of same size n1 from population-I and then the sample mean, say, X is calculated for each sample. Similarly, all possible samples of same size n2 are taken from the population-II and the sample mean, say, Y is calculated for each sample.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sampling distribution of difference of two sample means.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sampling distribution of difference of two sample means can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define sampling distribution of difference of two sample means formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -212,14 +225,18 @@ To solidify your theoretical understanding, work through these fully solved, ste
 1. **Hypotheses:** $H_0: \mu \le 200\text{ms}$ vs $H_1: \mu > 200\text{ms}$ (One-tailed test).
 
 2. **Standard Error:**
+
 $$
 \text{SE} = \frac{s}{\sqrt{n}} = \frac{20}{\sqrt{25}} = \frac{20}{5} = 4\text{ms}
 $$
 
+
 3. **Test Statistic:**
+
 $$
 t = \frac{\bar{x} - \mu_0}{\text{SE}} = \frac{210 - 200}{4} = 2.50
 $$
+
 
 4. **Critical Value ($df = 24, \alpha = 0.05$):** $t_{\text{crit}} = 1.711$.
 
@@ -232,12 +249,16 @@ $$
 **Detailed Step-by-Step Solution:**
 
 For 95% confidence, $z_{0.025} = 1.96$:
+
 $$
 \text{Margin of Error} = z \frac{\sigma}{\sqrt{n}} = 1.96 \left(\frac{8}{\sqrt{64}}\right) = 1.96(1.0) = 1.96
 $$
+
+
 $$
 \text{CI} = 52.0 \pm 1.96 = [50.04, 53.96]
 $$
+
 
 ### 💻 Practical Data Science Implementation (Python)
 Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:
@@ -266,46 +287,61 @@ else:
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What is the Central Limit Theorem and why is it crucial in Data Science? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> If the lives of 3 Televisions of a certain company are 8, 6 and 10 years then construct the sampling distribution of average life of Televisions by taking all samples of size 2. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Sampling Distribution.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> The average weight of a certain type of tyres is 200 pounds and the standard deviation is 4 pounds. A sample of 50 tyres is selected. Obtain the standard error of the sample mean. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Sampling Distribution.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> A machine produces a large number of items of which 15% are found to be defective. If a random sample of 200 items is taken from the population, then find the standard error of the sampling distribution of proportion. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Sampling Distribution.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> The mean of a population is unknown and having a variance equal to 2. Find out that how large a sample must be taken, so that the probability will be at least 0.95 that the sample mean will lie within the range of 0.5 of the population mean? <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Sampling Distribution.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What is the Central Limit Theorem and why is it crucial in Data Science? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The CLT states that the sample mean $\bar{X}$ becomes approximately normally distributed with mean $\mu$ and variance $\sigma^2/n$ for large $n$, allowing parametric statistical inference even on skewed non-normal real-world data.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is a p-value? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> What is a p-value? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The probability of obtaining a test statistic as extreme as, or more extreme than, the observed value, assuming the null hypothesis $H_0$ is strictly true. If $p < \alpha$, reject $H_0$.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> Define Type I error and Type II error. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> Type I error ( $\alpha$ ): Rejecting $H_0$ when $H_0$ is actually true (False Positive).
-> Type II error ( $\beta$ ): Failing to reject $H_0$ when $H_0$ is actually false (False Negative).
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> If the lives of 3 Televisions of a certain company are 8, 6 and 10 years then construct the sampling distribution of average life of Televisions by taking all samples of size <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Sampling Distribution. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> A machine produces a large number of items of which 15% are found to be defective. If a random sample of <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Sampling Distribution. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> The mean of a population is unknown and having a variance equal to 2. Find out that how large a sample must be taken, so that the probability will be at least <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Sampling Distribution. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Techniques of Counting and Binomial Theorem** forms a vital conceptual pillar. Calculus powers continuous optimization in Machine Learning. Loss function minimization via Gradient Descent, backpropagation in deep neural networks, and probability density integration all require derivatives, partial differentials, and definite integrals.
+In modern data systems and advanced analytics, **Techniques of Counting and Binomial Theorem** forms a vital conceptual pillar. Calculus powers continuous optimization in Machine Learning. Loss function minimization via Gradient Descent, backpropagation in deep neural networks, and probability density integration all require derivatives, partial differentials, and definite integrals.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering techniques of counting and binomial theorem equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["10.3.1 Fundamental Principle of Multiplication FP"]
   N4["10.3.2 Fundamental Principle of Addition FPA"]
   N5["10.4 Permutation"]
+  N6["10.4.1 Linear Permutation"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -83,148 +85,163 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `10.2` Factorial and its Notations
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Factorial and its Notations** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Techniques of Counting and Binomial Theorem**, understanding factorial and its notations is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In discrete mathematical structures and computational algebra, **Factorial and its Notations** introduces formal symbolic axioms required to guarantee unambiguous logical deduction. Within the learning hierarchy of **Techniques of Counting and Binomial Theorem**, this concept defines the boundary conditions and operational invariants that ensure mathematical consistency across multi-step proofs.
+
+Understanding factorial and its notations is essential when transitioning from manual arithmetic to high-dimensional matrix representations, vector spaces, and algorithm state transitions.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing factorial and its notations.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in factorial and its notations can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define factorial and its notations formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `10.3` Fundamental Principles of Counting
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 COUNTING There are two fundamental principles of counting. These two principles solve the problems of counting. So it becomes necessary for us first to define what is the counting problem? According to Grinstead and Snell (2006) it is defined as if you “Consider an experiment that takes place in several stages and is such that the number of outcomes m at the nth stage is independent of the outcomes of the previous stages.
 
 The number m may be different for different stages. We want to count the number of ways that the entire experiment can be carried out.” Let us take an example. Example 4: Statistics discipline wanted to book the lunch in the IGNOU guest house for the experts during an expert committee meeting.
 
 The incharge of the guest house explain the lunch menu like this: (a) there are two choices for appetizers: soup and juice Techniques of Counting and Binomial Theorem (b) there are two choices for main course: veg and non-veg (c) there are three choices for dessert: sponge rashgulla, gulab jamun and ice cream.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fundamental principles of counting.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fundamental principles of counting can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define fundamental principles of counting formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `10.3.1` Fundamental Principle of Multiplication (FPM)
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Suppose we want to complete two jobs, where first job can be done in m distinct ways, second job can be done in n distinct ways then both jobs can take place (one followed by other) in n m distinct ways. In general, suppose we want to complete n jobs, where first job can be done in m distinct ways, second job can be done in m distinct ways, third job can be done in m distinct ways, and so on th n job can be done in n m distinct ways.
 
 Then these n jobs can take place (in succession) in n m ... m m m     distinct ways. For example, suppose a teacher wants to select one boy and one girl student out of a class having 15 boys and 10 girls students, then teacher can make such selection in =  distinct ways.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fundamental principle of multiplication (fpm).
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fundamental principle of multiplication (fpm) can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define fundamental principle of multiplication (fpm) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `10.3.2` Fundamental Principle of Addition (FPA)
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Suppose we want to complete one job out of two jobs, where first job can be done in m distinct ways and second independent job can be done in n distinct ways. Then one of the two jobs can be completed in m + n distinct ways. In general, suppose we want to complete one job out of n jobs, where first job can be done in m distinct ways, second job can be done in m distinct ways, third job can be done in m distinct ways, and so on nth job can be done in n m distinct ways.
 
 Then one of the n jobs (any two or any three… or all of these can not occur simultaneously) can be completed in n m ... m m m + + + + distinct ways. For example, suppose a teacher wants to select either a boy or a girl student out of a class having 15 boys and 10 girls, then the teacher can select either a boy or a girl student in 15 + 10 = 25 distinct ways.
 
 Now we take some examples based on these two principles of counting. Example 5: In a college, there are 40 male and 30 female faculties. The principal of that college wants to select one male and one female faculty to accompany with the students of the college going for a picnic.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing fundamental principle of addition (fpa).
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in fundamental principle of addition (fpa) can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define fundamental principle of addition (fpa) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `10.4` Permutation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Permutation is related to the arrangement of things. Things arranged in a line come under the heading of linear permutation, while arrangement of things in a circle comes under the heading of circular permutation. Let us discuss these two heading one by one. Linear Spaces and Counting Techniques
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing permutation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in permutation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define permutation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `10.4.1` Linear Permutation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Possible arrangements in a line of a number of things taken some or all at a time are called the permutation. Before giving the general formula, let us consider an example, where we are to arrange say three books of different colours (Red, Green and Orange): Permutations of three books when taken one at a time are R, G, W, i.e.
 
 the number of permutations = 3 = 3P )! ( !3 = − or P(3, 1) Permutations of three books when taken two at a time are RG, GR, RW, WR, GW, WG, i.e. the number of permutations = 6 = 3P )! ( !3 = − or P(3, 2) Permutations of three books when taken all at a time are RGW, RWG, GRW, GWR, WRG, WGR, i.e.
 
 the number of permutations = 6 = 3P )! ( !3 = − or P(3, 3) In general, the total number of permutations of n things taken r (1 ) n r   at a time is denoted by n P r or P(n, r) and is defined as n P r = = −)! r n ( !n n(n – 1)(n – 2) …(n – (r –1)) i.e. n P r = n(n – 1) (n – 2) …up to r factors For example, (i) Total number of permutations of a, b, c taken 2 at a time are given by ab, ba, bc, cb, ca, ac.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing linear permutation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Linear transformations represented by $A \in \mathbb{R}^{m \times n}$. Matrix invertibility requires non-zero determinant $\det(A) \neq 0$ and full column/row rank. Eigen-decomposition $A v = \lambda v$ identifies invariant directional axes and scaling factors.
+- **Boundary Conditions:** Singular matrices (det = 0), ill-conditioned matrices with condition number $\kappa(A) \gg 1$, and rank deficiency under collinear feature dimensions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in linear permutation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Principal Component Analysis (PCA covariance decomposition), Ordinary Least Squares (OLS) normal equations $(X^T X)^{-1} X^T y$, and embedding projection transformations in transformers.
+- **Real-World Pitfall:** Inverting ill-conditioned matrices directly instead of using singular value decomposition (SVD) or QR decomposition, triggering catastrophic floating-point cancellation.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define linear permutation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Practice row reduction to Row Echelon Form (REF) to find matrix rank, determinant expansion by minors, and computing characteristic equations $\det(A - \lambda I) = 0$.
 
 #### `10.4.2` Circular Permutation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Let us consider four letters A, B, C, D. Consider the following arrangements ABCD, BCDA, CDAB, DABC these are 4 different arrangements when arranged in a line. whereas this is a single arrangement when arranged in a circle, in clockwise direction as shown in figure. in case of 4 letters, 4 linear arrangements = 1 circular arrangement 1 linear arrangement = 4 1 circular arrangement So, 4!
 
 Linear arrangements = !3 !4 = circular arrangements. In general, if anticlock wise and clock wise order of arrangements makes different permutations then number of circular permutations of n distinct things = (n – 1)! And if anti-clock wise and clock wise order of arrangements does not give distinct permutations then total number of permutations of n distinct things = )!
 
 n ( − For example, arrangements of flowers in a garland form the same permutation in case of anti clock wise and clockwise order. Example 15: In how many ways 10 students of a batch can be arrangements in a (i) Line (ii) Circle Techniques of Counting and Binomial Theorem Solution: (i) Total number of arrangements of 10 students in a line !
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing circular permutation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in circular permutation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define circular permutation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 #### `10.5` Combination
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 10.4 of this unit we have discussed permutation. We have seen that in case of permutation we want to know the possible number of arrangements of n things taken some or all at a time. But sometimes we are interested in forming only groups or making selections or drawing items without bothering about the arrangements.
 
 These are called combinations. Before giving the general formula, let us consider an example, where we are to form the groups of say three books of different colours (Red, Green, Orange). Combinations of three books when taken one at a time are R, G, W, i.e. the number of combinations = 3 = 3!
 
 = −  or C(3, 1) Combinations of three books when taken two at a time are RG, RW, GW, i.e. the number of combinations = 3 = 3! = −  or C(3, 2) Combination of three books when taken all at a time is RGW, i.e. the number of combination = 1 = 3! = −  or C(3, 3) In general, the total number of combinations of n things taken r (1 ) n r   at a time is denoted by n C r or C(n, r) and is defined as n C r = n!
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing combination.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability distributions characterize probability mass (PMF) or density (PDF). The Central Limit Theorem (CLT) establishes that the sample mean of $n$ independent, identically distributed random variables converges to Gaussian $\mathcal{N}(\mu, \sigma^2/n)$ as $n \to \infty$.
+- **Boundary Conditions:** Cauchy distributions violating CLT due to undefined variance, extreme skewness in small samples ($n < 30$), and fat-tailed catastrophic risk events.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in combination can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Standardizing features via Z-score normalization, anomaly detection using Gaussian Mixture Models, calculating $p$-values in hypothesis testing, and Monte Carlo simulation.
+- **Real-World Pitfall:** Assuming Gaussian normality for heavy-tailed operational metrics (e.g. web server latency or stock returns), severely underestimating extreme tail probabilities.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define combination formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Compute probabilities by standardizing to the standard normal distribution $Z = \frac{X - \mu}{\sigma}$; recognize when to approximate Binomial with Poisson or Normal.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -236,14 +253,18 @@ To solidify your theoretical understanding, work through these fully solved, ste
 **Detailed Step-by-Step Solution:**
 
 1. **Differentiate loss with respect to parameter $w$:**
+
 $$
 \frac{d\mathcal{L}}{dw} = \frac{1}{2} \sum_{i=1}^n 2(y_i - w x_i)(-x_i) = -\sum_{i=1}^n (x_i y_i - w x_i^2)
 $$
 
+
 2. **Set derivative to zero for critical point:**
+
 $$
 -\sum x_i y_i + w \sum x_i^2 = 0 \implies w^* = \frac{\sum x_i y_i}{\sum x_i^2}
 $$
+
 
 3. **Second Derivative Test:** $\frac{d^2\mathcal{L}}{dw^2} = \sum x_i^2 > 0$ for non-zero data. Guarantees global minimum.
 
@@ -256,20 +277,28 @@ $$
 1. **Gradient:** $f'(w) = 2w - 6$.
 
 2. **Iteration 1:**
+
 $$
 abla f(0) = 2(0) - 6 = -6
 $$
+
+
 $$
 w^{(1)} = w^{(0)} - \alpha f'(0) = 0 - 0.2(-6) = 1.2
 $$
 
+
 3. **Iteration 2:**
+
 $$
 abla f(1.2) = 2(1.2) - 6 = 2.4 - 6 = -3.6
 $$
+
+
 $$
 w^{(2)} = 1.2 - 0.2(-3.6) = 1.2 + 0.72 = 1.92
 $$
+
 
 (Approaches true analytical minimum $w^* = 3$ rapidly).
 
@@ -302,45 +331,61 @@ print(f"Converged optimal weight: {w:.4f} (True: 3.0000)")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What is the Chain Rule and why is it essential in Deep Learning? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Evaluate the following (i) ! 19 ! 22 (ii) !5 ! 10 ! 15  8 Linear Spaces and Counting Techniques <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Techniques of Counting and Binomial Theorem.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Express the following in terms of factorial. (i) 3.6.9.12.15 (ii) <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Techniques of Counting and Binomial Theorem.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> In an examination there are 10 multiple choice questions. First five questions have 4 choices each and last five questions have 5 choices each. How many sequences of answers are possible? <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Techniques of Counting and Binomial Theorem.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> How many four-letter words can be formed by using letters a, b, g, h, k, if: (i) Repetition is not allowed (ii) Repetition is allowed <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Techniques of Counting and Binomial Theorem.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What is the Chain Rule and why is it essential in Deep Learning? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The Chain Rule states $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. In deep networks, it allows computing the gradient of the loss with respect to early layer weights by propagating backwards layer-by-layer.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> How do you classify a critical point where $f'(x) = 0$ using the Second Derivative Test? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> How do you classify a critical point where $f'(x) = 0$ using the Second Derivative Test? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > If $f''(x) > 0$, the point is a **local minimum**. If $f''(x) < 0$, it is a **local maximum**. If $f''(x) = 0$, the test is inconclusive (inflection point).
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> What is the derivative of $\ln(x)$ and $e^x$? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> $\frac{d}{dx}[\ln(x)] = \frac{1}{x}$ (for $x > 0$), and $\frac{d}{dx}[e^x] = e^x$.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Evaluate the following (i) ! <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Techniques of Counting and Binomial Theorem. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> Express the following in terms of factorial. (i) <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Techniques of Counting and Binomial Theorem. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> In an examination there are 10 multiple choice questions. First five questions have <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Techniques of Counting and Binomial Theorem. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

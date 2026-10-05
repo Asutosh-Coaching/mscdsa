@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Data Aggregation and Group Operations** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
+In modern data systems and advanced analytics, **Data Aggregation and Group Operations** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering data aggregation and group operations equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["5.2.2 Selecting a Columnar Subset of a Group"]
   N4["5.3 Data Aggregation"]
   N5["5.3.1 Multiple Aggregate Functions in a Column"]
+  N6["5.3.2 Column-wise Aggregation"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -77,154 +79,170 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `5.2` Group By Mechanics
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Groups are created to perform a basic set of analytical functions on the data of the group. How will you be able to access data in each group or sub-group? One such method is to iterate over groups. This process can help in creating a separate list of records in an object, which can then be handled separately.
 
 Figure 2 part (b) shows an example of ways of handling groups by iterating over them. Please note that the for loop is performed on two objects: employee_department and employee_data. The first of the two objects contains the group name value, and the second object contains the records or rows that are part of the group.
 
 For example, in Figure 2, we have created grouping on ‘Department’ column. Since, there are only two values of ‘Department’ column, viz. ‘Database’ and ‘Design’, only two subgroups will be formed – one on ‘Database’ (with record numbers 1 and 3) and other on ‘Design” (with record numbers 0, 2 and 4).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing group by mechanics.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for data aggregation and group operations. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in group by mechanics can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define group by mechanics formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for group by mechanics, compute summary statistics, and interpret numerical findings accurately.
 
 #### `5.2.1` Iterating Over Groups
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Groups are created to perform a basic set of analytical functions on the data of the group. How will you be able to access data in each group or sub-group? One such method is to iterate over groups. This process can help in creating a separate list of records in an object, which can then be handled separately.
 
 Figure 2 part (b) shows an example of ways of handling groups by iterating over them. Please note that the for loop is performed on two objects: employee_department and employee_data. The first of the two objects contains the group name value, and the second object contains the records or rows that are part of the group.
 
 For example, in Figure 2, we have created grouping on ‘Department’ column. Since, there are only two values of ‘Department’ column, viz. ‘Database’ and ‘Design’, only two subgroups will be formed – one on ‘Database’ (with record numbers 1 and 3) and other on ‘Design” (with record numbers 0, 2 and 4).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing iterating over groups.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for data aggregation and group operations. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in iterating over groups can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define iterating over groups formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for iterating over groups, compute summary statistics, and interpret numerical findings accurately.
 
 #### `5.2.2` Selecting a Columnar Subset of a Group
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 After grouping the data, you may like to perform separate group operations on the data. Further, you may not like to display some columns of the data frame at all. In addition, some of these columns can be used to compute the aggregated data. The program code of Figure 6 presents an example for the selection of columns.
 
 import pandas as pd #Part (a) Create the data of the employees empdata = {'Name': ['Arav S', 'Ravi M', 'Rehan D', 'Ben A', 'Rai Y'], 'Department': ['Design', 'Database', 'Design', 'Database', 'Design'], 'Specialisation': ['Web Development', 'SQL', 'SQL', 'Web Development', 'SQL'], 'Salary': [100000, 200000, 150000, 200000, 100000], 'YearsWorking': [3.5, 2.5, 1.5, 2.0, 1.0]} #Creating a data frame of the data of employees Employee_data = pd.DataFrame(empdata) #Create a Group on the Department Employee_groups = Employee_data.groupby('Department') #Part (b): Selecting only the Salary and YearsWorking columns of data along with the grouped column.
 
 selected_columns = Employee_groups[['Salary', 'YearsWorking']] print("Part (b): Selecting only Salary and YearsWorking columns of data along with the grouped column.") for employee_department, employee_data in selected_columns: print(employee_department) print(employee_data) Data Aggregation and Group Operations #Part (c): Showing the Grouped Columns using the Aggregate functions on Salary and YearsWorking data.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing selecting a columnar subset of a group.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for data aggregation and group operations. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in selecting a columnar subset of a group can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define selecting a columnar subset of a group formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for selecting a columnar subset of a group, compute summary statistics, and interpret numerical findings accurately.
 
 #### `5.3` Data Aggregation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In the context of data wrangling, data aggregation primarily involves the process of summarising data. Such summarisation of data is possible only if the data is well organised. Thus, raw data is first processed and combined to create structured data. For example, a University may keep information about students’ assignment results in several files.
 
 This data may be processed to create consistent data about the student’s grade cards. This data can then be summarised to create information about the number of students who passed in a University programme. The following table displays the list of the most useful aggregate functions: Data Aggregation and Group Operations Figure 8: Functions/Methods of Data Aggregation You can apply several aggregation functions to a column.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data aggregation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for data aggregation and group operations. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data aggregation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data aggregation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for data aggregation, compute summary statistics, and interpret numerical findings accurately.
 
 #### `5.3.1` Multiple Aggregate Functions in a Column
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Multiple Aggregate Functions in a Column Aggregate functions provide a summarised view of data. In certain situations, you want to apply several aggregate functions on a column. This enhances the efficiency of data processing. For example, if you want to find the average salary, total salary and maximum in a department, you will be required to apply multiple aggregate functions in a single aggregation operation.
 
 Figure 9, Part (a) applies multiple aggregate functions, viz. 'count', 'mean' and 'std' on the column named ‘YearsWorking’. You may observe the output given in Figure 10, Part (a), which clearly shows the separate values of each aggregated output. Please also note that the overall aggregation of data is for every department, and the values of count, mean, and standard deviation are calculated for each department’s data in the column ‘YearsWorking’.
 
 import pandas as pd #Create the data of the employees empdata = {'Name': ['Arav S', 'Ravi M', 'Rehan D', 'Ben A', 'Rai Y'], 'Department': ['Design', 'Database', 'Design', 'Database', 'Design'], 'Specialisation': ['Web Development', 'SQL', 'SQL', 'Web Development', 'SQL'], 'Salary': [100000, 200000, 150000, 200000, 100000], 'YearsWorking': [3.5, 2.5, 1.5, 2.0, 1.0]} #Creating a data frame of the data of employees Employee_data = pd.DataFrame(empdata) #Part (a): Performing Multiple Functions on YearsWorking column.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing multiple aggregate functions in a column.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in multiple aggregate functions in a column can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define multiple aggregate functions in a column formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 #### `5.3.2` Column-wise Aggregation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Interestingly, Python also allows you to perform separate aggregations for separate columns of the data. One such example of this feature is shown in Part (c) of Program 6, where different aggregate functions have been selected on a group by object selected_columns using the. aggregate method call.
 
 You may notice that the ‘Salary’ column is aggregated using the sum method, whereas the ‘YearsWorking’ column is aggregated using the max and min methods. Another example of aggregation is presented in Figure 11. import pandas as pd #Part (a) Create the data of the employees empdata = {'Name': ['Arav S', 'Ravi M', 'Rehan D', 'Ben A', 'Rai Y'], 'Department': ['Design', 'Database', 'Design', 'Database', 'Design'], 'Specialisation': ['Web Development', 'SQL', 'SQL', 'Web Development', 'SQL'], 'Salary': [100000, 200000, 150000, 200000, 100000], 'YearsWorking': [3.5, 2.5, 1.5, 2.0, 1.0]} #Creating a data frame of the data of employees Employee_data = pd.DataFrame(empdata) #Part (a): Create Groups on the Department and Specialisation and print them by iterating over groups print("Part (a): The Groups on Department and Specialisation: \n") Data Aggregation and Group Operations Employee_Multi_group = Employee_data.groupby(['Department','Specialisation']) for employee_depart_Spec, employee_data_multi in Employee_Multi_group: print(employee_depart_Spec) print(employee_data_multi,"\n") #Part (b) Aggregating Data using different methods AggregateOfData = Employee_Multi_group.aggregate( NoOfEmployees = ('Name', 'count'), Total_Salary=('Salary', 'sum'), Mean_Exp=('YearsWorking', 'mean') ).reset_index() print("\nPart (b) Aggregated Data using different methods:") print(AggregateOfData) Figure 11: Aggregating Data The program given in Figure 11 is explained as under: 1.
 
 Figure 11 Part (a) creates the data frame Employee_data, which contains the hypothetical data of the employees. This data frame is then grouped on multiple columns, namely ‘Department’ and ‘Specialisation’. This grouped data is printed by iterating over the groups. You can observe the output of this grouped data in Figure 12, part(a).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing column-wise aggregation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for data aggregation and group operations. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in column-wise aggregation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define column-wise aggregation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for column-wise aggregation, compute summary statistics, and interpret numerical findings accurately.
 
 #### `5.4` Grouping with Dictionaries and Series
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 SERIES In the previous sections, we have discussed about grouping a dataframe using one or multiple columns. In this section, we will discuss how grouping can be done with the help of a dictionary or a series. When grouping by dictionary, you create a mapping of a different set of values or column names, whereas a series is used to assign certain labels on which grouping can be performed in rows.
 
 Grouping is performed using a dictionary or a series when no column is available for grouping or when grouping is needed on metadata. import pandas as pd #Part (a) Create the data of the employees, which is indexed by the employee name empdata = {'Name': ['Arav S', 'Ravi M', 'Rehan D', 'Ben A', 'Rai Y'], 'Department': ['Design', 'Database', 'Design', 'Database', 'Design'], 'Specialisation': ['Web Development', 'SQL', 'SQL', 'Web Development', 'SQL'], 'Salary': [100000, 200000, 150000, 200000, 100000], 'YearsWorking': [3.5, 2.5, 1.5, 2.0, 1.0]} #Part (a.1): Creating a data frame of the data of employees Employee_data = pd.DataFrame(empdata) Indexed_Emp_data = Employee_data.set_index('Name').sort_index() print("Part (a.1): Employee Data Frame indexed on Name and sorted:\n", Indexed_Emp_data) #Part (a.2) Create Project mapping using a Dictionary assigned_project = {'Arav S': 'e-commerce','BenA':'e-commerce', 'Rai Y':'M-commerce','Ravi M': 'M-commerce', 'Rehan D':'e- commerce'} print("\nPart (a.2): Dictionary used for Grouping:\n",assigned_project) Data Aggregation and Group Operations # Part (a.3): Performing GroupBy of a Dataframe using a Dictionary.
 
 Please note the use of 'axis=0', as this creates a grouping by row indexes. For column grouping, use 'axis=1'. grouped_by_projects = Indexed_Emp_data.groupby(assigned_project, axis=0).aggregate({ 'YearsWorking': ['count', 'mean'], 'Salary': ['sum', 'max']}) #Please note that aggregation is also performed using a dictionary.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing grouping with dictionaries and series.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for data aggregation and group operations. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in grouping with dictionaries and series can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define grouping with dictionaries and series formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for grouping with dictionaries and series, compute summary statistics, and interpret numerical findings accurately.
 
 #### `5.5` Grouping with Functions
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Functions are, in general, useful for grouping data on date/time columns or a part of a string. Further, the functions can be used to group data frames by index or by column. In this section, the grouping by function has been explained with the help of an example involving grouping by date and the first character of the name.
 
 For this example, we have changed one of the columns of the data, i.e., instead of years of working, we have created a column named DateOfJoining, which contains the data of date type. Since Python does not have a built-in date type, we use the datetime module of Python for dealing with dates.
 
 Please refer to line 2 of Figure 15, which imports the datetime Data Aggregation and Group Operations module. Figure 15 shows a program for grouping by functions, and Figure 16 shows the results of this program. import pandas as pd from datetime import datetime #Part (a) Create the data of the employees, which is indexed by the employee name empdata = {'Name': ['Arav S', 'Ravi M', 'Rehan D', 'Ben A', 'Rai Y'], 'Department': ['Design', 'Database', 'Design', 'Database', 'Design'], 'Specialisation': ['Web Development', 'SQL', 'SQL', 'Web Development', 'SQL'], 'Salary': [100000, 200000, 150000, 200000, 100000], 'DateOfJoining': [datetime(2023, 2, 16), datetime(2024, 12, 2), datetime(2024, 10, 23), datetime(2025, 4, 13), datetime(2023, 8, 31)]} #Creating a data frame of the data of employees and print it Employee_data = pd.DataFrame(empdata) print("Part (a): Employee Data Frame i:\n", Employee_data) # Part (b): Creating a Group on the First character of the 'Name' by using a Lambda function GroupbyFirstCharacterofName = Employee_data.groupby(lambda x: Employee_data.loc[x, "Name"][0]) # Displaying the group using an iterator print("\nPart(b): Grouping using First Character of the Name") for Name_first_char, employees in GroupbyFirstCharacterofName: print("\nEmployee with Name starting with", Name_first_char,":") print(employees) # Part (c): Creating a Group on DateOfJoining column 'using a Lambda function and performing aggregate functions yearly_joined = Employee_data.groupby( lambda x: Employee_data.loc[x, "DateOfJoining"].strftime("%Y") ).aggregate({ 'Name': ['count'], 'Salary': ['mean']}) print("\nPart (c): Grouping by using Year") print("\nAnnual employees joining count with Mean Salary", yearly_joined) Figure 15: Grouping with Functions The details of the Figure 15 and Figure 16 are explained below: 1.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing grouping with functions.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** A function $f: A \to B$ maps each domain element to exactly one codomain element. Injections guarantee unique mappings ($f(a)=f(b) \implies a=b$); surjections cover the entire codomain; bijections admit two-sided inverses $f^{-1}: B \to A$.
+- **Boundary Conditions:** Division by zero singularities, non-injective hash collisions in hash tables, and undefined out-of-domain evaluation.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in grouping with functions can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Feature transformations $X \mapsto \phi(X)$, hash functions in distributed partitions, non-linear activation functions (ReLU, Sigmoid, Softmax), and invertible normalizing flows.
+- **Real-World Pitfall:** Applying inverse transformations to non-injective functions, creating multi-valued ambiguities or silent data destruction.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define grouping with functions formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** In exams, demonstrate injectivity by showing $f(x_1) = f(x_2) \implies x_1 = x_2$, and surjectivity by expressing domain variable $x$ in terms of codomain target $y$.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -246,9 +264,11 @@ To solidify your theoretical understanding, work through these fully solved, ste
 Sum of squared deviations $= 4 + 4 + 0 + 1 + 1 = 10$.
 
 3. **Sample Variance with Bessel's Correction ($n-1 = 4$):**
+
 $$
 s^2 = \frac{10}{5 - 1} = \frac{10}{4} = 2.5
 $$
+
 
 4. **Standard Deviation:** $s = \sqrt{2.5} \approx 1.581$.
 
@@ -295,45 +315,61 @@ print(f"Detected Outliers: {outliers}")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Rearrange the data in groups using the Category of product and display these subgroups. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Aggregation and Group Operations.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Rearrange the data to display the total sales of the ‘Educational’ Category only. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Aggregation and Group Operations.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Rearrange the data to show Region-wise total sales of each category. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Aggregation and Group Operations.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Show records of only those regions whose total sales are 2100 thousand or more. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Aggregation and Group Operations.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Dividing by $n-1$ applies **Bessel's correction**, which removes downward bias caused by using the sample mean $\bar{x}$ instead of the true population mean $\mu$.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The **Median**, because it depends on positional rank rather than magnitude summation.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> In a right-skewed (positively skewed) distribution, what is the order of Mean, Median, and Mode? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> $\text{Mode} < \text{Median} < \text{Mean}$.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Rearrange the data in groups using the Category of product and display these subgroups. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Aggregation and Group Operations. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> Rearrange the data to display the total sales of the ‘Educational’ Category only. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Aggregation and Group Operations. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Rearrange the data to show Region-wise total sales of each category. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Aggregation and Group Operations. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

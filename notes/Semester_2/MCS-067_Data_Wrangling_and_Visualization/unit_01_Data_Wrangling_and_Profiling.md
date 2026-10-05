@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Data Wrangling and Profiling** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
+In modern data systems and advanced analytics, **Data Wrangling and Profiling** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering data wrangling and profiling equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["1.2.2 Need of Data Wrangling"]
   N4["1.3 Process of Data Wrangling"]
   N5["1.4 Benefits of Data Wrangling"]
+  N6["1.5 Data Semantics"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -77,150 +79,163 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `1.2` Basic Concepts
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Basic Concepts** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Data Wrangling and Profiling**, understanding basic concepts is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In probability theory and statistical inference, **Basic Concepts** formalizes the stochastic behavior of random phenomena. Within **Data Wrangling and Profiling**, this framework allows data scientists to infer population parameters from finite empirical samples while quantifying uncertainty via confidence intervals and hypothesis tests.
+
+The mathematical rigor here prevents statistical misinterpretations, such as confusing correlation with causation, overlooking sample selection bias, or violating distributional assumptions.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing basic concepts.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Separates operational transaction systems (OLTP) from analytical reporting (OLAP). Organizes analytics into Fact tables (quantitative metrics) and Dimension tables (contextual attributes) in Star or Snowflake schemas. ETL pipelines extract, transform, and load clean data.
+- **Boundary Conditions:** Slowly Changing Dimensions (SCD Type 1, 2, 3), late-arriving dimension records, null imputation distortion, and massive distributed partition skew.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in basic concepts can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Modern Cloud Data Warehouses (Snowflake, BigQuery, Databricks), automated dbt transformations, and executive business intelligence dashboards (Tableau, PowerBI).
+- **Real-World Pitfall:** Over-normalizing OLAP analytical schemas into deeply nested snowflake structures, severely degrading vectorized columnar scan query performance.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define basic concepts formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Design a Star Schema for a given business domain (identifying facts and dimensions); contrast OLTP vs OLAP; define Roll-up, Drill-down, Slice, and Dice operations.
 
 #### `1.2.1` Definition
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Definition** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Data Wrangling and Profiling**, understanding definition is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In probability theory and statistical inference, **Definition** formalizes the stochastic behavior of random phenomena. Within **Data Wrangling and Profiling**, this framework allows data scientists to infer population parameters from finite empirical samples while quantifying uncertainty via confidence intervals and hypothesis tests.
+
+The mathematical rigor here prevents statistical misinterpretations, such as confusing correlation with causation, overlooking sample selection bias, or violating distributional assumptions.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing definition.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Separates operational transaction systems (OLTP) from analytical reporting (OLAP). Organizes analytics into Fact tables (quantitative metrics) and Dimension tables (contextual attributes) in Star or Snowflake schemas. ETL pipelines extract, transform, and load clean data.
+- **Boundary Conditions:** Slowly Changing Dimensions (SCD Type 1, 2, 3), late-arriving dimension records, null imputation distortion, and massive distributed partition skew.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in definition can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Modern Cloud Data Warehouses (Snowflake, BigQuery, Databricks), automated dbt transformations, and executive business intelligence dashboards (Tableau, PowerBI).
+- **Real-World Pitfall:** Over-normalizing OLAP analytical schemas into deeply nested snowflake structures, severely degrading vectorized columnar scan query performance.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define definition formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Design a Star Schema for a given business domain (identifying facts and dimensions); contrast OLTP vs OLAP; define Roll-up, Drill-down, Slice, and Dice operations.
 
 #### `1.2.2` Need of Data Wrangling
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Need of Data Wrangling** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Data Wrangling and Profiling**, understanding need of data wrangling is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In probability theory and statistical inference, **Need of Data Wrangling** formalizes the stochastic behavior of random phenomena. Within **Data Wrangling and Profiling**, this framework allows data scientists to infer population parameters from finite empirical samples while quantifying uncertainty via confidence intervals and hypothesis tests.
+
+The mathematical rigor here prevents statistical misinterpretations, such as confusing correlation with causation, overlooking sample selection bias, or violating distributional assumptions.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing need of data wrangling.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Separates operational transaction systems (OLTP) from analytical reporting (OLAP). Organizes analytics into Fact tables (quantitative metrics) and Dimension tables (contextual attributes) in Star or Snowflake schemas. ETL pipelines extract, transform, and load clean data.
+- **Boundary Conditions:** Slowly Changing Dimensions (SCD Type 1, 2, 3), late-arriving dimension records, null imputation distortion, and massive distributed partition skew.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in need of data wrangling can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Modern Cloud Data Warehouses (Snowflake, BigQuery, Databricks), automated dbt transformations, and executive business intelligence dashboards (Tableau, PowerBI).
+- **Real-World Pitfall:** Over-normalizing OLAP analytical schemas into deeply nested snowflake structures, severely degrading vectorized columnar scan query performance.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define need of data wrangling formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Design a Star Schema for a given business domain (identifying facts and dimensions); contrast OLTP vs OLAP; define Roll-up, Drill-down, Slice, and Dice operations.
 
 #### `1.3` Process of Data Wrangling
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Data wrangling involves several steps to convert raw data into a form which can be readily used. Following steps show how data wrangling works: 1. Collection First step in data wrangling is collecting required data from several sources. These sources include files, databases, IoT device data input, data extraction from websites, and numerous other data streams.
 
 Collected data may be semi-structured (like JSON/ XML files), unstructured (like text documents, images, audio or video files), or structured (such as SQL databases). Cleaning Cleaning process starts as soon as the data is collected. Oversights, inconsistencies, and duplication are removed in this step since they may skew analysis results.
 
 It might include: • eliminating information that is not important to the analysis. • fixing data mistakes, like misspellings, inaccurate and Null values. • lower case and upper case normalisation, • addressing missing values by eliminating them, assigning them to other data points, or using statistical techniques to estimate them.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing process of data wrangling.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in process of data wrangling can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define process of data wrangling formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `1.4` Benefits of Data Wrangling
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Data wrangling has numerous advantages that significantly increase the worth of data for companies and organisations. Data wrangling opens the door to more accurate, effective, and insightful research by transforming unstructured data into more structured and clean format. Here are a few specific advantages of data wrangling: 1) Improved Data Quality The notable improvement of data quality is one of the primary benefits of data wrangling.
 
 Inaccuracies, inconsistencies, missing values, and repetitions are common in raw data, which can skew analysis and can lead to inaccurate conclusions. To solve these problems, the data wrangling process - cleaning is used, and later the validation step assures that the accurate, consistent and reliable data is used in the analysis.
 
 To obtain reliable insights so that decision makers can make wise judgments, high-quality data is essential. 2) Enhanced Analytical Efficiency By streamlining the data preparation procedure, data wrangling improves the effectiveness of data analysis. By automating repetitive operations and utilising advanced data cleansing and organising tools, data scientists and analysts spend more time on analytical work and less time on data preparation.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing benefits of data wrangling.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Separates operational transaction systems (OLTP) from analytical reporting (OLAP). Organizes analytics into Fact tables (quantitative metrics) and Dimension tables (contextual attributes) in Star or Snowflake schemas. ETL pipelines extract, transform, and load clean data.
+- **Boundary Conditions:** Slowly Changing Dimensions (SCD Type 1, 2, 3), late-arriving dimension records, null imputation distortion, and massive distributed partition skew.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in benefits of data wrangling can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Modern Cloud Data Warehouses (Snowflake, BigQuery, Databricks), automated dbt transformations, and executive business intelligence dashboards (Tableau, PowerBI).
+- **Real-World Pitfall:** Over-normalizing OLAP analytical schemas into deeply nested snowflake structures, severely degrading vectorized columnar scan query performance.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define benefits of data wrangling formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Design a Star Schema for a given business domain (identifying facts and dimensions); contrast OLTP vs OLAP; define Roll-up, Drill-down, Slice, and Dice operations.
 
 #### `1.5` Data Semantics
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Data Semantics represents the meaning and structure of data. By transforming unstructured, confusing data into information with a common meaning, it helps you enforce data integrity and data integration and enhances data analysis. Semantic data models can be produced via an abstraction process that selects real-world data elements and creates links between these attributes to generate organised, meaningful data.
 
 Sometimes, raw data can be confusing. Additionally, metadata—data about data—is frequently poorly defined. Sometimes a higher-level abstraction of the data is required in order to represent the data in an organised manner. This leads to data format or standardisation in addition to making the data's meaning more understandable.
 
 Better data interpretation and integration result from this. The notion of data standardisation will be further explained by the example that follows: Example: Numerous department stores in several cities are part of a nationwide chain. It keeps track of retail purchases made by several clients in a single data file.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data semantics.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Separates operational transaction systems (OLTP) from analytical reporting (OLAP). Organizes analytics into Fact tables (quantitative metrics) and Dimension tables (contextual attributes) in Star or Snowflake schemas. ETL pipelines extract, transform, and load clean data.
+- **Boundary Conditions:** Slowly Changing Dimensions (SCD Type 1, 2, 3), late-arriving dimension records, null imputation distortion, and massive distributed partition skew.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data semantics can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Modern Cloud Data Warehouses (Snowflake, BigQuery, Databricks), automated dbt transformations, and executive business intelligence dashboards (Tableau, PowerBI).
+- **Real-World Pitfall:** Over-normalizing OLAP analytical schemas into deeply nested snowflake structures, severely degrading vectorized columnar scan query performance.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data semantics formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Design a Star Schema for a given business domain (identifying facts and dimensions); contrast OLTP vs OLAP; define Roll-up, Drill-down, Slice, and Dice operations.
 
 #### `1.5.1` Data Semantic Process
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The data semantic process is the generic process that operates on raw data to make it more meaningful and interpretable. The following example shows the basic steps that may be used in data semantic process Example: 1. Data Collection: Raw data is gathered from sources. For example, the following raw data may be obtained as a series of data bytes: Name | Value A | 25 B | 30 2.
 
 Data Structuring: The raw data is organised into a structured format, such as tables, JSON, etc. The first record of the raw data, as shown in point 1 above, is organised as JSON object as: { "person": "A", "value": 25 } Introduction to Data Wrangling It is still unclear what “person” and "value" means.
 
 Assigning Meaning(Semantic Annotation): we will define what each data field means. For example: { "person_name": "A", "age": 25 } Now "25" clearly means it is the age of the person whose name is given. Using Ontology/Schema: we define relationships and rules like (Age-> must be a number, Age-> belongs to a person; PersonàhasàAge Data Interpretation: Now system can understand and use the data meaningfully.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data semantic process.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data semantic process can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data semantic process formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `1.5.2` Semantic Wrangling using Data Abstraction
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Sometimes the available data may need to be generalised or aggregated into different categories. In such situations, you may use data abstraction terms like "is a" (generalisation), "has a" (aggregation), and "instance of" (classification) to perform semantic wrangling. The following semantic relationships describe the connections between the attributes: o Generalisation (Is A): For example, a manager "is a" type of employee.
 
 You can establish generalisation ("is a") for a more general object. o Aggregation (Has A): Combine multiple component objects or attributes to define a new object. For example, an employee "has" a name, age, and contact details. o Classification (Instance Of): Sort certain items into groups or "instances of" according to common traits.
 
 Modeling Semantic Data: You can create a semantic data model by utilising the stated abstraction approaches to specify the context and meaning of the data. In addition, you can add metadata, which ensures a common understanding and use. Please note that metadata can also explain the relationships, significance, and limitations of the data.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing semantic wrangling using data abstraction.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Hierarchical acyclic data structure. Binary Search Trees enforce $\text{left} < \text{root} \le \text{right}$. Self-balancing AVL and Red-Black trees execute pointer rotations to maintain $\mathcal{O}(\log n)$ depth invariants.
+- **Boundary Conditions:** Degenerate skewed trees degenerating to $\mathcal{O}(n)$ singly linked lists, empty roots, and deletions of nodes with two children requiring in-order successor replacements.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in semantic wrangling using data abstraction can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** B+ tree indexing in SQL relational databases, ensemble decision trees (Random Forest, XGBoost), and Min/Max Heaps in priority queues for top-$k$ recommendation retrieval.
+- **Real-World Pitfall:** Unbalanced sequential insertions degrading search times from $\mathcal{O}(\log n)$ to $\mathcal{O}(n)$, or failing to update parent pointers during tree rebalancing.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define semantic wrangling using data abstraction formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Draw step-by-step tree insertion and deletion states; write recursive traversals (Pre-order, In-order, Post-order); illustrate AVL single/double rotations.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -242,9 +257,11 @@ To solidify your theoretical understanding, work through these fully solved, ste
 Sum of squared deviations $= 4 + 4 + 0 + 1 + 1 = 10$.
 
 3. **Sample Variance with Bessel's Correction ($n-1 = 4$):**
+
 $$
 s^2 = \frac{10}{5 - 1} = \frac{10}{4} = 2.5
 $$
+
 
 4. **Standard Deviation:** $s = \sqrt{2.5} \approx 1.581$.
 
@@ -291,45 +308,61 @@ print(f"Detected Outliers: {outliers}")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Why is data wrangling important for AI and Machine Learning? 12 Data wrangling and profiling <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Wrangling and Profiling.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> What is the primary goal of data wrangling? Define data profiling. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Wrangling and Profiling.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Why is data wrangling needed? <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Wrangling and Profiling.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> What is the main purpose of using data semantics? <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Wrangling and Profiling.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Dividing by $n-1$ applies **Bessel's correction**, which removes downward bias caused by using the sample mean $\bar{x}$ instead of the true population mean $\mu$.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The **Median**, because it depends on positional rank rather than magnitude summation.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> In a right-skewed (positively skewed) distribution, what is the order of Mean, Median, and Mode? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> $\text{Mode} < \text{Median} < \text{Mean}$.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Why is data wrangling important for AI and Machine Learning? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Wrangling and Profiling. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> What is the primary goal of data wrangling? Define data profiling. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Wrangling and Profiling. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Why is data wrangling needed? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Wrangling and Profiling. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

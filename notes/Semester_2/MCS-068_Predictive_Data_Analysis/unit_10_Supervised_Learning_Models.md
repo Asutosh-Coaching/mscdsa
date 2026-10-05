@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Supervised Learning Models** forms a vital conceptual pillar. Regression analysis estimates relationships between dependent targets and independent explanatory variables. Linear models, regularization penalties, and gradient updates form the computational core of supervised machine learning.
+In modern data systems and advanced analytics, **Supervised Learning Models** forms a vital conceptual pillar. Regression analysis estimates relationships between dependent targets and independent explanatory variables. Linear models, regularization penalties, and gradient updates form the computational core of supervised machine learning.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering supervised learning models equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["10.3 Supervised Learning models"]
   N4["10.3.1 K-Nearest Neighbour,"]
   N5["10.3.2 Naïve-Bayes,"]
+  N6["10.3.3 Logistic regression,"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -83,154 +85,169 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `10.1` Expected Learning Outcomes
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Expected Learning Outcomes** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Supervised Learning Models**, understanding expected learning outcomes is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In probability theory and statistical inference, **Expected Learning Outcomes** formalizes the stochastic behavior of random phenomena. Within **Supervised Learning Models**, this framework allows data scientists to infer population parameters from finite empirical samples while quantifying uncertainty via confidence intervals and hypothesis tests.
+
+The mathematical rigor here prevents statistical misinterpretations, such as confusing correlation with causation, overlooking sample selection bias, or violating distributional assumptions.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing expected learning outcomes.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in expected learning outcomes can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define expected learning outcomes formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 #### `10.2` Supervised Vs Unsupervised Learning
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 LEARNING In the previous section, we learned that Supervised learning mainly focuses on two types of problems based on the type of output (Y): classification and regression. These two approaches help in solving different kinds of real-world prediction problems depending on whether the output is categorical or continuous.
 
 Classification tasks are used when we need to predict a category or label. In this case, the output is discrete, meaning it belongs to a fixed set of classes. For example, an email can be classified as spam or not spam, a user may or may not click on an advertisement, or an image can be identified as a specific object.
 
 The main goal of classification models is to correctly assign the right label to each input. These models are designed to improve accuracy and clearly separate different classes using techniques like Logistic Regression or Support Vector Machines. Regression tasks, on the other hand, are used when the output is a continuous value.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing supervised vs unsupervised learning.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in supervised vs unsupervised learning can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define supervised vs unsupervised learning formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 #### `10.3` Supervised Learning models
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In the above we learned about Supervised learning and compared it with Unsupervised learning, on the basis of various aspects. Now, in this section we are going to discuss about various Supervised learning models, which are widely used in data analysis, and they learn from labeled data to make predictions or classifications.
 
 These models identify patterns between input features and known outputs, enabling them to classify/predict outcomes for new, unseen data. Different supervised learning algorithms are designed to handle various types of problems such as classification and regression, each with its own strengths and applications.
 
 The prominent supervised learning models are as follows:  K-Nearest Neighbours (KNN) is a simple and intuitive algorithm that classifies a data point based on the majority class of its nearest neighbours. It relies on distance measures such as Euclidean or Manhattan distance and does not require an explicit training phase.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing supervised learning models.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in supervised learning models can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define supervised learning models formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 #### `10.3.1` K-Nearest Neighbour,
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The K-Nearest Neighbors (KNN) algorithm is one of the simplest and most intuitive supervised learning techniques used for both classification and regression tasks. It is a non- parametric and instance-based learning algorithm, meaning it does not build an explicit model during training but instead makes predictions based on the stored training data.
 
 The core idea behind KNN is that similar data points exist close to each other in the feature space. Therefore, the class or value of a new data point can be determined by examining its nearest neighbors. In simple terms, KNN works on the principle of “Similarity” or “Closeness.” For example, in real life, if a new student joins a class and we want to guess their performance, we may compare them with students who have similar study habits or background.
 
 Similarly, in a movie recommendation system, if a user likes certain movies, the system recommends movies liked by users with similar preferences. These are practical examples of how KNN operates. The working of the KNN algorithm involves the following steps:  first, choose the value of K (the number of nearest neighbors).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing k-nearest neighbour,.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in k-nearest neighbour, can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define k-nearest neighbour, formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 #### `10.3.2` Naïve-Bayes,
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 TYPES OF NAÏVE BAYES ALGORITHM Now we extend our discussion to explore further details on Naïve Bayes algorithm, In practical scenarios, Naïve Bayes is often implemented in different forms such as:  Gaussian Naïve Bayes (for continuous data),  Multinomial Naïve Bayes (for text data), and  Bernoulli Naïve Bayes (for binary features).
 
 One common issue is the occurrence of zero probability, which can be handled using techniques like Laplace smoothing, where a small value is added to all probabilities to avoid multiplication by zero. A brief introduction to each of the Naïve Bayes algorithm, which are implemented as different variants, depending on the nature of data, such as Gaussian, Multinomial, and Bernoulli Naïve Bayes is as follows: 1.
 
 Gaussian Naïve Bayes (for Continuous Data) :Gaussian Naïve Bayes is used when the input features are continuous in nature, such as height, weight, marks, or income. It assumes that the values of these features follow a normal (Gaussian) distribution. Instead of counting frequencies, this method uses the mean and variance of the data to estimate probabilities.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing naïve-bayes,.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability measure satisfying Kolmogorov axioms: $P(S)=1, P(A) \ge 0$, and countable additivity. Bayes' Theorem computes posterior probability: $P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$. Variance measures dispersion: $\text{Var}(X) = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$.
+- **Boundary Conditions:** Zero probability conditioning events ($P(B) = 0$), distinguishing mutually exclusive events ($A \cap B = \emptyset$) from independent events ($P(A \cap B) = P(A)P(B)$), and heavy-tailed infinite variance.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in naïve-bayes, can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** A/B test statistical significance, Naive Bayes spam classifiers, Bayesian hyperparameter optimization, and stochastic risk quantification in financial algorithms.
+- **Real-World Pitfall:** Confusing conditional probability $P(A \mid B)$ with $P(B \mid A)$ (the Prosecutor's Fallacy), or falsely assuming independence between correlated feature variables.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define naïve-bayes, formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate conditional probabilities using the Law of Total Probability and Bayes' Theorem; calculate expectation $\mathbb{E}[X]$ and variance for discrete and continuous random variables.
 
 #### `10.3.3` Logistic regression,
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Logistic Regression is one of t algorithms for solving classificat (such as Yes/No, 0/1, True/Fals traditional sense; instead, it is us particular class. At its core, Logistic Regression probability of an outcome usin Function. Important Note: The Sigmoid Regression to convert any real-va Mathematical Expression fo Where:  𝑧= linear combination  𝑒= Euler’s number (≈  𝜎(𝑧)= output probabi The sigmoid curve shown in transforming values in range between 0 and 1, value of 𝑧 is very large a indicating a very low pro of 0.5, which represents a ……………………………………………………………… …………………………………………………………… EGRESSION the most fundamental and widely used superv tion problems, especially when the output is bin e).
 
 Despite its name, it is not a regression alg sed to estimate the probability that a given inpu n builds a relationship between the input fea ng a mathematical function called the Sigmo d Function is a mathematical function used alued input into a probability value between 0 a for Sigmoid Function is: 𝜎(𝑧) = ଵ ଵା௘ష೥ n of inputs (e.g., 𝛽଴+ 𝛽ଵ𝑥) ≈ 2.718) ility between 0 and 1 n above is an S-shaped smooth curve that plays n Logistic Regression.
 
 It maps any real-valued i making it suitable for probability interpretatio and negative, the output of the sigmoid function obability. When 𝑧= 0, the sigmoid function gi an uncertain or neutral state. As the value of 𝑧 b … vised learning nary in nature gorithm in the ut belongs to a tures and the oid (Logistic) d in Logistic nd 1.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing logistic regression,.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Ordinary Least Squares (OLS) minimizes residual sum of squares: $\min_\beta \sum (y_i - x_i^T \beta)^2$. Normal equation analytical solution: $\hat{\beta} = (X^T X)^{-1} X^T y$. Logistic regression applies sigmoid link $\sigma(z) = \frac{1}{1 + e^{-z}}$ optimizing log-likelihood.
+- **Boundary Conditions:** Perfect multicollinearity causing singular non-invertible $X^T X$, heteroscedasticity (non-constant residual variance), and high-leverage outlier leverage points.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in logistic regression, can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Predictive target forecasting, econometric attribution modeling, risk scoring models, and baseline benchmark modeling in data science pipelines.
+- **Real-World Pitfall:** High multicollinearity inflating coefficient standard errors, or fitting linear models without verifying residual normality and homoscedasticity plots.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define logistic regression, formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Derive OLS normal equations; interpret slope $\beta_1$ and intercept $\beta_0$; calculate $R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}}$ and conduct $F$-tests for overall model significance.
 
 #### `10.3.4` Decision trees
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Decision Trees are one of the most intuitive and widely used supervised learning algorithms for both classification and regression problems. The core idea of a Decision Tree is to break down a complex decision-making process into a series of simple, sequential decisions, represented in the form of a tree-like structure.
 
 Each internal node of the tree represents a test on a feature, each branch represents the outcome of that test, and each leaf node represents the final prediction or class label. This structure closely resembles human decision-making, making Decision Trees easy to understand and interpret.
 
 In a typical Decision Tree, the algorithm starts from the root node and recursively splits the dataset into smaller subsets based on the feature that best separates the data. The goal is to create pure subsets, where most of the data points belong to a single class. To determine the best feature for splitting, the algorithm uses measures such as Entropy, Information Gain, or Gini Index.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing decision trees.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Hierarchical acyclic data structure. Binary Search Trees enforce $\text{left} < \text{root} \le \text{right}$. Self-balancing AVL and Red-Black trees execute pointer rotations to maintain $\mathcal{O}(\log n)$ depth invariants.
+- **Boundary Conditions:** Degenerate skewed trees degenerating to $\mathcal{O}(n)$ singly linked lists, empty roots, and deletions of nodes with two children requiring in-order successor replacements.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in decision trees can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** B+ tree indexing in SQL relational databases, ensemble decision trees (Random Forest, XGBoost), and Min/Max Heaps in priority queues for top-$k$ recommendation retrieval.
+- **Real-World Pitfall:** Unbalanced sequential insertions degrading search times from $\mathcal{O}(\log n)$ to $\mathcal{O}(n)$, or failing to update parent pointers during tree rebalancing.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define decision trees formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Draw step-by-step tree insertion and deletion states; write recursive traversals (Pre-order, In-order, Post-order); illustrate AVL single/double rotations.
 
 #### `10.3.5` Random Forest
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Decision Trees and Random Forest are both supervised learning algorithms based on tree structures, but they differ significantly in their approach and performance. A Decision Tree is a single model that splits the dataset into smaller subsets based on feature conditions, forming a tree-like structure of decisions.
 
 It is simple, easy to understand, and highly interpretable, as the decision-making process can be clearly visualized through rules. However, this simplicity comes with a drawback: Decision Trees are highly prone to overfitting, especially when the tree becomes deep and captures noise in the data.
 
 They are also sensitive to small changes in the dataset, which can lead to completely different tree structures. On the other hand, Random Forest is an ensemble learning technique that builds multiple Decision Trees and combines their predictions to produce a final result. Instead of relying on a single tree, it uses techniques such as bootstrapping (random sampling of data) and random feature selection to create diversity among trees.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing random forest.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Supervised algorithms learn function approximations $f: \mathcal{X} \to \mathcal{Y}$ minimizing empirical loss. Unsupervised clustering minimizes intra-cluster inertia $\sum ||x_i - \mu_k||^2$. The Bias-Variance Tradeoff balances underfitting against overfitting.
+- **Boundary Conditions:** Curse of dimensionality in high dimensions, severe class imbalance (requiring SMOTE or class-weighted loss), and poor centroid initialization in K-Means.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in random forest can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Customer segmentation, churn prediction, recommendation systems, automated fraud scoring, and cross-validated model selection with regularization ($L_1, L_2$).
+- **Real-World Pitfall:** Data leakage during preprocessing prior to train-test splits, producing falsely inflated validation scores that fail in production deployment.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define random forest formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate precision, recall, F1-score, and ROC-AUC; explain the mathematical difference between generative and discriminative models; trace K-Means iterations.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -252,12 +269,16 @@ To solidify your theoretical understanding, work through these fully solved, ste
 3. **Summation:** $\sum (x_i - \bar{x})(y_i - \bar{y}) = 9, \; \sum (x_i - \bar{x})^2 = 10$.
 
 4. **Parameters:**
+
 $$
 \hat{\beta}_1 = \frac{9}{10} = 0.90
 $$
+
+
 $$
 \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} = 4.0 - 0.9(3.0) = 4.0 - 2.7 = 1.30
 $$
+
 
 Regression Equation: $\hat{y} = 1.30 + 0.90 x$.
 
@@ -267,9 +288,11 @@ Regression Equation: $\hat{y} = 1.30 + 0.90 x$.
 
 **Detailed Step-by-Step Solution:**
 
+
 $$
 R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} = 1 - \frac{1.90}{10.0} = 1 - 0.19 = 0.81 \implies 81\%
 $$
+
 
 Interpretation: 81% of the variation in target $y$ is explained by feature $x$.
 
@@ -301,45 +324,61 @@ print("Lasso Coefficients (Sparse):", lasso.coef_)
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What is the key difference between Ridge ($L_2$) and Lasso ($L_1$) regression? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> What is the main difference between supervised and unsupervised learning? …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Supervised Learning Models.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Which type of learning is used for predicting house prices and why? …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Supervised Learning Models.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Give one real-life example of unsupervised learning. …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Supervised Learning Models.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Why is data preprocessing important in machine learning? …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Supervised Learning Models.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What is the key difference between Ridge ($L_2$) and Lasso ($L_1$) regression? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Ridge shrinks coefficients continuously toward zero without zeroing them out, whereas Lasso drives coefficients to exactly zero, producing sparse models and automated feature selection.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the matrix Normal Equation for Ordinary Least Squares? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> What is the matrix Normal Equation for Ordinary Least Squares? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > $\hat{\mathbf{\beta}} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> What does a high Variance Inflation Factor (VIF > 5) indicate? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> Severe **multicollinearity**, meaning independent features are highly correlated with each other, destabilizing coefficient estimation.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> What is the main difference between supervised and unsupervised learning? …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Supervised Learning Models. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> Which type of learning is used for predicting house prices and why? …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Supervised Learning Models. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Give one real-life example of unsupervised learning. …………………………………………………………………………………………… …………………………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Supervised Learning Models. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Rule Based Systems and other Formalism** forms a vital conceptual pillar. Artificial Intelligence models autonomous decision-making, while Machine Learning extracts predictive statistical patterns from data. From A* pathfinding in logistics to Deep Neural Networks powering Computer Vision and LLMs, AI/ML drives modern automated systems.
+In modern data systems and advanced analytics, **Rule Based Systems and other Formalism** forms a vital conceptual pillar. Artificial Intelligence models autonomous decision-making, while Machine Learning extracts predictive statistical patterns from data. From A* pathfinding in logistics to Deep Neural Networks powering Computer Vision and LLMs, AI/ML drives modern automated systems.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering rule based systems and other formalism equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["6.2.2 Backward chaining"]
   N4["6.2.3 Conflict resolution"]
   N5["6.3 Semantic nets"]
+  N6["6.4 Frames"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -83,152 +85,168 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `6.2` Rule Based Systems
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 We know that Planning is the process that exploits the structure of the problem under consideration for designing a sequence of actions in order to solve the problem under consideration. In order to plan a solution to the problem, one should have the knowledge of the nature and the structure of the problem domain, under consideration.
 
 For the purpose of planning, the problem environments are divided into two categories, viz., classical planning environments and non-classical planning environments. The classical planning environments/domains are fully observable, deterministic, finite, static and discrete. On the other hand, non- classical planning environments may be only partially observable and/or stochastic.
 
 Let’s begin with the Rule Based Systems : Rather than representing knowledge in a declarative and somewhat static way (as a set of statements, each of which is true), rule-based systems represent knowledge in terms of a set of rules each of which specifies the conclusion that could be reached or derived under given conditions or in different situations.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing rule based systems.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in rule based systems can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define rule based systems formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in rule based systems and articulate practical applications in real-world scenarios.
 
 #### `6.2.1` Forward chaining
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In a forward chaining system the facts in the system are represented in a working memory which is continually updated, so on the basis of a rule which is currently being applied, the number of facts may either increase or decrease. Rules in the system represent possible actions to be taken when specified conditions hold on items in the working memory–they are sometimes called condition-action or antecedent-consequent rules.
 
 The conditions are usually patterns that must match items in the working memory, while the actions usually involve adding or deleting items from the working memory. So we can say that in forward chaining proceeds forward, beginning with facts, chaining through rules, and Artificial Intelligence- Knowledge Representation finally establishing the goal.
 
 Forward chaining systems usually represent rules in standard implicational form, with an antecedent or condition part consisting of positive literals, and a consequent or conclusion part consisting of a positive literal. The interpreter controls the application of the rules, given the working memory, thus controlling the system’s activity.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing forward chaining.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in forward chaining can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define forward chaining formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in forward chaining and articulate practical applications in real-world scenarios.
 
 #### `6.2.2` Backward chaining
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In forward chining systems we have seen how rule-based systems are used to draw new conclusions from existing data and then add these conclusions to a working memory. The forward chaining approach is most useful when we know all the initial facts, but we don’t have much idea what the conclusion might be.
 
 If we know what the conclusion would be, or have some specific hypothesis to test, forward chaianing systems may be inefficient. In forward chaining we keep on moving ahead until no more rules apply or we have added our hypothesis to the working memory. But in the process the system is likely to do a lot of additional and irrelevant work, adding uninteresting or irrelevant conclusions to working memory.
 
 Let us say that in the example discussed before, suppose we want to find out whether “ram is at home”. We could repeatedly fire rules, updating the working memory, checking each time whether (at-home ram) is found in the new working memory. But maybe we had a whole batch of rules for drawing conclusions about what happens when I’m working, or what happens on Monday–we really don’t care about this, so would rather only have to draw the conclusions that are relevant to the goal.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing backward chaining.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in backward chaining can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define backward chaining formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in backward chaining and articulate practical applications in real-world scenarios.
 
 #### `6.2.3` Conflict resolution
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Next, we discuss in detail some of the issues involved in a rule-based system. Rule-based systems vary greatly in their details and syntax, A basic principle of rule-based system is that each rule is an independent piece of knowledge. In an IF-THEN rule, the IF-part contains all the conditions for the application of the rule under consideration.
 
 THEN-part tells the action to be taken by the interpreter. The interpreter need not search any where else except within the rule itself for the conditions required for application of the rule. Another important consequence of the above-mentioned characteristic of a rule-based system is that no rule can call upon any other and hence rules are ignorant and hence independent, of each other.
 
 This gives a highly modular structure to the rule-based systems. Because of the highly modular structure of the rule-base, the rule-based system addition, deletion and modification of a rule can be done without any danger side effects. The main problem with the rule-based systems is that when the rule-base grows and becomes very large, then checking (i) whether a new rule intended to be added is redundant, i.e., it is already covered by some of the earlier rules.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing conflict resolution.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in conflict resolution can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define conflict resolution formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in conflict resolution and articulate practical applications in real-world scenarios.
 
 #### `6.3` Semantic nets
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Semantic Network representations provide a structured knowledge representation. In such a network, parts of knowledge are clustered into semantic groups. In semantic networks, the concepts and entities/objects of the problem domain are represented by nodes and relationships between these entities are shown by arrows, generally, by directed arrows.
 
 In view of the fact that semantic network representation is a pictorial depiction of objects, their attributes and the relationships that exist between these objects and other entities. A semantic net is just a graph, where the nodes in the graph represent concepts, and the arcs are labeled and represent binary relationships between concepts.
 
 These networks provide a more natural way, as compared to other representation schemes, for mapping to and from a natural language. For example, the fact (a piece of knowledge): Mohan struck Nita in the garden with a sharp knife last week, is represented by the semantic network shown in Figure 1.1.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing semantic nets.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in semantic nets can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define semantic nets formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in semantic nets and articulate practical applications in real-world scenarios.
 
 #### `6.4` Frames
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Frames are a variant of semantic networks that are one of the popular ways of representing non-procedural knowledge in an expert system. In a frame, all the information relevant to a particular concept is stored in a single complex entity, called a frame. Frames look like the data structure, record.
 
 Frames support inheritance. They are often used to capture knowledge about typical objects or events, such as a car, or even a mathematical object like rectangle. As mentioned earlier, a frame is a structured object and different names like Schema, Script, Prototype, and even Object are used in stead of frame, in computer science literature.
 
 We may represent some knowledge about a lion in frames as follows: Mammal : Subclass : Animal warm_blooded : yes Lion : subclass : Mammal eating-habbit : carnivorous size : medium Raja : instance : Lion colour : dull-Yellow owner : Amar Circus Sheru : instance : Lion size : small A particular frame (such as Lion) has a number of attributes or slots such as eating-habit and size.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing frames.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in frames can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define frames formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in frames and articulate practical applications in real-world scenarios.
 
 #### `6.5` Scripts
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 A script is a structured representation describing a stereotyped sequence of events in a particular context. Scripts are used in natural language understanding systems to organize a knowledge base in terms of the situations that the system should understand. Scripts use a frame-like structure to represent the commonly occurring experience like going to the movies eating in a restaurant, shopping in a supermarket, or visiting an ophthalmologist.
 
 Thus, a script is a structure that prescribes a set of circumstances that could be expected to follow on from one another. Scripts are beneficial because: • Events tend to occur in known runs or patterns. • A casual relationship between events exist. • An entry condition exists which allows an event to take place.
 
 • Prerequisites exist upon events taking place. Components of a script The components of a script include: Artificial Intelligence- Knowledge Representation • Entry condition: These are basic condition which must be fulfilled before events in the script can occur. • Results: Condition that will be true after events in script occurred.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing scripts.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in scripts can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define scripts formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in scripts and articulate practical applications in real-world scenarios.
 
 #### `6.8` Further/Readings
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Ela Kumar, “ Artificial Intelligence”, IK International Publications 2. Knight, “Artificial intelligence”, Tata Mc Graw Hill Publications 3. Nilsson, “Principles of AI”, Narosa Publ. House Publications 4. Craig, “Introduction to Robotics”, Addison Wesley publication 5. Patterson, “Introduction to AI and Expert Systems" Pearson publication
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing further/readings.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for rule based systems and other formalism.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in further/readings can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define further/readings formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in further/readings and articulate practical applications in real-world scenarios.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -240,23 +258,29 @@ To solidify your theoretical understanding, work through these fully solved, ste
 **Detailed Step-by-Step Solution:**
 
 1. **Parent Entropy $H(S)$:**
+
 $$
 H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
 $$
+
 
 2. **Subset Entropies:**
 - For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
 - For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
 
 3. **Weighted Child Entropy:**
+
 $$
 H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
 $$
 
+
 4. **Information Gain:**
+
 $$
 IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
 $$
+
 (Attribute provides 0.048 bits of entropy reduction).
 
 #### 🧮 Example 2: A* Search Step Evaluation
@@ -303,24 +327,61 @@ print(f"Information Gain: {ig:.4f} bits")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> Exercise 1 ; In the “Animal Identifier System” discussed above use forward chaining to try to identify the animal called “raja”. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Rule Based Systems and other Formalism.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Exercise 2: Draw a semantic network for the following English statement: Mohan struck Nita and Nita’s mother struck Mohan. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Rule Based Systems and other Formalism.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Exercise 3: Define a frame for the entity date which consists of day, month and year. each of which is a number with restrictions which are well-known. Also a procedure named compute-day-of-week is already defined. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Rule Based Systems and other Formalism.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Exercise 1: Refer to section 6.2 <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Rule Based Systems and other Formalism.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> What condition must a heuristic $h(n)$ satisfy for A* search to be optimal? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The heuristic must be **Admissible**, meaning it never overestimates the actual minimal cost to reach the goal state ( $h(n) \le h^*(n)$ ).
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> What is the formula for Information Gain used in Decision Trees? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> What is the formula for Information Gain used in Decision Trees? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > $IG(S, A) = H(S) - \sum_{v \in \text{Values}(A)} \frac{\vert S_v \vert}{\vert S \vert} H(S_v)$
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> Why is the Softmax function used in multi-class classification neural networks? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

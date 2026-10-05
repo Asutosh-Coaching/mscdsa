@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Measures of Dispersion** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
+In modern data systems and advanced analytics, **Measures of Dispersion** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering measures of dispersion equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["3.2.2 Quartile Deviation"]
   N4["3.2.3 Mean Deviation"]
   N5["3.3 Variance and Standard Deviation"]
+  N6["3.3.1 Variance"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -77,148 +79,164 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `3.2` Basic Measures of Dispersion
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Range is the simplest measure of dispersion. It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution. Its merit lies in its simplicity. The demerit is that it is a crude measure because it is using only the maximum and the minimum observations of variable.
 
 However, it still finds applications in Order Statistics and Statistical Quality Control. It can be defined as Min Max X X R − = where, Max X : Maximum value of variable and Min X : Minimum value of variable. Example 1: Find the range of the distribution 6, 8, 2, 10, 15, 5, 1, 13.
 
 Solution: For the given distribution, the maximum value of variable is 15 and the minimum value of variable is 1. Hence range = 15 -1 = 14. Note: Range is the simplest measure of dispersion as it can be obtained from the largest and the smallest observations. It is used in statistical quality control.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing basic measures of dispersion.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for measures of dispersion. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in basic measures of dispersion can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define basic measures of dispersion formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for basic measures of dispersion, compute summary statistics, and interpret numerical findings accurately.
 
 #### `3.2.1` Range
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Range is the simplest measure of dispersion. It is defined as the difference between the maximum value of the variable and the minimum value of the variable in the distribution. Its merit lies in its simplicity. The demerit is that it is a crude measure because it is using only the maximum and the minimum observations of variable.
 
 However, it still finds applications in Order Statistics and Statistical Quality Control. It can be defined as Min Max X X R − = where, Max X : Maximum value of variable and Min X : Minimum value of variable. Example 1: Find the range of the distribution 6, 8, 2, 10, 15, 5, 1, 13.
 
 Solution: For the given distribution, the maximum value of variable is 15 and the minimum value of variable is 1. Hence range = 15 -1 = 14. Note: Range is the simplest measure of dispersion as it can be obtained from the largest and the smallest observations. It is used in statistical quality control.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing range.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for measures of dispersion. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in range can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define range formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for range, compute summary statistics, and interpret numerical findings accurately.
 
 #### `3.2.2` Quartile Deviation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 You have already studied in about Q1 and Q3, the first quartile and the third Descriptive Statistics semi-interquartile range which is also known as Quartile Deviation (QD) is given by Quartile Deviation (QD) = (Q3 – Q1) / 2 Relative measure of Q.D. known as Coefficient of Q.D. and is defined as Q Q Q Q QD of Cofficient + − = Example 2: For the following data, find the quartile deviation: Class Interval 0-10 10-20 20-30 30-40 40-50 Frequency Solution: We have N/4 = 28/4 = 7 and 7th observation falls in the class 10-20.
 
 This is the first quartile class. Similarly, 3N/4 = 21 and 21st observation falls in the interval 30-40. This is the third quartile class. Class Interval Frequency Cumulative Frequency 0-10 10-20 20-30 30-40 40-50 Using the formulae of first quartile and third quartile we found Q1 = 10 + ( ) 7 −  10 = 18 Q3 = 30 + ( ) 21− 10 = 36.67 Hence Quartile Deviation = (36.67-18)/2 = 9.335
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing quartile deviation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for measures of dispersion. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in quartile deviation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define quartile deviation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for quartile deviation, compute summary statistics, and interpret numerical findings accurately.
 
 #### `3.2.3` Mean Deviation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Mean deviation is defined as average of the sum of the absolute values of deviation from any arbitrary value viz. mean, median, mode, etc. It is often suggested to calculate it from the median because it gives least value when measured from the median. The deviation of an observation xi from the assumed mean A is defined as (xi – A).
 
 Therefore, the mean deviation can be defined as  = − = n i i A x n D M The quantity xi – Ais minimum when A is median. We accordingly define mean deviation from mean as MD= n x x n i i  = − Measures of Dispersion and from the median as MD = n median x n i i  = − For frequency distribution, the formula will be MD =   = = − k i i k i i i f x x f MD =   = = − k i i k i i i f median x f where, all symbols have usual meanings.
 
 Example 3: Find mean deviation for the given data 1, 2, 3, 4, 5, 6, 7 Solution: First of all we find Mean x = = + + + + + + = Then, we will find ,2 ,1 ,1 ,2 ,3 : x xi − So, x xi = −  Therefore, .1 MD = = Example 4: Find mean deviation from mean for the following data: x 1 2 3 4 5 6 7 f 3 5 8 12 10 7 5 Solution: First of all we have to calculate the mean from the given data x f f x x x − x x f −
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing mean deviation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for measures of dispersion. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in mean deviation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define mean deviation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for mean deviation, compute summary statistics, and interpret numerical findings accurately.
 
 #### `3.3` Variance and Standard Deviation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In this section, we discuss one of the most used measures of dispersion and certain related measures. We will first discuss the variance, followed by the standard deviation and the root mean square variation.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing variance and standard deviation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability measure satisfying Kolmogorov axioms: $P(S)=1, P(A) \ge 0$, and countable additivity. Bayes' Theorem computes posterior probability: $P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$. Variance measures dispersion: $\text{Var}(X) = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$.
+- **Boundary Conditions:** Zero probability conditioning events ($P(B) = 0$), distinguishing mutually exclusive events ($A \cap B = \emptyset$) from independent events ($P(A \cap B) = P(A)P(B)$), and heavy-tailed infinite variance.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in variance and standard deviation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** A/B test statistical significance, Naive Bayes spam classifiers, Bayesian hyperparameter optimization, and stochastic risk quantification in financial algorithms.
+- **Real-World Pitfall:** Confusing conditional probability $P(A \mid B)$ with $P(B \mid A)$ (the Prosecutor's Fallacy), or falsely assuming independence between correlated feature variables.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define variance and standard deviation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate conditional probabilities using the Law of Total Probability and Bayes' Theorem; calculate expectation $\mathbb{E}[X]$ and variance for discrete and continuous random variables.
 
 #### `3.3.1` Variance
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Variance is the average of the square of deviations of the values taken from mean. Taking a square of the deviation is a better technique to get rid of negative deviations. Variance is defined as Var(x) = σ2 = ( )  = − n i i x x n and for a frequency distribution, the formula is σ2 = ( )  = − k i i i x x f N where, all symbols have their usual meanings.
 
 Descriptive Statistics It should be noted that sum of squares of deviations is least when deviations are measured from the mean. This means (xi – A)2 is least when A = Mean. Example 6: Calculate the variance for the data given in Example 3. Solution: We have ( ) x x n i i = −  = Therefore, ( ) ( )  = =  = − = n i i x x n x Var Example 7: For the data given in Example 2, compute the variance.
 
 Solution: We have the following data: Class Mid Value Frequency (f) ( ) x x f − 0-10
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing variance.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Probability measure satisfying Kolmogorov axioms: $P(S)=1, P(A) \ge 0$, and countable additivity. Bayes' Theorem computes posterior probability: $P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$. Variance measures dispersion: $\text{Var}(X) = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$.
+- **Boundary Conditions:** Zero probability conditioning events ($P(B) = 0$), distinguishing mutually exclusive events ($A \cap B = \emptyset$) from independent events ($P(A \cap B) = P(A)P(B)$), and heavy-tailed infinite variance.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in variance can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** A/B test statistical significance, Naive Bayes spam classifiers, Bayesian hyperparameter optimization, and stochastic risk quantification in financial algorithms.
+- **Real-World Pitfall:** Confusing conditional probability $P(A \mid B)$ with $P(B \mid A)$ (the Prosecutor's Fallacy), or falsely assuming independence between correlated feature variables.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define variance formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate conditional probabilities using the Law of Total Probability and Bayes' Theorem; calculate expectation $\mathbb{E}[X]$ and variance for discrete and continuous random variables.
 
 #### `3.3.2` Standard Deviation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Standard deviation (SD) is defined as the positive square root of variance. The formula is SD = ( ) n x x n i i  = − and for a frequency distribution the formula is SD = ( )   = = − k i i k i i i f x x f where, all symbols have usual meanings. SD, MD and variance cannot be negative.
 
 Descriptive Statistics Example 9: Find the SD for the data in Example 2. Solution: In the Example 7, we have already found the Variance = 145.408 So SD = + . (145.408) = Note: Standard deviation is a rigidly defined measure that utilises all the observations. It is amenable to algebraic treatment and get rid of negative deviations by squaring.
 
 It is the most popular measure of dispersion. However, in cases where mean is not a suitable average, like when open ended classes are present, variance may not be the coveted measure of dispersion In such cases quartile deviation may be used Remark: SD is algebraically more amenable than MD.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing standard deviation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for measures of dispersion. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in standard deviation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define standard deviation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for standard deviation, compute summary statistics, and interpret numerical findings accurately.
 
 #### `3.3.3` Root Mean Square Deviation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 As we have discussed in the last sub-section, standard deviation is the positive square root of the average of the squares of deviations taken from the mean. If we take the deviations from assumed mean then it is called Root Mean Square Deviation and it is defined as RMSD = ( ) n A x n i i  = − where, A is the assumed mean.
 
 For a frequency distribution, the formula is RMSD = ( )   = = − k i i k i i i f A x f When assumed mean is equal to the actual mean x A .e.i x = root mean square deviation will be equal to the standard deviation.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing root mean square deviation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Applies statistical and probabilistic modeling for measures of dispersion. Formulates parameter estimation, variance reduction, and data distribution validation.
+- **Boundary Conditions:** Small sample size limitations, extreme skewness, and violating underlying distribution assumptions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in root mean square deviation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Production metric experimentation, automated anomaly detection, and data validation pipelines.
+- **Real-World Pitfall:** Confusing correlation with causation or overlooking selection bias in data collection samples.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define root mean square deviation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State the governing formulas for root mean square deviation, compute summary statistics, and interpret numerical findings accurately.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -240,9 +258,11 @@ To solidify your theoretical understanding, work through these fully solved, ste
 Sum of squared deviations $= 4 + 4 + 0 + 1 + 1 = 10$.
 
 3. **Sample Variance with Bessel's Correction ($n-1 = 4$):**
+
 $$
 s^2 = \frac{10}{5 - 1} = \frac{10}{4} = 2.5
 $$
+
 
 4. **Standard Deviation:** $s = \sqrt{2.5} \approx 1.581$.
 
@@ -289,45 +309,61 @@ print(f"Detected Outliers: {outliers}")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> For a group containing 100 observations the arithmetic mean and standard deviation are 16 and 21 respectively. For 50 observations, the mean and standard deviation are 20 and 2 respectively. Calculate mean and standard deviation of other half. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Measures of Dispersion.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> Find the standard deviation for the following numbers: 10 27 40 60 33 30 10 <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Measures of Dispersion.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> Calculate standard deviation for the following data: <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Measures of Dispersion.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> If n = 10,  = = 200 x ,4 x 2 , find the coefficient of variation. <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Measures of Dispersion.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Dividing by $n-1$ applies **Bessel's correction**, which removes downward bias caused by using the sample mean $\bar{x}$ instead of the true population mean $\mu$.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The **Median**, because it depends on positional rank rather than magnitude summation.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> In a right-skewed (positively skewed) distribution, what is the order of Mean, Median, and Mode? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> $\text{Mode} < \text{Median} < \text{Mean}$.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Calculate range for the following frequency distribution: Class <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Measures of Dispersion. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> Calculate the Quartile Deviation for the following data: Class <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Measures of Dispersion. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Find mean deviation for the following distribution: Class <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Measures of Dispersion. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

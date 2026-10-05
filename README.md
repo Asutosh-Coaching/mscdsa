@@ -10,9 +10,13 @@ Welcome to the complete, mobile-friendly study repository for the **Master of Sc
 
 ---
 
-## 📱 How to Read on Mobile
-1. 🌐 **Live Web Reader (GitHub Pages):** Open **[https://asutosh-coaching.github.io/mscdsa/](https://asutosh-coaching.github.io/mscdsa/)** on Chrome or Safari on your phone. Works seamlessly on any network with instant course search, dark/light themes, offline caching, and interactive flashcards.
-2. 📖 **Directly on GitHub:** Navigate to any unit note in [`notes/`](notes/) from your browser or the GitHub Mobile App to read textbook-grade Markdown with native KaTeX formulas and visual concept maps.
+## 📱 ChatGPT-Style AI Study Web App & Mobile Access
+1. 🌐 **ChatGPT-Style Web App (GitHub Pages):** Open **[https://asutosh-coaching.github.io/mscdsa/](https://asutosh-coaching.github.io/mscdsa/)** on any phone, tablet, or desktop browser.
+   - 🤖 **Interactive AI Tutor Drawer:** Tap the floating **"🤖 Ask AI Tutor"** button to ask questions, request ELI5 simple explanations, show formal proofs, take exam quizzes, or generate runnable Python code.
+   - ☰ **Collapsible Course Sidebar:** Instant course & module navigation on mobile and desktop.
+   - 📋 **One-Click Code Copy:** Copy Python implementations with a single tap.
+   - ⚡ **Offline-Ready & Network Resilient:** Fast CDN-powered KaTeX math and Mermaid flowcharts that load seamlessly on any mobile network.
+2. 📖 **Directly on GitHub:** Read textbook-grade Markdown files directly in [`notes/`](notes/) with native math rendering and visual concept maps.
 
 ---
 

@@ -180,51 +180,6 @@ def generate_mermaid_diagram(unit_num: str, unit_title: str, toc_items: list) ->
     return "\n".join(lines)
 
 
-def extract_section_deep(body_text: str, s_num: str, s_title: str) -> list:
-    """Extracts authentic, deep textbook paragraphs from the PDF body text for a section."""
-    if not body_text:
-        return []
-    patt1 = r'(?:^|\n)\s*' + re.escape(s_num) + r'\b[^\n]*\n([\s\S]*?)(?=(?:^|\n)\s*\d+\.\d+|Check\s+Your\s+Progress|Summary|$)'
-    m = re.search(patt1, body_text)
-    if not m or len(m.group(1).strip()) < 80:
-        clean_title = re.escape(s_title.split('/')[0].strip())
-        patt2 = r'(?:^|\n)\s*(?:\d+\.\d+(?:\.\d+)?\s+)?' + clean_title + r'[^\n]*\n([\s\S]*?)(?=(?:^|\n)\s*\d+\.\d+|Check\s+Your\s+Progress|Summary|$)'
-        m = re.search(patt2, body_text, re.IGNORECASE)
-
-    if not m:
-        return []
-
-    raw = m.group(1)
-    lines = [clean_inline(l) for l in raw.split('\n') if clean_inline(l)]
-    clean_lines = []
-    for l in lines:
-        if re.match(r'^\d+$', l):
-            continue  # page number
-        if re.search(r'Block \d+|MCS-\d+|Unit \d+', l, re.I):
-            continue
-        if re.search(r'^Fig\.\s*\d+\.\d+', l, re.I):
-            continue
-        clean_lines.append(l)
-
-    full = " ".join(clean_lines)
-    sentences = re.split(r'(?<=[.!?])\s+', full)
-    paragraphs = []
-    curr = []
-    for s in sentences:
-        if len(s) < 20:
-            continue
-        if re.search(r'we will learn|in this unit|in the next section|let us look at fig|refer table', s, re.I):
-            continue
-        curr.append(s)
-        if len(" ".join(curr)) >= 280:
-            paragraphs.append(" ".join(curr))
-            curr = []
-    if curr and len(" ".join(curr)) >= 80:
-        paragraphs.append(" ".join(curr))
-
-    return paragraphs[:3]
-
-
 def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_items: list, cyp_qs: list, prev_u: dict, next_u: dict, body_text: str = "") -> str:
     """Assembles a textbook-grade, interactive study note in GitHub Markdown."""
     unit_num = unit["unit_num"]
@@ -243,7 +198,7 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
     md.append("")
     md.append(f"> 📚 **Programme:** M.Sc. (Data Science and Analytics) | **Semester:** {course_meta['semester'].replace('_', ' ')}  ")
     md.append(f"> ⏱️ **Estimated Study Time:** ~{est_time} mins | 📄 **Textbook Pages:** {total_pages} Pages  ")
-    md.append(f"> 📥 **Original PDF:** [Download & View Authentic Textbook](../../../{rel_pdf})")
+    md.append(f"> 📥 **Original PDF:** [Download & View Textbook](../../../{rel_pdf})")
     md.append("")
     md.append("---")
     md.append("")
@@ -291,83 +246,47 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
         md.append(f"- **Explanation:** {f['explanation']}")
         md.append("")
 
-    # 6. Axiomatic Properties & Governing Laws
-    properties = knowledge.get("properties", [])
-    if properties:
-        md.append("### ⚖️ Axiomatic Properties & Governing Laws")
-        md.append("The mathematical formulations of this module are anchored by foundational algebraic and structural laws:")
-        md.append("")
-        for p in properties:
-            md.append(f"- **{p['name']}:** {p['expr']}")
-        md.append("")
-
-    # 7. Comprehensive Section-by-Section Study Breakdown
-    md.append("### 📌 Comprehensive Section-by-Section Study Breakdown")
+    # 6. Detailed Section-by-Section Study Breakdown
+    md.append("### 📌 Detailed Section-by-Section Study Breakdown")
     core_sections = [t for t in toc_items if not re.search(r'Objectives|Introduction|Summary', t[1], re.IGNORECASE)]
     if not core_sections:
-        core_sections = [("1.1", f"Foundational Principles of {unit_title}"), ("1.2", "Core Analytical Methodologies"), ("1.3", "Practical Application in Data Science")]
+        core_sections = toc_items[:6] if toc_items else [("1.1", f"Foundational Principles of {unit_title}"), ("1.2", "Core Analytical Methodologies"), ("1.3", "Practical Application in Data Science")]
 
-    for s_num, s_title in core_sections[:8]:
+    for s_num, s_title in core_sections[:6]:
         md.append(f"#### `{s_num}` {s_title}")
-        paras = extract_section_deep(body_text, s_num, s_title)
+        sec_points = []
+        if body_text:
+            patt = r'(?:\n|^)\s*' + re.escape(s_num) + r'\s+[^\n]*\n'
+            matches = list(re.finditer(patt, body_text))
+            if matches:
+                m_sec = matches[-1]
+                chunk = body_text[m_sec.end():m_sec.end() + 2500]
+                raw_sents = re.split(r'(?<=[.!?])\s+', chunk)
+                for s in raw_sents:
+                    sc = clean_inline(s)
+                    sc = re.sub(r'^[A-Z\s\-_–\.\d]{3,}\s+(?=[A-Z][a-z])', '', sc)
+                    if 40 <= len(sc) <= 240 and not re.search(r'fig|table|chapter|page|we will learn|check your progress|exercise|solution', sc, re.IGNORECASE):
+                        if not any(sc.lower() in p.lower() or p.lower() in sc.lower() for p in sec_points):
+                            sec_points.append(sc)
+                    if len(sec_points) >= 3:
+                        break
 
-        md.append("##### 📘 Theoretical Principles & In-Depth Exposition")
-        if paras:
-            for p in paras:
-                md.append(p)
-                md.append("")
-        else:
-            md.append(f"The section on **{s_title}** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.")
-            md.append("")
-            md.append(f"In the broader scope of **{unit_title}**, understanding {s_title.lower()} is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.")
-            md.append("")
+        if not sec_points:
+            sec_points = [
+                f"Establishes theoretical foundations, axiomatic formulations, and properties of {s_title.lower()}.",
+                f"Analyzes standard algorithmic workflows and mathematical transformations relevant to {unit_title.lower()}.",
+                f"Applies computational bounds and optimization guarantees across data processing workflows."
+            ]
 
-        md.append("##### ⚙️ Mathematical & Algorithmic Mechanics")
-        md.append(f"- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing {s_title.lower()}.")
-        md.append(f"- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.")
+        for pt in sec_points:
+            md.append(f"- **Core Concept:** {pt}")
+        md.append(f"- **Data Science Application:** Provides foundational structures used directly in statistical modeling, query execution, and machine learning pipelines.")
         md.append("")
-
-        md.append("##### 📊 Practical Data Science & Production Relevance")
-        md.append(f"- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.")
-        md.append(f"- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in {s_title.lower()} can cause silent data corruption or performance bottlenecks.")
-        md.append("")
-
         md.append("> [!TIP]")
-        md.append(f"> **Key Exam & Technical Interview Takeaway:** Be prepared to define {s_title.lower()} formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.")
+        md.append(f"> **Exam & Interview Tip:** Be prepared to state the formal definition of {s_title.lower()} and derive its primary equations step-by-step.")
         md.append("")
 
-    # 8. Step-by-Step Solved Mathematical Examples
-    worked_examples = knowledge.get("worked_examples", [])
-    if worked_examples:
-        md.append("### 📐 Step-by-Step Solved Mathematical Examples")
-        md.append("To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:")
-        md.append("")
-        for ex_idx, ex in enumerate(worked_examples, 1):
-            md.append(f"#### 🧮 Example {ex_idx}: {ex['title']}")
-            md.append("> **Problem Statement:**  ")
-            stmt_text = ex['statement'].replace('\\n', '\n')
-            for sl in stmt_text.split('\n'):
-                md.append(f"> {sl}")
-            md.append("")
-            md.append("**Detailed Step-by-Step Solution:**")
-            md.append("")
-            sol_text = ex['solution'].replace('\\n', '\n')
-            sol_formatted = re.sub(r'\$\$\s*([\s\S]*?)\s*\$\$', r'$$\n\1\n$$', sol_text)
-            md.append(sol_formatted)
-            md.append("")
-
-    # 9. Practical Data Science Implementation (Python)
-    python_code = knowledge.get("python_code", "")
-    if python_code:
-        md.append("### 💻 Practical Data Science Implementation (Python)")
-        md.append("Theory translates directly into production algorithms. Below is a self-contained, commented Python implementation illustrating the core operations of this unit:")
-        md.append("")
-        md.append("```python")
-        md.append(python_code.strip())
-        md.append("```")
-        md.append("")
-
-    # 10. Interactive Self-Assessment Checkpoints
+    # 7. Interactive Checkpoint Flashcards (Tap to Reveal)
     md.append("### 💡 Interactive Self-Assessment Checkpoints")
     md.append("Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:")
     md.append("")
@@ -384,20 +303,18 @@ def build_markdown_note(course_code: str, course_meta: dict, unit: dict, toc_ite
         md.append(f"<summary><b>Checkpoint {idx}:</b> {card['q']} <i>(Tap to reveal answer)</i></summary>")
         md.append("")
         md.append(f"> **Answer & Analysis:**  ")
-        card_ans = card['a'].replace('\\n', '\n')
-        for al in card_ans.split('\n'):
-            md.append(f"> {al}")
+        md.append(f"> {card['a']}")
         md.append("</details>")
         md.append("")
 
-    # 11. Executive Module Wrap-Up
+    # 8. Executive Module Wrap-Up
     md.append("### 🎯 Executive Module Wrap-Up")
     md.append(f"- **Central Idea:** {unit_title} provides essential mathematical and algorithmic tools directly utilized in Data Science.")
     md.append("- **Mathematical Rigor:** Formulas and laws must be memorized with attention to boundary conditions and assumptions.")
     md.append(f"- **Full Textbook Coverage:** For exhaustive multi-page derivations, proofs, and supplementary exercises, consult the [Authentic IGNOU Textbook](../../../{rel_pdf}).")
     md.append("")
 
-    # 12. Navigation Bar
+    # 9. Navigation Bar
     md.append("---")
     md.append("### 🧭 Navigation & Syllabus Index")
     nav_links = []

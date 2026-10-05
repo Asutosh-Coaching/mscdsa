@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Sorting Algorithms** forms a vital conceptual pillar. Algorithm efficiency governs data scale. In large-scale data engineering, choosing between $O(n \log n)$ mergesort vs $O(n^2)$ bubblesort, or an $O(1)$ hash table lookup vs $O(n)$ linear scan, determines whether a pipeline finishes in seconds or hours.
+In modern data systems and advanced analytics, **Sorting Algorithms** forms a vital conceptual pillar. Algorithm efficiency governs data scale. In large-scale data engineering, choosing between $O(n \log n)$ mergesort vs $O(n^2)$ bubblesort, or an $O(1)$ hash table lookup vs $O(n)$ linear scan, determines whether a pipeline finishes in seconds or hours.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering sorting algorithms equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["12.4 Bubble Sort"]
   N4["12.5 Selection Sort"]
   N5["12.6 Insertion Sort"]
+  N6["12.7 Merge Sort"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -73,148 +75,162 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `12.2` Why Study Algorithms?
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Why Study Algorithms?** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Sorting Algorithms**, understanding why study algorithms? is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+From an algorithmic efficiency standpoint, **Why Study Algorithms?** defines explicit data organization strategies and memory access patterns. In **Sorting Algorithms**, managing computational bounds—specifically asymptotic time complexity $\mathcal{O}(f(n))$ and auxiliary space complexity—relies directly on how why study algorithms? organizes data nodes and pointer references.
+
+Contrasting contiguous array-backed allocations against dynamic linked allocations demonstrates the trade-offs between memory locality and constant-time insertion/deletion operations.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing why study algorithms?.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in why study algorithms? can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define why study algorithms? formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.3` Categories of Sorting Algorithms
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Categories of Sorting Algorithms** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Sorting Algorithms**, understanding categories of sorting algorithms is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+From an algorithmic efficiency standpoint, **Categories of Sorting Algorithms** defines explicit data organization strategies and memory access patterns. In **Sorting Algorithms**, managing computational bounds—specifically asymptotic time complexity $\mathcal{O}(f(n))$ and auxiliary space complexity—relies directly on how categories of sorting algorithms organizes data nodes and pointer references.
+
+Contrasting contiguous array-backed allocations against dynamic linked allocations demonstrates the trade-offs between memory locality and constant-time insertion/deletion operations.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing categories of sorting algorithms.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in categories of sorting algorithms can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define categories of sorting algorithms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.4` Bubble Sort
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Bubble sort is the simplest algorithm that works by comparing each pair of elements and swapping elements if they are in the wrong order. The algorithm continues iteration until no more swaps are required. Bubble sort is not suitable for large datasets due to its high time complexity.
 
 Bubble sort does not require additional memory space, i.e., in-place and is stable sorting algorithm. Working of Bubble Sort 1. The array is sorted using multiple passes. The largest element goes to the end of array after first pass. The second largest element goes to second last position after second pass and so on.
 
 In all passes, we compare all adjacent elements and swap of larger element is before the smaller element. Let’s understand this with help of an example: First Pass: i=0 i=1 i=2 Largest Element in Last (Sorted Array) Second Pass: i=0 i=1 i=2 Third Pass: i=0 Pseudocode of Bubble Sort def Bubblesort (A) for i in range (len(A)): for j in range (len(A)-1, I, -1): if (A[j] < A[j-1]): swap (A, j, j-1) Performance Analysis: Time Complexity Reason Worst Case O(n2) When array is arranged in descending order Average Case O(n2) Irrespective of order of elements Best Case O(n2) Already sorted array Space Complexity: Bubble sort does not require additional memory space i.e., space complexity is O(1).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing bubble sort.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in bubble sort can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define bubble sort formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.5` Selection Sort
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Selection sort works by repeatedly selecting the smallest element from the unsorted Sorted Array Sorted Array array and swapping it with the first unsorted element. The process continues till the array is sorted. The algorithm is easy to understand and does not require additional memory space for sorting.
 
 But it does not preserve the relative order of elements with the same value i.e., unstable sorting algorithm. Working of Selection Sort 1. Find the minimum element in the unsorted array and swap it with element at current position. Repeat this process until all elements are in correct order i.e., the array is sorted.
 
 Let’s understand this with the help of an example: Considering the given array as: 12 14 10 5 Step 01 Step 02 Step 03 Sorted Array Pseudocode of Selection Sort def Selectionsort (A): for i in range (len (A)): min = i for j in range (i+1, len (A)): if (A[j] < A[min]) min = j swap (A, min, j) Smallest element SWAP Current Position Sorted Current Position Smallest element SWAP Smallest element Current Position Performance Analysis Time Complexity Reason Worst Case O(n2) The time complexity is irrespective of order of the elements Average Case O(n2) Best Case O(n2) Space Complexity:It is an in-place sorting algorithm i.e., does not require additional memory space i.e., space complexity is O(1).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing selection sort.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in selection sort can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define selection sort formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.6` Insertion Sort
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 It is a simple sorting algorithm that divide the array into two parts i.e., sorted and unsorted. The algorithm works by iteratively inserting each element of unsorted list into the right place in the sorted list. Insertion sort is efficient for small data and is a stable and in-place algorithm.
 
 Working of Insertion Sort: 1. The first element of the array is assured to be sorted. Compare the second element with the element in the sorted array if it is smaller than swap. Compare the third element with elements in the sorted array and put it in the correct position. Repeat the above steps with other elements until the array is sorted.
 
 Let’s understand this with the help of an example: First Pass Unsorted Array Sorted Array Compare 12 with 13. As it is smaller, swap SWAP Sorted Array Second Pass Third Pass Fourth Pass Pseudocode def Insertionsort (A): for i in range (1, len (A)): temp = A[i] j = i while (j >0 and tmp< A[i-1]): A[j] = A[j-1] j = j -1 A[j] = temp Compare 14 with elements in sorted array & swap where required Compare 10 with elements in sorted array & swap where required Swap Performance Analysis: Time Complexity Reason Worst Case O(n2) When array is arranged in descending order Average Case O(n2) Irrespective of order of elements Best Case O(n) Already sorted array Space Complexity: It does not require any auxiliary space i.e.,O(1) space complexity.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing insertion sort.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in insertion sort can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define insertion sort formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.7` Merge Sort
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Merge sort is popular sorting algorithm that works on Divide and Conquer strategy. It works by recursively dividing i/p array into two halves, sorting both halves and merging them together to obtain sorted array. It is a stable and not in-place algorithm. Working of Merge Sort 1.
 
 Divide the unsorted array into parts until it cannot be sub-divided- Divide 2. Conquer each sub-array created and sort them – Conquer Note – If an array contains single element, it is considered sorted. Merge the sorted sub-arrays into correct order. Let’s understand it with help of an example: Given Array:12 14 10 5 Pass 01:Split the array into equal halves Pass 02:Split the sub-arrays further into equal halves Pass 03: Sub-arrays cannot be divided further.
 
 Therefore, we move to step 02 i.e., conquer, sort, and merge Pass 04: Conquer, sort , and merge Pseudocode of Merge Sort: def mergesort (X): mid = len (X)/2 leftpart = X [:mid] rightpart = X[mid:] mergesort (leftpart) mergersort (rightpart) while i<len (leftpart) and j <len (rightpart): if leftpart[i] <rightpart[j] X[k] = leftpart[i] i = i + 1 else X[k] = rightpart [j] j + =1 k = k + 1 while i<len (leftpart): X[k] = leftpart [j] j = j + 1 k = k + 1 Performance Analysis: Time Complexity Reason Worst Case O(n log n) When array is arranged in descending order Average Case O(n log n) Irrespective of order of elements Best Case O(n log n) Already sorted array Space Complexity: It is not an in-place sorting algorithm i.e., needs additional memory space of O(n).
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing merge sort.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in merge sort can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define merge sort formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.8` Quick Sort
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Quick sort works on divide and conquer strategy and is also known as partition exchange sort. Just like merge sort, it uses recursive calls to sort the array. The algorithm picks an element as a pivot and partitions the unsorted array around pivot with an aim of placing pivot in the correct position in the sorted array.
 
 Further, quick sort is not a stable algorithm i.e., it does not preserve the relative order of same elements. It is in-place algorithm that do not require auxiliary space for sorting. Working of Quick Sort 1. Choose an element as pivot (leftmost element is usually taken as pivot).
 
 Split the array into 2 parts such that elements smaller than pivot are placed in one part and elements greater than pivot are placed in another part. Repeat the same process on both sub-arrays. Let’s understand this with help of an example: 12 14 10 5 Step 01: Considering last element i.e.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing quick sort.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in quick sort can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define quick sort formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `12.9` Comparing Various Sorting Algorithms
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In this section, we will discuss best, average, and worst case time complexity of various sorting algorithms. Refer to Table 1 for all information about space and time complexity of algorithms. Table 2Comparative Analysis of Various Sorting Algorithms Algorithm Worst Case Average Case Best Case Stable In-place Bubble Sort O(n2) O(n2) O(n) Yes Yes Selection Sort O(n2) O(n2) O(n2) No Yes Insertion Sort O(n2) O(n2) O(n) Yes Yes Merge Sort O(n logn) O(n logn) O(n logn) Yes No Quick Sort O(n2) O(n logn) O(n logn) No Yes
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing comparing various sorting algorithms.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in comparing various sorting algorithms can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define comparing various sorting algorithms formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -227,15 +243,19 @@ To solidify your theoretical understanding, work through these fully solved, ste
 
 1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
 2. **Compare $\log_b a$ and $d$:**
+
 $$
 \log_b a = \log_2 2 = 1
 $$
+
 Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
 
 3. **Conclusion:**
+
 $$
 T(n) = \Theta(n^d \log n) = \Theta(n \log n)
 $$
+
 
 #### 🧮 Example 2: AVL Tree Rotation Sequence
 > **Problem Statement:**  
@@ -308,27 +328,6 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 
 > **Answer & Analysis:**  
 > $O(1)$ constant time, assuming a uniform hash distribution and reasonable load factor.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Sort the array using bubble sort. b. Sort the given array of numbers using bubble sort. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Sorting Algorithms. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> Sort the array using selection sort. b. Show all steps to sort given array <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Sorting Algorithms. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Sort the array using insertion sort. <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Sorting Algorithms. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

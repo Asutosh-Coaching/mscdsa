@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Data Structures Using Python Lab** forms a vital conceptual pillar. Algorithm efficiency governs data scale. In large-scale data engineering, choosing between $O(n \log n)$ mergesort vs $O(n^2)$ bubblesort, or an $O(1)$ hash table lookup vs $O(n)$ linear scan, determines whether a pipeline finishes in seconds or hours.
+In modern data systems and advanced analytics, **Data Structures Using Python Lab** forms a vital conceptual pillar. Algorithm efficiency governs data scale. In large-scale data engineering, choosing between $O(n \log n)$ mergesort vs $O(n^2)$ bubblesort, or an $O(1)$ hash table lookup vs $O(n)$ linear scan, determines whether a pipeline finishes in seconds or hours.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering data structures using python lab equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -65,23 +65,25 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `2.2` Programming Exercises for Lab Sessions
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 LIST OF RESOURCES The following is a list of some resources to learn Python / Data Structures using Python as on date: 1. NOC: The Joy of Computing using Python (NPTEL) https://nptel.ac.in/courses/106106182 2. NOC: Programming, Data Structures and Algorithms using Python (NPTEL) https://nptel.ac.in/courses/106106145 3.
 
 Python Tutorial https://www.w3schools.com/python/default.asp 4. Python Tutorial https://www.geeksforgeeks.org/python/python-programming-language-tutorial/ 5. Python Data Structures https://www.coursera.org/learn/python-data 6. Data Structures and Algorithms with Python https://www.geeksforgeeks.org/dsa/python-data-structures-and-algorithms/ 7.
 
 Data Structures and Algorithms with Python https://www.w3schools.com/python/python_dsa.asp
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing programming exercises for lab sessions.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for data structures using python lab.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in programming exercises for lab sessions can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define programming exercises for lab sessions formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in programming exercises for lab sessions and articulate practical applications in real-world scenarios.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -94,15 +96,19 @@ To solidify your theoretical understanding, work through these fully solved, ste
 
 1. **Identify parameters:** $a = 2, \; b = 2, \; f(n) = n = \Theta(n^1) \implies d = 1$.
 2. **Compare $\log_b a$ and $d$:**
+
 $$
 \log_b a = \log_2 2 = 1
 $$
+
 Since $d = \log_b a = 1$, Case 2 of the Master Theorem applies.
 
 3. **Conclusion:**
+
 $$
 T(n) = \Theta(n^d \log n) = \Theta(n \log n)
 $$
+
 
 #### 🧮 Example 2: AVL Tree Rotation Sequence
 > **Problem Statement:**  

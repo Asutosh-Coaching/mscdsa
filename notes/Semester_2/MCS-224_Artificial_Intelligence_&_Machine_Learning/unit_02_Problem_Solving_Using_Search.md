@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Problem Solving Using Search** forms a vital conceptual pillar. Artificial Intelligence models autonomous decision-making, while Machine Learning extracts predictive statistical patterns from data. From A* pathfinding in logistics to Deep Neural Networks powering Computer Vision and LLMs, AI/ML drives modern automated systems.
+In modern data systems and advanced analytics, **Problem Solving Using Search** forms a vital conceptual pillar. Artificial Intelligence models autonomous decision-making, while Machine Learning extracts predictive statistical patterns from data. From A* pathfinding in logistics to Deep Neural Networks powering Computer Vision and LLMs, AI/ML drives modern automated systems.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering problem solving using search equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["2.2.3 Problem solution of State space"]
   N4["2.3.4 Searching for solution in state spaces for"]
   N5["2.3 Formulation of 8 puzzle problem from AI pe"]
+  N6["2.4 N-queen’s problem- Formulation and Solutio"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -83,148 +85,163 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `2.2.1` Problem Formulation
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The structures of state space are trees and graphs. A tree has one and only one path from any point to any other point. Graph consists of a set of nodes (vertices) and a set of edges (arcs). Arcs establish relationship (connections) between the nodes, i.e., a graph has several paths to a given node.
 
 Operators are directed arcs between nodes. The method of solving problem through AI involves the process of defining the search space, deciding start and goal states and then finding the path from start state to goal state through search space. Search process explores the state space.
 
 In the worst case, the search explores all possible paths between the initial state and the goal state.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing problem formulation.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for problem solving using search.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in problem formulation can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define problem formulation formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in problem formulation and articulate practical applications in real-world scenarios.
 
 #### `2.2.2` Structure of a State space
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In a state space, a solution is a path from the initial state to a goal state or sometime just a goal state. A numeric cost is assigned to each path. It also gives the cost of applying the operators to the states. A path cost function is used to measure the quality of solution and out of all possible solutions, an optimal solution has the lowest path cost.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing structure of a state space.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in structure of a state space can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define structure of a state space formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `2.2.3` Problem solution of State space
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Many problems can be represented as state space. The state space of a problem includes: an initial state, one or more goal state, set of state transition operator (or a set of production rules), used to change the current state to another state. This is also known as actions. A control strategy is used that specifies the order in which the rules will be applied.
 
 For example, Depth-first search (DFS), Breath-first search (BFS) etc. It helps to find the goal state or a path to the goal state. In general, a state space is represented by 4 tuples as follows: Ss: [S,s0,O,G] Where S: Set of all possible states. s0: start state (initial configuration) of the problem, s0∈S.
 
 O: Set of production rules (or set of state transition operator) used to change the state from one state to another. It is the set of arcs (or links) between nodes. The production rule is represented in the form of a pair. Each pair consists Artificial Intelligence – Introduction of a left side that determines the applicability of the rule and a right side that describes the action to be performed, if the rule is applied.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing problem solution of state space.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in problem solution of state space can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define problem solution of state space formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `2.3.4` Searching for solution in state spaces formulated
-##### 📘 Theoretical Principles & In-Depth Exposition
-The section on **Searching for solution in state spaces formulated** establishes rigorous theoretical foundations necessary for advanced computational modeling. It introduces formal mathematical structures and symbolic notations that guarantee consistency across proofs and algorithms.
 
-In the broader scope of **Problem Solving Using Search**, understanding searching for solution in state spaces formulated is essential to formalizing data representations, verifying boundary constraints, and ensuring computational determinism across multidimensional feature spaces.
+##### 📘 Theoretical Principles & Pedagogical Exposition
+In artificial intelligence and machine learning, **Searching for solution in state spaces formulated** defines the computational mechanisms that allow autonomous systems to reason, plan, or generalize from training data. In **Problem Solving Using Search**, this concept balances model expressiveness against overfitting risks through explicit loss formulation and optimization.
+
+Whether navigating combinatorial search spaces or minimizing empirical risk across high-dimensional parameter tensors, understanding searching for solution in state spaces formulated guarantees reproducible model convergence.
 
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing searching for solution in state spaces formulated.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in searching for solution in state spaces formulated can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define searching for solution in state spaces formulated formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 #### `2.3` Formulation of 8 puzzle problem from AI perspective
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 The eight-tile puzzle consists of a 3-by-3 (3×3) square frame board which holds eight (8) movable tiles numbered as 1 to 8. One square is empty, allowing the adjacent tiles to be shifted. The objective of the puzzle is to find a sequence of tile movements that leads from a starting configuration to a goal configuration The Eight Puzzle Problem formulation: Given a 3 × 3 grid with 8 sliding tiles and one “blank” Initial state: some other configuration of the tiles, for example Goal state: Operator: Slide tiles (Move Blank) to reach the goal (as shown below).
 
 There are 4 operators that is, “Moving the blank”: Move the blank UP, Move the blank DOWN, Move the blank LEFT and Move the blank RIGHT. [0,0] [4,0] [0,3] [4,3] [0,0] [1,3] [4,3] [0,0] [3,0] [1,0] [0,1] [4,1] [2,3] [3,3] [4,2] [0,2] [2,0] Artificial Intelligence – Introduction Fig6Moving Blank LEFT and then UP Path Cost: Sum of the cost of each path from initial state to goal state.
 
 Here cost of each action (blank move) = 1, so cost of a sequence of actions= the number of actions. A optimal solution is one which has a lowest cost path. Performing State-Space Search: Basic idea: If the initial state is a goal state, return it. If not, apply the operators to generate all states that are one step from the initial state (its successors) initial state Its successors Fig 7 All possible successors for a given initial state Consider the successor (and their successors…) until you find a goal state.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing formulation of 8 puzzle problem from ai perspective.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for problem solving using search.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in formulation of 8 puzzle problem from ai perspective can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define formulation of 8 puzzle problem from ai perspective formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in formulation of 8 puzzle problem from ai perspective and articulate practical applications in real-world scenarios.
 
 #### `2.4` N-queen’s problem- Formulation and Solution
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 SOLUTION The N-Queen problem is the problem of placing N Queen’s (Q1,Q2,Q3,…. Qn) on an N×N chessboard so that no two queens attack each other. The colour of the queens is meaningless in this puzzle, and any queen is assumed to be attack any other. So, a solution requires that no two queens share the same row, column, or diagonal.
 
 The N-queen problem must follow the following rules: 1. There is at most one queen in each column. There is at most one queen in each row. There is at most one queen in each diagonal. Fig-9 No two queens placed on same row, column or diagonal The N Queen’s problem was originally proposed in 1848 by the chess player Max Bazzel, and over the years, many mathematicians, including Gauss have Artificial Intelligence – Introduction worked on this puzzle.
 
 Gunther proposed a method of finding solutions by using determinants, and J.W.L. Glaisher refined this approach. The solutions that differ only by summary operations (rotations and reflections) of the board are counted as one. For 4 queen’s problems, there are 16c4 possible arrangements on a 4×4 chessboard and there are only 2 possible solutions for 4 Queen’s problem.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing n-queen’s problem- formulation and solution.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for problem solving using search.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in n-queen’s problem- formulation and solution can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define n-queen’s problem- formulation and solution formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in n-queen’s problem- formulation and solution and articulate practical applications in real-world scenarios.
 
 #### `2.4.1` Formulation of 8 Queen’s problem
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 States: any arrangement of 0 to 4 queens on the board Initial state: 0 queens on the board Successor function: Add queen in any square Goal test: 4 queens on the board, none attacked For the initial state, there are 16 successors. At the next level, each of the states has 15 successors, and so on down the line.
 
 This search tree can be restricted by considering only those successors where No queens are attacking each other. To do that, we have to check the new queen with all the other queens on the board. In this way, the answer is found at a depth 4.For the sake of simplicity, you can consider a problem of 4-Queen’s and see how 4-queen’s problem is solved using the concept of “Backtracking”.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing formulation of 8 queen’s problem.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Establishes analytical principles and computational workflows for problem solving using search.
+- **Boundary Conditions:** Missing data values, extreme outliers, and non-standard data types.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in formulation of 8 queen’s problem can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** End-to-end data science processing stacks (Pandas, Scikit-learn, PyTorch).
+- **Real-World Pitfall:** Failing to validate inputs before feeding data into production analytics pipelines.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define formulation of 8 queen’s problem formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Define key concepts in formulation of 8 queen’s problem and articulate practical applications in real-world scenarios.
 
 #### `2.4.2` State space tree for 4-Queen’s problem
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 We place queen row-by-row (i.e.,Q_1in row 1, Q_2 in row 2 and so on). Backtracking gives “all possible solution”. If you want optimal solution, then go for Dynamic programming. Let’s see Backtracking method, there are (_4^16)C ways to place a queen on a 4x4 chess board as shown in the following state space tree (figure 12).
 
 In a tree, the value (i,j) means in thei^(th )row, j^th queen is placed. Artificial Intelligence – Introduction Fig 12 State-space tree showing all possible ways to place a queen on a 4x4 chess board So, to reduce the size (not anywhere on chess board, since there are (_4^16)C Possibilities), we place queen row-by-row, and no Queen in same column.This tree is called a permutation tree (here we avoid same row or same columns but allowing diagonals) Total nodes=1+4+4×3+4×3×2+4×3×2×1=65 The edges are labeled by possible values of xi.
 
 Edges from level 1 to level 2 nodes specify the values for x1. Edges from level i to level i+1 are labeled with the values of xi. The solution space is defined by all paths from root node to leaf node. = 24 leaf nodes are in the tree Nodes are numbered as depth first Search. The state space tree for 4-Queen’s problem (avoid same row or same columns but allowing diagonals) is shown in figure 13.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing state space tree for 4-queen’s problem.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Asymptotic bounds evaluate algorithmic scalability as input size $n \to \infty$: upper bound $\mathcal{O}(g(n))$, lower bound $\Omega(g(n))$, and tight bound $\Theta(g(n))$. Recurrences are solved via the Master Theorem: $T(n) = a T(n/b) + f(n)$.
+- **Boundary Conditions:** Degenerate input permutations (e.g. sorted inputs triggering $\mathcal{O}(n^2)$ worst-case Quicksort), and recursion call stack memory limits.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in state space tree for 4-queen’s problem can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Selecting optimal data structures (hash tables $\mathcal{O}(1)$ vs BSTs $\mathcal{O}(\log n)$), minimizing latency in real-time query engines, and optimizing Big Data batch workloads.
+- **Real-World Pitfall:** Ignoring hardware cache locality and constant factors, or inadvertently nesting linear scans within iterative loops yielding hidden $\mathcal{O}(n^2)$ complexity.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define state space tree for 4-queen’s problem formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Solve recurrences step-by-step using substitution or Master Theorem; state tight $\mathcal{O}$, $\Omega$, and $\Theta$ bounds for best, average, and worst-case scenarios.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -236,23 +253,29 @@ To solidify your theoretical understanding, work through these fully solved, ste
 **Detailed Step-by-Step Solution:**
 
 1. **Parent Entropy $H(S)$:**
+
 $$
 H(S) = -\left(\frac{9}{14} \log_2 \frac{9}{14} + \frac{5}{14} \log_2 \frac{5}{14}\right) \approx 0.940 \text{ bits}
 $$
+
 
 2. **Subset Entropies:**
 - For $S_1$ (total 8): $H(S_1) = -\left(\frac{6}{8}\log_2\frac{6}{8} + \frac{2}{8}\log_2\frac{2}{8}\right) = 0.811 \text{ bits}$
 - For $S_2$ (total 6): $H(S_2) = -\left(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}\right) = 1.000 \text{ bits}$
 
 3. **Weighted Child Entropy:**
+
 $$
 H(S, A) = \frac{8}{14}(0.811) + \frac{6}{14}(1.000) = 0.463 + 0.429 = 0.892 \text{ bits}
 $$
 
+
 4. **Information Gain:**
+
 $$
 IG(S, A) = H(S) - H(S, A) = 0.940 - 0.892 = 0.048 \text{ bits}
 $$
+
 (Attribute provides 0.048 bits of entropy reduction).
 
 #### 🧮 Example 2: A* Search Step Evaluation
@@ -317,27 +340,6 @@ Test your comprehension before proceeding. Tap each question to reveal the compr
 
 > **Answer & Analysis:**  
 > It converts unconstrained real numbers (logits) into a valid probability distribution where each value is in $[0, 1]$ and all values sum strictly to 1.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> Q.5 Discuss a Backtracking algorithm to solve a N-Queen’s problem. Draw a state space tree to solve a <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Problem Solving Using Search. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> in which root is maximizing node and children are visited from left to right. Figure <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Problem Solving Using Search. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> Where #M represents Number of missionaries in the left side bank (i.e., left side of the river) #C : represents the number of cannibals in the left side bank (i.e., left side of the river) <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Problem Solving Using Search. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up

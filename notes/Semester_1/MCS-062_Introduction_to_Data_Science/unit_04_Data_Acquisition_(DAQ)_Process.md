@@ -8,7 +8,7 @@
 ---
 
 ### 🎯 Executive Concept & Data Science Relevance
-In modern data systems, **Data Acquisition (DAQ) Process** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
+In modern data systems and advanced analytics, **Data Acquisition (DAQ) Process** forms a vital conceptual pillar. Descriptive statistics provide quantitative summaries of dataset properties. Measures of central tendency identify typical values, while measures of dispersion quantify data spread, uncertainty, and variability—critical for feature normalization and anomaly detection.
 
 > [!NOTE]
 > **Why this matters for your career:** Mastering data acquisition (daq) process equips you with the foundational principles required to reason mathematically about high-dimensional datasets, evaluate algorithm performance, and avoid statistical pitfalls in production machine learning pipelines.
@@ -24,11 +24,13 @@ flowchart TD
   N3["4.2.2 Signal Conditioning"]
   N4["4.2.3 Multiplexing if needed"]
   N5["4.2.4 Triggering if applicable"]
+  N6["4.2.5 Sampling"]
   Start --> N1
   N1 --> N2
   N2 --> N3
   N3 --> N4
   N4 --> N5
+  N5 --> N6
 ```
 
 ### 📖 Core Definitions & Terminology Cards
@@ -77,156 +79,172 @@ The mathematical formulations of this module are anchored by foundational algebr
 
 ### 📌 Comprehensive Section-by-Section Study Breakdown
 #### `4.2` DAQ Process:
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In any Data Acquisition (DAQ) system, the Sensor integration refers to the process of connecting and configuring sensors with the DAQ hardware and software to ensure accurate and efficient data collection. In data science, the purpose of sensor integration is to enable the reliable and real-time collection of structured, high-quality data from the physical world, which can then be used for analysis, modelling, and decision-making.
 
 This step of the DAQ process involves both the physical connection (e.g., wiring, mounting) and logical configuration (e.g., calibration, scaling, and signal compatibility), it is a crucial step as it directly affects the data. It is the stage wherein one needs to assure that data is correctly collected with minimum errors and distortion, further the compatibility of the signals received from sensors need to be assured and accordingly calibration is required to be performed.
 
 Some of the key reasons behind the utility of this stage of data acquisition are mentioned below: Introduction to Data Science-1 Key reasons of proper Sensor Integration: 1. Accurate Data Collection: Proper integration ensures that the sensor's output is correctly interpreted by the DAQ system, minimizing errors and distortions.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing daq process:.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in daq process: can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define daq process: formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `4.2.1` Sensor Integration
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In any Data Acquisition (DAQ) system, the Sensor integration refers to the process of connecting and configuring sensors with the DAQ hardware and software to ensure accurate and efficient data collection. In data science, the purpose of sensor integration is to enable the reliable and real-time collection of structured, high-quality data from the physical world, which can then be used for analysis, modelling, and decision-making.
 
 This step of the DAQ process involves both the physical connection (e.g., wiring, mounting) and logical configuration (e.g., calibration, scaling, and signal compatibility), it is a crucial step as it directly affects the data. It is the stage wherein one needs to assure that data is correctly collected with minimum errors and distortion, further the compatibility of the signals received from sensors need to be assured and accordingly calibration is required to be performed.
 
 Some of the key reasons behind the utility of this stage of data acquisition are mentioned below: Introduction to Data Science-1 Key reasons of proper Sensor Integration: 1. Accurate Data Collection: Proper integration ensures that the sensor's output is correctly interpreted by the DAQ system, minimizing errors and distortions.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sensor integration.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sensor integration can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define sensor integration formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `4.2.2` Signal Conditioning
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In a Data Acquisition (DAQ) system, signal conditioning is the process of modifying and preparing raw signals from sensors so they can be accurately and safely interpreted by the DAQ hardware. When a sensor is integrated into the system, it generates an electrical signal—often in a low-voltage, noisy, or non-linear form—that cannot be directly processed by the DAQ unit.
 
 Signal conditioning acts as an essential intermediary step that ensures the sensor's output is compatible with the input requirements of the DAQ device. This step of DAQ i.e. Signal conditioning is directly linked to sensor integration because it transforms the raw sensor signal into a clean, usable format that the DAQ system can digitize and analyse.
 
 Without signal conditioning, the data collected from sensors would likely be inaccurate or even unusable. For example, when a thermocouple is used to measure temperature, the small voltage it produces must be amplified, filtered, and linearized before the DAQ system can reliably interpret it as a temperature reading.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing signal conditioning.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in signal conditioning can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define signal conditioning formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `4.2.3` Multiplexing (if needed)
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Multiplexing and signal conditioning are two distinct but often closely related steps in a Data Acquisition (DAQ) system. They work together to enable efficient handling of signals from multiple sensors using limited hardware resources. The process of Multiplexing is required to combine multiple input signals into a single channel or path, which can then be read by a single analog-to-digital converter (ADC).
 
 This is especially useful when a DAQ system needs to acquire data from many sensors, but has only a limited number of ADCs. In brief, multiplexing allows multiple conditioned signals to share a single ADC, while signal conditioning ensures each signal is in a proper form for accurate measurement.
 
 When used together correctly, they make DAQ systems more scalable, cost-effective, and efficient. Example: Imagine a DAQ system collecting data from 8 temperature sensors using a single ADC. A multiplexer is used to sequentially route one sensor signal at a time to the ADC. Before each signal reaches the Multiplexer (MUX), it passes through its own signal conditioning module to amplify and linearize the signal, ensuring consistent and accurate digital conversion.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing multiplexing (if needed).
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in multiplexing (if needed) can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define multiplexing (if needed) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `4.2.4` Triggering (if applicable)
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In a Data Acquisition (DAQ) system, multiplexing and triggering are two essential functions that work together to efficiently capture and manage input signals. Multiplexing involves sequentially sampling multiple input channels using a single analog-to-digital converter (ADC). Instead of having a separate ADC for each sensor or signal source, a multiplexer (MUX) cycles through each input one at a time, feeding them into a single ADC for conversion into digital values.
 
 This approach reduces hardware complexity and cost, especially when dealing with many input signals. On the other hand, triggering controls when the data acquisition process begins. Rather than recording data continuously, which can be inefficient and lead to unnecessary data storage, triggering ensures that acquisition only starts under specific conditions—such as a threshold voltage being crossed, an external digital signal being received, or a predefined time event occurring.
 
 This allows the system to capture meaningful data related to specific events or states. These two processes are closely related within a DAQ system. A trigger typically initiates the data acquisition sequence, after which the system begins multiplexing through the selected input channels.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing triggering (if applicable).
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in triggering (if applicable) can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define triggering (if applicable) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `4.2.5` Sampling
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 We learned that Triggering defines the condition that initiates the data acquisition process. The system waits for a specific event or signal (trigger) to occur before starting to record data. This ensures that data is only captured during relevant or meaningful events, rather than continuously or randomly, which helps in managing storage and focusing on important data points.
 
 Sampling is the process by which the system captures data from an input signal at discrete intervals. The system samples the input signal at a constant rate or when specific conditions (such as a trigger) are met. This process converts the analog signal into digital data for processing or analysis.
 
 Thus, Sampling refers to the process of measuring the analog signal’s voltage at specific time intervals, known as the sampling rate. This is necessary because analog signals are continuous in time and value, while digital systems require discrete data points. By taking snapshots of the signal at regular intervals, the system captures enough information to digitally represent the original analog signal for processing, storage, or display.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing sampling.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Statistical inference evaluates sample statistics to draw population conclusions. Hypothesis testing contrasts Null $H_0$ against Alternative $H_1$. The $p$-value represents probability of obtaining test results at least as extreme under $H_0$; reject $H_0$ if $p < \alpha$.
+- **Boundary Conditions:** Type I error (false positive $\alpha$) vs Type II error (false negative $\beta$), statistical power $1 - \beta$, unequal sample variances in Student's $t$-test, and small cell counts in Chi-Square tests.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in sampling can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Online experimentation and conversion lift validation (A/B testing), automated model drift monitoring, feature significance selection, and clinical trial efficacy tests.
+- **Real-World Pitfall:** $p$-hacking, failing to apply multiple testing corrections (e.g. Bonferroni / FDR) across multiple comparisons, and confusing statistical significance with practical impact.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define sampling formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** State $H_0$ and $H_1$ explicitly; identify the correct test statistic ($Z$, $t$, $F$, or $\chi^2$); determine degrees of freedom and state the clear rejection conclusion.
 
 #### `4.2.6` ADC (Analog-to-Digital Conversion)
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 In a Data Acquisition System (DAQ), the ADC (Analog-to-Digital Conversion) stage plays a critical role in converting continuous analog signals into discrete digital data that a computer or microcontroller can process. The ADC stage allows the system to interface with real-world analog signals such as temperature, pressure, voltage, or current.
 
 This is necessary for monitoring, processing, and analysing physical phenomena in various applications, such as industrial automation, scientific research, or instrumentation. The ADC process typically involves several stages: signal conditioning, sampling, hold, quantization, conversion, encoding, and output, each with a specific role in converting the analog signal to a digital format.
 
 Below, a brief discussion over the stages of ADC is given, with suitable examples for understanding each stage. Signal Conditioning: Before the analog signal reaches the ADC, it often needs to be conditioned. Signal conditioning typically involves amplifying, filtering, or isolating the signal to ensure that it falls within the input range of the ADC and is free from noise.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing adc (analog-to-digital conversion).
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in adc (analog-to-digital conversion) can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define adc (analog-to-digital conversion) formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 #### `4.2.7` Data Processing
-##### 📘 Theoretical Principles & In-Depth Exposition
+
+##### 📘 Theoretical Principles & Pedagogical Exposition
 Data processing in the ADC (Analog-to-Digital Conversion) process refers to the steps involved in transforming the sampled, quantized, and encoded data into a usable digital output that can be interpreted or further analysed by digital systems. Once conditioned signal, i.e. the analog signal is passed through an Analog- to-Digital Converter (ADC).
 
 It passes through the stages of sampling, quantization, and encoding; thereafter the signal is digitized. The data processing involves the following: 1. Validation and Error Detection (Ensures data integrity and flags any outliers or errors): After the signal is digitized, the system performs data validation to ensure accuracy and reliability.
 
 This may involve range checking to identify values that fall outside expected limits and error detection to flag or discard corrupt or incorrect data. In addition, data smoothing techniques like moving averages may be applied to remove erratic spikes or fluctuations. For example, if a sudden spike shows a temperature of 1000°C—far beyond the sensor’s capability—it may be recognized as an error and either flagged or corrected using previous valid readings.
 
+
 ##### ⚙️ Mathematical & Algorithmic Mechanics
-- **Formal Mechanics:** Establishes symbolic transformations and state invariants governing data processing.
-- **Boundary Invariants:** Ensures robust error-handling, non-empty set guarantees, and strict asymptotic bounds.
+- **Core Mechanism:** Operating systems manage hardware resource virtualization. Processes encapsulate private address spaces; threads share virtual memory within a process. Virtual memory uses multi-level page tables to translate virtual addresses to physical RAM frames.
+- **Boundary Conditions:** Coffman deadlock conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait), thrashing from excessive page faults, and multi-thread race conditions.
 
 ##### 📊 Practical Data Science & Production Relevance
-- **Industry Application:** Directly implemented in production workflows such as SQL query filters, pandas vectorized operations, and feature transformation pipelines.
-- **Production Pitfall:** Failing to verify membership bounds or missing edge cases in data processing can cause silent data corruption or performance bottlenecks.
+- **Production Workflow:** Multi-process Python workloads (`multiprocessing`), asynchronous I/O architectures (`asyncio`), WSGI worker scaling (Gunicorn/Celery), and container resource bounds in Docker/K8s.
+- **Real-World Pitfall:** Python Global Interpreter Lock (GIL) bottlenecks on CPU-bound multi-threaded code, or memory leaks triggering Linux kernel Out-Of-Memory (OOM) process termination.
 
 > [!TIP]
-> **Key Exam & Technical Interview Takeaway:** Be prepared to define data processing formally, cite its core mathematical invariants, and solve step-by-step numerical/proof questions.
+> **Exam & Technical Interview Insight:** Calculate turnaround and waiting times for CPU scheduling algorithms (FCFS, SJF, Round Robin); determine safe execution states using the Banker's Algorithm.
 
 ### 📐 Step-by-Step Solved Mathematical Examples
 To solidify your theoretical understanding, work through these fully solved, step-by-step mathematical problems:
@@ -248,9 +266,11 @@ To solidify your theoretical understanding, work through these fully solved, ste
 Sum of squared deviations $= 4 + 4 + 0 + 1 + 1 = 10$.
 
 3. **Sample Variance with Bessel's Correction ($n-1 = 4$):**
+
 $$
 s^2 = \frac{10}{5 - 1} = \frac{10}{4} = 2.5
 $$
+
 
 4. **Standard Deviation:** $s = \sqrt{2.5} \approx 1.581$.
 
@@ -297,45 +317,61 @@ print(f"Detected Outliers: {outliers}")
 Test your comprehension before proceeding. Tap each question to reveal the comprehensive explanation:
 
 <details>
-<summary><b>Checkpoint 1:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 1:</b> What is data acquisition in the context of data science? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Acquisition (DAQ) Process.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 2:</b> What types of sources can data be collected from in data acquisition? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Acquisition (DAQ) Process.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 3:</b> What is the main purpose of the Data Acquisition (DAQ) process? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Acquisition (DAQ) Process.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 4:</b> Why is signal conditioning necessary before sampling in a DAQ system? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
+
+> **Answer & Analysis:**  
+> **Detailed Analytical Solution:**
+> 
+> 1. **Core Principle:** Identify the governing theorem or definition for Data Acquisition (DAQ) Process.
+> 2. **Step-by-Step Derivation:** Verify all preconditions and compute intermediate steps methodically.
+> 3. **Conclusion:** State the final mathematical proof or calculation clearly, validating boundary edge cases.
+</details>
+
+<details>
+<summary><b>Checkpoint 5:</b> Why is sample variance divided by $n-1$ instead of $n$? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > Dividing by $n-1$ applies **Bessel's correction**, which removes downward bias caused by using the sample mean $\bar{x}$ instead of the true population mean $\mu$.
 </details>
 
 <details>
-<summary><b>Checkpoint 2:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
+<summary><b>Checkpoint 6:</b> Which measure of central tendency is most robust to extreme outliers? <i>(Tap to reveal answer)</i></summary>
 
 > **Answer & Analysis:**  
 > The **Median**, because it depends on positional rank rather than magnitude summation.
-</details>
-
-<details>
-<summary><b>Checkpoint 3:</b> In a right-skewed (positively skewed) distribution, what is the order of Mean, Median, and Mode? <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> $\text{Mode} < \text{Median} < \text{Mean}$.
-</details>
-
-<details>
-<summary><b>Checkpoint 4:</b> What is data acquisition in the context of data science? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Acquisition (DAQ) Process. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 5:</b> What types of sources can data be collected from in data acquisition? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Acquisition (DAQ) Process. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
-</details>
-
-<details>
-<summary><b>Checkpoint 6:</b> What is the main purpose of the Data Acquisition (DAQ) process? …………………………………………………………………………… …………………………………………………………………………… …………………………………………………………………………… <i>(Tap to reveal answer)</i></summary>
-
-> **Answer & Analysis:**  
-> This question tests your conceptual mastery of Data Acquisition (DAQ) Process. Review the governing formulas and section breakdowns above to formulate a complete, rigorous proof or derivation.
 </details>
 
 ### 🎯 Executive Module Wrap-Up
